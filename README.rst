@@ -1,9 +1,7 @@
-Template for the Read the Docs tutorial
+Documentation for LIMA Mudlib
 =======================================
 
-This GitHub template includes fictional Python library
-with some basic Sphinx docs.
+This repository holds the documentation for getting started with LIMA Mudlib,
+and describes new features and additions since it was last changed around 2000.
 
-Read the tutorial here:
-
-https://docs.readthedocs.io/en/stable/tutorial/
+You spot something missing? Then help us make this more complete! 
