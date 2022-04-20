@@ -2,9 +2,9 @@
 
 # -- Project information
 
-project = 'Lumache'
-copyright = '2021, Graziella'
-author = 'Graziella'
+project = 'LIMA Mudlib'
+copyright = '2022, LIMA Mudlib team'
+author = 'LIMA Mudlib team'
 
 release = '0.1'
 version = '0.1.0'
