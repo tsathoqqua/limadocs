@@ -1,0 +1,15 @@
+.c.function {
+    background: #e7f2fa;
+    color: #2980b9;
+    border-top: 3px solid #6ab0de;   
+}
+
+.sig.sig-object.c {
+    border-top: none !important;
+    padding: 0px !important;
+}
+
+.sig.sig-object.c:nth-child(n+2)::before {
+    content: "\20\20\20\20\20\20\20\20\20\20\20\20\20\20\20";
+    white-space: pre;
+}
