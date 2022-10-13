@@ -4,4 +4,4 @@ API
 .. autosummary::
    :toctree: generated
 
-   limamudlib
+   autodoc/adversary.rst
