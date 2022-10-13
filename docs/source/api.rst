@@ -1,7 +1,1 @@
-API
-===
-
-.. autosummary::
-   :toctree: generated
-
-   autodoc/adversary.rst
+:doc:`autodoc/adversary`
