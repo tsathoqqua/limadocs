@@ -7,7 +7,7 @@ Documentation for the I command in */cmds/wiz/I.c*.
 Command
 =======
 
-See: `Command: didlog <command/didlog>`_ 
+See: `Command: didlog </command/didlog.html>`_ 
 
 USAGE::
 

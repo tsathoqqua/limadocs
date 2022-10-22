@@ -7,7 +7,7 @@ Documentation for the snoopable player command in */cmds/player/snoopable.c*.
 Player Command
 ==============
 
-See: `privacy <player_command/privacy>`_ 
+See: `privacy </player_command/privacy.html>`_ 
 
 USAGE::
 

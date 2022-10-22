@@ -7,7 +7,7 @@ Documentation for the random player command in */cmds/player/random.c*.
 Player Command
 ==============
 
-See: `feelings <player_command/feelings>`_ `adverbs <player_command/adverbs>`_ `semote <player_command/semote>`_ 
+See: `feelings </player_command/feelings.html>`_ `adverbs </player_command/adverbs.html>`_ `semote </player_command/semote.html>`_ 
 
 
 USAGE::

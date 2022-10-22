@@ -7,7 +7,7 @@ Documentation for the timer command in */cmds/wiz/timer.c*.
 Command
 =======
 
-See: `Command: channels <command/channels>`_ `Command: chan <command/chan>`_ 
+See: `Command: channels </command/channels.html>`_ `Command: chan </command/chan.html>`_ 
 
 USAGE::
 

@@ -7,7 +7,7 @@ Documentation for the ansi player command in */cmds/player/ansi.c*.
 Player Command
 ==============
 
-See: `color <player_command/color>`_ `colours <player_command/colours>`_ `simplify <player_command/simplify>`_ 
+See: `color </player_command/color.html>`_ `colours </player_command/colours.html>`_ `simplify </player_command/simplify.html>`_ 
 
 USAGE::
 

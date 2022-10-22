@@ -7,7 +7,7 @@ Documentation for the dest command in */cmds/wiz/dest.c*.
 Command
 =======
 
-See: `Command: clone <command/clone>`_ `Command: clean <command/clean>`_ 
+See: `Command: clone </command/clone.html>`_ `Command: clean </command/clean.html>`_ 
 
 USAGE::
 

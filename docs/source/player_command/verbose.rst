@@ -7,7 +7,7 @@ Documentation for the verbose player command in */cmds/player/verbose.c*.
 Player Command
 ==============
 
-See: `brief <player_command/brief>`_ 
+See: `brief </player_command/brief.html>`_ 
 
 USAGE::
 

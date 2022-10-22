@@ -7,7 +7,7 @@ Documentation for the invis command in */cmds/wiz/invis.c*.
 Command
 =======
 
-See: `Command: vis <command/vis>`_ 
+See: `Command: vis </command/vis.html>`_ 
 
 USAGE::
 

@@ -7,7 +7,7 @@ Documentation for the skills player command in */cmds/player/skills.c*.
 Player Command
 ==============
 
-See: `hp <player_command/hp>`_ `stats <player_command/stats>`_ `score <player_command/score>`_ `spells <player_command/spells>`_ 
+See: `hp </player_command/hp.html>`_ `stats </player_command/stats.html>`_ `score </player_command/score.html>`_ `spells </player_command/spells.html>`_ 
 
 USAGE::
 

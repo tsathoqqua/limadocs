@@ -7,7 +7,7 @@ Documentation for the find command in */trans/cmds/find.c*.
 Command
 =======
 
-See: `Command: findfile <command/findfile>`_ `Command: grep <command/grep>`_ 
+See: `Command: findfile </command/findfile.html>`_ `Command: grep </command/grep.html>`_ 
 
 USAGE::
 

@@ -7,7 +7,7 @@ Documentation for the showpath command in */trans/cmds/showpath.c*.
 Command
 =======
 
-See: `Command: addpath <command/addpath>`_ `Command: rmpath <command/rmpath>`_ 
+See: `Command: addpath </command/addpath.html>`_ `Command: rmpath </command/rmpath.html>`_ 
 
 USAGE::
 

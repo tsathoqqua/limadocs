@@ -7,7 +7,7 @@ Documentation for the clean command in */cmds/wiz/clean.c*.
 Command
 =======
 
-See: `Command: dest <command/dest>`_ `Command: clone <command/clone>`_ 
+See: `Command: dest </command/dest.html>`_ `Command: clone </command/clone.html>`_ 
 
 USAGE::
 

@@ -7,7 +7,7 @@ Documentation for the echo command in */cmds/wiz/echo.c*.
 Command
 =======
 
-See: `Command: echoto <command/echoto>`_ `Command: echoall <command/echoall>`_ `Command: echom <command/echom>`_ 
+See: `Command: echoto </command/echoto.html>`_ `Command: echoall </command/echoall.html>`_ `Command: echom </command/echom.html>`_ 
 
 USAGE::
 

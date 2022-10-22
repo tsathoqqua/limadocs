@@ -7,7 +7,7 @@ Documentation for the rmpath command in */trans/cmds/rmpath.c*.
 Command
 =======
 
-See: `Command: addpath <command/addpath>`_ `Command: showpath <command/showpath>`_ 
+See: `Command: addpath </command/addpath.html>`_ `Command: showpath </command/showpath.html>`_ 
 
 USAGE::
 

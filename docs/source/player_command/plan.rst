@@ -7,7 +7,7 @@ Documentation for the plan player command in */cmds/player/plan.c*.
 Player Command
 ==============
 
-See: `finger <player_command/finger>`_ 
+See: `finger </player_command/finger.html>`_ 
 
 USAGE::
 

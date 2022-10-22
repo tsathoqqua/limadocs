@@ -7,7 +7,7 @@ Documentation for the question player command in */cmds/player/question.c*.
 Player Command
 ==============
 
-See: `bug <player_command/bug>`_ `typo <player_command/typo>`_ `feedback <player_command/feedback>`_ `idea <player_command/idea>`_ 
+See: `bug </player_command/bug.html>`_ `typo </player_command/typo.html>`_ `feedback </player_command/feedback.html>`_ `idea </player_command/idea.html>`_ 
 
 USAGE::
 

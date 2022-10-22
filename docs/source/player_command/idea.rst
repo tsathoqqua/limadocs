@@ -7,7 +7,7 @@ Documentation for the idea player command in */cmds/player/idea.c*.
 Player Command
 ==============
 
-See: `bug <player_command/bug>`_ `typo <player_command/typo>`_ `feedback <player_command/feedback>`_ `question <player_command/question>`_ 
+See: `bug </player_command/bug.html>`_ `typo </player_command/typo.html>`_ `feedback </player_command/feedback.html>`_ `question </player_command/question.html>`_ 
 
 USAGE::
 

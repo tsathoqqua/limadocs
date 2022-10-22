@@ -9,7 +9,7 @@ Command
 
 codefor
 By Beek - derived from eval
-See: `Command: treefor <command/treefor>`_ 
+See: `Command: treefor </command/treefor.html>`_ 
 
 USAGE::
 

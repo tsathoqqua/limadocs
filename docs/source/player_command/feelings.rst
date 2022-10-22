@@ -7,7 +7,7 @@ Documentation for the feelings player command in */cmds/player/feelings.c*.
 Player Command
 ==============
 
-See: `adverbs <player_command/adverbs>`_ `random <player_command/random>`_ `semote <player_command/semote>`_ 
+See: `adverbs </player_command/adverbs.html>`_ `random </player_command/random.html>`_ `semote </player_command/semote.html>`_ 
 
 
 USAGE::

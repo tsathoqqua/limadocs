@@ -7,7 +7,7 @@ Documentation for the review command in */cmds/wiz/review.c*.
 Command
 =======
 
-See: `Command: m_messages <command/m_messages>`_ `Command: msg <command/msg>`_ 
+See: `Command: m_messages </command/m_messages.html>`_ `Command: msg </command/msg.html>`_ 
 
 USAGE::
 

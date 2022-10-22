@@ -7,7 +7,7 @@ Documentation for the bug player command in */cmds/player/bug.c*.
 Player Command
 ==============
 
-See: `idea <player_command/idea>`_ `typo <player_command/typo>`_ `feedback <player_command/feedback>`_ `question <player_command/question>`_ 
+See: `idea </player_command/idea.html>`_ `typo </player_command/typo.html>`_ `feedback </player_command/feedback.html>`_ `question </player_command/question.html>`_ 
 
 USAGE::
 

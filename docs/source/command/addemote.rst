@@ -7,7 +7,7 @@ Documentation for the addemote command in */cmds/wiz/addemote.c*.
 Command
 =======
 
-See: `Command: feelings <command/feelings>`_ `Command: m_messages <command/m_messages>`_ `Command: rmemote <command/rmemote>`_ `Command: showemote <command/showemote>`_ `Command: stupidemote <command/stupidemote>`_ `Command: targetemote <command/targetemote>`_ 
+See: `Command: feelings </command/feelings.html>`_ `Command: m_messages </command/m_messages.html>`_ `Command: rmemote </command/rmemote.html>`_ `Command: showemote </command/showemote.html>`_ `Command: stupidemote </command/stupidemote.html>`_ `Command: targetemote </command/targetemote.html>`_ 
 
 USAGE::
 

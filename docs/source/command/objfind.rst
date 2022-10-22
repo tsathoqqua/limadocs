@@ -7,7 +7,7 @@ Documentation for the objfind command in */cmds/wiz/objfind.c*.
 Command
 =======
 
-See: `Command: objdump <command/objdump>`_ `Command: objcount <command/objcount>`_ `Command: idfind <command/idfind>`_ 
+See: `Command: objdump </command/objdump.html>`_ `Command: objcount </command/objcount.html>`_ `Command: idfind </command/idfind.html>`_ 
 
 USAGE::
 

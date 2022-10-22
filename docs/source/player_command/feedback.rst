@@ -7,7 +7,7 @@ Documentation for the feedback player command in */cmds/player/feedback.c*.
 Player Command
 ==============
 
-See: `idea <player_command/idea>`_ `typo <player_command/typo>`_ `bug <player_command/bug>`_ `question <player_command/question>`_ 
+See: `idea </player_command/idea.html>`_ `typo </player_command/typo.html>`_ `bug </player_command/bug.html>`_ `question </player_command/question.html>`_ 
 
 USAGE::
 

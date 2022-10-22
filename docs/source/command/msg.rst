@@ -7,7 +7,7 @@ Documentation for the msg command in */cmds/wiz/msg.c*.
 Command
 =======
 
-See: `Command: m_messages <command/m_messages>`_ `Command: review <command/review>`_ 
+See: `Command: m_messages </command/m_messages.html>`_ `Command: review </command/review.html>`_ 
 
 USAGE::
 

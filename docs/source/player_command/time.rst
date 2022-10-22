@@ -7,7 +7,7 @@ Documentation for the time player command in */cmds/player/time.c*.
 Player Command
 ==============
 
-See: `timezone <player_command/timezone>`_ 
+See: `timezone </player_command/timezone.html>`_ 
 
 USAGE::
 

@@ -7,7 +7,7 @@ Documentation for the stupidemote command in */cmds/wiz/stupidemote.c*.
 Command
 =======
 
-See: `Command: feelings <command/feelings>`_ `Command: m_messages <command/m_messages>`_ `Command: addemote <command/addemote>`_ `Command: showemote <command/showemote>`_ `Command: rmemote <command/rmemote>`_ `Command: targetemote <command/targetemote>`_ 
+See: `Command: feelings </command/feelings.html>`_ `Command: m_messages </command/m_messages.html>`_ `Command: addemote </command/addemote.html>`_ `Command: showemote </command/showemote.html>`_ `Command: rmemote </command/rmemote.html>`_ `Command: targetemote </command/targetemote.html>`_ 
 
 USAGE::
 
