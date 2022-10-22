@@ -1,0 +1,13 @@
+*****************
+Command *switch*
+*****************
+
+Documentation for the switch command in */cmds/verbs/switch.c*.
+
+Command
+=======
+
+ Mainly used to switch which group a board is set to
+ See also: boards
+
+

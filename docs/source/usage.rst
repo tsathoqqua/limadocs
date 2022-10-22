@@ -1,34 +1,15 @@
-Usage
-=====
+License
+=======
 
-.. _installation:
+Permission to use or modify the files provided with this software distribution is granted for any non-commercial uses, so long as the following conditions are met:
 
-Installation
-------------
+1. Nothing is removed from the headers of the files.
+2. Commercial use of any part of this lib is prohibited, without prior consent from the authors of this software.
+3. The name of the mudlib is displayed on your title screen and in any relevant intermud communications, unless you have permission from the authors.
+4. Written consent from each author must be provided to use this software in ways otherwise contrary to this licence.
 
-To use Lumache, first install it using pip:
+The authors of this software are:
 
-.. code-block:: console
-
-   (.venv) $ pip install lumache
-
-Creating recipes
-----------------
-
-To retrieve a list of random ingredients,
-you can use the ``lumache.get_random_ingredients()`` function:
-
-.. autofunction:: lumache.get_random_ingredients
-
-The ``kind`` parameter should be either ``"meat"``, ``"fish"``,
-or ``"veggies"``. Otherwise, :py:func:`lumache.get_random_ingredients`
-will raise an exception.
-
-.. autoexception:: lumache.InvalidKindError
-
-For example:
-
->>> import lumache
->>> lumache.get_random_ingredients()
-['shells', 'gorgonzola', 'parsley']
-
+- John Viega (rust@virginia.edu)
+- Greg Stein (gstein@svpal.org)
+- Tim Hollebeek (tim@wfn-shop.princeton.edu)
