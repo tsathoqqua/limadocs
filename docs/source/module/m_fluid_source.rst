@@ -41,8 +41,8 @@ disturb_action, set x to 0.
 
 .. c:function:: void set_fill_action( string x )
 
-set_fluid_disturb_action( string x )
-'x' is passed to simple_action. 
+set_fill_action( string x )
+'x' is passed to simple_action.
 $o in the string represents the fluid container.
 $o1 represents the fluid source.
 $o2 represents the fluid itself.
