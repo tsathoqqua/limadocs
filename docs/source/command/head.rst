@@ -7,7 +7,7 @@ Documentation for the head command in */trans/cmds/head.c*.
 Command
 =======
 
-See: `Command: tail <(tail.html>`_ `Command: more <(more.html>`_ `Command: ed <(ed.html>`_ 
+See: `Command: tail <tail.html>`_ `Command: more <more.html>`_ `Command: ed <ed.html>`_ 
 
 USAGE::
 

@@ -7,7 +7,7 @@ Documentation for the socketinfo command in */cmds/wiz/socketinfo.c*.
 Command
 =======
 
-See: `Command: netstat <(netstat.html>`_ 
+See: `Command: netstat <netstat.html>`_ 
 
 USAGE::
 

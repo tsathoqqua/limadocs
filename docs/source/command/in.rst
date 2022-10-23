@@ -7,7 +7,7 @@ Documentation for the in command in */trans/cmds/in.c*.
 Command
 =======
 
-See: `Command: at <(at.html>`_ 
+See: `Command: at <at.html>`_ 
 
 USAGE::
 

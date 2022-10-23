@@ -7,7 +7,7 @@ Documentation for the targetemote command in */cmds/wiz/targetemote.c*.
 Command
 =======
 
-See: `Command: feelings <(feelings.html>`_ `Command: m_messages <(m_messages.html>`_ `Command: addemote <(addemote.html>`_ `Command: rmemote <(rmemote.html>`_ `Command: showemote <(showemote.html>`_ `Command: stupidemote <(stupidemote.html>`_ 
+See: `Command: feelings <feelings.html>`_ `Command: m_messages <m_messages.html>`_ `Command: addemote <addemote.html>`_ `Command: rmemote <rmemote.html>`_ `Command: showemote <showemote.html>`_ `Command: stupidemote <stupidemote.html>`_ 
 
 USAGE::
 

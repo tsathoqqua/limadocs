@@ -7,7 +7,7 @@ Documentation for the echoall command in */cmds/wiz/echoall.c*.
 Command
 =======
 
-See: `Command: echo <(echo.html>`_ `Command: echoto. echom <(echoto. echom.html>`_ 
+See: `Command: echo <echo.html>`_ `Command: echoto. echom <echoto. echom.html>`_ 
 
 USAGE::
 
