@@ -5,12 +5,12 @@
 }
 
 .note {
-    background: #eed;    
+    background: #eed !important;    
 }
 
 .note .admonition-title {
-    background: #dede6a;
-    color: #222;
+    background: #dede6a !important;
+    color: #222 !important;
 }
 
 .sig.sig-object.c {
