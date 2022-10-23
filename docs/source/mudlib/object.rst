@@ -17,40 +17,40 @@ return some debugging info about the state of the object
 
 .. c:function:: void setup(mixed *args...)
 
- This function is overloaded by area implementors.  Nothing in
- the mudlib proper should override this.  Further, nothing should
- ever go into this function.  This allows an area implementor to
- simply respond to setup() and not worry about inheriting the
- function call.
+This function is overloaded by area implementors.  Nothing in
+the mudlib proper should override this.  Further, nothing should
+ever go into this function.  This allows an area implementor to
+simply respond to setup() and not worry about inheriting the
+function call.
 
 
 
 .. c:function:: void mudlib_setup(mixed *args...)
 
- This function is overloaded by all mudlib objects deriving from
- this class.  They should inherit as necessary.  The intention of
- overriding this instead of create() to is ensure that the mudlib
- initialization completes _before_ the call to the area coder's
- setup() function.  Specifically, the mudlib objects need to
- initialize defaults that will then be changed by the setup() call.
- Note that if the mudlib object overrode create(), then its init
- code would occur _after_ the area coder's setup() and possibly
- blow away some of their settings.
+This function is overloaded by all mudlib objects deriving from
+this class.  They should inherit as necessary.  The intention of
+overriding this instead of create() to is ensure that the mudlib
+initialization completes _before_ the call to the area coder's
+setup() function.  Specifically, the mudlib objects need to
+initialize defaults that will then be changed by the setup() call.
+Note that if the mudlib object overrode create(), then its init
+code would occur _after_ the area coder's setup() and possibly
+blow away some of their settings.
 
 
 
 .. c:function:: void restore_to_game()
 
- Called after players log in with a object and it has been fully
- loaded. This can be overriden like:
- void restore_to_game()
- {
-    ::restore_to_game();
-    (Your code here)
-    ...
- }
+Called after players log in with a object and it has been fully
+loaded. This can be overriden like:
+void restore_to_game()
+{
+   ::restore_to_game();
+   (Your code here)
+   ...
+}
 
- This is only valid #ifdef EVERYTHING_SAVES.
+This is only valid #ifdef EVERYTHING_SAVES.
 
 List of Fix Me's
 ----------------

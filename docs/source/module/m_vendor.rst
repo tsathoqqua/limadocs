@@ -41,13 +41,13 @@ enables you to add items to the vendors stored_item's mapping
 
 .. c:function:: void set_sell(mapping items)
 
- with a mapping you can set many items into the vendor's to sell list
+with a mapping you can set many items into the vendor's to sell list
 
 
 
 .. c:function:: void add_sell_object(object ob)
 
- adds a unique item to the vendor's stored_items mapping
+adds a unique item to the vendor's stored_items mapping
 
 
 

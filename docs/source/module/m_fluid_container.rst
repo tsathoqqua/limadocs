@@ -31,7 +31,7 @@ in the types of fluids it can hold.
 .. c:function:: void set_leak_action( mixed x )
 
 set_leak_action(x)
- 'x' is evaluated if this
+'x' is evaluated if this
 container cannot hold the fluid
 that is being put into it.
 

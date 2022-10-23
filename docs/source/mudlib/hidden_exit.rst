@@ -16,7 +16,7 @@ Functions
 
 .. c:function:: void set_destination(mixed dest)
 
- Set where you go when you enter the portal.  Valid arguments are a function
+Set where you go when you enter the portal.  Valid arguments are a function
 pointer,  or a filename
 
 

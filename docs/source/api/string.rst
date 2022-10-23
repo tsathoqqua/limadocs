@@ -11,9 +11,9 @@ Functions
 
 .. c:function:: varargs string wrap(string str, int width, int indent)
 
- Wrap function from Jihad @ Lima Bean.  Takes the string to wrap,
- and optionally a width to wrap it to and optionally an indent for
- any line after the first.
+Wrap function from Jihad @ Lima Bean.  Takes the string to wrap,
+and optionally a width to wrap it to and optionally an indent for
+any line after the first.
 
 
 

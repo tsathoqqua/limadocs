@@ -11,8 +11,8 @@ Functions
 
 .. c:function:: nomask int i_use_ansi()
 
- Returns TRUE if the current user (not the object receiving the message!)
- has ansi turned on.
+Returns TRUE if the current user (not the object receiving the message!)
+has ansi turned on.
 
 
 

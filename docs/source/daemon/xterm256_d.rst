@@ -4,6 +4,11 @@ Daemon xterm256_d
 
 Documentation for the xterm256_d daemon in */daemons/xterm256_d.c*.
 
+Module Information
+==================
+
+ This daemon handles the 256 Colours of XTERM codes
+
 Functions
 =========
 
@@ -11,10 +16,11 @@ Functions
 
 .. c:function:: public varargs string substitute_colour(string text, string mode)
 
- substitute_colour takes a string with tokenized xterm256 colour
- codes and a mode, parses the tokens and substitutes with 
- xterm colour codes suitable for printing.
- available modes are: 
+Substitute_colour takes a string with tokenized xterm256 colour
+codes and a mode, parses the tokens and substitutes with 
+xterm colour codes suitable for printing.
+available modes are:
+
  plain - strip all colour and style codes
  vt100 - strip only colour codes
  xterm - replace all tokens with xterm256 colour codes

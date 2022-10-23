@@ -11,7 +11,7 @@ Functions
 
 .. c:function:: nomask mixed get_user_variable(string varname)
 
- Get a variable value from the current user's shell object.
+Get a variable value from the current user's shell object.
 
 
 

@@ -171,19 +171,19 @@ Handle parser checks for "throw OBJ at OBJ"
 
 .. c:function:: mixed direct_pull_obj( object ob )
 
- Handle parser checks for "pull OBJ"
+Handle parser checks for "pull OBJ"
 
 
 
 .. c:function:: mixed direct_press_obj( object ob )
 
- Parser check for "press OBJ"
+Parser check for "press OBJ"
 
 
 
 .. c:function:: mixed direct_search_obj( object ob )
 
- Parser check for "search OBJ"
+Parser check for "search OBJ"
 
 
 

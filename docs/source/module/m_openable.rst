@@ -11,15 +11,15 @@ Functions
 
 .. c:function:: void do_on_open()
 
- Called from open_with() so modules that inherit from M_OPENABLE
- Don't have to catch the "open" hook.
+Called from open_with() so modules that inherit from M_OPENABLE
+Don't have to catch the "open" hook.
 
 
 
 .. c:function:: void do_on_close()
 
- Called from close() so modules that inherit from M_OPENABLE
- Don't have to catch the "close" hook.
+Called from close() so modules that inherit from M_OPENABLE
+Don't have to catch the "close" hook.
 
 List of Fix Me's
 ----------------

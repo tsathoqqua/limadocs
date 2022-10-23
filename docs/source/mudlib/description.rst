@@ -21,7 +21,7 @@ Set the long description of an object
 
 .. c:function:: string get_base_long()
 
- Get the variable long, not the full description...
+Get the variable long, not the full description...
 
 
 

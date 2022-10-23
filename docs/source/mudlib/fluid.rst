@@ -11,13 +11,13 @@ Functions
 
 .. c:function:: void set_default_container(string def)
 
- Defines container into which fluid will be put by a vendor selling it
+Defines container into which fluid will be put by a vendor selling it
 
 
 
 .. c:function:: string query_default_container()
 
- Returns container into which fluid will be put by a vendor selling it
+Returns container into which fluid will be put by a vendor selling it
 
 
 

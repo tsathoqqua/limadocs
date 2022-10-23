@@ -9,6 +9,7 @@ Daemons
 - `Daemon: doc_d <daemon/doc_d.html>`_
 - `Daemon: finger_d <daemon/finger_d.html>`_
 - `Daemon: ftp_d <daemon/ftp_d.html>`_
+- `Daemon: group_d <daemon/group_d.html>`_
 - `Daemon: guild_d <daemon/guild_d.html>`_
 - `Daemon: help_d <daemon/help_d.html>`_
 - `Daemon: imud_d <daemon/imud_d.html>`_

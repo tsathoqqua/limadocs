@@ -11,24 +11,24 @@ Functions
 
 .. c:function:: int aggregate_skill(string skill)
 
- Returns the aggregated skill value for the specified skill.  This value
- incorporates the value of the skill itself plus all values of the parent
- skills.
+Returns the aggregated skill value for the specified skill.  This value
+incorporates the value of the skill itself plus all values of the parent
+skills.
 
 
 
 .. c:function:: void learn_skill(string skill, int value)
 
- Add some number of skill points to the given skill, propogating skill
- values up through the parent skills.  Training points are also assigned
- as appropriate.
+Add some number of skill points to the given skill, propogating skill
+values up through the parent skills.  Training points are also assigned
+as appropriate.
 
 
 
 .. c:function:: int test_skill(string skill, int opposing_skill)
 
- This replaces the basic adversary test_skill function,
- adding an attempt to improve the skill
+This replaces the basic adversary test_skill function,
+adding an attempt to improve the skill
 
 
 

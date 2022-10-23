@@ -23,126 +23,126 @@ Functions
 
 .. c:function:: int time_to_next_effect()
 
- Returns time remaining in call_out to the next effect
+Returns time remaining in call_out to the next effect
 
 
 
 .. c:function:: int actual_period( mixed val )
 
- Converts period to an actual interval, with suitable randomisation
- Formats : int val : period = val
-           int *({ fixed, var}) : period = fixed + random(var)
-           function : evaluate it
+Converts period to an actual interval, with suitable randomisation
+Formats : int val : period = val
+          int *({ fixed, var}) : period = fixed + random(var)
+          function : evaluate it
 
 
 
 .. c:function:: void remove_effect_at(int pos)
 
- Removes effect from queue at appropriate point
+Removes effect from queue at appropriate point
 
 
 
 .. c:function:: int find_effect_index(string ob)
 
- Return position of effect with specified object in queue
- Return -1 on failure
+Return position of effect with specified object in queue
+Return -1 on failure
 
 
 
 .. c:function:: int find_effect_name_index(string name)
 
- Return position of effect with specified name in queue
- Return -1 on failure
+Return position of effect with specified name in queue
+Return -1 on failure
 
 
 
 .. c:function:: int *find_effect_indexes_matching(string name)
 
- Return array of positions of effects (part-)matching specified name
- Return ({})
+Return array of positions of effects (part-)matching specified name
+Return ({})
 
 
 
 .. c:function:: int find_effect(string ob)
 
- Return effect with specified object in queue
- Return 0 on failure
+Return effect with specified object in queue
+Return 0 on failure
 
 
 
 .. c:function:: mixed query_effect_args(string ob)
 
- Return args of specified effect
+Return args of specified effect
 
 
 
 .. c:function:: int remove_effect(string ob)
 
- Locate effect matching the specified ob and remove it
- Return 1 on success, 0 on failure
+Locate effect matching the specified ob and remove it
+Return 1 on success, 0 on failure
 
 
 
 .. c:function:: int remove_effect_named(string name)
 
- Locate effect matching the specified name and remove it
- Return 1 on success, 0 on failure
+Locate effect matching the specified name and remove it
+Return 1 on success, 0 on failure
 
 
 
 .. c:function:: int remove_effects_matching(string name)
 
- Locate effects matching the specified name and remove them
- Return 1 on success, 0 on failure
+Locate effects matching the specified name and remove them
+Return 1 on success, 0 on failure
 
 
 
 .. c:function:: void insert_effect_at(class effect_class effect, int pos)
 
- Inserts effect into queue at appropriate point
+Inserts effect into queue at appropriate point
 
 
 
 .. c:function:: int insert_effect(class effect_class effect)
 
- Finds appropriate point in queue to insert effect
- Adjusts delay to following effect
- Returns 1 on success, 0 on failure.
+Finds appropriate point in queue to insert effect
+Adjusts delay to following effect
+Returns 1 on success, 0 on failure.
 
 
 
 .. c:function:: void next_effect()
 
- Call the function specified in the function at the head of the queue
- Move it to appropriate place in queue
- Then call out to next effect in the queue
+Call the function specified in the function at the head of the queue
+Move it to appropriate place in queue
+Then call out to next effect in the queue
 
 
 
 .. c:function:: void clear_effects()
 
- Clears the effects queue
+Clears the effects queue
 
 
 
 .. c:function:: mixed *query_effects()
 
- Returns copy of the effects queue
+Returns copy of the effects queue
 
 
 
 .. c:function:: void add_effect(string ob, mixed args, int repeats, mixed interval)
 
- Adds the specified effect
- Usage: add_effect(string ob, mixed args, int repeats, mixed interval)
- repeats will default to ob->query_repeats()
- interval will default to ob->query_interval()
+Adds the specified effect
+Usage: add_effect(string ob, mixed args, int repeats, mixed interval)
+repeats will default to ob->query_repeats()
+interval will default to ob->query_interval()
 
 
 
 .. c:function:: void reinstate_effects()
 
- Called on relogging to restart effects.
+Called on relogging to restart effects.
 
 List of Fix Me's
 ----------------

@@ -4,6 +4,27 @@ Daemon money_d
 
 Documentation for the money_d daemon in */daemons/money_d.c*.
 
+Module Information
+==================
+
+The money daemon manages the legal types of money within the game and their
+exchange rates.
+
+Objects have an inherent "value".  This is then translated into a
+particular currency via that currency's value -> actual exchange rate.
+
+Currencies have different denomiations, e.g. dollar have dollar and cent.
+Calculation is always based on the lowest denomination. Functions for
+displaying a currency with denominations are provided
+
+Created Wed Jul  3 20:28:42 MET DST 1996 <Valentino>
+
+961209, Deathblade: Revised extensively and installed into Lima.
+                    Kept Valentino's per-area currencies, but tossed
+                    the materials concept.
+
+rewritten 10 Feb 98 by MonicaS, removed per-area currencies, added denominations
+
 Functions
 =========
 

@@ -29,8 +29,8 @@ same as complete, but upper and lower case are ignored.
 
 .. c:function:: string *find_best_match_or_complete(string partial, string *potentials)
 
- same as case_insensitive_complete, but if there is an exact match, 
- returns only that.
+same as case_insensitive_complete, but if there is an exact match, 
+returns only that.
 
 
 

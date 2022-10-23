@@ -28,9 +28,9 @@ e.g.
 
 function my_hook = (: my_hook_func :);
 
- add_hook("foo", my_hook);
+add_hook("foo", my_hook);
 
- remove_hook("foo", my_hook);
+remove_hook("foo", my_hook);
 
 
 
@@ -63,10 +63,10 @@ which is appropriate for implode()ing with the return values.
 
 E.g.
 
- call_hooks("foo", (: $1 + $2 :), 2) will return 2 + the sum of the return
-     values of the hooks
+call_hooks("foo", (: $1 + $2 :), 2) will return 2 + the sum of the return
+    values of the hooks
 
- but 2 + call_hooks("foo", HOOK_SUM) is faster.
+but 2 + call_hooks("foo", HOOK_SUM) is faster.
 
 see: implode
 see: add_hook
