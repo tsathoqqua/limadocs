@@ -4,6 +4,15 @@
     border-top: 3px solid #6ab0de;   
 }
 
+.note {
+    background: #eed !important;    
+}
+
+.note .admonition-title {
+    background: #dede6a !important;
+    color: #222 !important;
+}
+
 .sig.sig-object.c {
     border-top: none !important;
     padding: 0px !important;
