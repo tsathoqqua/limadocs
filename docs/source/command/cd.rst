@@ -7,7 +7,7 @@ Documentation for the cd command in */trans/cmds/cd.c*.
 Command
 =======
 
-See: `Command: mkdir </command/mkdir.html>`_ `Command: ls </command/ls.html>`_ `Command: pwd </command/pwd.html>`_ `Command: ed </command/ed.html>`_ 
+See: `Command: mkdir <(mkdir.html>`_ `Command: ls <(ls.html>`_ `Command: pwd <(pwd.html>`_ `Command: ed <(ed.html>`_ 
 
 USAGE::
 

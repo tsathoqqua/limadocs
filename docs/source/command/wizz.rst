@@ -7,7 +7,7 @@ Documentation for the wizz command in */cmds/wiz/wizz.c*.
 Command
 =======
 
-See: `Command: goto </command/goto.html>`_ `Command: trans </command/trans.html>`_ 
+See: `Command: goto <(goto.html>`_ `Command: trans <(trans.html>`_ 
 
 USAGE::
 

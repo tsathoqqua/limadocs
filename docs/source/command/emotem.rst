@@ -7,7 +7,7 @@ Documentation for the emotem command in */cmds/wiz/emotem.c*.
 Command
 =======
 
-See: `Command: emote </command/emote.html>`_ `Command: echom </command/echom.html>`_ 
+See: `Command: emote <(emote.html>`_ `Command: echom <(echom.html>`_ 
 
 USAGE::
 

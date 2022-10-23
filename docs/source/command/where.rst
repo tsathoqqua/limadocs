@@ -7,7 +7,7 @@ Documentation for the where command in */cmds/wiz/where.c*.
 Command
 =======
 
-See: `Command: who </command/who.html>`_ `Command: people </command/people.html>`_ 
+See: `Command: who <(who.html>`_ `Command: people <(people.html>`_ 
 
 USAGE::
 

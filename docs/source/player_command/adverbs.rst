@@ -7,7 +7,7 @@ Documentation for the adverbs player command in */cmds/player/adverbs.c*.
 Player Command
 ==============
 
-See: `feelings </player_command/feelings.html>`_ `random </player_command/random.html>`_ `semote </player_command/semote.html>`_ 
+See: `feelings <feelings.html>`_ `random <random.html>`_ `semote <semote.html>`_ 
 
 
 USAGE	adverbs [pattern]

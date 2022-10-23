@@ -7,7 +7,7 @@ Documentation for the didlog command in */cmds/wiz/didlog.c*.
 Command
 =======
 
-See: `Command: I </command/I.html>`_ 
+See: `Command: I <(I.html>`_ 
 
 USAGE::
 

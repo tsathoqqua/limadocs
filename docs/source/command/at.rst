@@ -7,7 +7,7 @@ Documentation for the at command in */trans/cmds/at.c*.
 Command
 =======
 
-See: `Command: at </command/at.html>`_ 
+See: `Command: at <(at.html>`_ 
 
 USAGE::
 

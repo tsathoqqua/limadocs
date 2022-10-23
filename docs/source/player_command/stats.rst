@@ -7,7 +7,7 @@ Documentation for the stats player command in */cmds/player/stats.c*.
 Player Command
 ==============
 
-See: `score </player_command/score.html>`_ 
+See: `score <score.html>`_ 
 
 USAGE::
 

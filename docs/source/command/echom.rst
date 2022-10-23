@@ -7,7 +7,7 @@ Documentation for the echom command in */cmds/wiz/echom.c*.
 Command
 =======
 
-See: `Command: echo </command/echo.html>`_ `Command: echoall </command/echoall.html>`_ `Command: m_messages </command/m_messages.html>`_ 
+See: `Command: echo <(echo.html>`_ `Command: echoall <(echoall.html>`_ `Command: m_messages <(m_messages.html>`_ 
 
 USAGE::
 

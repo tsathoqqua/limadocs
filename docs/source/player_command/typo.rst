@@ -7,7 +7,7 @@ Documentation for the typo player command in */cmds/player/typo.c*.
 Player Command
 ==============
 
-See: `bug </player_command/bug.html>`_ `idea </player_command/idea.html>`_ `feedback </player_command/feedback.html>`_ `question </player_command/question.html>`_ 
+See: `bug <bug.html>`_ `idea <idea.html>`_ `feedback <feedback.html>`_ `question <question.html>`_ 
 
 USAGE::
 

@@ -7,7 +7,7 @@ Documentation for the simplify player command in */cmds/player/simplify.c*.
 Player Command
 ==============
 
-See: `color </player_command/color.html>`_ `colours </player_command/colours.html>`_ `ansi </player_command/ansi.html>`_ 
+See: `color <color.html>`_ `colours <colours.html>`_ `ansi <ansi.html>`_ 
 
 USAGE::
 

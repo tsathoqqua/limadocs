@@ -7,7 +7,7 @@ Documentation for the money player command in */cmds/player/money.c*.
 Player Command
 ==============
 
-See: `inventory </player_command/inventory.html>`_ 
+See: `inventory <inventory.html>`_ 
 
 USAGE::
 
