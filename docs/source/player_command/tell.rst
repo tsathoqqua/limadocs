@@ -2,7 +2,7 @@
 Player Command *tell*
 **********************
 
-Documentation for the tell player command in */cmds/player/tell.c*.
+Documentation for the tell player command in */cmds/player/attic/tell.c*.
 
 Player Command
 ==============

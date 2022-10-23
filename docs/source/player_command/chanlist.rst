@@ -7,7 +7,7 @@ Documentation for the chanlist player command in */cmds/player/chanlist.c*.
 Player Command
 ==============
 
-See: `channels <channels.html>`_ `gossip <gossip.html>`_ `newbie <newbie.html>`_ `chan <chan.html>`_ 
+See: `channels <../ingame/channels.html>`_ `gossip <gossip.html>`_ `newbie <../ingame/newbie.html>`_ `chan <chan.html>`_ 
 
 USAGE::
 

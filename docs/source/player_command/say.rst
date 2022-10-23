@@ -2,7 +2,7 @@
 Player Command *say*
 *********************
 
-Documentation for the say player command in */cmds/player/say.c*.
+Documentation for the say player command in */cmds/player/attic/say.c*.
 
 Player Command
 ==============
