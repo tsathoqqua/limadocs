@@ -118,7 +118,7 @@ for a title.
 
 Return a nicely string formatted version of a number of seconds.
 Default is long format short=1 for shorter format.
-Examples:
+Examples::
   time_to_string(500)   -> "8 minutes, 20 seconds"
   time_to_string(500,1) -> "8m 20s"
 
@@ -133,6 +133,9 @@ in metric or emperial measures. Default is metric.
 Two decimals max. The function returns grams if you
 give weight below a kilo.
 
+The default behaviour of this function can be changed by modifying #METRIC
+in config.h.
+
 
 
 .. c:function:: string filepath_ellipsis(string fpath, int max)
@@ -145,6 +148,7 @@ touches the filename at the end.
 
 .. c:function:: string drunk_speak(string s, int drunk)
 
+Turns a string into a drunken slurry string.
 Drunk ranges from 0-10, where 0 is comatose and 10 is sober.
 
 

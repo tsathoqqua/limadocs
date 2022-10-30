@@ -7,8 +7,7 @@ Documentation for the ansi player command in */cmds/player/ansi.c*.
 Player Command
 ==============
 
-See: `color <../ingame/color.html>`_ `colours <colours.html>`_ `simplify <simplify.html>`_ 
-
+$$see: color, colours, simplify
 USAGE::
 
 	ansi

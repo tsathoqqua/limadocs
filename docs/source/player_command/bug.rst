@@ -7,13 +7,12 @@ Documentation for the bug player command in */cmds/player/bug.c*.
 Player Command
 ==============
 
-See: `idea <idea.html>`_ `typo <typo.html>`_ `feedback <feedback.html>`_ `question <question.html>`_ 
-
+$$see: idea, typo, feedback, question
 USAGE::
 
-	 bug
+	bug
 
-This command directs a report of a game bug to the proper place.
+ This command directs a report of a game bug to the proper place.
 
 
 
