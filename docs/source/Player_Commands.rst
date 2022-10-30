@@ -30,7 +30,9 @@ Player Commands
 - `money <player_command/money.html>`_
 - `mudlist <player_command/mudlist.html>`_
 - `news <player_command/news.html>`_
+- `newscore <player_command/newscore.html>`_
 - `nickname <player_command/nickname.html>`_
+- `party <player_command/party.html>`_
 - `passwd <player_command/passwd.html>`_
 - `plan <player_command/plan.html>`_
 - `question <player_command/question.html>`_

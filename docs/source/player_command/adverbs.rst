@@ -10,7 +10,9 @@ Player Command
 See: `feelings <feelings.html>`_ `random <random.html>`_ `semote <semote.html>`_ 
 
 
-USAGE	adverbs [pattern]
+USAGE::
+
+	adverbs [pattern]
 
 Without an argument, shows all adverbs that you can use in soul commands.
 With an argument, shows all adverbs matching the given pattern.
@@ -18,7 +20,7 @@ With an argument, shows all adverbs matching the given pattern.
 Example:
     adverbs f*ly
 
- will show you all adverbs that start w/ 'f' and end in 'ly'
+will show you all adverbs that start w/ 'f' and end in 'ly'
 
 To use an adverb in a soul command, use as much of the adverb as necessary
 to uniquely identify it, followed by a *.

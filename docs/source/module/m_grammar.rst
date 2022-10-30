@@ -7,9 +7,8 @@ Documentation for the m_grammar module in */std/modules/m_grammar.c*.
 Module Information
 ==================
 
-
-The grammar module contains a number of functions for producing high
-quality english output.
+ The grammar module contains a number of functions for producing high
+ quality english output.
 
 Functions
 =========
@@ -18,16 +17,9 @@ Functions
 
 .. c:function:: string pluralize(string str)
 
-
 Convert a noun to it's plural form.  Oddly enough, it's also quite
 good at converting verbs to their singular form, since going from plural to
 singular often entails adding an 's'.  Eg, they run, he runs.
-
-
-
-.. c:function:: string punctuate( string str )
-
-Adds a period to a sentence if needed.
 
 
 
@@ -39,7 +31,6 @@ number_of(num, what)
 
 
 .. c:function:: string number_word(int num)
-
 
 number_word(1) == "one", etc.  number_word(10) == "10" and similarly
 for numbers greater than 10, which is consistent with most English

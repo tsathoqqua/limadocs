@@ -7,11 +7,13 @@ Documentation for the brief player command in */cmds/player/brief.c*.
 Player Command
 ==============
 
-$$ see : verbose
+See: `verbose <verbose.html>`_ 
+
 USAGE::
 
 	brief
-	brief on/off
+	brief on
+	brief off
 
 Shows or sets whether you are using "brief" mode,
 which ignores the room descriptions.

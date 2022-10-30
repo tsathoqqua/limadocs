@@ -7,12 +7,17 @@ Documentation for the biff player command in */cmds/player/biff.c*.
 Player Command
 ==============
 
+See: `mail <mail.html>`_ 
+
+
 USAGE::
 
 	biff
-	biff on|off
+	biff on
+	biff off
 
- Adjust the "biff" setting (mail announcements)
+Setting biff on or off will determine whether you receive mail notifications from the in-game
+mail system or not.
 
 
 
