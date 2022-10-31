@@ -2,7 +2,7 @@
 Messaging
 *********
 
-The `M_MESSAGES module <../module/m_messages.rst>`_ handles messaging with the correct grammar for multiple parties. It uses the same syntax as the `feelings/souls/emotes <../player_command/feelings.html>`_ on the MUD and using `Command: showemote </command/showemote.html>`_ to see how emotes are done is a good way of picking up the idea.
+The `M_MESSAGES module <../module/m_messages.html>`_ handles messaging with the correct grammar for multiple parties. It uses the same syntax as the `feelings/souls/emotes <../player_command/feelings.html>`_ on the MUD and using `Command: showemote </command/showemote.html>`_ to see how emotes are done is a good way of picking up the idea.
 
 Tokens::
 
