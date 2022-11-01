@@ -30,6 +30,7 @@ simple_action()
 simple_action() is the simplest of the bunch, as it just creates one message for the body doing the action, and one for the rest.
 
 Example::
+
     "You say: This is a test."
     "Tsath says: This is a test."
 
@@ -83,6 +84,10 @@ Example::
 
 To generate something like this we can use the $t token::
 
-    @.me->targetted_action("$N $vgive $t a hug.",.here:gesslar)
+    @.me->targetted_action("$N $vgive $t a hug.",.here:greeter)
 
+The *.here:greeter* works in the Wizroom where the LIMA Mudlib Greeter is, otherwise use another beign in your environment.
 
+*targetted_action()* can also combine a target with a list of objects, like this::
+
+    @.here:greeter->targetted_action("$N $vgive $t a hug and $p $o.",.me,.me:map)
