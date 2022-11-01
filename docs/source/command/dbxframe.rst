@@ -7,7 +7,8 @@ Documentation for the dbxframe command in */trans/cmds/dbxframe.c*.
 Command
 =======
 
-$$see: dbx
+See: `Command: dbx <dbx.html>`_ 
+
 
 
 

@@ -7,7 +7,8 @@ Documentation for the chan player command in */cmds/player/chan.c*.
 Player Command
 ==============
 
-$$see: channels, gossip, newbie
+See: `channels <../ingame/channels.html>`_ `gossip <gossip.html>`_ `newbie <../ingame/newbie.html>`_ 
+
 The chan command is the central command for all channel
 communication.  Below are the various forms the command takes::
 

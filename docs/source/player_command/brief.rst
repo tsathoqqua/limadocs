@@ -7,7 +7,8 @@ Documentation for the brief player command in */cmds/player/brief.c*.
 Player Command
 ==============
 
-$$see: verbose
+See: `verbose <verbose.html>`_ 
+
 USAGE::
 
 	brief

@@ -7,7 +7,8 @@ Documentation for the xargs command in */trans/cmds/xargs.c*.
 Command
 =======
 
-$$see: converse
+See: `Command: converse <converse.html>`_ 
+
 USAGE	xargs <command>
 
 Acts like 'converse' (see help converse), except that it

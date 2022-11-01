@@ -7,7 +7,8 @@ Documentation for the bug player command in */cmds/player/bug.c*.
 Player Command
 ==============
 
-$$see: idea, typo, feedback, question
+See: `idea <idea.html>`_ `typo <typo.html>`_ `feedback <feedback.html>`_ `question <question.html>`_ 
+
 USAGE::
 
 	bug

@@ -7,7 +7,8 @@ Documentation for the biff player command in */cmds/player/biff.c*.
 Player Command
 ==============
 
-$$see: mail
+See: `mail <mail.html>`_ 
+
 
 USAGE::
 

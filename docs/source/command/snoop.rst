@@ -7,7 +7,8 @@ Documentation for the snoop command in */trans/cmds/snoop.c*.
 Command
 =======
 
-$$see: unsnoop, snoops
+See: `Command: unsnoop <unsnoop.html>`_ `Command: snoops <snoops.html>`_ 
+
 USAGE::
 
 	 snoop < name >

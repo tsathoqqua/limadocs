@@ -7,7 +7,8 @@ Documentation for the adverbs player command in */cmds/player/adverbs.c*.
 Player Command
 ==============
 
-$$see: feelings, random, semote
+See: `feelings <feelings.html>`_ `random <random.html>`_ `semote <semote.html>`_ 
+
 
 USAGE::
 

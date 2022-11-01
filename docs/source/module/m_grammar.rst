@@ -23,6 +23,12 @@ singular often entails adding an 's'.  Eg, they run, he runs.
 
 
 
+.. c:function:: string punctuate(string str)
+
+Adds a period to a sentence if needed.
+
+
+
 .. c:function:: string number_of(int num, string what)
 
 Handles the common operation: "0 bogs", "1 bog", "2 bogs", ...

@@ -7,7 +7,8 @@ Documentation for the objpurge command in */trans/admincmds/objpurge.c*.
 Command
 =======
 
-$$see: objfind
+See: `Command: objfind <objfind.html>`_ 
+
 USAGE::
 
 	objpurge <filename>

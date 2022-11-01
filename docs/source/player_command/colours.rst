@@ -7,7 +7,8 @@ Documentation for the colours player command in */cmds/player/colours.c*.
 Player Command
 ==============
 
-$$see: ansi
+See: `ansi <ansi.html>`_ 
+
 USAGE::
 
 	colours
