@@ -11,18 +11,18 @@ USAGE::
 
 	 calls
 
-This command shows you the number of call_outs that are active
+This command shows you the number of call_outs that are active.
 
 Produces display like :
      calls
 
-object                                            Function            Delay
+object                                 Function            Delay
 -----------------------------------------------------------------------------
-/secure/master                                    <function>          1
-/domains/std/harry#474                            <function>          3
-/domains/std/harry                                <function>          3
+/secure/master                         <function>          17m 13s
+/domains/std/harry#474                 <function>          19h 23m 53s
+/domains/std/harry                     <function>          3s
 
-There are 3 call_outs active..
+There are 3 call_outs active.
 
 
 

@@ -25,7 +25,6 @@ has emojis turned on.
 
 .. c:function:: string on_off_widget(int on)
 
-string on_off_widget(int on)
 [On ] (green) or [Off] (red) depending on int on.
 "On " or "Off" for simplified view.
 

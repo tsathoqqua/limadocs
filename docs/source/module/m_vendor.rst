@@ -54,7 +54,7 @@ adds a unique item to the vendor's stored_items mapping
 .. c:function:: void set_for_sale(mixed x)
 
 Set the array of object names which this living object is willing to sell.
-set_for_sale(1) means everything is for sale.  set_for_sale(0) means nothing
+Called with x == 1 means everything is for sale. Called with x == 0 means nothing
 is.  If a function is passed it will get the object to sell as argument.
 If a single string is returned it will be used as error message.
 
@@ -63,8 +63,8 @@ If a single string is returned it will be used as error message.
 .. c:function:: void set_will_buy(mixed x)
 
 Set the array of object names which this living object is willing to buy.
-set_will_buy(1) means it will buy anything.  set_will_buy(0) means it wont
-by anything.  If a function is passed it will get the object to buy as
+Called with x == 1  means it will buy anything. Called with x == 0 means it wont
+buy anything.  If a function is passed it will get the object to buy as
 argument. If a single string is returned it will be used as error message.
 
 
@@ -100,7 +100,6 @@ that he has stored away.
 
 .. c:function:: void set_unique_inventory(string str)
 
-void set_unique_inventory(string str)
 This function determines if the vendor should hold onto what he
 buys instead of desting it and replacing it with an original.  For
 Example without unique set if you sell a sword to the vendor, no

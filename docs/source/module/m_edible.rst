@@ -11,9 +11,8 @@ Functions
 
 .. c:function:: void set_eat_action(mixed action)
 
-set_eat_action(string) causes 'string' to be printed when someone
-eats this object.  set_eat_action(function) causes the function
-to be called instead.
+action: string - Causes 'string' to be printed when someone eats this object.   
+action: function - Causes the function to be called instead.
 
 
 

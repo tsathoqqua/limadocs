@@ -10,6 +10,7 @@ Module
 - `Module: m_bodystats <module/m_bodystats.html>`_
 - `Module: m_complete <module/m_complete.html>`_
 - `Module: m_complex_exit <module/m_complex_exit.html>`_
+- `Module: m_crafting <module/m_crafting.html>`_
 - `Module: m_daemon_data <module/m_daemon_data.html>`_
 - `Module: m_damage_sink <module/m_damage_sink.html>`_
 - `Module: m_damage_source <module/m_damage_source.html>`_
@@ -34,6 +35,7 @@ Module
 - `Module: m_react <module/m_react.html>`_
 - `Module: m_readable <module/m_readable.html>`_
 - `Module: m_ready <module/m_ready.html>`_
+- `Module: m_salvageable <module/m_salvageable.html>`_
 - `Module: m_save <module/m_save.html>`_
 - `Module: m_searchable <module/m_searchable.html>`_
 - `Module: m_smartmove <module/m_smartmove.html>`_

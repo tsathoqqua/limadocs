@@ -29,6 +29,14 @@ Returns 1 if the adversary is dead.
 
 
 
+.. c:function:: int karma_impact()
+
+int karma_impact();
+Override and return a number between -5 and 5 to impact karma
+when killed by someone
+
+
+
 .. c:function:: string diagnose()
 
 Returns a string describing the current state of the adversary.

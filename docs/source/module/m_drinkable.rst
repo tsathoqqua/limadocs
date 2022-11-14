@@ -11,7 +11,6 @@ Functions
 
 .. c:function:: void set_taste_action( mixed x )
 
-set_taste_action( mixed x )
 Put this function in the drinkable
 fluid.  'x' is evaluated when the
 fluid is drunk.  By default it is
@@ -24,7 +23,6 @@ zero.
 
 .. c:function:: void set_drink_action(mixed action)
 
-set_drink_action( mixed x )
 Put this function in the drinkable
 fluid.  'x' is evaluated when the
 fluid is drunk.  By default it is
@@ -43,7 +41,6 @@ Just like set_drink_action, but only is used for the last drink.
 
 .. c:function:: void set_num_drinks(int x)
 
-set_num_drinks( int x )
 This sets the number of drinks per 1 size-unit.
 The default is 3;
 

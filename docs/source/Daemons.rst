@@ -7,6 +7,7 @@ Daemons
 - `Daemon: channel <daemon/channel.html>`_
 - `Daemon: cmd_d <daemon/cmd_d.html>`_
 - `Daemon: doc_d <daemon/doc_d.html>`_
+- `Daemon: emoji_d <daemon/emoji_d.html>`_
 - `Daemon: finger_d <daemon/finger_d.html>`_
 - `Daemon: ftp_d <daemon/ftp_d.html>`_
 - `Daemon: group_d <daemon/group_d.html>`_

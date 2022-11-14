@@ -11,21 +11,19 @@ Functions
 
 .. c:function:: void set_getmsg( string s )
 
-set_getmsg(s) sets the error message that one gets when one tries to take
-an object.
+Sets the error message that one gets when one tries to take an object.
 
 
 
 .. c:function:: string query_getmsg()
 
-query_getmsg() returns the error message that one gets when one tries to take
-an object.
+Returns the error message that one gets when one tries to take an object.
 
 
 
 .. c:function:: void set_gettable( mixed g )
 
-set_gettable(1) makes an object gettable, while set_gettable(0) makes
+g == 1 makes an object gettable, while g == 0 makes
 it not gettable.  If a function or string is passed, this has the
 same effect as calling set_getmsg().
 
@@ -52,7 +50,7 @@ returns the error message one gets when one tries to drop an object.
 
 .. c:function:: void set_droppable( int g )
 
-set_droppable(1) makes an object droppable, while set_droppable(0) makes
+g == 1 makes an object droppable, while g == 0 makes
 it not droppable.  If a function or string is passed, this has the
 same effect as calling set_dropmsg().
 

@@ -7,7 +7,8 @@ Documentation for the mudinfo command in */cmds/wiz/mudinfo.c*.
 Command
 =======
 
-$$see: mudlist
+See: `Command: mudlist <mudlist.html>`_ 
+
 USAGE::
 
 	 mudinfo <mudname>

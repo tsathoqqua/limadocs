@@ -17,9 +17,8 @@ Functions
 
 .. c:function:: void set_decay_action(mixed action)
 
-set_decay_action(string) causes 'string' to be printed this
-object decays.  set_decay_action(function) causes the function
-to be called instead.
+string argument - causes 'string' to be printed this object decays.  
+function argument -  causes the function to be called instead.
 
 
 

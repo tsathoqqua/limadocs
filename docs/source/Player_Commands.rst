@@ -12,8 +12,10 @@ Player Commands
 - `colours <player_command/colours.html>`_
 - `converse <player_command/converse.html>`_
 - `describe <player_command/describe.html>`_
+- `emoji <player_command/emoji.html>`_
 - `emote <player_command/emote.html>`_
 - `emoteapropos <player_command/emoteapropos.html>`_
+- `equip <player_command/equip.html>`_
 - `exits <player_command/exits.html>`_
 - `feedback <player_command/feedback.html>`_
 - `feelings <player_command/feelings.html>`_
@@ -35,6 +37,7 @@ Player Commands
 - `party <player_command/party.html>`_
 - `passwd <player_command/passwd.html>`_
 - `plan <player_command/plan.html>`_
+- `pouch <player_command/pouch.html>`_
 - `question <player_command/question.html>`_
 - `quests <player_command/quests.html>`_
 - `quit <player_command/quit.html>`_

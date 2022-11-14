@@ -7,11 +7,13 @@ Documentation for the score player command in */cmds/player/score.c*.
 Player Command
 ==============
 
+See: `stats <stats.html>`_ 
+
 USAGE::
 
-		score
+	score
 
-Tells you your score.
+ Shows you various details about yourself.
 
 
 

@@ -7,7 +7,8 @@ Documentation for the bk command in */trans/cmds/bk.c*.
 Command
 =======
 
-$$see: rst
+See: `Command: rst <rst.html>`_ 
+
 USAGE::
 
 	bk <filename>

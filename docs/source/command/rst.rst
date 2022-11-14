@@ -7,7 +7,8 @@ Documentation for the rst command in */trans/cmds/rst.c*.
 Command
 =======
 
-$$see: bak
+See: `Command: bak <bak.html>`_ 
+
 USAGE::
 
 	rst <filename>

@@ -22,7 +22,6 @@ Functions
 
 .. c:function:: void set_source_of( string what  )
 
-set_source_of( string x )
 x must be a path name to a fluid object.
 new(x) is what is moved into a container
 when the container is filled from here.
@@ -31,7 +30,6 @@ when the container is filled from here.
 
 .. c:function:: void set_fluid_disturb_action( mixed x )
 
-set_fluid_disturb_action( x )
 'x' is evaluated whenever the fluid is
 disturbed.  As a string, x is passed
 to my_action.  If you don't want any
@@ -41,7 +39,6 @@ disturb_action, set x to 0.
 
 .. c:function:: void set_fill_action( string x )
 
-set_fill_action( string x )
 'x' is passed to simple_action.
 $o in the string represents the fluid container.
 $o1 represents the fluid source.

@@ -86,7 +86,7 @@ Returns the default relation for the container.  See set_default_relation.
 
 
 
-.. c:function:: varargs int query_capacity(string relation)
+.. c:function:: varargs float query_capacity(string relation)
 
 Returns the amount of mass currently attached to a container
 
