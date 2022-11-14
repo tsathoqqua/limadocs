@@ -2,74 +2,38 @@
 Didlog
 ======
 
-- **Wed Mar 30 10:06:37 2022**: *Tsath*
- made 'scan' more copy/paste friendly.
-- **Wed Mar 30 11:23:37 2022**: *Tsath*
- added domain_file() and author_file() in master to support new driver feature
-- **Wed Mar 30 11:23:50 2022**: *Tsath*
- set wizard shell and player shell to have ANSI on by default.
-- **Sun Apr  3 10:42:26 2022**: *Tsath*
- added a user menu on login.
-- **Sun Apr  3 11:59:43 2022**: *Tsath*
- updated people with 'u' flag to show not just body name but userid.
-- **Tue Apr  5 22:08:24 2022**: *Tsath*
- added remove and MAX chars functionality to user menu.
-- **Wed Apr  6 19:17:47 2022**: *Tsath*
- made sure admtool is aware of user menu functionality, and now cleans properly
-- **Tue Apr 19 18:44:31 2022**: *Tsath*
- updated the 'skills' command and SKILL_D.
-- **Tue Apr 19 18:44:57 2022**: *Tsath*
- added a 'simplify' command for people not wanting ASCII graphics but a more simple UI. Useful for visually impaired.
-- **Tue Apr 19 18:45:21 2022**: *Tsath*
- added M_WIDGETS for some useful ASCII graphics tools.
-- **Tue Apr 19 19:14:13 2022**: *Tsath*
- updated ADVERSARY to have working body limbs, and added an 'hp' command to show limb hp.
-- **Fri Oct 21 19:24:58 2022**: *Tsath*
- added a dedicated daemon for reStructured Text (RST_D). Losely based on Rajo's contribution.
-- **Sun Oct 23 13:16:25 2022**: *Tsath*
- fixed DOC_D to correctly clear admin commands before appending to them.
-- **Sun Oct 23 13:17:00 2022**: *Tsath*
- added files to /help/rst/ for the RST documentation.
-- **Sun Oct 23 13:25:52 2022**: *Tsath*
- made HELP_D ignore .rst files.
-- **Sun Oct 23 13:34:50 2022**: *Tsath*
- moved 'locate' to 'ilocate' and 'findfile' to 'locate' and updated Cmd_rules.
-- **Sun Oct 23 13:39:07 2022**: *Tsath*
- added RST daemon control to admtool.
-- **Sun Oct 23 15:13:41 2022**: *Tsath*
- updated ANSI_D with new codes.
-- **Mon Oct 24 19:21:08 2022**: *Tsath*
- moved TEAM_D to PARTY_D and 'team' cmd to 'party'.
-- **Tue Oct 25 12:04:12 2022**: *Tsath*
- added metric/imperial to config.h and changed std/object/mass.c to use selected system.
-- **Tue Oct 25 12:04:47 2022**: *Tsath*
- added 3 new simul_efun functions to string.c
-- **Sun Oct 30 20:05:28 2022**: *Tsath*
- moved punctuate() function to string sefuns.
-- **Sun Oct 30 20:24:39 2022**: *Tsath*
- removed trim_spaces() as a sefun, and replaced it with the efun trim() in entire mudlib.
-- **Wed Nov  2 17:44:25 2022**: *Tsath*
- updated USER switch_body() function to actually work with user menu.
-- **Mon Nov  7 22:31:55 2022**: *Tsath*
- updated mudlib documentation with latest FluffOS documentation instead of ancient MudOS docs.
-- **Wed Nov  9 18:27:01 2022**: *Tsath*
- added a shortcut for /domains/ (^) like /wiz/ (~)
-- **Wed Nov  9 19:08:57 2022**: *Tsath*
- fixed M_VENDOR, armor and wield base in adversary to take relative file paths
-- **Wed Nov  9 19:16:50 2022**: *Tsath*
- added 'wheremobs' and 'killmobs' commands for mob management.
-- **Wed Nov  9 19:34:38 2022**: *Tsath*
- added 'livings' for a mob overview.
-- **Wed Nov  9 19:35:00 2022**: *Tsath*
- fixed inconsistent use of MESSAGES_D->query_messages() and get_messages() in the mudlib.
-- **Thu Nov 10 13:15:21 2022**: *Tsath*
- patched a bug in report_context() in master that Stanach found.
-- **Thu Nov 10 20:15:59 2022**: *Tsath*
- fixed some modal stack issues with user menu and the shell.
-- **Fri Nov 11 21:58:35 2022**: *Tsath*
- added a fix for an item duplication bug for items added at setup() but restored when saved to the body.
-- **Sat Nov 12 17:44:23 2022**: *Tsath*
- added EMOJI_D, 'emoji' cmd for player control and admtool for maintaining emoji list.
-- **Sat Nov 12 19:04:24 2022**: *Tsath*
- installed LOOT_D along with GEM, art_artifact and M_DICE updates.
-
+- **Wed Mar 30 10:06:37 2022**: *Tsath*  made 'scan' more copy/paste friendly.
+- **Wed Mar 30 11:23:37 2022**: *Tsath*  added domain_file() and author_file() in master to support new driver feature
+- **Wed Mar 30 11:23:50 2022**: *Tsath*  set wizard shell and player shell to have ANSI on by default.
+- **Sun Apr  3 10:42:26 2022**: *Tsath*  added a user menu on login.
+- **Sun Apr  3 11:59:43 2022**: *Tsath*  updated people with 'u' flag to show not just body name but userid.
+- **Tue Apr  5 22:08:24 2022**: *Tsath*  added remove and MAX chars functionality to user menu.
+- **Wed Apr  6 19:17:47 2022**: *Tsath*  made sure admtool is aware of user menu functionality, and now cleans properly
+- **Tue Apr 19 18:44:31 2022**: *Tsath*  updated the 'skills' command and SKILL_D.
+- **Tue Apr 19 18:44:57 2022**: *Tsath*  added a 'simplify' command for people not wanting ASCII graphics but a more simple UI. Useful for visually impaired.
+- **Tue Apr 19 18:45:21 2022**: *Tsath*  added M_WIDGETS for some useful ASCII graphics tools.
+- **Tue Apr 19 19:14:13 2022**: *Tsath*  updated ADVERSARY to have working body limbs, and added an 'hp' command to show limb hp.
+- **Fri Oct 21 19:24:58 2022**: *Tsath*  added a dedicated daemon for reStructured Text (RST_D). Losely based on Rajo's contribution.
+- **Sun Oct 23 13:16:25 2022**: *Tsath*  fixed DOC_D to correctly clear admin commands before appending to them.
+- **Sun Oct 23 13:17:00 2022**: *Tsath*  added files to /help/rst/ for the RST documentation.
+- **Sun Oct 23 13:25:52 2022**: *Tsath*  made HELP_D ignore .rst files.
+- **Sun Oct 23 13:34:50 2022**: *Tsath*  moved 'locate' to 'ilocate' and 'findfile' to 'locate' and updated Cmd_rules.
+- **Sun Oct 23 13:39:07 2022**: *Tsath*  added RST daemon control to admtool.
+- **Sun Oct 23 15:13:41 2022**: *Tsath*  updated ANSI_D with new codes.
+- **Mon Oct 24 19:21:08 2022**: *Tsath*  moved TEAM_D to PARTY_D and 'team' cmd to 'party'.
+- **Tue Oct 25 12:04:12 2022**: *Tsath*  added metric/imperial to config.h and changed std/object/mass.c to use selected system.
+- **Tue Oct 25 12:04:47 2022**: *Tsath*  added 3 new simul_efun functions to string.c
+- **Sun Oct 30 20:05:28 2022**: *Tsath*  moved punctuate() function to string sefuns.
+- **Sun Oct 30 20:24:39 2022**: *Tsath*  removed trim_spaces() as a sefun, and replaced it with the efun trim() in entire mudlib.
+- **Wed Nov  2 17:44:25 2022**: *Tsath*  updated USER switch_body() function to actually work with user menu.
+- **Mon Nov  7 22:31:55 2022**: *Tsath*  updated mudlib documentation with latest FluffOS documentation instead of ancient MudOS docs.
+- **Wed Nov  9 18:27:01 2022**: *Tsath*  added a shortcut for /domains/ (^) like /wiz/ (~)
+- **Wed Nov  9 19:08:57 2022**: *Tsath*  fixed M_VENDOR, armor and wield base in adversary to take relative file paths
+- **Wed Nov  9 19:16:50 2022**: *Tsath*  added 'wheremobs' and 'killmobs' commands for mob management.
+- **Wed Nov  9 19:34:38 2022**: *Tsath*  added 'livings' for a mob overview.
+- **Wed Nov  9 19:35:00 2022**: *Tsath*  fixed inconsistent use of MESSAGES_D->query_messages() and get_messages() in the mudlib.
+- **Thu Nov 10 13:15:21 2022**: *Tsath*  patched a bug in report_context() in master that Stanach found.
+- **Thu Nov 10 20:15:59 2022**: *Tsath*  fixed some modal stack issues with user menu and the shell.
+- **Fri Nov 11 21:58:35 2022**: *Tsath*  added a fix for an item duplication bug for items added at setup() but restored when saved to the body.
+- **Sat Nov 12 17:44:23 2022**: *Tsath*  added EMOJI_D, 'emoji' cmd for player control and admtool for maintaining emoji list.
+- **Sat Nov 12 19:04:24 2022**: *Tsath*  installed LOOT_D along with GEM, art_artifact and M_DICE updates.
