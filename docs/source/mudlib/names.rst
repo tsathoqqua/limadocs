@@ -9,7 +9,7 @@ Functions
 
 
 
-.. c:function:: nomask void set_proper_name(string str)
+.. c:function:: void set_proper_name(string str)
 
 Set the proper name of an object.  Objects with proper names never have
 adjectives added in front of their names.

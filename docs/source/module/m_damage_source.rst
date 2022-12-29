@@ -9,9 +9,27 @@ Functions
 
 
 
-.. c:function:: object secondary_weapon_part()
+.. c:function:: int query_to_hit_bonus(object target)
 
-Override this to include it in messages when the weapon is used.
+Queries the direct bonus chance to hit adversaries.
+
+
+
+.. c:function:: void set_to_hit_bonus(int x)
+
+Sets a direct bonus chance to hit adversaries.
+
+
+
+.. c:function:: void set_disarm_bonus(int x)
+
+Sets a direct bonus chance to disarm adversaries.
+
+
+
+.. c:function:: int query_damage_bonus(object target)
+
+Queries the direct damage bonus on adversaries.
 
 
 

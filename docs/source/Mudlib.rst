@@ -33,6 +33,7 @@ Mudlib
 - `money <mudlib/money.html>`_
 - `move <mudlib/move.html>`_
 - `moving_monster <mudlib/moving_monster.html>`_
+- `moving_room <mudlib/moving_room.html>`_
 - `msg_recipient <mudlib/msg_recipient.html>`_
 - `multiple <mudlib/multiple.html>`_
 - `names <mudlib/names.html>`_

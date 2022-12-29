@@ -7,7 +7,7 @@ Documentation for the emoji player command in */cmds/player/emoji.c*.
 Player Command
 ==============
 
-See: `color <../ingame/color.html>`_ `colours <colours.html>`_ `ansi <ansi.html>`_ `emoji <emoji.html>`_ 
+See: `color <../ingame/color.html>`_ `colours <colours.html>`_ `mode <mode.html>`_ `frames <frames.html>`_ 
 
 USAGE::
 

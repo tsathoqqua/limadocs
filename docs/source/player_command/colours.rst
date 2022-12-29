@@ -7,7 +7,7 @@ Documentation for the colours player command in */cmds/player/colours.c*.
 Player Command
 ==============
 
-See: `ansi <ansi.html>`_ 
+See: `mode <mode.html>`_ `palette <palette.html>`_ 
 
 USAGE::
 
@@ -20,13 +20,14 @@ USAGE::
  Some of types items displayed in the mud are allocated a "colour name",
  which is then given a default "colour value"
  eg "say" could be given a value "blue", in which case all "says" would
- appear in blue
- If you wish to have them appear in red, you would use :
- colours say red
- You can also use "bold" as a colour, with comma if necessary - eg
- colour say bold,red
- You can clear your personalised setting, and revert to the mud default, with
- colours remove say
+ appear in blue. If you wish to have them appear in red, you would use::
+     colours say red
+ You can also use "bold" as a colour, with comma if necessary - eg::
+     colour say bold,red
+ You can clear your personalised setting, and revert to the mud default, with::
+     colours remove say
+ Instead of colour names, check the 'palette' command and use numbers from there,
+ from 001 to 255.
 
 
 

@@ -7,13 +7,13 @@ Documentation for the m_smartmove module in */std/modules/m_smartmove.c*.
 Hooks
 =====
 
-Called when a person successfully leaves a room in a certain direction
+ Called when a person successfully leaves a room in a certain direction
 (called by the room).  The return value is ignored.  The person moving
-is given by this_body().  The direction is passed as an argument.
-Called when a person successfully enters a room from a direction.
-The return value is ignored. The person moving is given by this_body(). 
-The direction is passed as an argument.
-varargs int move_to(string dest, mixed dir, mixed exit, mixed enter)
+ is given by this_body().  The direction is passed as an argument.
+ Called when a person successfully enters a room from a direction.
+ The return value is ignored. The person moving is given by this_body().
+ The direction is passed as an argument.
+ varargs int move_to(string dest, mixed dir, mixed exit, mixed enter)
 Functions
 =========
 

@@ -9,8 +9,8 @@ Command
 
 USAGE::
 
-	findfile <target>
-	findfile -u
+	locate <target>
+	locate -u
 
 Find any file containing the specified target within its name.
 

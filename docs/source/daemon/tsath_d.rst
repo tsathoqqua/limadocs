@@ -1,8 +1,8 @@
-******************
-Daemon xterm256_d
-******************
+***************
+Daemon tsath_d
+***************
 
-Documentation for the xterm256_d daemon in */daemons/xterm256_d.c*.
+Documentation for the tsath_d daemon in */daemons/tsath_d.c*.
 
 Module Information
 ==================

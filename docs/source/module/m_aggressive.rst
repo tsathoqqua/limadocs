@@ -9,11 +9,19 @@ Functions
 
 
 
-.. c:function:: protected void handle_attack(object who)
+.. c:function:: void aggressively_attack(object who)
+
+void aggressively_attack();
+Start the fight.
+
+
+
+.. c:function:: void handle_attack(object who)
 
 By default, this compares a random number to aggression_chance
 and starts attacking based upon them. This function might be
 overloaded to perform racial checks or something though.
+This function checks for whether combat is allowed in the room as well.
 
 
 
@@ -26,7 +34,7 @@ range 0 (never aggressive) to 100 (completely aggressive).
 
 .. c:function:: int query_aggressive()
 
-This function returns 0 for unaggressive monsters, or the chance of 
+This function returns 0 for unaggressive monsters, or the chance of
 aggression for aggressive monsters.
 
 

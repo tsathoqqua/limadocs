@@ -8,6 +8,8 @@ Module
 - `Module: m_ansi <module/m_ansi.html>`_
 - `Module: m_blockexits <module/m_blockexits.html>`_
 - `Module: m_bodystats <module/m_bodystats.html>`_
+- `Module: m_colours <module/m_colours.html>`_
+- `Module: m_companion <module/m_companion.html>`_
 - `Module: m_complete <module/m_complete.html>`_
 - `Module: m_complex_exit <module/m_complex_exit.html>`_
 - `Module: m_crafting <module/m_crafting.html>`_

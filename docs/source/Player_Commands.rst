@@ -3,7 +3,6 @@ Player Commands
 ***************
 
 - `adverbs <player_command/adverbs.html>`_
-- `ansi <player_command/ansi.html>`_
 - `biff <player_command/biff.html>`_
 - `brief <player_command/brief.html>`_
 - `bug <player_command/bug.html>`_
@@ -20,6 +19,7 @@ Player Commands
 - `feedback <player_command/feedback.html>`_
 - `feelings <player_command/feelings.html>`_
 - `finger <player_command/finger.html>`_
+- `frames <player_command/frames.html>`_
 - `groups <player_command/groups.html>`_
 - `help <player_command/help.html>`_
 - `hint <player_command/hint.html>`_
@@ -29,11 +29,14 @@ Player Commands
 - `inventory <player_command/inventory.html>`_
 - `mail <player_command/mail.html>`_
 - `menu <player_command/menu.html>`_
+- `metric <player_command/metric.html>`_
+- `mode <player_command/mode.html>`_
 - `money <player_command/money.html>`_
 - `mudlist <player_command/mudlist.html>`_
 - `news <player_command/news.html>`_
 - `newscore <player_command/newscore.html>`_
 - `nickname <player_command/nickname.html>`_
+- `palette <player_command/palette.html>`_
 - `party <player_command/party.html>`_
 - `passwd <player_command/passwd.html>`_
 - `plan <player_command/plan.html>`_

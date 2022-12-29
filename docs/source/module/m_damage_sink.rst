@@ -24,27 +24,29 @@ Query the current armor class of an object.  Higher is better.
 
 .. c:function:: void set_resist(string type, int amt)
 
-Specifies that for damage of type 'type', the armor class should be increased
-by 'amt'
+set_resist(type, amt) specifies that for damage of type 'type', the armor
+class should be increased by 'amt'
 
 
 
 .. c:function:: void set_resistances(mapping x)
 
-Set all the resistances an armor possesses.
+void set_resistances(mapping) - Set all the resistances an armor
+possesses.
 
 
 
 .. c:function:: void set_weakness(string type, int amt)
 
-Specifies that for damage of type 'type', the armor class should be decreased 
-by 'amt'
+set_weakness(type, amt) specifies that for damage of type 'type', the armor
+class should be decreased by 'amt'
 
 
 
 .. c:function:: void set_weaknesses(mapping weak)
 
-Set all the weaknesses an armor possesses.
+void set_weaknesses(mapping) - Set all the weaknesses an armor
+possesses.
 
 
 

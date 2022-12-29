@@ -9,6 +9,30 @@ Functions
 
 
 
+.. c:function:: void set_drops_pelt(string type)
+
+void set_drops_pelt(string type);
+Sets the pelt type dropped by this adversary. This is normally
+only used for beasts that you would expect to drop pelts.
+In your giraffe, do:
+   set_drops_pelt("giraffe skin");
+
+
+
+.. c:function:: string query_drops_pelt()
+
+string query_drops_pelt()
+Returns the type of pelt dropped
+
+
+
+.. c:function:: void override_corpse_descriptions(string singular, string plural)
+
+void void override_corpse_descriptions(string singular,string plural)
+Sets new description for corpses. Not everyone is "lying around".
+
+
+
 .. c:function:: void set_corpse_long(string str)
 
 void set_corpse_long(string str);
