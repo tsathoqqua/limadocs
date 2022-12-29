@@ -1,0 +1,44 @@
+======
+Didlog
+======
+
+- **Mon Nov 14 12:20:28 2022**: *Tsath*  changed mudlib version to 1.1 alpha 1. Changes are coming.
+- **Mon Nov 14 12:22:50 2022**: *Tsath*  added new shortcut for "/domains", '^'. Works in prompts, cd, and all file references. E.g. "^std/monsters/troll".
+- **Mon Nov 14 12:24:12 2022**: *Tsath*  did a lot of work on 'equip' 'score' 'hp' and added new verbs 'salvage' and 'craft'.
+- **Mon Nov 14 12:26:03 2022**: *Tsath*  updated BODY and ADVERSARY with fixes for conflicting options from combat_config.h
+- **Mon Nov 14 12:26:36 2022**: *Tsath*  implemented working XP, levels, advancement, karma system.
+- **Mon Nov 14 12:26:53 2022**: *Tsath*  made sure wounds system works with limbs system and normal classic HP (and it does now).
+- **Mon Nov 14 12:28:58 2022**: *Tsath*  did updates to DAMAGE_D.
+- **Mon Nov 14 12:29:14 2022**: *Tsath*  added a CRAFTING_D that works with M_SALVAGEABLE.
+- **Mon Nov 14 17:20:15 2022**: *Tsath*  extended the admtool to be able to reset passwords for users.
+- **Mon Nov 14 19:53:35 2022**: *Tsath*  changed didlog to output RST instead of old style HTML
+- **Mon Nov 14 22:23:44 2022**: *Tsath*  fixed the elevator in Wizhall and added ELEVATOR. Now also allows relative paths.
+- **Wed Nov 16 22:07:49 2022**: *Tsath*  added M_ASSISTANCE, M_COMPANION, M_DURABILITY and updated the modules, actions, aggressive, vendor, wearable and wieldable.
+- **Thu Nov 17 10:24:49 2022**: *Tsath*  added an auto created panel for the elevators with a button overview.
+- **Thu Nov 17 12:09:47 2022**: *Tsath*  fixed do_look_at_str() falling through to BASE_ROOM.
+- **Thu Nov 17 16:48:56 2022**: *Tsath*  extended set_room_chats() in BASE_ROOM to have a base chance to chat.
+- **Sat Nov 19 12:31:54 2022**: *Tsath*  added auto login in USER_MENU that can be interrupted by interactions.
+- **Sat Nov 19 15:07:49 2022**: *Tsath*  added durability to weapons and armors, and updated standard armors and weapons.
+- **Sat Nov 19 15:08:06 2022**: *Tsath*  updated combat to be more interesting with stuns and prone.
+- **Sat Nov 19 15:08:32 2022**: *Tsath*  moved some objects in ^std to subfolders.
+- **Sat Nov 19 15:09:30 2022**: *Tsath*  updated BODY_D to give an idea of limb sizes.
+- **Sun Nov 20 16:19:24 2022**: *Tsath*  updated the load verb
+- **Sun Nov 20 18:47:26 2022**: *Tsath*  updated RANGED_WEAPON and AMMUNITION with new features. Examples under ^std/ammo/ ^std/weapon/.
+- **Sun Nov 20 18:47:36 2022**: *Tsath*  says: We have guns. Lots of guns.
+- **Sun Nov 20 18:47:54 2022**: *Tsath*  updated the remove and wield verbs.
+- **Sun Nov 20 18:48:21 2022**: *Tsath*  updated ADVERSARY with better support for guns, reloading and fixes for lots of old defunct code.
+- **Wed Nov 23 22:21:22 2022**: *Tsath*  moved 'ansi' cmd to 'mode'.
+- **Mon Nov 28 17:40:47 2022**: *Tsath*  removed define from ^std/shopkeeper.c and changed to relative path.
+- **Tue Nov 29 21:12:26 2022**: *Tsath*  added further capabilities to set_objects() in CONTAINER.
+- **Tue Dec  6 17:47:11 2022**: *Tsath*  added option in config.h to have players drop their equipment when they die.
+- **Tue Dec  6 17:47:19 2022**: *Tsath*  fixed LOOT_D corpse connection.
+- **Tue Dec  6 17:47:26 2022**: *Tsath*  added 'get all from corpse' functionality.
+- **Tue Dec  6 17:59:41 2022**: *Tsath*  changed 'locate' to give correct syntax information.
+- **Tue Dec  6 18:35:19 2022**: *Tsath*  made NEWS_D create default newsgroups so it does not rely on a .o file being there.
+- **Wed Dec 14 18:53:14 2022**: *Tsath*  removed M_ANSI and replaced with M_COLOURS. This new module relies only on XTERM256_D and not on ANSI_D.
+- **Thu Dec 22 20:37:05 2022**: *Tsath*  changed default MORE lines from 20 to 30.
+- **Thu Dec 29 11:30:18 2022**: *Tsath*  fixed individual colours in XTERM256_D.
+- **Thu Dec 29 11:30:42 2022**: *Tsath*  thanks Gesslar for fixing prompt issues with line breaks and a multitude of other issues regarding input and wrapping.
+- **Thu Dec 29 11:30:56 2022**: *Tsath*  fixed first time account login issue.
+- **Thu Dec 29 11:31:31 2022**: *Tsath*  added /obj/mudlib/frame for creating appealing frames for interfaces. Integrates with 'frames' command.
+- **Thu Dec 29 11:31:31 2022**: *Tsath*  added a new user interface submenu to the player menu 'menu'.

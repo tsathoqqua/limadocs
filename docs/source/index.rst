@@ -5,12 +5,11 @@ Welcome to LIMA Mudlib Documentation
 **LIMA** (ˈlaɪmə) is FluffOS based Mudlib originally developed in the 1990's.
 
 Check out the `usage <Usage.html>`_ page for further information, including
-how to `install <Installation.html>`_ the project. There is also specific 
-documentation on how `messaging <documentation/Messaging.html>`_ works. Other
-topics will be coming.
+how to `install <Installation.html>`_ the project.
 
 Latest changes
 ==============
+- `Changes in 1.1a1 (Currently Alpha version) <versions/11a1.html>`_
 - `Changes in 1.0b6 <versions/10b6.html>`_
 
 Commands
