@@ -7,10 +7,10 @@ Documentation for the m_drink_container module in */std/modules/m_drink_containe
 Module Information
 ==================
 
-This module is almost obsolete.
-Use m_fluid_container instead, unless
-you want no fluid associated with your
-drink container.
+ This module is almost obsolete.
+ Use m_fluid_container instead, unless
+ you want no fluid associated with your
+ drink container.
 
 Functions
 =========

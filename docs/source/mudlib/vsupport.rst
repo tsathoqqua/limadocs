@@ -19,18 +19,18 @@ in other player's/monster's inventories.
 
 .. c:function:: int default_object_checks()
 
-Nearly all direct/indirect parsing functions should call this.  It checks to 
+Nearly all direct/indirect parsing functions should call this.  It checks to
 make sure that the object is visible to the enactor, amongst other things.
 
 
 
-.. c:function:: mixed direct_verb_rule(string verb,string rule,mixed args...)
+.. c:function:: mixed direct_verb_rule(string verb, string rule, mixed args...)
 
 The default method of handling direct objects with verbs.
 
 
 
-.. c:function:: int do_verb_rule(string verb,string rule,mixed args...)
+.. c:function:: int do_verb_rule(string verb, string rule, mixed args...)
 
 The default handling for all verbs.
 
@@ -58,7 +58,7 @@ Leave the relation checks to indirect_
 
 .. c:function:: mixed direct_put_obj_wrd_obj(object ob1, object ob2)
 
-Handle parser checks for "put OBJ WRD OBJ"     
+Handle parser checks for "put OBJ WRD OBJ"
 
 
 
@@ -78,14 +78,14 @@ Most of the work is done in try_to_acquire.
 
 .. c:function:: mixed direct_look_at_obj(object ob)
 
-Whether or not an object can be looked at.  If there's no short description, 
+Whether or not an object can be looked at.  If there's no short description,
 or it's not visible to the looker, return 0.
 
 
 
 .. c:function:: mixed direct_look_obj(object ob)
 
-Whether or not an object can be looked at.  If there's no short description, 
+Whether or not an object can be looked at.  If there's no short description,
 or it's not visible to the looker, return 0.
 
 
@@ -114,7 +114,7 @@ Handle parser checks for "smell OBJ" rule.
 
 
 
-.. c:function:: mixed direct_give_obj_to_liv( object obj, object liv )
+.. c:function:: mixed direct_give_obj_to_liv(object obj, object liv)
 
 Handle parser checks for "give OBJ to LIV" rule, where we are the object
 being given.
@@ -141,7 +141,7 @@ Handle parser checks for "buy OBJ from LIV"
 
 .. c:function:: mixed direct_drop_obj(object ob)
 
-Handle parser checks for "drop OBJ" 
+Handle parser checks for "drop OBJ"
 
 
 
@@ -169,100 +169,98 @@ Handle parser checks for "throw OBJ at OBJ"
 
 
 
-.. c:function:: mixed direct_pull_obj( object ob )
+.. c:function:: mixed direct_pull_obj(object ob)
 
 Handle parser checks for "pull OBJ"
 
 
 
-.. c:function:: mixed direct_press_obj( object ob )
+.. c:function:: mixed direct_press_obj(object ob)
 
 Parser check for "press OBJ"
 
 
 
-.. c:function:: mixed direct_search_obj( object ob )
+.. c:function:: mixed direct_search_obj(object ob)
 
 Parser check for "search OBJ"
 
 
 
-.. c:function:: mixed direct_search_obj_for_obj( object ob1, object ob2 )
+.. c:function:: mixed direct_search_obj_for_obj(object ob1, object ob2)
 
 Default
 
 
 
-.. c:function:: mixed indirect_search_obj_for_obj( object ob1, object ob2 )
+.. c:function:: mixed indirect_search_obj_for_obj(object ob1, object ob2)
 
 Default
 
 
 
-.. c:function:: mixed indirect_search_obj_with_obj( object ob1, object ob2 )
+.. c:function:: mixed indirect_search_obj_with_obj(object ob1, object ob2)
 
 Default.
 
 
 
-.. c:function:: mixed direct_search_obj_with_obj( object ob1, object ob2 )
+.. c:function:: mixed direct_search_obj_with_obj(object ob1, object ob2)
 
 Default
 
 
 
-.. c:function:: mixed direct_search_for_str_in_obj( string str, object ob )
+.. c:function:: mixed direct_search_for_str_in_obj(string str, object ob)
 
 Default
 
 
 
-.. c:function:: mixed direct_search_obj_for_str( object ob, string str )
+.. c:function:: mixed direct_search_obj_for_str(object ob, string str)
 
 Default
 
 
 
-.. c:function:: mixed direct_search_obj_with_obj_for_str( object ob, string str )
+.. c:function:: mixed direct_search_obj_with_obj_for_str(object ob, string str)
 
 Default
 
 
 
-.. c:function:: mixed indirect_search_obj_with_obj_for_str( object ob1, object ob2,  string str )
+.. c:function:: mixed indirect_search_obj_with_obj_for_str(object ob1, object ob2, string str)
 
 
 
 
-.. c:function:: mixed direct_search_for_str_in_obj_with_obj( string str, object ob1, object ob2 )
-
-Default
-
-
-
-.. c:function:: mixed indirect_search_for_str_in_obj_with_obj( string str, object ob1, object ob2 )
-
-Default 
-
-
-
-.. c:function:: mixed direct_search_obj_for_str_with_obj( object ob1, string str, object ob2 )
+.. c:function:: mixed direct_search_for_str_in_obj_with_obj(string str, object ob1, object ob2)
 
 Default
 
 
 
-.. c:function:: mixed indirect_search_obj_for_str_with_obj( object ob1, string str, object ob2 )
+.. c:function:: mixed indirect_search_for_str_in_obj_with_obj(string str, object ob1, object ob2)
 
 Default
 
 
 
-.. c:function:: mixed direct_listen_to_obj( object obj )
+.. c:function:: mixed direct_search_obj_for_str_with_obj(object ob1, string str, object ob2)
 
 Default
 
-.. note:: shouldn't these to only be in coins? (line 213)
-.. note:: This DEFINATELY shouldn't be here.  Should be in living.c (line 219)
+
+
+.. c:function:: mixed indirect_search_obj_for_str_with_obj(object ob1, string str, object ob2)
+
+Default
+
+
+
+.. c:function:: mixed direct_listen_to_obj(object obj)
+
+Default
+
 
 *File generated by LIMA reStructured Text daemon.*

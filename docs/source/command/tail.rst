@@ -12,8 +12,8 @@ USAGE::
 	tail <file(s)>
 	tail -n<number> <files>
 
- Prints out the last few lines of a file.
-Optional -n flag for number of lines to display (default 10).
+  Prints out the last few lines of a file.
+ Optional -n flag for number of lines to display (default 10).
 
 
 

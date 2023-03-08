@@ -12,14 +12,14 @@ USAGE::
 	 start
 	start <path>
 
-This command will show you where you are currently starting
-or allow you to change your start location if you supply it with a path.
+ This command will show you where you are currently starting
+ or allow you to change your start location if you supply it with a path.
 
-start
-You start at: /wiz/zifnab/workroom
+ start
+ You start at: /wiz/zifnab/workroom
 
-start /domains/std/wizroom
-OK, you now start at: /domains/std/wizroom
+ start /domains/std/wizroom
+ OK, you now start at: /domains/std/wizroom
 
 
 

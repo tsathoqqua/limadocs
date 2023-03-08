@@ -13,16 +13,16 @@ USAGE::
 
 	emotem @<target> <message>
 
-Sends a targetted message, using the M_MESSAGE syntax (as for souls).
-As with other emotes, the senders name is prepended as part of the message.
-If the target cannot be found, it is ignored - ie the message is treated
-as a "simple_action" - so presence of $t in the message would cause error.
+ Sends a targetted message, using the M_MESSAGE syntax (as for souls).
+ As with other emotes, the senders name is prepended as part of the message.
+ If the target cannot be found, it is ignored - ie the message is treated
+ as a "simple_action" - so presence of $t in the message would cause error.
 
 
 >echom @fred $vtest the emotem command on $t
 
 >You test the echom command on Fred
-and Fred and onlookers would see suitably adjusted versions.
+ and Fred and onlookers would see suitably adjusted versions.
 
 
 

@@ -12,7 +12,7 @@ Functions
 .. c:function:: void set_max_health(int x)
 
 void set_max_health(int x);
-Set the maximum number of hit points of a monster, and also set it's 
+Set the maximum number of hit points of a monster, and also set it's
 hit points to the new max.
 
 
@@ -56,7 +56,7 @@ Makes us alive again!
 
 .. c:function:: void update_health()
 
-Correct the health if necessary 
+Correct the health if necessary
 
 
 
@@ -81,9 +81,8 @@ Heal us completely.
 
 
 
-.. c:function:: int badly_wounded()
+.. c:function:: string badly_wounded()
 
-int badly_wounded();
 Returns 1 if we're nearing death.
 
 

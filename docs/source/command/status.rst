@@ -11,7 +11,7 @@ USAGE::
 
 	status
 
-Displays detailed info on system resources used.
+ Displays detailed info on system resources used.
 
 
 

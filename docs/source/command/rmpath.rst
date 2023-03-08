@@ -13,7 +13,7 @@ USAGE::
 
 	rmpath <directory>
 
-This command will remove a path from your current exec paths.
+ This command will remove a path from your current exec paths.
 
 
 

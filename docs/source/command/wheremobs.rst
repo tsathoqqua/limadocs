@@ -11,7 +11,7 @@ USAGE::
 
 	wheremobs
 
-Where are the mobs?
+ Where are the mobs?
 
 
 

@@ -10,7 +10,7 @@ Command
  Remove a post from a bulletin board
  Remove equipment
  Remove other things
- See also: boards 
+ See also: boards
 
 
 

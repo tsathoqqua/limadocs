@@ -9,14 +9,14 @@ Player Command
 
 USAGE	title [new title]
 
-without giving it a new title, shows you what your title is.
-When you give it a new title, use $N for where you want your name to be.
+ without giving it a new title, shows you what your title is.
+ When you give it a new title, use $N for where you want your name to be.
 
-For example:
-  title $N rocks!
+ For example:
+   title $N rocks!
 
-And then when I type 'title' I see:
-  Rust rocks!
+ And then when I type 'title' I see:
+   Rust rocks!
 
 
 

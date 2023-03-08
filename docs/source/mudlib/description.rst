@@ -4,10 +4,6 @@ Mudlib *description*
 
 Documentation for the description mudlib in */std/object/description.c*.
 
-Hooks
-=====
-
-The returned strings are added on to the end of the long description.
 Functions
 =========
 
@@ -39,7 +35,7 @@ Note that duplicatep() objects return nothing.
 
 
 
-.. c:function:: protected void set_in_room_desc( string arg )
+.. c:function:: void set_in_room_desc(string arg)
 
 Set the description an object has when it is sitting in a room
 

@@ -24,7 +24,7 @@ Return the default enter message
 .. c:function:: void set_default_exit_message(mixed arg)
 
 Set the default exit message for all exits.
-The argument can be a string, or function pointer 
+The argument can be a string, or function pointer
 
 
 
@@ -51,8 +51,8 @@ Return the defaut check
 
 .. c:function:: void set_default_error(mixed value)
 
-Set the default error message (the message given when someone goes a 
-direction with no exit).  This should be a string or a function ptr 
+Set the default error message (the message given when someone goes a
+direction with no exit).  This should be a string or a function ptr
 returning a string.
 
 
@@ -72,7 +72,7 @@ Returns the error default error message.
 .. c:function:: varargs string *query_exit_directions(int show_hidden)
 
 Return all of the exit directions controlled by the exit object
-The optional argument determines whether hidden exits are included in this 
+The optional argument determines whether hidden exits are included in this
 list.  If nonnull, they are included
 
 
@@ -195,7 +195,7 @@ described in the exits doc.
 
 
 
-.. c:function:: void set_exits( mapping new_exits )
+.. c:function:: void set_exits(mapping new_exits)
 
 Sets the exit mapping of a room.  The keys should be exit names, the values
 should be either filenames or more complex structures described in the
@@ -203,21 +203,21 @@ exits doc
 
 
 
-.. c:function:: void set_hidden_exits( string *exits_list ... )
+.. c:function:: void set_hidden_exits(string *exits_list...)
 
 This is the list of exits to NOT be shown to the mortals in the room.
-If "all" is any of the arguements in exits_list all exits for the object 
+If "all" is any of the arguements in exits_list all exits for the object
 will be marked as hidden regardless to the rest of the arguments.
 
 
 
-.. c:function:: void add_hidden_exit( string *exits_list ... )
+.. c:function:: void add_hidden_exit(string *exits_list...)
 
 Make a given exit direction a hidden exit.  See set_hidden_exits
 
 
 
-.. c:function:: void remove_hidden_exit( string *exits_list ... )
+.. c:function:: void remove_hidden_exit(string *exits_list...)
 
 Make a given exit direction no longer a hidden exit.  See set_hidden_exits
 

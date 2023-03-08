@@ -13,7 +13,7 @@ USAGE::
 
 	find <pattern> <files>
 
-Display lines containing match to specified target pattern, within specified files.
+ Display lines containing match to specified target pattern, within specified files.
 
 
 

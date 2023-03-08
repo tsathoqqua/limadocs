@@ -13,7 +13,7 @@ USAGE::
 
 	vis
 
-This command will let you turn visible to players
+ This command will let you turn visible to players
 
 
 

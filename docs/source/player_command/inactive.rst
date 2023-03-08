@@ -9,8 +9,8 @@ Player Command
 
 USAGE	inactive
 
-Puts you into inactive mode. This lets people know that you are
-idling.  Hitting return takes you out of it when you are in it.
+ Puts you into inactive mode. This lets people know that you are
+ idling.  Hitting return takes you out of it when you are in it.
 
 
 

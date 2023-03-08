@@ -17,7 +17,7 @@ Any 'get' function for the flag set is also used.
 
 
 
-.. c:function:: private void set_flags(int which, int state)
+.. c:function:: void set_flags(int which, int state)
 
 
 set_flags(which, state) sets the flag specified by 'which', which includes
@@ -27,11 +27,7 @@ called.
 
 
 
-.. c:function:: varargs nomask void configure_set(
-  int set_key,
-  int is_non_persistent,
-  function change_func
-)
+.. c:function:: varargs nomask void configure_set(int set_key, int is_non_persistent, function change_func)
 
 configure_set allows one to specify whether a flag set is persistent,
 and a function that can be called when a flag changes.

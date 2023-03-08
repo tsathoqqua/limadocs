@@ -18,8 +18,8 @@ Update the state of both this door and its sibling.
 
 .. c:function:: void update_sibling()
 
-After a door is opened or closed, this is called, and in turn calls 
-do_on_open/close() in the door and its sibling. 
+After a door is opened or closed, this is called, and in turn calls
+do_on_open/close() in the door and its sibling.
 See also m_sibling::update_sibling()
 
 
@@ -32,7 +32,7 @@ Called when the door is closed.
 
 .. c:function:: void set_door_direction(string direction)
 
-Set the direction name the door uses.  This is also the name of the 
+Set the direction name the door uses.  This is also the name of the
 resulting exit.
 
 
@@ -50,11 +50,11 @@ Return the destination of the door
 
 
 
-.. c:function:: void setup_exits(string dir,string room)
+.. c:function:: void setup_exits(string dir, string room)
 
-Set the name of the direction and the location to which the door's exit 
+Set the name of the direction and the location to which the door's exit
 will lead.
-DEPRICATED! -- Use set_door_destination() and set_door_description() 
+DEPRICATED! -- Use set_door_destination() and set_door_description()
                instead.
 
 
@@ -62,11 +62,11 @@ DEPRICATED! -- Use set_door_destination() and set_door_description()
 .. c:function:: void setup_door(string ident, string dir, string room)
 
 Set up the key parts of the door.
-The first argument is the string to which the door responds and should 
-match its sibling, the second argument is the direction of the exit the 
+The first argument is the string to which the door responds and should
+match its sibling, the second argument is the direction of the exit the
 door covers, and the third argument is the object to which the exit leads.
-This should be called only once, from setup(). 
-DEPRECATED! -- Use set_door_destination, set_door_direction(), and 
+This should be called only once, from setup().
+DEPRECATED! -- Use set_door_destination, set_door_direction(), and
                set_sibling_ident() instead.
 
 

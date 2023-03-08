@@ -11,14 +11,14 @@ USAGE::
 
 	 lightme <number>
 
-This command will allow any wizard to turn himself into a light source,
-thus illuminating any dark room he is in.
-You can also darken a lit room into a dark room by using a negative number,
-and turning into a light sink.
+ This command will allow any wizard to turn himself into a light source,
+ thus illuminating any dark room he is in.
+ You can also darken a lit room into a dark room by using a negative number,
+ and turning into a light sink.
 
-The number 1 should suffice to illuminate dark rooms, and -1 to darken
-lit ones (unless another wizard is present, trying the same thing).
-To clear the effect, use "lightme 0".
+ The number 1 should suffice to illuminate dark rooms, and -1 to darken
+ lit ones (unless another wizard is present, trying the same thing).
+ To clear the effect, use "lightme 0".
 
 
 

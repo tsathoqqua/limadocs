@@ -9,7 +9,7 @@ Module Information
 
 
  Module designed to allow objects to follow other moving objects.
- This module requires functionality from M_SMARTMOVE, M_TRIGGERS and 
+ This module requires functionality from M_SMARTMOVE, M_TRIGGERS and
  M_ACTIONS.
 
 Functions
@@ -21,7 +21,7 @@ Functions
 
 Set the names of the objects that the object will follow.
 Allowable arguments are strings, objects or function pointers.
-Strings must be an id of the object which you want to have 
+Strings must be an id of the object which you want to have
 followed.
 If a function pointer is used it must return a string, object
 or an array of objects and strings.  An argument of this_object
@@ -82,7 +82,7 @@ Returns 1 if the object is currently following another object
 
 If there is no current follow, or the current follow is not present.
 The new follow is determined by the follow_search
-:TODO 
+: TODO
 perhaps add something to allow weighted choices for follows?
 
 

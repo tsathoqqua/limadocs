@@ -11,8 +11,8 @@ USAGE::
 
 	tsh <filename>
 
- Reads the filename and performs the commands specified in the file
- Useful for when needing to perform a set of commands many times
+  Reads the filename and performs the commands specified in the file
+  Useful for when needing to perform a set of commands many times
 
 
 

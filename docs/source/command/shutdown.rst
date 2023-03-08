@@ -12,11 +12,11 @@ USAGE::
 	shutdown -t<time> <reason>
 	shutdown -c <reason>
 
-Shuts down the mud.
-Time specified (with -t flag) is delay in minutes to shutdown.
-Use the -c flag to cancel a shutdown
+ Shuts down the mud.
+ Time specified (with -t flag) is delay in minutes to shutdown.
+ Use the -c flag to cancel a shutdown
 
-Admin only
+ Admin only
 
 
 

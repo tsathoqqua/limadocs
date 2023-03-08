@@ -2,6 +2,7 @@
 Daemons
 *******
 
+- `Daemon: account_d <daemon/account_d.html>`_
 - `Daemon: auth <daemon/auth.html>`_
 - `Daemon: banish_d <daemon/banish_d.html>`_
 - `Daemon: channel <daemon/channel.html>`_

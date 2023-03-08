@@ -9,7 +9,7 @@ Functions
 
 
 
-.. c:function:: void set_text( string t )
+.. c:function:: void set_text(string t)
 
 Set the text for an object to be read.
 The argument can either be the actual text that will be used or a filename.
@@ -26,7 +26,7 @@ See set_text()
 
 .. c:function:: int has_entries()
 
-Boolean function which returns 1 if there are entries to be read on the 
+Boolean function which returns 1 if there are entries to be read on the
 object, otherwise 0.
 See set_entries()
 
@@ -42,7 +42,7 @@ a simple string.
 
 
 
-.. c:function:: void add_entry(mixed name,mixed contents)
+.. c:function:: void add_entry(mixed name, mixed contents)
 
 Add an additional entry that can be read to the already existing entries.
 The first argument is the name of the entry and the second is the contents
@@ -69,7 +69,7 @@ Clear all of the entires.  Both pages and synonyms.
 
 .. c:function:: mixed query_entry(string entry)
 
-Query the contents of an entry. 
+Query the contents of an entry.
 The returned value is not evaluated.
 The string argument can be the actual entry name or a synonym of it.
 
@@ -90,7 +90,7 @@ Raw dump of all the entry data.
 .. c:function:: void set_synonyms(mapping s)
 
 Set the synonyms for the readable entries.
-A mapping is passed as argument.  The key is the synonym, and the value is 
+A mapping is passed as argument.  The key is the synonym, and the value is
 the entry.
 
 
@@ -98,15 +98,15 @@ the entry.
 .. c:function:: void set_entry_synonyms(mapping s)
 
 Set the synonyms for the readable entries.
-A mapping is passed as argument.  The key is the synonym, and the value is 
+A mapping is passed as argument.  The key is the synonym, and the value is
 the entry.
 
 
 
-.. c:function:: void add_synonym(string syn,string entry)
+.. c:function:: void add_synonym(string syn, string entry)
 
-Add an additional synonym 
-The first argument is the synonym and the second argument is the entry to 
+Add an additional synonym
+The first argument is the synonym and the second argument is the entry to
 which it refers
 
 

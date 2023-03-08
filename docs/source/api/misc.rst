@@ -9,7 +9,7 @@ Functions
 
 
 
-.. c:function:: protected void set_didlog_time(int t)
+.. c:function:: void set_didlog_time(int t)
 
 Set the last time that the didlog was read for the user.
 

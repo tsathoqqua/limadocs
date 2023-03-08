@@ -12,7 +12,7 @@ USAGE::
 	: more <object(s)>
 	more <filename(s)>
 
- Prints out the lines of a file
+  Prints out the lines of a file
 
 
 

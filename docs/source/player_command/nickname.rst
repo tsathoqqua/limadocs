@@ -11,8 +11,8 @@ USAGE::
 
 	nickname <name>
 
-The nickname command is used to give yourself a nickname.
-Other players can then use that nickname in referring to you.
+ The nickname command is used to give yourself a nickname.
+ Other players can then use that nickname in referring to you.
 
 
 

@@ -11,7 +11,7 @@ USAGE::
 
 	admtool
 
-Invokes the menu-driven admtool, for code admin tasks.
+ Invokes the menu-driven admtool, for code admin tasks.
 
 
 

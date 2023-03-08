@@ -13,10 +13,10 @@ USAGE::
 
 	objpurge <filename>
 
-Removes the objects that would be returned from objfind
-ie those with the specified filename
+ Removes the objects that would be returned from objfind
+ ie those with the specified filename
 
-Admin Only
+ Admin Only
 
 
 

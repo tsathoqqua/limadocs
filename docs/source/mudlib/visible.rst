@@ -9,7 +9,7 @@ Functions
 
 
 
-.. c:function:: is_visible()
+.. c:function:: int is_visible()
 
 return 1 if the object can be seen.
 

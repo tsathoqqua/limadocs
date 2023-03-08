@@ -7,9 +7,9 @@ Documentation for the exits player command in */cmds/player/exits.c*.
 Player Command
 ==============
 
-Usage: exits
-Used with no arguments, this command shows you the possible exits for
-the particular room you are in.
+ Usage: exits
+ Used with no arguments, this command shows you the possible exits for
+ the particular room you are in.
 
 
 

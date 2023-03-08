@@ -13,7 +13,7 @@ USAGE::
 
 	socketinfo
 
-Displays details of sockets
+ Displays details of sockets
 
 
 

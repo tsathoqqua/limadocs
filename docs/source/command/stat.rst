@@ -11,9 +11,9 @@ USAGE::
 
 	stat <object>
 
-Gives you vital information about ANY object.
-This information will usually be the most significant variables,
-and their values.
+ Gives you vital information about ANY object.
+ This information will usually be the most significant variables,
+ and their values.
 
 
 

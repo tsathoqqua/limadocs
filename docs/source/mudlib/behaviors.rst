@@ -9,6 +9,47 @@ Functions
 
 
 
+.. c:function:: varargs int busy_with(object ob, string action, string bf, mixed args)
+
+int busy_with(object ob, string action, string function, mixed *args)
+Add a call back to a function and keep the player busy in the mean
+time. It's not possible to be busy with more than one thing at a time
+The action string is used for messaging like
+ You begin <action> ...
+ You are busy <action>!
+The function is called in the object given after BUSY_LENGTH with
+arguments args.
+BUSY_LENGTH is defined in /std/adversary/behaviors.
+
+This function returns 1 if the player was successfully set busy or
+0 if it failed.
+
+The function is the object is called and if it returns 1, everything
+is assumed well, but on 0 a message of:
+ You fail at <action>.
+is sent to the adversary.
+
+
+
+.. c:function:: void adversary_met(object who)
+
+Function is called when this adversary meets someone or something.
+You can override it to add your own things when it meets things,
+but remember to call
+ ::adversary_met(who);.
+This function is only called for ADVERSARY, not if you are a player.
+
+
+
+.. c:function:: void adversary_moved()
+
+Function is called when this adversary moves. You can override
+it to add your own things when it moves, but remember to call
+ ::adversary_moved();
+This function is only called for ADVERSARY, not if you are a player.
+
+
+
 .. c:function:: void flee()
 
 Try to run away. Does nothing by default. Overload this function to
@@ -20,6 +61,13 @@ modify the behavior of your monster when it panics.
 
 Try to surrender. Does nothing by default. Overload this function to
 modify the behavior of your monster when it panicss.
+
+
+
+.. c:function:: void try_heal()
+
+Called when the adversary is in combat and under pressure. This function
+consumes food and alchohol from inventory to stay alive.
 
 
 

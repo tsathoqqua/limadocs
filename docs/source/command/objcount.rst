@@ -14,16 +14,16 @@ USAGE::
 	objcount
 	objcount <minimum>
 
-This command is used to find objects that have more than one instance.
-The number of instances (including blueprint) for each qualifying item
-is printed along with that object.
+ This command is used to find objects that have more than one instance.
+ The number of instances (including blueprint) for each qualifying item
+ is printed along with that object.
 
-Note: the "blueprint" is counted as an instance in display,
-but not for determining whether the item qualifies.
+ Note: the "blueprint" is counted as an instance in display,
+ but not for determining whether the item qualifies.
 
-When the optional "minimum" parameter is used, this ignores any items
-where the number of instances (excluding blueprint) is less than the number
-Thus "objcounts 2" lists items with 3 or more non-blueprint instances,
+ When the optional "minimum" parameter is used, this ignores any items
+ where the number of instances (excluding blueprint) is less than the number
+ Thus "objcounts 2" lists items with 3 or more non-blueprint instances,
 
 
 

@@ -8,9 +8,9 @@ Module Information
 ==================
 
 
-The hook module is included as part of OBJECT, and allows a general method
-of allowing keeping track of and calling hooks, along with a method if
-specifying how multiple hooks should be resolved.
+ The hook module is included as part of OBJECT, and allows a general method
+ of allowing keeping track of and calling hooks, along with a method if
+ specifying how multiple hooks should be resolved.
 
 Functions
 =========
@@ -28,9 +28,9 @@ e.g.
 
 function my_hook = (: my_hook_func :);
 
-add_hook("foo", my_hook);
+ add_hook("foo", my_hook);
 
-remove_hook("foo", my_hook);
+ remove_hook("foo", my_hook);
 
 
 
@@ -53,8 +53,7 @@ state 'state'
 
 
 
-.. c:function:: varargs mixed call_hooks(string tag, mixed func, mixed start,
-			 mixed *args...)
+.. c:function:: varargs mixed call_hooks(string tag, mixed func, mixed start, mixed *args...)
 
 
 Call a set of hooks, with the specified method for resolving multiple

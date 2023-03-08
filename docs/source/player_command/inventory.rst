@@ -12,7 +12,7 @@ USAGE::
 	 i
 	inventory
 
-Shows you what you have in your inventory.
+ Shows you what you have in your inventory.
 
 
 

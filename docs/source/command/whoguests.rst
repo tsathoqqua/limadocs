@@ -11,10 +11,10 @@ USAGE::
 
 	whoguests
 
- This command lists the names of guests allowed for when the mud
- does not allow new players
+  This command lists the names of guests allowed for when the mud
+  does not allow new players
 
-Admin only
+ Admin only
 
 
 

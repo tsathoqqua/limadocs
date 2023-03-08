@@ -37,6 +37,7 @@ Mudlib
 - `msg_recipient <mudlib/msg_recipient.html>`_
 - `multiple <mudlib/multiple.html>`_
 - `names <mudlib/names.html>`_
+- `navigation <mudlib/navigation.html>`_
 - `non_object <mudlib/non_object.html>`_
 - `non_room <mudlib/non_room.html>`_
 - `object <mudlib/object.html>`_
@@ -47,8 +48,10 @@ Mudlib
 - `simple_slots <mudlib/simple_slots.html>`_
 - `size <mudlib/size.html>`_
 - `skills <mudlib/skills.html>`_
+- `slowheal <mudlib/slowheal.html>`_
 - `state_of_mind <mudlib/state_of_mind.html>`_
 - `target <mudlib/target.html>`_
+- `transient <mudlib/transient.html>`_
 - `types <mudlib/types.html>`_
 - `vaporize <mudlib/vaporize.html>`_
 - `visible <mudlib/visible.html>`_

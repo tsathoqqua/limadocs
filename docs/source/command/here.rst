@@ -11,12 +11,12 @@ USAGE::
 
 	 here
 
-This command shows you the pathname to the file of the object
-you are currently in.
+ This command shows you the pathname to the file of the object
+ you are currently in.
 
-here
+ here
 
-Grand Hall: [/domains/std/wizroom
+ Grand Hall: [/domains/std/wizroom
 
 
 

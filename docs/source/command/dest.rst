@@ -13,7 +13,7 @@ USAGE::
 
 	 dest <object>
 
-This command destroys an object in your inventory or in your environment.
+ This command destroys an object in your inventory or in your environment.
 
 
 

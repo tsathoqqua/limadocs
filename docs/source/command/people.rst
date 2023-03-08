@@ -40,7 +40,7 @@ Command
     appended at the top of the list.
  H -Small header. List mudname and time on a header 1 line wide. Automatically
     appended to the top of the list.
- l -Adds a line between names on the who list.
+ l -level of player
  n -Prints the users login name without titles.
  t -Prints the users name and title.
  p -Prints positions, God, Avatar, Demigod, player, ect.

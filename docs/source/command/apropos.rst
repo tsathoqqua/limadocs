@@ -7,8 +7,8 @@ Documentation for the apropos command in */cmds/wiz/apropos.c*.
 Command
 =======
 
-Returns information on which mudlib functions contain the
-keyword passed, including a short description.
+ Returns information on which mudlib functions contain the
+ keyword passed, including a short description.
 
 
 

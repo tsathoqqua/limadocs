@@ -11,15 +11,15 @@ USAGE::
 
 	 rmdir < directory >
 
-This command will delete a directory if it is empty.
+ This command will delete a directory if it is empty.
 
-rmdir /wiz/zifnab/obj
+ rmdir /wiz/zifnab/obj
 
-will try and delete a directory named obj from /wiz/zifnab
+ will try and delete a directory named obj from /wiz/zifnab
 
-rmdir obj
+ rmdir obj
 
-will try and delete a directory named obj from my current directory
+ will try and delete a directory named obj from my current directory
 
 
 

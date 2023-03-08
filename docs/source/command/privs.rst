@@ -11,13 +11,13 @@ USAGE::
 
 	privs <pathname>
 
-Used to display privs (which for the basis of the Lima security system)- ie
- the privs needed by a wizard to read/write the specified directory.
+ Used to display privs (which for the basis of the Lima security system)- ie
+  the privs needed by a wizard to read/write the specified directory.
 
 >privs /cmds/verbs
 
-Read: 0
-Write: "Mudlib:verbs"
+ Read: 0
+ Write: "Mudlib:verbs"
 
 
 

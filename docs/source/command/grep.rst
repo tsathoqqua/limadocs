@@ -11,9 +11,9 @@ USAGE::
 
 	grep [-inv] <target> <files>
 
-Locates and displays lines matching specified pattern within specified files.
+ Locates and displays lines matching specified pattern within specified files.
 
-Flags :
+ Flags :
 -i for case insensitive comparison
 -n to display line numbers
 -v to invert slection - ie display lines NOT matching.

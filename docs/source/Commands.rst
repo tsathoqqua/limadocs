@@ -120,6 +120,7 @@ Commands
 - `Command: uncd <command/uncd.html>`_
 - `Command: unsnoop <command/unsnoop.html>`_
 - `Command: update <command/update.html>`_
+- `Command: users <command/users.html>`_
 - `Command: verbs <command/verbs.html>`_
 - `Command: vis <command/vis.html>`_
 - `Command: wall <command/wall.html>`_

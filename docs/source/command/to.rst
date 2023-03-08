@@ -11,8 +11,8 @@ USAGE::
 
 	to <command>
 
-Loads the editor, where you can enter parameters for the specified command.
-On exiting the editor (with '**'), the verb is executed with those parameters.
+ Loads the editor, where you can enter parameters for the specified command.
+ On exiting the editor (with '**'), the verb is executed with those parameters.
 
 
 

@@ -11,10 +11,10 @@ USAGE::
 
 	 checkpriv < privilege >
 
-This command will tell you whether or not you have a certain privilege.
+ This command will tell you whether or not you have a certain privilege.
 
-checkpriv 1
-will check if you have priv 1 (ie admin)
+ checkpriv 1
+ will check if you have priv 1 (ie admin)
 
 
 

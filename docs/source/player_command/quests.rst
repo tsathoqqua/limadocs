@@ -11,7 +11,7 @@ USAGE::
 
 	quests
 
-Shows you all the quests on the mud.
+ Shows you all the quests on the mud.
 
 
 

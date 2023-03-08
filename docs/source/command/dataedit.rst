@@ -12,8 +12,8 @@ USAGE::
 	dataedit file
 
 'dataedit' allows you to edit .o files created by save_object(), without
-having to directly edit the compressed form, and possibly make mistakes
-causing the file to restore improperly.
+ having to directly edit the compressed form, and possibly make mistakes
+ causing the file to restore improperly.
 
 
 

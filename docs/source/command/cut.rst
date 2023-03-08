@@ -11,11 +11,11 @@ USAGE::
 
 	cut -f<from>[-<to>] [-d<delimiter>] <file(s)>
 
-Displays the specified file, each line being trimmed to a selection of words
-according to the -f flags.
-Each line is split into words - using the usual delimiters of space/tab etc.
-If only one valus is provided as an f flag, that "word" is displayed on each line.
-If 2 values are provided, words numbered from first value to second are displayed.
+ Displays the specified file, each line being trimmed to a selection of words
+ according to the -f flags.
+ Each line is split into words - using the usual delimiters of space/tab etc.
+ If only one valus is provided as an f flag, that "word" is displayed on each line.
+ If 2 values are provided, words numbered from first value to second are displayed.
 
 
 

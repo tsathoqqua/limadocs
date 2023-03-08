@@ -13,13 +13,13 @@ USAGE::
 
 	 targetemote
 
-This command will create a default emote with the following rules;
+ This command will create a default emote with the following rules;
    LIV, OBJ, STR, ""
 
 >targetemote swim
-Added.
+ Added.
 
-Lets look at what was created by that command
+ Lets look at what was created by that command
 >showemote swim
 "LIV" -> $N $vswim at $t.
 "OBJ" -> $N $vswim at $o.

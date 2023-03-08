@@ -11,7 +11,7 @@ USAGE::
 
 	uncd
 
-Switch to previous working directory.
+ Switch to previous working directory.
 
 
 

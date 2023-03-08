@@ -11,7 +11,7 @@ USAGE::
 
 	killmobs
 
-Kill mobs by name
+ Kill mobs by name
 
 
 

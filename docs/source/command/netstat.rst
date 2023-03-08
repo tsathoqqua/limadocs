@@ -11,7 +11,7 @@ USAGE::
 
 	netstat
 
-Displays a list of sockets with (stat) info on each one.
+ Displays a list of sockets with (stat) info on each one.
 
 
 

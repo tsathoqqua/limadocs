@@ -7,23 +7,26 @@ Documentation for the money_d daemon in */daemons/money_d.c*.
 Module Information
 ==================
 
-The money daemon manages the legal types of money within the game and their
-exchange rates.
+ The money daemon manages the legal types of money within the game and their
+ exchange rates.
 
-Objects have an inherent "value".  This is then translated into a
-particular currency via that currency's value -> actual exchange rate.
+ Objects have an inherent "value".  This is then translated into a
+ particular currency via that currency's value -> actual exchange rate.
 
-Currencies have different denomiations, e.g. dollar have dollar and cent.
-Calculation is always based on the lowest denomination. Functions for
-displaying a currency with denominations are provided
+ Currencies have different denomiations, e.g. dollar have dollar and cent.
+ Calculation is always based on the lowest denomination. Functions for
+ displaying a currency with denominations are provided
 
-Created Wed Jul  3 20:28:42 MET DST 1996 <Valentino>
+ Created Wed Jul  3 20:28:42 MET DST 1996 <Valentino>
 
-961209, Deathblade: Revised extensively and installed into Lima.
-                    Kept Valentino's per-area currencies, but tossed
-                    the materials concept.
+ 961209, Deathblade: Revised extensively and installed into Lima.
+                     Kept Valentino's per-area currencies, but tossed
+                     the materials concept.
 
-rewritten 10 Feb 98 by MonicaS, removed per-area currencies, added denominations
+ Rewritten 10 Feb 98 by MonicaS, removed per-area currencies, added denominations
+
+ Tsath 2023: Modifed to handle floating currencies, so base currency doesn't have
+ to be pennies, but pennies can be 0.01 dollar, e.g.
 
 Functions
 =========
@@ -53,7 +56,7 @@ Returns the names of the currencies that are valid within the mud
 
 .. c:function:: varargs nomask string *query_denominations(string type)
 
-Returns the array of denominations of a currency 
+Returns the array of denominations of a currency
 or all available denominations
 
 
@@ -90,7 +93,7 @@ Returns the exchange rate factor of a denomination
 
 .. c:function:: varargs nomask void add_currency(string type, string plural, int flag)
 
-Add a currency to the money system. The base denomination with the same 
+Add a currency to the money system. The base denomination with the same
 name will be created too if flag is 0.
 
 
@@ -140,8 +143,7 @@ The output is only sorted if you specify the currency.
 
 
 
-.. c:function:: mapping *handle_subtract_money(object player, float f_amount, 
-				     string type)
+.. c:function:: mapping *handle_subtract_money(object player, float f_amount, string type)
 
 substracts an amount of currency from a player and adds change.
 returns an array of two mappings: substract and change, which

@@ -7,7 +7,7 @@ Documentation for the quit player command in */cmds/player/quit.c*.
 Player Command
 ==============
 
-Quit to the user menu.
+ Quit to the user menu.
 
 
 

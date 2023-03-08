@@ -11,7 +11,7 @@ USAGE::
 
 	emote message
 
-Places any message you specify directly after your name.  For example,
+ Places any message you specify directly after your name.  For example,
 "emote smiles." would have others see "Rust smiles.".
 
 

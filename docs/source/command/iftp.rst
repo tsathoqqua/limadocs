@@ -11,7 +11,7 @@ USAGE::
 
 	iftp <mudname>
 
-Invokes the intermud ftp client.
+ Invokes the intermud ftp client.
 
 
 

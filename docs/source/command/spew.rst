@@ -12,9 +12,9 @@ USAGE::
 
 	spew file [<startline>] [#<lines>]
 
-Dumps contents of specified file to the screen as "says" from you,
-one say per line.
-Optional parameters for start line and number of lines to dump.
+ Dumps contents of specified file to the screen as "says" from you,
+ one say per line.
+ Optional parameters for start line and number of lines to dump.
 
 
 

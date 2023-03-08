@@ -9,7 +9,7 @@ Player Command
 
 USAGE	passwd
 
-Changes your password.  Just type it, and follow the directions.
+ Changes your password.  Just type it, and follow the directions.
 
 
 

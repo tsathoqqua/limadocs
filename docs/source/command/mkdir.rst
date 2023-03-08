@@ -11,16 +11,16 @@ USAGE::
 
 	 mkdir < directory >
 
-This command will create a directory.
+ This command will create a directory.
 
 
-mkdir /wiz/zifnab/obj
+ mkdir /wiz/zifnab/obj
 
-will create a directory named obj in /wiz/zifnab
+ will create a directory named obj in /wiz/zifnab
 
-mkdir obj
+ mkdir obj
 
-will try and create a directory named obj in my current directory
+ will try and create a directory named obj in my current directory
 
 
 

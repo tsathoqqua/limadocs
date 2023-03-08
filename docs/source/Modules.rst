@@ -8,6 +8,7 @@ Module
 - `Module: m_ansi <module/m_ansi.html>`_
 - `Module: m_blockexits <module/m_blockexits.html>`_
 - `Module: m_bodystats <module/m_bodystats.html>`_
+- `Module: m_boss <module/m_boss.html>`_
 - `Module: m_colours <module/m_colours.html>`_
 - `Module: m_companion <module/m_companion.html>`_
 - `Module: m_complete <module/m_complete.html>`_
@@ -29,6 +30,7 @@ Module
 - `Module: m_gettable <module/m_gettable.html>`_
 - `Module: m_grammar <module/m_grammar.html>`_
 - `Module: m_guild_master <module/m_guild_master.html>`_
+- `Module: m_healing <module/m_healing.html>`_
 - `Module: m_input <module/m_input.html>`_
 - `Module: m_items <module/m_items.html>`_
 - `Module: m_lightable <module/m_lightable.html>`_
@@ -41,6 +43,7 @@ Module
 - `Module: m_save <module/m_save.html>`_
 - `Module: m_searchable <module/m_searchable.html>`_
 - `Module: m_smartmove <module/m_smartmove.html>`_
+- `Module: m_stateful <module/m_stateful.html>`_
 - `Module: m_switchable <module/m_switchable.html>`_
 - `Module: m_vendor <module/m_vendor.html>`_
 - `Module: m_wander <module/m_wander.html>`_

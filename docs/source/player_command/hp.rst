@@ -13,7 +13,7 @@ USAGE::
 
 	hp
 
-Prints your current HP on all your limbs with AC stats and types.
+ Prints your current HP on all your limbs with AC stats and types.
 
 
 

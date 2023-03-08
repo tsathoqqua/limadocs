@@ -9,7 +9,7 @@ Functions
 
 
 
-.. c:function:: getopt( mixed args, string options )
+.. c:function:: mixed getopt(mixed args, string options)
 
 Takes an array and parses flags from it. Returns an array, the first
 element being a mapping of flag : value, the second element being an
@@ -19,7 +19,7 @@ accepts, followed by a colon (:) if the flag can take an argument.
 
 
 
-.. c:function:: mixed* argument_explode(string s)
+.. c:function:: mixed *argument_explode(string s)
 
 assumes the arg passed is the argument to some unix-like
 command where ares are space seperated unless enclosed in non-escaped
@@ -28,9 +28,9 @@ Returns an array of the arguments. and an *of implode info
 
 
 
-.. c:function:: mixed parse_argument( string input, string options )
+.. c:function:: mixed parse_argument(string input, string options)
 
-calls argument_explode() and then getopt(), returning the 
+calls argument_explode() and then getopt(), returning the
 value of the getopt() call.
 
 

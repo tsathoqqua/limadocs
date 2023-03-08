@@ -21,17 +21,17 @@ Returns container into which fluid will be put by a vendor selling it
 
 
 
-.. c:function:: void set_puddle_name( string x )
+.. c:function:: void set_puddle_name(string x)
 
 void set_puddle_name( string x )
 'x' is set as the proper name
 of this object when it is outside
-of a container. Defaults to 
+of a container. Defaults to
 'the <puddle_id> of <primary_name>'
 
 
 
-.. c:function:: void set_puddle_id( string x )
+.. c:function:: void set_puddle_id(string x)
 
 void set_puddle_id( x )
 adds id 'x' when the fluid is
@@ -39,13 +39,13 @@ outside of a container.
 
 
 
-.. c:function:: varargs void set_evaporate_action( mixed x )
+.. c:function:: varargs void set_evaporate_action(mixed x)
 
 set_evaporate_action( mixed x )
 'x' is optional.
 Calling this function with no arguments
-will cause the fluid to evaporate when 
-outside of a container.  
+will cause the fluid to evaporate when
+outside of a container.
 x can be a string that is output to the
 environment as the fluid evaporate_puddle
 function is called.
@@ -56,7 +56,7 @@ is not to evaporate.
 
 
 
-.. c:function:: void set_pour_action( mixed x )
+.. c:function:: void set_pour_action(mixed x)
 
 void set_pour_action( mixed x )
 'x' is a simple action string or
@@ -66,7 +66,7 @@ $o to represent the fluid itself.
 
 
 
-.. c:function:: int fill_action( object vessel )
+.. c:function:: int fill_action(object vessel)
 
 fill_action(container)
 This function is called by the container

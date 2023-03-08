@@ -13,7 +13,7 @@ USAGE::
 
 	 idea
 
-Allows you to document an idea for the administration to see.
+ Allows you to document an idea for the administration to see.
 
 
 

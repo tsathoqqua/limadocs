@@ -11,7 +11,7 @@ USAGE::
 
 	party
 
-Starts up the "party" menu system
+ Starts up the "party" menu system
 
 
 

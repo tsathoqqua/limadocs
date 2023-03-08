@@ -11,9 +11,9 @@ USAGE::
 
 	mvemote <target> <destination>
 
-Moves (ie renames) the specified soul to the specified destination.
+ Moves (ie renames) the specified soul to the specified destination.
 
-NOTE This is admin-only.
+ NOTE This is admin-only.
 
 
 

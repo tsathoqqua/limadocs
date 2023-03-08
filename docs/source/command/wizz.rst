@@ -13,7 +13,7 @@ USAGE::
 
 	wizz
 
-This command returns you to the "wiz room" from anywhere on the mud.
+ This command returns you to the "wiz room" from anywhere on the mud.
 
 
 

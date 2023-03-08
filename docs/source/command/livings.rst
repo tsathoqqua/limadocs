@@ -11,7 +11,7 @@ USAGE::
 
 	livings
 
-Give a count of living things (not players) on the MUD grouped by filename.
+ Give a count of living things (not players) on the MUD grouped by filename.
 
 
 

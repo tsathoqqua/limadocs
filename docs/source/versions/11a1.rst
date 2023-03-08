@@ -42,3 +42,42 @@ Didlog
 - **Thu Dec 29 11:30:56 2022**: *Tsath*  fixed first time account login issue.
 - **Thu Dec 29 11:31:31 2022**: *Tsath*  added /obj/mudlib/frame for creating appealing frames for interfaces. Integrates with 'frames' command.
 - **Thu Dec 29 11:31:31 2022**: *Tsath*  added a new user interface submenu to the player menu 'menu'.
+- **Fri Dec 30 15:27:11 2022**: *Tsath*  made 'say' work with emojis.
+- **Fri Dec 30 15:29:35 2022**: *Tsath*  fixed XTERM256_D to not error on codes outside 0 < x < 255 range.
+- **Fri Dec 30 17:07:51 2022**: *Tsath*  extended frames with colour themes.
+- **Thu Jan 12 22:47:01 2023**: *Tsath*  updated exit and enter with sane actions for 'enter' 'leave' and 'exit'.
+- **Sun Jan 15 14:04:25 2023**: *Tsath*  updated 'who' and 'score' with frames support.
+- **Sun Jan 15 14:08:31 2023**: *Tsath*  update 'hp' command.
+- **Mon Jan 16 18:14:48 2023**: *Tsath*  updated 'people' command.
+- **Mon Jan 16 18:19:49 2023**: *Tsath*  moved functionality from FRAME to M_COLOURS.
+- **Mon Jan 16 21:42:52 2023**: *Tsath*  fixed 'random' to handle no args given.
+- **Mon Jan 16 22:13:41 2023**: *Tsath*  updated the driver include files, which fixed 'random2'.
+- **Sat Jan 21 22:49:56 2023**: *Tsath*  changed money to be calculated as a float.
+- **Sun Jan 22 09:59:47 2023**: *Tsath*  added currency awareness in DOMAIN_D and extended ADMTOOL to handle it.
+- **Sun Jan 22 15:57:28 2023**: *Tsath*  recreated the 'equip' cmd.
+- **Sun Jan 22 15:57:52 2023**: *Tsath*  made LOOT_D pick dynamic coins depending on area and settings in DOMAIN_D.
+- **Wed Jan 25 21:45:51 2023**: *Tsath*  updated 'score' to handle multiple currencies carried at the same time.
+- **Wed Jan 25 21:46:12 2023**: *Tsath*  updated ACCOUNT_D to handle multiple currencies and multiple bank accounts.
+- **Wed Jan 25 21:46:35 2023**: *Tsath*  updated BODY to check if currency picked up as an existing currency.
+- **Thu Jan 26 12:39:00 2023**: *Tsath*  added 'apply' and 'repair' verb.
+- **Thu Jan 26 13:44:25 2023**: *Tsath*  added 'metric' control to the player menu.
+- **Sun Jan 29 21:04:29 2023**: *Tsath*  added client detection and colour suggestions to 'mode' cmd.
+- **Sun Jan 29 21:06:29 2023**: *Tsath*  modified the player shell to pick mode, emoji, and frame defaults based on client detection.
+- **Sun Jan 29 21:08:30 2023**: *Tsath*  added default style and theme for frames in config.h.
+- **Mon Jan 30 10:47:49 2023**: *Tsath*  extended XTERM256_D with client compability data.
+- **Mon Jan 30 20:55:21 2023**: *Tsath*  added referral question on account creation, saves to /data/referrals.
+- **Thu Feb  2 10:20:22 2023**: *Tsath*  added a stack of drink, heal, slow heal, drugs and food under ^std/consumable.
+- **Thu Feb  2 10:21:42 2023**: *Tsath*  added TRANSIENT for poison and other effects in /std/transient/
+- **Thu Feb  2 10:22:58 2023**: *Tsath*  updated M_DRINKABLE, M_EDIBLE and added M_HEALING.
+- **Thu Feb  2 10:23:59 2023**: *Tsath*  added DRINK, FOOD and BANDAGE to /std/
+- **Thu Feb  2 13:19:28 2023**: *Tsath*  added a 'smoke' verb to smoke things, like salmon.
+- **Thu Feb  2 13:37:06 2023**: *Tsath*  added 'activate' and 'unwield' as verbs.
+- **Thu Feb  2 17:32:08 2023**: *Tsath*  fixed M_HEALING to work for living, but just players.
+- **Thu Feb  2 18:37:26 2023**: *Tsath*  made bandages work for mobs and get applied to critical spots.
+- **Wed Feb  8 10:14:31 2023**: *Tsath*  fixed BIRTHDAY_D to not just refresh every 50 years but every day.
+- **Wed Feb  8 12:23:38 2023**: *Tsath*  added targetted_other_action() to M_MESSAGES.
+- **Wed Feb 15 12:57:06 2023**: *Tsath*  fixed who when uptime < 1 hour.
+- **Wed Feb 15 19:41:34 2023**: *Tsath*  added 'width auto' as a way to use flexible terminal width.
+- **Wed Mar  8 08:33:31 2023**: *Tsath*  added a basic implementation of behavior trees for NPCs under /std/behaviour/ and started gradually hollowing out behaviours from adversary.
+- **Wed Mar  8 08:34:25 2023**: *Tsath*  added Plutchik emotion wheel to the behaviour trees and a 'smartmobs' cmd to view active smart NPCs on the MUD.
+- **Wed Mar  8 16:42:26 2023**: *Tsath*  reformatted the entire mudlib according to /help/wizard/coding/vs_code.

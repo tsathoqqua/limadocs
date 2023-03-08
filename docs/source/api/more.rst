@@ -9,8 +9,7 @@ Functions
 
 
 
-.. c:function:: varargs nomask void more(mixed arg, int num, function continuation,
-			 int output_flags)
+.. c:function:: varargs nomask void more(mixed arg, int num, function continuation, int output_flags)
 
 more(arg) starts up more to display the array of lines 'arg'.  If arg is
 a string, it is exploded around "\n".  An optional second argument gives
@@ -19,8 +18,7 @@ be evaluated when the "more" is completed.
 
 
 
-.. c:function:: varargs nomask void more_file(mixed arg, int num, function continuation,
-			      int output_flags)
+.. c:function:: varargs nomask void more_file(mixed arg, int num, function continuation, int output_flags)
 
 more_file(arg) starts up more to display the single file 'arg' if 'arg'
 is a string, or more than one file if 'arg' is an array of strings.

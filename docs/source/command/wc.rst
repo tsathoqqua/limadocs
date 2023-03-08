@@ -7,10 +7,10 @@ Documentation for the wc command in */cmds/wiz/wc.c*.
 Command
 =======
 
-usage: wc [-lw] <filename(s)>
+ usage: wc [-lw] <filename(s)>
 
-Gives wordcount (and linecount) of the file specified.
-The 2 flags specify what to count :
+ Gives wordcount (and linecount) of the file specified.
+ The 2 flags specify what to count :
 -l = linecount only
 -w = wordcount only
 

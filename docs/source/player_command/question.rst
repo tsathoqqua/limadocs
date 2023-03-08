@@ -13,7 +13,7 @@ USAGE::
 
 	 question
 
-Allows you to send a question to the relevant place.
+ Allows you to send a question to the relevant place.
 
 
 

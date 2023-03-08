@@ -13,7 +13,7 @@ USAGE::
 
 	showpath
 
-This command will show you your current list of exec paths.
+ This command will show you your current list of exec paths.
 
 
 

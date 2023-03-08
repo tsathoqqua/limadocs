@@ -12,7 +12,7 @@ USAGE::
 	resurrect <playername>
 	resurrect me!myself
 
-Brings a dead player back to life
+ Brings a dead player back to life
 
 
 

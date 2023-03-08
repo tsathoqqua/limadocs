@@ -13,11 +13,11 @@ USAGE::
 
 	time
 
-Displays the current local time (where the mud server is located),
-and the GMT conversion of that, and player's local time (if the
-GMT offset has been entered using the "timezone" command)
-together with time the mud was last rebooted (on mud local time),
-and how long it has been up.
+ Displays the current local time (where the mud server is located),
+ and the GMT conversion of that, and player's local time (if the
+ GMT offset has been entered using the "timezone" command)
+ together with time the mud was last rebooted (on mud local time),
+ and how long it has been up.
 
 
 

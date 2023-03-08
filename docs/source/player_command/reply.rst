@@ -11,8 +11,8 @@ USAGE::
 
 	 reply <message>
 
-When you are given a message via tells, it is much easier to
-type 'reply <put message here>' than 'tell <somebody> <message>'.
+ When you are given a message via tells, it is much easier to
+ type 'reply <put message here>' than 'tell <somebody> <message>'.
 
 
 

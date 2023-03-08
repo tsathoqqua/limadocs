@@ -11,8 +11,8 @@ USAGE::
 
 	addguest [name]
 
- This command adds a guest to the guestlist for when the mud
- does not allow new players
+  This command adds a guest to the guestlist for when the mud
+  does not allow new players
 
 
 

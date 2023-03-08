@@ -13,7 +13,7 @@ USAGE::
 
 	unsnoop <user>
 
-Stops snooping the target.
+ Stops snooping the target.
 
 
 

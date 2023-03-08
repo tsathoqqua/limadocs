@@ -12,10 +12,10 @@ USAGE::
 	sline
 	sline on|off
 
-Shows whether the status line is on or off (ie whether it will be displayed
-on the screen), and allows you to turn it on/off as desired.
-If the mud has decided not to use the status line system,
-this will probably have no effect.
+ Shows whether the status line is on or off (ie whether it will be displayed
+ on the screen), and allows you to turn it on/off as desired.
+ If the mud has decided not to use the status line system,
+ this will probably have no effect.
 
 
 

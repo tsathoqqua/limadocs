@@ -11,8 +11,8 @@ USAGE::
 
 	discuss <thing>
 
-Invokes the annotation menu, allowing annotations to be added to objects,
-and subsequently viewed and deleted.
+ Invokes the annotation menu, allowing annotations to be added to objects,
+ and subsequently viewed and deleted.
 
 
 

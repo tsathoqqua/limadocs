@@ -4,10 +4,6 @@ Mudlib *non_object*
 
 Documentation for the non_object mudlib in */std/object/non_object.c*.
 
-Hooks
-=====
-
-Called when an object is removed.  The return value is ignored
 Functions
 =========
 
@@ -21,7 +17,7 @@ light level.  It also calls the "remove" hook.
 
 
 
-.. c:function:: mixed receive_object( object target, string relation )
+.. c:function:: mixed receive_object(object target, string relation)
 
 receive_object(obj, relation) should return 1 if obj can be put ("in", "on",
 etc) the object, where 'relation' specifies the relation.  By default,
@@ -32,7 +28,7 @@ the container inheritable.
 
 .. c:function:: varargs void set_attached(int a)
 
-set_attached(1) or set_attached() sets the ATTACHED flag for this 
+set_attached(1) or set_attached() sets the ATTACHED flag for this
 object, and set_attached(0) removes it.
 
 

@@ -11,26 +11,26 @@ USAGE::
 
 	 force <living> <command>
 
-This command will force a player to execute the command you supply
+ This command will force a player to execute the command you supply
 
-force ohara north
+ force ohara north
 
-This would force Ohara to move to the north if possible.
-Ohara would like you to note that "possible" and "a good idea"
-are two separate things.
+ This would force Ohara to move to the north if possible.
+ Ohara would like you to note that "possible" and "a good idea"
+ are two separate things.
 
 
 ***********  WARNING  ************
 
-The admin of this mud will not tolerate any type of toying with players.
-Do not force a player into a certain death situation.
-Doing this is a direct violation of the mud policy and is grounds for
-disciplinary action.
+ The admin of this mud will not tolerate any type of toying with players.
+ Do not force a player into a certain death situation.
+ Doing this is a direct violation of the mud policy and is grounds for
+ disciplinary action.
 
-All uses of the command are logged.
+ All uses of the command are logged.
 
-Ohara also notes that any toying with him may result in a
-force <insert your name here> dest <insert your name here too>
+ Ohara also notes that any toying with him may result in a
+ force <insert your name here> dest <insert your name here too>
 
 
 

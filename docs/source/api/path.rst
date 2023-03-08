@@ -9,7 +9,7 @@ Functions
 
 
 
-.. c:function:: cannonical_form(mixed fname)
+.. c:function:: string cannonical_form(mixed fname)
 
 Change object path names to standard form, stripping the trailing .c, if
 any, the clone number, if any, and making sure the leading / exists.

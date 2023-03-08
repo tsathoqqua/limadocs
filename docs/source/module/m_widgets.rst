@@ -42,6 +42,12 @@ A bar that change colour the lower it gets
 
 
 
+.. c:function:: string reverse_critical_bar(int value, int max, int width)
+
+A bar that change colour the lower it gets
+
+
+
 .. c:function:: string slider_red_green(int value, int max, int width)
 
 A slider which is red below the middle and green above, and marks the
@@ -53,7 +59,7 @@ value with a X. 0 is the middle and max is minus on red axis and + on green axis
 
 A slider with multiple colours and cumulative ranges and a marker.
 The colours mapping should be on the format:
-  ([20:"red",50:"yellow",100:"green"])
+  ([20:"040",50:"041",100:"042"])
 where each number is bigger and strings are ANSI colours.
 
 

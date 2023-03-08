@@ -7,21 +7,21 @@ Documentation for the m_complete module in */std/modules/m_complete.c*.
 Module Information
 ==================
 
-Various functions for expanding partial matches
+ Various functions for expanding partial matches
 
 Functions
 =========
 
 
 
-.. c:function:: string* complete(string partial, string* potentials)
+.. c:function:: string *complete(string partial, string *potentials)
 
 Given a string and a list of possible completions of that string,
 return an array of all strings that would be valid completions.
 
 
 
-.. c:function:: string* case_insensitive_complete(string partial, string* potentials)
+.. c:function:: string *case_insensitive_complete(string partial, string *potentials)
 
 same as complete, but upper and lower case are ignored.
 
@@ -29,7 +29,7 @@ same as complete, but upper and lower case are ignored.
 
 .. c:function:: string *find_best_match_or_complete(string partial, string *potentials)
 
-same as case_insensitive_complete, but if there is an exact match, 
+same as case_insensitive_complete, but if there is an exact match,
 returns only that.
 
 

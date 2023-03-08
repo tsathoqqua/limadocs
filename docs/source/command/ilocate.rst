@@ -11,9 +11,9 @@ USAGE::
 
 	ilocate <playername>
 
-Sends out a "locate query" over intermud.
-If the player is present another mud currently connected to intermud,
-a reply is sent (subject to that mud's treatment of invisibility etc).
+ Sends out a "locate query" over intermud.
+ If the player is present another mud currently connected to intermud,
+ a reply is sent (subject to that mud's treatment of invisibility etc).
 
 
 

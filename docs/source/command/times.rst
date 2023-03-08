@@ -11,7 +11,7 @@ USAGE::
 
 	 times <#> <command>
 
- Repeats a command # of times
+  Repeats a command # of times
 
 
 

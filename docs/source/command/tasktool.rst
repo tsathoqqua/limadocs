@@ -11,8 +11,8 @@ USAGE::
 
 	tasktool
 
-Invokes the menu-driven tasktool system,
-which is intended as a "todo" handler.
+ Invokes the menu-driven tasktool system,
+ which is intended as a "todo" handler.
 
 
 

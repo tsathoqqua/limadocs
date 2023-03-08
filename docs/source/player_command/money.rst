@@ -13,7 +13,7 @@ USAGE::
 
 	money
 
-Displays how much money you are carrying
+ Displays how much money you are carrying
 
 
 

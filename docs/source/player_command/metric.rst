@@ -15,8 +15,8 @@ USAGE::
 	metric on
 	metric off
 
-Typing "metric" will show if you are seeing metric system or imperical.
-Typing "metric on" or "metric off" will turn on/off metric system.
+ Typing "metric" will show if you are seeing metric system or imperical.
+ Typing "metric on" or "metric off" will turn on/off metric system.
 
 
 

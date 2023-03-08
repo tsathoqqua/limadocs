@@ -7,7 +7,7 @@ Documentation for the bindings api in */obj/secure/shell/bindings.c*.
 Module Information
 ==================
 
-Implements character mode key bindings.
+ Implements character mode key bindings.
 
 Functions
 =========
@@ -16,7 +16,7 @@ Functions
 
 .. c:function:: nomask void init_charmode(mapping new_bindings, function d)
 
-start up character mode, passing a map of bindings and a 
+start up character mode, passing a map of bindings and a
 function to handle keystrokes not covered in the binding map.
 
 

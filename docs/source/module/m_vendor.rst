@@ -7,10 +7,10 @@ Documentation for the m_vendor module in */std/modules/m_vendor.c*.
 Module Information
 ==================
 
-m_vendor is used to create vendor objects that buy and sell stuff
-they work as traditional shopkeepers and also bartenders. 
-See: /domains/std/shopkeeper.c
-See: M_VALUABLE for possible interactions.
+ m_vendor is used to create vendor objects that buy and sell stuff
+ they work as traditional shopkeepers and also bartenders.
+ See: /domains/std/shopkeeper.c
+ See: M_VALUABLE for possible interactions.
 
 Functions
 =========

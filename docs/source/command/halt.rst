@@ -11,7 +11,7 @@ USAGE::
 
 	halt
 
-Stops all combat in the room
+ Stops all combat in the room
 
 
 

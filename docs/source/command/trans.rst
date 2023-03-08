@@ -13,11 +13,11 @@ USAGE::
 
 	 trans <name>
 
-This command will transfer a player from their location to yours.
+ This command will transfer a player from their location to yours.
 
-trans ohara
+ trans ohara
 
-Will bring ohara to the room you are in.
+ Will bring ohara to the room you are in.
 
 
 

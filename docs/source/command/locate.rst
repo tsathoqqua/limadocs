@@ -12,10 +12,10 @@ USAGE::
 	locate <target>
 	locate -u
 
-Find any file containing the specified target within its name.
+ Find any file containing the specified target within its name.
 
-The system relies on a database of filenames for speed.
-To rebuild that database, use a -u flag.
+ The system relies on a database of filenames for speed.
+ To rebuild that database, use a -u flag.
 
 
 

@@ -7,15 +7,15 @@ Documentation for the codefor command in */trans/cmds/codefor.c*.
 Command
 =======
 
-codefor
-By Beek - derived from eval
+ codefor
+ By Beek - derived from eval
 See: `Command: treefor <treefor.html>`_ 
 
 USAGE::
 
 	codefor <lpc expression>
 
-Displays a "disassembly" of the LPC expression.
+ Displays a "disassembly" of the LPC expression.
 
 
 

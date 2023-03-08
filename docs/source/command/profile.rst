@@ -14,23 +14,23 @@ USAGE::
 	profile -total <filename>
 	profile all
 
-This displays time taken processing specified functions.
-To use this, the driver must be compiled with the PROFILE_FUNCTIONS option
-defined (in local_options).
+ This displays time taken processing specified functions.
+ To use this, the driver must be compiled with the PROFILE_FUNCTIONS option
+ defined (in local_options).
 
-Using profile without any argument displays the "top 10" objects,
-together with the total time taken executing functions within them.
+ Using profile without any argument displays the "top 10" objects,
+ together with the total time taken executing functions within them.
 
-Using profile <name> displays the time taken in each individual function
-within the specified object, split betwen "self" and "children", together
-with the number of calls involved.
+ Using profile <name> displays the time taken in each individual function
+ within the specified object, split betwen "self" and "children", together
+ with the number of calls involved.
 
-Using profile -total <name> produces a similar display, but sorted on the
+ Using profile -total <name> produces a similar display, but sorted on the
 "Total" column rather than "Self"
 
-The "profile all" option is likely to produce a "Too long evaluation" error,
-unless you increase the max eval cost, but it should provide details of
-time taken by functions in the 20 "worst" objects.
+ The "profile all" option is likely to produce a "Too long evaluation" error,
+ unless you increase the max eval cost, but it should provide details of
+ time taken by functions in the 20 "worst" objects.
 
 
 

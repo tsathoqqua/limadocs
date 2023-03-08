@@ -13,8 +13,8 @@ USAGE::
 
 	plan
 
-Takes you to an editor where you can enter or change your plan,
-which everybody can see when they "finger" you.
+ Takes you to an editor where you can enter or change your plan,
+ which everybody can see when they "finger" you.
 
 
 

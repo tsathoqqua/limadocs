@@ -11,12 +11,12 @@ See: `Command: converse <converse.html>`_
 
 USAGE	xargs <command>
 
-Acts like 'converse' (see help converse), except that it
-allows you to use something other than say.  For example,
+ Acts like 'converse' (see help converse), except that it
+ allows you to use something other than say.  For example,
 
-xargs tell rust
+ xargs tell rust
 
-will send all your input to Rust until you type: **
+ will send all your input to Rust until you type: **
 
 
 

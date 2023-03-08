@@ -9,8 +9,8 @@ Player Command
 
 USAGE	news
 
-news starts up the newsreader.  Just type it, it has it's own internal
-help available, if you type a ? from any prompt.
+ news starts up the newsreader.  Just type it, it has it's own internal
+ help available, if you type a ? from any prompt.
 
 
 

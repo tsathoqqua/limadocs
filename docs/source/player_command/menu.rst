@@ -9,9 +9,9 @@ Player Command
 
 USAGE	menu
 
-Just type "menu" to get a menu of common commands.  Some things like
-changing your title, real name information, and finger information,
-can only be done through the menu.
+ Just type "menu" to get a menu of common commands.  Some things like
+ changing your title, real name information, and finger information,
+ can only be done through the menu.
 
 
 

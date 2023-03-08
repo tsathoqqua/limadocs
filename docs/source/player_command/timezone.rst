@@ -12,10 +12,10 @@ USAGE::
 
 	timezone <value>
 
-Sets the player's time difference (relative to GMT).
-This lets the mud display your local time as part of the time command.
-It's probably easier to look at a clock, but this does allow you to see
-at a glance if the mud's clock is wrong.
+ Sets the player's time difference (relative to GMT).
+ This lets the mud display your local time as part of the time command.
+ It's probably easier to look at a clock, but this does allow you to see
+ at a glance if the mud's clock is wrong.
 
 
 

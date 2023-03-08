@@ -14,10 +14,10 @@ USAGE::
 
 	feelings <pattern>
 
-With a pattern, feelings will show you all souls matching the given pattern.
-Without an argument, feelings will list all available soul commands.
+ With a pattern, feelings will show you all souls matching the given pattern.
+ Without an argument, feelings will list all available soul commands.
 
-Examples:
+ Examples:
 
 	feelings  			-- show all souls
 	feelings s			-- show all souls beginning with an s

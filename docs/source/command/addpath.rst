@@ -9,10 +9,10 @@ Command
 
 See: `Command: showpath <showpath.html>`_ `Command: rmpath <rmpath.html>`_ 
 
-Usage: addpath [directory]
+ Usage: addpath [directory]
 
-This command will add a new path to your current exec path,
-which the command finder will search through.
+ This command will add a new path to your current exec path,
+ which the command finder will search through.
 
 
 

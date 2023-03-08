@@ -9,7 +9,7 @@ Functions
 
 
 
-.. c:function:: void add_method(string method,string *equivs...)
+.. c:function:: void add_method(string method, string *equivs...)
 
 Add a method and a set of equivalents
 Any arguments after the first are equivalents to the method.

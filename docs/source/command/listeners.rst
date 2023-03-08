@@ -12,8 +12,8 @@ USAGE::
 	listeners
 	listeners <channel name>
 
-Displays list of people listening to channels
-Admin only
+ Displays list of people listening to channels
+ Admin only
 
 
 

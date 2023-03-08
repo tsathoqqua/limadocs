@@ -16,11 +16,11 @@ USAGE::
 	didlog /on
 	didlog /off
 
-Shows you the "did" log (ie log of changes recorded by wizards).
-With no arguments it shows the log for the past day.
-With an integer argument it will show the log for that many days back.
-didlog /off turns didlog notification on login off.
-didlog /on turns it back on again.
+ Shows you the "did" log (ie log of changes recorded by wizards).
+ With no arguments it shows the log for the past day.
+ With an integer argument it will show the log for that many days back.
+ didlog /off turns didlog notification on login off.
+ didlog /on turns it back on again.
 
 
 

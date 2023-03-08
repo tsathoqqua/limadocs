@@ -13,7 +13,7 @@ USAGE::
 
 	 snoopable [on|off]
 
-This does exactly what the name imples -- it sets whether you are snoopable.
+ This does exactly what the name imples -- it sets whether you are snoopable.
 
 
 

@@ -13,8 +13,8 @@ USAGE::
 
 	work  or  work <obj>
 
-This command will change your pwd to the directory of your environment if
-no arguments are supplied or the directory of the object if one is specified.
+ This command will change your pwd to the directory of your environment if
+ no arguments are supplied or the directory of the object if one is specified.
 
 
 

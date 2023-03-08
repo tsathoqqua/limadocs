@@ -11,7 +11,7 @@ USAGE::
 
 	loadall <dir>
 
-Removes and reloads all the files in a specified directory
+ Removes and reloads all the files in a specified directory
 
 
 

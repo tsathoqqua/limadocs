@@ -11,9 +11,9 @@ USAGE::
 
 	snoops
 
-Displays a list of wizards currently snooping, together with their targets.
+ Displays a list of wizards currently snooping, together with their targets.
 
-Admin only
+ Admin only
 
 
 

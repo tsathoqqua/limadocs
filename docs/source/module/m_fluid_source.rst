@@ -7,20 +7,20 @@ Documentation for the m_fluid_source module in */std/modules/m_fluid_source.c*.
 Module Information
 ==================
 
-Inherit this module into anything that
-is a source for fluid.  Rivers, fountains,
-bee-hives, volcanoes, corpses, etc.
-Fill and drink look for a fluid source.
-To be able to drink directly from the
-source, also inherit m_drink_source.
-in the environment.
+ Inherit this module into anything that
+ is a source for fluid.  Rivers, fountains,
+ bee-hives, volcanoes, corpses, etc.
+ Fill and drink look for a fluid source.
+ To be able to drink directly from the
+ source, also inherit m_drink_source.
+ in the environment.
 
 Functions
 =========
 
 
 
-.. c:function:: void set_source_of( string what  )
+.. c:function:: void set_source_of(string what)
 
 x must be a path name to a fluid object.
 new(x) is what is moved into a container
@@ -28,7 +28,7 @@ when the container is filled from here.
 
 
 
-.. c:function:: void set_fluid_disturb_action( mixed x )
+.. c:function:: void set_fluid_disturb_action(mixed x)
 
 'x' is evaluated whenever the fluid is
 disturbed.  As a string, x is passed
@@ -37,7 +37,7 @@ disturb_action, set x to 0.
 
 
 
-.. c:function:: void set_fill_action( string x )
+.. c:function:: void set_fill_action(string x)
 
 'x' is passed to simple_action.
 $o in the string represents the fluid container.

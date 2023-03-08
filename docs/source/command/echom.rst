@@ -13,15 +13,15 @@ USAGE::
 
 	echo @<target> <message>
 
-Provides a targetted echo facility, which uses the "message" syntax.
-If the target cannot be found, it is ignored - ie the message is treated
-as a "simple_action" - so presence of $t in the message would cause error.
+ Provides a targetted echo facility, which uses the "message" syntax.
+ If the target cannot be found, it is ignored - ie the message is treated
+ as a "simple_action" - so presence of $t in the message would cause error.
 
 
 >echom @fred $N $vtest the echom command on $t
 
 >You test the echom command on Fred
-and Fred and onlookers would see suitably adjusted versions.
+ and Fred and onlookers would see suitably adjusted versions.
 
 
 

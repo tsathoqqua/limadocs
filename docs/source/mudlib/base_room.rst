@@ -16,6 +16,20 @@ as well as the short and exits.
 
 
 
+.. c:function:: void set_combat_forbidden(int x)
+
+void set_combat_forbidden(int x)
+Use set_combat_forbidden(1) to prevent combat in the room.
+
+
+
+.. c:function:: int query_combat_forbidden()
+
+void query_combat_forbidden(int x)
+Returns 1 if combat is forbidden or 0 if it's allowed.
+
+
+
 .. c:function:: void set_brief(string str)
 
 Set the name of the room seen at the top of the description and in brief mode

@@ -11,7 +11,7 @@ USAGE::
 
 	treefor <lpc expression>
 
-Shows the driver's internal representation of the expression.
+ Shows the driver's internal representation of the expression.
 
 >treefor int x; int y; return x+y;
 

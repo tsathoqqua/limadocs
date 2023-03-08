@@ -13,7 +13,7 @@ USAGE::
 
 	 typo
 
-This command directs a typo report to the proper place.
+ This command directs a typo report to the proper place.
 
 
 

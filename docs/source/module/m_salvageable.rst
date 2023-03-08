@@ -44,10 +44,10 @@ Returns true is the object is tattered, else 0.
 .. c:function:: string primary_salvage()
 
 Returns the material that is the most prevalent in the item.
-example:
-  set_salvageable((["wood":15, "metal":85, ]));
-  would return:
-  primary_salvage() -> "metal"
+ example:
+   set_salvageable((["wood":15, "metal":85, ]));
+   would return:
+   primary_salvage() -> "metal"
 
 
 

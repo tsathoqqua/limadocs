@@ -7,8 +7,8 @@ Documentation for the m_decay module in */std/modules/m_decay.c*.
 Module Information
 ==================
 
-This module can be used to make objects decay after a set
-amount of time. You may also have an object decay in stages.
+ This module can be used to make objects decay after a set
+ amount of time. You may also have an object decay in stages.
 
 Functions
 =========
@@ -17,8 +17,9 @@ Functions
 
 .. c:function:: void set_decay_action(mixed action)
 
-string argument - causes 'string' to be printed this object decays.  
-function argument -  causes the function to be called instead.
+set_decay_action(string) causes 'string' to be printed this
+object decays.  set_decay_action(function) causes the function
+to be called instead.
 
 
 
@@ -34,8 +35,9 @@ This sets the number of stages to decay in.
 
 
 
-.. c:function:: varargs void set_decay_time(int num, int dont_autostart)
+.. c:function:: void set_decay_time(int num)
 
+void set_decay_time(int num)
 Set the length of time that it takes to decay this item.
 setting this makes the item decayable, not setting this varriable will not
 make it decay.

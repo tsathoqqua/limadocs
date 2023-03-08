@@ -11,15 +11,15 @@ USAGE::
 
 	codesay <string>
 
-Displays the string formatted as LPC code.
-Useful when discussing/explaining snippets of code.
+ Displays the string formatted as LPC code.
+ Useful when discussing/explaining snippets of code.
 
 >codesay void create() { ::create(); }
 
-You say:
-        void create(){
-            ::create();
-        }
+ You say:
+         void create(){
+             ::create();
+         }
 
 
 

@@ -13,7 +13,7 @@ USAGE::
 
 	 chanlist
 
-Shows currently existing channels available to you.
+ Shows currently existing channels available to you.
 
 
 

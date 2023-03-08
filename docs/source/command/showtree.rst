@@ -12,15 +12,15 @@ USAGE::
 	showtree <function name> <object>
 	showtree <object>
 
-Displays the location(s) of the specified function in the specified
-object, together with any intermediate inheritance.
+ Displays the location(s) of the specified function in the specified
+ object, together with any intermediate inheritance.
 
-If used without function nams, it displays the full inheritance tree.
+ If used without function nams, it displays the full inheritance tree.
 
 >showtree long here
 
-Tracing definitions of long in /domains/std/Wizroom.c
-/domains/std/Wizroom.c
+ Tracing definitions of long in /domains/std/Wizroom.c
+/ domains/std/Wizroom.c
   /std/indoor_room.c
     /std/base_room.c
       [defined]

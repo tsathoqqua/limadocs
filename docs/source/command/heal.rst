@@ -11,7 +11,7 @@ USAGE::
 
 	heal <playername>
 
-Completely heals the targetted player.
+ Completely heals the targetted player.
 
 
 
