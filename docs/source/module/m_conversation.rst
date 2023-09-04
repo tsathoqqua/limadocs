@@ -9,7 +9,7 @@ Module Information
 
  M_CONVERSATION for doing interactive conversations with NPCs.
 
- Three things are needed to run conversations:
+ Three things are needed to run conversations::
  - A set of conversations options - set_options()
  - A set of matching replies for the options - set_responses()
  - A set of options to start from - set_start()
