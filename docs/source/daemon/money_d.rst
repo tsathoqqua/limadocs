@@ -11,7 +11,7 @@ Module Information
  exchange rates.
 
  Objects have an inherent "value".  This is then translated into a
- particular currency via that currency's value -> actual exchange rate.
+ particular currency via that currency's value.actual exchange rate.
 
  Currencies have different denomiations, e.g. dollar have dollar and cent.
  Calculation is always based on the lowest denomination. Functions for

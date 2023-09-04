@@ -49,7 +49,7 @@ Function for creating class skill and settings them directly into the player.
 Mostly called internally in BODY, but can be used for testing by wizards.
 
 i.e. give me 100 skill_points and 20 training_points in combat/sword:
-@.me->set_skill("combat/sword",100,20)
+@.me->set_skill("combat/melee/blade",100,20)
 
 
 

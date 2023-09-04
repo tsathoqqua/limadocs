@@ -87,6 +87,12 @@ Raw dump of all the entry data.
 
 
 
+.. c:function:: string synonym_index()
+
+Returns a text containing an index of page numbers and synonyms
+
+
+
 .. c:function:: void set_synonyms(mapping s)
 
 Set the synonyms for the readable entries.

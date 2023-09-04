@@ -13,6 +13,7 @@ Module
 - `Module: m_companion <module/m_companion.html>`_
 - `Module: m_complete <module/m_complete.html>`_
 - `Module: m_complex_exit <module/m_complex_exit.html>`_
+- `Module: m_conversation <module/m_conversation.html>`_
 - `Module: m_crafting <module/m_crafting.html>`_
 - `Module: m_daemon_data <module/m_daemon_data.html>`_
 - `Module: m_damage_sink <module/m_damage_sink.html>`_
@@ -27,6 +28,7 @@ Module
 - `Module: m_fluid_container <module/m_fluid_container.html>`_
 - `Module: m_fluid_source <module/m_fluid_source.html>`_
 - `Module: m_follow <module/m_follow.html>`_
+- `Module: m_frame <module/m_frame.html>`_
 - `Module: m_gettable <module/m_gettable.html>`_
 - `Module: m_grammar <module/m_grammar.html>`_
 - `Module: m_guild_master <module/m_guild_master.html>`_

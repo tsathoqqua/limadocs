@@ -23,10 +23,28 @@ has emojis turned on.
 
 
 
+.. c:function:: int uses_unicode()
+
+Returns true if the user is using a unicode theme.
+
+
+
+.. c:function:: int default_user_width()
+
+Returns the user screen width -2 chars.
+
+
+
 .. c:function:: string on_off_widget(int on)
 
 [On ] (green) or [Off] (red) depending on int on.
 "On " or "Off" for simplified view.
+
+
+
+.. c:function:: varargs string simple_divider(int width)
+
+Prints a simple divider either using unicode or not, depending on user settings.
 
 
 

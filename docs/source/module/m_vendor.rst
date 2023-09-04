@@ -10,7 +10,7 @@ Module Information
  m_vendor is used to create vendor objects that buy and sell stuff
  they work as traditional shopkeepers and also bartenders.
  See: /domains/std/shopkeeper.c
- See: M_VALUABLE for possible interactions.
+ See: M_VALUABLE for possible interactions and notes about generic items.
 
 Functions
 =========
@@ -19,6 +19,13 @@ Functions
 
 .. c:function:: float set_cost_multiplicator(float m)
 
+
+
+
+.. c:function:: void set_clear_numbers(int cn)
+
+Sets numbers to be clear fractions (1) in the vendor list,
+or lists of denominations (0) - default.
 
 
 
@@ -34,7 +41,7 @@ override if you want a different way to determine cost
 
 
 
-.. c:function:: void add_sell(string file, int amt)
+.. c:function:: varargs void add_sell(string file, int amt, mixed *setup_args)
 
 enables you to add items to the vendors stored_item's mapping
 
@@ -43,6 +50,11 @@ enables you to add items to the vendors stored_item's mapping
 .. c:function:: void set_sell(mapping items)
 
 with a mapping you can set many items into the vendor's to sell list
+Two formats are support:
+  set_sell((["^std/apple":-1, "^std/weapon/sword":3, "^std/ale":-1, ]));
+and another format supporting custom setup() arguments.
+  set_sell((["^std/generic_item": ({-1,({"test object",15})}),"^std/weapon/sword":3]));
+First argument is still count (or -1 for infinite), seconds argument is args for setup().
 
 
 
@@ -82,7 +94,7 @@ Queries the type of currency the vendor will buy/sell in
 
 
 
-.. c:function:: int query_items(string item, int flag)
+.. c:function:: mixed query_items(string item, int flag)
 
 gets called from the verb ask and the rule ask obj about str
 The player commands buy and list use it too.

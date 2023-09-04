@@ -12,6 +12,7 @@ Mudlib
 - `behaviors <mudlib/behaviors.html>`_
 - `body <mudlib/body.html>`_
 - `book <mudlib/book.html>`_
+- `cmd <mudlib/cmd.html>`_
 - `complex_slots <mudlib/complex_slots.html>`_
 - `container <mudlib/container.html>`_
 - `corpses <mudlib/corpses.html>`_

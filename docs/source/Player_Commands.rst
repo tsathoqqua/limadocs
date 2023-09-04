@@ -23,6 +23,7 @@ Player Commands
 - `groups <player_command/groups.html>`_
 - `help <player_command/help.html>`_
 - `hint <player_command/hint.html>`_
+- `hints <player_command/hints.html>`_
 - `hp <player_command/hp.html>`_
 - `idea <player_command/idea.html>`_
 - `inactive <player_command/inactive.html>`_
@@ -53,7 +54,6 @@ Player Commands
 - `shout <player_command/shout.html>`_
 - `simplify <player_command/simplify.html>`_
 - `skills <player_command/skills.html>`_
-- `sline <player_command/sline.html>`_
 - `snoopable <player_command/snoopable.html>`_
 - `stats <player_command/stats.html>`_
 - `su <player_command/su.html>`_

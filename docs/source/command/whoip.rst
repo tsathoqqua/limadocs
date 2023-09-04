@@ -18,6 +18,10 @@ USAGE::
  the ip name and number from which each player connected,
  and is only available to wizards.
 
+ The command also reports historical data of people who logged in from
+ a given ip given as an argument, or alternatively a list of IPs that
+ the player logged in from.
+
  whoip
 
  Lima Bean:  (Local Time is: Tue Sep 19 07:09:15 1995)
@@ -35,7 +39,12 @@ USAGE::
   whoip 129.188.154.108
 
  There is 1 user from maniac1t.mot.com (129.188.154.108):
- Zifnab..
+ Zifnab
+
+ The following 3 users have been logged in from 129.188.154.108:
+ Zifnab
+ Beek
+ Tsath
 
 
 
