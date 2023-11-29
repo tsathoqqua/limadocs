@@ -83,7 +83,7 @@ Removes skills from the player that doesn't exist anymore.
 
 
 
-.. c:function:: class skill query_skill(string skill)
+.. c:function:: class skill query_skill(string s)
 
 class skill query_skill(string skill);
 Returns a single class skill by name.
@@ -96,6 +96,22 @@ int query_skill_pts(string skill);
 Returns the current skill points for a skill.
 This is not the aggregated points, but the real number
 of points at this spot of the skill tree.
+Returns -1 if the skill doesn't exist for the player.
+
+
+
+.. c:function:: int query_skill_bonus(string skill)
+
+int query_skill_bonus(string skill);
+Returns the current skill bonus for a skill.
+Returns -1 if the skill doesn't exist for the player.
+
+
+
+.. c:function:: int query_training_pts(string skill)
+
+int query_training_pts(string skill);
+Returns the current training points for a skill.
 Returns -1 if the skill doesn't exist for the player.
 
 

@@ -36,7 +36,9 @@ Module
 - `Module: m_input <module/m_input.html>`_
 - `Module: m_items <module/m_items.html>`_
 - `Module: m_lightable <module/m_lightable.html>`_
+- `Module: m_lockpick <module/m_lockpick.html>`_
 - `Module: m_messages <module/m_messages.html>`_
+- `Module: m_npcscript <module/m_npcscript.html>`_
 - `Module: m_openable <module/m_openable.html>`_
 - `Module: m_react <module/m_react.html>`_
 - `Module: m_readable <module/m_readable.html>`_
@@ -45,8 +47,11 @@ Module
 - `Module: m_save <module/m_save.html>`_
 - `Module: m_searchable <module/m_searchable.html>`_
 - `Module: m_smartmove <module/m_smartmove.html>`_
+- `Module: m_special_weapon <module/m_special_weapon.html>`_
 - `Module: m_stateful <module/m_stateful.html>`_
 - `Module: m_switchable <module/m_switchable.html>`_
+- `Module: m_trainer <module/m_trainer.html>`_
+- `Module: m_valuable <module/m_valuable.html>`_
 - `Module: m_vendor <module/m_vendor.html>`_
 - `Module: m_wander <module/m_wander.html>`_
 - `Module: m_wearable <module/m_wearable.html>`_

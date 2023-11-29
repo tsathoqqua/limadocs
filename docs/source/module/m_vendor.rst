@@ -10,7 +10,7 @@ Module Information
  m_vendor is used to create vendor objects that buy and sell stuff
  they work as traditional shopkeepers and also bartenders.
  See: /domains/std/shopkeeper.c
- See: M_VALUABLE for possible interactions and notes about generic items.
+ See:  for possible interactions and notes about generic items.
 
 Functions
 =========
@@ -122,7 +122,7 @@ a new one.  Some muds would prefer the old way of what you sell is
 what you buy.  The unique inventory is set by sending the room
 where the inventory is kept.
 ex: set_unique_inventory("/domains/std/rooms/storage");
-NOTE: only armor, weaps, vehicles are uniqued
+NOTE: only armour, weaps, vehicles are uniqued
 Unless the object has a is_unique() { return 1; } function in it
 See set_all_unique to unique everything
 

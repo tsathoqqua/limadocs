@@ -29,6 +29,7 @@ Player Commands
 - `inactive <player_command/inactive.html>`_
 - `inventory <player_command/inventory.html>`_
 - `mail <player_command/mail.html>`_
+- `materials <player_command/materials.html>`_
 - `menu <player_command/menu.html>`_
 - `metric <player_command/metric.html>`_
 - `mode <player_command/mode.html>`_

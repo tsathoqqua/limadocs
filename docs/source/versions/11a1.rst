@@ -81,3 +81,102 @@ Didlog
 - **Wed Mar  8 08:33:31 2023**: *Tsath*  added a basic implementation of behavior trees for NPCs under /std/behaviour/ and started gradually hollowing out behaviours from adversary.
 - **Wed Mar  8 08:34:25 2023**: *Tsath*  added Plutchik emotion wheel to the behaviour trees and a 'smartmobs' cmd to view active smart NPCs on the MUD.
 - **Wed Mar  8 16:42:26 2023**: *Tsath*  reformatted the entire mudlib according to /help/wizard/coding/vs_code.
+- **Sun Mar 19 15:20:11 2023**: *Tsath*  removed 'sline' and status_line functionality as deprecated. This should be reimplemented using GMCP or other things used today.
+- **Sun Mar 19 15:32:22 2023**: *Tsath*  merged body/help (2 simple functions) into body/cmd for reduce inheritance chain.
+- **Sun Mar 19 15:38:06 2023**: *Tsath*  merged wiz_positions into wizfuncs for same reason.
+- **Sun Apr 16 11:33:03 2023**: *Tsath*  moved 3 variables in M_WIDGETS to nosave.
+- **Mon Apr 17 20:58:23 2023**: *Tsath*  updated ACCOUNT_D with coverage() and fixed a few bugs.
+- **Tue Apr 18 16:35:05 2023**: *Tsath*  added save_things_to_string() to M_SAVE to avoid deep recursive saves of players and monsters.
+- **Thu May  4 17:18:49 2023**: *Tsath*  fixed dual login fails in USER_OB. You can now log in more times as a wizard again.
+- **Sun May 21 17:11:58 2023**: *Tsath*  fixed enter messages for PORTAL.
+- **Thu May 25 21:53:54 2023**: *Tsath*  fixed IMUD tells that could not find the right user colour codes to use due to missing this_user().
+- **Thu May 25 22:12:17 2023**: *Tsath*  fixed 'colours' cmd to accept pinkfish names as well as 'palette' numbers.
+- **Fri May 26 23:37:17 2023**: *Tsath*  introduced small bad header fix to HTTP_D.
+- **Wed May 31 21:23:47 2023**: *Tsath*  added functionality in 'calls' to shorten the list in case of many calls to same function from same object.
+- **Thu Jun  1 16:00:33 2023**: *Tsath*  added fixed for GUILD_D, ACCOUNT_D, MONEY_D and M_GUILD_MEMBER (new file).
+- **Thu Jun  8 16:21:53 2023**: *Tsath*  added meaningful warnings for adding exit/enter messages to non-existing exits.
+- **Wed Jun 14 14:48:35 2023**: *Tsath*  fixed DC's while auto login was enabled to not err.
+- **Wed Jun 14 23:08:56 2023**: *Tsath*  fixed a header overflow bug in 'people' cmd.
+- **Thu Jun 15 14:33:27 2023**: *Tsath*  extended M_VENDOR and M_VALUABLE with generic object support. Added ^std/weapon/stick as example - see ^std/shopkeeper as well.
+- **Sat Jun 17 10:29:24 2023**: *Tsath*  added 'hints' command and hints system.
+- **Sat Jun 17 17:41:51 2023**: *Tsath*  cleaned some unused config.h options out of there, and added 4 new ones for XP and leveling control.
+- **Sat Jun 17 17:44:05 2023**: *Tsath*  handled a lot of lose ends on FRAMEs.
+- **Sun Jun 18 18:35:45 2023**: *Tsath*  updated QUEST_D and admtool quest part.
+- **Sun Jun 18 20:08:35 2023**: *Tsath*  updated VERB_OB to handle wrapping better.
+- **Tue Jun 20 11:19:57 2023**: *Tsath*  fixed room_chat to not start multiple call_out()
+- **Thu Jun 22 15:37:52 2023**: *Tsath*  fixed object/vsupport to support smarter get from containers. It's an experiment, we'll see if it stays.
+- **Sun Jun 25 19:37:47 2023**: *Tsath*  added fixed for hints system
+- **Sun Jun 25 21:44:36 2023**: *Tsath*  fixed 'ls' to show loaded files again.
+- **Sun Jun 25 23:25:03 2023**: *Tsath*  fixed bug in secure/socket and update netstat cmd.
+- **Tue Jun 27 17:52:16 2023**: *Tsath*  fixed BOOK M_READABLE and ^std/lima_guide to work. Also added automatic index in books.
+- **Thu Jun 29 17:52:40 2023**: *Tsath*  added 'hints <item>' as a way to ask an item in inventory for a hint.
+- **Sat Jul  1 22:32:09 2023**: *Jezu*  added telnet socket keepalive to help prevent telnet socket disconnects under some conditions.
+- **Sun Jul  2 18:42:03 2023**: *Tsath*  extended LAST_LOGIN_D to capture IPs for logins, and logins from IPs.
+- **Sun Jul  2 19:39:21 2023**: *Tsath*  extended 'whoip' to use new LAST_LOGIN_D functionality.
+- **Tue Jul  4 10:30:50 2023**: *Jezu*  fixed a typo in the 'who' command.
+- **Tue Jul  4 13:56:23 2023**: *Tsath*  fixed output issue in 'inactive' cmd.
+- **Wed Jul  5 07:26:48 2023**: *Tsath*  added USER_D to /data/config/preload to make it load on boot.
+- **Thu Jul  6 00:22:54 2023**: *Jezu*  replaced all instances of the '->' class identifier with '.' across all .c files in the library.
+- **Sun Jul  9 20:21:45 2023**: *Tsath*  framed 'quests' cmd.
+- **Thu Jul 13 23:40:12 2023**: *Tsath*  noticed M_WANDER depends on M_SMARTMOVE if used with livings (non-adversaries). Fixed it so it works, but not happy with the dependency.
+- **Thu Jul 20 22:16:40 2023**: *Tsath*  fixed CORPSE to correctly use STATE_D.
+- **Tue Jul 25 11:08:13 2023**: *Tsath*  changed 'skills' to work for mobs as well.
+- **Tue Jul 25 11:08:26 2023**: *Tsath*  noticed another dependency between M_WANDER and M_ACTIONS. Nice.
+- **Thu Jul 27 17:52:28 2023**: *Tsath*  fixed an accent() issue in M_FRAME.
+- **Thu Jul 27 23:33:59 2023**: *Tsath*  cleaned up old code and added documentation for M_WIDGETS.
+- **Sun Jul 30 18:10:38 2023**: *Tsath*  changed DOC_D to check if directory creation was successful, and instruct an admin how to initiate it if they wanted to use it. Printed at driver start up as well.
+- **Sun Jul 30 18:25:05 2023**: *Tsath*  moved the domain_file() and author_file() from sefuns to master.
+- **Sun Jul 30 19:34:32 2023**: *Tsath*  fixed another bug in 'whoip'.
+- **Mon Jul 31 22:06:57 2023**: *Tsath*  removed recursive call from do_receive() in USER_OB.
+- **Thu Aug 24 22:09:00 2023**: *Tsath*  rewrote MESSAGES_D.
+- **Sun Sep  3 22:30:32 2023**: *Tsath*  extended M_CONVERSATION to check for ability scores and skill ranks.
+- **Wed Sep  6 22:55:33 2023**: *Tsath*  fixed leftover usermenu hanging after auto login.
+- **Sun Sep 10 21:43:47 2023**: *Tsath*  updated the greeter in /domains/std/ to reflect current info for where to get the lib (ie 'help release') and where to report FluffOS bugs.
+- **Thu Sep 14 21:24:10 2023**: *Tsath*  added targetted emote for M_CONVERSATION.
+- **Thu Sep 21 11:49:06 2023**: *Tsath*  extended admtool with 'messages' daemon support.
+- **Thu Sep 21 11:49:16 2023**: *Tsath*  extended admtool with info about 'races'.
+- **Thu Sep 21 12:26:53 2023**: *Tsath*  reorg'ed the admtool 'daemons' menu into 'game' configuration things and 'daemons' of other kinds.
+- **Wed Sep 27 17:44:27 2023**: *Tsath*  updated SKILL_D to scale ranks with config settings in /include/config/skills.h
+- **Wed Sep 27 17:46:22 2023**: *Tsath*  added CONFIG_EDITOR for reading/writing structured include files.
+- **Wed Sep 27 17:50:29 2023**: *Tsath*  added a 'settings' menu in 'admtool' 'g' 'S' for editing include files under /include/config/*.h.
+- **Sun Oct  1 16:30:23 2023**: *Tsath*  extended SKILL_D to support different rank types.
+- **Sun Oct  1 17:08:50 2023**: *Tsath*  fixed a bug in player shell var defaults.
+- **Sat Oct 14 15:45:12 2023**: *Tsath*  fixed a bug in referral code.
+- **Mon Oct 16 22:53:59 2023**: *Tsath*  stripped out all lpscript. There are smarter ways of creating code in 2023.
+- **Mon Oct 23 14:57:20 2023**: *Tsath*  added config/user_menu.h and updated USER_OB and USER_MENU to use these features.
+- **Mon Oct 23 14:59:02 2023**: *Tsath*  added timeout for people idling in the USER_MENU.
+- **Sat Oct 28 10:42:36 2023**: *Tsath*  fixed a bug on same user hanging in login sequence without body causing errors on take-overs.
+- **Sat Oct 28 10:48:15 2023**: *Tsath*  externalized config of CRAFTING_D, DAMAGE_D and MESSAGES_D for easier configuration so admtool is not the only way. Along the lines of GUILD_D.
+- **Sun Oct 29 15:18:28 2023**: *Tsath*  added new config/equipment.h file.
+- **Sun Oct 29 16:42:22 2023**: *Tsath*  added support for showing damaged items in their names as durability drops.
+- **Sun Oct 29 16:44:12 2023**: *Tsath*  added new configurable colour DMGED_EQUIP for player defined colours.
+- **Sun Oct 29 17:44:13 2023**: *Tsath*  changed repair verb to support items with ANSI colours.
+- **Sun Nov  5 13:03:10 2023**: *Tsath*  fixed 'emoji' cmd to show replacements correctly.
+- **Sun Nov  5 13:03:43 2023**: *Tsath*  updated EMOJI_D to hold a mapping of default emojis.
+- **Sun Nov  5 13:07:18 2023**: *Tsath*  added default methods to METHOD_D.
+- **Sun Nov  5 14:32:15 2023**: *Tsath*  added a lot of default data to a lot of daemons, so .o files do not need to be versioned anymore.
+- **Sun Nov  5 18:29:42 2023**: *Tsath*  fixed format of showemote after "->" to "." fix for classes.
+- **Fri Nov 10 23:44:52 2023**: *Tsath*  introduced M_NPCSCRIPT for long script tasks for NPCs.
+- **Fri Nov 10 23:46:14 2023**: *Tsath*  fixed various issues with M_ACTIONS and M_TRIGGERS.
+- **Sun Nov 12 11:28:05 2023**: *Tsath*  implemented multiple SCRIPT_ACTION to shorted the scripts, somewhat.
+- **Mon Nov 13 12:09:00 2023**: *Tsath*  fixed wrong width of messages when logging on at first.
+- **Mon Nov 13 14:04:04 2023**: *Tsath*  made guests skip the USER_MENU on login/logout.
+- **Mon Nov 13 14:04:13 2023**: *Tsath*  made guests not save anymore.
+- **Mon Nov 13 14:44:30 2023**: *Tsath*  made sure guests cannot change password either.
+- **Mon Nov 13 21:26:40 2023**: *Tsath*  made sure M_CONVERSATION exited whenever M_NPCSCRIPT runs scripts.
+- **Thu Nov 23 13:26:18 2023**: *Tsath*  added support for M_WIELDABLE and M_WEARABLE can easily introduce temporary skill increases/decreases when things are wielded or worn.
+- **Thu Nov 23 13:27:48 2023**: *Tsath*  fixed max frame width to be 1000 chars. Thanks to Renras for spotting this one.
+- **Thu Nov 23 14:17:23 2023**: *Tsath*  removed the centered header from help pages to avoid screen reader issues.
+- **Thu Nov 23 15:31:03 2023**: *Tsath*  removed ascii graphics from 'set' command.
+- **Thu Nov 23 21:18:38 2023**: *Tsath*  updated 'skills' and 'equip' to show extra info on skill bonuses from items.
+- **Fri Nov 24 13:38:45 2023**: *Tsath*  created CLASS_WEAR_INFO and used that across the lib, and got rid of local definitions.
+- **Sat Nov 25 21:15:12 2023**: *Tsath*  cleaned up worn_attributes() in M_WEARABLE and 'equip' command.
+- **Sun Nov 26 18:42:19 2023**: *Tsath*  removed ascii art from M_ACCOUNTANT.
+- **Sun Nov 26 19:14:43 2023**: *Tsath*  made 'time' command callable from menus.
+- **Sun Nov 26 19:54:03 2023**: *Tsath*  made a few more fixes more 'equip' 'materials' and added a 'pull OBJ STR' rule to the pull verb, e.g. "pull visor down", "pull hood up".
+- **Wed Nov 29 18:20:47 2023**: *Tsath*  fixed multiple messages in combat not showing right.
+- **Wed Nov 29 18:21:31 2023**: *Tsath*  moved all 'blow' damage types to 'bludgeon'.
+- **Wed Nov 29 18:22:34 2023**: *Tsath*  did a vsupport fix for environment checks for get.
+- **Wed Nov 29 18:23:12 2023**: *Tsath*  changed M_DAMAGE_SINK to properly check resistances and weaknesses.
+- **Wed Nov 29 18:24:45 2023**: *Tsath*  added CLIMB_CHALLENGE for doing climb checks. Basically an exit that only works on a successful skill check.
+

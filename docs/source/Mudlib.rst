@@ -3,8 +3,8 @@ Mudlib
 ******
 
 - `adversary <mudlib/adversary.html>`_
-- `armor <mudlib/armor.html>`_
-- `armor_base <mudlib/armor_base.html>`_
+- `armour <mudlib/armour.html>`_
+- `armour_base <mudlib/armour_base.html>`_
 - `attributes <mudlib/attributes.html>`_
 - `base <mudlib/base.html>`_
 - `base_obj <mudlib/base_obj.html>`_
@@ -30,6 +30,7 @@ Mudlib
 - `light <mudlib/light.html>`_
 - `limbs <mudlib/limbs.html>`_
 - `mass <mudlib/mass.html>`_
+- `material_spawner <mudlib/material_spawner.html>`_
 - `menu <mudlib/menu.html>`_
 - `money <mudlib/money.html>`_
 - `move <mudlib/move.html>`_
@@ -54,6 +55,7 @@ Mudlib
 - `target <mudlib/target.html>`_
 - `transient <mudlib/transient.html>`_
 - `types <mudlib/types.html>`_
+- `value <mudlib/value.html>`_
 - `vaporize <mudlib/vaporize.html>`_
 - `visible <mudlib/visible.html>`_
 - `vsupport <mudlib/vsupport.html>`_

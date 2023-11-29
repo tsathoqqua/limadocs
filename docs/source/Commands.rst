@@ -18,6 +18,7 @@ Commands
 - `Command: checkpriv <command/checkpriv.html>`_
 - `Command: clean <command/clean.html>`_
 - `Command: clone <command/clone.html>`_
+- `Command: cmd <command/cmd.html>`_
 - `Command: codefor <command/codefor.html>`_
 - `Command: codesay <command/codesay.html>`_
 - `Command: cp <command/cp.html>`_

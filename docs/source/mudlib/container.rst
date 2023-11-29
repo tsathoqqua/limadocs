@@ -49,13 +49,13 @@ the alias is associated with.
 
 
 
-.. c:function:: void set_relation_alias(string relation, string aliases...)
+.. c:function:: void set_relation_alias(string relation, string *aliases...)
 
 Set the aliases that a relation has
 
 
 
-.. c:function:: void add_relation_alias(string relation, string aliases...)
+.. c:function:: void add_relation_alias(string relation, string *aliases...)
 
 Add additional aliases that a relation has.
 

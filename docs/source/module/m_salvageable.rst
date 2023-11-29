@@ -22,22 +22,37 @@ Functions
 int query_salvage_level()
 Returns the salvage level determining how much material an object
 will drop when salvaged. This function returns sane values for
-weapons, armor and pelts.
+weapons, armour and pelts.
 
 
 
-.. c:function:: void set_tattered()
+.. c:function:: void set_direct_salvage(mapping salv)
 
-void set_tattered()
-Sets the object as "tattered" meaning reduced durability,
+Sets the direct materials retrieved from salvaging this
+item. The argument is a mapping containing the material gained
+and the number of them.
+ "plastic bag":2 etc
+
+
+
+.. c:function:: mapping query_direct_salvage()
+
+Returns the mapping containing the direct salvageable items.
+
+
+
+.. c:function:: void set_damaged()
+
+void set_damaged()
+Sets the object as DAMAGED_EQ_NAME meaning reduced durability,
 and gives it a new adjective.
 
 
 
-.. c:function:: int is_tattered()
+.. c:function:: int is_damaged()
 
-int is_tattered()
-Returns true is the object is tattered, else 0.
+int is_damaged()
+Returns true is the object is damaged, else 0.
 
 
 
@@ -58,7 +73,7 @@ Sets the salvage mapping for object. Salvage mappings contains
 valid categories are defined by being part of:
  CRAFTING_D->query_salvage_categories();
 example:
-  set_salvageable((["wood":15, "metal":85, ]));
+  set_salvageable((["chemical":5, "metal":85, "nature":10, ]));
 
 The numbers must sum to 100, or the salvage mapping will be rejected.
 

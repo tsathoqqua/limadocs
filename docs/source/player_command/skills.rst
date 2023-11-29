@@ -14,16 +14,11 @@ USAGE::
 	skills
 
  Prints out a list of your skills and skill ranks.
- - Skill ranks are shown by roman numerals (the higher the better from 0-15)
- - Training points are shown at the end of the skill bars (in yellow)
-
- Optional arguments are: combat, magic or misc to only show a subsection
- of the skill tree.
+ - Skill ranks are shown at the end of the skills (the higher the better from 0-20)
+ - Training points, if used, are shown at the end of the skill bars (in yellow)
 
  The more you use your skills, the better you get. So things get better all
- the time! When you have a lot of training points, search for a trainer to
- train you. They both need to have the right skills and at the right skill
- rank to train you.
+ the time! Talk to a trainer to learn more about skills.
 
 
 

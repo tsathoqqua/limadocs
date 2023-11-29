@@ -82,7 +82,7 @@ Return the bodyslot the wearable object takes up.
 
 .. c:function:: void set_also_covers(string *s...)
 
-Set string or an an array of other limbs that this armor piece
+Set string or an an array of other limbs that this armour piece
 also covers.
 
  set_also_covers("left foot");

@@ -76,6 +76,12 @@ Most of the work is done in try_to_acquire.
 
 
 
+.. c:function:: mixed need_to_be_unused()
+
+Must be something you have, and not wielded and worn.
+
+
+
 .. c:function:: mixed direct_look_at_obj(object ob)
 
 Whether or not an object can be looked at.  If there's no short description,
@@ -124,6 +130,12 @@ being given.
 .. c:function:: mixed direct_eat_obj(object ob)
 
 Handle parser checks for "eat OBJ" rule.
+
+
+
+.. c:function:: mixed direct_salvage_obj()
+
+Handle parser checks for "salvage OBJ" rule.
 
 
 
@@ -199,6 +211,12 @@ Default
 
 
 
+.. c:function:: mixed direct_search_for_str(string str)
+
+Default
+
+
+
 .. c:function:: mixed indirect_search_obj_with_obj(object ob1, object ob2)
 
 Default.
@@ -255,6 +273,12 @@ Default
 .. c:function:: mixed indirect_search_obj_for_str_with_obj(object ob1, string str, object ob2)
 
 Default
+
+
+
+.. c:function:: varargs void do_search(object with, string search_for)
+
+Default searching.
 
 
 

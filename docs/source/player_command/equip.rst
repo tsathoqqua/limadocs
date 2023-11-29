@@ -13,9 +13,9 @@ USAGE::
 
 	equip
 
- Shows your wielded and worn weapons and armors, their durability
+ Shows your wielded and worn weapons and armours, their durability
  and some primary stats. The command also shows your spell failure chance
- which increases with the more medium and heavy armor you wear, the latter
+ which increases with the more medium and heavy armour you wear, the latter
  having a greater impact.
 
  Reparing and salvaging
@@ -25,8 +25,8 @@ USAGE::
  seen in your 'pouch'.
 
  You can easily salvage by using 'salvage all' which will salvage all
- your tattered equipment. You can salvage other things by salvaging
- them one by one, i.e. 'salvage mace' to salvage your non-tattered mace.
+ your damaged equipment. You can salvage other things by salvaging
+ them one by one, i.e. 'salvage mace' to salvage your non-damaged mace.
 
  Use 'repair all' to repair all your equipment. The command will give you
  an estimate of the cost in materials and coins (if needed) before you

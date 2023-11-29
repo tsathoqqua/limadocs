@@ -22,7 +22,8 @@ The function returns 1 on success or 0 on failure.
 
 int has_material(string m, int count)
 Checks for count material from the pouch if available (return 1),
-otherwise return 0.
+otherwise return 0. Material could also be in inventory, which is
+also checked.
 
 
 

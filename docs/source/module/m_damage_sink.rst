@@ -9,48 +9,48 @@ Functions
 
 
 
-.. c:function:: void set_armor_class(int x)
+.. c:function:: void set_armour_class(int x)
 
 Set the protection of the particular damage sink.  random(class) points
 of damage will be prevented.
 
 
 
-.. c:function:: int query_armor_class()
+.. c:function:: int query_armour_class()
 
-Query the current armor class of an object.  Higher is better.
+Query the current armour class of an object.  Higher is better.
 
 
 
 .. c:function:: void set_resist(string type, int amt)
 
-set_resist(type, amt) specifies that for damage of type 'type', the armor
+set_resist(type, amt) specifies that for damage of type 'type', the armour
 class should be increased by 'amt'
 
 
 
 .. c:function:: void set_resistances(mapping x)
 
-void set_resistances(mapping) - Set all the resistances an armor
+void set_resistances(mapping) - Set all the resistances an armour
 possesses.
 
 
 
 .. c:function:: void set_weakness(string type, int amt)
 
-set_weakness(type, amt) specifies that for damage of type 'type', the armor
+set_weakness(type, amt) specifies that for damage of type 'type', the armour
 class should be decreased by 'amt'
 
 
 
 .. c:function:: void set_weaknesses(mapping weak)
 
-void set_weaknesses(mapping) - Set all the weaknesses an armor
+void set_weaknesses(mapping) - Set all the weaknesses an armour
 possesses.
 
 
 
-.. c:function:: int is_armor()
+.. c:function:: int is_armour()
 
 Returns 1 if the object is a damage_sink.
 
