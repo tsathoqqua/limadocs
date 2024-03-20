@@ -10,7 +10,9 @@ is also available.
 
 Latest changes
 ==============
-- `Changes in 1.1a1 (Currently Alpha version) <versions/11a1.html>`_
+- `Changes in 1.1a3 (Current version) <versions/11a3.html>`_
+- `Changes in 1.1a2 <versions/11a2.html>`_
+- `Changes in 1.1a1 <versions/11a1.html>`_
 - `Changes in 1.0b6 <versions/10b6.html>`_
 
 Commands

@@ -5,7 +5,6 @@ Module
 - `Module: m_accountant <module/m_accountant.html>`_
 - `Module: m_actions <module/m_actions.html>`_
 - `Module: m_aggressive <module/m_aggressive.html>`_
-- `Module: m_ansi <module/m_ansi.html>`_
 - `Module: m_blockexits <module/m_blockexits.html>`_
 - `Module: m_bodystats <module/m_bodystats.html>`_
 - `Module: m_boss <module/m_boss.html>`_
@@ -31,7 +30,6 @@ Module
 - `Module: m_frame <module/m_frame.html>`_
 - `Module: m_gettable <module/m_gettable.html>`_
 - `Module: m_grammar <module/m_grammar.html>`_
-- `Module: m_guild_master <module/m_guild_master.html>`_
 - `Module: m_healing <module/m_healing.html>`_
 - `Module: m_input <module/m_input.html>`_
 - `Module: m_items <module/m_items.html>`_
@@ -40,7 +38,6 @@ Module
 - `Module: m_messages <module/m_messages.html>`_
 - `Module: m_npcscript <module/m_npcscript.html>`_
 - `Module: m_openable <module/m_openable.html>`_
-- `Module: m_react <module/m_react.html>`_
 - `Module: m_readable <module/m_readable.html>`_
 - `Module: m_ready <module/m_ready.html>`_
 - `Module: m_salvageable <module/m_salvageable.html>`_
@@ -49,7 +46,6 @@ Module
 - `Module: m_smartmove <module/m_smartmove.html>`_
 - `Module: m_special_weapon <module/m_special_weapon.html>`_
 - `Module: m_stateful <module/m_stateful.html>`_
-- `Module: m_switchable <module/m_switchable.html>`_
 - `Module: m_trainer <module/m_trainer.html>`_
 - `Module: m_valuable <module/m_valuable.html>`_
 - `Module: m_vendor <module/m_vendor.html>`_

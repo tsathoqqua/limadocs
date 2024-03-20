@@ -73,7 +73,7 @@ Sets the salvage mapping for object. Salvage mappings contains
 valid categories are defined by being part of:
  CRAFTING_D->query_salvage_categories();
 example:
-  set_salvageable((["chemical":5, "metal":85, "nature":10, ]));
+  set_salvageable((["chemical":5, "metal":85, "mineral":10, ]));
 
 The numbers must sum to 100, or the salvage mapping will be rejected.
 

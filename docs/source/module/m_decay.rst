@@ -20,6 +20,8 @@ Functions
 set_decay_action(string) causes 'string' to be printed this
 object decays.  set_decay_action(function) causes the function
 to be called instead.
+If action contains a "$", it's assumed to be a message, and called via
+ env()->simple_action(action,this_object());
 
 
 

@@ -1,0 +1,59 @@
+======
+Didlog
+======
+
+- **Sun Dec  3 23:54:19 2023**: *Tsath*  started work on 1.1a3.
+- **Sun Dec  3 23:54:22 2023**: *Tsath*  fixed vendors listing one price, and selling for another for items with random values.
+- **Mon Dec  4 18:14:00 2023**: *Tsath*  fixed missing modal_pop() when running a game without USER_MENU.
+- **Thu Dec  7 23:26:30 2023**: *Tsath*  fixed a failed hook remove in ADVERSARY.
+- **Thu Dec  7 23:27:03 2023**: *Tsath*  made sure M_AGRESSIVE works when the mob is first encountered.
+- **Sat Dec  9 16:43:26 2023**: *Tsath*  removed <config.h> include in a ton of places since it's automatically included already.
+- **Tue Dec 19 12:26:09 2023**: *Tsath*  added LIMA_D to show changes for the LIMA mudlib on MUDs built on LIMA.
+- **Tue Dec 19 12:26:40 2023**: *Tsath*  changed 'didlog' and 'DID_D' to support logging to LIMA when on LIMA, but to local mudlib .o file when on other MUD.
+- **Sun Jan 21 19:16:13 2024**: *Tsath*  added 'width nowrap' to turn off wrapping entirely. Can be useful for screen readers.
+- **Sun Feb 11 22:58:08 2024**: *Tsath*  added /std/tests/, TEST_D and TEST_SUITE for automated testing.
+- **Sun Feb 11 22:59:07 2024**: *Tsath*  cleaned up some .h files in /include and removed an unused one.
+- **Thu Feb 15 22:34:38 2024**: *Tsath*  fixed LIGHT_OBJECT to work with STATE_D.
+- **Thu Feb 15 22:35:43 2024**: *Tsath*  fixed "burned message" in PAPER.
+- **Sun Feb 18 23:28:43 2024**: *Tsath*  added ^std/objects/candle as a LIGHT_OBJECT example.
+- **Sun Feb 18 23:29:20 2024**: *Tsath*  updated <light.h> to reflect changes to M_LIGHTABLE.
+- **Tue Feb 20 23:22:09 2024**: *Tsath*  removed error() call in OBJ remove_hook() as some hooks might not be set when remove is called.
+- **Wed Feb 21 23:01:37 2024**: *Tsath*  made M_DECAY based objects save to disk upon quit.
+- **Fri Feb 23 23:05:05 2024**: *Tsath*  moved ^std/objects to ^std/object and ^std/rooms to ^std/room.
+- **Tue Feb 27 18:41:34 2024**: *Tsath*  made decay messages more flexible in M_DECAY and can handle messages and sends them from the holder of the item decaying.
+- **Tue Feb 27 22:58:45 2024**: *Tsath*  fixed memory shortcut in admtool. Thanks to Asmerian for finding this one.
+- **Tue Feb 27 23:13:48 2024**: *Tsath*  moved 'showpath' to 'printpath' to avoid Mudlet overlap with 'showpath' command from mapper.
+- **Thu Feb 29 23:25:09 2024**: *Asmerian*  updated carrying capacity line to reflect current carry/max carry
+- **Fri Mar  1 02:08:52 2024**: *Asmerian*  adjusted the width for the Experience bar in score
+- **Fri Mar  1 17:56:50 2024**: *Asmerian*  removed platemail and replaced it with fullplate that covers the entire body
+- **Fri Mar  1 23:29:42 2024**: *Tsath*  fixed a series of bugs in didlog and DID_D to retrieve didlogs from other versions than the current one. Probably only 5 left now. If we're lucky.
+- **Sat Mar  2 13:38:04 2024**: *Tsath*  rewrote the 'didlog' command to make it more powerful, easier to read and with less bugs.
+- **Sun Mar  3 23:38:16 2024**: *Tsath*  fixed uncaught exception in CMD_D that caused input to be lost after 2 consecutive errors.
+- **Mon Mar  4 09:03:49 2024**: *Asmerian*  fixed imperial weight rounding issue.  Now shows to 2 decimal places
+- **Mon Mar  4 09:59:09 2024**: *Tsath*  fixed a bug in SHELL that caused wizard shells to not save if username was longer than 5. Lovely bug.
+- **Mon Mar  4 21:50:58 2024**: *Tsath*  removed /cmds/create since none of them worked.
+- **Tue Mar  5 20:27:18 2024**: *Asmerian*  updated sword to no longer use size and mass; Removed proper name from pac_longsword allowing it to load.  Need to track down the cause
+- **Tue Mar  5 22:56:21 2024**: *Asmerian*  removed bodyslots, adjusted school rooms to all load
+- **Wed Mar  6 10:15:22 2024**: *Tsath*  moved files into folders under ^std. Still a few remaining ...
+- **Wed Mar  6 12:40:23 2024**: *Tsath*  fixed another input crasher in CMD_D.
+- **Wed Mar  6 13:09:33 2024**: *Tsath*  updated 'which' cmd so it now allows things like: "which people | xargs update".
+- **Wed Mar  6 13:09:36 2024**: *Tsath*  fixed input system error catch in USER_OB.
+- **Thu Mar  7 14:07:02 2024**: *Tsath*  moved tracking of player/users to USER_D.
+- **Thu Mar  7 23:43:50 2024**: *Tsath*  made 'finger' FINGER_D and USER_D USER_MENU aware.
+- **Sun Mar 10 22:56:33 2024**: *Tsath*  updated ADVERSARY to have is_adversary() return 1, and 'score' cmd to use it.
+- **Mon Mar 11 21:19:41 2024**: *Tsath*  turned the CLAMP define into a sefun (clamp()).
+- **Mon Mar 11 22:12:16 2024**: *Tsath*  created empty file for BODY in /std/body/custom.c for mudlib expansions.
+- **Wed Mar 13 22:37:30 2024**: *Tsath*  fixed goodbye_action issue in M_CONVERSATION.
+- **Fri Mar 15 18:08:49 2024**: *Tsath*  fixed emoji replacement to work again.
+- **Sun Mar 17 01:34:32 2024**: *Asmerian*  moved quarrel from std/weapon to std/ammo
+- **Sun Mar 17 02:07:28 2024**: *Asmerian*  updated equipment_test to handle dual wielding, updated base sword to reflect the ability to be dual wielded by default
+- **Sun Mar 17 09:02:50 2024**: *Tsath*  fixed user creation when USE_USER_MENU is not defined.
+- **Sun Mar 17 18:09:06 2024**: *Tsath*  hardened code in 'skills' so it works even with fewer skills learned.
+- **Sun Mar 17 21:59:15 2024**: *Asmerian*  updated scarf to inherit from armour instead of obj.  Deleted duplicate scarf onbject from main directory of /domains/std
+- **Sun Mar 17 22:40:45 2024**: *Asmerian*  fixed the dead adventurer who loads in the portal area
+- **Mon Mar 18 00:08:49 2024**: *Asmerian*  updated backpack to be worn on the back, renamed equipment_tests to items for the test suite
+- **Mon Mar 18 09:42:44 2024**: *Tsath*  fixed LAST_LOGIN_D to not register "0" as an IP and clean up previous entries.
+- **Mon Mar 18 11:01:10 2024**: *Tsath*  added 'unittest' command to easily run test suites.
+- **Tue Mar 19 14:14:53 2024**: *Tsath*  added a few more fixes for 'score'.
+- **Wed Mar 20 09:44:42 2024**: *Tsath*  fixed M_WANDER so mobs do not trigger each other to continually move, but only players can reset the move count. Also set a default limit for number of moves (to 4).
+

@@ -12,6 +12,7 @@ USAGE::
 	width
 	width <number>
 	width auto
+	width nowrap
 
  Allows you to see (or set) what the mud will use as your screen width when
  formatting information. Some clients send the width of the terminal window,

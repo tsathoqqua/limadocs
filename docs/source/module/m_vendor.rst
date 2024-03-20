@@ -51,7 +51,7 @@ enables you to add items to the vendors stored_item's mapping
 
 with a mapping you can set many items into the vendor's to sell list
 Two formats are support:
-  set_sell((["^std/apple":-1, "^std/weapon/sword":3, "^std/ale":-1, ]));
+  set_sell((["^std/consumable/apple":-1, "^std/weapon/sword":3, "^std/ale":-1, ]));
 and another format supporting custom setup() arguments.
   set_sell((["^std/generic_item": ({-1,({"test object",15})}),"^std/weapon/sword":3]));
 First argument is still count (or -1 for infinite), seconds argument is args for setup().
@@ -121,7 +121,7 @@ matter what the condition is, it will be dested and replaced with
 a new one.  Some muds would prefer the old way of what you sell is
 what you buy.  The unique inventory is set by sending the room
 where the inventory is kept.
-ex: set_unique_inventory("/domains/std/rooms/storage");
+ex: set_unique_inventory("/domains/std/room/storage");
 NOTE: only armour, weaps, vehicles are uniqued
 Unless the object has a is_unique() { return 1; } function in it
 See set_all_unique to unique everything

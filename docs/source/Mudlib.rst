@@ -32,7 +32,6 @@ Mudlib
 - `mass <mudlib/mass.html>`_
 - `material_spawner <mudlib/material_spawner.html>`_
 - `menu <mudlib/menu.html>`_
-- `money <mudlib/money.html>`_
 - `move <mudlib/move.html>`_
 - `moving_monster <mudlib/moving_monster.html>`_
 - `moving_room <mudlib/moving_room.html>`_
@@ -53,6 +52,7 @@ Mudlib
 - `slowheal <mudlib/slowheal.html>`_
 - `state_of_mind <mudlib/state_of_mind.html>`_
 - `target <mudlib/target.html>`_
+- `test_suite <mudlib/test_suite.html>`_
 - `transient <mudlib/transient.html>`_
 - `types <mudlib/types.html>`_
 - `value <mudlib/value.html>`_

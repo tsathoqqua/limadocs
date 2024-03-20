@@ -12,7 +12,6 @@ Commands
 - `Command: apropos <command/apropos.html>`_
 - `Command: at <command/at.html>`_
 - `Command: bk <command/bk.html>`_
-- `Command: calls <command/calls.html>`_
 - `Command: cat <command/cat.html>`_
 - `Command: cd <command/cd.html>`_
 - `Command: checkpriv <command/checkpriv.html>`_
@@ -61,6 +60,7 @@ Commands
 - `Command: killmobs <command/killmobs.html>`_
 - `Command: last <command/last.html>`_
 - `Command: lightme <command/lightme.html>`_
+- `Command: lima <command/lima.html>`_
 - `Command: listeners <command/listeners.html>`_
 - `Command: livings <command/livings.html>`_
 - `Command: loadall <command/loadall.html>`_
@@ -80,6 +80,7 @@ Commands
 - `Command: parse <command/parse.html>`_
 - `Command: people <command/people.html>`_
 - `Command: print <command/print.html>`_
+- `Command: printpath <command/printpath.html>`_
 - `Command: privs <command/privs.html>`_
 - `Command: profile <command/profile.html>`_
 - `Command: pwd <command/pwd.html>`_
@@ -96,7 +97,6 @@ Commands
 - `Command: scan <command/scan.html>`_
 - `Command: showemote <command/showemote.html>`_
 - `Command: showexits <command/showexits.html>`_
-- `Command: showpath <command/showpath.html>`_
 - `Command: showtree <command/showtree.html>`_
 - `Command: shutdown <command/shutdown.html>`_
 - `Command: snoop <command/snoop.html>`_
@@ -119,6 +119,7 @@ Commands
 - `Command: treefor <command/treefor.html>`_
 - `Command: tsh <command/tsh.html>`_
 - `Command: uncd <command/uncd.html>`_
+- `Command: unittest <command/unittest.html>`_
 - `Command: unsnoop <command/unsnoop.html>`_
 - `Command: update <command/update.html>`_
 - `Command: users <command/users.html>`_

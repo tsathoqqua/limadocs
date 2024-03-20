@@ -61,12 +61,6 @@ This is the function to call to substract money from a person
 
 
 
-.. c:function:: string *query_currencies()
-
-This function will return the current "types" of money you have
-
-
-
 .. c:function:: mapping query_money()
 
 This function will return the complete money mapping

@@ -2,9 +2,6 @@
 Verbs
 *****
 
-- `flip <verb/flip.html>`_
-- `get <verb/get.html>`_
-- `look <verb/look.html>`_
 - `post <verb/post.html>`_
 - `remove <verb/remove.html>`_
 - `switch <verb/switch.html>`_

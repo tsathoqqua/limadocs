@@ -7,20 +7,31 @@ Documentation for the didlog command in */cmds/wiz/didlog.c*.
 Command
 =======
 
-See: `Command: I <I.html>`_ 
+See: `Command: I <I.html>`_ `Command: lima <lima.html>`_ 
 
 USAGE::
 
 	didlog
-	didlog <value>
-	didlog /on
-	didlog /off
+	didlog -a|-all                   - Show entire didlog.
+	didlog <number>                  - Show didlog for last <number> days.
+	didlog -on|-off                  - Turn didlog on login on/off.
+	didlog -vs|-versions             - Show the versions stored.
+	didlog -h|-help                  - This help text.
+	didlog -newversion [param]       - Set a new version (admin only).
+	didlog -v|-ver|-version [param]  - Select this version>.
+	didlog -p|-pattern [param]       - Match pattern.
+
+  Examples:\n"
+    didlog 100                       - Find all changes in current version 100 days back.
+    didlog -v 1.0 -a                 - Show entire version 1.0 didlog.
+    didlog -v 1.0 -a -p limb         - Find all places in version 1.0 with 'limb'.
+    didlog -v 1.0 200 -p limb        - Find places in version 1.0 days 200 back with 'limb'.
 
  Shows you the "did" log (ie log of changes recorded by wizards).
  With no arguments it shows the log for the past day.
  With an integer argument it will show the log for that many days back.
- didlog /off turns didlog notification on login off.
- didlog /on turns it back on again.
+ didlog -off turns didlog notification on login off.
+ didlog -on turns it back on again.
 
 
 

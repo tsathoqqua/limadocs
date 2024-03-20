@@ -7,13 +7,13 @@ Documentation for the money player command in */cmds/player/money.c*.
 Player Command
 ==============
 
-See: `inventory <inventory.html>`_ 
+See: `inventory <inventory.html>`_ `score <score.html>`_ `equip <equip.html>`_ 
 
 USAGE::
 
 	money
 
- Displays how much money you are carrying
+ Displays how much money you are carrying. Short form of the 'score' command.
 
 
 

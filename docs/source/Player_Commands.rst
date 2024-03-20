@@ -41,7 +41,6 @@ Player Commands
 - `party <player_command/party.html>`_
 - `passwd <player_command/passwd.html>`_
 - `plan <player_command/plan.html>`_
-- `pouch <player_command/pouch.html>`_
 - `question <player_command/question.html>`_
 - `quests <player_command/quests.html>`_
 - `quit <player_command/quit.html>`_
@@ -56,10 +55,8 @@ Player Commands
 - `simplify <player_command/simplify.html>`_
 - `skills <player_command/skills.html>`_
 - `snoopable <player_command/snoopable.html>`_
-- `stats <player_command/stats.html>`_
 - `su <player_command/su.html>`_
 - `suicide <player_command/suicide.html>`_
-- `team <player_command/team.html>`_
 - `tell <player_command/tell.html>`_
 - `time <player_command/time.html>`_
 - `timezone <player_command/timezone.html>`_
