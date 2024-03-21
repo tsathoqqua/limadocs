@@ -7,27 +7,32 @@ Documentation for the test_suite mudlib in */std/test_suite.c*.
 Module Information
 ==================
 
- This file should be inherited by test suites, typically all located in /std/tests/. It provides a lot of functions
- for queueing up tests, running them and various functions for cloning and testing the results.
+This file should be inherited by test suites, typically all located in */std/tests/*. It provides a lot of functions
+for queueing up tests, running them and various functions for cloning and testing the results.
 
- To write a test inherit this file, and write a function:
+To write a test inherit this file, and write a function:
 
- inherit TEST_SUITE;
+inherit TEST_SUITE;
 
- void my_test()
- {
-    return 1;
- }
+|  void my_test()
+|  {
+|     return 1;
+|  }
 
- void init_tests()
-{
-   add_test_true("Some test",(: my_test:));
-}
+|  void init_tests()
+|  {
+|    add_test_true("Some test",(: my_test:));
+|  }
 
- If you use add_test_true() the function succeeds if it returns 1, and fails on 1.
- If you use add_test_fail(), quite the opposite. This allows both to assume something fails and something succeeds.
- The test can be run by doing:
- unittest mytest if you file is called /std/tests/mytest.c
+If you use ``add_test_true()`` the function succeeds if it returns 1, and fails on 1.
+If you use ``add_test_fail()``, quite the opposite. This allows both to assume something fails
+and something succeeds.
+
+The test can be run by doing:
+
+   ``unittest mytest``
+
+If you file is called */std/tests/mytest.c*
 
 Functions
 =========
@@ -43,7 +48,7 @@ The object is returned if cloned successfully.
 
 .. c:function:: object *std_clone(mixed *items)
 
-Clone and return a list of items from ^std/
+Clone and return a list of items from *^std/*
 If only one of them fails, an empty list is returned.
 
 
@@ -57,11 +62,15 @@ Returns true if all cloned and moved successfully, otherwise false.
 
 .. c:function:: varargs int inv_do(object who, string doo, string what, string check, int fail_on)
 
-Object 'who' does 'doo what', e.g. troll does 'wear hat'.
-Function does a call_other to the 'what' in inventory for function 'check'.
+Object ``who`` does ``do what``, e.g. troll does ``wear hat``.
+Function does a call_other to the ``what`` in inventory for function ``check``.
 Result of call_other will fail if value is fail_on.
-Example: inv_do(troll, "wield", "axe", "query_wielding", 0)
-   Troll wields axe, and if axe->query_wielding() == 0 we fail.
+
+Example: 
+
+|  inv_do(troll, "wield", "axe", "query_wielding", 0)
+
+Troll wields axe, and if ``axe->query_wielding() == 0`` we fail.
 
 If check is set to "gone", the test will return true if the object is gone.
 
