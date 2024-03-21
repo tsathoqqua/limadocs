@@ -11,7 +11,9 @@ This file should be inherited by test suites, typically all located in */std/tes
 for queueing up tests, running them and various functions for cloning and testing the results.
 
 To write a test inherit this file, and write a function:
+
 .. code-block:: c
+
    inherit TEST_SUITE;
 
    void my_test()
@@ -67,7 +69,9 @@ Function does a call_other to the ``what`` in inventory for function ``check``.
 Result of call_other will fail if value is fail_on.
 
 Example:
+
 .. code-block:: c
+
    inv_do(troll, "wield", "axe", "query_wielding", 0);
 
 Troll wields axe, and if ``axe->query_wielding() == 0`` we fail.
@@ -79,7 +83,9 @@ If check is set to "gone", the test will return true if the object is gone.
 .. c:function:: varargs void add_test_true(string desc, function f, mixed args)
 
 Add a test to the queue that should return a value evaluating to true.
- .. code-block:: c
+ 
+.. code-block:: c
+
     add_test_true("Unwield longsword", ( : check_unwield, "sword" :));
     add_test_true("Dualwield longsword", ( : check_dualwield, "longsword" :));
 
