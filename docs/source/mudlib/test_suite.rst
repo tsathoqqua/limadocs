@@ -23,7 +23,7 @@ To write a test inherit this file, and write a function:
 
    void init_tests()
    {
-      add_test_true("Some test",(: my_test:));
+     add_test_true("Some test",(: my_test:));
    }
 
 If you use ``add_test_true()`` the function succeeds if it returns 1, and fails on 1.
