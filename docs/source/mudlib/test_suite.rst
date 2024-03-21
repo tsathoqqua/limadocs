@@ -91,6 +91,17 @@ Add a test to the queue that should return a value evaluating to true.
 
 
 
+.. c:function:: varargs void add_test_fail(string desc, function f, mixed args)
+
+Add a test to the queue that should return a value evaluating to true.
+ 
+.. code-block:: c
+
+    add_test_fail("Wield greataxe", ( : check_wield, "axe" :));
+    add_test_fail("Wield longsword", ( : check_wield, "longsword" :));
+
+
+
 .. c:function:: void run_tests()
 
 Run all the tests added and report results.
