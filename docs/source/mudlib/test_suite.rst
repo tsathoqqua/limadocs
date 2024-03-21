@@ -12,17 +12,18 @@ for queueing up tests, running them and various functions for cloning and testin
 
 To write a test inherit this file, and write a function:
 
-inherit TEST_SUITE;
+.. code-block:: c
+   inherit TEST_SUITE;
 
-|  void my_test()
-|  {
-|     return 1;
-|  }
+   void my_test()
+   {
+      return 1;
+   }
 
-|  void init_tests()
-|  {
-|    add_test_true("Some test",(: my_test:));
-|  }
+   void init_tests()
+   {
+     add_test_true("Some test",(: my_test:));
+   }
 
 If you use ``add_test_true()`` the function succeeds if it returns 1, and fails on 1.
 If you use ``add_test_fail()``, quite the opposite. This allows both to assume something fails
