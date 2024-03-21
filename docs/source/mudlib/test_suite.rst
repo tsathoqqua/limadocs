@@ -82,7 +82,7 @@ If check is set to "gone", the test will return true if the object is gone.
 
 .. c:function:: varargs void add_test_true(string desc, function f, mixed args)
 
-Add a test to the queue that should return a value evaluating to true.
+Add a test to the queue that should be considered successful if it returns a value evaluating to true.
  
 .. code-block:: c
 
@@ -93,7 +93,7 @@ Add a test to the queue that should return a value evaluating to true.
 
 .. c:function:: varargs void add_test_fail(string desc, function f, mixed args)
 
-Add a test to the queue that should return a value evaluating to true.
+Add a test to the queue that should be considered successful if it returns a value evaluating to false.
  
 .. code-block:: c
 
