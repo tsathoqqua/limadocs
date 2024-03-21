@@ -13,7 +13,7 @@ for queueing up tests, running them and various functions for cloning and testin
 To write a test inherit this file, and write a function:
 
 .. code-block:: c
-   
+
    inherit TEST_SUITE;
 
    void my_test()
@@ -70,7 +70,9 @@ Result of call_other will fail if value is fail_on.
 
 Example: 
 
-|  inv_do(troll, "wield", "axe", "query_wielding", 0)
+.. code-block:: c
+
+   inv_do(troll, "wield", "axe", "query_wielding", 0);
 
 Troll wields axe, and if ``axe->query_wielding() == 0`` we fail.
 
