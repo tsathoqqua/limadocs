@@ -13,6 +13,7 @@ for queueing up tests, running them and various functions for cloning and testin
 To write a test inherit this file, and write a function:
 
 .. code-block:: c
+   
    inherit TEST_SUITE;
 
    void my_test()
