@@ -6,7 +6,7 @@ Welcome to LIMA Mudlib Documentation
 
 Check out the `usage <Usage.html>`_ page for further information, including
 how to `install <Installation.html>`_ the project. A small helper on `messaging <documentation/Messaging.html>`_ 
-is also available.
+and `how to use the AUTODOC system <documentation/Autodocs.html>`_ inside the mudlib is also available.
 
 Latest changes
 ==============
