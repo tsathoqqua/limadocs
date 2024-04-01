@@ -3,9 +3,12 @@ Player Command
 
 See: `idea <idea.html>`_ `typo <typo.html>`_ `feedback <feedback.html>`_ `question <question.html>`_ 
 
-USAGE bug
+USAGE
+    ``bug``
 
 This command directs a report of a game bug to the proper place.
+
+.. TAGS: RST
 
 
 

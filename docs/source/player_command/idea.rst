@@ -3,9 +3,12 @@ Player Command
 
 See: `bug <bug.html>`_ `typo <typo.html>`_ `feedback <feedback.html>`_ `question <question.html>`_ 
 
-USAGE:  idea
+USAGE
+  ``idea``
 
 Allows you to document an idea for the administration to see.
+
+.. TAGS: RST
 
 
 

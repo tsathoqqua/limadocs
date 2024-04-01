@@ -1,19 +1,24 @@
 Player Command
 ==============
 
-See: `color <../ingame/color.html>`_ `colours <colours.html>`_ `mode <mode.html>`_ `frames <frames.html>`_ 
+See: `color <../ingame/color.html>`_ `colours <colours.html>`_ `mode <mode.html>`_ `frames <frames.html>`_ `simplify <simplify.html>`_ 
 
-USAGE emoji
-     emoji on
-     emoji off
-     emoji list
+USAGE
 
-Typing "emoji" will show if your character is set to ascii like graphics
+   |   ``emoji``
+   |   ``emoji on``
+   |   ``emoji off``
+   |   ``emoji list``
+
+Typing ``emoji`` will show if your character is set to ascii like graphics
 from the mud (used for small charts etc). These can be hard to use on
 screen readers, so if you are using a screen reader it can be recommended
-to be 'emoji off'.
+to be ``emoji off`` - ``simplify on`` will set  alot of these settings 
+correct for your screen reader.
 
-Use 'emoji list' for a list of supported emojis.
+Use ``emoji list`` for a list of supported emojis.
+
+.. TAGS: RST
 
 
 

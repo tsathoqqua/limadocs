@@ -1,10 +1,13 @@
 Player Command
 ==============
 
-USAGE: emote message
+USAGE
+   ``emote message``
 
 Places any message you specify directly after your name.  For example,
-"emote smiles." would have others see "Rust smiles.".
+``emote smiles.`` would have others see "Rust smiles.".
+
+.. TAGS: RST
 
 
 

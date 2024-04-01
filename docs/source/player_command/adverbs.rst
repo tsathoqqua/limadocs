@@ -4,25 +4,29 @@ Player Command
 See: `feelings <feelings.html>`_ `random <random.html>`_ `semote <semote.html>`_ 
 
 
-USAGE adverbs [pattern]
+USAGE 
+
+  ``adverbs [pattern]``
 
 Without an argument, shows all adverbs that you can use in soul commands.
 With an argument, shows all adverbs matching the given pattern.
 
 Example:
-   adverbs f*ly
+   ``adverbs f*ly``
 
 will show you all adverbs that start w/ 'f' and end in 'ly'
 
 To use an adverb in a soul command, use as much of the adverb as necessary
-to uniquely identify it, followed by a *.
+to uniquely identify it, followed by a \*.
 
 For example:
-   smile fla*
+   ``smile fla*``
 
-will translate to: 'smile flatly'.
+will translate to: *smile flatly*.
 
-But: 'smile fl*' will not, because 'flirtingly' also starts with fl.
+But: ``smile fl*`` will not, because *flirtingly* also starts with 'fl'.
+
+.. TAGS: RST
 
 
 

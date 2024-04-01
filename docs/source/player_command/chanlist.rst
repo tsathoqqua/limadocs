@@ -1,11 +1,14 @@
 Player Command
 ==============
 
-See: `channels <../ingame/channels.html>`_ `gossip <gossip.html>`_ `newbie <../ingame/newbie.html>`_ `chan <chan.html>`_ 
+See: `gossip <gossip.html>`_ `newbie <../ingame/newbie.html>`_ `chan <chan.html>`_ 
 
-USAGE:  chanlist
+USAGE
+   ``chanlist``
 
 Shows currently existing channels available to you.
+
+.. TAGS: RST
 
 
 

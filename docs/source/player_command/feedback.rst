@@ -3,9 +3,12 @@ Player Command
 
 See: `idea <idea.html>`_ `typo <typo.html>`_ `bug <bug.html>`_ `question <question.html>`_ 
 
-USAGE:  feedback
+USAGE
+   ``feedback``
 
 Allows you to give feedback on general or specific topics of relevance to the Mud.
+
+.. TAGS: RST
 
 
 

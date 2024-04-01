@@ -1,9 +1,13 @@
 Player Command
 ==============
 
-Usage: exits
+USAGE
+   ``exits``
+
 Used with no arguments, this command shows you the possible exits for
 the particular room you are in.
+
+.. TAGS: RST
 
 
 

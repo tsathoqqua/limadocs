@@ -6,9 +6,13 @@ Documentation for the docs command in */cmds/wiz/docs.c*.
 Command
 =======
 
-USAGE:  docs
+USAGE
+  |  ``docs``
+  |  ``docs refresh`` - rebuild HELP_D.
 
 This command shows status of the documentation.
+
+.. TAGS: RST
 
 
 
