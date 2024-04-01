@@ -40,6 +40,7 @@ Module
 - `Module: m_openable <module/m_openable.html>`_
 - `Module: m_readable <module/m_readable.html>`_
 - `Module: m_ready <module/m_ready.html>`_
+- `Module: m_rstview <module/m_rstview.html>`_
 - `Module: m_salvageable <module/m_salvageable.html>`_
 - `Module: m_save <module/m_save.html>`_
 - `Module: m_searchable <module/m_searchable.html>`_

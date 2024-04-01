@@ -3,7 +3,7 @@ Daemons
 *******
 
 - `Daemon: account_d <daemon/account_d.html>`_
-- `Daemon: doc_d <daemon/doc_d.html>`_
+- `Daemon: doc_d_disabled <daemon/doc_d_disabled.html>`_
 - `Daemon: emoji_d <daemon/emoji_d.html>`_
 - `Daemon: group_d <daemon/group_d.html>`_
 - `Daemon: guild_d <daemon/guild_d.html>`_

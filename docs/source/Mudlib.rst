@@ -18,6 +18,7 @@ Mudlib
 - `corpses <mudlib/corpses.html>`_
 - `description <mudlib/description.html>`_
 - `door <mudlib/door.html>`_
+- `drink <mudlib/drink.html>`_
 - `effects <mudlib/effects.html>`_
 - `exits <mudlib/exits.html>`_
 - `flags <mudlib/flags.html>`_

@@ -34,6 +34,7 @@ Commands
 - `Command: diff <command/diff.html>`_
 - `Command: discuss <command/discuss.html>`_
 - `Command: do <command/do.html>`_
+- `Command: docs <command/docs.html>`_
 - `Command: du <command/du.html>`_
 - `Command: echo <command/echo.html>`_
 - `Command: echoall <command/echoall.html>`_
