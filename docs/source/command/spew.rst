@@ -6,12 +6,16 @@ Documentation for the spew command in */trans/cmds/spew.c*.
 Command
 =======
 
-$$see : shell
-USAGE: spew file [<startline>] [#<lines>]
+See: `Command: shell <shell.html>`_ 
+
+USAGE
+   ``spew file [<startline>] [#<lines>]``
 
 Dumps contents of specified file to the screen as "says" from you,
 one say per line.
 Optional parameters for start line and number of lines to dump.
+
+.. TAGS: RST
 
 
 

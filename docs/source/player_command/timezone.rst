@@ -1,7 +1,7 @@
 Player Command
 ==============
 
-$$see :time
+$$ see :time
 USAGE
    ``timezone <value>``
 
