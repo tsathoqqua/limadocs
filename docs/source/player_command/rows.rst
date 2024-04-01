@@ -1,8 +1,12 @@
 Player Command
 ==============
 
-Usage : rows <number> (to set the number of rows before pause in display)
-        rows          (to see current setting)
+USAGE
+
+ |  ``rows <number>`` (to set the number of rows before pause in display)
+ |  ``rows``          (to see current setting)
+
+.. TAGS: RST
 
 
 

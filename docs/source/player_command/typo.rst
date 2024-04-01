@@ -3,9 +3,12 @@ Player Command
 
 See: `bug <bug.html>`_ `idea <idea.html>`_ `feedback <feedback.html>`_ `question <question.html>`_ 
 
-USAGE:  typo
+USAGE
+   ``typo``
 
 This command directs a typo report to the proper place.
+
+.. TAGS: RST
 
 
 

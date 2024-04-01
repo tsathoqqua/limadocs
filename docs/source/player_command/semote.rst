@@ -1,10 +1,13 @@
 Player Command
 ==============
 
-USAGE semote <feeling>
+USAGE
+    ``semote <feeling>``
 
 Shows you how a "soul" or "feeling" will look, both to you and to target
 and onlookers, if you use it.
+
+.. TAGS: RST
 
 
 

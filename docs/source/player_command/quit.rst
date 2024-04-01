@@ -1,7 +1,12 @@
 Player Command
 ==============
 
-Quit to the user menu.
+USAGE
+  ``quit``
+
+Quit the game.
+
+.. TAGS: RST
 
 
 

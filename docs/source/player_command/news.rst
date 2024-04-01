@@ -1,10 +1,13 @@
 Player Command
 ==============
 
-USAGE:	news
+USAGE
+  ``news``
 
 news starts up the newsreader.  Just type it, it has it's own internal
 help available, if you type a ? from any prompt.
+
+.. TAGS: RST
 
 
 

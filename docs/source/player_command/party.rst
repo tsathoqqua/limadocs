@@ -1,9 +1,12 @@
 Player Command
 ==============
 
-USAGE party
+USAGE
+   ``party``
 
-Starts up the "party" menu system
+Starts up the "party" menu system.
+
+.. TAGS: RST
 
 
 

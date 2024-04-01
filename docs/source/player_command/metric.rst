@@ -3,12 +3,16 @@ Player Command
 
 See: `colours <colours.html>`_ `mode <mode.html>`_ `simplify <simplify.html>`_ `emoji <emoji.html>`_ 
 
-USAGE metric
-     metric on
-     metric off
+USAGE
 
-Typing "metric" will show if you are seeing metric system or imperical.
-Typing "metric on" or "metric off" will turn on/off metric system.
+  |  ``metric``
+  |  ``metric on``
+  |  ``metric off``
+
+Typing ``metric`` will show if you are seeing metric system or imperical.
+Typing ``metric on`` or ``metric off`` will turn on/off metric system - not in the real world. Nice try.
+
+.. TAGS: RST
 
 
 

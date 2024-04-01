@@ -3,10 +3,13 @@ Player Command
 
 See: `finger <finger.html>`_ 
 
-USAGE plan
+USAGE
+   ``plan``
 
 Takes you to an editor where you can enter or change your plan,
-which everybody can see when they "finger" you.
+which everybody can see when they ``finger`` you.
+
+.. TAGS: RST
 
 
 

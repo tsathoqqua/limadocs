@@ -45,6 +45,7 @@ Player Commands
 - `quests <player_command/quests.html>`_
 - `quit <player_command/quit.html>`_
 - `random <player_command/random.html>`_
+- `random2 <player_command/random2.html>`_
 - `reply <player_command/reply.html>`_
 - `rows <player_command/rows.html>`_
 - `save <player_command/save.html>`_

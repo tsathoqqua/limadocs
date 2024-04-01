@@ -1,9 +1,12 @@
 Player Command
 ==============
 
-USAGE:	passwd
+USAGE
+   ``passwd``
 
 Changes your password.  Just type it, and follow the directions.
+
+.. TAGS: RST
 
 
 

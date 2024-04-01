@@ -1,9 +1,12 @@
 Player Command
 ==============
 
-USAGE quests
+USAGE
+   ``quests``
 
 Shows you all the quests for the area you are in.
+
+.. TAGS: RST
 
 
 

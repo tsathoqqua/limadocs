@@ -3,14 +3,18 @@ Player Command
 
 See: `color <../ingame/color.html>`_ `colours <colours.html>`_ `simplify <simplify.html>`_ 
 
-USAGE mode
-     mode plain
-     mode vt100
-     mode xterm
-     mode ansi
+USAGE
 
-Typing "mode" will show if your character is set to receive ansi codes
-from the mud(used to display colours).
+  |  ``mode``
+  |  ``mode plain``
+  |  ``mode vt100``
+  |  ``mode xterm``
+  |  ``mode ansi``
+
+Typing ``mode`` will show if your character is set to receive ansi codes
+from the MUD (used to display colours).
+
+.. TAGS: RST
 
 
 

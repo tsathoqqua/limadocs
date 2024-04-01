@@ -3,9 +3,12 @@ Player Command
 
 See: `bug <bug.html>`_ `typo <typo.html>`_ `feedback <feedback.html>`_ `idea <idea.html>`_ 
 
-USAGE:  question
+USAGE
+   ``question``
 
 Allows you to send a question to the relevant place.
+
+.. TAGS: RST
 
 
 

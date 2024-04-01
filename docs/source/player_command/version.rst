@@ -1,12 +1,15 @@
 Player Command
 ==============
 
-USAGE version
+USAGE
+    ``version``
 
 Shows you which version of the Lima mudlib and MudOS driver are being used,
 together with IP address and port number, and the admin email address.
 But you knew all of that already, didn't you ... ?
-And it even tells you which mud you are on, in case you are completely lost
+And it even tells you which mud you are on, in case you are completely lost.
+
+.. TAGS: RST
 
 
 

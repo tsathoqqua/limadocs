@@ -1,10 +1,13 @@
 Player Command
 ==============
 
-See: `colours" <colours".html>`_ `" ansi <" ansi.html>`_ 
+See: `colours <colours.html>`_ `mode <mode.html>`_ `frames <frames.html>`_ 
 
-USAGE palette
+USAGE
+   ``palette``
+
 Show even more possible colours you can use.
+.. TAGS: RST
 
 
 

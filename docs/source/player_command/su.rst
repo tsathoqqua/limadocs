@@ -1,14 +1,18 @@
 Player Command
 ==============
 
-USAGE:  su
-     su name
-     su (race)name
+USAGE
+
+  |  ``su``
+  |  ``su name``
+  |  ``su (race)name``
 
 This is the command to switch users.  su with no arguments will update
 your character.  su with a name will polymorph you into that character,
 assuming you have the password. Instead of a name, if you supply a race in (), you will polymorph
 into that race.
+
+.. TAGS: RST
 
 
 

@@ -1,11 +1,12 @@
 Player Command
 ==============
 
-See: `privacy <../ingame/privacy.html>`_ 
+USAGE
+   ``snoopable [on|off]``
 
-USAGE:  snoopable [on|off]
+This does exactly what the name imples - it sets whether you are snoopable.
 
-This does exactly what the name imples -- it sets whether you are snoopable.
+.. TAGS: RST
 
 
 

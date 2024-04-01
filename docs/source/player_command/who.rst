@@ -1,18 +1,21 @@
 Player Command
 ==============
 
-USAGE who [ -w -p ]
+USAGE
+   ``who [ -w -p ]``
 
 The who command will give you a list of all user's presently logged
 onto the MUD, and whether or not they are idle.
 
 Used with the given arguments you can alter the way who works:
 
-who -w
+   ``who -w``
 Will show wizards only.
 
-who -p
+   ``who -p``
 Will show players only.
+
+.. TAGS: RST
 
 
 

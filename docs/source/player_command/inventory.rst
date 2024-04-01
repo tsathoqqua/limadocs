@@ -1,9 +1,10 @@
 Player Command
 ==============
 
-USAGE:  
-   ``i``
-   ``inventory``
+USAGE
+
+ |   ``i``
+ |   ``inventory``
 
 Shows you what you have in your inventory.
 
