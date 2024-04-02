@@ -5,7 +5,7 @@ Documentation for the m_colours module in */std/modules/m_colours.c*.
 
 Functions
 =========
-.. c:function:: nomask string terminal_mode()
+.. c:function:: string terminal_mode()
 
 Returns "xterm", "ansi", or "vt100" or nothing if the user
 has turned colours off.
