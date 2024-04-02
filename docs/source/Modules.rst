@@ -35,6 +35,7 @@ Module
 - `Module: m_items <module/m_items.html>`_
 - `Module: m_lightable <module/m_lightable.html>`_
 - `Module: m_lockpick <module/m_lockpick.html>`_
+- `Module: m_mdview <module/m_mdview.html>`_
 - `Module: m_messages <module/m_messages.html>`_
 - `Module: m_npcscript <module/m_npcscript.html>`_
 - `Module: m_openable <module/m_openable.html>`_

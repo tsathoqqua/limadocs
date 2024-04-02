@@ -10,6 +10,8 @@ Inherit this module to gain access to reStructured text functions for formatting
 and creating layout suitable for the MUD. The RST source is parsed into colour
 enhanced strings, C code is rudimentarily formatted and colourized.
 
+This module requires M_COLOURS.
+
 Functions
 =========
 .. c:function:: string rst_format(string *file, string searchtext)
