@@ -46,7 +46,7 @@ also: $N $vkick $t hard. && $N $vkick $t hard (how mean). && $N $vkick $t hard (
 
 Extensive details of the messaging syntax are available in */contrib/emotehelp.txt*
 
-..TAGS: RST
+.. TAGS: RST
 
 
 
