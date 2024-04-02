@@ -6,13 +6,19 @@ Documentation for the m_fluid_source module in */std/modules/m_fluid_source.c*.
 Module Information
 ==================
 
-Inherit this module into anything that
-is a source for fluid.  Rivers, fountains,
-bee-hives, volcanoes, corpses, etc.
-Fill and drink look for a fluid source.
-To be able to drink directly from the
-source, also inherit m_drink_source.
+Inherit this module into anything that is a source for fluid.  Rivers, fountains,
+bee-hives, volcanoes, corpses, etc. Fill and drink look for a fluid source.
+To be able to drink directly from the source, also
+
+
+.. code-block:: c
+
+
+    inherit M_DRINK_SOURCE;
+
 in the environment.
+
+.. TAGS: RST
 
 Functions
 =========

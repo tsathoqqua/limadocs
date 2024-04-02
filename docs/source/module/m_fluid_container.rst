@@ -10,6 +10,8 @@ Fluids can never be 'gotten'.
 Most containers leak.  Inherit this module into
 your container so that it will fill and pour.
 
+.. TAGS: RST
+
 Functions
 =========
 .. c:function:: varargs int can_hold_fluid(mixed ob)
