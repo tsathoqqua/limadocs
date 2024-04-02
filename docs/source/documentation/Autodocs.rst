@@ -62,6 +62,8 @@ References to other help pages will be handled if written correctly in the comme
 
 Use double reverse apostrophes (\`\`) for marking commands and tips for wizards, e.g. ``score -t neon``.
 
+File names should be surrounded by asterisks to make them stand out in *italic*.
+
 Testing your work
 -----------------
 You will not be fluent in RST immediately, so testing your documentation initially will speed up the process of getting the layout that you want.
