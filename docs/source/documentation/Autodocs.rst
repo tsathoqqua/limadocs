@@ -67,7 +67,7 @@ Testing your work
 You will not be fluent in RST immediately, so testing your documentation initially will speed up the process of getting the layout that you want.
 
 - Update the files on the MUD
-- Run ``RST_D->scan_mudlib()`` and wait for it to finish. It will automatically kick off HELP_D when it's done to update statistics used by the ``docs`` command.
+- Run ``@RST_D->scan_mudlib()`` and wait for it to finish. It will automatically kick off HELP_D when it's done to update statistics used by the ``docs`` command.
 - Pick the written file from */help/autodoc/* and copy it to an online RST viewer and check if the layout is as you want it to be, e.g. https://rsted.info.ucl.ac.be/ but others work as well.
 - Once happy with the RST, add an RST tag as per below.
 
