@@ -8,8 +8,9 @@ Command
 
 See: `Command: dest <dest.html>`_ `Command: clone <clone.html>`_ 
 
-USAGE:  clean
-       clean <target>
+USAGE:  
+   |  ``clean``
+   |  ``clean <target>``
 
 This command will destroy everything in your environment if
 executed with no args. If given an argument it will destroy all
@@ -17,6 +18,8 @@ objects in that object.  Especially useful when a pesky wizard or two
 clone 20 barney's in your workroom.
 It ignores add_items and living objects, so perhaps it's not so helpful
 with those barneys after all ...
+
+.. TAGS: RST
 
 
 

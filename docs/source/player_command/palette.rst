@@ -7,6 +7,7 @@ USAGE
    ``palette``
 
 Show even more possible colours you can use.
+
 .. TAGS: RST
 
 

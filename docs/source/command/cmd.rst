@@ -6,14 +6,16 @@ Documentation for the cmd command in */cmds/wiz/cmd.c*.
 Command
 =======
 
-USAGE:  cmd <monster> <command>
+USAGE:  ``cmd <monster> <command>``
 
 This command will tell a monster to do something.
 It requires that the monster has do_game_command() inherited.
 Cannot be used on players/wizards.
 
-> cmd troll say Hello!
+> ``cmd troll say Hello!``
 Bill the Troll says: Hello!
+
+.. TAGS: RST
 
 
 
