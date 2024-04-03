@@ -8,15 +8,19 @@ Command
 
 See: `Command: I <I.html>`_ `Command: didlog <didlog.html>`_ 
 
-USAGE: lima
-      lima /versions
-      lima <version>
-      lima <version> <pattern>
+USAGE: 
+
+    |  ``lima``
+    |  ``lima /versions``
+    |  ``lima <version>``
+    |  ``lima <version> <pattern>``
 
 Shows you the versions of the LIMA mudlib that you have change
 information about. Use the /versions to see a version list, and
 add a version number to get a dump of all the changes in that
 verison.
+
+.. TAGS: RST
 
 
 

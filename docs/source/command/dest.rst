@@ -8,9 +8,11 @@ Command
 
 See: `Command: clone <clone.html>`_ `Command: clean <clean.html>`_ `Command: scan <scan.html>`_ 
 
-USAGE:  dest <object>
+USAGE:  ``dest <object>``
 
 This command destroys an object in your inventory or in your environment.
+
+.. TAGS: RST
 
 
 

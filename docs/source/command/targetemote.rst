@@ -8,20 +8,22 @@ Command
 
 See: `Command: feelings <feelings.html>`_ `Command: m_messages <m_messages.html>`_ `Command: addemote <addemote.html>`_ `Command: rmemote <rmemote.html>`_ `Command: showemote <showemote.html>`_ `Command: stupidemote <stupidemote.html>`_ 
 
-USAGE:  targetemote
+USAGE:  ``targetemote``
 
 This command will create a default emote with the following rules;
   LIV, OBJ, STR, ""
 
->targetemote swim
+>``targetemote swim``
 Added.
 
 Lets look at what was created by that command
->showemote swim
-"LIV" -> $N $vswim at $t.
-"OBJ" -> $N $vswim at $o.
-"STR" -> $N $vswim $o.
-"" -> $N $vswim.
+>``showemote swim``
+ |  "LIV" -> $N $vswim at $t.
+ |  "OBJ" -> $N $vswim at $o.
+ |  "STR" -> $N $vswim $o.
+ |  "" -> $N $vswim.
+
+.. TAGS: RST
 
 
 

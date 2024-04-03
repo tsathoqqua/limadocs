@@ -8,10 +8,14 @@ Command
 
 See: `Command: who <who.html>`_ `Command: people <people.html>`_ 
 
-USAGE where
-     where <name1>, <name2> etc
+USAGE 
+
+   |  ``where``
+   |  ``where <name1>, <name2> etc``
 
 Displays where the targets are - filenames and short names of their environment.
+
+.. TAGS: RST
 
 
 

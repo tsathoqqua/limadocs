@@ -6,16 +6,18 @@ Documentation for the which command in */cmds/wiz/which.c*.
 Command
 =======
 
-USAGE:  which <cmd>
+USAGE:  ``which <cmd>``
 
 This command will show you the path to the command you supply.
 
 Useful to see if you are executing a command out of your
 directory or the real command.
 
-which ls
+``which ls``
 
 ls found in: /trans/cmds/
+
+.. TAGS: RST
 
 
 

@@ -8,8 +8,10 @@ Command
 
 See: `Command: m_messages <m_messages.html>`_ `Command: review <review.html>`_ 
 
-USAGE:  msg <message type> clear
-       msg <message type> <message>
+USAGE:  
+
+     |``msg <message type> clear``
+     |  ``msg <message type> <message>
 
 This command allows you to change your default messages.  You can
 add more than one message for each message type.  When you use the
@@ -20,14 +22,16 @@ You can also remove all the messages of a given type by using the "clear"
 option.  You will not be able to remove a particular message from a group
 of messages.
 
-msg clone clear
+``msg clone clear``
 
     This will remove all messages from the type clone.
 
-msg clone $N $vreach back to $p workroom and $vgrab $o.
+``msg clone $N $vreach back to $p workroom and $vgrab $o.``
 
     Next time you use clone, you will see the above message.
     If you do the above again you will add another message.
+
+.. TAGS: RST
 
 
 

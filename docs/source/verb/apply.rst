@@ -1,7 +1,7 @@
-Verb *ask*
-***********
+Verb *apply*
+*************
 
-Documentation for the ask verb in */cmds/verbs/ask.c*.
+Documentation for the apply verb in */cmds/verbs/apply.c*.
 
 Command
 =======

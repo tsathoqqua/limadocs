@@ -8,9 +8,11 @@ Command
 
 See: `Command: netstat <netstat.html>`_ 
 
-USAGE socketinfo
+USAGE: ``socketinfo``
 
 Displays details of sockets
+
+.. TAGS: RST
 
 
 

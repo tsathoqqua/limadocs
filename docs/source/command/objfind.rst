@@ -8,7 +8,7 @@ Command
 
 See: `Command: objdump <objdump.html>`_ `Command: objcount <objcount.html>`_ `Command: idfind <idfind.html>`_ 
 
-USAGE: objfind <fname>
+USAGE: ``objfind <fname>``
 
 This command is used to find all the instances of objects with a given filename.
 This is very handy in tracking down where certain items are,
@@ -16,7 +16,9 @@ or if they have no environment.
 
 Example:
 
-> objfind /gue/zork1/trophy_case
+> ``objfind /gue/zork1/trophy_case``
+
+.. TAGS: RST
 
 
 

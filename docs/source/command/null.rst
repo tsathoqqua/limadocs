@@ -6,9 +6,11 @@ Documentation for the null command in */cmds/wiz/null.c*.
 Command
 =======
 
-USAGE null
+USAGE ``null``
 
 Does nothing at all .....
+
+.. TAGS: RST
 
 
 

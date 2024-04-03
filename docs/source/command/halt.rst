@@ -6,9 +6,11 @@ Documentation for the halt command in */cmds/wiz/halt.c*.
 Command
 =======
 
-USAGE: halt
+USAGE: ``halt``
 
 Stops all combat in the room
+
+.. TAGS: RST
 
 
 

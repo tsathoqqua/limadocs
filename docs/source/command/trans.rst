@@ -8,13 +8,15 @@ Command
 
 See: `Command: goto <goto.html>`_ `Command: wizz <wizz.html>`_ 
 
-USAGE:  trans <name>
+USAGE:  ``trans <name>``
 
 This command will transfer a player from their location to yours.
 
-trans ohara
+``trans ohara``
 
 Will bring ohara to the room you are in.
+
+.. TAGS: RST
 
 
 

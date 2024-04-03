@@ -67,6 +67,7 @@ Commands
 - `Command: loadall <command/loadall.html>`_
 - `Command: locate <command/locate.html>`_
 - `Command: ls <command/ls.html>`_
+- `Command: master <command/master.html>`_
 - `Command: mkdir <command/mkdir.html>`_
 - `Command: more <command/more.html>`_
 - `Command: msg <command/msg.html>`_
@@ -100,6 +101,7 @@ Commands
 - `Command: showexits <command/showexits.html>`_
 - `Command: showtree <command/showtree.html>`_
 - `Command: shutdown <command/shutdown.html>`_
+- `Command: smartmobs <command/smartmobs.html>`_
 - `Command: snoop <command/snoop.html>`_
 - `Command: snoops <command/snoops.html>`_
 - `Command: socketinfo <command/socketinfo.html>`_

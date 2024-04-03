@@ -6,11 +6,13 @@ Documentation for the users command in */cmds/wiz/users.c*.
 Command
 =======
 
-USAGE:  users
+USAGE:  ``users``
 
 This command lists the names of all users currently connected.
 It is convenient for those who don't wish to clutter their screen with excess
-information such as what comes with the "who" command.
+information such as what comes with the "``who``" command.
+
+.. TAGS: RST
 
 
 

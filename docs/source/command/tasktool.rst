@@ -6,10 +6,12 @@ Documentation for the tasktool command in */cmds/wiz/tasktool.c*.
 Command
 =======
 
-USAGE tasktool
+USAGE ``tasktool``
 
 Invokes the menu-driven tasktool system,
 which is intended as a "todo" handler.
+
+.. TAGS: RST
 
 
 

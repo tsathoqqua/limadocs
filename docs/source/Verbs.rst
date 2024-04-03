@@ -2,6 +2,10 @@
 Verbs
 *****
 
+- `activate <verb/activate.html>`_
+- `apply <verb/apply.html>`_
+- `ascend <verb/ascend.html>`_
+- `ask <verb/ask.html>`_
 - `post <verb/post.html>`_
 - `remove <verb/remove.html>`_
 - `switch <verb/switch.html>`_

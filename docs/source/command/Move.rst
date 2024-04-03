@@ -6,14 +6,16 @@ Documentation for the Move command in */cmds/wiz/Move.c*.
 Command
 =======
 
-USAGE:  Move <object> <object>
+USAGE:  ``Move <object> <object>``
 
 This command will move the first object into the second one,
 both objects must be present in your environment.
 
-Move barney safe
+``Move barney safe``
 
   This will put barney into the safe.
+
+.. TAGS: RST
 
 
 

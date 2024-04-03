@@ -8,9 +8,11 @@ Command
 
 See: `Command: invis <invis.html>`_ 
 
-USAGE: vis
+USAGE: ``vis``
 
 This command will let you turn visible to players
+
+.. TAGS: RST
 
 
 

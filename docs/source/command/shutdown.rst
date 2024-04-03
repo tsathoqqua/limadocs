@@ -6,14 +6,18 @@ Documentation for the shutdown command in */trans/admincmds/shutdown.c*.
 Command
 =======
 
-USAGE: shutdown -t<time> <reason>
-       shutdown -c <reason>
+USAGE: 
+
+   |  ``shutdown -t<time> <reason>``
+   |  ``shutdown -c <reason>``
 
 Shuts down the mud.
 Time specified (with -t flag) is delay in minutes to shutdown.
 Use the -c flag to cancel a shutdown
 
 Admin only
+
+.. TAGS: RST
 
 
 

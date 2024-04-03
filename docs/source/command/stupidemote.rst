@@ -8,16 +8,18 @@ Command
 
 See: `Command: feelings <feelings.html>`_ `Command: m_messages <m_messages.html>`_ `Command: addemote <addemote.html>`_ `Command: showemote <showemote.html>`_ `Command: rmemote <rmemote.html>`_ `Command: targetemote <targetemote.html>`_ 
 
-USAGE:  stupidemote <soul>
+USAGE:  ``stupidemote <soul>``
 
 This command will add an emote with default rules of "" and "SR".
 
-stupidemote cry
+``stupidemote cry``
 
-If you then do a showemote cry
+If you then do a ``showemote cry``
 
-   "" -> $N $vcry.
-   "STR" -> $N $vcry $o.
+ |  "" -> $N $vcry.
+ |  "STR" -> $N $vcry $o.
+
+.. TAGS: RST
 
 
 

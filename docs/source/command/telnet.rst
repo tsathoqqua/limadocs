@@ -6,7 +6,7 @@ Documentation for the telnet command in */trans/admincmds/telnet.c*.
 Command
 =======
 
-USAGE: telnet
+USAGE: ``telnet``
 
 Invokes the mud's telnet client for you.
 
@@ -19,47 +19,50 @@ Text received from a telnet session will start with the tilde  ( '~' ).
 
 Telnet understands the following commands:
 
-/ exit  -- quit telnet
+  |  exit  -- quit telnet
 
-/ open [address|mudname]  -- opens a new telnet session.
-			    mudname can be any mud name or a unique part
-			    of a mud name based on the muds you can see
-			    by typing: "mudlist".
-			    Right now if you use an address, it must be
-			    an ip number, and not an ip name.
-	 	            If you have more than one session open,
-			    you'll only be interacting with the current
-			    session.
+  |  open [address|mudname]  -- opens a new telnet session.
+	  |  mudname can be any mud name or a unique part
+	  |  of a mud name based on the muds you can see
+	  |  by typing: "mudlist".
+	  |  Right now if you use an address, it must be
+	  |  an ip number, and not an ip name.
+	  |  If you have more than one session open,
+	  |  you'll only be interacting with the current
+	  |  session.
 
-/ jobs  -- shows what sessions you have open.
+  |  jobs  -- shows what sessions you have open.
 
-/ goto [job#] -- changes your active session to the given number
-		(if you have more than one session)
+  |  goto [job#] -- changes your active session to the given number
+	  |  (if you have more than one session)
 
-/ tog   -- toggles whether or not your regular input should go to the active
-	  session or to the mud you're on.  By default it goes to the mud
-	  you're on.
+  |  tog   -- toggles whether or not your regular input should go to the active
+	  |  session or to the mud you're on.  By default it goes to the mud
+	  |  you're on.
 
-/ send <str>  -- send input to the active session.  You don't need to do this
-		if you've done /tog once, you can just type the input and
-		it goes.
+  |  send <str>  -- send input to the active session.  You don't need to do this
+	  |  if you've done /tog once, you can just type the input and
+	  |  it goes.
 
-/ close -- closes the currently active session.
+  |  close -- closes the currently active session.
 
-/ hide  -- You don't see any of the text from remote telnet connections if
-	  you use this.  /hide again to bring the text back.
+  |  hide  -- You don't see any of the text from remote telnet connections if
+	  |  you use this.  /hide again to bring the text back.
 
-/ help		-- This document.
-/?
+  |  help		-- This document.
+  |  ?
 
 ! as the first character always sends your input to your command shell
 instead of a telnet session.  To send a string to a telnet session that
-starts with a !, use '/send !string'.
+starts with a !, use ``/send !string``.
 
-*N.B.  Some people have a hard time using / with tinyfugue.  If you need to
-       change the control character, set the telnet_char environment variable.
-	EG:
-		set telnet_char %
+N.B.  Some people have a hard time using / with tinyfugue.  If you need to
+change the control character, set the telnet_char environment variable.
+
+EG:
+	  ``set telnet_char %``
+
+.. TAGS: RST
 
 
 

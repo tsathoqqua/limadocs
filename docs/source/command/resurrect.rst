@@ -6,10 +6,14 @@ Documentation for the resurrect command in */cmds/wiz/resurrect.c*.
 Command
 =======
 
-USAGE resurrect <playername>
-      resurrect me!myself
+USAGE
+
+ |  ``resurrect <playername>``
+ |  ``resurrect me!myself``
 
 Brings a dead player back to life
+
+.. TAGS: RST
 
 
 

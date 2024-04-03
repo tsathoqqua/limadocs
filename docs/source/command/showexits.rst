@@ -6,17 +6,19 @@ Documentation for the showexits command in */cmds/wiz/showexits.c*.
 Command
 =======
 
-USAGE:  showexits
+USAGE:  ``showexits``
 
 Used with no arguments, this command shows you the possible
 exits from the room you are currently in, with the path name of the
 room.
 
-> showexits
+> ``showexits
 Current exits:
-south:  Monster Room (/domains/std/monster_room.c)
-west:  Quiet Room (/domains/std/quiet_room.c)
-east:  Example Room (/domains/std/example_room1.c)
+south:  Monster Room (*/domains/std/monster_room.c*)
+west:  Quiet Room (*/domains/std/quiet_room.c*)
+east:  Example Room (*/domains/std/example_room1.c*)
+
+.. TAGS: RST
 
 
 

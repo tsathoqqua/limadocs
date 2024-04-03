@@ -8,12 +8,14 @@ Command
 
 See: `Command: objfind <objfind.html>`_ 
 
-USAGE objpurge <filename>
+USAGE ``objpurge <filename>``
 
 Removes the objects that would be returned from objfind
 ie those with the specified filename
 
 Admin Only
+
+.. TAGS: RST
 
 
 
