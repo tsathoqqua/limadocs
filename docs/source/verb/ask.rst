@@ -8,11 +8,11 @@ Command
 
 USAGE
 
- |  ``apply <something> to <something>``
- |  ``apply bandage to left arm``
- |  ``apply for drivers license``
+ |  ``ask <someone> about <something>``
+ |  ``ask about <something>``
+ |  ``ask biff about sword``
 
-For applying things to things or for things.
+For asking vendors about their goods.
 
 .. TAGS: RST
 

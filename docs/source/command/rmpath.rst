@@ -8,9 +8,11 @@ Command
 
 See: `Command: addpath <addpath.html>`_ `Command: printpath <printpath.html>`_ 
 
-USAGE: rmpath <directory>
+USAGE: ``rmpath <directory>``
 
 This command will remove a path from your current exec paths.
+
+.. TAGS: RST
 
 
 

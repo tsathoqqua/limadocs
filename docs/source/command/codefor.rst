@@ -10,9 +10,11 @@ codefor
 By Beek - derived from eval
 See: `Command: treefor <treefor.html>`_ 
 
-USAGE: codefor <lpc expression>
+USAGE: ``codefor <lpc expression>``
 
 Displays a "disassembly" of the LPC expression.
+
+.. TAGS: RST
 
 
 

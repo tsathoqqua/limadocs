@@ -8,7 +8,7 @@ Command
 
 See: `Command: mkdir <mkdir.html>`_ `Command: ls <ls.html>`_ `Command: pwd <pwd.html>`_ `Command: ed <ed.html>`_ 
 
-USAGE:  cd [directory|obj]
+USAGE:  ``cd [directory|obj]``
 
 Most file commands assume you're talking about your current working
 directory, if you do not specify a full path.  This command sets your
@@ -16,6 +16,8 @@ current directory.  If no argument is given,  your home directory will
 become your current working dir.
 
 With the 'obj' argument it moves you to the directory that 'obj' is in.
+
+.. TAGS: RST
 
 
 

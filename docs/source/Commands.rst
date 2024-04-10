@@ -7,7 +7,6 @@ Commands
 - `Command: addemote <command/addemote.html>`_
 - `Command: addguest <command/addguest.html>`_
 - `Command: addpath <command/addpath.html>`_
-- `Command: addto <command/addto.html>`_
 - `Command: admtool <command/admtool.html>`_
 - `Command: apropos <command/apropos.html>`_
 - `Command: at <command/at.html>`_
@@ -56,7 +55,6 @@ Commands
 - `Command: idfind <command/idfind.html>`_
 - `Command: iftp <command/iftp.html>`_
 - `Command: ilocate <command/ilocate.html>`_
-- `Command: in <command/in.html>`_
 - `Command: invis <command/invis.html>`_
 - `Command: killmobs <command/killmobs.html>`_
 - `Command: last <command/last.html>`_

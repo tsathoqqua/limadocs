@@ -8,7 +8,7 @@ Command
 
 See: `Command: rst <rst.html>`_ 
 
-USAGE bk <filename>
+USAGE ``bk <filename>``
 
 This command allows you to backup a file.
 Given the argument, file, it assumes your current
@@ -20,6 +20,8 @@ well, if two files are backed up on the same day.
 
 Also, if no ./bak/ directory exists, it automagically
 creates one for you.
+
+.. TAGS: RST
 
 
 

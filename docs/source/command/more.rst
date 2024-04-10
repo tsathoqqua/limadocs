@@ -6,10 +6,16 @@ Documentation for the more command in */trans/cmds/more.c*.
 Command
 =======
 
-USAGE : more <object(s)>
-        more <filename(s)>
+USAGE : 
+
+      |  ``more <object(s)>``
+      |  ``more <filename(s)>``
 
  Prints out the lines of a file
+
+we will recieve  : ({ array of files })
+
+.. TAGS: RST
 
 
 

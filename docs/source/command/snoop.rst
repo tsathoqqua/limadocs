@@ -8,7 +8,7 @@ Command
 
 See: `Command: unsnoop <unsnoop.html>`_ `Command: snoops <snoops.html>`_ 
 
-USAGE:  snoop < name >
+USAGE:  ``snoop < name >``
 
 This command will allow you to see exactly what appears on the
 named characters screen, if the player has snoopable on.
@@ -19,6 +19,8 @@ Spying on a player for no better reason than just to do it will
 not be tolerated by the admin of this mud.
 Use this command to help find bugs and see what exactly the player
 did etc.  but in no way use it to spy on players.
+
+.. TAGS: RST
 
 
 

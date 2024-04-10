@@ -2,12 +2,12 @@ Player Command
 ==============
 
 
-USAGE
+USAGE: 
 
-  |  ``tell <player> <message>``
-  |  ``tell <player>@<mudname> <message>``
-  |  ``tell /last``
-  |  ``tell /clear``
+     |  ``tell <player> <message>``
+     |  ``tell <player>@<mudname> <message>``
+     |  ``tell /last``
+     |  ``tell /clear``
 
 This command is used to tell others private messages. The second format
 can be used to tell to people on other muds. The /last syntax will

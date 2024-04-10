@@ -8,9 +8,12 @@ Command
 
 See: `Command: locate <locate.html>`_ `Command: grep <grep.html>`_ 
 
-USAGE: find <pattern> <files>
+USAGE
+  ``find <pattern> <files>``
 
 Display lines containing match to specified target pattern, within specified files.
+
+.. TAGS: RST
 
 
 

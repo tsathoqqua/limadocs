@@ -21,7 +21,7 @@ Remove relations from an object.  Relations can only successfully be removed
 if they are unoccupied.
 
 
-.. c:function:: void set_relations(string *rels...)
+.. c:function:: void set_relations(string rels...)
 
 Set the relations which are legal for a complex container.  Example:
 set_relations("on", "in", "under").  The first one is the default

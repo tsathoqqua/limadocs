@@ -6,12 +6,14 @@ Documentation for the whoguests command in */trans/cmds/whoguests.c*.
 Command
 =======
 
-USAGE: whoguests
+USAGE: ``whoguests``
 
  This command lists the names of guests allowed for when the mud
  does not allow new players
 
 Admin only
+
+.. TAGS: RST
 
 
 

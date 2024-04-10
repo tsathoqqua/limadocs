@@ -6,7 +6,18 @@ Documentation for the dbxfuncs command in */trans/cmds/dbxfuncs.c*.
 Command
 =======
 
-See: dbxfuncs
+USAGE: 
+    ``dbxfuncs <ob> <funcs>``
+
+Finds functions in an objects, e.g.:
+
+ |   ``dbxfuncs /secure/simul_efun arr`` 
+ |   Matches:
+ |   mixed * clean_array(x)        (defined in /secure/simul_efun/misc)
+ |   mixed array_sum(x)            (defined in /secure/simul_efun/misc)
+ |   mixed flatten_array(x)        (defined in /secure/simul_efun/misc)
+
+.. TAGS: RST
 
 
 

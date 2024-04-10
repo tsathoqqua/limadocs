@@ -25,9 +25,9 @@ To write a test inherit this file, and write a function:
       add_test_true("Some test",(: my_test:));
    }
 
-If you use ``add_test_true()`` the function succeeds if it returns 1 (anything that evaluates to true), and fails on 0.
-If you use ``add_test_fail()``, quite the opposite. This allows both to assume something fails
-and something succeeds.
+If you use ``add_test_true()`` the function succeeds if it returns 1 (anything that evaluates to true), and fails on
+0. If you use ``add_test_fail()``, quite the opposite. This allows both to assume something fails and something
+succeeds.
 
 The test can be run by doing:
 

@@ -1,7 +1,7 @@
 Player Command
 ==============
 
-See: `color <../ingame/color.html>`_ `colours <colours.html>`_ `ansi <ansi.html>`_ `simplify <simplify.html>`_ `emoji <emoji.html>`_ `hint <hint.html>`_ 
+See: `color <color.html>`_ `colours <colours.html>`_ `ansi <ansi.html>`_ `simplify <simplify.html>`_ `emoji <emoji.html>`_ `hint <hint.html>`_ 
 
 USAGE
 

@@ -6,7 +6,8 @@ Documentation for the idfind command in */cmds/wiz/idfind.c*.
 Command
 =======
 
-USAGE ``idfind <name>``
+USAGE 
+  ``idfind <name>``
 
 Lists all objects in the mud with the specified id,
 together with their location.

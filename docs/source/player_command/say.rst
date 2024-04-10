@@ -2,10 +2,10 @@ Player Command
 ==============
 
 
-USAGE
+Syntax: 
 
- |  ``say <message>``
- |  ``say /last``
+      |  ``say <MESSAGE>``
+      |  ``say /last``
 
 This command is used to talk with others in the same room as you.
 It is done in a common language that everybody can understand.

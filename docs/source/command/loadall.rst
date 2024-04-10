@@ -6,9 +6,11 @@ Documentation for the loadall command in */trans/cmds/loadall.c*.
 Command
 =======
 
-USAGE: loadall <dir>
+USAGE: ``loadall <dir>``
 
 Removes and reloads all the files in a specified directory
+
+.. TAGS: RST
 
 
 
