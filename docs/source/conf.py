@@ -3,7 +3,7 @@
 # -- Project information
 
 project = 'LIMA Mudlib'
-copyright = '2022, LIMA Mudlib team'
+copyright = '2024, LIMA Mudlib team'
 author = 'LIMA Mudlib team'
 
 release = '0.1'
