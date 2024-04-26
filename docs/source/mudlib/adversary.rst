@@ -1,7 +1,7 @@
 Mudlib *adversary*
 *******************
 
-Documentation for the adversary mudlib in */std/adversary.c*.
+Documentation for the adversary functions for the mudlib in */std/adversary.c*.
 
 .. TAGS: RST
 
@@ -16,7 +16,7 @@ take a swing at them.
 
 .. c:function:: int attackable()
 
-return 1 if we can be attacked.
+Return 1 if we can be attacked.
 
 
 .. c:function:: int query_ghost()
@@ -26,9 +26,9 @@ Returns 1 if the adversary is dead.
 
 .. c:function:: int karma_impact()
 
-int karma_impact();
 Override and return a number between -5 and 5 to impact karma
-when killed by someone
+when killed by someone. 
+Notice: Requires USE_KARMA defined.
 
 
 .. c:function:: string diagnose()
