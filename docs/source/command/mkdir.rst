@@ -6,20 +6,19 @@ Documentation for the mkdir command in */trans/cmds/mkdir.c*.
 Command
 =======
 
-USAGE:  ``mkdir < directory >``
+USAGE:  ``mkdir <directory>``
 
-This command will create a directory.
-
+This command will create directories.
 
 ``mkdir /wiz/zifnab/obj``
 
-will create a directory named obj in /wiz/zifnab
+will create a directory named obj in */wiz/zifnab*
 
-``mkdir obj``
+``mkdir obj npc``
 
-will try and create a directory named obj in my current directory
+will try to create a directory named *obj* and one called *npc* in my current directory.
 
-..TAGS: RST
+.. TAGS: RST
 
 
 

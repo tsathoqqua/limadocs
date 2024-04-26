@@ -3,6 +3,8 @@ Mudlib *adversary*
 
 Documentation for the adversary mudlib in */std/adversary.c*.
 
+.. TAGS: RST
+
 Functions
 =========
 .. c:function:: int start_fight(object who)

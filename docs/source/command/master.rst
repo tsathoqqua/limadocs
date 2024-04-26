@@ -8,9 +8,9 @@ Command
 
 USAGE: ``master``
 
- Reload the master object.
+Reload the master object.
 
- .. TAGS: RST
+.. TAGS: RST
 
 
 

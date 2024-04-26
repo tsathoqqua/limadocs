@@ -16,6 +16,12 @@ The ed() efun is not used by the LIMA mudlib, as we use the new ed
 functionality.  See ed_session.c
 
 
+.. c:function:: nomask varargs void message(mixed msgclass, string message, mixed target, mixed exclude)
+
+The message() efun is not used by the LIMA mudlib, as we use M_MESSAGES
+for all messages sent to users.  See M_MESSAGES documentation.
+
+
 .. c:function:: nomask int exec(object target, object src)
 
 The exec efun is never used by the LIMA mudlib, since only bodies are
@@ -75,7 +81,7 @@ The query_snooping efun makes no sense in the context of our snoop system.
 
 .. c:function:: void say(string m)
 
-The say() efun is not used by the LIMA mudlib, in favor of the extensive
+The say() efun is not used by the LIMA mudlib, in favour of the extensive
 messaging system in the body.  Consider using this_body()->other_action()
 instead of say().
 

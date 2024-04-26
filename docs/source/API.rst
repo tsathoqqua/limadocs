@@ -7,6 +7,7 @@ API
 - `channel <api/channel.html>`_
 - `getopt <api/getopt.html>`_
 - `history <api/history.html>`_
+- `messages <api/messages.html>`_
 - `misc <api/misc.html>`_
 - `more <api/more.html>`_
 - `overrides <api/overrides.html>`_
