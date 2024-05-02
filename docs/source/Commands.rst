@@ -77,6 +77,7 @@ Commands
 - `Command: objcount <command/objcount.html>`_
 - `Command: objfind <command/objfind.html>`_
 - `Command: objpurge <command/objpurge.html>`_
+- `Command: override <command/override.html>`_
 - `Command: parse <command/parse.html>`_
 - `Command: people <command/people.html>`_
 - `Command: print <command/print.html>`_
@@ -108,6 +109,7 @@ Commands
 - `Command: stat <command/stat.html>`_
 - `Command: status <command/status.html>`_
 - `Command: stupidemote <command/stupidemote.html>`_
+- `Command: sweep <command/sweep.html>`_
 - `Command: tail <command/tail.html>`_
 - `Command: targetemote <command/targetemote.html>`_
 - `Command: tasktool <command/tasktool.html>`_
@@ -118,6 +120,7 @@ Commands
 - `Command: to <command/to.html>`_
 - `Command: trans <command/trans.html>`_
 - `Command: treefor <command/treefor.html>`_
+- `Command: trip <command/trip.html>`_
 - `Command: tsh <command/tsh.html>`_
 - `Command: uncd <command/uncd.html>`_
 - `Command: unittest <command/unittest.html>`_
