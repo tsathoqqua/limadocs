@@ -9,9 +9,9 @@ Module Information
 M_CONVERSATION for doing interactive conversations with NPCs.
 
 Three things are needed to run conversations::
-  * A set of conversations options - set_options()
-  * A set of matching replies for the options - set_responses()
-  * A set of options to start from - set_start()
+  - A set of conversations options - set_options()
+  - A set of matching replies for the options - set_responses()
+  - A set of options to start from - set_start()
 
 Both the replies and the options have special syntaxes that is used to control
 the interactions. See the functions below for syntax descriptions.
@@ -22,17 +22,19 @@ be limited accordingly. The filters are just added to the end of the reply optio
 examples follow below.
 
 Special option syntax:
-  * [str>10] - only shown if strength larger than 10
-  * [str=10] - only shown if strength equals 10
-  * [str<10] - only shown if strength less than 10.
+  - [str>10] - only shown if strength larger than 10
+  - [str=10] - only shown if strength equals 10
+  - [str<10] - only shown if strength less than 10.
 
 Stats are: str, agi, int, con, cha.
 
-Example: ``"I can probably lift that tree trunk for you?[str>60]"``
+Example: 
+    ``"I can probably lift that tree trunk for you?[str>60]"``
 
 This also works for skills for <, > and =:
 
-Example: ``"I can shoot that pistol right out of your hand [combat/ranged/pistol>3]"``
+Example: 
+    ``"I can shoot that pistol right out of your hand [combat/ranged/pistol>3]"``
 
 The numbers for skills refer to the ranks from 1-20. (See SKILL_D documentation)
 
@@ -40,7 +42,9 @@ For responses (from the NPC), some extra syntax allows you to open up new option
 close others. The responses can also be different types
 
 Special option syntax:
-@@add options@@remove options
+ 
+   ``@@add options@@remove options``
+
 The options can be seperated by "," to include more options.
 
 Example: ``"I'll say something.@@add_option1,add_option2@@remove_option3"``
@@ -53,7 +57,7 @@ A response can be 4 different things:
   - An array combined of all three things above.
 
 Example:
-``set_responses("hello":({"Hi there!","!wave",(: check_quest_item:) }));``
+    ``set_responses("hello":({"Hi there!","!wave",(: check_quest_item:) }));``
 
 .. TAGS: RST
 
