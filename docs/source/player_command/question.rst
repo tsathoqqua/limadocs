@@ -1,7 +1,7 @@
 Player Command
 ==============
 
-See: ` <bug.html>`_ ` <typo.html>`_ ` <feedback.html>`_ ` <idea.html>`_ 
+See: `bug <bug.html>`_ `typo <typo.html>`_ `feedback <feedback.html>`_ `idea <idea.html>`_ 
 
 USAGE
    ``question``

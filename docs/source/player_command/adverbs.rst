@@ -1,7 +1,7 @@
 Player Command
 ==============
 
-See: ` <feelings.html>`_ ` <random.html>`_ ` <semote.html>`_ 
+See: `feelings <feelings.html>`_ `random <random.html>`_ `semote <semote.html>`_ 
 
 
 USAGE 

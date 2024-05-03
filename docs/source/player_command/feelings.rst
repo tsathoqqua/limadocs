@@ -1,7 +1,7 @@
 Player Command
 ==============
 
-See: ` <adverbs.html>`_ ` <random.html>`_ ` <semote.html>`_ 
+See: `adverbs <adverbs.html>`_ `random <random.html>`_ `semote <semote.html>`_ 
 
 
 USAGE

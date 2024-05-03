@@ -1,7 +1,7 @@
 Player Command
 ==============
 
-See: ` <stats.html>`_ 
+See: `stats <stats.html>`_ 
 
 USAGE
 

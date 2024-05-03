@@ -1,7 +1,7 @@
 Player Command
 ==============
 
-See: ` <color.html>`_ ` <colours.html>`_ ` <mode.html>`_ 
+See: `color <color.html>`_ `colours <colours.html>`_ `mode <mode.html>`_ 
 
 USAGE
 

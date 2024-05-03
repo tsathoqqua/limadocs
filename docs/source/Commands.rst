@@ -2,143 +2,143 @@
 Commands
 ********
 
-- `Command:  <command/I.html>`_
-- `Command:  <command/Move.html>`_
-- `Command:  <command/addemote.html>`_
-- `Command:  <command/addguest.html>`_
-- `Command:  <command/addpath.html>`_
-- `Command:  <command/admtool.html>`_
-- `Command:  <command/apropos.html>`_
-- `Command:  <command/at.html>`_
-- `Command:  <command/bk.html>`_
-- `Command:  <command/cat.html>`_
-- `Command:  <command/cd.html>`_
-- `Command:  <command/checkpriv.html>`_
-- `Command:  <command/clean.html>`_
-- `Command:  <command/clone.html>`_
-- `Command:  <command/cmd.html>`_
-- `Command:  <command/codefor.html>`_
-- `Command:  <command/codesay.html>`_
-- `Command:  <command/cp.html>`_
-- `Command:  <command/cpu.html>`_
-- `Command:  <command/cut.html>`_
-- `Command:  <command/dataedit.html>`_
-- `Command:  <command/date.html>`_
-- `Command:  <command/dbxframe.html>`_
-- `Command:  <command/dbxfuncs.html>`_
-- `Command:  <command/dbxvars.html>`_
-- `Command:  <command/dbxwhere.html>`_
-- `Command:  <command/dest.html>`_
-- `Command:  <command/didlog.html>`_
-- `Command:  <command/diff.html>`_
-- `Command:  <command/discuss.html>`_
-- `Command:  <command/do.html>`_
-- `Command:  <command/docs.html>`_
-- `Command:  <command/du.html>`_
-- `Command:  <command/echo.html>`_
-- `Command:  <command/echoall.html>`_
-- `Command:  <command/echom.html>`_
-- `Command:  <command/echoto.html>`_
-- `Command:  <command/ed.html>`_
-- `Command:  <command/emotem.html>`_
-- `Command:  <command/find.html>`_
-- `Command:  <command/finger.html>`_
-- `Command:  <command/flist.html>`_
-- `Command:  <command/force.html>`_
-- `Command:  <command/goto.html>`_
-- `Command:  <command/governance.html>`_
-- `Command:  <command/grep.html>`_
-- `Command:  <command/halt.html>`_
-- `Command:  <command/head.html>`_
-- `Command:  <command/heal.html>`_
-- `Command:  <command/here.html>`_
-- `Command:  <command/home.html>`_
-- `Command:  <command/idfind.html>`_
-- `Command:  <command/iftp.html>`_
-- `Command:  <command/ilocate.html>`_
-- `Command:  <command/invis.html>`_
-- `Command:  <command/killmobs.html>`_
-- `Command:  <command/last.html>`_
-- `Command:  <command/lightme.html>`_
-- `Command:  <command/lima.html>`_
-- `Command:  <command/listeners.html>`_
-- `Command:  <command/livings.html>`_
-- `Command:  <command/loadall.html>`_
-- `Command:  <command/locate.html>`_
-- `Command:  <command/ls.html>`_
-- `Command:  <command/master.html>`_
-- `Command:  <command/mkdir.html>`_
-- `Command:  <command/more.html>`_
-- `Command:  <command/msg.html>`_
-- `Command:  <command/mudinfo.html>`_
-- `Command:  <command/mv.html>`_
-- `Command:  <command/mvemote.html>`_
-- `Command:  <command/netstat.html>`_
-- `Command:  <command/null.html>`_
-- `Command:  <command/objcount.html>`_
-- `Command:  <command/objfind.html>`_
-- `Command:  <command/objpurge.html>`_
-- `Command:  <command/override.html>`_
-- `Command:  <command/parse.html>`_
-- `Command:  <command/people.html>`_
-- `Command:  <command/print.html>`_
-- `Command:  <command/printpath.html>`_
-- `Command:  <command/privs.html>`_
-- `Command:  <command/profile.html>`_
-- `Command:  <command/pwd.html>`_
-- `Command:  <command/removeguest.html>`_
-- `Command:  <command/renew.html>`_
-- `Command:  <command/replace.html>`_
-- `Command:  <command/resurrect.html>`_
-- `Command:  <command/review.html>`_
-- `Command:  <command/rm.html>`_
-- `Command:  <command/rmdir.html>`_
-- `Command:  <command/rmemote.html>`_
-- `Command:  <command/rmpath.html>`_
-- `Command:  <command/rst.html>`_
-- `Command:  <command/scan.html>`_
-- `Command:  <command/showemote.html>`_
-- `Command:  <command/showexits.html>`_
-- `Command:  <command/showtree.html>`_
-- `Command:  <command/shutdown.html>`_
-- `Command:  <command/smartmobs.html>`_
-- `Command:  <command/snoop.html>`_
-- `Command:  <command/snoops.html>`_
-- `Command:  <command/socketinfo.html>`_
-- `Command:  <command/spew.html>`_
-- `Command:  <command/start.html>`_
-- `Command:  <command/stat.html>`_
-- `Command:  <command/status.html>`_
-- `Command:  <command/stupidemote.html>`_
-- `Command:  <command/sweep.html>`_
-- `Command:  <command/tail.html>`_
-- `Command:  <command/targetemote.html>`_
-- `Command:  <command/tasktool.html>`_
-- `Command:  <command/telnet.html>`_
-- `Command:  <command/testargs.html>`_
-- `Command:  <command/timer.html>`_
-- `Command:  <command/times.html>`_
-- `Command:  <command/to.html>`_
-- `Command:  <command/trans.html>`_
-- `Command:  <command/treefor.html>`_
-- `Command:  <command/trip.html>`_
-- `Command:  <command/tsh.html>`_
-- `Command:  <command/uncd.html>`_
-- `Command:  <command/unittest.html>`_
-- `Command:  <command/unsnoop.html>`_
-- `Command:  <command/update.html>`_
-- `Command:  <command/users.html>`_
-- `Command:  <command/verbs.html>`_
-- `Command:  <command/vis.html>`_
-- `Command:  <command/wall.html>`_
-- `Command:  <command/wc.html>`_
-- `Command:  <command/where.html>`_
-- `Command:  <command/wheremobs.html>`_
-- `Command:  <command/which.html>`_
-- `Command:  <command/whoguests.html>`_
-- `Command:  <command/whoip.html>`_
-- `Command:  <command/wizz.html>`_
-- `Command:  <command/work.html>`_
-- `Command:  <command/xargs.html>`_
+- `Command: I <command/I.html>`_
+- `Command: Move <command/Move.html>`_
+- `Command: addemote <command/addemote.html>`_
+- `Command: addguest <command/addguest.html>`_
+- `Command: addpath <command/addpath.html>`_
+- `Command: admtool <command/admtool.html>`_
+- `Command: apropos <command/apropos.html>`_
+- `Command: at <command/at.html>`_
+- `Command: bk <command/bk.html>`_
+- `Command: cat <command/cat.html>`_
+- `Command: cd <command/cd.html>`_
+- `Command: checkpriv <command/checkpriv.html>`_
+- `Command: clean <command/clean.html>`_
+- `Command: clone <command/clone.html>`_
+- `Command: cmd <command/cmd.html>`_
+- `Command: codefor <command/codefor.html>`_
+- `Command: codesay <command/codesay.html>`_
+- `Command: cp <command/cp.html>`_
+- `Command: cpu <command/cpu.html>`_
+- `Command: cut <command/cut.html>`_
+- `Command: dataedit <command/dataedit.html>`_
+- `Command: date <command/date.html>`_
+- `Command: dbxframe <command/dbxframe.html>`_
+- `Command: dbxfuncs <command/dbxfuncs.html>`_
+- `Command: dbxvars <command/dbxvars.html>`_
+- `Command: dbxwhere <command/dbxwhere.html>`_
+- `Command: dest <command/dest.html>`_
+- `Command: didlog <command/didlog.html>`_
+- `Command: diff <command/diff.html>`_
+- `Command: discuss <command/discuss.html>`_
+- `Command: do <command/do.html>`_
+- `Command: docs <command/docs.html>`_
+- `Command: du <command/du.html>`_
+- `Command: echo <command/echo.html>`_
+- `Command: echoall <command/echoall.html>`_
+- `Command: echom <command/echom.html>`_
+- `Command: echoto <command/echoto.html>`_
+- `Command: ed <command/ed.html>`_
+- `Command: emotem <command/emotem.html>`_
+- `Command: find <command/find.html>`_
+- `Command: finger <command/finger.html>`_
+- `Command: flist <command/flist.html>`_
+- `Command: force <command/force.html>`_
+- `Command: goto <command/goto.html>`_
+- `Command: governance <command/governance.html>`_
+- `Command: grep <command/grep.html>`_
+- `Command: halt <command/halt.html>`_
+- `Command: head <command/head.html>`_
+- `Command: heal <command/heal.html>`_
+- `Command: here <command/here.html>`_
+- `Command: home <command/home.html>`_
+- `Command: idfind <command/idfind.html>`_
+- `Command: iftp <command/iftp.html>`_
+- `Command: ilocate <command/ilocate.html>`_
+- `Command: invis <command/invis.html>`_
+- `Command: killmobs <command/killmobs.html>`_
+- `Command: last <command/last.html>`_
+- `Command: lightme <command/lightme.html>`_
+- `Command: lima <command/lima.html>`_
+- `Command: listeners <command/listeners.html>`_
+- `Command: livings <command/livings.html>`_
+- `Command: loadall <command/loadall.html>`_
+- `Command: locate <command/locate.html>`_
+- `Command: ls <command/ls.html>`_
+- `Command: master <command/master.html>`_
+- `Command: mkdir <command/mkdir.html>`_
+- `Command: more <command/more.html>`_
+- `Command: msg <command/msg.html>`_
+- `Command: mudinfo <command/mudinfo.html>`_
+- `Command: mv <command/mv.html>`_
+- `Command: mvemote <command/mvemote.html>`_
+- `Command: netstat <command/netstat.html>`_
+- `Command: null <command/null.html>`_
+- `Command: objcount <command/objcount.html>`_
+- `Command: objfind <command/objfind.html>`_
+- `Command: objpurge <command/objpurge.html>`_
+- `Command: override <command/override.html>`_
+- `Command: parse <command/parse.html>`_
+- `Command: people <command/people.html>`_
+- `Command: print <command/print.html>`_
+- `Command: printpath <command/printpath.html>`_
+- `Command: privs <command/privs.html>`_
+- `Command: profile <command/profile.html>`_
+- `Command: pwd <command/pwd.html>`_
+- `Command: removeguest <command/removeguest.html>`_
+- `Command: renew <command/renew.html>`_
+- `Command: replace <command/replace.html>`_
+- `Command: resurrect <command/resurrect.html>`_
+- `Command: review <command/review.html>`_
+- `Command: rm <command/rm.html>`_
+- `Command: rmdir <command/rmdir.html>`_
+- `Command: rmemote <command/rmemote.html>`_
+- `Command: rmpath <command/rmpath.html>`_
+- `Command: rst <command/rst.html>`_
+- `Command: scan <command/scan.html>`_
+- `Command: showemote <command/showemote.html>`_
+- `Command: showexits <command/showexits.html>`_
+- `Command: showtree <command/showtree.html>`_
+- `Command: shutdown <command/shutdown.html>`_
+- `Command: smartmobs <command/smartmobs.html>`_
+- `Command: snoop <command/snoop.html>`_
+- `Command: snoops <command/snoops.html>`_
+- `Command: socketinfo <command/socketinfo.html>`_
+- `Command: spew <command/spew.html>`_
+- `Command: start <command/start.html>`_
+- `Command: stat <command/stat.html>`_
+- `Command: status <command/status.html>`_
+- `Command: stupidemote <command/stupidemote.html>`_
+- `Command: sweep <command/sweep.html>`_
+- `Command: tail <command/tail.html>`_
+- `Command: targetemote <command/targetemote.html>`_
+- `Command: tasktool <command/tasktool.html>`_
+- `Command: telnet <command/telnet.html>`_
+- `Command: testargs <command/testargs.html>`_
+- `Command: timer <command/timer.html>`_
+- `Command: times <command/times.html>`_
+- `Command: to <command/to.html>`_
+- `Command: trans <command/trans.html>`_
+- `Command: treefor <command/treefor.html>`_
+- `Command: trip <command/trip.html>`_
+- `Command: tsh <command/tsh.html>`_
+- `Command: uncd <command/uncd.html>`_
+- `Command: unittest <command/unittest.html>`_
+- `Command: unsnoop <command/unsnoop.html>`_
+- `Command: update <command/update.html>`_
+- `Command: users <command/users.html>`_
+- `Command: verbs <command/verbs.html>`_
+- `Command: vis <command/vis.html>`_
+- `Command: wall <command/wall.html>`_
+- `Command: wc <command/wc.html>`_
+- `Command: where <command/where.html>`_
+- `Command: wheremobs <command/wheremobs.html>`_
+- `Command: which <command/which.html>`_
+- `Command: whoguests <command/whoguests.html>`_
+- `Command: whoip <command/whoip.html>`_
+- `Command: wizz <command/wizz.html>`_
+- `Command: work <command/work.html>`_
+- `Command: xargs <command/xargs.html>`_
 
 *File generated by reStructured Text daemon.*

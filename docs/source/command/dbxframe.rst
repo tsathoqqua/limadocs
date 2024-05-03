@@ -6,7 +6,7 @@ Documentation for the dbxframe command in */trans/cmds/dbxframe.c*.
 Command
 =======
 
-See: `Command:  <dbx.html>`_ 
+See: `Command: dbx <dbx.html>`_ 
 
 USAGE: ``dbxframe [<who>] <frame number>``
 

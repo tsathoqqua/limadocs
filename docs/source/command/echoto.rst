@@ -6,7 +6,7 @@ Documentation for the echoto command in */cmds/wiz/echoto.c*.
 Command
 =======
 
-See: `Command:  <echo.html>`_ `Command:  <echoall.html>`_ `Command:  <echom.html>`_ 
+See: `Command: echo <echo.html>`_ `Command: echoall <echoall.html>`_ `Command: echom <echom.html>`_ 
 
 USAGE: ``echoto <target> <message>``
 

@@ -6,7 +6,7 @@ Documentation for the stupidemote command in */cmds/wiz/stupidemote.c*.
 Command
 =======
 
-See: `Command:  <feelings.html>`_ `Command:  <m_messages.html>`_ `Command:  <addemote.html>`_ `Command:  <showemote.html>`_ `Command:  <rmemote.html>`_ `Command:  <targetemote.html>`_ 
+See: `Command: feelings <feelings.html>`_ `Command: m_messages <m_messages.html>`_ `Command: addemote <addemote.html>`_ `Command: showemote <showemote.html>`_ `Command: rmemote <rmemote.html>`_ `Command: targetemote <targetemote.html>`_ 
 
 USAGE:  ``stupidemote <soul>``
 

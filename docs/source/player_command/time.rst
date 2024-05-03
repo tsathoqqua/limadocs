@@ -1,7 +1,7 @@
 Player Command
 ==============
 
-See: ` <timezone.html>`_ 
+See: `timezone <timezone.html>`_ 
 
 USAGE
   ``time``

@@ -6,7 +6,7 @@ Documentation for the printpath command in */trans/cmds/printpath.c*.
 Command
 =======
 
-See: `Command:  <addpath.html>`_ `Command:  <rmpath.html>`_ 
+See: `Command: addpath <addpath.html>`_ `Command: rmpath <rmpath.html>`_ 
 
 USAGE: ``printpath``
 

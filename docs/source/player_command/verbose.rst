@@ -1,7 +1,7 @@
 Player Command
 ==============
 
-See: ` <brief.html>`_ 
+See: `brief <brief.html>`_ 
 
 USAGE
 

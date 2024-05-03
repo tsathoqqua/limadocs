@@ -1,7 +1,7 @@
 Player Command
 ==============
 
-See: ` <hints.html>`_ 
+See: `hints <hints.html>`_ 
 
 USAGE
    ``hint``

@@ -1,7 +1,7 @@
 Player Command
 ==============
 
-See: ` <colours.html>`_ ` <mode.html>`_ ` <frames.html>`_ 
+See: `colours <colours.html>`_ `mode <mode.html>`_ `frames <frames.html>`_ 
 
 USAGE
    ``palette``

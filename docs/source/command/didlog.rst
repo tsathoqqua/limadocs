@@ -6,7 +6,7 @@ Documentation for the didlog command in */cmds/wiz/didlog.c*.
 Command
 =======
 
-See: `Command:  <I.html>`_ `Command:  <lima.html>`_ 
+See: `Command: I <I.html>`_ `Command: lima <lima.html>`_ 
 
 USAGE: 
 

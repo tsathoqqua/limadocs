@@ -1,7 +1,7 @@
 Player Command
 ==============
 
-See: ` <skills.html>`_ ` <score.html>`_ ` <equip.html>`_ 
+See: `skills <skills.html>`_ `score <score.html>`_ `equip <equip.html>`_ 
 
 USAGE 
 

@@ -6,7 +6,7 @@ Documentation for the echo command in */cmds/wiz/echo.c*.
 Command
 =======
 
-See: `Command:  <echoto.html>`_ `Command:  <echoall.html>`_ `Command:  <echom.html>`_ 
+See: `Command: echoto <echoto.html>`_ `Command: echoall <echoall.html>`_ `Command: echom <echom.html>`_ 
 
 USAGE:  ``echo <string>``
 

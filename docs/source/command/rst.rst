@@ -6,7 +6,7 @@ Documentation for the rst command in */trans/cmds/rst.c*.
 Command
 =======
 
-See: `Command:  <bak.html>`_ 
+See: `Command: bak <bak.html>`_ 
 
 USAGE ``rst <filename>``
 

@@ -1,7 +1,7 @@
 Player Command
 ==============
 
-See: ` <finger.html>`_ 
+See: `finger <finger.html>`_ 
 
 USAGE
    ``plan``

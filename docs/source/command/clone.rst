@@ -6,7 +6,7 @@ Documentation for the clone command in */cmds/wiz/clone.c*.
 Command
 =======
 
-See: `Command:  <dest.html>`_ `Command:  <clean.html>`_ 
+See: `Command: dest <dest.html>`_ `Command: clean <clean.html>`_ 
 
 USAGE: ``clone <object>``
 

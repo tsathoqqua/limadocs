@@ -6,7 +6,7 @@ Documentation for the lima command in */cmds/wiz/lima.c*.
 Command
 =======
 
-See: `Command:  <I.html>`_ `Command:  <didlog.html>`_ 
+See: `Command: I <I.html>`_ `Command: didlog <didlog.html>`_ 
 
 USAGE: 
 

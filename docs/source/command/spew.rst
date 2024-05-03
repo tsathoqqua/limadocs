@@ -6,7 +6,7 @@ Documentation for the spew command in */trans/cmds/spew.c*.
 Command
 =======
 
-See: `Command:  <shell.html>`_ 
+See: `Command: shell <shell.html>`_ 
 
 USAGE
    ``spew file [<startline>] [#<lines>]``

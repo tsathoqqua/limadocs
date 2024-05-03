@@ -6,7 +6,7 @@ Documentation for the work command in */trans/cmds/work.c*.
 Command
 =======
 
-See: `Command:  <cd.html>`_ 
+See: `Command: cd <cd.html>`_ 
 
 USAGE: 
 

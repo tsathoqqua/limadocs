@@ -1,7 +1,7 @@
 Player Command
 ==============
 
-See: ` <feelings.html>`_ ` <adverbs.html>`_ ` <semote.html>`_ 
+See: `feelings <feelings.html>`_ `adverbs <adverbs.html>`_ `semote <semote.html>`_ 
 
 
 USAGE

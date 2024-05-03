@@ -1,7 +1,7 @@
 Player Command
 ==============
 
-See: ` <gossip.html>`_ ` <newbie.html>`_ ` <chan.html>`_ 
+See: `gossip <gossip.html>`_ `newbie <newbie.html>`_ `chan <chan.html>`_ 
 
 USAGE
    ``chanlist``

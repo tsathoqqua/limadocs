@@ -6,7 +6,7 @@ Documentation for the cd command in */trans/cmds/cd.c*.
 Command
 =======
 
-See: `Command:  <mkdir.html>`_ `Command:  <ls.html>`_ `Command:  <pwd.html>`_ `Command:  <ed.html>`_ 
+See: `Command: mkdir <mkdir.html>`_ `Command: ls <ls.html>`_ `Command: pwd <pwd.html>`_ `Command: ed <ed.html>`_ 
 
 USAGE:  ``cd [directory|obj]``
 

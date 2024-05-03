@@ -6,7 +6,7 @@ Documentation for the timer command in */cmds/wiz/timer.c*.
 Command
 =======
 
-See: `Command:  <channels.html>`_ `Command:  <chan.html>`_ 
+See: `Command: channels <channels.html>`_ `Command: chan <chan.html>`_ 
 
 USAGE:  ``timer [-r] number [string  number]``
 

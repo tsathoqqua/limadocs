@@ -6,7 +6,7 @@ Documentation for the cat command in */trans/cmds/cat.c*.
 Command
 =======
 
-See: `Command:  <more.html>`_ `Command:  <tail.html>`_ 
+See: `Command: more <more.html>`_ `Command: tail <tail.html>`_ 
 
 USAGE ``cat [path/file]``
 

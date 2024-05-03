@@ -1,7 +1,7 @@
 Player Command
 ==============
 
-See: ` <inventory.html>`_ ` <score.html>`_ ` <equip.html>`_ 
+See: `inventory <inventory.html>`_ `score <score.html>`_ `equip <equip.html>`_ 
 
 USAGE
   ``money``

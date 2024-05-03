@@ -1,7 +1,7 @@
 Player Command
 ==============
 
-See: ` <verbose.html>`_ 
+See: `verbose <verbose.html>`_ 
 
 USAGE 
    |  ``brief``

@@ -1,7 +1,7 @@
 Player Command
 ==============
 
-See: ` <mail.html>`_ 
+See: `mail <mail.html>`_ 
 
 
 USAGE
