@@ -44,16 +44,18 @@ As a player here, you are responsible for knowing the rules.  Type ``help rules`
 Some quick abbreviations to save time
 =====================================
 
-.. list-table::
-   * - Shortcut
-     - Action
-   * - s,n,e,w,ne,nw,se,sw,u,d
-     - Moves you in the compass directions
-   * - i
-     - Lists your inventory
-   * - exa (something)
-     - Lets you look at, or examine something
-   * - 'hello
-     - Means ``say hello``
++------------------------------+-------------------------+
+| Shortcut                     | Action                  |
++==============================+=========================+
+| s,n,e,w,ne,nw,se,sw,u,d      | Moves you in the        |
+|                              | compass directions      |
++------------------------------+-------------------------+
+| i                            | Lists your inventory    |
++------------------------------+-------------------------+
+| exa (something)              | Lets you look at, or    |
+|                              | examine something       |
++------------------------------+-------------------------+
+| 'hello                       | Means ``say hello``     |
++------------------------------+-------------------------+
 
 Type alias to see what else you might be able to abbreviate.
