@@ -12,6 +12,8 @@ bank.  Only ``set_currency_type()``, ``set_exchange_fee()``, ``set_bank_id()``, 
 
 Your accountant should inherit from LIVING or ADVERSARY.
 
+.. TAGS: RST
+
 Functions
 =========
 .. c:function:: void set_currency_type(string currency)

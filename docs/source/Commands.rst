@@ -2,6 +2,7 @@
 Commands
 ********
 
+.. TAGS: RST
 - `Command: I <command/I.html>`_
 - `Command: Move <command/Move.html>`_
 - `Command: addemote <command/addemote.html>`_

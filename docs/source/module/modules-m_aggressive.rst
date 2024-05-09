@@ -3,6 +3,14 @@ Module *m_aggressive*
 
 Documentation for the modules-m_aggressive module in */std/modules/m_aggressive.c*.
 
+Module Information
+==================
+
+Module for agressive monsters that will attack players given a specific chance to do so.
+Module will check if player is a wizard, and not attack the wizard.
+
+.. TAGS: RST
+
 Functions
 =========
 .. c:function:: void aggressively_attack(object who)

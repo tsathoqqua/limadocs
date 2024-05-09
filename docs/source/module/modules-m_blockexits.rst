@@ -3,6 +3,14 @@ Module *m_blockexits*
 
 Documentation for the modules-m_blockexits module in */std/modules/m_blockexits.c*.
 
+Module Information
+==================
+
+Module for NPCs that need to block exits for players - and stop doing so
+under certain conditions.
+
+.. TAGS: RST
+
 Functions
 =========
 .. c:function:: void add_block(string *exits...)

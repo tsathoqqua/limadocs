@@ -3,11 +3,17 @@ Module *m_actions*
 
 Documentation for the modules-m_actions module in */std/modules/m_actions.c*.
 
+Module Information
+==================
+
+This module adds functions in monsters so they can do actions or respond to actions.
+
+.. TAGS: RST
+
 Functions
 =========
 .. c:function:: void set_delay_time(int x)
 
-void set_delay_time(int);
 Sets the amount of time between possible actions. The minimum value
 is 5, which is default and is fine for most situations. For a large
 number of action objects, increasing this number (and increasing the

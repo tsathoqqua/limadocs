@@ -2,6 +2,7 @@
 Verbs
 *****
 
+.. TAGS: RST
 - `activate <verb/activate.html>`_
 - `apply <verb/apply.html>`_
 - `ascend <verb/ascend.html>`_

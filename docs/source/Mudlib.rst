@@ -2,6 +2,7 @@
 Mudlib
 ******
 
+.. TAGS: RST
 - `advancement: simple <mudlib/advancement-simple.html>`_
 - `adversary: behaviors <mudlib/adversary-behaviors.html>`_
 - `adversary: skills <mudlib/adversary-skills.html>`_

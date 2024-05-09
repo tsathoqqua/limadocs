@@ -1,14 +1,15 @@
 Command *docs*
 ***************
 
-Documentation for the docs command in */cmds/wiz/docs.c*.
+Documentation for the docs command in */trans/cmds/docs.c*.
 
 Command
 =======
 
 USAGE
   |  ``docs``
-  |  ``docs refresh`` - rebuild HELP_D.
+  |  ``docs refresh``    - rebuild HELP_D.
+  |  ``docs playerdoc``  - recreate /help/player/commands.rst
 
 This command shows status of the documentation.
 

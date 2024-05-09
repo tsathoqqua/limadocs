@@ -2,6 +2,7 @@
 API
 ***
 
+.. TAGS: RST
 - `shell: alias <api/shell-alias.html>`_
 - `shell: bindings <api/shell-bindings.html>`_
 - `shell: getopt <api/shell-getopt.html>`_

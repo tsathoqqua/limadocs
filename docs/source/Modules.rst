@@ -2,9 +2,11 @@
 Module
 ******
 
+.. TAGS: RST
 - `Module: m_accountant <module/modules-m_accountant.html>`_
 - `Module: m_actions <module/modules-m_actions.html>`_
 - `Module: m_aggressive <module/modules-m_aggressive.html>`_
+- `Module: m_assistance <module/modules-m_assistance.html>`_
 - `Module: m_blockexits <module/modules-m_blockexits.html>`_
 - `Module: m_bodystats <module/modules-m_bodystats.html>`_
 - `Module: m_boss <module/modules-m_boss.html>`_
@@ -39,6 +41,7 @@ Module
 - `Module: m_messages <module/modules-m_messages.html>`_
 - `Module: m_npcscript <module/modules-m_npcscript.html>`_
 - `Module: m_openable <module/modules-m_openable.html>`_
+- `Module: m_power <module/modules-m_power.html>`_
 - `Module: m_readable <module/modules-m_readable.html>`_
 - `Module: m_ready <module/modules-m_ready.html>`_
 - `Module: m_rstview <module/modules-m_rstview.html>`_

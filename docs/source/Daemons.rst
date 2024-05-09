@@ -2,6 +2,7 @@
 Daemons
 *******
 
+.. TAGS: RST
 - `Daemon: account_d <daemon/daemons-account_d.html>`_
 - `Daemon: emoji_d <daemon/daemons-emoji_d.html>`_
 - `Daemon: group_d <daemon/daemons-group_d.html>`_

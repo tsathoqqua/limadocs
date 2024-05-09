@@ -2,6 +2,7 @@
 Player Commands
 ***************
 
+.. TAGS: RST
 - `adverbs <player_command/adverbs.html>`_
 - `biff <player_command/biff.html>`_
 - `brief <player_command/brief.html>`_
