@@ -5,6 +5,7 @@ Daemons
 .. TAGS: RST
 - `Daemon: account_d <daemon/daemons-account_d.html>`_
 - `Daemon: emoji_d <daemon/daemons-emoji_d.html>`_
+- `Daemon: event_d <daemon/daemons-event_d.html>`_
 - `Daemon: group_d <daemon/daemons-group_d.html>`_
 - `Daemon: guild_d <daemon/daemons-guild_d.html>`_
 - `Daemon: last_login_d <daemon/daemons-last_login_d.html>`_
