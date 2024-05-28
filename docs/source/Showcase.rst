@@ -2,9 +2,24 @@
 LIMA Showcase
 *************
 
-============
-Great layout
-============
+This page shows a few of the newer features of the LIMA mudlib. These are all on top of:
+
+- Centralized natural language parsing (zork like commands for players).
+- Socials use the natural language parsing, and are easy to extend. (The soul is *huge*).
+- Wizards have featureful shells including full unix globbing (ls \*.[ch]), command piping / redirection, etc...
+- Inline documentation.	
+- Distributed support.
+- Very modular, with clear code.
+- Support for Intermud-3.
+- Modal input, and fully featured interactive shells.
+- Real, secure security authored by Ellery @ TMI-2 (Reimer Behrends).
+- Emphasis on player usability: better news, channels, menus, etc...	than any other mudlib
+- Easy to build menus, easy to write socials, etc...
+- A menu driven admin tool to ease routine administration tasks.
+
+=====================
+Dynamic modern layout
+=====================
 
 LIMA supports fancy frames player commands, and include both horizontal and vertical headers. The frames
 can be themed in different colours and styles using the `frames command <../player_command/frames.html>`_, 
@@ -68,3 +83,7 @@ Useful module documentation to read:
 
 - `Module: m_frame <module/modules-m_frame.html>`_
 - `Module: m_widgets <module/modules-m_widgets.html>`_
+
+=====================
+Dynamic modern layout
+=====================
