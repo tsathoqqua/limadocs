@@ -16,7 +16,7 @@ Windows Subsystem for Linux (WSL)
 1. Open a Powershell or command prompt on Windows and do ``wsl --list --online`` to see which distributions are available for your Windows system.
 
 .. image:: images/wsl_step1.png
-  :width: 400
+  :width: 600
   :alt: WSL Distributions
 
 2. Install Windows Subsystem for Linux - we recommmend Ubuntu, but up to you:
@@ -26,7 +26,7 @@ Windows Subsystem for Linux (WSL)
 3. Set a username and a password for your Linux:
 
 .. image:: images/wsl_step2.png
-  :width: 400
+  :width: 600
   :alt: Set username and password
 
 4. Update apt, and install packages needed for compiling FluffOS
@@ -34,13 +34,13 @@ Windows Subsystem for Linux (WSL)
     |   ``sudo apt update`` 
 
 .. image:: images/wsl_step3.png
-  :width: 400
+  :width: 600
   :alt: apt update
 
     |   ``sudo apt install build-essential bison libmysqlclient-dev libpcre3-dev libpq-dev libsqlite3-dev libssl-dev libz-dev libjemalloc-dev libicu-dev cmake``
 
 .. image:: images/wsl_step4.png
-  :width: 400
+  :width: 600
   :alt: apt install
 
 5. Clone LIMA sources from github. It's available from two sources:
@@ -51,7 +51,7 @@ Windows Subsystem for Linux (WSL)
     |   ``git clone https://github.com/tsathoqqua/lima.git --recurse-submodules``
 
 .. image:: images/wsl_step5.png
-  :width: 400
+  :width: 600
   :alt: git clone
 
 6. Use --recurse-submodules to checkout the fluffos driver submodule. You can decide not to and use another driver if you want. LIMA comes with a build script after checking out the files:
@@ -62,7 +62,7 @@ Windows Subsystem for Linux (WSL)
     Lots of output will follow, and the final screen will say something like:
 
 .. image:: images/wsl_step6.png
-  :width: 400
+  :width: 600
   :alt: compile finished
 
 7. If you get complaints about missing dependencies here, try to install them via ``apt install`` or use ``apt search`` to find them.
@@ -72,7 +72,7 @@ Windows Subsystem for Linux (WSL)
 8. Check to see if the driver runs: ``./build/bin/driver``
 
 .. image:: images/wsl_step7.png
-  :width: 400
+  :width: 600
   :alt: check driver
 
 9. After build has completed, try:
