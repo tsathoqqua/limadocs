@@ -15,7 +15,9 @@ Windows Subsystem for Linux (WSL)
 
 1. Open a Powershell or command prompt on Windows and do ``wsl --list --online`` to see which distributions are available for your Windows system.
 
-![WSL Distributions](images/wsl_step1.png)
+.. image:: images/wsl_step1.png
+  :width: 400
+  :alt: WSL Distributions
 
 2. Install Windows Subsystem for Linux 
 
