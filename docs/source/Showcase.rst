@@ -104,3 +104,13 @@ provide coloured mark up on the MUD, as well as online (here).
   :width: 700
   :alt: Markdown view
 
+The wizard `apropos command <command/apropos.html>`_ will provide a list of help pages and functions that
+match the query, and a following 'man add_start', e.g., will then bring up the entire help page for 
+`module m_conversation <module/modules-m_conversation.html>`_.
+
+---------------------
+Developer information
+---------------------
+
+For more on what you need to do, to continue to use the auto documenation system, see 
+the page on the `AUTODOC system <documentation/Autodocs.html>`_.
