@@ -84,6 +84,23 @@ Useful module documentation to read:
 - `Module: m_frame <module/modules-m_frame.html>`_
 - `Module: m_widgets <module/modules-m_widgets.html>`_
 
-=====================
-Dynamic modern layout
-=====================
+=======================
+Marked up documentation
+=======================
+
+The auto documentation system in LIMA (which was orignally inspired by JAVA), collects mark-up from source
+files, and creates help pages and fills the help system with topics. Two types of files exist:
+
+Markdown, or .md are files typically copied from the driver and are mostly for Wizards.
+
+.. figure:: images/documentation1.png
+  :width: 700
+  :alt: reStructured text view
+
+And reStructured Text, or .rst files are documentation for player commands, wizard commands and more. They 
+provide coloured mark up on the MUD, as well as online (here).
+
+.. figure:: images/documentation2.png
+  :width: 700
+  :alt: Markdown view
+
