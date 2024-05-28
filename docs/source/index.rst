@@ -4,6 +4,9 @@ Welcome to LIMA Mudlib Documentation
 
 **LIMA** (ˈlaɪmə) is a FluffOS based Mudlib originally developed in the 1990's.
 
+For features of the LIMA Mudlib, please see our `showcase <Showcase.html>`_ which has lots of examples
+of the features supported.
+
 Check out the `usage <Usage.html>`_ page for further information, including
 how to `install <Installation.html>`_ the project. A small helper on `messaging <documentation/Messaging.html>`_ 
 and `how to use the AUTODOC system <documentation/Autodocs.html>`_ inside the mudlib is also available.
