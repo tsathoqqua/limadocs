@@ -6,18 +6,20 @@ Documentation for the testargs command in */trans/cmds/testargs.c*.
 Command
 =======
 
-USAGE: testargs <command>
+USAGE: ``testargs <command>``
 
 Puts you into a modal loop, where you input args to be tested with
 that command.
-Enter ** to quit the loop
+Enter \*\* to quit the loop
 
->testargs look
+>``testargs look``
 
-Entering pipe mode. Type '**' to quit.
+Entering pipe mode. Type '\*\*' to quit.
 *
 
 Entering 'me' would display the result of 'look me' etc.
+
+.. TAGS: RST
 
 
 

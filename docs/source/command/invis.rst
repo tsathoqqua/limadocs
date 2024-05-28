@@ -8,12 +8,14 @@ Command
 
 See: `Command: vis <vis.html>`_ 
 
-USAGE: invis
+USAGE: ``invis``
 
 This command will let you turn invisible to players
 This is not intended as a "foolproof" way to be invisible.
 If you want to make sure players can't interrupt you while you work,
 either work offline or enforce a strict "do not disturb" policy.
+
+.. TAGS: RST
 
 
 

@@ -6,7 +6,7 @@ Documentation for the du command in */trans/cmds/du.c*.
 Command
 =======
 
-USAGE:  du [ path ]
+USAGE:  ``du [ path ]``
 
 Show the amount of disk space being used (in kilobytes).
 
@@ -14,9 +14,11 @@ If no path is specified du starts from the current
 directory and shows disk usage for that directory and
 all subdirectories.
 
-du
+``du``
 
-du /
+``du /``
+
+.. TAGS: RST
 
 
 

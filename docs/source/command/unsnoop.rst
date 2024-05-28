@@ -8,9 +8,11 @@ Command
 
 See: `Command: snoop <snoop.html>`_ `Command: snoops <snoops.html>`_ 
 
-USAGE: unsnoop <user>
+USAGE: ``unsnoop <user>``
 
 Stops snooping the target.
+
+.. TAGS: RST
 
 
 

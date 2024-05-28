@@ -6,10 +6,12 @@ Documentation for the remove verb in */cmds/verbs/remove.c*.
 Command
 =======
 
-Remove a post from a bulletin board
-Remove equipment
-Remove other things
-See also: boards
+Remove a post from a bulletin board, remove equipment, remove other things.
+
+ |  ``remove helmet``
+ |  ``remove all``
+
+.. TAGS: RST
 
 
 

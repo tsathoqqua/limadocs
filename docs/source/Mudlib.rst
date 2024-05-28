@@ -2,64 +2,69 @@
 Mudlib
 ******
 
-- `adversary <mudlib/adversary.html>`_
-- `armour <mudlib/armour.html>`_
-- `armour_base <mudlib/armour_base.html>`_
-- `attributes <mudlib/attributes.html>`_
-- `base <mudlib/base.html>`_
-- `base_obj <mudlib/base_obj.html>`_
-- `base_room <mudlib/base_room.html>`_
-- `behaviors <mudlib/behaviors.html>`_
-- `body <mudlib/body.html>`_
-- `book <mudlib/book.html>`_
-- `cmd <mudlib/cmd.html>`_
-- `complex_slots <mudlib/complex_slots.html>`_
-- `container <mudlib/container.html>`_
-- `corpses <mudlib/corpses.html>`_
-- `description <mudlib/description.html>`_
-- `door <mudlib/door.html>`_
-- `drink <mudlib/drink.html>`_
-- `effects <mudlib/effects.html>`_
-- `exits <mudlib/exits.html>`_
-- `flags <mudlib/flags.html>`_
-- `fluid <mudlib/fluid.html>`_
-- `grammar <mudlib/grammar.html>`_
-- `hidden_exit <mudlib/hidden_exit.html>`_
-- `hit_points <mudlib/hit_points.html>`_
-- `hooks <mudlib/hooks.html>`_
-- `inf_supply <mudlib/inf_supply.html>`_
-- `light <mudlib/light.html>`_
-- `limbs <mudlib/limbs.html>`_
-- `mass <mudlib/mass.html>`_
-- `material_spawner <mudlib/material_spawner.html>`_
-- `menu <mudlib/menu.html>`_
-- `move <mudlib/move.html>`_
-- `moving_monster <mudlib/moving_monster.html>`_
-- `moving_room <mudlib/moving_room.html>`_
-- `msg_recipient <mudlib/msg_recipient.html>`_
-- `multiple <mudlib/multiple.html>`_
-- `names <mudlib/names.html>`_
-- `navigation <mudlib/navigation.html>`_
-- `non_object <mudlib/non_object.html>`_
-- `non_room <mudlib/non_room.html>`_
-- `object <mudlib/object.html>`_
-- `pockets <mudlib/pockets.html>`_
-- `portal <mudlib/portal.html>`_
-- `roomdesc <mudlib/roomdesc.html>`_
-- `simple <mudlib/simple.html>`_
-- `simple_slots <mudlib/simple_slots.html>`_
-- `size <mudlib/size.html>`_
-- `skills <mudlib/skills.html>`_
-- `slowheal <mudlib/slowheal.html>`_
-- `state_of_mind <mudlib/state_of_mind.html>`_
-- `target <mudlib/target.html>`_
-- `test_suite <mudlib/test_suite.html>`_
-- `transient <mudlib/transient.html>`_
-- `types <mudlib/types.html>`_
-- `value <mudlib/value.html>`_
-- `vaporize <mudlib/vaporize.html>`_
-- `visible <mudlib/visible.html>`_
-- `vsupport <mudlib/vsupport.html>`_
-- `wield_base <mudlib/wield_base.html>`_
+.. TAGS: RST
+- `advancement: simple <mudlib/advancement-simple.html>`_
+- `adversary: behaviors <mudlib/adversary-behaviors.html>`_
+- `adversary: skills <mudlib/adversary-skills.html>`_
+- `adversary: target <mudlib/adversary-target.html>`_
+- `armour: armour_base <mudlib/armour-armour_base.html>`_
+- `armour: complex_slots <mudlib/armour-complex_slots.html>`_
+- `armour: limbs <mudlib/armour-limbs.html>`_
+- `armour: simple_slots <mudlib/armour-simple_slots.html>`_
+- `blows: base <mudlib/blows-base.html>`_
+- `body: cmd <mudlib/body-cmd.html>`_
+- `body: pockets <mudlib/body-pockets.html>`_
+- `body: skills <mudlib/body-skills.html>`_
+- `clusters: base <mudlib/clusters-base.html>`_
+- `clusters: navigation <mudlib/clusters-navigation.html>`_
+- `container: vsupport <mudlib/container-vsupport.html>`_
+- `death: corpses <mudlib/death-corpses.html>`_
+- `death: vaporize <mudlib/death-vaporize.html>`_
+- `event_info: types <mudlib/event_info-types.html>`_
+- `health: hit_points <mudlib/health-hit_points.html>`_
+- `health: limbs <mudlib/health-limbs.html>`_
+- `living: effects <mudlib/living-effects.html>`_
+- `living: grammar <mudlib/living-grammar.html>`_
+- `living: state_of_mind <mudlib/living-state_of_mind.html>`_
+- `object: attributes <mudlib/object-attributes.html>`_
+- `object: description <mudlib/object-description.html>`_
+- `object: flags <mudlib/object-flags.html>`_
+- `object: hooks <mudlib/object-hooks.html>`_
+- `object: light <mudlib/object-light.html>`_
+- `object: mass <mudlib/object-mass.html>`_
+- `object: move <mudlib/object-move.html>`_
+- `object: msg_recipient <mudlib/object-msg_recipient.html>`_
+- `object: names <mudlib/object-names.html>`_
+- `object: non_object <mudlib/object-non_object.html>`_
+- `object: size <mudlib/object-size.html>`_
+- `object: value <mudlib/object-value.html>`_
+- `object: visible <mudlib/object-visible.html>`_
+- `object: vsupport <mudlib/object-vsupport.html>`_
+- `room: exits <mudlib/room-exits.html>`_
+- `room: roomdesc <mudlib/room-roomdesc.html>`_
+- `std: adversary <mudlib/std-adversary.html>`_
+- `std: armour <mudlib/std-armour.html>`_
+- `std: base_obj <mudlib/std-base_obj.html>`_
+- `std: base_room <mudlib/std-base_room.html>`_
+- `std: body <mudlib/std-body.html>`_
+- `std: book <mudlib/std-book.html>`_
+- `std: container <mudlib/std-container.html>`_
+- `std: door <mudlib/std-door.html>`_
+- `std: drink <mudlib/std-drink.html>`_
+- `std: fluid <mudlib/std-fluid.html>`_
+- `std: hidden_exit <mudlib/std-hidden_exit.html>`_
+- `std: inf_supply <mudlib/std-inf_supply.html>`_
+- `std: material_spawner <mudlib/std-material_spawner.html>`_
+- `std: menu <mudlib/std-menu.html>`_
+- `std: moving_monster <mudlib/std-moving_monster.html>`_
+- `std: moving_room <mudlib/std-moving_room.html>`_
+- `std: non_room <mudlib/std-non_room.html>`_
+- `std: object <mudlib/std-object.html>`_
+- `std: portal <mudlib/std-portal.html>`_
+- `std: slowheal <mudlib/std-slowheal.html>`_
+- `std: test_suite <mudlib/std-test_suite.html>`_
+- `std: transient <mudlib/std-transient.html>`_
+- `wield: multiple <mudlib/wield-multiple.html>`_
+- `wield: wield_base <mudlib/wield-wield_base.html>`_
 
 *File generated by reStructured Text daemon.*

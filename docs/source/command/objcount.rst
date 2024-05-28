@@ -8,8 +8,10 @@ Command
 
 See: `Command: objdump <objdump.html>`_ `Command: objfind <objfind.html>`_ 
 
-USAGE: objcount
-      objcount <minimum>
+USAGE: 
+
+   |  ``objcount
+   |  ``objcount <minimum>
 
 This command is used to find objects that have more than one instance.
 The number of instances (including blueprint) for each qualifying item
@@ -20,7 +22,9 @@ but not for determining whether the item qualifies.
 
 When the optional "minimum" parameter is used, this ignores any items
 where the number of instances (excluding blueprint) is less than the number
-Thus "objcounts 2" lists items with 3 or more non-blueprint instances,
+Thus "``objcounts 2``" lists items with 3 or more non-blueprint instances,
+
+.. TAGS: RST
 
 
 

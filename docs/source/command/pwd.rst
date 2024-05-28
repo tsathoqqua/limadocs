@@ -6,13 +6,15 @@ Documentation for the pwd command in */cmds/wiz/pwd.c*.
 Command
 =======
 
-USAGE:  pwd
+USAGE:  ``pwd``
 
 Shows you what directory you are currently "in".
 
-pwd
+``pwd``
 
- /wiz/zifnab/obj
+ */wiz/zifnab/obj*
+
+.. TAGS: RST
 
 
 

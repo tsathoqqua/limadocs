@@ -2,6 +2,7 @@
 Player Commands
 ***************
 
+.. TAGS: RST
 - `adverbs <player_command/adverbs.html>`_
 - `biff <player_command/biff.html>`_
 - `brief <player_command/brief.html>`_
@@ -20,7 +21,6 @@ Player Commands
 - `feelings <player_command/feelings.html>`_
 - `finger <player_command/finger.html>`_
 - `frames <player_command/frames.html>`_
-- `groups <player_command/groups.html>`_
 - `help <player_command/help.html>`_
 - `hint <player_command/hint.html>`_
 - `hints <player_command/hints.html>`_
@@ -49,7 +49,6 @@ Player Commands
 - `reply <player_command/reply.html>`_
 - `rows <player_command/rows.html>`_
 - `save <player_command/save.html>`_
-- `say <player_command/say.html>`_
 - `score <player_command/score.html>`_
 - `semote <player_command/semote.html>`_
 - `shout <player_command/shout.html>`_

@@ -8,13 +8,13 @@ Command
 
 See: `Command: echo <echo.html>`_ `Command: echoto. echom <echoto. echom.html>`_ 
 
-USAGE:  echoall <string>
+USAGE:  ``echoall <string>``
 
 This command will echo a message to the entire mud exactly as you
 entered it.
 
 
-echoall You suddenly have a strange urge to kill something.
+``echoall You suddenly have a strange urge to kill something.``
 
 All the users on the mud will see on their screen;
 You suddenly have this urge to kill something.
@@ -26,6 +26,8 @@ The admin of this mud will not tolerate any type of toying
 with players.  (i.e. no faked deaths, or messages of that nature).
 Doing this is a direct violation of the mud policy and is grounds for
 disciplinary action.
+
+.. TAGS: RST
 
 
 

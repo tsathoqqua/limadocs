@@ -6,11 +6,13 @@ Documentation for the renew command in */trans/cmds/renew.c*.
 Command
 =======
 
-Usage: renew <object>
+Usage: ``renew <object>``
 
 Takes the specified cloned object, dests it, updates its base
 file (NOT its inherits), reclones it and replaces it to its
 original environment.
+
+.. TAGS: RST
 
 
 

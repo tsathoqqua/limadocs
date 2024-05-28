@@ -1,16 +1,16 @@
 Command *docs*
 ***************
 
-Documentation for the docs command in */cmds/wiz/docs.c*.
+Documentation for the docs command in */trans/cmds/docs.c*.
 
 Command
 =======
 
 USAGE
-  |  ``docs``
-  |  ``docs refresh`` - rebuild HELP_D.
-
-This command shows status of the documentation.
+  |  ``docs``            - show status of RST compliant documentation
+  |  ``docs <topic>``    - show next 10 files to be done in this topic
+  |  ``docs refresh``    - rebuild HELP_D
+  |  ``docs playerdoc``  - recreate /help/player/commands.rst
 
 .. TAGS: RST
 

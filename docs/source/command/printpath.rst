@@ -8,9 +8,11 @@ Command
 
 See: `Command: addpath <addpath.html>`_ `Command: rmpath <rmpath.html>`_ 
 
-USAGE: printpath
+USAGE: ``printpath``
 
 This command will show you your current list of exec paths.
+
+.. TAGS: RST
 
 
 

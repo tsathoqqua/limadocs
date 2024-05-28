@@ -8,7 +8,7 @@ Command
 
 See: `Command: bak <bak.html>`_ 
 
-USAGE rst <filename>
+USAGE ``rst <filename>``
 
 Restores a previous backup of a file.
 
@@ -22,6 +22,8 @@ previously backed up.
 
 Menu item ? will show your selection, again. Menu item
 q will cancel the restoration process.
+
+.. TAGS: RST
 
 
 

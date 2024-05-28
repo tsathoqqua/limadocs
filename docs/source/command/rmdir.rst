@@ -6,17 +6,19 @@ Documentation for the rmdir command in */trans/cmds/rmdir.c*.
 Command
 =======
 
-USAGE:  rmdir < directory >
+USAGE:  ``rmdir < directory >``
 
 This command will delete a directory if it is empty.
 
-rmdir /wiz/zifnab/obj
+``rmdir /wiz/zifnab/obj``
 
 will try and delete a directory named obj from /wiz/zifnab
 
-rmdir obj
+``rmdir obj``
 
 will try and delete a directory named obj from my current directory
+
+.. TAGS: RST
 
 
 

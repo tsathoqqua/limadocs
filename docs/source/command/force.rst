@@ -6,18 +6,19 @@ Documentation for the force command in */trans/cmds/force.c*.
 Command
 =======
 
-USAGE:  force <living> <command>
+USAGE
+    ``force <living> <command>``
 
 This command will force a player to execute the command you supply
 
-force ohara north
+``force ohara north``
 
 This would force Ohara to move to the north if possible.
 Ohara would like you to note that "possible" and "a good idea"
 are two separate things.
 
-
-***********  WARNING  ************
+WARNING  
+-------
 
 The admin of this mud will not tolerate any type of toying with players.
 Do not force a player into a certain death situation.
@@ -26,8 +27,7 @@ disciplinary action.
 
 All uses of the command are logged.
 
-Ohara also notes that any toying with him may result in a
-force <insert your name here> dest <insert your name here too>
+.. TAGS: RST
 
 
 

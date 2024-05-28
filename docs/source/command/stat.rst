@@ -6,11 +6,13 @@ Documentation for the stat command in */trans/cmds/stat.c*.
 Command
 =======
 
-USAGE: stat <object>
+USAGE: ``stat <object>``
 
 Gives you vital information about ANY object.
 This information will usually be the most significant variables,
 and their values.
+
+.. TAGS: RST
 
 
 

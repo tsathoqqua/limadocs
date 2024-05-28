@@ -2,12 +2,12 @@
 Commands
 ********
 
+.. TAGS: RST
 - `Command: I <command/I.html>`_
 - `Command: Move <command/Move.html>`_
 - `Command: addemote <command/addemote.html>`_
 - `Command: addguest <command/addguest.html>`_
 - `Command: addpath <command/addpath.html>`_
-- `Command: addto <command/addto.html>`_
 - `Command: admtool <command/admtool.html>`_
 - `Command: apropos <command/apropos.html>`_
 - `Command: at <command/at.html>`_
@@ -47,6 +47,7 @@ Commands
 - `Command: flist <command/flist.html>`_
 - `Command: force <command/force.html>`_
 - `Command: goto <command/goto.html>`_
+- `Command: governance <command/governance.html>`_
 - `Command: grep <command/grep.html>`_
 - `Command: halt <command/halt.html>`_
 - `Command: head <command/head.html>`_
@@ -56,7 +57,6 @@ Commands
 - `Command: idfind <command/idfind.html>`_
 - `Command: iftp <command/iftp.html>`_
 - `Command: ilocate <command/ilocate.html>`_
-- `Command: in <command/in.html>`_
 - `Command: invis <command/invis.html>`_
 - `Command: killmobs <command/killmobs.html>`_
 - `Command: last <command/last.html>`_
@@ -67,6 +67,7 @@ Commands
 - `Command: loadall <command/loadall.html>`_
 - `Command: locate <command/locate.html>`_
 - `Command: ls <command/ls.html>`_
+- `Command: master <command/master.html>`_
 - `Command: mkdir <command/mkdir.html>`_
 - `Command: more <command/more.html>`_
 - `Command: msg <command/msg.html>`_
@@ -78,6 +79,7 @@ Commands
 - `Command: objcount <command/objcount.html>`_
 - `Command: objfind <command/objfind.html>`_
 - `Command: objpurge <command/objpurge.html>`_
+- `Command: override <command/override.html>`_
 - `Command: parse <command/parse.html>`_
 - `Command: people <command/people.html>`_
 - `Command: print <command/print.html>`_
@@ -100,6 +102,7 @@ Commands
 - `Command: showexits <command/showexits.html>`_
 - `Command: showtree <command/showtree.html>`_
 - `Command: shutdown <command/shutdown.html>`_
+- `Command: smartmobs <command/smartmobs.html>`_
 - `Command: snoop <command/snoop.html>`_
 - `Command: snoops <command/snoops.html>`_
 - `Command: socketinfo <command/socketinfo.html>`_
@@ -108,6 +111,7 @@ Commands
 - `Command: stat <command/stat.html>`_
 - `Command: status <command/status.html>`_
 - `Command: stupidemote <command/stupidemote.html>`_
+- `Command: sweep <command/sweep.html>`_
 - `Command: tail <command/tail.html>`_
 - `Command: targetemote <command/targetemote.html>`_
 - `Command: tasktool <command/tasktool.html>`_
@@ -118,6 +122,7 @@ Commands
 - `Command: to <command/to.html>`_
 - `Command: trans <command/trans.html>`_
 - `Command: treefor <command/treefor.html>`_
+- `Command: trip <command/trip.html>`_
 - `Command: tsh <command/tsh.html>`_
 - `Command: uncd <command/uncd.html>`_
 - `Command: unittest <command/unittest.html>`_

@@ -6,11 +6,13 @@ Documentation for the flist command in */cmds/wiz/flist.c*.
 Command
 =======
 
-USAGE: flist [-i] <object>
+USAGE: ``flist [-i] <object>``
 
 Shows you a list of the functions in an object.
 The -i option  will show you the function and
 where it is found.
+
+.. TAGS: RST
 
 
 

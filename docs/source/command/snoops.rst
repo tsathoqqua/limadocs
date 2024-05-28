@@ -6,11 +6,13 @@ Documentation for the snoops command in */trans/admincmds/snoops.c*.
 Command
 =======
 
-USAGE: snoops
+USAGE: ``snoops``
 
 Displays a list of wizards currently snooping, together with their targets.
 
 Admin only
+
+.. TAGS: RST
 
 
 

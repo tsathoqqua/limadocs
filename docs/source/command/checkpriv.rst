@@ -6,12 +6,14 @@ Documentation for the checkpriv command in */trans/cmds/checkpriv.c*.
 Command
 =======
 
-USAGE:  checkpriv < privilege >
+USAGE:  ``checkpriv < privilege >``
 
 This command will tell you whether or not you have a certain privilege.
 
-checkpriv 1
+``checkpriv 1``
 will check if you have priv 1 (ie admin)
+
+.. TAGS: RST
 
 
 

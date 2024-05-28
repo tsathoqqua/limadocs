@@ -1,3 +1,7 @@
+Becoming a wizard
+=================
+.. TAGS: RST
+
 Right now, becoming a wizard on the MUD has no firm requirements.
 
 NOTE:  A strong knowledge of the theme is ESSENTIAL as is

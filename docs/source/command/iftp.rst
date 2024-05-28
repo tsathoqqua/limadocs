@@ -6,9 +6,11 @@ Documentation for the iftp command in */cmds/wiz/iftp.c*.
 Command
 =======
 
-USAGE iftp <mudname>
+USAGE ``iftp <mudname>``
 
 Invokes the intermud ftp client.
+
+.. TAGS: RST
 
 
 

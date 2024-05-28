@@ -6,11 +6,15 @@ Documentation for the listeners command in */trans/admincmds/listeners.c*.
 Command
 =======
 
-USAGE: listeners
-       listeners <channel name>
+USAGE: 
+
+   |  ``listeners``
+   |  ``listeners <channel name>``
 
 Displays list of people listening to channels
 Admin only
+
+.. TAGS: RST
 
 
 

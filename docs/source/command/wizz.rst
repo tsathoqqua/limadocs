@@ -8,9 +8,11 @@ Command
 
 See: `Command: goto <goto.html>`_ `Command: trans <trans.html>`_ 
 
-USAGE wizz
+USAGE ``wizz``
 
 This command returns you to the "wiz room" from anywhere on the mud.
+
+.. TAGS: RST
 
 
 

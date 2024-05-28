@@ -6,9 +6,11 @@ Documentation for the do command in */trans/cmds/do.c*.
 Command
 =======
 
-USAGE: do cmd1;cmd2;cmd3
+USAGE: ``do cmd1;cmd2;cmd3``
 
 Does multiple commands
+
+.. TAGS: RST
 
 
 

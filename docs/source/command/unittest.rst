@@ -6,15 +6,17 @@ Documentation for the unittest command in */cmds/wiz/unittest.c*.
 Command
 =======
 
-USAGE:  unittest <all|test|list> [debug]
+USAGE:  ``unittest <all|test|list> [debug]``
 
 This command runs unit tests and reports back.
 Examples:
-  unittest all         - run all tests
-  unittest all debug   - run all tests in debug mode
-  unittest items       - run just the 'items' suite
-  unittest items debug - run 'items' suite in debug
-  unittest list        - shows all the test suites
+  |  ``unittest all``         - run all tests
+  |  ``unittest all debug``   - run all tests in debug mode
+  |  ``unittest items``       - run just the 'items' suite
+  |  ``unittest items debug`` - run 'items' suite in debug
+  |  ``unittest list``        - shows all the test suites
+
+.. TAGS: RST
 
 
 

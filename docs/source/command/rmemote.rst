@@ -8,20 +8,24 @@ Command
 
 See: `Command: feelings <feelings.html>`_ `Command: m_messages <m_messages.html>`_ `Command: addemote <addemote.html>`_ `Command: showemote <showemote.html>`_ `Command: stupidemote <stupidemote.html>`_ `Command: targetemote <targetemote.html>`_ 
 
-USAGE:  rmemote <emote>
-       rmemote <emote>  <rule>
+USAGE:  
+
+  |  ``rmemote <emote>``
+  |  ``rmemote <emote>  <rule>``
 
 This command allows you to remove an emote entirely, or in part
 by removing just a particular rule.
 
-rmemote kick
+``rmemote kick``
 
   this will remove the entire emote kick and all its rules.
 
-rmemote kick LIV
+``rmemote kick LIV``
 
   this will remove only the rule and message for the LIV part of kick
   It will leave all other rules as is.
+
+.. TAGS: RST
 
 
 

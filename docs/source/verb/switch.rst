@@ -7,7 +7,8 @@ Command
 =======
 
 Mainly used to switch which group a board is set to
-See also: boards
+
+.. TAGS: RST
 
 
 

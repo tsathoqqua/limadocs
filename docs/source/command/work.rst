@@ -8,10 +8,15 @@ Command
 
 See: `Command: cd <cd.html>`_ 
 
-USAGE: work  or  work <obj>
+USAGE: 
+
+ |  ``work``  
+ |  ``work <obj>``
 
 This command will change your pwd to the directory of your environment if
 no arguments are supplied or the directory of the object if one is specified.
+
+.. TAGS: RST
 
 
 

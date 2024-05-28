@@ -6,9 +6,11 @@ Documentation for the status command in */cmds/wiz/status.c*.
 Command
 =======
 
-USAGE: status
+USAGE: ``status``
 
 Displays detailed info on system resources used.
+
+.. TAGS: RST
 
 
 

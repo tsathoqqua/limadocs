@@ -6,9 +6,11 @@ Documentation for the livings command in */cmds/wiz/livings.c*.
 Command
 =======
 
-USAGE livings
+USAGE ``livings``
 
 Give a count of living things (not players) on the MUD grouped by filename.
+
+.. TAGS: RST
 
 
 

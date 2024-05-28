@@ -6,9 +6,11 @@ Documentation for the netstat command in */cmds/wiz/netstat.c*.
 Command
 =======
 
-USAGE: netstat
+USAGE: ``netstat``
 
 Displays a list of sockets with (stat) info on each one.
+
+.. TAGS: RST
 
 
 

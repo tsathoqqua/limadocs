@@ -1,4 +1,10 @@
-$$ see: gossip, newbie, chan, feelings, conference
+Channels
+========
+
+See: `gossip <gossip.html>`_ `newbie <newbie.html>`_ `new <new.html>`_ `feelings <../player_command/feelings.html>`_ 
+
+.. TAGS: RST
+
 Channels are a means of commnunication with other players on the MUD.
 Players may listen to a channel to take part in conversation with players
 that are not even in the same room.
@@ -15,20 +21,34 @@ by using the /new flag to the chan command (see below).
 All interaction with the channels is performed with the "chan" command.
 Here are some example uses of the chan command:
 
-chan			- list channels being listened to
-chan gossip		- find out whether the 'gossip' channel is
-			  begin listened to
-chan gossip /on		- turn listening on for the 'gossip' channel
-chan gossip /off	- stop listening to 'gossip'
-chan gossip /list	- find out who is listening to 'gossip'
-chan gossip /who	- same as /list
-chan gossip /last	- show the last 20 messages on the channel
-chan gossip <msg>	- send <msg> to all listeners
-chan gossip ;<feeling>	- perform <feeling> over the channel
-			  (e.g. chan gossip ;grin)
-chan gossip :<emote>	- send <emote> to all listeners
-			  (e.g. chan gossip :wants a big sword!)
-chan mine /new		- create the "mine" channel
++-----------------------+-----------------------------------------------+
+| Command               | Result                                        |
++=======================+===============================================+
+| chan                  | List channels being listened to               |
++-----------------------+-----------------------------------------------+
+| chan gossip           | Find out whether the 'gossip' channel is      |
+|                       | being listened to                             |
++-----------------------+-----------------------------------------------+
+| chan gossip /on       | Turn listening on for the 'gossip' channel    |
++-----------------------+-----------------------------------------------+
+| chan gossip /off      | Stop listening to 'gossip'                    |
++-----------------------+-----------------------------------------------+
+| chan gossip /list     | Find out who is listening to 'gossip'         |
++-----------------------+-----------------------------------------------+
+| chan gossip /who      | Same as /list                                 |
++-----------------------+-----------------------------------------------+
+| chan gossip /last     | Show the last 20 messages on the channel      |
++-----------------------+-----------------------------------------------+
+| chan gossip <msg>     | Send <msg> to all listeners                   |
++-----------------------+-----------------------------------------------+
+| chan gossip ;<emote>  | Perform <feeling> over the channel            |
+|                       | (e.g. chan gossip ;grin)                      |
++-----------------------+-----------------------------------------------+
+| chan gossip :<emote>  | Send <emote> to all listeners                 |
+|                       | (e.g. chan gossip :wants a big sword!)        |
++-----------------------+-----------------------------------------------+
+| chan mine /new        | Create the "mine" channel                     |
++-----------------------+-----------------------------------------------+
 
 Of course, the 'gossip' may be replaced with any channel name you
 might want to use.
@@ -37,4 +57,4 @@ Once you are listening to a channel, then you can simply use that
 channel's name as a command.  For example, if you listen to the gossip
 channel, then you can do:
 
-gossip ;smile
+  ``gossip ;smile``

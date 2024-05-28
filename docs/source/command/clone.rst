@@ -8,10 +8,12 @@ Command
 
 See: `Command: dest <dest.html>`_ `Command: clean <clean.html>`_ 
 
-USAGE: clone <object>
+USAGE: ``clone <object>``
 
 This command clones an object into your inventory if it is
 gettable, and into your environment if it isn't gettable.
+
+.. TAGS: RST
 
 
 

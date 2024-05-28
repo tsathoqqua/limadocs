@@ -6,10 +6,12 @@ Documentation for the tsh command in */trans/cmds/tsh.c*.
 Command
 =======
 
-USAGE: tsh <filename>
+USAGE: ``tsh <filename>``
 
  Reads the filename and performs the commands specified in the file
  Useful for when needing to perform a set of commands many times
+
+.. TAGS: RST
 
 
 

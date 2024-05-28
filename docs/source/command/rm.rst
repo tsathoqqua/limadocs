@@ -6,21 +6,23 @@ Documentation for the rm command in */trans/cmds/rm.c*.
 Command
 =======
 
-USAGE:  rm < file >
+USAGE:  ``rm < file >``
 
 This command will delete the named file from the directory.
 If only a file name is given, rm assumes the file is in your
 current directory.
 
-rm /wiz/zifnab/harry.c
+``rm /wiz/zifnab/harry.c``
 
 will remove the file harry.c from my /wiz/zifnab
 
-rm harry.c
+``rm harry.c``
 
 will remove harry.c from my current directory if it exists.
 
-Wildcards can be used to select multiple files - eg *.c.
+Wildcards can be used to select multiple files - eg \*.c.
+
+.. TAGS: RST
 
 
 

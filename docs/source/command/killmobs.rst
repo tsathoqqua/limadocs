@@ -6,9 +6,11 @@ Documentation for the killmobs command in */cmds/wiz/killmobs.c*.
 Command
 =======
 
-USAGE killmobs
+USAGE ``killmobs``
 
 Kill mobs by name
+
+.. TAGS: RST
 
 
 

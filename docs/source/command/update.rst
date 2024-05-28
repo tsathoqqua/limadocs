@@ -7,14 +7,18 @@ Command
 =======
 
 $$ see : renew
-USAGE update <filename>
-     update <object>
+USAGE 
+
+   |  ``update <filename>``
+   |  ``update <object>``
 
 Destructs the old version of a file and loads a new one
 Flags :
--r - Ingnore inherited files
--R - Update all inherited files
--z - Update only inherited files "older" than the target file.
+ |  -r - Ingnore inherited files
+ |  -R - Update all inherited files
+ |  -z - Update only inherited files "older" than the target file.
+
+.. TAGS: RST
 
 
 

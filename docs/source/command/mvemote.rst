@@ -6,11 +6,13 @@ Documentation for the mvemote command in */cmds/wiz/mvemote.c*.
 Command
 =======
 
-USAGE: mvemote <target> <destination>
+USAGE: ``mvemote <target> <destination>``
 
 Moves (ie renames) the specified soul to the specified destination.
 
 NOTE This is admin-only.
+
+.. TAGS: RST
 
 
 

@@ -6,12 +6,14 @@ Documentation for the date command in */cmds/wiz/date.c*.
 Command
 =======
 
-USAGE:  date
+USAGE:  ``date``
 
 Displays the current date and time.  To display the date with your
 current time, use the 'timezone' command.
 
 [ note: The timezone command is not currently available. ]
+
+.. TAGS: RST
 
 
 
