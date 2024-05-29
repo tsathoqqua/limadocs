@@ -114,3 +114,25 @@ Developer information
 
 For more on what you need to do, to continue to use the auto documenation system, see 
 the page on the `AUTODOC system <documentation/Autodocs.html>`_.
+
+=========================
+Menu driven configuration
+=========================
+
+A lot of options in the mudlib can be configured via config files under */include/config/*. All these files
+have a special format that includes instructions for range of values, default values and more.
+
+.. code-block:: c
+
+  // Each skill will start at 0, and go to this number of points.
+  // Default: 10000
+  // Range: 5000-30000
+  // Type: integer
+  #define MAX_SKILL_VALUE 10000
+
+All the config files can modify the mudlib in fundamental ways, and can be configure using the 
+`admtool command <command/admtool.html>`_.
+
+.. figure:: images/menu_config1.png
+  :width: 700
+  :alt: Config file editing via admtool
