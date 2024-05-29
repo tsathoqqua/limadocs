@@ -97,12 +97,16 @@ Markdown, or .md are files typically copied from the driver and are mostly for W
   :width: 700
   :alt: reStructured text view
 
+  Example of a reStructured text file. The viewer highlights searched terms as well.
+
 And reStructured Text, or .rst files are documentation for player commands, wizard commands and more. They 
 provide coloured mark up on the MUD, as well as online (here).
 
 .. figure:: images/documentation2.png
   :width: 700
   :alt: Markdown view
+
+  Example of a driver contributed markdown file.
 
 The wizard `apropos command <command/apropos.html>`_ will provide a list of help pages and functions that
 match the query, and a following 'man add_start', e.g., will then bring up the entire help page for 
@@ -136,6 +140,8 @@ All the config files can modify the mudlib in fundamental ways, and can be confi
 .. figure:: images/menu_config1.png
   :width: 700
   :alt: Config file editing via admtool
+  
+  Example for configuring values via the admtool.
 
 ---------------------
 Developer information
@@ -170,4 +176,49 @@ set of nodes have been implemented, and can easily be extended:
 
 .. figure:: images/behaviour_trees.png
   :width: 700
-  :alt: Behavior tree example, credit goes to Lemmy's blog on the above link.
+  :alt: Behavior tree example
+    
+  Behavior tree example, credit goes to Lemmy's blog on the above link.
+
+The mudlib contains predefined behaviour clusters that can be included in the overall behaviour tree. Here is
+an example from the equipment_cluster:
+
+.. code-block:: c
+
+    void init_equipment_cluster()
+  {
+     // If any of these ones return true we stop here, and navigate somewhere else
+     create_node(NODE_SELECTOR, "equipment_seq", ({"upgrade_true", "hurt", "find_heal"}));
+     
+     // Add equipment sequence to root sequence.
+     add_child("root_sequence", "equipment_seq");
+     create_node(NODE_SUCCEEDER, "upgrade_true", ({"upgrade_seq"}));
+     
+     //Look for better armour
+     create_node(NODE_SELECTOR, "upgrade_seq", ({"find_armour_in_inventory", "find_armour_in_room"}));
+     
+     //Heal ourselves if needed
+     create_node(NODE_SEQUENCE, "hurt", ({"safe_to_heal", "use_heal"}));
+     create_node(NODE_SEQUENCE, "find_heal", ({"take_from_room", "use_heal"}));
+     create_node(NODE_LEAF, "safe_to_heal");
+     create_node(NODE_LEAF, "use_heal");
+
+     //Can we find something useful to pick up?
+     create_node(NODE_LEAF, "take_from_room");
+     create_node(NODE_LEAF, "find_armour_in_inventory");
+     create_node(NODE_LEAF, "find_armour_in_room");
+  }
+
+The functions called above are defined in simple functions, that provide simple results like:
+
+.. code-block:: c
+
+  int safe_to_heal()
+  {
+     string wounded = this_object()->badly_wounded() || this_object()->very_wounded();
+     int targets = sizeof(query_targets() - ({0}));
+
+     // We're not fighting
+     return targets ? EVAL_FAILURE : EVAL_SUCCESS;
+  }
+
