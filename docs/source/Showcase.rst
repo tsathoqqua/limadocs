@@ -213,7 +213,8 @@ an example from the equipment_cluster:
      create_node(NODE_LEAF, "find_armour_in_room");
   }
 
-The functions called above are defined in simple functions, that provide simple results like:
+The functions called above are defined in simple functions, that provide simple results like ``safe_to_heal()``
+used above in the tree branches defined in the cluster:
 
 .. code-block:: c
 
