@@ -136,3 +136,38 @@ All the config files can modify the mudlib in fundamental ways, and can be confi
 .. figure:: images/menu_config1.png
   :width: 700
   :alt: Config file editing via admtool
+
+---------------------
+Developer information
+---------------------
+
+Some settings may impact player .o files, so make sure you get the configuration right before
+opening up your MUD, e.g. changing MAX_SKILL_VALUE to 5000 will impact all players that already 
+leveled up their skills above 5000, but some changes may break player files. Test your decisions 
+carefully.
+
+Your player files are not parsed and change for compatibility issues, we leave that you to.
+
+===============
+Behaviour trees
+===============
+
+The library contains a simple implementation of 
+`behaviour trees <https://outforafight.wordpress.com/2014/07/15/behaviour-behavior-trees-for-ai-dudes-part-1/>`_ 
+(this page is relied on for definitions and examples below) for monsters to make decisions. A simple 
+set of nodes have been implemented, and can easily be extended:
+
+- Root node: Beginning of the tree.
+- Sequence node: A sequence will visit each child in order, starting with the first, and when that succeeds 
+  will call the second, and so on down the list of children. If any child fails it will immediately return 
+  failure to the parent. If the last child in the sequence succeeds, then the sequence will return success 
+  to its parent.
+- Selector node: Will return a success if any of its children succeed and not process any further children.
+- Succeeder node: A succeeder will always return success, irrespective of what the child node actually returned
+- Leaf nodes: Leaves do actions for us and return success or fail.
+- Invertor node: Reverses the result of a previous node.
+- Repeat until fail node: Keep doing something until it fails.
+
+.. figure:: images/behaviour_trees.png
+  :width: 700
+  :alt: Behavior tree example, credit goes to Lemmy's blog on the above link.
