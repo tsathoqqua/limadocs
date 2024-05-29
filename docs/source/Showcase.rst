@@ -180,6 +180,10 @@ set of nodes have been implemented, and can easily be extended:
     
   Behavior tree example, credit goes to Lemmy's blog on the above link.
 
+---------------------
+Developer information
+---------------------
+
 The mudlib contains predefined behaviour clusters that can be included in the overall behaviour tree. Here is
 an example from the equipment_cluster:
 
