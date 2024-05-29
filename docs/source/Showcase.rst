@@ -227,3 +227,58 @@ used above in the tree branches defined in the cluster:
      return targets ? EVAL_FAILURE : EVAL_SUCCESS;
   }
 
+==================
+Scripting for NPCs
+==================
+
+Traditional MUDs have a lot of NPCs just standing around, but let's try to create an interactive living world!
+The `module m_npcscript <module/modules-m_npcscript.html>`_ provides an easy way to script interactions for 
+NPCs in your world, have them act (SCRIPT_ACTION), wait (SCRIPT_WAIT), and react to things that happen 
+(SCRIPT_TRIGGER), take delays and change their in room descriptions (SCRIPT_DESC).
+
+---------------------
+Developer information
+---------------------
+
+This is an example of an NPC script. Further functionality to recover stuck NPCs will be included a bit later.
+
+.. code-block:: c
+
+     create_script("lunch");
+     add_steps("lunch",
+       ({
+           step(SCRIPT_ACTION, (: set_for_sale, 0:)),
+           step(SCRIPT_DESC, "Liam Johnson, the canteen cashier is standing here."),
+           step(SCRIPT_ACTION, "say Well, time for some lunch."),
+           step(SCRIPT_ACTION, "go south@@go south@@go south@@hum"),
+           step(SCRIPT_WAIT, 5),
+           step(SCRIPT_ACTION, "push button"),
+           step(SCRIPT_TRIGGER, "The elevator door opens.", "go northwest"),
+           step(SCRIPT_DESC, "Liam Johnson, leaning against the elevator panel."),
+           step(SCRIPT_TRIGGER, "The elevator door closes.", "push 8"),
+           step(SCRIPT_TRIGGER, "Elevator speaker says, \"You have arrived at Landing Terminal\".", "go southeast"),
+           step(SCRIPT_DESC, "Liam Johnson, the canteen cashier is standing here."),
+           step(SCRIPT_ACTION, "go east@@go north@@hum"),
+           step(SCRIPT_WAIT, 10),
+           step(SCRIPT_ACTION, "say I'd like to order the Stellar Sandwich with extra mayo, please.@@emote sits down."),
+           step(SCRIPT_DESC, "Liam Johnson, the canteen cashier is sitting here."),
+           step(SCRIPT_WAIT, 20),
+           step(SCRIPT_ACTION, "emote eats a sandwich.@@emote stands up."),
+           step(SCRIPT_DESC, "Liam Johnson, the canteen cashier is standing here."),
+           step(SCRIPT_ACTION, "say That was delicious! Back to the work!@@go south@@go west@@push button"),
+           step(SCRIPT_TRIGGER, "The elevator door opens.", "go northwest"),
+           step(SCRIPT_DESC, "Liam Johnson, leaning against the elevator panel."),
+           step(SCRIPT_TRIGGER, "The elevator door closes.", "push 3"),
+           step(SCRIPT_TRIGGER, "Elevator speaker says, \"You have arrived at cafeteria\".", "go southeast"),
+           step(SCRIPT_DESC, "Liam Johnson, the canteen cashier is standing here."),
+           step(SCRIPT_WAIT, 10),
+           step(SCRIPT_ACTION, "go north@@go north@@go north@@hum"),
+           step(SCRIPT_ACTION, "say That was a great lunch, now back to work."),
+           step(SCRIPT_ACTION, (: set_for_sale, 1:)),
+           step(SCRIPT_DESC, "Liam Johnson, the canteen cashier looks bored behind the counter."),
+           step(SCRIPT_ACTION, "grin@@emote sits down behind the counter."),
+       }));
+
+     //Schedule the script to run every day at 11:45 game time.
+     EVENT_D->schedule_event("45 11 *", this_object(), "lunch");
+
