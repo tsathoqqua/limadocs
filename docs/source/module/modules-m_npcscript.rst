@@ -41,6 +41,26 @@ Functions
 Creates a new script with 'name'.
 
 
+.. c:function:: int query_recovery_time()
+
+Returns the time in minutes before recover() is called
+and the script is aborted.
+
+
+.. c:function:: void set_recovery_time(int rt)
+
+Set the time in minutes before the script should have finished
+and the recover() function is called in the NPC and the script
+is aborted.
+
+
+.. c:function:: void recover()
+
+Override this function in your NPC inheriting M_NPCSCRIPT.
+It will be called after the minutes set using ``set_recovery_time()``
+are up.
+
+
 .. c:function:: int add_steps(string name, class script_step *steps)
 
 Adds a series of steps (an array of class script_step) to a specific script.
@@ -59,6 +79,11 @@ Creates a script_step class. The following types are supported:
   - SCRIPT_WAIT: Wait a number of seconds.
 
   - SCRIPT_DESC: Change the in room description for the mob as they move along in the world.
+
+
+.. c:function:: int started_at()
+
+Returns a timestamp for when the script was launched.
 
 
 .. c:function:: void execute_script(string name)

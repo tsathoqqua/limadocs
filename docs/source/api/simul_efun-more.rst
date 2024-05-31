@@ -5,6 +5,14 @@ Documentation for the simul_efun-more api in */secure/simul_efun/more.c*.
 
 Functions
 =========
+.. c:function:: varargs string tail(string fname, int nlines)
+
+This version is slightly extended and compatible in spirit, but doesn't
+reproduce the oddities of the original tail() efun.  Note that it also
+returns the string, so write(tail(fname)) is needed for strict
+compatibility.
+
+
 .. c:function:: varargs nomask void more(mixed arg, int num, function continuation, int output_flags)
 
 more(arg) starts up more to display the array of lines 'arg'.  If arg is

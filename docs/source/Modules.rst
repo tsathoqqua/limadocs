@@ -48,9 +48,11 @@ Module
 - `Module: m_salvageable <module/modules-m_salvageable.html>`_
 - `Module: m_save <module/modules-m_save.html>`_
 - `Module: m_searchable <module/modules-m_searchable.html>`_
+- `Module: m_sibling <module/modules-m_sibling.html>`_
 - `Module: m_smartmove <module/modules-m_smartmove.html>`_
 - `Module: m_special_weapon <module/modules-m_special_weapon.html>`_
 - `Module: m_stateful <module/modules-m_stateful.html>`_
+- `Module: m_test_suite <module/modules-m_test_suite.html>`_
 - `Module: m_trainer <module/modules-m_trainer.html>`_
 - `Module: m_valuable <module/modules-m_valuable.html>`_
 - `Module: m_vendor <module/modules-m_vendor.html>`_
