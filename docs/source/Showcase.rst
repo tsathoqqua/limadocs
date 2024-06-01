@@ -240,7 +240,7 @@ NPCs in your world, have them act (SCRIPT_ACTION), wait (SCRIPT_WAIT), and react
 Developer information
 ---------------------
 
-This is an example of an NPC script. Further functionality to recover stuck NPCs will be included a bit later.
+This is an example of an NPC script, using the different options.
 
 .. code-block:: c
 
@@ -282,3 +282,6 @@ This is an example of an NPC script. Further functionality to recover stuck NPCs
      //Schedule the script to run every day at 11:45 game time.
      EVENT_D->schedule_event("45 11 *", this_object(), "lunch");
 
+By defining the recover() function in your NPC, you can allow them to stop being stuck somewhere. The documentation
+for setting number of minutes before rescue and the recover function is described in
+the `module m_npcscript <module/modules-m_npcscript.html>`_.
