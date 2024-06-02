@@ -12,6 +12,9 @@ the object is on two rooms, but should be considered as one object. Elevator doo
 
 Note: setup_door() is deprecated. Use this approach instead:
 
+
+.. code-block:: c
+
   set_sibling_ident("oak door");
   set_door_direction(dir);
   set_door_destination(room); 
