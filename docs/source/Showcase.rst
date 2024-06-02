@@ -282,6 +282,17 @@ This is an example of an NPC script, using the different options.
      //Schedule the script to run every day at 11:45 game time.
      EVENT_D->schedule_event("45 11 *", this_object(), "lunch");
 
-By defining the recover() function in your NPC, you can allow them to stop being stuck somewhere. The documentation
+By defining the ``recover()`` function in your NPC, you can allow them to stop being stuck somewhere. The documentation
 for setting number of minutes before rescue and the recover function is described in
 the `module m_npcscript <module/modules-m_npcscript.html>`_.
+
+.. code-block:: c
+  
+  void recover()
+  {
+     object canteen_room = load_object("/domains/std/room/Wizroom");
+     tell_from_outside(environment(this_object()), "Liam Johnson hurries back to the canteen.");
+     this_object()->move(canteen_room);
+  }
+
+The main objective of the ``recover()`` function is to return the NPC back to the original position.
