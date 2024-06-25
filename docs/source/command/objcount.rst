@@ -8,7 +8,7 @@ Command
 
 See: `Command: objdump <objdump.html>`_ `Command: objfind <objfind.html>`_ 
 
-USAGE: 
+USAGE:
 
    |  ``objcount
    |  ``objcount <minimum>

@@ -6,12 +6,12 @@ Documentation for the dbxvars command in */trans/cmds/dbxvars.c*.
 Command
 =======
 
-USAGE: 
+USAGE:
     ``dbxvars <ob> <var>``
 
 Finds functions in an objects, e.g.:
 
- |   ``dbxvars /std/body name`` 
+ |   ``dbxvars /std/body name``
  |   Matches:
  |   proper_name         : 0
  |   old_fnames          : ({ /* sizeof() == 2 */

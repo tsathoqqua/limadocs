@@ -6,7 +6,7 @@ Documentation for the more command in */trans/cmds/more.c*.
 Command
 =======
 
-USAGE : 
+USAGE :
 
       |  ``more <object(s)>``
       |  ``more <filename(s)>``

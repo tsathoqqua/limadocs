@@ -7,18 +7,18 @@ Functions
 =========
 .. c:function:: void set_value(int value)
 
-Set the value of the item. 
+Set the value of the item.
 
 
 .. c:function:: int query_value()
 
-Return the value of the item. 
+Return the value of the item.
 
 
 .. c:function:: int nobody_will_buy()
 
 Override this function to set this item as unsellable even though it has a
-value. 
+value.
 
 
 

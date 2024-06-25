@@ -7,12 +7,12 @@ Command
 =======
 
 USAGE override
-     override <something>
+      override <something>
 
-Override basic electronics to bypass their normal function or make them work
-for you.
+ Override basic electronics to bypass their normal function or make them work
+ for you.
 
-.. TAGS: RST
+ .. TAGS: RST
 
 
 

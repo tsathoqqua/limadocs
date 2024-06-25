@@ -6,7 +6,7 @@ Documentation for the start command in */cmds/wiz/start.c*.
 Command
 =======
 
-USAGE:  
+USAGE:
 
    |  ``start``
    |  ``start <path>``

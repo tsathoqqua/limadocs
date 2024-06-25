@@ -91,6 +91,19 @@ Returns a timestamp for when the script was launched.
 Run a script for the mob by "name".
 
 
+.. c:function:: int *status()
+
+Returns 0 if no scripts are running, or an array of 2 integers ({x,y}),
+where x is the current step in the script, and y is the max number of steps.
+See also ``query_running_script()``.
+
+
+.. c:function:: string query_running_script()
+
+Returns the current running script if any.
+See also ``status()`` for description on how far the NPC is into the script.
+
+
 .. c:function:: mapping query_scripts()
 
 Returns the scripts contained in the mob.

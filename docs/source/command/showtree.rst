@@ -6,7 +6,7 @@ Documentation for the showtree command in */cmds/wiz/showtree.c*.
 Command
 =======
 
-USAGE: 
+USAGE:
 
  |  ``showtree <function name> <object>``
  |  ``showtree <object>``

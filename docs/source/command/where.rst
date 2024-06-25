@@ -8,7 +8,7 @@ Command
 
 See: `Command: who <who.html>`_ `Command: people <people.html>`_ 
 
-USAGE 
+USAGE
 
    |  ``where``
    |  ``where <name1>, <name2> etc``

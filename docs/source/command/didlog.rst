@@ -8,7 +8,7 @@ Command
 
 See: `Command: I <I.html>`_ `Command: lima <lima.html>`_ 
 
-USAGE: 
+USAGE:
 
    |  ``didlog``
    |  ``didlog -a|-all``                   - Show entire didlog.

@@ -4,7 +4,7 @@ Player Command
 See: `feelings <feelings.html>`_ `random <random.html>`_ `semote <semote.html>`_ 
 
 
-USAGE 
+USAGE
 
   ``adverbs [pattern]``
 

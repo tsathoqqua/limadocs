@@ -6,7 +6,7 @@ Documentation for the listeners command in */trans/admincmds/listeners.c*.
 Command
 =======
 
-USAGE: 
+USAGE:
 
    |  ``listeners``
    |  ``listeners <channel name>``

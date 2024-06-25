@@ -8,7 +8,7 @@ Command
 
 See: `Command: m_messages <m_messages.html>`_ `Command: review <review.html>`_ 
 
-USAGE:  
+USAGE:
 
      |``msg <message type> clear``
      |  ``msg <message type> <message>

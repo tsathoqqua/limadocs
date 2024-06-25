@@ -3,7 +3,7 @@ Player Command
 
 See: `mode <mode.html>`_ `palette <palette.html>`_ 
 
-USAGE 
+USAGE
   |   ``colours``
   |   ``colours <name> <value>``
   |   ``colours remove <value>``

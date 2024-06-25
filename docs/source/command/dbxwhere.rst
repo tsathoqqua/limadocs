@@ -6,7 +6,7 @@ Documentation for the dbxwhere command in */trans/cmds/dbxwhere.c*.
 Command
 =======
 
-USAGE: 
+USAGE:
     ``dbxwhere [<who>]``
 
 Dump error stack for yourself or ``who``. See 'help dbx'.

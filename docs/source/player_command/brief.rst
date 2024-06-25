@@ -3,7 +3,7 @@ Player Command
 
 See: `verbose <verbose.html>`_ 
 
-USAGE 
+USAGE
    |  ``brief``
    |  ``brief on``
    |  ``brief off``

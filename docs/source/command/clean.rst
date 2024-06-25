@@ -8,7 +8,7 @@ Command
 
 See: `Command: dest <dest.html>`_ `Command: clone <clone.html>`_ 
 
-USAGE:  
+USAGE:
    |  ``clean``
    |  ``clean <target>``
 

@@ -8,7 +8,7 @@ Command
 
 See: `Command: I <I.html>`_ `Command: didlog <didlog.html>`_ 
 
-USAGE: 
+USAGE:
 
     |  ``lima``
     |  ``lima /versions``
