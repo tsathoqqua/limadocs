@@ -14,8 +14,7 @@ of steps and checks along the way. Need your NPC to go buy a sandwich? This is t
 This modules inherits M_ACTIONS by itself. If triggers are used, inherit M_TRIGGERS in your mob as well.
 Only 1 trigger is supported at a time. Example of script:
 
-  |       create_script("lunch");
-  |       add_steps(
+  |       create_script(
   |           "lunch",
   |           ({
   |               step(SCRIPT_ACTION, (: set_for_sale, 0:)),
@@ -32,15 +31,20 @@ Only 1 trigger is supported at a time. Example of script:
 
 Note, ``set_for_sale(0)`` above closes up shop, so a vendor temporarily sells nothing.
 
+Alternatively, the ``create_script_from_file("lunch","scripts/lunch.npcs")`` function can be used.
+These scripts should follow this format:
+
+  |    # My lunch script (this is a comment)
+  |    ACTION:hungry
+  |    WAIT:30
+  |    ACTION:(: set_for_sale, 0 :)
+  |    ACTION:emote stands up.@@say Well:I guess it's time for some lunch.
+  |    DESC:Harry looks hungry.
+
 .. TAGS: RST
 
 Functions
 =========
-.. c:function:: void create_script(string name)
-
-Creates a new script with 'name'.
-
-
 .. c:function:: int query_recovery_time()
 
 Returns the time in minutes before recover() is called
@@ -61,13 +65,6 @@ It will be called after the minutes set using ``set_recovery_time()``
 are up.
 
 
-.. c:function:: int add_steps(string name, class script_step *steps)
-
-Adds a series of steps (an array of class script_step) to a specific script.
-This is typically used in conjuction with the step() function that returns
-script_step classes for easier class creation.
-
-
 .. c:function:: varargs class script_step step(int type, mixed payload, mixed extra)
 
 Creates a script_step class. The following types are supported:
@@ -79,6 +76,12 @@ Creates a script_step class. The following types are supported:
   - SCRIPT_WAIT: Wait a number of seconds.
 
   - SCRIPT_DESC: Change the in room description for the mob as they move along in the world.
+
+
+.. c:function:: int create_script_from_file(string name, string file)
+
+Use this function to parse in an NPC-script style file
+and read the script from there using ``name``.
 
 
 .. c:function:: int started_at()
@@ -102,6 +105,14 @@ See also ``query_running_script()``.
 
 Returns the current running script if any.
 See also ``status()`` for description on how far the NPC is into the script.
+
+
+.. c:function:: object debug(object ob)
+
+Call debug() with your body object to receive debug information
+while the script is running. Pass it 0 again to stop the debug output.
+This can be useful for not having to chase NPCs around the MUD to debug
+them.
 
 
 .. c:function:: mapping query_scripts()
