@@ -40,6 +40,9 @@ These scripts should follow this format:
   |    ACTION:(: set_for_sale, 0 :)
   |    ACTION:emote stands up.@@say Well:I guess it's time for some lunch.
   |    DESC:Harry looks hungry.
+  |    TRIGGER:Troll enters.->go east
+
+Notice, the TRIGGER syntax ``->`` which tells us what to do when something happens.
 
 .. TAGS: RST
 
