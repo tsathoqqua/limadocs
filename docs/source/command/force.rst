@@ -6,6 +6,8 @@ Documentation for the force command in */trans/cmds/force.c*.
 Command
 =======
 
+See: `Command: cmd <cmd.html>`_ 
+
 USAGE
     ``force <living> <command>``
 
@@ -17,7 +19,7 @@ This would force Ohara to move to the north if possible.
 Ohara would like you to note that "possible" and "a good idea"
 are two separate things.
 
-WARNING  
+WARNING
 -------
 
 The admin of this mud will not tolerate any type of toying with players.

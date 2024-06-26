@@ -8,7 +8,7 @@ Command
 
 See: `Command: m_messages <m_messages.html>`_ `Command: msg <msg.html>`_ 
 
-USAGE:  
+USAGE:
 
    |  ``review``
    |  ``review < playername >``

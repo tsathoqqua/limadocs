@@ -27,7 +27,7 @@ Returns 1 if the adversary is dead.
 .. c:function:: int karma_impact()
 
 Override and return a number between -5 and 5 to impact karma
-when killed by someone. 
+when killed by someone.
 Notice: Requires USE_KARMA defined.
 
 

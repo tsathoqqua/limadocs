@@ -7,7 +7,7 @@ Command
 =======
 
 Wizard command "scan"
-USAGE: 
+USAGE:
 
  |  ``"scan [-d]" to scan environment``
  |  ``"scan [-d] ob" to scan object "ob"``

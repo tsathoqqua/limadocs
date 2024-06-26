@@ -8,7 +8,7 @@ USAGE
  |  ``score``
  |  ``score -t theme``
 
-Shows you various details about yourself. 
+Shows you various details about yourself.
 Themes can be seem using the frames command, i.e. ``frames themes``.
 
 .. TAGS: RST

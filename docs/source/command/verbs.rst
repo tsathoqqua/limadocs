@@ -6,7 +6,7 @@ Documentation for the verbs command in */cmds/wiz/verbs.c*.
 Command
 =======
 
-USAGE:  
+USAGE:
 
    |  ``verbs``
    |  ``verbs <verb>``

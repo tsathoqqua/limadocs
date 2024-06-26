@@ -3,7 +3,7 @@ Player Command
 
 See: `skills <skills.html>`_ `score <score.html>`_ `equip <equip.html>`_ 
 
-USAGE 
+USAGE
 
     ``hp``
 

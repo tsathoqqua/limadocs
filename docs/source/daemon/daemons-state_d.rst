@@ -32,7 +32,7 @@ This function adds seconds, and not minutes.
 Add to queue at a specific time. No checks, no requirements.
 
 
-.. c:function:: varargs void remove_from_queue(object ob)
+.. c:function:: varargs void remove_from_queue(object ob, mixed extra)
 
 Removes ob from the queue nomatter when scheduled.
 

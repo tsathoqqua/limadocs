@@ -36,7 +36,7 @@ Multiply the value of the item by this number
 
 Returns the value of the item which is normally
 calculated as:
- object value * value factor
+  object value * value factor
 
 
 
