@@ -279,6 +279,14 @@ By defining the ``recover()`` function in your NPC, you can allow them to stop b
 for setting number of minutes before rescue and the recover function is described in
 the `module m_npcscript <module/modules-m_npcscript.html>`_. The NPC-script files are documented here as well.
 
+The command gives an overview of scripts currently running and what the NPCs are doing:
+
+.. figure:: images/scripts_cmd.png
+  :width: 700
+  :alt: Scripts command.
+    
+  Scripts command example, a quick overview of what's happening and which scripts are running.
+
 .. code-block:: c
   
   void recover()
