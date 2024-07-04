@@ -14,20 +14,25 @@ See M_STATEFUL, M_DECAY, LIGHT_OBJECT and ^std/consumable/hamburger.c for some e
 
 Functions
 =========
-.. c:function:: varargs void add_to_queue(object ob, int add_to_time, int force)
+.. c:function:: varargs void add_to_queue(object ob, int add_to_time, int force, mixed extra)
 
 Adds ob to queue, to be scheduled at NOW + add_to_time in minutes.
 If force=1, the object is added even if already in queue.
 
 
-.. c:function:: varargs void add_to_queue_secs(object ob, int add_to_time, int force)
+.. c:function:: varargs void add_to_queue_secs(object ob, int add_to_time, int force, mixed extra)
 
 Useful for faster testing, should probably not be used in the real mudlib.
 If it's this brief, then use a call_out(). See add_to_queue for documentation.
 This function adds seconds, and not minutes.
 
 
-.. c:function:: varargs void remove_from_queue(object ob)
+.. c:function:: varargs void add_to_queue_at_time(mixed ob, int update_time, mixed extra)
+
+Add to queue at a specific time. No checks, no requirements.
+
+
+.. c:function:: varargs void remove_from_queue(object ob, mixed extra)
 
 Removes ob from the queue nomatter when scheduled.
 

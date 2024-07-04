@@ -3,7 +3,7 @@ Player Command
 
 See: `skills <skills.html>`_ `hp <hp.html>`_ `stats <stats.html>`_ `score <score.html>`_ 
 
-USAGE 
+USAGE
 
  |  ``materials``
  |  ``materials all`` - show all materials on the MUD

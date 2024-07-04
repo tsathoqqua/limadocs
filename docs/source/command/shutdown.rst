@@ -6,7 +6,7 @@ Documentation for the shutdown command in */trans/admincmds/shutdown.c*.
 Command
 =======
 
-USAGE: 
+USAGE:
 
    |  ``shutdown -t<time> <reason>``
    |  ``shutdown -c <reason>``

@@ -13,7 +13,7 @@ USAGE
 Typing ``emoji`` will show if your character is set to ascii like graphics
 from the mud (used for small charts etc). These can be hard to use on
 screen readers, so if you are using a screen reader it can be recommended
-to be ``emoji off`` - ``simplify on`` will set  alot of these settings 
+to be ``emoji off`` - ``simplify on`` will set  alot of these settings
 correct for your screen reader.
 
 Use ``emoji list`` for a list of supported emojis.

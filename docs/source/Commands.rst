@@ -87,6 +87,7 @@ Commands
 - `Command: privs <command/privs.html>`_
 - `Command: profile <command/profile.html>`_
 - `Command: pwd <command/pwd.html>`_
+- `Command: quiet <command/quiet.html>`_
 - `Command: removeguest <command/removeguest.html>`_
 - `Command: renew <command/renew.html>`_
 - `Command: replace <command/replace.html>`_
@@ -98,6 +99,7 @@ Commands
 - `Command: rmpath <command/rmpath.html>`_
 - `Command: rst <command/rst.html>`_
 - `Command: scan <command/scan.html>`_
+- `Command: scripts <command/scripts.html>`_
 - `Command: showemote <command/showemote.html>`_
 - `Command: showexits <command/showexits.html>`_
 - `Command: showtree <command/showtree.html>`_

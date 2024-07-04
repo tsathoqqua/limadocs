@@ -6,7 +6,7 @@ See: `mail <mail.html>`_
 
 USAGE
 
-   |  ``biff`` 
+   |  ``biff``
    |  ``biff on``
    |  ``biff off``
 

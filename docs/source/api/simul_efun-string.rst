@@ -126,11 +126,17 @@ The default behaviour of this function can be changed by modifying #METRIC
 in config.h.
 
 
-.. c:function:: string filepath_ellipsis(string fpath, int max)
+.. c:function:: string shorten_filename(mixed ob)
+
+Shortens a filename by introducing ^ as /domains/ and ~ as /wiz/.
+
+
+.. c:function:: string filename_ellipsis(string fpath, int max)
 
 Tries to shorten the filepath of a file to fit within the max length
 by adding .. and replacing the ends of long directory names. It never
-touches the filename at the end.
+touches the filename at the end. The string is first run through
+shorten_filename(s).
 
 
 .. c:function:: string drunk_speak(string s, int drunk)

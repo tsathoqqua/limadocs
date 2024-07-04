@@ -8,7 +8,7 @@ Command
 
 See: `Command: feelings <feelings.html>`_ `Command: m_messages <m_messages.html>`_ `Command: addemote <addemote.html>`_ `Command: showemote <showemote.html>`_ `Command: stupidemote <stupidemote.html>`_ `Command: targetemote <targetemote.html>`_ 
 
-USAGE:  
+USAGE:
 
   |  ``rmemote <emote>``
   |  ``rmemote <emote>  <rule>``

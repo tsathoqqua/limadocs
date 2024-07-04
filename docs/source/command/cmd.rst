@@ -6,6 +6,8 @@ Documentation for the cmd command in */cmds/wiz/cmd.c*.
 Command
 =======
 
+See: `Command: force <force.html>`_ 
+
 USAGE:  ``cmd <monster> <command>``
 
 This command will tell a monster to do something.

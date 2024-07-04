@@ -8,7 +8,7 @@ Command
 
 See: `Command: wizz <wizz.html>`_ `Command: trans <trans.html>`_ 
 
-USAGE: 
+USAGE:
 
     |``goto <player>``
     |  ``goto <room>

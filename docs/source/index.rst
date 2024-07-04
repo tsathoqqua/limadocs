@@ -1,6 +1,6 @@
-************************************
-Welcome to LIMA Mudlib Documentation
-************************************
+*************************
+LIMA Mudlib Documentation
+*************************
 
 **LIMA** (ˈlaɪmə) is a FluffOS based Mudlib originally developed in the 1990's.
 

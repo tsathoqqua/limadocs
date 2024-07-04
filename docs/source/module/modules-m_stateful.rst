@@ -5,17 +5,19 @@ Documentation for the modules-m_stateful module in */std/modules/m_stateful.c*.
 
 Functions
 =========
-.. c:function:: int is_stateful()
+.. c:function:: varargs int is_stateful(mixed extra)
 
 Override this to make the object stateful depending on what happens.
 E.g. a torch might be stateful when lighted, but not when it's dark.
+The *extra* is the argument parsed to STATE_D when registered.
 
 
-.. c:function:: int state_update()
+.. c:function:: varargs int state_update(mixed extra)
 
 This function must return 1 by stateful objects to keep being called by STATE_D. If they do not, they're removed from
 the queue. If they do, they're added to the queue again by STATE_D and set to be called after query_call_interval()
 minutes has passed.
+The *extra* is the argument parsed to STATE_D when registered.
 
 
 .. c:function:: int set_call_interval(int i)

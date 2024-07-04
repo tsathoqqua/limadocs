@@ -8,7 +8,7 @@ Command
 
 See: `Command: printpath <printpath.html>`_ `Command: rmpath <rmpath.html>`_ 
 
-USAGE 
+USAGE
       ``addpath [directory]``
 
 This command will add a new path to your current exec path,

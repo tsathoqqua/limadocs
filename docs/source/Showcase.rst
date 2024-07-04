@@ -240,45 +240,60 @@ NPCs in your world, have them act (SCRIPT_ACTION), wait (SCRIPT_WAIT), and react
 Developer information
 ---------------------
 
-This is an example of an NPC script. Further functionality to recover stuck NPCs will be included a bit later.
+This is an example of an NPC script, using the different options.
+
+   |     #Script for getting to the canteen and back
+   |     ACTION:hungry
+   |     WAIT:30
+   |     ACTION:(: set_for_sale, 0 :)
+   |     ACTION:emote stands up.@@say Well:I guess it's time for some lunch.
+   |     ACTION:go south@@go east@@go east@@say Oh, there is the elevator.
+   |     WAIT:10
+   |     ACTION:push button
+   |     TRIGGER:The elevator door opens.|The lamp briefly blinks.->go northwest
+   |     ACTION:hmm
+   |     TRIGGER:The elevator door closes.->push 2
+   |     TRIGGER:Elevator speaker says, "You have arrived at Cafeteria".->go southeast
+   |     ACTION:go north@@go north@@go north@@say Hey Liam:how are you today?
+   |     WAIT:30
+   |     ACTION:say I'll have the penne a la arrabiata@@emote swipes a card.@@go east@@emote sits down.
+   |     WAIT:10
+   |     ACTION:say Hello Dr. Nelson.
+   |     WAIT:120
+   |     ACTION:emote finishes his plate.@@emote stands up.@@go west@@go south@@go south@@go south@@push button
+   |     TRIGGER:The elevator door opens.|The lamp briefly blinks.->go northwest
+   |     ACTION:hmm
+   |     TRIGGER:The elevator door closes.->push 3
+   |     TRIGGER:Elevator speaker says, "You have arrived at Landing Terminal".->go southeast
+   |     ACTION:go west@@go west@@go north@@say Back at the office:hee hee!@@say So sorry, if I kept you waiting.
+   |     ACTION:(:set_for_sale, 1:)
+   |     ACTION:emote stands behind the counter again.@@say So... what can I do for you?
 
 .. code-block:: c
 
-     create_script("lunch");
-     add_steps("lunch",
-       ({
-           step(SCRIPT_ACTION, (: set_for_sale, 0:)),
-           step(SCRIPT_DESC, "Liam Johnson, the canteen cashier is standing here."),
-           step(SCRIPT_ACTION, "say Well, time for some lunch."),
-           step(SCRIPT_ACTION, "go south@@go south@@go south@@hum"),
-           step(SCRIPT_WAIT, 5),
-           step(SCRIPT_ACTION, "push button"),
-           step(SCRIPT_TRIGGER, "The elevator door opens.", "go northwest"),
-           step(SCRIPT_DESC, "Liam Johnson, leaning against the elevator panel."),
-           step(SCRIPT_TRIGGER, "The elevator door closes.", "push 8"),
-           step(SCRIPT_TRIGGER, "Elevator speaker says, \"You have arrived at Landing Terminal\".", "go southeast"),
-           step(SCRIPT_DESC, "Liam Johnson, the canteen cashier is standing here."),
-           step(SCRIPT_ACTION, "go east@@go north@@hum"),
-           step(SCRIPT_WAIT, 10),
-           step(SCRIPT_ACTION, "say I'd like to order the Stellar Sandwich with extra mayo, please.@@emote sits down."),
-           step(SCRIPT_DESC, "Liam Johnson, the canteen cashier is sitting here."),
-           step(SCRIPT_WAIT, 20),
-           step(SCRIPT_ACTION, "emote eats a sandwich.@@emote stands up."),
-           step(SCRIPT_DESC, "Liam Johnson, the canteen cashier is standing here."),
-           step(SCRIPT_ACTION, "say That was delicious! Back to the work!@@go south@@go west@@push button"),
-           step(SCRIPT_TRIGGER, "The elevator door opens.", "go northwest"),
-           step(SCRIPT_DESC, "Liam Johnson, leaning against the elevator panel."),
-           step(SCRIPT_TRIGGER, "The elevator door closes.", "push 3"),
-           step(SCRIPT_TRIGGER, "Elevator speaker says, \"You have arrived at cafeteria\".", "go southeast"),
-           step(SCRIPT_DESC, "Liam Johnson, the canteen cashier is standing here."),
-           step(SCRIPT_WAIT, 10),
-           step(SCRIPT_ACTION, "go north@@go north@@go north@@hum"),
-           step(SCRIPT_ACTION, "say That was a great lunch, now back to work."),
-           step(SCRIPT_ACTION, (: set_for_sale, 1:)),
-           step(SCRIPT_DESC, "Liam Johnson, the canteen cashier looks bored behind the counter."),
-           step(SCRIPT_ACTION, "grin@@emote sits down behind the counter."),
-       }));
-
      //Schedule the script to run every day at 11:45 game time.
+     create_script_from_file("demo", "scripts/demo.npcs");
      EVENT_D->schedule_event("45 11 *", this_object(), "lunch");
 
+By defining the ``recover()`` function in your NPC, you can allow them to stop being stuck somewhere. The documentation
+for setting number of minutes before rescue and the recover function is described in
+the `module m_npcscript <module/modules-m_npcscript.html>`_. The NPC-script files are documented here as well.
+
+The `scripts <command/scripts.html>`_ command gives an overview of scripts currently running and what the NPCs are doing:
+
+.. figure:: images/scripts_cmd.png
+  :width: 700
+  :alt: Scripts command.
+    
+  Scripts command example, a quick overview of what's happening and which scripts are running.
+
+.. code-block:: c
+  
+  void recover()
+  {
+     object canteen_room = load_object("/domains/std/room/Wizroom");
+     tell_from_outside(environment(this_object()), "Liam Johnson hurries back to the canteen.");
+     this_object()->move(canteen_room);
+  }
+
+The main objective of the ``recover()`` function is to return the NPC back to the original position.

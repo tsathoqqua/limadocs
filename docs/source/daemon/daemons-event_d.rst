@@ -15,8 +15,12 @@ The event_d only handles day names, hours, minutes and seconds and disregards da
 and years. This is left up to you to extend should you want to.
 
 This daemon on purpose does not handle event like the yearly filling of the Xmas stockings or things that happen
-rarely. They are left for the wizards to kick off. This daemon handles things that happen often enough that players
-should experience them a few times per week depending on the settings in the */include/config/time.h* file. 
+rarely - they are left for the wizards to kick off. This daemon handles things that happen often enough that players
+should experience them a few times per week depending on the settings in the */include/config/time.h* file.
+
+Thus the main focus is on weekly scheduled events, i.e. John goes to the bank at 16 with money suitcase Wednesdays
+and Saturdays ("00 16 2,5"), Bob goes to the cafe to buy a sandwich for lunch everyday (except Sunday) at 11:45
+("45 11 0-6").
 
 .. TAGS: RST
 

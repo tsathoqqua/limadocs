@@ -40,7 +40,6 @@ me BEFORE the message gets to you.
 
 .. c:function:: void set_actions(int delay, string *actions)
 
-protected void set_actions(int chance, string *actions);
 This function sets a list of actions and a delay,
 and chooses one to be executed time each time that delay elapses.
 This function should only be called from within setup().

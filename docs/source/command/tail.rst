@@ -6,7 +6,7 @@ Documentation for the tail command in */trans/cmds/tail.c*.
 Command
 =======
 
-USAGE: 
+USAGE:
 
     |  ``tail <file(s)>``
     |  ``tail -n<number> <files>``

@@ -8,9 +8,9 @@ Command
 
 See: `Command: cd <cd.html>`_ 
 
-USAGE: 
+USAGE:
 
- |  ``work``  
+ |  ``work``
  |  ``work <obj>``
 
 This command will change your pwd to the directory of your environment if

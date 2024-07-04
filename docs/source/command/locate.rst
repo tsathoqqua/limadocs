@@ -6,7 +6,7 @@ Documentation for the locate command in */trans/cmds/locate.c*.
 Command
 =======
 
-USAGE: 
+USAGE:
 
     |  ``locate <target>``
     |  ``locate -u``
