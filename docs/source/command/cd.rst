@@ -15,7 +15,8 @@ directory, if you do not specify a full path.  This command sets your
 current directory.  If no argument is given,  your home directory will
 become your current working dir.
 
-``cd -`` brings you to your previous working directory (like ``uncd``).
+``cd -`` 
+Brings you to your previous working directory (like the ``uncd`` command).
 
 With the 'obj' argument it moves you to the directory that 'obj' is in.
 
