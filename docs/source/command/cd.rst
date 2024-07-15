@@ -6,7 +6,7 @@ Documentation for the cd command in */trans/cmds/cd.c*.
 Command
 =======
 
-See: `Command: mkdir <mkdir.html>`_ `Command: ls <ls.html>`_ `Command: pwd <pwd.html>`_ `Command: ed <ed.html>`_ 
+See: `Command: mkdir <mkdir.html>`_ `Command: ls <ls.html>`_ `Command: pwd <pwd.html>`_ `Command: ed <ed.html>`_ `Command: uncd <uncd.html>`_ 
 
 USAGE:  ``cd [directory|obj]``
 
@@ -14,6 +14,8 @@ Most file commands assume you're talking about your current working
 directory, if you do not specify a full path.  This command sets your
 current directory.  If no argument is given,  your home directory will
 become your current working dir.
+
+``cd -`` brings you to your previous working directory (like ``uncd``).
 
 With the 'obj' argument it moves you to the directory that 'obj' is in.
 
