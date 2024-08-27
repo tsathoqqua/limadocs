@@ -56,8 +56,8 @@ Windows Subsystem for Linux (WSL)
 
 6. Use --recurse-submodules to checkout the fluffos driver submodule. You can decide not to and use another driver if you want. LIMA comes with a build script after checking out the files:
 
-    |    ``cd lima``   
-    |    ``./build.sh``
+    |    ``cd lima/adm/dist``   
+    |    ``./rebuild``
 
     Lots of output will follow, and the final screen will say something like:
 
@@ -69,15 +69,9 @@ Windows Subsystem for Linux (WSL)
     |    ``sudo apt install libssl3``
     |    (Just an example)
 
-8. Check to see if the driver runs: ``./build/bin/driver``
+8. After build has completed, try:
 
-.. image:: images/wsl_step7.png
-  :width: 700
-  :alt: check driver
-
-9. After build has completed, try:
-
-    ``./run.sh``
+    ``./run``
 
 10. You might see a few warnings, but should be able to visit http://localhost:7878/ in your favourite browser via the built-in websockets. This can be reconfigured to use more classical ports in ``config.lima`` in the root directory of LIMA.
 
