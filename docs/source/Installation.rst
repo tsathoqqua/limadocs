@@ -73,7 +73,7 @@ Windows Subsystem for Linux (WSL)
 
     ``./run``
 
-10. You might see a few warnings, but should be able to telnet to localhost 7878 (or use www.mudlet.org). It is also possible to set up your MUD to use Websockets and then visit http://localhost:7878/ in your favourite browser. This can be reconfigured in the ``config.mud`` in the adm/dist directory of LIMA.
+10. You might see a few warnings, but should be able to telnet to localhost 7878 (or use Mudlet from https://www.mudlet.org/). It is also possible to set up your MUD to use Websockets and then visit http://localhost:7878/ in your favourite browser. This can be reconfigured in the ``config.mud`` in the adm/dist directory of LIMA.
 
 Ubuntu
 ------
