@@ -31,7 +31,17 @@ Windows Subsystem for Linux (WSL)
 
 4. Update apt, and install packages needed for compiling FluffOS
 
-    |   ``sudo apt update`` 
+    |   ``sudo apt update``
+
+Then install prerequisites for Ubuntu:
+
+    |   ``sudo apt install build-essential bison libmysqlclient-dev libpcre3-dev libpq-dev libsqlite3-dev libssl-dev libz-dev libjemalloc-dev libicu-dev cmake git``
+
+or for Debian:
+
+    |   `` sudo apt install build-essential bison libmariadb-dev libmariadb-dev-compat libpcre3-dev libpq-dev libsqlite3-dev libssl-dev zlib1g-dev libjemalloc-dev libicu-dev cmake git``
+
+(These packages are prone to change, so modify as needed - I cannot keep chasing changes in versions and package names here)
 
 .. image:: images/wsl_step3.png
   :width: 700
