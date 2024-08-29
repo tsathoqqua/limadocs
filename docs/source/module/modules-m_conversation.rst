@@ -140,6 +140,13 @@ Do a specific action whether it's talking, calling a function, training or doing
 Handle goodbye for ob.
 
 
+.. c:function:: void exit_conversations()
+
+Exit the conversation if the NPC needs to leave.
+Default is to say "Sorry, I have to go", but this can
+be changed using ``set_goodbye(action)``.
+
+
 .. c:function:: void continue_conversation(object ob, string input)
 
 Continue the conversation with ob given specific input.

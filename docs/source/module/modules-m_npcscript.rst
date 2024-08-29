@@ -26,6 +26,7 @@ Only 1 trigger is supported at a time. Example of script:
   |               step(SCRIPT_TRIGGER, "The elevator door opens.", "go northwest"),
   |               step(SCRIPT_DESC, "Harry, leaning against the elevator panel."),
   |               step(SCRIPT_TRIGGER, "The elevator door closes.", "push 8"),
+  |               step(SCRIPT_NPCACTION, "wave harry", "greeter"),
   |               ...
   |           }));
 
@@ -41,6 +42,7 @@ These scripts should follow this format:
   |    ACTION:emote stands up.@@say Well:I guess it's time for some lunch.
   |    DESC:Harry looks hungry.
   |    TRIGGER:Troll enters.->go east
+  |    NPCACTION:greeter->wave harry
 
 Notice, the TRIGGER syntax ``->`` which tells us what to do when something happens.
 

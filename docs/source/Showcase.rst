@@ -152,7 +152,7 @@ opening up your MUD, e.g. changing MAX_SKILL_VALUE to 5000 will impact all playe
 leveled up their skills above 5000, but some changes may break player files. Test your decisions 
 carefully.
 
-Your player files are not parsed and change for compatibility issues, we leave that you to.
+Your player files are not parsed and change for compatibility issues, we leave that to you.
 
 ===============
 Behaviour trees
