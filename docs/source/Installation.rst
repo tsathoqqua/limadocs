@@ -41,7 +41,7 @@ or for Debian:
 
     |   ``sudo apt install build-essential bison libmariadb-dev libmariadb-dev-compat libpcre3-dev libpq-dev libsqlite3-dev libssl-dev zlib1g-dev libjemalloc-dev libicu-dev cmake git``
 
-(These packages are prone to change, so modify as needed - I cannot keep chasing changes in versions and package names here)
+(These packages are prone to change, so modify as needed - it is not possible to keep chasing changes in versions and package names)
 
 .. image:: images/wsl_step3.png
   :width: 700
