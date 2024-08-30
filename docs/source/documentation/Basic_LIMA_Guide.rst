@@ -688,8 +688,10 @@ have probably found some expressions you were told to use like ``this_player()``
 they are efuns. The value of efuns is that they are much faster than LPC functions,
 since they already exist in the binary form the computer understands.
 
-Notice: ``this_player()`` is never used in LIMA, but in many other MUDs. We use ``this_body()``
-in LIMA. 
+.. note::
+   
+   Notice, that ``this_player()`` is never used in LIMA, but in many other MUDs. We use ``this_body()``
+   in LIMA. 
 
 In the function ``write_vals()`` above, two functions calls were made.  The first was to the 
 functions ``add()``, which you declared and defined.  The second call, however, was to a function
