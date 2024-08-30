@@ -1184,155 +1184,189 @@ you think.  But it should make a rather good reference guide.
   Example: ``x + 7``
 
   Value: The sum of the value on the left and the value on the right
-    exaplanation: It takes the value of the expression on the right and
-      adds it to the value of the expression on the left. For values
-      of type int, this means the numerical sum.  For strings,
-      it means that the value on the right is stuck onto the value on
-      the left ("ab" is the value of "a"+"b").  This operator does not
-      modify any of the original values (i.e. the variable x from
-      above retains its old value).
+  
+  Explanation: It takes the value of the expression on the right and
+  adds it to the value of the expression on the left. For values
+  of type int, this means the numerical sum. For strings,
+  it means that the value on the right is stuck onto the value on
+  the left ("ab" is the value of "a"+"b").  This operator does not
+  modify any of the original values (i.e. the variable ``x`` from
+  above retains its old value).
 
-- subtraction operator:
-    example: x - 7
-    value: the value of the expression on the left reduced by the right
-    explanation:  Same characteristics as addition, except it subtracts.
-      With strings: "a" is the value of "ab" - "b"
+* **-** Subtraction operator:
+  
+  Example: ``x - 7``
 
-* multiplication operator:
-    example: x*7
-    value and explanation: same as with adding and subtracting except
-      this one performs the math of multiplication
+  Value: the value of the expression on the left reduced by the right
 
-/ division operator:
-    example: x/7
-    value and explanation: see above
+  Explanation: Same characteristics as addition, except it subtracts.
+  With strings: "a" is the value of "ab" - "b".
 
-+= additive assignment operator:
-    example: x += 5
-    value: the same as x + 5
-    exaplanation: It takes the value of the variable on the left
-      and the value of the expression on the right, adds them together
-      and assigns the sum to the variable on the left.
-      example: if x = 2... x += 5 assigns the value
-        7 to the variable x.  The whole expression
-        has the value of 7.
+* ** \* ** Multiplication operator:
+  Example: ``x*7``
+  Value and explanation: same as with adding and subtracting except
+  this one performs the math of multiplication.
 
--= subtraction assignment operator
-    example: x-=7
-    value: the value of the left value reduced by the right value
-    examplanation: The same as += except for subtraction.
+* **/** Division operator:
+  Example: ``x/7``
+  Value and explanation: see above.
 
-*= multiplicative assignment operator
-    example: x *= 7
-    value: the value of the left value multiplied by the right
-    explanation: Similar to -= and += except for addition.
+* **+=** Additive assignment operator:
+  Example: ``x += 5``
 
-/= division assignment operator
-    example: x /= 7
-    value: the value of the variable on the left divided by the right value
-    explanation: similar to above, except with division
+  Value: the same as x + 5
+  
+  Explanation: It takes the value of the variable on the left
+  and the value of the expression on the right, adds them together
+  and assigns the sum to the variable on the left.
+  
+  Example: if x = 2... x += 5 assigns the value
+  7 to the variable x.  The whole expression has the value of 7.
 
-++ post/pre-increment operators
-    examples: i++ or ++i
-    values: 
-      i++ has the value of i
-      ++i has the value of i+1
-    explanation: ++ changes the value of i by increasing it by 1.
-      However, the value of the expression depends on where you
-      place the ++.  ++i is the pre-increment operator.  This means
-      that it performs the increment *before* giving a value.
-      i++ is the post-ncrement operator.  It evalutes before incrementing
-      i.  What is the point?  Well, it does not much matter to you at
-      this point, but you should recognize what it means.
+* **-=** Subtraction assignment operator:
+  Example: ``x-=7``
+  
+  Value: the value of the left value reduced by the right value
+  
+  Explanation: The same as += except for subtraction.
 
--- post/pre-decrement operators
-    examples: i-- or --i
-    values:
-      i-- the value of i
-      --i the value of i reduced by 1
-    explanation: like ++ except for subtraction
+* ** \*= ** Multiplicative assignment operator:
+  Example: ``x *= 7``
+  
+  Value: the value of the left value multiplied by the right
+  
+  Explanation: Similar to -= and += except for addition.
 
-== equality operator
-    example: x == 5
-    value: true or false (not 0 or 0)
-    explanation: it does nothing to either value, but
-      it returns true if the 2 values are the same.
-      It returns false if they are not equal.
+* **/=** Division assignment operator
+  Example: ``x /= 7``
+  
+  Value: the value of the variable on the left divided by the right value
+  
+  Explanation: similar to above, except with division
 
-!= inequality operator
-    example: x != 5
-    value: true or false
-    explanation returns true if the left expression is not equal to the right
-      expression.  It returns fals if they are equal
+* **++** Post/pre-increment operators
+  Examples: ``i++`` or ``++i``
+  
+  Values: i++ has the value of i, ++i has the value of i+1
+  
+  Explanation: ++ changes the value of i by increasing it by 1.
+  However, the value of the expression depends on where you
+  place the ++.  ++i is the pre-increment operator.  This means
+  that it performs the increment *before* giving a value.
+  i++ is the post-ncrement operator.  It evalutes before incrementing
+  i.  What is the point?  Well, it does not much matter to you at
+  this point, but you should recognize what it means.
 
-> greater than operator
-    example: x > 5
-    value: true or false
-    explanation: true only if x has a value greater than 5
-      false if the value is equal or less
+* **--** Post/pre-decrement operators
+  Examples: ``i--`` or ``--i``
+  
+  Values: i-- the value of i, --i the value of i reduced by 1
+  
+  Explanation: like ++ except for subtraction.
 
-< less than operator
->= greater than or equal to operator
-<= less than or equal to operator
-    examples: x < y    x >= y    x <= y
-    values: true or false
-    explanation: similar as to > except
-      < true if left is less than right
-      >= true if left is greater than *or equal to* right
-      <= true if the left is less than *or equal to* the right
+* **==** Equality operator
+  Example: ``x == 5``
+  
+  Value: true or false (not 0 or 0)
+  
+  Explanation: it does nothing to either value, but it returns true if the 2 values are the same.
+  It returns false if they are not equal.
 
-&& logical and operator
-|| logical or operator
-    examples: x && y      x || y
-    values: true or false
-    explanation: If the right value and left value are non-zero, && is true.
-      If either are false, then && is false.
-      For ||, only one of the values must be true for it to evaluate
-      as true.  It is only false if both values indeed
-      are false
+* **!=** Inequality operator:
+  Example: ``x != 5``
+  
+  Value: true or false
+  
+  Explanation returns true if the left expression is not equal to the right
+  expression.  It returns fals if they are equal
 
-! negation operator
-    example: !x
-    value: true or false
-    explanation: If x is true, then !x is false
-      If x is false, !x is true.
+* **>** greater than operator
+  Example: ``x > 5``
+  
+  Value: true or false
+  
+  Explanation: true only if x has a value greater than 5
+  false if the value is equal or less
+
+* **<** Less than operator
+
+* **>=** Greater than or equal to operator
+
+* **<=** Less than or equal to operator
+  Examples: ``x < y    x >= y    x <= y``
+  Values: true or false
+  Explanation: similar as to > except
+
+    |  < true if left is less than right
+    |  >= true if left is greater than *or equal to* right
+    |  <= true if the left is less than *or equal to* the right
+
+* **&&** Logical and operator:
+
+* **||** Logical or operator:
+  Examples: ``x && y      x || y``
+  
+  Values: true or false
+  
+  Explanation: If the right value and left value are non-zero, && is true.
+  If either are false, then && is false.
+  For ||, only one of the values must be true for it to evaluate
+  as true.  It is only false if both values indeed
+  are false
+
+* **!** Negation operator:
+  Example: !x
+  
+  Value: true or false
+  Explanation: If x is true, then !x is false. If x is false, !x is true.
 
 A pair of more complicated ones that are here just for the sake of being
 here.  Do not worry if they utterly confuse you.
 
--> the call other operator
-    example: this_player()->query_name()
-    value: The value returned by the function being called
-    explanation:  It calls the function which is on the right in the object
-      on the left side of the operator.  The left expression *must* be
-      an object, and the right expression *must* be the name of a function.
-      If not such function exists in the object, it will return 0 (or
-      more correctly, undefined).
+* **->** The call other operator:
+  Example: ``this_body()->query_name()``
+  
+  Value: The value returned by the function being called
+  
+  Explanation:  It calls the function which is on the right in the object
+  on the left side of the operator.  The left expression *must* be
+  an object, and the right expression *must* be the name of a function.
+  If not such function exists in the object, it will return 0 (or
+  more correctly, undefined).
 
-? : conditional operator
-    example: x ? y : z
-    values: in the above example, if x is try, the value is y
-      if x is false, the value of the expression is z
-    explanation: If the leftmost value is true, it will give the expression as
-      a whole the value of the middle expression.  Else, it will give the
-      expression as a whole the value of the rightmost expression.
+* **? : **  Conditional operator
+  Example: ``x ? y : z``
+  
+  Values: in the above example, if x is try, the value is y
+  if x is false, the value of the expression is z
+  
+  Explanation: If the leftmost value is true, it will give the expression as
+  a whole the value of the middle expression.  Else, it will give the
+  expression as a whole the value of the rightmost expression.
 
-A note on equality:  A very nasty error people make that is VERY difficult
-to debug is the error of placing = where you mean ==.  Since
-operators return values, they both make sense when being evaluated.
-In other words, no error occurs.  But they have very different values.  For example:
-  if(x == 5)    if(x = 5)
-The value of x == 5 is true if the value of x is 5, false othewise.
-The value of x = 5 is 5 (and therefore always true).
-The if statement is looking for the expression in () to be either true or false,
-so if you had = and meant ==, you would end up with an expression that is
-always true.  And you would pull your hair out trying to figure out
-why things were not happening like they should :)
+.. note::
+
+   A note on equality:  A very nasty error people make that is VERY difficult
+   to debug is the error of placing = where you mean ==.  Since
+   operators return values, they both make sense when being evaluated.
+   In other words, no error occurs.  But they have very different values.  For example:
+ 
+       ``if(x == 5)    if(x = 5)``
+
+   The value of x == 5 is true if the value of x is 5, false othewise.
+   The value of x = 5 is 5 (and therefore always true).
+   The if statement is looking for the expression in () to be either true or false,
+   so if you had = and meant ==, you would end up with an expression that is
+   always true.  And you would pull your hair out trying to figure out
+   why things were not happening like they should 😊
 
 
 CHAPTER 7: Flow Control
+=======================
 
 7.1 Review of variables
+-----------------------
+
 Variables may be manipulated by assigning or changing values with the
 expressions =, +=, -=, ++, --.  Those expressions may be combined with
 the expressions -, +, *, /, %.  However, so far, you have only been
