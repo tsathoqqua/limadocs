@@ -1202,16 +1202,21 @@ you think.  But it should make a rather good reference guide.
   Explanation: Same characteristics as addition, except it subtracts.
   With strings: "a" is the value of "ab" - "b".
 
-* ** \* ** Multiplication operator:
+* **\*** Multiplication operator:
+
   Example: ``x*7``
+  
   Value and explanation: same as with adding and subtracting except
   this one performs the math of multiplication.
 
 * **/** Division operator:
+  
   Example: ``x/7``
+  
   Value and explanation: see above.
 
 * **+=** Additive assignment operator:
+  
   Example: ``x += 5``
 
   Value: the same as x + 5
@@ -1224,6 +1229,7 @@ you think.  But it should make a rather good reference guide.
   7 to the variable x.  The whole expression has the value of 7.
 
 * **-=** Subtraction assignment operator:
+  
   Example: ``x-=7``
   
   Value: the value of the left value reduced by the right value
@@ -1231,6 +1237,7 @@ you think.  But it should make a rather good reference guide.
   Explanation: The same as += except for subtraction.
 
 * ** \*= ** Multiplicative assignment operator:
+  
   Example: ``x *= 7``
   
   Value: the value of the left value multiplied by the right
@@ -1238,6 +1245,7 @@ you think.  But it should make a rather good reference guide.
   Explanation: Similar to -= and += except for addition.
 
 * **/=** Division assignment operator
+  
   Example: ``x /= 7``
   
   Value: the value of the variable on the left divided by the right value
@@ -1245,6 +1253,7 @@ you think.  But it should make a rather good reference guide.
   Explanation: similar to above, except with division
 
 * **++** Post/pre-increment operators
+  
   Examples: ``i++`` or ``++i``
   
   Values: i++ has the value of i, ++i has the value of i+1
@@ -1257,7 +1266,8 @@ you think.  But it should make a rather good reference guide.
   i.  What is the point?  Well, it does not much matter to you at
   this point, but you should recognize what it means.
 
-* **--** Post/pre-decrement operators
+* **\-\-** Post/pre-decrement operators
+  
   Examples: ``i--`` or ``--i``
   
   Values: i-- the value of i, --i the value of i reduced by 1
@@ -1265,6 +1275,7 @@ you think.  But it should make a rather good reference guide.
   Explanation: like ++ except for subtraction.
 
 * **==** Equality operator
+  
   Example: ``x == 5``
   
   Value: true or false (not 0 or 0)
@@ -1273,6 +1284,7 @@ you think.  But it should make a rather good reference guide.
   It returns false if they are not equal.
 
 * **!=** Inequality operator:
+  
   Example: ``x != 5``
   
   Value: true or false
@@ -1281,6 +1293,7 @@ you think.  But it should make a rather good reference guide.
   expression.  It returns fals if they are equal
 
 * **>** greater than operator
+  
   Example: ``x > 5``
   
   Value: true or false
@@ -1293,8 +1306,11 @@ you think.  But it should make a rather good reference guide.
 * **>=** Greater than or equal to operator
 
 * **<=** Less than or equal to operator
+  
   Examples: ``x < y    x >= y    x <= y``
+  
   Values: true or false
+  
   Explanation: similar as to > except
 
     |  < true if left is less than right
@@ -1304,6 +1320,7 @@ you think.  But it should make a rather good reference guide.
 * **&&** Logical and operator:
 
 * **||** Logical or operator:
+  
   Examples: ``x && y      x || y``
   
   Values: true or false
@@ -1315,15 +1332,18 @@ you think.  But it should make a rather good reference guide.
   are false
 
 * **!** Negation operator:
-  Example: !x
+  
+  Example: ``!x``
   
   Value: true or false
+  
   Explanation: If x is true, then !x is false. If x is false, !x is true.
 
 A pair of more complicated ones that are here just for the sake of being
 here.  Do not worry if they utterly confuse you.
 
 * **->** The call other operator:
+  
   Example: ``this_body()->query_name()``
   
   Value: The value returned by the function being called
@@ -1335,6 +1355,7 @@ here.  Do not worry if they utterly confuse you.
   more correctly, undefined).
 
 * **? : **  Conditional operator
+  
   Example: ``x ? y : z``
   
   Values: in the above example, if x is try, the value is y
