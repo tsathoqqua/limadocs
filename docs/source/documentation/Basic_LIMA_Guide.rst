@@ -5,10 +5,17 @@ LPC Basics for LIMA
 
 Credits
 -------
-Originally written by Descartes of Borg (borg@hebron.connected.com), adapted for the LIMA library 
-by Tsath (2024). If you find this page useful, all credits goes to Descartes.
+Originally written by Descartes of Borg (borg@hebron.connected.com) around 1993, adapted for the LIMA library 
+by Tsath (2024) using parts of the existing LIMA documentation. 
                        
-The original text may be available at https://www.cs.hmc.edu/~jhsu/wilderness/basics.html if you are lucky. 
+The original LPC Guide may be available at https://www.cs.hmc.edu/~jhsu/wilderness/basics.html if you are lucky.
+
+Help make this document better
+------------------------------
+This guide has been changed, corrected and updated for newest FluffOS and LIMA Mudlib features.
+
+If you spot errors and omissions, please submit an issue at https://github.com/tsathoqqua/limadocs/ and describe
+the issue you found, or the addition you would like.
 
 Introduction
 ============
@@ -181,7 +188,36 @@ to view the code), then it assumes you mean the file ``/wiz/cartesius/workroom.c
 
 * **which** Finds the command named.
 
-1.3 Chapter Summary
+1.3 Shortcuts for filenames
+---------------------------
+Some of the file names in the LIMA mudlib can be rather long, and it gets tiresome writing them out. So there
+are shorter versions of most of the standard files used in the library. These can be seen in 
+the file ``/include/mudlib.h``. Using the `more <../command/more.html>` command on this file will show you
+something like:
+
+.. code-block:: c
+
+   #define BODY               "/std/body"
+   #define USER_OB            "/secure/user"
+   ...
+   #define BASE_ROOM          "/std/base_room"
+   #define INDOOR_ROOM        "/std/indoor_room"
+   #define OUTDOOR_ROOM       "/std/outdoor_room"
+   #define WATER_ROOM         "/std/water_room"
+
+And a lot more. These are just shorter names for these files, and easier to remember. This also provides
+the mudlib with a certain stability, as a programmer may do:
+
+.. code-block:: c
+
+   inherit OUTDOOR_ROOM;
+
+in 200 or more rooms, and the file ``/std/outdoor_room`` can still be moved to a different location as long as
+``/include/mudlib.h`` is updated accordingly. Try not to refer to the file name, but to the all caps alias
+defined in the mudlib as soon as you can. Some of the code examples that follow below will use the file name
+(to show you which file is being used) and some will use the shorthand.
+
+1.4 Chapter Summary
 -------------------
 
 Linux uses a heirarchical file structure with the root of the tree being
@@ -539,7 +575,8 @@ the driver will barf and report an error to you.
 
 CHAPTER 4: Functions
 ====================
-
+This chapter will teach you about functions, how to define them, how they work,
+and how to call them.
 
 4.1 Review
 ----------
@@ -815,7 +852,7 @@ After examining your workroom code, it might look something like this
 
 .. code-block:: c
 
-   inherit "/std/indoor_room";
+   inherit INDOOR_ROOM; //See section 1.3 above.
 
    void setup()
    {
@@ -869,16 +906,19 @@ of that room file and making a unique room by adding your own function,
 
 5.3 How inheritance works
 -------------------------
-
 As you might have guessed by now, the line:
 
 .. code-block:: c
 
-   inherit "/std/indoor_room";
+   inherit INDOOR_ROOM; 
 
 has you inherit the functionality of the room "/std/indoor_room.c", a special
-file for indoor rooms (Guess what ``/std/outdoor_room.c`` does?).  By inheriting
-the functionality, it means that you can use the functions which have
+file for indoor rooms (Guess what ``OUTDOOR_ROOM`` does?). Remember from
+section 1.3, how the shorthands for files like this are defined in ``/include/mudlib.h``,
+so you can write ``inherit INDOOR_ROOM;`` instead of writing ``inherit "/std/indoor_room";``.
+Why this is clever is described in section 1.3.
+
+By inheriting the functionality, it means that you can use the functions which have
 been declared and defined in the file ``/std/indoor_room.c``. 
 
 In actual practice, each mudlib is different, and thus requires you to use
@@ -891,7 +931,6 @@ your new mud with the mudlib.
 
 5.4 Chapter summary
 -------------------
-
 This is far from a complete explanation of the complex subject of inheritance.
 The idea here is for you to be able to understand how to use inheritance in
 creating your objects. A full discussion will follow in a later guide.
@@ -2082,6 +2121,16 @@ CHAPTER 9: Verbs and interactions
 You know understand objects, calling them, functions and variables. Now it is time to
 look at how to create player interactions. 
 
+Verbs should generally be used instead of commands for "in character" ("IC")
+actions, ie actions which the character should have access to, rather than 
+the player - eg "look" (IC) should be a verb, while "help" should not.
+Lima does not support add_actions.
+
+Reasons for this: Verbs have a central "condition checking" (is the character dead ? etc),
+other checking for whether the action is possible is well-supported multiple syntaxes can 
+easily be defined for each verb aliases can be defined for each syntax within each verb
+sensible default error messages, easily tailored as required.
+
 9.2 No add_action()
 -------------------
 
@@ -2109,22 +2158,13 @@ message for most commands.
 .. note::
 
     If you have *no idea* what ``add_action()`` is, you have nothing to unlearn here - which
-    is good! No you also know, that if an AI tries to produce LPC code for you, and it contains
-    ``add_action()`` you should tell it if, as it is not creating LIMA compatible code.
+    is good! Now you also know, that if an AI/someone on Reddit tries to produce LPC code for you, and it contains
+    ``add_action()`` you should tell it/him/her off, as it is not creating LIMA compatible code.
 
-Verbs should generally be used instead of commands for "in character" ("IC")
-actions, ie actions which the character should have access to, rather than 
-the player - eg "look" (IC) should be a verb, while "help" should not.
-Lima does not support add_actions.
+9.3 How verbs work
+------------------
 
-Reasons for this - 
-verbs have a central "condition checking" (is the character dead ? etc),
-other checking for whether the action is possible is well-supported
-multiple syntaxes can easily be defined for each verb
-aliases can be defined for each syntax within each verb
-sensible default error messages, easily tailored as required
-
-9.3 Creating verbs
+9.4 Creating verbs
 ------------------
 
 Verbs are defined in individual files within ``/cmds/verbs/``.
@@ -2183,14 +2223,14 @@ Default implementations for various rules are included in ``VERB_OB``.
 For example, the implementation of the OBJ rule calls ``do_verb()`` in the object,
 after having made various checks.
 
-9.4 Debugging verbs
+9.5 Debugging verbs
 -------------------
 
 Use the `parse <../command/parse.html>`_ command (in front of the normal verb syntax) to see the 
 results of can/direct/indirect checks, and hence which rule(if any) is
 used.
 
-9.5 Simple verb example
+9.6 Simple verb example
 -----------------------
 
 Let's try to invent a verb for kicking things.
