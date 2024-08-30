@@ -360,60 +360,48 @@ CHAPTER 3: LPC Data Types
 3.1 What you should know by now
 -------------------------------
 
-LPC object are made up of zero or more variables manipulated by one or
-more functions.  The order in which these functions appear in code is
-irrelevant.  The driver uses the LPC code you write by loading copies of
-it into memory whenever it is first referenced and additional copies
-through cloning.  When each object is loaded into memory, all the variables
-initially point to no value.  The reset() function in compat muds, and
-create() in native muds are used to give initial values to variables in
-objects.  The function for creation is called immediately after the object
-is loaded into memory.  However, if you are reading this textbook with no
-prior programming experience, you may not know what a function is or how
-it gets called.  And even if you have programming experience, you may
-be wondering how the process of functions calling each other gets started
-in newly created objects.  Before any of these questions get answered,
-however, you need to know more about what it is the functions are
-manipulating.  You therefore should thouroughly come to know the concept
-behind LPC data types.  Certainly the most boring subject in this manual,
-yet it is the most crucial, as 90% of all errors (excepting misplaced
-{} and ()) involve the improper usage of LPC data types.  So bear through
-this important chapter, because it is my feeling that understanding this
+LPC object are made up of zero or more variables manipulated by one or more functions.  The order in 
+which these functions appear in code is irrelevant.  The driver uses the LPC code you write 
+by loading copies of it into memory whenever it is first referenced and additional copies
+through cloning.  When each object is loaded into memory, all the variables initially point to no value. 
+The ``setup()``function in LIMA is used to give initial values to variables in objects.  The function 
+for creation is called immediately after the object is loaded into memory. However, if you are reading 
+this page with no prior programming experience, you may not know what a function is or how it gets 
+called.  And even if you have programming experience, you may be wondering how the process of 
+functions calling each other gets started in newly created objects.  Before any of these questions 
+get answered, however, you need to know more about what it is the functions are
+manipulating.  You therefore should thouroughly come to know the concept behind LPC data types.
+Certainly the most boring subject in this manual, yet it is the most crucial, as 90% of all 
+errors (excepting misplaced ``{}`` and ``()``) involve the improper usage of LPC data types.  
+So bear through this important chapter, because it is my feeling that understanding this
 chapter alone can help you find coding much, much easier.
 
 3.2 Communicating with the computer
 -----------------------------------
 
-You possibly already know that computers cannot understand the letters
-and numbers used by humans.  Instead, the "language" spoken by computers
-consists of an "alphabet" of 0's and 1's.  Certainly you know computers
-do not understand natural human languages.  But in fact, they do not
-understand the computer languages we write for them either.  Computer
-languages like BASIC, C, C++, Pascal, etc. are all intermediate
-languages.  They allow you to structure your thoughts more coherently
-for translation into the 0's and 1's of the computer's languages.
+You possibly already know that computers cannot understand the letters and numbers used by humans.
+Instead, the "language" spoken by computers consists of an "alphabet" of 0's and 1's.  
+Certainly you know computers do not understand natural human languages.  But in fact, they do not
+understand the computer languages we write for them either.  Computer languages like BASIC, C, 
+C++, C#, etc. are all intermediate languages.  They allow you to structure your thoughts 
+more coherently for translation into the 0's and 1's of the computer's languages.
 
-There are two methods in which translation is done: compilation and
-interpretation.  These simply are differences betweem when the 
-programming language is translated into computer language.  With
-compiled languages, the programmer writes the code then uses a program
-called a compiler to translate the program into the computer's
-language.  This translation occurs before the program is run.  With
-interpreted languages however, the process of translation occurs as
-the program is being run.  Since the translation of the program is
-occurring during the time of the program's running in interpreted
-languages, interpreted languages make much slower programs than
+There are two methods in which translation is done: compilation and interpretation.  These simply
+are differences betweem when the programming language is translated into computer language.  With
+compiled languages, the programmer writes the code then uses a program called a compiler to 
+translate the program into the computer's language.  This translation occurs before the program
+is run.  With interpreted languages however, the process of translation occurs as the program is 
+being run.  Since the translation of the program is occurring during the time of the program's 
+running in interpreted languages, interpreted languages make much slower programs than
 compiled languages.
 
-The bottom line is, no matter what language you are writing in, at
-some point this has to be changed into 0's and 1's which can be
-understood by the computer.  But the variables which you store in
-memory are not simply 0's and 1's.  So you have to have a way in
-your programming languages of telling the computer whether or not
-the 0's and 1's should be treated as decimal numbers or characters or
+The bottom line is, no matter what language you are writing in, at some point this has to be 
+changed into 0's and 1's which can be understood by the computer.  But the variables which you store in
+memory are not simply 0's and 1's.  So you have to have a way in your programming languages of 
+telling the computer whether or not the 0's and 1's should be treated as decimal numbers or characters or
 strings or anything else.  You do this through the use of data types.
 
-For example, say you have a variable which you call 'x' and you give
+For example, say you have a variable which you call "x" and you give
 it the decimal whole number value 65.  In LPC you would do this through
 the statement:
 
@@ -428,98 +416,104 @@ You can later do things like:
    write(x+"\n");        /* \n is symbolically represents a carriage return */
    y = x + 5;
 
-The first line allows you to send 65 and a carriage return to someone's screen.
-The second line lets you set the value of y to 70.
-The problem for the computer is that it does not know what '65' means when
-you tell it x = 65;.  What you think of 65, it might think of as:
-00000000000000000000000001000001
+The first line allows you to send 65 and a carriage return to someone's screen. The second line 
+lets you set the value of y to 70. The problem for the computer is that it does not know what '65' 
+means when you tell it ``x = 65;``.  What you think of 65, it might think of as:
+
+        ``00000000000000000000000001000001``
+
 But, also, to the computer, the letter 'A' is represented as:
-00000000000000000000000001000001
-So, whenever you instruct the computer write(x+"\n");, it must have some
+
+        ``00000000000000000000000001000001``
+
+So, whenever you instruct the computer to ``write(x+"\n");``, it must have some
 way of knowing that you want to see '65' and not 'A'.
 
-The computer can tell the difference between '65' and 'A' through the use
-of data types.  A data types simply says what type of data is being stored
-by the memory location pointed to by a given variable.  Thus, each LPC
-variable has a variable type which guides conversions.  In the example
-given above, you would have had the following line somewhere in the
-code *before* the lines shown above:
+The computer can tell the difference between '65' and 'A' through the use of data types.  A data 
+types simply says what type of data is being stored by the memory location pointed to by a 
+given variable.  Thus, each LPC variable has a variable type which guides conversions. In the example
+given above, you would have had the following line somewhere in the code *before* the lines shown above:
 
 .. code-block:: c
 
   int x;
 
-This one line tells the driver that whatever value x points to, it will
-be used as the data type "int", which is short for integer, or whole
-number.  So you have a basic introduction into the reason why data types
-exist.  They exist so the driver can make sense of the 0's and 1's that
-the computer is storing in memory.
+This one line tells the driver that whatever value ``x`` points to, it will be used as the data type 
+"int", which is short for integer, or whole number. So you have a basic introduction into the reason 
+why data types exist. They exist so the driver can make sense of the 0's and 1's that the computer 
+is storing in memory.
 
 3.3 The data types of LPC
 -------------------------
 
 All LPMud drivers have the following data types:
 
-void, status, int, string, object, int *, string *, object *, mixed *
+.. code-block:: c
+
+    void, status, int, string, object, int *, string *, object *, mixed *
 
 Many drivers, but not all have the following important data types which
 are important to discuss:
 
-float, mapping, float *, mapping *
+.. code-block:: c
+
+    class, float, mapping, float *, mapping *
 
 And there are a few drivers with the following rarely used data types
 which are not important to discuss:
 
-function, enum, struct, char
+.. code-block:: c
+
+    function, enum, struct, char
 
 3.4 Simple data types
-This introductory textbook will deal with the data types void, status,
-int, float, string, object, mand mixed.  You can find out about the
-more complex data types like mappings and arrays in the intermediate
-textbook.  This chapter deals with the two simplest data types (from the
-point of view of the LPC coder), int and string.
+---------------------
 
-An int is any whole number.  Thus 1, 42, -17, 0, -10000023 are all type int.
-A string is one or more alphanumeric characters.  Thus "a", "we are borg",
-"42", "This is a string" are all strings.  Note that strings are always
-enclosed in "" to allow the driver to distinguish between the int 42 and
-the string "42" as well as to distinguish between variable names (like x)
-and strings by the same names (like "x").
+This introductory page will deal with the data types void, status, int, float, string, object, and 
+mixed. This chapter deals with the two simplest data types (from the point of view of the LPC 
+coder), int and string.
 
-When you use a variable in code, you must first let the driver know
-what type of data to which that variable points.  This process is
-called *declaration*.  You do this at the beginning of the function
-or at the beginning of the object code (outside of functions before all
-functions which use it).  This is done by placing the name of the data type
-before the name of the variable like in the following example:
+An int is any whole number.  Thus 1, 42, -17, 0, -10000023 are all type int. A string is one or 
+more alphanumeric characters.  Thus "a", "We are Borg", "42", "This is not a string" are all strings.
+Note that strings are always enclosed in "" to allow the driver to distinguish between the int 42 and
+the string "42" as well as to distinguish between variable names (like ``x``) and strings by the same 
+names (like "x").
 
------
-void add_two_and_two() {
-    int x;
-    int y;
+When you use a variable in code, you must first let the driver know what type of data to which that 
+variable points.  This process is called *declaration*.  You do this at the beginning of the function
+or at the beginning of the object code (outside of functions before all functions which use it). 
+This is done by placing the name of the data type before the name of the variable like in the following example:
 
-    x = 2;
-    y = x + x;
-}
------
+.. code-block:: c
 
-Now, this is a complete function.  The name of the function is 
-add_two_and_two().  The function begins with the declaration of an
-int variable named x followed by the declaration of an in variable
-named y.  So now, at this point, the driver now has two variables which
-point to NULL values, and it expects what ever values end up there to be
-of type int.
+   void add_two_and_two()
+   {
+       int x;
+       int y;
+
+       x = 2;
+       y = x + x;
+   }
+
+Now, this is a complete function.  The name of the function is ``add_two_and_two()``.  The function 
+begins with the declaration of an int variable named ``x`` followed by the declaration of an 
+in variable named ``y``.  So now, at this point, the driver now has two variables which
+point to NULL values (meaning 0 typically), and it expects what ever values end up there 
+to be of type int.
 
 A note about the data types void and status:
-Void is a trivial data type which points to nothing.  It is not used
-with respect to variables, but instead with respect to functions.  You
-will come to understand this better later.  For now, you need only
-understand that it points to no value.  
 
-The data type status is a boolean data type.  That is, it can only have
-1 or 0 as a value.  This is often referred to as being true or false.
+   Void is a trivial data type which points to nothing.  It is not used
+   with respect to variables, but instead with respect to functions.  You
+   will come to understand this better later.  For now, you need only
+   understand that it points to no value.  
+
+   The data type status is a boolean data type.  That is, it can only have
+   1 or 0 as a value.  This is often referred to as being true or false.
 
 3.5 Chapter summary
+-------------------
+
 For variables, the driver needs to know how the 0's and 1's the computer
 stores in memory get converted into the forms in which you intend them
 to be used.  The simplest LPC data types are void, status, int, and string.
@@ -544,8 +538,12 @@ the driver will barf and report an error to you.
 
 
 CHAPTER 4: Functions
+====================
+
 
 4.1 Review
+----------
+
 By this point, you should be aware that LPC objects consist of functions
 which manipulate variables.  The functions manipulate variables when they
 are executed, and they get executed through *calls* to those functions.
@@ -561,6 +559,8 @@ And finally type void has no value to you or the machine, and is not
 really used with variable data types.
 
 4.2 What is a function?
+-----------------------
+
 Like math functions, LPC functions take input and return output.
 Languages like Pascal distinguish between the concept of proceedure abd
 the concept of function.  LPC does not, however, it is useful to
@@ -570,169 +570,196 @@ of type void returns no output.  What Pascal calls a function differs
 in that it does return output.  In LPC, the most trivial, correct
 function is:
 
------
-void do_nothing() { }
------
+.. code-block:: c
+
+    void do_nothing() { }
 
 This function accepts no input, performs no instructions, and returns no
 value.
 
 There are three parts to every properly written LPC function:
-1) The declaration
-2) The definition
-3) The call
+
+  1. The declaration
+  2. The definition
+  3. The call
 
 Like with variables, functions must be declared.  This will allow the
-driver to know 1) what type of data the function is returning as output,
-and 2) how many input(s) and of what type those input(s) are.  The
-more common word for input is parameters.
+driver to know (1) what type of data the function is returning as output,
+and (2) how many input(s) and of what type those input(s) are. The
+more common word for input is parameters. 
+
 A function declaration therefore consists of:
-type name(parameter1, parameter2, ..., parameterN);
-The declaration of a function called drink_water() which accepts a string as
+
+.. code-block:: c
+
+    type name(parameter1, parameter2, ..., parameterN);
+
+The declaration of a function called ``drink_water()`` which accepts a string as
 input and an int as output would thus look like this:
 
------
-int drink_water(string str);
------
+.. code-block:: c
+
+   int drink_water(string str);
 
 where str is the name of the input as it will be used inside the function.
 
-The function definition is the code which describes what the function actually
-does with the input sent to it.  
-The call is any place in other functions which invokes the execution of the
-function in question.  For two functions write_vals() and add(), you thus
-might have the following bit of code:
+The function definition is the code which describes what the function actually does with the input sent to it.  
+The call is any place in other functions which invokes the execution of the function in question.  
+For two functions ``write_vals()`` and ``add()``, you thus might have the following bit of code:
 
------
-/* First, function declarations.  They usually appear at the beginning
-   of object code. 
-*/
-void write_vals();
-int add(int x, int y);
+.. code-block:: c
 
-/* Next, the definition of the function write_vals().  We assume that
-   this function is going to be called from outside the object
-*/
-void write_vals() {
-    int x;
+   /* This is a comment block, it's purely for the developer, the driver does not care.
+      First, function declarations.  They usually appear at the beginning
+      of object code. 
+    */
+   void write_vals();
+   int add(int x, int y);
 
-    /*N Now we assign x the value of the output of add() through a call */
-    x = add(2, 2);
-    write(x+"\n");
-}
+   /* Next, the definition of the function write_vals().  We assume that
+      this function is going to be called from outside the object
+    */
+   void write_vals()
+   {
+       int x;
 
-/* Finally, the definition of add() */
-int add(int x, int y) {
-    return (x + y);
-}
------
+       /*N Now we assign x the value of the output of add() through a call */
+       x = add(2, 2);
+       write(x+"\n");
+   }
 
-Remember, it does not matter which function definition appears first in the
-code.  This is because functions are not executed consecutively.  Instead,
-functions are executed as called.  The only requirement is that the
-declaration of a function appear before its definition and before the
-definition of any function which makes a call to it.
+   /* Finally, the definition of add() */
+   int add(int x, int y)
+   {
+       return (x + y);
+   }
+
+Remember, it does not matter which function definition appears first in the code.  This is because 
+functions are not executed consecutively.  Instead, functions are executed as called.  The only 
+requirement is that the declaration of a function appear before its definition and before the
+definition of any function which makes a call to it. In the above example both functions are
+declared at the top making the order irrelevant. If you do not want to declare them, make sure
+a function only calls functions defined above.
 
 4.3 Efuns
-Perhaps you have heard people refer to efuns.  They are externally defined
-functions.  Namely, they are defined by the MUD driver.  If you have
-played around at all with coding in LPC, you have probably found some
-expressions you were told to use like this_player(), write(), say(),
-this_object(), etc. look a lot like functions.  That is because they are
-efuns.  The value of efuns is that they are much faster than LPC functions,
+---------
+
+Perhaps you have heard people refer to efuns.  They are externally defined functions.  Namely, 
+they are defined by the MUD driver.  If you have played around at all with coding in LPC, you 
+have probably found some expressions you were told to use like ``this_player()``,
+``write()``, ``say()``, ``this_object()``, etc. look a lot like functions. That is because 
+they are efuns. The value of efuns is that they are much faster than LPC functions,
 since they already exist in the binary form the computer understands.
 
-In the function write_vals() above, two functions calls were made.  The first was to
-the functions add(), which you declared and defined.  The second call, however,
-was to a function called write(), and efun.  The driver has already declared
-and defined this function for you.  You needs only to make calls to it.
+Notice: ``this_player()`` is never used in LIMA, but in many other MUDs. We use ``this_body()``
+in LIMA. 
 
-Efuns are created to hanldle common, every day function calls, to handle
-input/output to the internet sockets, and other matters difficult to be
-dealt with in LPC.  They are written in C in the game driver and compiled
-along with the driver before the MUD comes up, making them much faster
-in execution.  But for your purposes, efun calls are just like calls
-made to your functions.  Still, it is important to know two things of any
-efun: 1) what return type does it have, and 2) what parameters of what
-types does it take.
+In the function ``write_vals()`` above, two functions calls were made.  The first was to the 
+functions ``add()``, which you declared and defined.  The second call, however, was to a function
+called ``write()``, and efun.  The driver has already declared and defined this function for you. 
+You needs only to make calls to it.
 
-Information on efuns such as input parameters and return types is often
-found in a directory called /doc/efun on your mud.  I cannot
-detail efuns here, because efuns vary from driver to driver.  However,
-you can often access this information using the commands "man" or "help"
-depending on your mudlib.  For instance, the command "man write" would
-give you information on the write efun.  But if all else fails,
-"more /doc/efun/write" should work.
+Efuns are created to hanldle common, every day function calls, to handle input/output to the 
+internet sockets, and other matters difficult to be dealt with in LPC.  They are written in C++
+for FluffOS in the game driver and compiled along with the driver before the MUD comes up, 
+making them much faster in execution.  But for your purposes, efun calls are just like calls
+made to your functions. Still, it is important to know two things of any efun: 
 
-By looking it up, you will find write is declared as follows:
+  1. What return type does it have, and 
+  2. what parameters of what types does it take.
 
------
-void write(string);
------
+Information for LIMA on this is documented on https://www.fluffos.info/efun/ and other pages 
+on that website. The documentation is also available inside LIMA for your easy reference. It
+is automatically updated when you rebuild lima on install.
+
+
+.. code-block:: c
+
+   void write(mixed str);
+
+(See https://www.fluffos.info/efun/interactive/write.html)
 
 This tells you an appropriate call to write expects no return value and
-passes a single parameter of type string.
+passes a single parameter of type mixed. The only reason this is a mixed type is that it can
+be both a string or an integer (that will than be converted into a string).
 
 4.4 Defining your own functions
+-------------------------------
+
 Although ordering your functions within the file does not matter, ordering
 the code which defines a function is most important.  Once a function
 has been called, function code is executed in the order it appears
-in the function definition.  In write_vals() above, the instruction:
+in the function definition.  In ``write_vals()`` above, the instruction:
     
------
-x = add(2, 2);
------
+.. code-block:: c
 
-Must come before the write() efun call if you want to see the appropriate
-value of x used in write().  
+   x = add(2, 2);
+
+Must come before the ``write()`` efun call if you want to see the appropriate
+value of ``x`` used in ``write()``.  
 
 With respect to values returned by function, this is done through the "return"
 instruction followed by a value of the same data type as the function.  In
-add() above, the instruction is "return (x+y);", where the value of (x+y)
-is the value returned to write_vals() and assigned to x.  On a more
+``add()`` above, the instruction is "return (x+y);", where the value of ``(x+y)``
+is the value returned to ``write_vals()`` and assigned to ``x``.  On a more
 general level, "return" halts the execution of a function and returns
-code execution to the function which called that function.  In addition,
+code execution to the function which called that function. In addition,
 it returns to the calling function the value of any expression that follows.
+
 To stop the execution of a function of type void out of order, use
 "return"; without any value following.  Once again, remember, the data
 type of the value of any expression returned using "return" MUST be the
 same as the data type of the function itself.
 
+A note in stopping execution:
+
+   You can stop the execution and throw an error using the ``error()`` efun.
+   This is typically useful in the mudlib, but not suitable for players.
+   See more at: https://www.fluffos.info/efun/system/error.html
+
+
 4.5 Chapter Summary
+-------------------
+
 The files which define LPC objects are made of of functions.  Functions, in
 turn, are made up of three parts:
-    1) The declaration
-    2) The definition
-    3) The call
+
+    1. The declaration
+    2. The definition
+    3. The call
+
 Function declarations generally appear at the top of the file before any
 defintions, although the requirement is that the declaration must appear
 before the function definition and before the definition of any function
 which calls it.
+
 Function definitions may appear in the file in any order so long as they
 come after their declaration.  In addition, you may not define one function
 inside another function.
+
 Function calls appear inside the definition of other functions where you
 want the code to begin execution of your function.  They may also appear
 within the definition of the function itself, but this is not recommended
 for new coders, as it can easily lead to infinite loops.
 
 The function definition consists of the following in this order:
-    1) function return type
-    2) function name
-    3) opening ( followed by a parameter list and a closing )
-    4) an opening { instructing the driver that execution begins here
-    5) declarations of any variables to be used only in that function
-    6) instructions, expressions, and calls to other functions as needed
-    7) a closing } stating that the function code ends here and, if no
+
+    1. function return type
+    2. function name
+    3. opening ( followed by a parameter list and a closing )
+    4. an opening { instructing the driver that execution begins here
+    5. declarations of any variables to be used only in that function
+    6. instructions, expressions, and calls to other functions as needed
+    7. a closing } stating that the function code ends here and, if no
        "return" instruction has been given at this point (type void functions
        only), execution returns to the calling function as if a r"return"
        instruction was given
 
 The trivial function would thus be:
 
------
-void do_nothing() {}
------
+.. code-block:: c
+
+   void do_nothing() {}
 
 since this function does not accept any input, perform any instructions, or
 return any output.
@@ -748,26 +775,30 @@ In addition, each mudlib has special functions like efuns in that they
 are already defined and declared for you, but different in that they
 are defined in the mudlib and in LPC.  They are called simul_efuns, or
 simulated efuns.  You can find out all about each of these as they are
-listed in the /doc/efun directory on most muds.  In addition many
-muds have a command called "man" or a "help" command which allows you
+listed on their respective websites. In addition many
+MUDs have a command called "man", "apropos" or a "help" command which allows you
 simply to call up the info files on them.
 
 Note on style:
-Some drivers may not require you to declare your functions, and some
-may not require you to specify the return type of the function in its
-definition.  Regardless of this fact, you should never omit this information
-for the following reasons:
-    1) It is easier for other people (and you at later dates) to read your
+
+   Some drivers may not require you to declare your functions, and some
+   may not require you to specify the return type of the function in its
+   definition.  Regardless of this fact, you should never omit this information
+   for the following reasons:
+    
+    1. It is easier for other people (and you at later dates) to read your
        code and understand what is meant.  This is particularly useful
        for debugging, where a large portion of errors (outside of misplaced
        parentheses and brackets) involve problems with data types (Ever
        gotten "Bad arg 1 to foo() line 32"?).
-    2) It is simply considered good coding form.
-
+    2. It is simply considered good coding form.
 
 CHAPTER 5: The Basics of Inheritance
+====================================
 
 5.1 Review
+----------
+
 You should now understand the basic workings of functions.  You should be
 able to declare and call one.  In addition, you should be able to recognize
 function definitions, although, if this is your first experience with LPC,
@@ -1319,7 +1350,7 @@ true (1), then the second is not tested.
 The first expression to look at that alters flow control is if().  Take
 a look at the following example:
  
-1 void reset() {
+1 void ``reset()``{
 2     int x;
 3
 4     ::reset();
