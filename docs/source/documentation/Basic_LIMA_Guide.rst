@@ -305,20 +305,23 @@ variables. The order in which functions are placed in an object relative to one 
 irrelevant. In other words:
 
 .. code-block:: c
-  | void setup() { set_name("gnat"); }
-  | void foo() { return; }
-  | int smile(string str) { return 0; }
+
+   void setup() { set_name("gnat"); }
+   void foo() { return; }
+   int smile(string str) { return 0; }
 
 is exactly the same as:
 
 .. code-block:: c
-  | int smile(string str) { return 0; }
-  | void foo() { return; }
-  | void setup() { set_name("gnat"); }
+
+   int smile(string str) { return 0; }
+   void foo() { return; }
+   void setup() { set_name("gnat"); }
 
 Also important to note, the object containing only:
 
 .. code-block:: c
+
    void nonsense() {}
 
 is a valid, but trivial object, although it probably would not interact properly with other objects 
@@ -376,8 +379,11 @@ the argument in the reset use is a nonzero number.
 
 
 CHAPTER 3: LPC Data Types
+=========================
 
 3.1 What you should know by now
+-------------------------------
+
 LPC object are made up of zero or more variables manipulated by one or
 more functions.  The order in which these functions appear in code is
 irrelevant.  The driver uses the LPC code you write by loading copies of
@@ -400,6 +406,8 @@ this important chapter, because it is my feeling that understanding this
 chapter alone can help you find coding much, much easier.
 
 3.2 Communicating with the computer
+-----------------------------------
+
 You possibly already know that computers cannot understand the letters
 and numbers used by humans.  Instead, the "language" spoken by computers
 consists of an "alphabet" of 0's and 1's.  Certainly you know computers
@@ -433,16 +441,16 @@ For example, say you have a variable which you call 'x' and you give
 it the decimal whole number value 65.  In LPC you would do this through
 the statement:
 
------
-x = 65;
------
+.. code-block:: c
+
+   x = 65;
 
 You can later do things like:
 
-_____
-write(x+"\n");        /* \n is symbolically represents a carriage return */
-y = x + 5;
------
+.. code-block:: c
+
+   write(x+"\n");        /* \n is symbolically represents a carriage return */
+   y = x + 5;
 
 The first line allows you to send 65 and a carriage return to someone's screen.
 The second line lets you set the value of y to 70.
@@ -461,9 +469,9 @@ variable has a variable type which guides conversions.  In the example
 given above, you would have had the following line somewhere in the
 code *before* the lines shown above:
 
------
-int x;
------
+.. code-block:: c
+
+  int x;
 
 This one line tells the driver that whatever value x points to, it will
 be used as the data type "int", which is short for integer, or whole
@@ -472,6 +480,8 @@ exist.  They exist so the driver can make sense of the 0's and 1's that
 the computer is storing in memory.
 
 3.3 The data types of LPC
+-------------------------
+
 All LPMud drivers have the following data types:
 
 void, status, int, string, object, int *, string *, object *, mixed *
