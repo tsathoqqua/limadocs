@@ -48,25 +48,25 @@ The chapters of this manual are meant to be read in order.  Starting with the in
 through the chapter numbers as ordered in the contents file.  Each chapter begins with a paragraph or two 
 explaining what you should have come to understand by that point in your studies.  After those introductory 
 paragraphs, the chapter then begins to discuss its subject matter in nauseating detail.  At the end of the 
-chapter is a briefly worded summary of what you should understand from that chapter if I have been successful. 
+chapter is a briefly worded summary of what you should understand from that chapter if it has been successful. 
 Following that may or may not be some sidenotes relevant to the subject at hand, but not necessary to its 
 understanding.
  
 If at any time you get to a chapter intro, and you have read the preceeding chapters thoroughly and you do not 
-understand what it says you should understand by that point, please contact us on the LIMA mud.
+understand what it says you should understand by that point, please contact us on the LIMA MUD.
  
 Some basic terms this manual uses:
 
 * **Driver** This is the executable program which is the game (typically FluffOS, DGD or LDMUD - LIMA uses 
-  FluffOS).  It accepts incoming connections, interprets LPC code defined by the mudlib, keeps mud objects 
-  in memory, makes periodic attempts to clean unused mud objects from memory, makes periodic calls to objects, 
+  FluffOS).  It accepts incoming connections, interprets LPC code defined by the mudlib, keeps MUD objects 
+  in memory, makes periodic attempts to clean unused MUD objects from memory, makes periodic calls to objects, 
   and so on. This is the Unreal Engine of MUDs.
  
 * **Mudlib** LIMA is a mudlib, that contains LPC code which defines the world in which you are in.  The driver of 
   itself is not a game. It is just a program which allows the creation of a multi-user environment.  
   In some sense, the driver is like an LPC compiler, and the mudlib is like a compiler's library 
   (a very loose analogy).  The mudlib defines basic objects which will likely be used over and over again by 
-  people creating in the mud world.  Examples of such objects are ``/std/base_room``, ``/std/body.c``, and so on.
+  people creating in the MUD world.  Examples of such objects are ``/std/base_room``, ``/std/body.c``, and so on.
 
 * **Your mudlib** Your mudlib begins as a copy of a mudlib, in this case LIMA. From this point on, you
   can modify it as you want, add and subtract as you see fit. Modifying the files contained in the LIMA 
@@ -181,7 +181,6 @@ to view the code), then it assumes you mean the file ``/wiz/cartesius/workroom.c
 
 * **which** Finds the command named.
 
-
 1.3 Chapter Summary
 -------------------
 
@@ -213,15 +212,15 @@ is a place in all programs that is noted as the beginning where program
 execution starts.  In addition, programs have definite end points,
 so that when execution reaches that point, the execution of the program
 terminates.  So, in short, execution of a program runs from a definite
-beginning point through to a definite end point.  This is not so with
+beginning point through to a definite end point. This is not so with
 LPC objects.
 
 With muds, LPC objects are simply distinct parts of the C program which
-is running the game (the driver).  In other words, execution of the mud
+is running the game (the *driver*).  In other words, execution of the mud
 program begins and ends in the driver.  But the driver in fact does
 very little in the way of creating the world you know when you play
 a mud.  Instead, the driver relies heavily on the code created in LPC,
-executing lines of the objects in the mud as needed.  LPC objects thus
+executing lines of the objects in the MUD as needed.  LPC objects thus
 have no place that is necessarily the beginning point, nor do they
 have a definite ending point.
 
@@ -234,31 +233,34 @@ understand at this point is that there is no "beginning" to an LPC
 object in terms of execution, and there is no "end".
 
 2.2 Driver-mudlib interaction
-As I have mentioned earlier, the driver is the C program that runs on
+-----------------------------
+
+As mentioned earlier, the driver is the program that runs on
 the host machine.  It connects you into the game and processes LPC code.
-Note that this is one theory of mud programming, and not necessarily
+Note that this is one theory of MUD programming, and not necessarily
 better than others.  It could be that the entire game is written in C.
-Such a game would be much faster, but it would be less flexible in
-that wizards could not add things to the game while it was running. This
-is the theory behind DikuMUDs.  Instead, LPMUDs run on the theory that
-the driver should in no define the nature of the game, that the nature
+Such a game would be faster, but it would be less flexible in that developes 
+(sometimes called "wizards") could not add things to the game while it was running. 
+This is the theory behind DikuMUDs. Instead, LPMUDs run on the theory that
+the driver should in no way define the nature of the game, that the nature
 of the game is to be decided by the individuals involved, and that
-you should be able to add to the game *as it is being played*.  This
+you should be able to add to the game *as it is being played*, e.g. being
+able to rebuild and change the game while it is running.  This
 is why LPMUDs make use of the LPC programming language.  It allows
 you to define the nature of the game in LPC for the driver to read and
-execute as needed.  It is also a much simpler language to understand
+execute as needed. It is also a much simpler language to understand
 than C, thus making the process of world creation open to a greater
-number of people.
+number of simultaneous people.
 
-Once you have written a file in LPC (assuming it is corrent LPC ), it justs
-sits there on the host machine's hard drive until something in the game
+Once you have written a file in LPC (assuming it is correct LPC), it justs
+sits there on the hard drive of the host machine until something in the game
 makes reference to it.  When something in the game finally does make
-reference to the object, a copy of the file is loaded into memory and
-a special *function* of that object is called in order to initialize
-the values of the variables in the object.  Now, do not be concerned
-if that last sentence went right over your head, since someone brand
-new to programming would not know what the hell a function or a variable
-is.  The important thing to understand right now is that a copy of the
+reference to the object, a copy of the file is (if it has no errrors) 
+loaded into memory and a special *function* of that object is called 
+in order to initialize the values of the variables in the object. 
+Now, do not be concerned if that last sentence went right over your head, 
+since someone brand new to programming would not know what the hell a function 
+or a variable is. The important thing to understand right now is that a copy of the
 object file is taken by the driver from the machine's hard drive and
 stored into memory (since it is a copy, multiple versions of that
 object may exist).  You will later understand what a function is, what
@@ -266,97 +268,77 @@ a variable is, and exactly how it is something in the game made reference
 to your object.
 
 2.3 Loading an object into memory
-Although there is no particular place in an object code that must exist
-in order for the driver to begin executing it, there is a place for which
-the driver will search in order to initialize the object.  On compat 
-drivers, it is the function called reset().  On native muds it is the
-function called create().
+---------------------------------
 
-LPC objects are made up of variables (values which can change) and
-functions which are used to manipulate those variables.  Functions
-manipulate variables through the use of LPC grammatical structures,
-which include calling other functions, using externally defined
-functions (efuns), and basic LPC expressions and flow control 
-mechanisms.
+Although there is no particular place in an object code that must exist in order for the driver 
+to begin executing it, there is a place for which the driver will search in order to initialize 
+the object. In classical mudlibs this is the function called ``create()``, but in LIMA the function
+is called ``setup()``.
 
-Does that sound convoluted?  First lets start with a variable.  A
-variable might be something like: level.  It can "vary" from sitation
-to situation in value, and different things use the value of the player's
-level to make different things happen.  For instance, if you are a
-level 19 player, the value of the variable level will be 19.  Now
-if your mud is on the old LPMud 2.4.5 system where levels 1-19 are
-players and 20+ are wizards, things can ask for your level value to
-see if you can perform wizard type actions.  Basically, each object
-in LPC is a pile of variables with values which change over time.
-Things happen to these objects based on what values its variables
-hold.  Often, then things that happen cause the variables to change.
+LPC objects are made up of variables (values which can change) and functions which are used to
+manipulate those variables.  Functions manipulate variables through the use of LPC grammatical 
+structures, which include calling other functions, using externally defined functions (often 
+called "efuns"), and basic LPC expressions and flow control mechanisms.
 
-So, whenever an object in LPC is referenced by another object currently
-in memory, the driver searches to see what places for values the
-object has (but they have no values yet).  Once that is done, the driver
-calls a function in the object called reset() or create() (depending
-on your driver) which will set up the starting values for the object's
-variables.  It is thus through *calls* to *functions* that variable
-values get manipulated.
+Does that sound convoluted?  First lets start with a variable.  A variable might be something like: 
+``level``. It can "vary" from sitation to situation in value, and different things use the value 
+of the player's level to make different things happen.  For instance, if you are a level 19 player, 
+the value of the variable level will be 19.  Basically, each object in LPC is a pile of variables 
+with values which change over time. Things happen to these objects based on what values its variables
+hold. Often, then things that happen cause the variables to change.
 
-But create() or reset() is NOT the starting place of LPC code, although
-it is where most LPC code execution does begin.  The fact is, those
-functions need not exist.  If your object does just fine with its
-starting values all being NULL pointers (meaning, for our purposes
-here, 0), then you do not need a create() or reset() function.  Thus
-the first bit of execution of the object's code may begin somewhere
-completely different.
+So, whenever an object in LPC is referenced by another object currently in memory, the driver searches
+to see what places for values the object has (but they have no values yet).  Once that is done, the 
+driver calls a function in the object called ``setup()`` which will set up the starting values for 
+the object's variables.  It is thus through *calls* to *functions* that variable values get manipulated.
 
-Now we get to what this chapter is all about.  The question: What
-consists a complete LPC object?  Well, an LPC object is simply
-one or more functions grouped together manipulating 0 or more
-variables.  The order in which functions are placed in an object
-relative to one another is irrelevant.  In other words:
+But ``setup()`` is NOT the starting place of LPC code, although it is where most LPC code execution 
+does begin.  The fact is, those functions need not exist.  If your object does just fine with its
+starting values all being default values, then you do not need a ``setup()`` function.  Thus
+the first bit of execution of the object's code may begin somewhere completely different. LIMA uses
+``create()`` internally since it uses the FluffOS driver, but as a developer using LIMA you would
+rarely be confronted by a ``create()`` function, but most of the time use ``setup()``.
 
------
-void init() { add_action("smile", "smile"); }
+Now we get to what this chapter is all about.  The question: What consists a complete LPC object?  
+Well, an LPC object is simply one or more functions grouped together manipulating zero or more
+variables. The order in which functions are placed in an object relative to one another is 
+irrelevant. In other words:
 
-void create() { return; }
-
-int smile(string str) { return 0; }
------
+.. code-block:: c
+  | void setup() { set_name("gnat"); }
+  | void foo() { return; }
+  | int smile(string str) { return 0; }
 
 is exactly the same as:
 
------
-void create() { return; }
-
-int smile(string str) { return 0; }
-
-void init() { add_action("smile", "smile"); }
-_____
+.. code-block:: c
+  | int smile(string str) { return 0; }
+  | void foo() { return; }
+  | void setup() { set_name("gnat"); }
 
 Also important to note, the object containing only:
 
------
-void nonsense() {}
------
+.. code-block:: c
+   void nonsense() {}
 
-is a valid, but trivial object, although it probably would not interact
-properly with other objects on your mud since such an object has no
-weight, is invisible, etc..
+is a valid, but trivial object, although it probably would not interact properly with other objects 
+on your MUD since such an object has no weight, is invisible, etc.
 
 2.4 Chapter summary
-LPC code has no beginning point or ending point, since LPC code is used
-to create objects to be used by the driver program rather than create
-individual programs.  LPC objects consist of one or more functions whose
-order in the code is irrelevant, as well as of zero or more variables whose
-values are manipulated inside those functions.  LPC objects simply sit
-on the host machine's hard driver until referenced by another object in
-the game (in other words, they do not really exist).  Once the object
-is referenced, it is loaded into the machine's memory with empty
-values for the variables.  The function reset() in compat muds or
-create() in native muds is called in that object if it exists to allow
-the variables to take on initial values.  Other functions in the object
-are used by the driver and other objects in the game to allow interaction
-among objects and the manipulation of the LPC variables.
+-------------------
 
-A note on reset() and create():
+LPC code has no beginning point or ending point, since LPC code is used to create objects to be used 
+by the driver program rather than create individual programs.  LPC objects consist of one or more 
+functions whose order in the code is irrelevant, as well as of zero or more variables whose
+values are manipulated inside those functions.  LPC objects simply sit on the host machine's hard 
+drive until referenced by another object in the game (in other words, they do not really exist). 
+Once the object is referenced, it is loaded into the machine's memory with empty values for the variables. 
+The function ``setup()`` (but really ``create()``) is called in that object if it exists to allow
+the variables to take on initial values.  Other functions in the object are used by the driver and 
+other objects in the game to allow interaction among objects and the manipulation of the LPC variables.
+
+A note on setup() and create():
+"""""""""""""""""""""""""""""""
 create() is only used by muds in native mode (see the textbook Introduction
 for more information on native mode vs. compat mode).  It is only used
 to initialize newly referenced objects.
@@ -667,7 +649,7 @@ definition of any function which makes a call to it.
 
 4.3 Efuns
 Perhaps you have heard people refer to efuns.  They are externally defined
-functions.  Namely, they are defined by the mud driver.  If you have
+functions.  Namely, they are defined by the MUD driver.  If you have
 played around at all with coding in LPC, you have probably found some
 expressions you were told to use like this_player(), write(), say(),
 this_object(), etc. look a lot like functions.  That is because they are
@@ -682,7 +664,7 @@ and defined this function for you.  You needs only to make calls to it.
 Efuns are created to hanldle common, every day function calls, to handle
 input/output to the internet sockets, and other matters difficult to be
 dealt with in LPC.  They are written in C in the game driver and compiled
-along with the driver before the mud comes up, making them much faster
+along with the driver before the MUD comes up, making them much faster
 in execution.  But for your purposes, efun calls are just like calls
 made to your functions.  Still, it is important to know two things of any
 efun: 1) what return type does it have, and 2) what parameters of what
@@ -900,7 +882,7 @@ Right now you should know the following:
        functions used by creators through inheritance to make coding objects
        easier and to make interaction between objects smoother.
     2) The functions in the inheritable files of a mudlib vary from mudlib
-       to mudlib.  There should exist documentation on your mud on how to
+       to mudlib.  There should exist documentation on your MUD on how to
        use each inheritable file.  If you are unaware what functions are
        available, then there is simply no way for you to use them.  Always
        pay special attention to the data types of the input and the data
@@ -966,7 +948,7 @@ chapter will teach you about the basic elements of LPC which will allow you to
 define your own functions using the manipulation of variables.
 
 6.2 Values and objects
-Basically, what makes objects on the mud different are two things:
+Basically, what makes objects on the MUD different are two things:
 1) Some have different functions
 2) All have different values
 
@@ -1825,7 +1807,7 @@ In line 6, the efun say() is called.  say() prints the string which is
     capitalized.
 In line 7, we call the add_hp() function in the this_player() object,
     since we want to do a little healing for the sniff (Note: do not
-    code this object on your mud, whoever balances your mud will shoot you).
+    code this object on your mud, whoever balances your MUD will shoot you).
 In line 8, we return control of the game to the driver, returning 1 to
     let it know that this was in fact the right function to call.
  
