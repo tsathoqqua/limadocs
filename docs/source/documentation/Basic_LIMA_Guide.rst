@@ -341,42 +341,18 @@ the variables to take on initial values.  Other functions in the object are used
 other objects in the game to allow interaction among objects and the manipulation of the LPC variables.
 
 A note on setup() and create():
-"""""""""""""""""""""""""""""""
-create() is only used by muds in native mode (see the textbook Introduction
-for more information on native mode vs. compat mode).  It is only used
-to initialize newly referenced objects.
 
-reset() is used by both muds in compat mode and native mode.  In compat
-mode, reset() performs two functions.  First, it is used to initialize
-newly referenced objects.  In addition, however, compat mode muds use
-reset() to "reset" the object.  In other words, return it to its initial
-state of affairs.  This allows monsters to regenerate in a room and doors
-to start back in the shut position, etc..  Native mode muds use reset()
-to perform the second function (as its name implies).
+   ``create()`` is called in the driver, but LIMA picks it up and does a lot of basic initialisations
+   for your objects, which is why you should use ``setup()`` instead for normal objects that exist
+   in the game world, i.e. torches, swords, trolls and laser pistols. For other objects that are not
+   directly cloned into existance, like daemons, they still use create() to initialize when instantiated.
 
-So there are two important things which happen in LP style muds which
-cause the driver to make calls to functions in objects.  The first is
-the creation of the object.  At this time, the driver calls a function
-to initalize the values in the object.  For compat mode muds, this
-is performed by the function named reset() (with an argument of 0,
-more on this later though).  For muds running in native mode, this is
-performed by the function create().
+   Think of it like this: If your player is likely to interact with it (give, get, drop, look at) in the
+   game world, it likely uses ``setup()``, if it's an object handling docking of spaceships, i.e. a game
+   controlling object, it likely uses ``create()``.
 
-The second is the returning of the room to some base state of affairs.
-This base set of affairs may or may not be different from the initial
-state of affairs, and certainly you would not want to take up time
-doing redundant things (like resetting variables that never change).
-Compat mode muds nevertheless use the same function that was used to
-create the object to reset it, that being reset().  Native mode muds,
-who use create() to create the room, instead use reset() to reset it.
-All is not lost in compat mode though, as there is a way to tell the
-difference between creation and resetting.  For reset purposes, the
-driver passes either 1 or the reset number as an argument to reset()
-in compat mode.  Now this is meaningless to you now, but just keep in
-mind that you can in fact tell the difference in compat mode.  Also
-keep in mind that the argment in the creation use of reset is 0 and
-the argument in the reset use is a nonzero number.
-
+   LIMA also handles resetting rooms automatically, this is done using the ``reset()`` function, but
+   you do not need to know details on that right now.
 
 CHAPTER 3: LPC Data Types
 =========================
