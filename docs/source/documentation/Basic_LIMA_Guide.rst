@@ -6,9 +6,9 @@ LPC Basics for LIMA
 Credits
 -------
 Originally written by Descartes of Borg (borg@hebron.connected.com), adapted for the LIMA library 
-by Tsath (2024). If you find this page useful, the credits goes to Descartes.
+by Tsath (2024). If you find this page useful, all credits goes to Descartes.
                        
-The original text may be  available at https://www.cs.hmc.edu/~jhsu/wilderness/basics.html if you are lucky. 
+The original text may be available at https://www.cs.hmc.edu/~jhsu/wilderness/basics.html if you are lucky. 
 
 Introduction
 ============
@@ -95,9 +95,9 @@ CHAPTER 1: Introduction to the Coding Environment
 
 LPMuds use basic Linux commands and its file structure.  If you know Linux commands already, then note 
 (with a few exceptions) options are not available to the commands.  Like DOS, Linux is heirarchical. The
-root directory of which all directories are sub-directories is called root (``/``) - unlike in DOS where
-you have ``C:`` and ``D:``.  And from those sub-directories you may have further sub-directories.  
-A directory may be referred to in two different ways:
+root directory (in Windows called a *folder*) of which all directories are sub-directories is called 
+root (``/``) - unlike in DOS where you have ``C:`` and ``D:``.  And from those sub-directories you may 
+have further sub-directories. A directory may be referred to in two different ways:
 
 1. By its full name, or *absolute name*, or 
 2. By its *relative name*.
@@ -112,76 +112,98 @@ is a sub-directory of ``common`` which is a sub-directory of ``domains`` which i
 As a side-note, using the common domain would also be a reasonable place to put a laser pistol that can be
 reused across all your other domains.
 
-The relative name refers to the name relative to another directory.
-The above example is called monster relative to /players/descartes/obj,
-but it is also called obj/monster relative to /players/descartes,
-descartes/obj/monster relative to /players, and finally
-players/descartes/obj/monster relative to /.  You can tell the
-difference between absolute names and relative names because absolute
-names always start with /.  In order to know exactly which directory
-is being named by a relative name, you naturally must know what
-directory it is relative to.
+The relative name refers to the name relative to another directory. The above example is called 
+``laser_pistol.c`` relative to ``/domains/common/weapon/``, but it is also called ``weapon/laser_pistol.c``
+relative to ``/domains/common/``, etc.
 
-A directory contains sub-directories and files.  LPMuds only use text files
-inside the mudlib.  Like directories, files have both absolute and
-relative names.  The most basic relative name is often referred to as the file
-name, with the rest of the absolute name being referred to as the path.  So,
-for the file: /players/descartes/castle.c, castle.c is the file name, and
-/players/descartes is the path.
+A directory contains sub-directories and files.  LPMuds only use text files inside the mudlib.  
+Like directories, files have both absolute and relative names.  The most basic relative name is often
+referred to as the file name, with the rest of the absolute name being referred to as the path.  So,
+for the file: ``/wiz/cartesius/workroom.c``, ``workroom.c`` is the file name, and ``/wiz/cartesius`` 
+is the path.
 
-On some muds, a file with a file name beginning with a . (like .plan) is
-not visible when you list files with the regular file listing command.
+In Linux and on some muds, a file with a file name beginning with a . (like ``.plan``) is not visible 
+when you list files with the regular file listing command - see `Command: ls <../command/ls.html>`_.
 
 1.2 Linux Commands
+------------------
+
 Along with the Linux file structure, LPMuds use many Linux commands.  Typical
 Linux commands on most muds are:
-pwd, cd, ls, rm, mv, cp, mkdir, rmdir, more, head, cat, ed
-If you have never before seen Linux commands, you probably are thinking this
-is all nonsense.  Well, it is, but you got to use them.  Before getting
-into what they mean though, first a discussion of current directory.
-If you know DOS, then you know what a current working directory is.
-At any given point, you are considered to be "in" some directory.  This
-means that any relative file or directory names you give in Linux commands
-are relative to that directory.  For example, if my current directory is
-/players/descartes and I type "ed castle.c" (ed is the command to edit),
-then it assumes I mean the file /players/descartes/castle.c
+`pwd <../command/pwd.html>`_, `cd <../command/cd.html>`_, `ls <../command/ls.html>`_, 
+`rm <../command/rm.html>`_, `mv <../command/mv.html>`_, `cp <../command/cp.html>`_,
+`mkdir <../command/mkdir.html>`_, `rmdir <../command/rmdir.html>`_, `more <../command/more.html>`_,
+`locate <../command/locate.html>`_, `cat <../command/cat.html>`_, `which <../command/which.html>`_.
 
-pwd: shows you your current working directory
-cd: changes your current working directory.  You may give either relative
-    or absolute path names.  With no arguments, it changes to your home
-    directory.
-ls: lists all files in the directory named.  If no directory is named,
-    it lists the files of the current working directory
-rm: deletes the file named
-mv: renames the file named
-cp: copies the file named
-mkdir: makes a new directory
-rmdir: deletes a directory.  All files must have been first removed.
-more: pages the file named so that the file appears on your screen one
-    page at a time.
-cat: shows the whole file to you at once
-head: shows you the first several lines of a file
-tail: shows you the last several lines of a file
-ed: allows you to edit a file using the mud editor
+If you have never before seen Linux commands, you probably are thinking this is all nonsense.  
+Well, it is, but you got to use them.  Before getting into what they mean though, first a discussion
+of current directory. If you know DOS (in Windows), then you know what a current working directory is.
+
+At any given point, you are considered to "be in" some directory.  This
+means that any relative file or directory names you give in Linux commands
+are *relative* to that directory. For example, if your current directory is
+``/wiz/cartesius`` and you type ``more workroom.c`` (`more <../command/more.html>`_ is the command 
+to view the code), then it assumes you mean the file ``/wiz/cartesius/workroom.c``.
+
+* **pwd** Shows you your current working directory. You can also configure your MUD shell to
+  show this always whenever you press enter, like in Linux, by doing:
+
+     ``set PROMPT %p>``
+
+  The shell has a lot more options, type '?' to see them on the MUD.
+
+* **cd** Changes your current working directory.  You may give either relative
+  or absolute path names.  With no arguments, it changes to your home directory.
+  Use ``..`` to go up the folder hierarchy. You can also use ``cd -`` to go to the
+  previous directory - this is quite useful when having to change between the same 
+  two directories over and over.
+
+* **ls** Lists all files in the directory named.  If no directory is named,
+  it lists the files of the current working directory. Make sure to set your screen 
+  `width <../command/width.html>`_ to utilise the entire screen. LIMA further shows
+  which of the files seen are loaded into memory, and which are not by colour.
+
+* **rm** Deletes the file named. There is no Recycle Bin. You were warned.
+
+* **mv** Renames the file named.
+
+* **cp** Copies the file named.
+
+* **mkdir** Makes a new directory.
+
+* **rmdir** Deletes a directory.  All files must have been first removed.
+
+* **more** Pages the file named so that the file appears on your screen one page at a time.
+
+* **cat** Shows the whole file to you at once.
+
+* **locate** Looks for the file named on the entire MUD.
+
+* **which** Finds the command named.
+
 
 1.3 Chapter Summary
+-------------------
+
 Linux uses a heirarchical file structure with the root of the tree being
-named /.  Other directories branch off from that root directory and
+named ``/``.  Other directories branch off from that root directory and
 in turn have their own sub-directories.  All directories may contain
 directories and files.  Directories and files are referred to either
-by their absolute name, which always begins with /, or by their relative
+by their absolute name, which always begins with ``/``, or by their relative
 name which gives the file's name relative to a particular directory.
-In order to get around in the Linux files structure, you have the
-typical Linux commands for listing files, your current directory, etc.
-On your mud, all of the above commands should have detailed help commands
+In order to get around in the files structure, you have the typical Linux 
+commands for listing files, your current directory, etc. On your mud, all 
+of the above commands should have detailed help commands
 to help you explore exactly what they do.  In addition, there should
 be a very detailed file on your mud's editor.  If you are unfamiliar
 with ed, you should go over this convoluted file.
 
-
 CHAPTER 2: The LPC Program
+==========================
 
 2.1 About programs
+------------------
+
 The title of this chapter of the textbook is actually poorly named, since
 one does not write programs in LPC.  An LPC coder instead writes *objects*.
 What is the difference?  Well, for our purposes now, the difference is
@@ -952,7 +974,7 @@ Now, all player objects have the same functions.  They are therefore
 differentiated by the values they hold.  For instance, the player
 named "Forlock" is different from "Descartes" *at least* in that they
 have different values for the variable true_name, those being
-"descartes" and "forlock".
+"cartesius" and "forlock".
 
 Therefore, changes in the game involve changes in the values of the objects
 in the game.  Functions are used to name specific process for manipulating
@@ -1559,7 +1581,7 @@ string name;
  
 name = (string)this_player()->query_name();
 switch(name) {
-    case "descartes": write("You borg.\n");
+    case "cartesius": write("You borg.\n");
     case "flamme":
     case "forlock":
     case "shadowwolf": write("You are a Nightmare head arch.\n");
@@ -1654,7 +1676,7 @@ continue is most often used with the for() and while() statements.
 break however is mostly used with switch()
  
 switch(name) {
-    case "descartes": write("You are borg.\n"); break;
+    case "cartesius": write("You are borg.\n"); break;
     case "flamme": write("You are flamme.\n"); break;
     case "forlock": write("You are forlock.\n"); break;
     case "shadowwolf": write("You are shadowwolf.\n"); break;
@@ -1663,7 +1685,7 @@ switch(name) {
  
 This functions just like:
  
-if(name == "descartes") write("You are borg.\n");
+if(name == "cartesius") write("You are borg.\n");
 else if(name == "flamme") write("You are flamme.\n");
 else if(name == "forlock") write("You are forlock.\n");
 else if(name == "shadowwolf") write("You are shadowwolf.\n");
