@@ -1202,7 +1202,7 @@ you think.  But it should make a rather good reference guide.
   Explanation: Same characteristics as addition, except it subtracts.
   With strings: "a" is the value of "ab" - "b".
 
-* **\*** Multiplication operator:
+* ***** Multiplication operator:
 
   Example: ``x*7``
   
