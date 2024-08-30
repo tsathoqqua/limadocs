@@ -340,7 +340,7 @@ The function ``setup()`` (but really ``create()``) is called in that object if i
 the variables to take on initial values.  Other functions in the object are used by the driver and 
 other objects in the game to allow interaction among objects and the manipulation of the LPC variables.
 
-A note on setup() and create():
+.. note::
 
    ``create()`` is called in the driver, but LIMA picks it up and does a lot of basic initialisations
    for your objects, which is why you should use ``setup()`` instead for normal objects that exist
@@ -501,7 +501,7 @@ in variable named ``y``.  So now, at this point, the driver now has two variable
 point to NULL values (meaning 0 typically), and it expects what ever values end up there 
 to be of type int.
 
-A note about the data types void and status:
+.. note::
 
    Void is a trivial data type which points to nothing.  It is not used
    with respect to variables, but instead with respect to functions.  You
@@ -711,7 +711,7 @@ To stop the execution of a function of type void out of order, use
 type of the value of any expression returned using "return" MUST be the
 same as the data type of the function itself.
 
-A note in stopping execution:
+.. note::
 
    You can stop the execution and throw an error using the ``error()`` efun.
    This is typically useful in the mudlib, but not suitable for players.
@@ -779,7 +779,7 @@ listed on their respective websites. In addition many
 MUDs have a command called "man", "apropos" or a "help" command which allows you
 simply to call up the info files on them.
 
-Note on style:
+.. note::
 
    Some drivers may not require you to declare your functions, and some
    may not require you to specify the return type of the function in its
@@ -916,7 +916,7 @@ Right now you should know the following:
 where filename is the name of the file of the object to be inherited.
 This line goes at the beginning of your code.
 
-Note:
+.. note::
 
    You may see the syntax ``::create()`` or ``::mudlib_setup()`` or even ``::reset()`` in places.
    You do not need fully to understand at this point the full nuances of this,
@@ -1101,7 +1101,7 @@ they can allow you to write some really convoluted looking nonsense like:
 
    i = ( (x=sizeof(tmp=users())) ? --x : sizeof(tmp=children("/std/monster"))-1)
 
-Which says basically:
+.. note::
 
     Assigning to ``tmp`` the array returned by the efun ``users()``, then assign to ``x``
     the value equal to the number of elements to that array.  If the value
@@ -1130,7 +1130,7 @@ would be something like:
 Things like ``for()``, ``while()``, arrays and such will be explained later.
 But the first bit of code is more concise and it executed faster.
 
-NOTE:
+.. note::
 
     A detailed description of all basic LPC operators follows the chapter summary.
 
@@ -1158,11 +1158,12 @@ including what they do to the values they use (if anything) and the value
 that they have.
 
 The operators described here are:
+
 .. code-block:: c
 
-    =    +    -    *    /    %    +=    -=    *=    /=    %=
-    --    ++    ==    !=    >    <    >=    <=    !    &&    ||
-    ->    ? :
+     =    +    -    *    /    %    +=    -=    *=    /=    %=
+     --    ++    ==    !=    >    <    >=    <=    !    &&    ||
+     ->    ? :
 
 Those operators are all described in a rather dry manner below, but it is best
 to at least look at each one, since some may not behave *exactly* as
