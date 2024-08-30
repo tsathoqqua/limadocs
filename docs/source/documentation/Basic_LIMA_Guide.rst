@@ -917,19 +917,21 @@ where filename is the name of the file of the object to be inherited.
 This line goes at the beginning of your code.
 
 Note:
-You may see the syntax ``::create()`` or ``::mudlib_setup()`` or even ``::reset()`` in places.
-You do not need fully to understand at this point the full nuances of this,
-but you should have a clue as to what it is. The "::" operator is a way
-to call a function specifically in an inherited object (called the scope
-resolution operator).  For instance, most MUDs' ``indoor_room.c`` or ``room.c`` has a function
-called ``create()``.  When you inherit ``room.c`` and configure it, you are doing
-what is called overriding the ``create()`` function in ``room.c``.  This means
-that whenever ANYTHING calls ``create()``, it will call *your* version and not
-the one in ``room.c``.  However, there may be important stuff in the ``room.c``
-version of ``create()``.  The ``::`` operator allows you to call the ``create()`` in
-``room.c`` instead of your ``create()``.
+
+   You may see the syntax ``::create()`` or ``::mudlib_setup()`` or even ``::reset()`` in places.
+   You do not need fully to understand at this point the full nuances of this,
+   but you should have a clue as to what it is. The "::" operator is a way
+   to call a function specifically in an inherited object (called the scope
+   resolution operator).  For instance, most MUDs' ``indoor_room.c`` or ``room.c`` has a function
+   called ``create()``.  When you inherit ``room.c`` and configure it, you are doing
+   what is called overriding the ``create()`` function in ``room.c``.  This means
+   that whenever ANYTHING calls ``create()``, it will call *your* version and not
+   the one in ``room.c``.  However, there may be important stuff in the ``room.c``
+   version of ``create()``.  The ``::`` operator allows you to call the ``create()`` in
+   ``room.c`` instead of your ``create()``.
 
 An example:
+
 .. code-block:: c
 
    //Example #1
@@ -937,6 +939,7 @@ An example:
 
    void create() { create(); }
 
+And another example:
 
 .. code-block:: c
 
@@ -969,73 +972,82 @@ chapter will teach you about the basic elements of LPC which will allow you to
 define your own functions using the manipulation of variables.
 
 6.2 Values and objects
+----------------------
+
 Basically, what makes objects on the MUD different are two things:
-1) Some have different functions
-2) All have different values
+
+   1. Some have different functions
+   2. All have different values
 
 Now, all player objects have the same functions.  They are therefore
 differentiated by the values they hold.  For instance, the player
-named "Forlock" is different from "Descartes" *at least* in that they
-have different values for the variable true_name, those being
+named "Forlock" is different from "Cartesius" *at least* in that they
+have different values for the variable ``name``, those being
 "cartesius" and "forlock".
 
 Therefore, changes in the game involve changes in the values of the objects
-in the game.  Functions are used to name specific process for manipulating
-values.  For instance, the create() function is the function whose
+in the game. Functions are used to name specific process for manipulating
+values.  For instance, the ``setup()`` function is the function whose
 process is specifically to initialize the values of an object.
 Within a function, it is specifically things called instructions which are
 responsible for the direct manipulation of variables.
 
 6.3 Local and global variables
+------------------------------
+
 Like variables in most programming language, LPC variables may be declared
 as variables "local" to a specific function, or "globally" available
-to all functions.  Local variables are declared inside the function which
+to all functions. Local variables are declared inside the function which
 will use them.  No other function knows about their existence, since
 the values are only stored in memory while that function is being executed.
 A global variable is available to any function which comes after its
-declaration in the object code.  Since global variables take up RAM for
+declaration in the object code. Since global variables take up RAM for
 the entire existence of the object, you should use them only when
 you need a value stored for the entire existence of the object.
+
 Have a look at the following 2 bits of code:
 
------
-int x;
+.. code-block:: c
 
-int query_x() { return x; }
+   int x;
 
-void set_x(int y) { x = y; }
------
+   int query_x() { return x; }
+   void set_x(int y) { x = y; }
 
------
-void set_x(int y) {
-    int x;
+.. code-block:: c
 
-    x = y;
-    write("x is set to x"+x+" and will now be forgotten.\n");
-}
------
+   void set_x(int y) 
+   {
+       int x;
 
-In the first example, x is declared outside of any functions, and therefore
+       x = y;
+       write("x is set to x"+x+" and will now be forgotten.\n");
+   }
+
+In the first example, ``x`` is declared outside of any functions, and therefore
 will be available to any function declared after it.  In that example,
-x is a global variable.
-In the second example, x is declared inside the function set_x().  It
-only exists while the function set_x() is being executed.  Afterwards,
-it ceases to exist.  In that example, x is a local variable.
+``x`` is a global variable.
+
+In the second example, ``x`` is declared inside the function ``set_x()``.  It
+only exists while the function ``set_x()`` is being executed. Afterwards,
+it ceases to exist. In that example, ``x`` is a local variable.
 
 6.4 Manipulating the values of variables
+----------------------------------------
+
 Instructions to the driver are used to manipulate the values of variables.
 An example of an instruction would be:
 
------
-x = 5;
------
+.. code-block:: c
+
+   x = 5;
 
 The above instruction is self-explanatory.  It assigns to the variable
-x the value 5.  However, there are some important concepts in involved
+``x`` the value 5. However, there are some important concepts in involved
 in that instruction which are involved in instructions in general.
-The first involves the concept of an expression.  An expression is
+The first involves the concept of an expression. An expression is
 any series of symbols which have a value.  In the above instruction,
-the variable x is assigned the value of the expression 5.  Constant
+the variable ``x`` is assigned the value of the expression 5.  Constant
 values are the simplest forms in which expressions can be put.  A constant
 is a value that never changes like the int 5 or the string "hello".
 The last concept is the concept of an operator.  In the above example,
@@ -1044,63 +1056,87 @@ the assignment operator = is used.
 There are however many more operators in LPC, and expressions can get
 quite complex.  If we go up one level of complexity, we get:
 
------
-y = 5;
-x = y +2;
------
+.. code-block:: c
+
+   y = 5;
+   x = y +2;
 
 The first instruction uses the assignment operator to assign the value
 of the constant expression 5 to the variable y.  The second one
 uses the assignment operator to assign to x the value of the expression
-(y+2) which uses the addition operator to come up with a value which
+``(y+2)`` which uses the addition operator to come up with a value which
 is the sum of the value of y and the value of the constant expression 2.
+
 Sound like a lot of hot air?
 
 In another manner of speaking, operators can be used to form complex
-expressions.  In the above example, there are two expressions in the
-one instruction x = y + 2;:
-    1) the expression y+2
-    2) the expression x = y + 2
+expressions. In the above example, there are two expressions in the
+one instruction ``x = y + 2;``:
+
+    1. The expression ``y+2``
+    2. The expression ``x = y + 2``
+
 As stated before, all expressions have a value.  The expression
-y+2 has the value of the sum of y and 2 (here, 7);
-The expression x = y + 2 *also* has the value of 7.
+``y+2`` has the value of the sum of ``y`` and 2 (here, 7);
+
+The expression ``x = y + 2`` *also* has the value of 7.
+
 So operators have to important tasks:
-    1) They *may* act upon input like a function
-    2) They evaluate as having a value themselves.
+
+    1. They *may* act upon input like a function
+    2. They evaluate as having a value themselves.
+
 Now, not all operators do what 1 does.  The = operators does act upon
 the value of 7 on its right by assigning that value to x.  The operator
 + however does nothing.  They both, however, have their own values.
 
 6.5 Complex expressions
-As you may have noticed above, the expression x = 5 *itself* has a value
+-----------------------
+
+As you may have noticed above, the expression ``x = 5`` *itself* has a value
 of 5.  In fact, since LPC operators themselves have value as expressions,
-they cal allow you to write some really convoluted looking nonsense like:
-    i = ( (x=sizeof(tmp=users())) ? --x : sizeof(tmp=children("/std/monster"))-1)
-which says basically:
-    assing to tmp the array returned by the efun users(), then assign to x
+they can allow you to write some really convoluted looking nonsense like:
+
+.. code-block:: c
+
+   i = ( (x=sizeof(tmp=users())) ? --x : sizeof(tmp=children("/std/monster"))-1)
+
+Which says basically:
+
+    Assigning to ``tmp`` the array returned by the efun ``users()``, then assign to ``x``
     the value equal to the number of elements to that array.  If the value
-    of the expression assigning the value to x is true (not 0), then assign
-    x by 1 and assign the value of x-1 to i.  If x is false though,
-    then set tmp to the array returned by the efun children(), and then
-    assign to i the value of the number of members in the array tmp -1.
+    of the expression assigning the value to ``x`` is true (not 0), then assign
+    ``x`` by 1 and assign the value of ``x-1`` to ``i``.  If ``x`` is false though,
+    then set ``tmp`` to the array returned by the efun ``children()``, and then
+    assign to ``i`` the value of the number of members in the array ``tmp`` -1.
+
 Would you ever use the above statement? I doubt it.  However you might
 see or use expressions similar to it, since the ability to consolidate
 so much information into one single line helps to speed up the execution of
 your code.  A more often used version of this property of LPC operators
 would be something like:
+
+.. code-block:: c
+
     x = sizeof(tmp = users());
     while(i--) write((string)tmp[i]->query_name()+"\n");
-instead of writing something like:
+
+.. code-block:: c
+
     tmp = users();
     x = sizeof(tmp);
-    for(i=0; iquery_name()+"\n");
-Things like for(), while(), arrays and such will be explained later.
+    for(i=0; tmp[i]->query_name()+"\n");
+
+Things like ``for()``, ``while()``, arrays and such will be explained later.
 But the first bit of code is more concise and it executed faster.
 
-NOTE: A detailed description of all basic LPC operators follows the chapter
-summary.
+NOTE:
+
+    A detailed description of all basic LPC operators follows the chapter summary.
 
 6.6 Chapter Summary
+-------------------
+
 You now know how to declare variables and understand the difference between
 declaring and using them globally or locally.  Once you become familiar
 with your driver's efuns, you can display those values in many different
@@ -1112,35 +1148,41 @@ players can pick more.  Unfortunately, you do not know how to have
 code executed in anything other than a linera fashion.  In other words,
 hold off on that apple until the next chapter, cause you do not know
 how to check if the apples picked is equal to the number of apples in the
-tree.  You also do not know about the special function init() where you
-give new commands to players.  But you are almost ready to code a nice,
-fairly complex area.
+tree.  
 
 6.7 LPC operators
+-----------------
+
 This section contains a detailed listing of the simpler LPC operators,
 including what they do to the values they use (if anything) and the value
 that they have.
 
 The operators described here are:
-=    +    -    *    /    %    +=    -=    *=    /=    %=
---    ++    ==    !=    >    <    >=    <=    !    &&    ||
-->    ? :
+.. code-block:: c
+
+    =    +    -    *    /    %    +=    -=    *=    /=    %=
+    --    ++    ==    !=    >    <    >=    <=    !    &&    ||
+    ->    ? :
 
 Those operators are all described in a rather dry manner below, but it is best
 to at least look at each one, since some may not behave *exactly* as
 you think.  But it should make a rather good reference guide.
 
-= assignment operator:
-    example: x = 5;
-    value: the value of the variable on the *left* after its function is done
-    explanation: It takes the value of any expression on the *right* and
-      assigns it to the variable on the *left*.  Note that you must use
-      a single variable on the left, as you cannot assign values to 
-      constants or complex expressions.
+* **=** Assignment operator:
 
-+ addition operator:
-    example: x + 7
-    value: The sum of the value on the left and the value on the right
+  Example: ``x = 5;``
+
+  Value: the value of the variable on the *left* after its function is done
+  explanation: It takes the value of any expression on the *right* and
+  assigns it to the variable on the *left*.  Note that you must use
+  a single variable on the left, as you cannot assign values to 
+  constants or complex expressions.
+
+* **+** Addition operator:
+  
+  Example: ``x + 7``
+
+  Value: The sum of the value on the left and the value on the right
     exaplanation: It takes the value of the expression on the right and
       adds it to the value of the expression on the left. For values
       of type int, this means the numerical sum.  For strings,
