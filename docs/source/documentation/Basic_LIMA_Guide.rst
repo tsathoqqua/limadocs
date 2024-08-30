@@ -1650,7 +1650,7 @@ get executed at least one time, no matter what ``x`` is.
 
 .. note::
     
-    The ``do{} while();`` construct is rather arcana example from 1993, and not something
+    The ``do{} while();`` construct is a rather arcane example from 1993, and not something
     you would encounter in a modern mudlib.
 
 
