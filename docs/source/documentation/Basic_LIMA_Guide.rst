@@ -192,7 +192,7 @@ to view the code), then it assumes you mean the file ``/wiz/cartesius/workroom.c
 ---------------------------
 Some of the file names in the LIMA mudlib can be rather long, and it gets tiresome writing them out. So there
 are shorter versions of most of the standard files used in the library. These can be seen in 
-the file ``/include/mudlib.h``. Using the `more <../command/more.html>` command on this file will show you
+the file ``/include/mudlib.h``. Using the `more <../command/more.html>`_ command on this file will show you
 something like:
 
 .. code-block:: c
@@ -400,7 +400,7 @@ LPC object are made up of zero or more variables manipulated by one or more func
 which these functions appear in code is irrelevant.  The driver uses the LPC code you write 
 by loading copies of it into memory whenever it is first referenced and additional copies
 through cloning.  When each object is loaded into memory, all the variables initially point to no value. 
-The ``setup()``function in LIMA is used to give initial values to variables in objects.  The function 
+The ``setup()`` function in LIMA is used to give initial values to variables in objects.  The function 
 for creation is called immediately after the object is loaded into memory. However, if you are reading 
 this page with no prior programming experience, you may not know what a function is or how it gets 
 called.  And even if you have programming experience, you may be wondering how the process of 
