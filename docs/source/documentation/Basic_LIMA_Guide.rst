@@ -813,35 +813,37 @@ no value are of type void.
 After examining your workroom code, it might look something like this
 (depending on the mudlib):
 
------
-inherit "/std/room";
+.. code-block:: c
 
-void create() {
-    ::create();
-    set_property("light", 2);
-    set_property("indoors", 1);
-    set("short", "Descartes' Workroom");
-    set("long", "This is where Descartes works.\nIt is a cube.\n");
-    set_exits( ({ "/d/standard/square" }), ({ "square" }) );
-}
------
+   inherit INDOOR_ROOM;
+
+   void setup()
+   {
+      set_brief("Cartesius's Workroom");
+      set_long("It's pretty empty, seems like nobody is working here.");
+      set_exits((["down":"^std/room/Wizroom"]));
+   }
 
 If you understand the entire textbook to this point, you should recognize
 of the code the following:
-    1) create() is the definition of a function (hey! he did not declare it)
-    2) It makes calls to set_property(), set(), and set_exits(), none
+
+    1. ``setup()`` is the definition of a function (hey! he did not declare it)
+    2. It makes calls to ``set_brief()``, ``set_long()``, and ``set_exits()``, none
        of which are declared or defined in the code.
-    3) There is a line at the top that is no variable or function declaration
+    3. There is a line at the top that is no variable or function declaration
        nor is it a function definition!
 
 This chapter will seek to answer the questions that should be in your head
 at this point:
-    1) Why is there no declaration of create()?
-    2) Where are the functions set_property(), set(), and set_exits() declared
+
+    1. Why is there no declaration of ``setup()``?
+    2. Where are the functions ``set_brief()``, ``set_long()``, and ``set_exits()`` declared
        and defined?
-    3) What the hell is that line at the top of the file?
+    3. What the hell is that line at the top of the file?
 
 5.2 Object oriented programming
+-------------------------------
+
 Inheritance is one of the properties which define true object oriented
 programming (OOP).  It allows you to create generic code which can be used
 in many different ways by many different programs.  What a mudlib does is
