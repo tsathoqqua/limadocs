@@ -19,17 +19,26 @@ Windows Subsystem for Linux (WSL)
   :width: 700
   :alt: WSL Distributions
 
-2. Install Windows Subsystem for Linux - we recommmend Ubuntu, but up to you:
+2. Install Windows Subsystem for Linux - we recommmend Ubuntu, but up to you. 
+   Make sure to enable Windows Subsystem for Linux (Google this if you have WSL issues). You should not need 
+   to use administrator on your PC:
 
-    ``wsl --install -D Ubuntu``
+    ``wsl --install -d Ubuntu``
 
-3. Set a username and a password for your Linux:
+3. Start the wsl. Could be done with simply pressing your windows key and searching for "ubuntu" or "debian", and clicking
+   the icon. You might need to restart Windows after installing WSL.
+
+.. image:: images/wsl_step1b.png
+  :width: 700
+  :alt: Starting the WSL
+
+4. Set a username and a password for your Linux:
 
 .. image:: images/wsl_step2.png
   :width: 700
   :alt: Set username and password
 
-4. Update apt, and install packages needed for compiling FluffOS
+5. Update apt, and install packages needed for compiling FluffOS
 
     |   ``sudo apt update``
 
@@ -53,7 +62,7 @@ or for Debian:
   :width: 700
   :alt: apt install
 
-5. Clone LIMA sources from github. It's available from two sources:
+6. Clone LIMA sources from github. It's available from two sources:
 
     |   Stable: https://github.com/fluffos/lima
     |   Development: https://github.com/tsathoqqua/lima
@@ -64,7 +73,7 @@ or for Debian:
   :width: 700
   :alt: git clone
 
-6. Use --recurse-submodules to checkout the fluffos driver submodule. You can decide not to and use another driver if you want. LIMA comes with a build script after checking out the files:
+7. Use --recurse-submodules to checkout the fluffos driver submodule. You can decide not to and use another driver if you want. LIMA comes with a build script after checking out the files:
 
     |    ``cd lima/adm/dist``   
     |    ``./rebuild``
@@ -75,11 +84,11 @@ or for Debian:
   :width: 700
   :alt: compile finished
 
-7. If you get complaints about missing dependencies here, try to install them via ``apt install`` or use ``apt search`` to find them.
+8. If you get complaints about missing dependencies here, try to install them via ``apt install`` or use ``apt search`` to find them.
     |    ``sudo apt install libssl3``
     |    (Just an example)
 
-8. After build has completed, try:
+9. After build has completed, try:
 
     ``./run``
 
