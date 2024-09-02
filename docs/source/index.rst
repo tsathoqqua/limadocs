@@ -15,10 +15,10 @@ Learning paths
 ==============
 We provide several learning paths here:
 
-1. `LPC Basics learning path<documentation/Basic_LIMA_Guide.html>`_ is for people
+1. `LPC Basics learning path <documentation/Basic_LIMA_Guide.html>`_ is for people
    new to programming, LPC and MUDs.
 
-2. `Learning LIMA basics<documenation/LIMA_Domain_development.html>`_ will teach you about 
+2. `Learning LIMA basics <documenation/LIMA_Domain_development.html>`_ will teach you about 
    developing your own areas, rooms, monsters, shopkeepers, weapons, armour, items, and a 
    small quest.
 
