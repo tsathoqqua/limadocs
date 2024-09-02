@@ -5,7 +5,7 @@ LIMA Domain Development
 Prerequisites
 -------------
 A basic understand of LPC and how LPMUDs work is required. This can be gained from reading 
-the `LPC Basics learning path<Basic_LIMA_Guide.html>`_. So at this point you need to understand
+the `LPC Basics learning path <Basic_LIMA_Guide.html>`_. So at this point you need to understand
 variables, function declarations, function calls, objects, flows, loops, some basic Linux commands
 that will be useful for working with the MUD, and the filestructure used.
 
@@ -31,7 +31,7 @@ CHAPTER 1: Creating a domain
 Domains are a mechanism that simplifies assigning (groups of) privileges to wizards and protections to directories.
 
 Also, since the creation of domains and the inclusion of members in those domains is tightly controlled by 
-`admtool<../command/admtool>`_, domains and their membership can be trusted in all contexts.  
+`admtool <../command/admtool>`_, domains and their membership can be trusted in all contexts.  
 This trust is used in certain parts of the mudlib to classify wizards and the commands and
 options available to them. 
 
