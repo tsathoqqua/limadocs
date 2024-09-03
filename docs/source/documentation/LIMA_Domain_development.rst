@@ -351,7 +351,7 @@ At the end of the parse, the parser decides there is a successfull match for the
 to call ``do_listen()`` in the verb, this is shown in line 15-18 above. Let us look closer at that
 specific code in line 17:
 
-.. code-block:: C
+.. code-block:: c
 
    environment(this_body())->do_listen();
 
@@ -360,15 +360,18 @@ meaning ``swamp1.c``, and then call ``do_listen()`` in the room! So if we wanted
 functionality we have just learned that the verb calls a built-in function we inherited, but
 we could also override it and return something random like:
 
-   |   "You hear "+(random(3)+2)+" animals fighting in the distance".
+.. code-block:: c
+
+      "You hear "+(random(3)+2)+" animals fighting in the distance"
 
 ``random(3)`` returns a number between 0-2 plus 2, so that would turn into 2-4 animals.
 
 **Exercise 4**
 
-   Add a new function called ``do_listen()`` to ``swamp1.c`` that returns a string with
-   with the fighting animals above. Rememeber that the function declaration should stated
-   that the function takes no parameters, but returns a string.
+   Add a new function called ``do_listen()`` to ``swamp1.c`` that uses ``write()`` to send
+   the string with the fighting animals above to the current user. 
+   Remember, that the function declaration should state that the function takes no parameters, and returns
+   nothing.
 
 After you are done updating the room, update it, go to it, and do several 'listen' to test
 the new functionality.
@@ -379,5 +382,37 @@ the new functionality.
 
     .. code-block:: c
     
-       string do_listen() { return "...."; }
+       void do_listen() { write("...."); }
+
+**Exercise 5**
+
+   Use the `::` operator to call the original ``do_listen()`` function that you have
+   overwritten in your current code, so they are both returned.
+
+.. tip::
+
+   Here is the final code for Exercise 5, if you cannot get it working.
+
+   .. code-block:: c
+   
+       inherit OUTDOOR_ROOM;
+
+      void setup()
+      {
+         set_brief("Murky Swamp");
+         set_long("You find yourself in a murky, dank swamp. The air is thick with humidity "
+                  "and the smell of decaying vegetation. Twisted trees rise from the muddy "
+                  "water, their gnarled branches reaching towards the dim sky. Patches of "
+                  "sickly green algae float on the surface of the stagnant pools. "
+                  "The occasional croak of a frog or buzz of an insect breaks the eerie "
+                  "silence.");
+         set_listen("You hear the occasional croak of frogs and the buzzing of insects.");
+         set_smell("The air is thick with the smell of decay and stagnant water.");
+      }
+
+      void do_listen()
+      {
+         ::do_listen();
+         write("You hear " + (random(3) + 2) + " animals fighting in the distance");
+      }
 
