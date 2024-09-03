@@ -213,7 +213,7 @@ So what is in here:
    - Line 5, the brief description of the room. This is shown above the long description.
    - Line 6-11, the long description of the room broken into lines for easy readability.
 
-**Exercise 2:**
+**Exercise 2**
 
    Write the code, save this file as `/domains/pinto/room/swamp1.c`, then try to update it to check for 
    issues. Finally, `goto <../command/goto.html>`_ the room. 
@@ -228,3 +228,156 @@ So what is in here:
 
 Did it work? Otherwise review the error messages the `update <../command/update.html>`_ command 
 gives you. The code presented above can be copy pasted using the icon next to it.
+
+Let us add two more functions to set the smell and a default message for when people listen.
+
+.. code-block:: c
+   :linenos:
+
+   inherit OUTDOOR_ROOM;
+
+   void setup()
+   {
+      set_brief("Murky Swamp");
+      set_long("You find yourself in a murky, dank swamp. The air is thick with humidity "
+               "and the smell of decaying vegetation. Twisted trees rise from the muddy "
+               "water, their gnarled branches reaching towards the dim sky. Patches of "
+               "sickly green algae float on the surface of the stagnant pools. "
+               "The occasional croak of a frog or buzz of an insect breaks the eerie "
+               "silence.");
+      set_listen("You hear the occasional croak of frogs and the buzzing of insects.");
+      set_smell("The air is thick with the smell of decay and stagnant water.");
+   }
+
+New additions:
+
+   - Line 12, set a listen description if someone uses the 'listen' verb (`/cmds/verbs/listen.c`)
+   - Line 13, set a smell description if someone uses the 'smell' verb (`/cmds/verbs/smell.c`)
+
+**Exercise 3**
+
+   Update the room, go there, then use ``listen`` and ``smell`` to test the descriptions.
+   
+.. note::
+
+   If you end up in Void at some point due to an error use the `wizz <../command/wizz.html>`_ command
+   to go to the Wizard Lounge, then update the room and then `goto <../command/goto.html>`_ to go
+   back to the swamp room.
+
+So what do the verbs actually do? Let us look at the listen verb (`/cmds/verbs/listen.c`).
+
+.. code-block:: c
+   :linenos:
+
+   /* Do not remove the headers from this file! see /USAGE for more info. */
+
+   inherit VERB_OB;
+
+   void do_listen_to_obj_with_obj(object ob1, object ob2)
+   {
+      ob2->do_listen(ob1);
+   }
+
+   void do_listen_to_obj(object ob)
+   {
+      ob->do_listen();
+   }
+
+   void do_listen()
+   {
+      environment(this_body())->do_listen();
+   }
+
+   void create()
+   {
+      add_rules(({"", "to OBJ", "to OBJ with OBJ"}));
+   }
+
+The ``create()`` statement at the bottom tells us how we can listen. The rules say we can do:
+
+   1. listen
+   2. listen to OBJ
+   3. listen to OBJ with OBJ
+
+So, ``listen`` would be rule 1, ``listen to door`` would be rule 2, 
+``listen to body with stethoscope`` would be rule 3. The verb *centrally* defines how players
+can interact with your MUD. If you want to extend the ways players can interact, you change the verb.
+To verify our action, try to modify your the listen command you did in the swamp room earlier to:
+
+    | ``parse listen``
+
+This should us how the parser built into FluffOS tries to discover what to call, when the player
+types ``listen``:
+
+   |  /cmds/verbs/>parse listen
+   |  Trying interpretation: listen:
+   |  Trying rule: 
+   |    parse_rule
+   |      we_are_finished
+   |      Trying can_listen ... (/std/race/documentation#327)
+   |      Trying can_listen ... (/std/race/documentation#327)
+   |      Trying can_verb ... (/std/race/documentation#327)
+   |      Trying can_verb_rule ... (/std/race/documentation#327)
+   |      Trying can_listen ... (/cmds/verbs/listen)
+   |      Trying can_listen ... (/cmds/verbs/listen)
+   |      Trying can_verb ... (/cmds/verbs/listen)
+   |      Trying can_verb_rule ... (/cmds/verbs/listen)
+   |      Return value was: 1
+   |      Saving successful match: do_listen (cmds/verbs/listen)
+   |    exiting parse_rule ...
+   |  Calling do_listen ...
+   |  You hear nothing unusual.
+   |  1
+
+The lines after 'we_are_finished' shows the parser probing ``/std/race/documentation#327`` which
+is the body of the player calling the parse command, and getting probed for ``can_listen()``, then
+same probe in the verb object, then finally falling back to calling ``can_verb_rule()``.
+This function is called with the following arguments:
+
+.. code-block:: c
+
+   verb->can_verb_rule("listen");
+
+This function finally returns 1, since there is no functionality in the verb to check for deaf 
+players. 
+
+.. note::
+
+    You can use the wizard shell to check what the verb returns like this:
+
+    ``@./cmds/verbs/listen->can_verb_rule("listen")``
+
+At the end of the parse, the parser decides there is a successfull match for the rule, and decides
+to call ``do_listen()`` in the verb, this is shown in line 15-18 above. Let us look closer at that
+specific code in line 17:
+
+.. code-block:: C
+
+   environment(this_body())->do_listen();
+
+So, find the environment of ``this_body()``, that would be the room the player is standing in
+meaning ``swamp1.c``, and then call ``do_listen()`` in the room! So if we wanted more advanced
+functionality we have just learned that the verb calls a built-in function we inherited, but
+we could also override it and return something random like:
+
+   |   "You hear "+(random(3)+2)+" animals fighting in the distance".
+
+``random(3)`` returns a number between 0-2 plus 2, so that would turn into 2-4 animals.
+
+**Exercise 4**
+
+   Add a new function called ``do_listen()`` to ``swamp1.c`` that returns a string with
+   with the fighting animals above. Rememeber that the function declaration should stated
+   that the function takes no parameters, but returns a string.
+
+After you are done updating the room, update it, go to it, and do several 'listen' to test
+the new functionality.
+
+.. tip::
+
+    The function that should be added should look like this:
+
+    .. code-block:: c
+    
+       string do_listen() { return "...."; }
+
