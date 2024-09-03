@@ -33,7 +33,7 @@ first, before turning to the tip box.
 
 .. note::
 
-    *Armour, armor, colour, colour, categorisation, categorazation?*
+    *Armour, armor, colour, colour, categorisation, categorization?*
 
     LIMA was a mixture of US English and UK English in the 1990s, but has since then been straightened
     out to be fully UK English. This means you can trust that all armour functions, e.g., will be
@@ -84,15 +84,15 @@ A number of directories have been created inside ``/domains/pinto/``:
   * Room: Areas are saved in series of connected rooms.
   * Weapon: Sword, grenades, clubs, pistols, rocks, anything that can be used as a weapon.
 
-  We will be writing code for each of those folder during this guide.
+We will be writing code for each of those folder during this guide.
 
-  1.1 Assigning people
-  --------------------
-  If you were building real MUD, you would now use the `admtool <../command/admtool.html>`_ 
-  to assign users and a domain lord (lead developer). You can do this to test the functionality,
-  but it is not needed for the purpose of this guide.
+1.1 Assigning people
+--------------------
+If you were building real MUD, you would now use the `admtool <../command/admtool.html>`_ 
+to assign users and a domain lord (lead developer). You can do this to test the functionality,
+but it is not needed for the purpose of this guide.
 
-  It is also possible to use the 'show' command to show who is assigned a domain role.
+It is also possible to use the 'show' command to show who is assigned a domain role.
 
 .. note::
 
