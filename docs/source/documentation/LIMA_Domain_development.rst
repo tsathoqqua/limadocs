@@ -4,46 +4,57 @@ LIMA Domain Development
 
 Prerequisites
 -------------
-A basic understand of LPC and how LPMUDs work is required. This can be gained from reading 
-the `LPC Basics learning path <Basic_LIMA_Guide.html>`_. So at this point you need to understand
-variables, function declarations, function calls, objects, flows, loops, some basic Linux commands
-that will be useful for working with the MUD, and the filestructure used.
+To fully benefit from this guide, you should have a basic understanding of LPC and how 
+LPMUDs function. This foundational knowledge can be acquired by following the 
+`LPC Basics learning path <Basic_LIMA_Guide.html>`_. By this point, you should be familiar with variables, 
+function declarations, function calls, objects, control flows, loops, some basic Linux commands 
+that are helpful for working with the MUD, and the file structure used.
 
-Help make this document better
-------------------------------
-This guide has been written for the newest FluffOS driver and LIMA Mudlib features.
+Help Improve This Document
+--------------------------
+This guide is designed for the latest features of the FluffOS driver and LIMA Mudlib.
 
-If you spot errors and omissions, please submit an issue at https://github.com/tsathoqqua/limadocs/ and describe
-the issue you found, or the addition you would like, or even better make a pull request.
+If you notice any errors or omissions, please submit an issue at https://github.com/tsathoqqua/limadocs/. 
+Describe the problem you found or suggest an addition. Even better, feel free to submit a pull request 
+with your proposed changes.
 
 Introduction
 ============
-This document contains several parts, and it is recommended to read it at the order the chapters are
-presented in, but they can be used as a reference at a later point should you need a refresher for 
-a specific topic. The chapters will build up an ongoing example, and all the example code produced
-here can be found under ``/domains/std/examples/`` in appropriate folders.
+This document is divided into several sections, and it is recommended that you read them in the order 
+they are presented. However, they can also serve as a reference if you need a refresher on a particular 
+topic later on. The chapters will build on a continuous example, that you will build in the new domain
+*pinto* (also a bean). 
 
-The ``/domains/std`` folder contains a lot of working examples for rooms, items and monsters that you
-can refer to to learn more about features not documented directly in this guide.
+The ``/domains/std`` directory contains many other practical examples of rooms, items, and monsters, 
+which you can refer to for learning about features not directly covered in this guide.
 
-CHAPTER 1: Creating a domain
+CHAPTER 1: Creating a Domain
 ============================
-Domains are a mechanism that simplifies assigning (groups of) privileges to wizards and protections to directories.
+Domains are a mechanism that simplifies the assignment of privileges to wizards and the 
+protection of directories.
 
-Also, since the creation of domains and the inclusion of members in those domains is tightly controlled by 
-`admtool <../command/admtool>`_, domains and their membership can be trusted in all contexts.  
-This trust is used in certain parts of the mudlib to classify wizards and the commands and
-options available to them. 
+Since domain creation and membership are strictly controlled using the `admtool <../command/admtool>`_, 
+domains and their members can be trusted in all contexts. This trust is utilized in specific parts of 
+the mudlib to categorize wizards and determine the commands and options available to them.
 
-Each domain has a name, a set of "domain lords", and a set of members. Typically, it will also have a 
-directory associated with it, such as ``/domains/name/``.  The name must be lower case, alphabetic characters.
-The domain lords are the wizards who allow/revoke membership in the domain and have the control privilege 
-for the domain. The domain members simply have domain data privileges.
+Each domain has a unique name, a set of "domain lords," and a group of members. Typically, each domain 
+also has an associated directory, such as ``/domains/name/``. The domain name must be composed of lowercase, 
+alphabetic characters. Domain lords are wizards with the authority to grant or revoke domain membership 
+and have control privileges over the domain. Domain members, on the other hand, have data privileges 
+within the domain.
+
+Let us create the *pinto* domain, now. Use the admtool to do this.
+
+.. tip::
+
+    1. Open 'admtool'
+    2. Goto the privileged menu '1'
+    3. Goto domains edit
+    4. Create the pinto domain, 'c pinto'.
+    5. Verify the domain creating succeeded by going to ``/domains`` and list the files there.
 
 .. note::
-    
-    An admin is just a wizard who is a member of the admin domain. You can make a wizard an admin
-    by adding them to this domain using the admtool. Domain controls are under '1' (admin privilege),
-    then "Domain".
 
-
+   An admin is simply a wizard who belongs to the admin domain. You can grant admin status to a wizard by 
+   adding them to this domain using the admtool. Domain controls are located under option '1' (admin 
+   privilege), then "Domain".
