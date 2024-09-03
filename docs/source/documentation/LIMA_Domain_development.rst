@@ -130,7 +130,7 @@ which is highly recommended as it provides code that is easier to move around.
 -------------------
 In some classic LPMUDs it was best practice for area coders to create an include file like this one:
 
-.. code-block::c
+.. code-block:: c
 
    //Some general shortcuts
    #define TB     this_body()
@@ -162,7 +162,7 @@ by defining them at the top.
 
 An example of some great defines from the `locate <../command/locate.html>`_ command:
 
-.. code-block::c
+.. code-block:: c
 
    //Iterations we do per call is hardcoded here
    #define ITERS_PER_CALL 50
