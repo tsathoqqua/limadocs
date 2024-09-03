@@ -31,6 +31,18 @@ through a series of practical examples, and there will be a tip box in each sect
 direct tips on how to accomplish what you are being asked to do. Try to figure out the exercise yourself
 first, before turning to the tip box.
 
+.. note::
+
+    *Armour, armor, colour, colour, categorisation, categorazation?*
+
+    LIMA was a mixture of US English and UK English in the 1990s, but has since then been straightened
+    out to be fully UK English. This means you can trust that all armour functions, e.g., will be
+    always called ``query_armour()`` and not suddenly something else.
+
+    If you want your MUD to be US English, change the interface, i.e., change the 
+    `score <../player_command/score.html>`_ and not the mudlib itself. 
+
+
 CHAPTER 1: Creating a Domain
 ============================
 Domains are a mechanism that simplifies the assignment of privileges to wizards and the 
@@ -54,14 +66,13 @@ If you do not know how to do this, use the tip box found below.
 
 .. tip::
 
-    1. Open 'admtool'
+    1. Open `admtool <../command/admtool.html>`_.
     2. Goto the privileged menu '1'
     3. Goto domains edit
     4. Create the pinto domain, 'c pinto'.
     5. Verify the domain creating succeeded by going to ``/domains`` and list the files there.
 
-A number of directories have been created inside ``/domains/pinto/`` which will be used during
-this guide.
+A number of directories have been created inside ``/domains/pinto/``:
 
   * Armour: Armours, hats, gloves, boots. Things that can be worn with or without protective effect.
   * Consumable: Food, drinks, drugs, healing items, poisons, etc.
@@ -72,6 +83,16 @@ this guide.
     inventory.
   * Room: Areas are saved in series of connected rooms.
   * Weapon: Sword, grenades, clubs, pistols, rocks, anything that can be used as a weapon.
+
+  We will be writing code for each of those folder during this guide.
+
+  1.1 Assigning people
+  --------------------
+  If you were building real MUD, you would now use the `admtool <../command/admtool.html>`_ 
+  to assign users and a domain lord (lead developer). You can do this to test the functionality,
+  but it is not needed for the purpose of this guide.
+
+  It is also possible to use the 'show' command to show who is assigned a domain role.
 
 .. note::
 
