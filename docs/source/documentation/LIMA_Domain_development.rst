@@ -186,3 +186,18 @@ Time to create our first room! The first things to decide is which type of room 
    1. An outdoor room - OUTDOOR_ROOM
    2. An indoor room - INDOOR_ROOM
    3. A room filled with water - WATER_ROOM
+
+For now, let us try to create an OUTDOOR_ROOM where the player might encounter weather and other
+conditions. Starting simple:
+
+.. code-block:: c
+   :linenos:
+
+   inherit OUTDOOR_ROOM;
+
+   void setup() 
+   {
+       set_brief("Murky Swamp");
+       set_long("You find yourself in a murky, dank swamp. The air is thick with humidity and the smell of decaying vegetation. Twisted trees rise from the muddy water, their gnarled branches reaching towards the dim sky. Patches of sickly green algae float on the surface of the stagnant pools. The occasional croak of a frog or buzz of an insect breaks the eerie silence.");
+   }
+
