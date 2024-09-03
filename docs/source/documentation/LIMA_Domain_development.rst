@@ -128,6 +128,12 @@ which is highly recommended as it provides code that is easier to move around.
 
 1.3 Domain #defines
 -------------------
+
+.. note::
+
+    If you are new to programming LPMUDs you might be able to skip this section. It addresses
+    a bad behaviour used in some old mudlibs.
+
 In some classic LPMUDs it was best practice for area coders to create an include file like this one:
 
 .. code-block:: c
@@ -160,7 +166,7 @@ is subject to change/configuration. Do not use them to abbreviate just because y
 to do the typing. This provides easy insight into which variables are built into the objects
 by defining them at the top.
 
-An example of some great defines from the `locate <../command/locate.html>`_ command:
+An example of some better defines from the source for the `locate <../command/locate.html>`_ command:
 
 .. code-block:: c
 
@@ -170,6 +176,13 @@ An example of some great defines from the `locate <../command/locate.html>`_ com
    #define DATA_FILE "/data/locate.codes"
    #define TMP_DATA_FILE "/data/locate.tmp"
 
+So, in conclusion: Do not make include files for domains, they're considered bad style and creates
+less readable code that is harder to maintain.
 
 CHAPTER 2: Creating rooms
 ==========================
+Time to create our first room! The first things to decide is which type of room you want to create:
+
+   1. An outdoor room - OUTDOOR_ROOM
+   2. An indoor room - INDOOR_ROOM
+   3. A room filled with water - WATER_ROOM
