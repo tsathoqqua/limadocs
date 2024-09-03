@@ -67,5 +67,6 @@ If you do not know how to do this, use the tip box found below.
    privilege), then "Domain".
 
 .. warning::
+    
     Do not delete domains that are already in LIMA when you first install it. Some of them are part of
     the security system, and deleting them will render LIMA defunct.
