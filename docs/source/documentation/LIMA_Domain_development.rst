@@ -65,3 +65,7 @@ If you do not know how to do this, use the tip box found below.
    An admin is simply a wizard who belongs to the admin domain. You can grant admin status to a wizard by 
    adding them to this domain using the admtool. Domain controls are located under option '1' (admin 
    privilege), then "Domain".
+
+.. warning::
+    Do not delete domains that are already in LIMA when you first install it. Some of them are part of
+    the security system, and deleting them will render LIMA defunct.
