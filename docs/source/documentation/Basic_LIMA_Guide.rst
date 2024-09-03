@@ -1641,16 +1641,17 @@ amounts of either money or hp from a player until that variable equals
 this way:
  
 .. code-block:: c
+   :linenos:
 
-   1    int x;
-   2
-   3    x = (int)this_body()->query_level();  /* this has yet to be explained */
-   4    while(x > 0) 
-   5    {
-   6        if(random(2)) this_body()->add_money("gold", random(50));
-   7        else this_body()->hurt_us("head",random(10));
-   8        x--;
-   9    }
+   int x;
+   
+   x = (int)this_body()->query_level();  /* this has yet to be explained */
+   while(x > 0) 
+   {
+   if(random(2)) this_body()->add_money("gold", random(50));
+   else this_body()->hurt_us("head",random(10));
+   x--;
+   }
  
 Line 1, definition of ``x``. Line 3 has the expression ``this_body()->query_level()``
 to fetch the level of the player. In line 4, we start a loop that executes so long as ``x`` 
@@ -1670,6 +1671,7 @@ the instructions at least once for everyone, even if their level is
 below the test level:
  
 .. code-block:: c
+   :lineos:
 
     int x;
  
@@ -1729,12 +1731,13 @@ loop. This is optional.
 Example:
  
 .. code-block:: c
+   :lineos:
 
-   1    for(int x= this_player()->query_level(); x>0; x--) 
-   2    {
-   3        if(random(2)) this_body()->add_money("gold", random(50));
-   4        else this_body()->hurt_us("head",random(10));
-   5    }
+   for(int x= this_player()->query_level(); x>0; x--) 
+   {
+       if(random(2)) this_body()->add_money("gold", random(50));
+       else this_body()->hurt_us("head",random(10));
+   }
  
 This ``for()`` loop behaves *exactly* like the ``while()`` example.
 Additionally, if you wanted to initialize 2 variables:
@@ -1764,16 +1767,17 @@ First off, the expression is not a test.  The cases are tests.  A English
 sounding way to read:
  
 .. code-block:: c
+   :lineos:
 
-   1    int x;
-   2
-   3    x = random(5);
-   4    switch(x) {
-   5        case 1: write("X is 1.\n");
-   6        case 2: x++;
-   7        default: x--;
-   8    }
-   9    write(x+"\n");
+   int x;
+   
+   x = random(5);
+   switch(x) {
+       case 1: write("X is 1.\n");
+       case 2: x++;
+       default: x--;
+   }
+   write(x+"\n");
  
 Would be:
  
@@ -1829,12 +1833,13 @@ The ``foreach()`` statement comes in two forms, and in specialized in interactio
 over arrays or mappings. A simple example of a ``foreach()`` could be:
 
 .. code-block:: c
+   :lineos:
 
-   1    foreach(object user in users())
-   2    {
-   3       tell(user,"Hello there!");
-   4       write("We just said \"Hello\" to "+user->query_name());
-   5    }
+   foreach(object user in users())
+   {
+     tell(user,"Hello there!");
+     write("We just said \"Hello\" to "+user->query_name());
+   }
 
 In this example we define ``object user`` as part of the ``foreach()``, iterate over
 the array of users in the order given, and call ``user->query_name()`` on each of the
@@ -1860,14 +1865,15 @@ The names being the keys, and the numbers being the values. Values can be string
 mappings, arrays and other types. A foreach for the mapping above would look like:
 
 .. code-block:: c
+   :lineos:
 
-   1    mapping m = (["cartesius":1,"tsath":2,"forlock":3]);
-   2
-   3    foreach(string name, int val in m)
-   4    {
-   5       tell(find_body(name),"Hello there!");
-   6       write("We just said \"Hello\" to "+name+", value is: "+val);
-   7    }
+   mapping m = (["cartesius":1,"tsath":2,"forlock":3]);
+   
+   foreach(string name, int val in m)
+   {
+      tell(find_body(name),"Hello there!");
+      write("We just said \"Hello\" to "+name+", value is: "+val);
+   }
 
 Notice how the structure of the mapping is reflected in the types defined in the
 ``foreach()``, so ``string name`` since our key is a string, and ``int val`` since our values
@@ -1914,6 +1920,7 @@ to the beginning of the loop.  For instance, say you wanted to avoid
 division by 0:
  
 .. code-block:: c
+   :lineos:
 
    int x= 4;
    while( x > -5) 
@@ -1943,6 +1950,7 @@ something while in a loop, e.g. not healing the player who is the vampire.
 In a for() expression:
 
 .. code-block:: c
+   :lineos:
 
     for(x=3; x>-5; x--) 
     {
@@ -1971,7 +1979,8 @@ continue is most often used with the for() and while() statements.
 break however is mostly used with switch()
  
 .. code-block:: c
- 
+   :lineos:
+
    switch(name) 
    {
        case "cartesius": write("You are borg.\n"); break;
@@ -1984,7 +1993,8 @@ break however is mostly used with switch()
 This functions just like:
  
 .. code-block:: c
- 
+   :lineos:
+
    if(name == "cartesius") write("You are borg.\n");
    else if(name == "flamme") write("You are flamme.\n");
    else if(name == "forlock") write("You are forlock.\n");

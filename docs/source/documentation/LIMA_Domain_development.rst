@@ -221,9 +221,10 @@ So what is in here:
 .. tip::
 
    |  /std> cd ^pinto/room
+   |  New cwd: /domains/std
    |  ^pinto/room/> update swamp1
    |  /domains/pinto/room/swamp1.c: Updated and loaded.
    |  ^pinto/room/> goto swamp1
 
-Did it work? Otherwise review the error messages the ``update`` command gives you. The 
-code presented above can be copy pasted using the icon next to it.
+Did it work? Otherwise review the error messages the `update <../command/update.html>`_ command 
+gives you. The code presented above can be copy pasted using the icon next to it.
