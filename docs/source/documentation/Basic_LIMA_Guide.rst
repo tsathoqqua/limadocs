@@ -1671,7 +1671,7 @@ the instructions at least once for everyone, even if their level is
 below the test level:
  
 .. code-block:: c
-   :lineos:
+   :linenos:
 
     int x;
  
@@ -1731,7 +1731,7 @@ loop. This is optional.
 Example:
  
 .. code-block:: c
-   :lineos:
+   :linenos:
 
    for(int x= this_player()->query_level(); x>0; x--) 
    {
@@ -1767,7 +1767,7 @@ First off, the expression is not a test.  The cases are tests.  A English
 sounding way to read:
  
 .. code-block:: c
-   :lineos:
+   :linenos:
 
    int x;
    
@@ -1833,7 +1833,7 @@ The ``foreach()`` statement comes in two forms, and in specialized in interactio
 over arrays or mappings. A simple example of a ``foreach()`` could be:
 
 .. code-block:: c
-   :lineos:
+   :linenos:
 
    foreach(object user in users())
    {
@@ -1865,7 +1865,7 @@ The names being the keys, and the numbers being the values. Values can be string
 mappings, arrays and other types. A foreach for the mapping above would look like:
 
 .. code-block:: c
-   :lineos:
+   :linenos:
 
    mapping m = (["cartesius":1,"tsath":2,"forlock":3]);
    
@@ -1920,7 +1920,7 @@ to the beginning of the loop.  For instance, say you wanted to avoid
 division by 0:
  
 .. code-block:: c
-   :lineos:
+   :linenos:
 
    int x= 4;
    while( x > -5) 
@@ -1950,7 +1950,7 @@ something while in a loop, e.g. not healing the player who is the vampire.
 In a for() expression:
 
 .. code-block:: c
-   :lineos:
+   :linenos:
 
     for(x=3; x>-5; x--) 
     {
@@ -1979,7 +1979,7 @@ continue is most often used with the for() and while() statements.
 break however is mostly used with switch()
  
 .. code-block:: c
-   :lineos:
+   :linenos:
 
    switch(name) 
    {
@@ -1993,7 +1993,7 @@ break however is mostly used with switch()
 This functions just like:
  
 .. code-block:: c
-   :lineos:
+   :linenos:
 
    if(name == "cartesius") write("You are borg.\n");
    else if(name == "flamme") write("You are flamme.\n");
