@@ -60,6 +60,19 @@ If you do not know how to do this, use the tip box found below.
     4. Create the pinto domain, 'c pinto'.
     5. Verify the domain creating succeeded by going to ``/domains`` and list the files there.
 
+A number of directories have been created inside ``/domains/pinto/`` which will be used during
+this guide.
+
+  * Armour: Armours, hats, gloves, boots. Things that can be worn with or without protective effect.
+  * Consumable: Food, drinks, drugs, healing items, poisons, etc.
+  * Item: Quest items, items for players that can be picked up and typically saved with the player's
+  * Mob: Monsters that can be fought and/or move around the area (hence mobiles).
+  * Npc: Quest givers, shop keepers and other people/monsters that are typically not fought.
+  * Obj: Objects for rooms, furniture, quest items that cannot be picked up by players.
+    inventory.
+  * Room: Areas are saved in series of connected rooms.
+  * Weapon: Sword, grenades, clubs, pistols, rocks, anything that can be used as a weapon.
+
 .. note::
 
    An admin is simply a wizard who belongs to the admin domain. You can grant admin status to a wizard by 
@@ -67,6 +80,6 @@ If you do not know how to do this, use the tip box found below.
    privilege), then "Domain".
 
 .. warning::
-    
+
     Do not delete domains that are already in LIMA when you first install it. Some of them are part of
     the security system, and deleting them will render LIMA defunct.
