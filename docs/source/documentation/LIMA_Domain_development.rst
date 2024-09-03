@@ -195,9 +195,13 @@ conditions. Starting simple:
 
    inherit OUTDOOR_ROOM;
 
-   void setup() 
+   void setup()
    {
-       set_brief("Murky Swamp");
-       set_long("You find yourself in a murky, dank swamp. The air is thick with humidity and the smell of decaying vegetation. Twisted trees rise from the muddy water, their gnarled branches reaching towards the dim sky. Patches of sickly green algae float on the surface of the stagnant pools. The occasional croak of a frog or buzz of an insect breaks the eerie silence.");
+      set_brief("Murky Swamp");
+      set_long("You find yourself in a murky, dank swamp. The air is thick with humidity "
+               "and the smell of decaying vegetation. Twisted trees rise from the muddy "
+               "water, their gnarled branches reaching towards the dim sky. Patches of "
+               "sickly green algae float on the surface of the stagnant pools. "
+               "The occasional croak of a frog or buzz of an insect breaks the eerie "
+               "silence.");
    }
-
