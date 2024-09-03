@@ -187,6 +187,9 @@ Time to create our first room! The first things to decide is which type of room 
    2. An indoor room - INDOOR_ROOM
    3. A room filled with water - WATER_ROOM
 
+
+2.1 A simple room
+-----------------
 For now, let us try to create an OUTDOOR_ROOM where the player might encounter weather and other
 conditions. Starting simple:
 
@@ -229,6 +232,9 @@ So what is in here:
 Did it work? Otherwise review the error messages the `update <../command/update.html>`_ command 
 gives you. The code presented above can be copy pasted using the icon next to it.
 
+2.1 Adding smell and sound
+--------------------------
+
 Let us add two more functions to set the smell and a default message for when people listen.
 
 .. code-block:: c
@@ -263,6 +269,9 @@ New additions:
    If you end up in Void at some point due to an error use the `wizz <../command/wizz.html>`_ command
    to go to the Wizard Lounge, then update the room and then `goto <../command/goto.html>`_ to go
    back to the swamp room.
+
+2.3 Verbs and rooms
+-------------------
 
 So what do the verbs actually do? Let us look at the listen verb (`/cmds/verbs/listen.c`).
 
