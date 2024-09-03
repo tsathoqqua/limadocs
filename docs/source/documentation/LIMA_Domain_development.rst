@@ -26,7 +26,10 @@ topic later on. The chapters will build on a continuous example, that you will b
 *pinto* (also a bean). 
 
 The ``/domains/std`` directory contains many other practical examples of rooms, items, and monsters, 
-which you can refer to for learning about features not directly covered in this guide.
+which you can refer to for learning about features not directly covered in this guide. You will be going
+through a series of practical examples, and there will be a tip box in each section pointing giving
+direct tips on how to accomplish what you are being asked to do. Try to figure out the exercise yourself
+first, before turning to the tip box.
 
 CHAPTER 1: Creating a Domain
 ============================
@@ -43,7 +46,11 @@ alphabetic characters. Domain lords are wizards with the authority to grant or r
 and have control privileges over the domain. Domain members, on the other hand, have data privileges 
 within the domain.
 
-Let us create the *pinto* domain, now. Use the admtool to do this.
+**Exercise 1**:
+   
+   Let us create the *pinto* domain, now. Use the admtool to do this.
+
+If you do not know how to do this, use the tip box found below.
 
 .. tip::
 
