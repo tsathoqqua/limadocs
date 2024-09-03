@@ -205,3 +205,25 @@ conditions. Starting simple:
                "The occasional croak of a frog or buzz of an insect breaks the eerie "
                "silence.");
    }
+
+So what is in here:
+
+   - Line 1, the file we inherit to build upon.
+   - Line 3, the ``setup()`` function used in LIMA to initiate the object.
+   - Line 5, the brief description of the room. This is shown above the long description.
+   - Line 6-11, the long description of the room broken into lines for easy readability.
+
+**Exercise 2:**
+
+   Write the code, save this file as `/domains/pinto/room/swamp1.c`, then try to update it to check for 
+   issues. Finally, `goto <../command/goto.html>`_ the room. 
+
+.. tip::
+
+   |  /std> cd ^pinto/room
+   |  ^pinto/room/> update swamp1
+   |  /domains/pinto/room/swamp1.c: Updated and loaded.
+   |  ^pinto/room/> goto swamp1
+
+Did it work? Otherwise review the error messages the ``update`` command gives you. The 
+code presented above can be copy pasted using the icon next to it.
