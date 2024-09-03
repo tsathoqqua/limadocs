@@ -384,10 +384,29 @@ the new functionality.
     
        void do_listen() { write("...."); }
 
+How would we know? You can use `dbxfuncs <../command/dbxfuncs.html>`_ to list the functions
+in OUTDOOR_ROOM, like this:
+
+   |  ^pinto/room/>dbxfuncs /std/outdoor_room do_
+   |  Matches:
+   |  int do_verb_rule(x, x, x)     (defined in /std/object/vsupport)
+   |  void do_search(x, x)          (defined in /std/object/vsupport)
+   |  int do_not_restore()          (defined in /std/object)
+   |  void do_receive(x, x)         (defined in /std/container)
+   |  void do_go_str(x)             (defined in /std/modules/m_exit)
+   |  void do_looking(x, x)         (defined in /std/room/roomdesc)
+   |  void do_pray()                (defined in /std/base_room)
+   |  **void do_listen()              (defined in /std/base_room)**
+   |  void do_look_at_str()         (defined in /std/base_room)
+   |  void do_smell()               (defined in /std/base_room)
+   |  ^pinto/room/>
+
 **Exercise 5**
 
    Use the `::` operator to call the original ``do_listen()`` function that you have
-   overwritten in your current code, so they are both returned.
+   overwritten in your current code, so they are both your new function and the one defined
+   in OUTDOOR_ROOM is called.
+
 
 .. tip::
 
