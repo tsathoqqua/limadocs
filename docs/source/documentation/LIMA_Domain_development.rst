@@ -464,7 +464,7 @@ the new functionality.
 How would we know? You can use `dbxfuncs <../command/dbxfuncs.html>`_ to list the functions
 in OUTDOOR_ROOM, like this:
 
-   |  ^pinto/room/>dbxfuncs /std/outdoor_room do_
+   |  ^pinto/room/> dbxfuncs /std/outdoor_room do_
    |  Matches:
    |  int do_verb_rule(x, x, x)     (defined in /std/object/vsupport)
    |  void do_search(x, x)          (defined in /std/object/vsupport)
@@ -477,6 +477,22 @@ in OUTDOOR_ROOM, like this:
    |  void do_look_at_str()         (defined in /std/base_room)
    |  void do_smell()               (defined in /std/base_room)
    |  ^pinto/room/>
+
+An other option would be to use the `apropos <../command/apropos.html>`_ command to look
+for documented ``do_listen()`` functions:
+
+   |  ^pinto/room/> apropos do_listen
+   |  [autodoc/mudlib]:  do_listen
+   |  ^pinto/room/>
+
+This tells us, that the function has been documented via autodoc in the mudlib section. 
+Using ``man do_listen`` or ``help do_listen`` will show the help page this function is
+documented on. You will get the entire context of the function as well which can lead
+to new ideas on which functions to call. You would get this page in game: 
+
+   `Mudlib *base_room* <../mudlib/std-base_room.html>`_ 
+
+since the function is documented here.
 
 **Exercise 6**
 
@@ -504,6 +520,26 @@ in OUTDOOR_ROOM, like this:
                   "silence.");
          set_listen("You hear the occasional croak of frogs and the buzzing of insects.");
          set_smell("The air is thick with the smell of decay and stagnant water.");
+         add_item("trees", "The trees are twisted and gnarled, their roots submerged in "
+                  "the murky water. Their branches seem to reach out like "
+                  "skeletal fingers.");
+         add_item("water", "The water is dark and murky. You can see patches of algae "
+                  "floating on its surface.");
+         add_item("algae", "Sickly green patches of algae float lazily on the surface "
+                  "of the water.");
+         add_item("sky", "The sky is barely visible through the canopy of twisted "
+                  "branches overhead. What little you can see "
+                  "looks gloomy and overcast.");
+         add_item("frog", "You don't see any frogs at the moment, but you can hear "
+                  "them croaking nearby.");
+         add_item("insect", "insects", "bugs",
+                  "Tiny insects buzz around, occasionally "
+                  "landing on the surface "
+                  "of the water or on patches of vegetation.");
+         add_item("mud", (["look":"The ground is a thick, sticky mud that seems eager "
+                                  "to pull at your feet.",
+                           "get":"Your stick your hands in the mud, look at them, "
+                                 "then decide there are better MUDs."]));
       }
 
       void do_listen()
