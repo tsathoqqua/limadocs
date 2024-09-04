@@ -270,7 +270,75 @@ New additions:
    to go to the Wizard Lounge, then update the room and then `goto <../command/goto.html>`_ to go
    back to the swamp room.
 
-2.3 Verbs and rooms
+2.3 Adding details
+------------------
+Studying the description of the room it talks about trees, water, algae, sky, frog, insects, and mud.
+But doing ``look at water`` gives you:
+
+    That doesn't seem to be possible.
+
+We need to add items to the room so we can detail some of these objects further. This is done via 
+the ``add_item()`` function defined in rooms. Let us add some items to the room:
+
+.. code-block:: c
+   :linenos:
+
+   add_item("trees", "The trees are twisted and gnarled, their roots submerged in "
+                     "the murky water. Their branches seem to reach out like "
+                     "skeletal fingers.");
+   add_item("water", "The water is dark and murky. You can see patches of algae "
+                     "floating on its surface.");
+   add_item("algae", "Sickly green patches of algae float lazily on the surface "
+                     "of the water.");
+   add_item("sky", "The sky is barely visible through the canopy of twisted "
+                   "branches overhead. What little you can see "
+                   "looks gloomy and overcast.");
+   add_item("frog", "You don't see any frogs at the moment, but you can hear "
+                    "them croaking nearby.");
+   add_item("insect", "insects", "bugs",
+            "Tiny insects buzz around, occasionally "
+            "landing on the surface "
+            "of the water or on patches of vegetation.");
+   add_item("mud", "The ground is a thick, sticky mud that seems eager "
+                   "to pull at your feet.");
+
+As seen above, the syntax is relatively simple:
+
+.. code-block:: c
+
+   add_item(item, description);
+   add_item(list of items, description); //See insects in line 13-16 above.
+
+But what if someone wants to pick up the mud, e.g.?
+
+  |  ^pinto/room/> get mud
+  |  You can't get that.
+
+That's true, but perhaps we want a more fun description? The ``add_item()`` 
+function provides more abilities, let us use those:
+
+.. code-block:: c
+   :linenos:
+
+   add_item("mud", (["look":"The ground is a thick, sticky mud that seems eager "
+                            "to pull at your feet.",
+                       "get":"Your stick your hands in the mud, look at them, "
+                             "then decide there are better MUDs."]));
+
+As you can see, ``add_item()`` can handle a mapping with different extra options.
+
+**Exercise 4**
+
+   Update the "mud" item to use a mapping like above.
+
+.. note::
+
+   You can use ``update here`` if you are standing in a room you want to update.
+   If your code has issues, you will be moved to The Void and will have to go
+   back to the room once it loads again.
+
+
+2.4 Verbs and rooms
 -------------------
 
 So what do the verbs actually do? Let us look at the listen verb (`/cmds/verbs/listen.c`).
@@ -375,7 +443,7 @@ we could also override it and return something random like:
 
 ``random(3)`` returns a number between 0-2 plus 2, so that would turn into 2-4 animals.
 
-**Exercise 4**
+**Exercise 5**
 
    Add a new function called ``do_listen()`` to ``swamp1.c`` that uses ``write()`` to send
    the string with the fighting animals above to the current user. 
@@ -410,7 +478,7 @@ in OUTDOOR_ROOM, like this:
    |  void do_smell()               (defined in /std/base_room)
    |  ^pinto/room/>
 
-**Exercise 5**
+**Exercise 6**
 
    Use the `::` operator to call the original ``do_listen()`` function that you have
    overwritten in your current code, so they are both your new function and the one defined
