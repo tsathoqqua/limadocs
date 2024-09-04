@@ -413,16 +413,26 @@ This function is called with the following arguments:
 
 .. code-block:: c
 
-   verb->can_verb_rule("listen");
+   verb->can_verb_rule();
 
-This function finally returns 1, since there is no functionality in the verb to check for deaf 
-players. 
+This function runs some checks required by the verb, like do we need to be able to see, do we 
+need to be alive to do the action. If these checks pass, it returns 1. 
 
 .. note::
 
-    You can use the wizard shell to check what the verb returns like this:
+   You can use the wizard shell to check what the verb returns like this:
 
-    ``@./cmds/verbs/listen->can_verb_rule("listen")``
+   ``@./cmds/verbs/listen->can_verb_rule()``
+
+.. note::
+   
+   An example of the default checks for verbs is the drop verb that has the following
+   code, to allow people to drop things even in the darkness:
+
+   .. code-block:: c
+
+         clear_flag(NEED_TO_SEE);
+
 
 At the end of the parse, the parser decides there is a successfull match for the rule, and decides
 to call ``do_listen()`` in the verb, this is shown in line 15-18 above. Let us look closer at that
@@ -490,7 +500,7 @@ Using ``man do_listen`` or ``help do_listen`` will show the help page this funct
 documented on. You will get the entire context of the function as well which can lead
 to new ideas on which functions to call. You would get this page in game: 
 
-   `Mudlib *base_room* <../mudlib/std-base_room.html>`_ 
+   `Mudlib base_room <../mudlib/std-base_room.html>`_ 
 
 since the function is documented here.
 
