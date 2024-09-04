@@ -19,19 +19,38 @@ Windows Subsystem for Linux (WSL)
   :width: 700
   :alt: WSL Distributions
 
-2. Install Windows Subsystem for Linux - we recommmend Ubuntu, but up to you:
+2. Install Windows Subsystem for Linux - we recommmend Ubuntu, but up to you. 
+   Make sure to enable Windows Subsystem for Linux (Google this if you have WSL issues). You should not need 
+   to use administrator on your PC:
 
-    ``wsl --install -D Ubuntu``
+    ``wsl --install -d Ubuntu``
 
-3. Set a username and a password for your Linux:
+3. Start the wsl. Could be done with simply pressing your windows key and searching for "ubuntu" or "debian", and clicking
+   the icon. You might need to restart Windows after installing WSL.
+
+.. image:: images/wsl_step1b.png
+  :width: 700
+  :alt: Starting the WSL
+
+4. Set a username and a password for your Linux:
 
 .. image:: images/wsl_step2.png
   :width: 700
   :alt: Set username and password
 
-4. Update apt, and install packages needed for compiling FluffOS
+5. Update apt, and install packages needed for compiling FluffOS
 
-    |   ``sudo apt update`` 
+    |   ``sudo apt update``
+
+Then install prerequisites for Ubuntu:
+
+    |   ``sudo apt install build-essential bison libmysqlclient-dev libpcre3-dev libpq-dev libsqlite3-dev libssl-dev libz-dev libjemalloc-dev libicu-dev cmake git``
+
+or for Debian:
+
+    |   ``sudo apt install build-essential bison libmariadb-dev libmariadb-dev-compat libpcre3-dev libpq-dev libsqlite3-dev libssl-dev zlib1g-dev libjemalloc-dev libicu-dev cmake git``
+
+(These packages are prone to change, so modify as needed - it is not possible to keep chasing changes in versions and package names)
 
 .. image:: images/wsl_step3.png
   :width: 700
@@ -43,7 +62,7 @@ Windows Subsystem for Linux (WSL)
   :width: 700
   :alt: apt install
 
-5. Clone LIMA sources from github. It's available from two sources:
+6. Clone LIMA sources from github. It's available from two sources:
 
     |   Stable: https://github.com/fluffos/lima
     |   Development: https://github.com/tsathoqqua/lima
@@ -54,10 +73,10 @@ Windows Subsystem for Linux (WSL)
   :width: 700
   :alt: git clone
 
-6. Use --recurse-submodules to checkout the fluffos driver submodule. You can decide not to and use another driver if you want. LIMA comes with a build script after checking out the files:
+7. Use --recurse-submodules to checkout the fluffos driver submodule. You can decide not to and use another driver if you want. LIMA comes with a build script after checking out the files:
 
-    |    ``cd lima``   
-    |    ``./build.sh``
+    |    ``cd lima/adm/dist``   
+    |    ``./rebuild``
 
     Lots of output will follow, and the final screen will say something like:
 
@@ -65,21 +84,15 @@ Windows Subsystem for Linux (WSL)
   :width: 700
   :alt: compile finished
 
-7. If you get complaints about missing dependencies here, try to install them via ``apt install`` or use ``apt search`` to find them.
+8. If you get complaints about missing dependencies here, try to install them via ``apt install`` or use ``apt search`` to find them.
     |    ``sudo apt install libssl3``
     |    (Just an example)
 
-8. Check to see if the driver runs: ``./build/bin/driver``
-
-.. image:: images/wsl_step7.png
-  :width: 700
-  :alt: check driver
-
 9. After build has completed, try:
 
-    ``./run.sh``
+    ``./run``
 
-10. You might see a few warnings, but should be able to visit http://localhost:7878/ in your favourite browser via the built-in websockets. This can be reconfigured to use more classical ports in ``config.lima`` in the root directory of LIMA.
+10. You might see a few warnings, but should be able to telnet to localhost 7878 (or use Mudlet from https://www.mudlet.org/). It is also possible to set up your MUD to use Websockets and then visit http://localhost:7878/ in your favourite browser. This can be reconfigured in the ``config.mud`` in the adm/dist directory of LIMA.
 
 Ubuntu
 ------

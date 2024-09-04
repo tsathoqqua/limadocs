@@ -8,8 +8,17 @@
     background: #eed !important;    
 }
 
+.tip {
+    background: #ede !important;    
+}
+
 .note .admonition-title {
     background: #dede6a !important;
+    color: #222 !important;
+}
+
+.tip .admonition-title {
+    background: #de6ade !important;
     color: #222 !important;
 }
 
