@@ -323,13 +323,15 @@ function provides more abilities, let us use those:
    add_item("mud", (["look":"The ground is a thick, sticky mud that seems eager "
                             "to pull at your feet.",
                        "get":"Your stick your hands in the mud, look at them, "
-                             "then decide there are better MUDs."]));
+                             "then decide there are better MUDs.",
+                    "search":"You found some dirty hands."]));
 
 As you can see, ``add_item()`` can handle a mapping with different extra options.
 
 **Exercise 4**
 
-   Update the "mud" item to use a mapping like above.
+   Update the "mud" item to use a mapping like above, and try the different New
+   options.
 
 .. note::
 
@@ -513,7 +515,7 @@ since the function is documented here.
 
 .. tip::
 
-   Here is the final code for Exercise 5, if you cannot get it working.
+   Here is the final code for Exercise 6, if you are having issues:
 
    .. code-block:: c
    
@@ -548,8 +550,9 @@ since the function is documented here.
                   "of the water or on patches of vegetation.");
          add_item("mud", (["look":"The ground is a thick, sticky mud that seems eager "
                                   "to pull at your feet.",
-                           "get":"Your stick your hands in the mud, look at them, "
-                                 "then decide there are better MUDs."]));
+                            "get":"Your stick your hands in the mud, look at them, "
+                                  "then decide there are better MUDs.",
+                         "search":"You found some dirty hands."]));
       }
 
       void do_listen()
