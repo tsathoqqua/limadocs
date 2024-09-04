@@ -55,6 +55,12 @@ same long as the room, but not see itself in the description.
 Set what the room smells like.
 
 
+.. c:function:: void do_listen()
+
+Uses write() to return the listen text set with the ``set_listen()``
+function, otherwise returns "You hear nothing unusual.".
+
+
 .. c:function:: varargs void set_room_chat(mixed chat, int interval, int chance)
 
 Sets random chats for a room along with an interval in seconds,

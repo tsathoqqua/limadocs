@@ -56,6 +56,7 @@ Mudlib
 - `std: inf_supply <mudlib/std-inf_supply.html>`_
 - `std: material_spawner <mudlib/std-material_spawner.html>`_
 - `std: menu <mudlib/std-menu.html>`_
+- `std: menu2 <mudlib/std-menu2.html>`_
 - `std: moving_monster <mudlib/std-moving_monster.html>`_
 - `std: moving_room <mudlib/std-moving_room.html>`_
 - `std: non_room <mudlib/std-non_room.html>`_

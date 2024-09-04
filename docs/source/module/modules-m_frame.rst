@@ -25,6 +25,11 @@ Returns the colour in the colour array, cols, to use given the position
 out of the width (typically screen width).
 
 
+.. c:function:: string query_style()
+
+Returns the current frame style.
+
+
 .. c:function:: void set_style(string t)
 
 Set a specific style if it exists.
@@ -51,6 +56,12 @@ Sets the frame into a mode where the header is not shown at the top,
 but shown at the left side.
 
 
+.. c:function:: nomask int frame_simplify()
+
+Returns TRUE if the current user (not the object receiving the message!)
+has simplify turned on.
+
+
 .. c:function:: string title(mixed t)
 
 Sets the title of the frame.
@@ -66,6 +77,11 @@ Takes a string and applies the accent colour to it.
 Returns the raw accent colour, i.e. the XXX number triplet.
 
 
+.. c:function:: string raw_title()
+
+Returns the raw title colour, i.e. the XXX number triplet.
+
+
 .. c:function:: string warning(mixed t)
 
 Takes a string and applies the warning colour to it.
@@ -79,6 +95,11 @@ Sets the frame title. Big surprise.
 .. c:function:: void set_width(int w)
 
 Sets the width of the frame. Minimum is 10, maximum is 1000. Other values will be capped.
+
+
+.. c:function:: int query_width()
+
+Returns the width of the frame.
 
 
 .. c:function:: void set_title_margin(int hm)
@@ -107,10 +128,10 @@ Set the frame header, works both vertically and horizontally.
 Sets the frame footer.
 
 
-.. c:function:: void set_frame_content(string c)
+.. c:function:: void set_frame_content(mixed c)
 
 This is the main function to call for the main content of
-the frame.
+the frame. Content must either be an array of strings or a single string.
 
 
 .. c:function:: void set_frame_hcolours(string *hc)
@@ -139,7 +160,7 @@ Returns the frame accent colour given ``theme``.
 Returns the frame warning colour given ``theme``.
 
 
-.. c:function:: string frame_demo_string(string theme, int w)
+.. c:function:: string frame_demo_string(string style, int w)
 
 Returns a simple demo string.
 

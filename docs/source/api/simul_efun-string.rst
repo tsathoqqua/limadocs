@@ -110,7 +110,8 @@ Examples:
   time_to_string(500)   -> "8 minutes, 20 seconds"
   time_to_string(500,1) -> "8m 20s"
 
-Days, hours, minutes and seconds are supported.
+Months, Days, hours, minutes and seconds are supported.
+A month is calculated as 30 days.
 
 
 .. c:function:: varargs string weight_to_string(float w, int imperial)

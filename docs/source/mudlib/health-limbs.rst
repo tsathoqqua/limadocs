@@ -190,8 +190,9 @@ Returns 1 if we can move, 0 if not.
 
 .. c:function:: void kill_us()
 
-void kill_us();
 Kills us. =)
+This awards all the experience to the killer, or splits it by level if the player is in a party, but that requires
+more from the same party in the room. This also prioritizes teams, and makes kill sniping harder (not impossible).
 
 
 .. c:function:: string query_random_limb()

@@ -6,7 +6,7 @@ Documentation for the daemons-xterm256_d daemon in */daemons/xterm256_d.c*.
 Module Information
 ==================
 
-This daemon handles the 256 Colours of XTERM codes
+This daemon handles the 256 Colours of XTERM code.
 
 Functions
 =========

@@ -14,6 +14,7 @@ API
 - `simul_efun: overrides <api/simul_efun-overrides.html>`_
 - `simul_efun: path <api/simul_efun-path.html>`_
 - `simul_efun: string <api/simul_efun-string.html>`_
+- `simul_efun: tell <api/simul_efun-tell.html>`_
 - `simul_efun: userfuncs <api/simul_efun-userfuncs.html>`_
 - `user: channel <api/user-channel.html>`_
 - `user: history <api/user-history.html>`_

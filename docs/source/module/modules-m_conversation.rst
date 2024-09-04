@@ -75,6 +75,12 @@ Adds a single option to the actions available.
 See also set_option() documentation.
 
 
+.. c:function:: void remove_option(string key)
+
+Removes a single option from the actions available.
+See also add_option() documentation.
+
+
 .. c:function:: void add_options(mapping m)
 
 Adds a mapping of options to the actions available.

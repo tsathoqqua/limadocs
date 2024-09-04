@@ -12,6 +12,7 @@ Daemons
 - `Daemon: lima_d <daemon/daemons-lima_d.html>`_
 - `Daemon: method_d <daemon/daemons-method_d.html>`_
 - `Daemon: money_d <daemon/daemons-money_d.html>`_
+- `Daemon: party_d <daemon/daemons-party_d.html>`_
 - `Daemon: rst_d <daemon/daemons-rst_d.html>`_
 - `Daemon: state_d <daemon/daemons-state_d.html>`_
 - `Daemon: task_d <daemon/daemons-task_d.html>`_

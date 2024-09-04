@@ -109,6 +109,11 @@ a way that the elements are in increasing order, as defined by the
 value of the function f
 
 
+.. c:function:: mixed clone_class(mixed x)
+
+Create a copy of an existing class.
+
+
 .. c:function:: string pround(float f, int p)
 
 Preceision round a float into a string with a specific number of decimals.

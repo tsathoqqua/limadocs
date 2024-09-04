@@ -95,7 +95,7 @@ normally include anything attached or within the container.
 
 
 
-.. c:function:: mixed receive_object(object target, string relation)
+.. c:function:: varargs mixed receive_object(object target, string relation)
 
 Determine whether we will accept having an object moved into us;
 returns a value from <move.h> if there is an error
