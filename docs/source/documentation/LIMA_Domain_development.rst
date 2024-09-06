@@ -330,7 +330,7 @@ As you can see, ``add_item()`` can handle a mapping with different extra options
 
 **Exercise 4**
 
-   Update the "mud" item to use a mapping like above, and try the different New
+   Update the "mud" item to use a mapping like above, and try the different new
    options.
 
 .. note::
