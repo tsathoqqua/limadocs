@@ -9,6 +9,9 @@ Module
 - `Module: m_assistance <module/modules-m_assistance.html>`_
 - `Module: m_blockexits <module/modules-m_blockexits.html>`_
 - `Module: m_bodystats <module/modules-m_bodystats.html>`_
+- `Module: m_bodystats_dnd <module/modules-m_bodystats_dnd.html>`_
+- `Module: m_bodystats_lima <module/modules-m_bodystats_lima.html>`_
+- `Module: m_bodystats_rifts <module/modules-m_bodystats_rifts.html>`_
 - `Module: m_boss <module/modules-m_boss.html>`_
 - `Module: m_colours <module/modules-m_colours.html>`_
 - `Module: m_companion <module/modules-m_companion.html>`_
