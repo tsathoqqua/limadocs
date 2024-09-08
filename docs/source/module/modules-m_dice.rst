@@ -26,8 +26,13 @@ Roll a single die and return the result
 
 .. c:function:: int x_dice(int n, int d)
 
-int x_dice(int n, int d)
 Return the sum of n dice with d sides .
+
+
+.. c:function:: int x_dice_dl(int n, int d)
+
+int x_dice_dl(int n, int d)
+Return the sum of n dice with d sides, discards the lowest one.
 
 
 

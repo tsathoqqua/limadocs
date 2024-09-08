@@ -73,18 +73,6 @@ EXAMPLE:
 Return value will more likely be "element1" due to its higher weight.
 
 
-.. c:function:: mixed min(mixed f)
-
-Returns the smallest element of an aggregate type (string, array,
-or mapping).
-
-
-.. c:function:: mixed max(mixed f)
-
-Returns the largest element of a structure that is a string,
-array or mapping.
-
-
 .. c:function:: int clamp(int x, int low, int high)
 
 Take a value and makes sure it is between the low and high parameters.
