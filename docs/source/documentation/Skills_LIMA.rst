@@ -16,11 +16,11 @@ Skills are part of a skill tree
 
 Skills in LIMA are positioned in a skill tree, and got names like "combat/defense/disarm".
 
-.. image:: ../images/skill_tree.png
-  :width: 700
-  :alt: Skill tree
+.. figure:: ../images/skill_tree.png
+   :width: 700
+   :alt: Skill tree
 
-  Skill tree example.
+   Skill tree example.
 
 The skills go from zero to a maximum value defined by:
 
@@ -109,14 +109,22 @@ parents as defined as:
 // Type: integer
 #define SKILL_MAX_ON_WIN 20
 
-// Do we use training points or not
-// Default: yes
-// Type: boolean
-#define SKILL_CONFIG_USES_TRAINING_PTS
+Training points
+
+.. figure:: /images/skill_tree.png
+   :width: 700
+   :alt: Skill tree
+
+   Skill tree example.
+
+.. code-block:: c
+
+   // Do we use training points or not
+   // Default: yes
+   // Type: boolean
+   #define SKILL_CONFIG_USES_TRAINING_PTS
 
 // Use roman numerals for skill ranks - no means plain numbers.
 // Default: yes
 // Type: boolean
 #define USE_ROMAN_NUMERALS
-
-#endif /* __SKILLS_H__ */
