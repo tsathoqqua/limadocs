@@ -10,10 +10,10 @@ A few facts:
    - Skills train when they are used.
    - Both skill leaves and skill branches can be trained.
    - The value of a skill is equal to the value of the tree from the root to the branch.
+   - Training skills can give separate training points.
 
 Skills are part of a skill tree
 -------------------------------
-
 Skills in LIMA are positioned in a skill tree, and got names like "combat/defense/disarm".
 
 .. figure:: ../images/skill_tree.png
@@ -69,7 +69,7 @@ So, example:
    |  Combat/Laser Gun 100
    |  Combat/Laser Pew Pew 0
 
-The total skill is an aggrgate of the the skill, so (a simple not completely correct example) 
+The total skill is an aggrgate of the the skill, so (a simple, not completely correct, example) 
 "combat/pistol/Laser Gun" would be 10+10+100, where as "combat/pistol/laser pew pew" would be 10+10.
 
 .. code-block:: c
@@ -79,6 +79,8 @@ The total skill is an aggrgate of the the skill, so (a simple not completely cor
    // Range: 2-10
    // Type: integer
    #define PROPAGATION_FACTOR 2
+
+Theoretically, you could set the PROPAGATION_FACTOR to 0, if you didn't want any propagation at all.
 
 The reason the example is not completely correct, is that the aggregated value is a factor of the
 parents as defined as:
@@ -91,31 +93,42 @@ parents as defined as:
    // Type: integer
    #define AGGREGATION_FACTOR 3
 
-// Points learned by N on failure
-// Default: 1
-// Range: 1-5
-// Type: integer
-#define SKILL_ON_FAILURE 1
+This define minimum you learn on failure and minimum  and maximum on win:
 
-// Minimum to learn on a win
-// Default: 2
-// Range: 2-5
-// Type: integer
-#define SKILL_MIN_ON_WIN 2
+.. code-block:: c
 
-// Maximum points to learn on a win
-// Default: 20
-// Range: 10-30
-// Type: integer
-#define SKILL_MAX_ON_WIN 20
+   // Points learned by N on failure
+   // Default: 1
+   // Range: 1-5
+   // Type: integer
+   #define SKILL_ON_FAILURE 1
+
+   // Minimum to learn on a win
+   // Default: 2
+   // Range: 2-5
+   // Type: integer
+   #define SKILL_MIN_ON_WIN 2
+
+   // Maximum points to learn on a win
+   // Default: 20
+   // Range: 10-30
+   // Type: integer
+   #define SKILL_MAX_ON_WIN 20
 
 Training points
+---------------
 
-.. figure:: /images/skill_tree.png
+There is a chance to gain training points, that might be used at skill trainer to gain more points, faster,
+in a specific skill. This entices the player to find trainers - perhaps they wander your MUD? ("Hey George! That
+skill trainer you have been searching for all week is standing right here!").
+
+.. figure:: ../images/skill_training_points.png
    :width: 700
    :alt: Skill tree
 
    Skill tree example.
+
+This define sets whether or not you use training points. They are supported in the ``M_TRAINER`` module directly.
 
 .. code-block:: c
 
@@ -124,7 +137,16 @@ Training points
    // Type: boolean
    #define SKILL_CONFIG_USES_TRAINING_PTS
 
-// Use roman numerals for skill ranks - no means plain numbers.
-// Default: yes
-// Type: boolean
-#define USE_ROMAN_NUMERALS
+Skill ranks
+-----------
+Getting from 0 to, say 10000, is a long journey, so to give a better sence of accomplishment, the skill range
+is divided into a set of skill ranks. There are 20 ranks for the entire range (defined in SKILL_D). These
+can be presented as a normal number or a *fancy* roman numeral.
+
+.. code-block:: c
+
+   // Use roman numerals for skill ranks - no means plain numbers.
+   // Default: yes
+   // Type: boolean
+   #define USE_ROMAN_NUMERALS
+
