@@ -32,9 +32,15 @@ The skills go from zero to a maximum value defined by:
    // Type: integer
    #define MAX_SKILL_VALUE 10000
 
-The comments above the ``#define`` are for easy maintenance via the `admtool <../command/admtool.html>`_.
-The range here is a recommendation more than a hard limit. If you break the ranges, funny things might
-start happening.
+It is fine to increase or decrease these ranges if you want the players to spend a longer time before maxed
+out. This goes for all the values described in this guide, play around and see what speed of progression
+you would like.
+
+.. note::
+   
+   The comments above the ``#define`` are for easy maintenance via the `admtool <../command/admtool.html>`_.
+   The range here is a recommendation more than a hard limit. If you break the ranges, funny things might
+   start happening.
 
 Skills train when they are used
 -------------------------------
@@ -69,7 +75,7 @@ So, example:
    |  Combat/Laser Gun 100
    |  Combat/Laser Pew Pew 0
 
-The total skill is an aggrgate of the the skill, so (a simple, not completely correct, example) 
+The total skill is an aggregate of the the skill, so (a simple, not completely correct, example) 
 "combat/pistol/Laser Gun" would be 10+10+100, where as "combat/pistol/laser pew pew" would be 10+10.
 
 .. code-block:: c
@@ -139,7 +145,7 @@ This define sets whether or not you use training points. They are supported in t
 
 Skill ranks
 -----------
-Getting from 0 to, say 10000, is a long journey, so to give a better sence of accomplishment, the skill range
+Getting from 0 to, say 10000, is a long journey, so to give a better sense of accomplishment, the skill range
 is divided into a set of skill ranks. There are 20 ranks for the entire range (defined in SKILL_D). These
 can be presented as a normal number or a *fancy* roman numeral.
 
@@ -150,3 +156,10 @@ can be presented as a normal number or a *fancy* roman numeral.
    // Type: boolean
    #define USE_ROMAN_NUMERALS
 
+.. warning::
+
+   Changing some of these values might anger players who spend months on grinding up some skill,
+   if you suddenly reduce the time it needs to be maxed out to half the time. Consider what you
+   are doing when changing these values, and communicate clearly to your player base. Test your
+   changes before using them in a live environment. Did you just read the word "test"? There
+   it was again.
