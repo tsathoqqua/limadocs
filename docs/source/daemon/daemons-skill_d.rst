@@ -27,6 +27,7 @@ Functions
 Register a new skill with the daemon. This function needs
 the Mudlib:daemons privilege.
 Example:
+
     register_skill("combat/melee/grenade");
 
 
@@ -35,6 +36,7 @@ Example:
 Removes a skill from the daemon. This function needs
 the Mudlib:daemons privilege.
 Example:
+
     remove_skill("combat/melee/grenade");
 
 
@@ -87,7 +89,7 @@ to hit to gain a new skill rank.
 .. c:function:: string skill_req_pretty(string skill_name, int rank)
 
 Returns a string that clearly communicates a skill name
-and a rank in the current rank scheme defined in <config/skills.h>.
+and a rank in the current rank scheme defined in ``<config/skills.h>``.
 
     @SKILL_D->skill_req_pretty("/combat/sword",12) --> "Sword [XII]"
 
