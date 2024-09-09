@@ -22,6 +22,9 @@ We provide several learning paths here:
    developing your own areas, rooms, monsters, shopkeepers, weapons, armour, items, and a 
    small quest.
 
+3. `Skills in LIMA <documentation/Skills_LIMA.html>`_ describes the skill system, and how to
+   configure it for your purpose.
+
 Latest changes
 ==============
 - `Changes in 1.1a3 (Current version) <versions/11a3.html>`_

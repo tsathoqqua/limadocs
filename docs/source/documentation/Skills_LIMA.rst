@@ -163,3 +163,25 @@ can be presented as a normal number or a *fancy* roman numeral.
    are doing when changing these values, and communicate clearly to your player base. Test your
    changes before using them in a live environment. Did you just read the word "test"? There
    it was again.
+
+Update the skill tree
+---------------------
+The default skill tree that comes with LIMA can be dumped to ``/data/config/`` by doing the command:
+
+   |  /data/config/> @SKILL_D->dump_skills_to_file()
+   |  Skills dumped to /data/config/skill-tree.
+   |  0
+   |  /data/config/>more skill-tree
+
+Feel free to edit this file, read the comments at the top, save it and load a new set of skills:
+
+   |  /data/config/>@SKILL_D->init_skills()
+   |  /data/config/skill-tree loaded.
+
+You can also make more skill tree more shallow or deeper this way.
+
+.. tip::
+
+   This will break all the functionality and demo examples referring to the old skills. So if you
+   just want to rename a skill, search for that skill name through the mudlib, and make sure to
+   replace the skill name everywhere.
