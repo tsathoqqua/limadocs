@@ -10,10 +10,12 @@ of the features supported.
 Check out the `usage <Usage.html>`_ page for further information, including
 how to `install <Installation.html>`_ the project. A small helper on `messaging <documentation/Messaging.html>`_ 
 and `how to use the AUTODOC system <documentation/Autodocs.html>`_ inside the mudlib is also available.
+`Skills in LIMA <documentation/Skills_LIMA.html>`_ describes the skill system, and how to 
+configure it for your purpose.
 
 Learning paths
 ==============
-We provide several learning paths here:
+We provide several learning paths here with exercises to facilitate better leaning:
 
 1. `LPC Basics learning path <documentation/Basic_LIMA_Guide.html>`_ is for people
    new to programming, LPC and MUDs.
@@ -21,9 +23,6 @@ We provide several learning paths here:
 2. `Learning LIMA basics <documentation/LIMA_Domain_development.html>`_ will teach you about 
    developing your own areas, rooms, monsters, shopkeepers, weapons, armour, items, and a 
    small quest.
-
-3. `Skills in LIMA <documentation/Skills_LIMA.html>`_ describes the skill system, and how to
-   configure it for your purpose.
 
 Latest changes
 ==============
