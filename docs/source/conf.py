@@ -21,6 +21,12 @@ extensions = [
     'sphinx_code_tabs',
 ]
 
+html_logo = "images/lima.png"
+html_theme_options = {
+    'logo_only': True,
+    'display_version': False,
+}
+
 intersphinx_mapping = {
     'python': ('https://docs.python.org/3/', None),
     'sphinx': ('https://www.sphinx-doc.org/en/master/', None),
