@@ -70,13 +70,13 @@ Your skill value in a specific skill is the total of that branch, so the new pis
 specific skill, but would not be in total since you have experience with other pistols.
 
 So, example:
-   |  Combat 10
-   |  Combat/pistol 10
-   |  Combat/Laser Gun 100
-   |  Combat/Laser Pew Pew 0
+   |  combat 10
+   |  combat/pistol 10
+   |  combat/pistol/laser gun 100
+   |  combat/pistol/revolver 10
 
 The total skill is an aggregate of the the skill, so (a simple, not completely correct, example) 
-"combat/pistol/Laser Gun" would be 10+10+100, where as "combat/pistol/laser pew pew" would be 10+10.
+"combat/pistol/laser gun" would be 10+10+100, where as "combat/pistol/revolver" would be 10+10+10.
 
 .. code-block:: c
 
