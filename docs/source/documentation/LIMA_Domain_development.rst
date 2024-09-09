@@ -567,7 +567,7 @@ Weapons follow the same mechanics of room, in that they use ``setup()`` to defin
 name, attributes and so on for the weapon. Let us look at ``^std/weapon/greataxe.c``:
 
 .. code-block:: c 
-   linenos
+   :linenos:
 
    /* Do not remove the headers from this file! see /USAGE for more info. */
 
