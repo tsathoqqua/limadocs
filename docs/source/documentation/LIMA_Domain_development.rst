@@ -613,5 +613,5 @@ So, a lot of similarities to room, ``setup()``, calls to lots of functions to ad
 
 .. note::
 
-   Wait, you don't want to set the wait in kilos? Then change ``#define METRIC`` to
+   Wait, you don't want to set the weight in kilos? Then change ``#define METRIC`` to
    ``#undef METRIC`` in config.h.
