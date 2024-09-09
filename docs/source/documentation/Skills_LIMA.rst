@@ -178,7 +178,13 @@ Feel free to edit this file, read the comments at the top, save it and load a ne
    |  /data/config/>@SKILL_D->init_skills()
    |  /data/config/skill-tree loaded.
 
-You can also make more skill tree more shallow or deeper this way.
+You can also make the skill tree more shallow or deeper this way. If you want to make minor changes,
+use the ``SKILL_D->register_skill("my/new/skill");`` or ``SKILL_D->remove_skill("my/old/skill")``.
+Both can be called directly from the wizard shell like the ``dump_skills_to_file()`` and ``init_skills``
+functions above.
+
+See `SKILL_D documentation <../daemon/daemons-skill_d.html>`_ for more details on functions 
+in the SKILL_D.
 
 .. tip::
 
