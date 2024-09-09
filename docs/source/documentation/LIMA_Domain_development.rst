@@ -561,3 +561,57 @@ since the function is documented here.
          write("You hear " + (random(3) + 2) + " animals fighting in the distance");
       }
 
+CHAPTER 3: Creating weapons
+===========================
+Weapons follow the same mechanics of room, in that they use ``setup()`` to define 
+name, attributes and so on for the weapon. Let us look at ``^std/weapon/greataxe.c``:
+
+.. code-block:: c 
+   linenos
+
+   /* Do not remove the headers from this file! see /USAGE for more info. */
+
+   inherit WEAPON;
+
+   void setup()
+   {
+      set_id("greataxe", "axe");
+      set_weight(3.2);
+      set_value(30);
+      set_weapon_class(12);
+      set_combat_messages("combat-sword");
+      set_damage_type("slashing");
+      set_skill_used("combat/melee/blade");
+      set_skill_restriction("combat/axe", 1);
+      set_skill_restriction_message("The greataxe feels foreign in $p hand. $N $vwield it like $n would wield a pickaxe.");
+      set_must_dual_wield(1);
+      set_salvageable((["wood":15, "metal":85, ]));
+   }
+
+Line by line:
+   - Line 3: We inherit WEAPON (``/std/weapon.c``)
+   - Line 5: Our old friend the setup function.
+   - Line 7: Set the IDs that the weapon will be known by. This line will ensure that the user can
+     both use ``wield axe`` and ``wield greataxe``.
+   - Line 8: Set the weight of the item in kilos.
+   - Line 9: Set the value to 30 (something - more on MONEY_D later)
+   - Line 10: This sets how hard the weapon hits. With a weapon class of 12 the weapon will damage opponents
+     between 0-11 points, plus damage from strength. Dual wielded weapons may do 1.5 times strength bonus.
+   - Line 11: Sets the combat messages the weapon uses (more on messages later, for now look inside the directory
+     called ``/data/messages/`` this folder contains standard messages for a lot of things.)
+   - Line 12: Here, we set the skill trained by using this weapon.
+   - Line 13: This line introduces a skill restriction, saying we need at least to be rank 1 in ``combat/axe``
+     to get full benefit of the axe. The player can still use the weapon, but will get told that it's not
+     optimal, and will be attacking at reduced efficiency and will do reduced damage.
+   - Line 14: The message for a player who does not fulfil the required ranks - there is a 
+     `lot more be said about messages <documentation/Messaging.html>`_.
+   - Line 15: Not only do we say this this weapon can be dual-wielded here, we say that it must be. Some
+     weapons can be wielded in one or two hands, adding more damage should the player want to do so.
+   - Line 16: This line tells the ``salvage`` verb what the weapon is made of (more on salvaging and materials later).
+
+So, a lot of similarities to room, ``setup()``, calls to lots of functions to add features to the object.
+
+.. note::
+
+   Wait, you don't want to set the wait in kilos? Then change ``#define METRIC`` to
+   ``#undef METRIC`` in config.h.
