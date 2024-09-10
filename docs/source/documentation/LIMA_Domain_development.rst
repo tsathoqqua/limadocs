@@ -576,7 +576,7 @@ other important details. Let's take a closer look at the code for the greataxe f
       set_salvageable((["wood":15, "metal":85]));
    }
 
-Let’s break down this code line by line:
+Let us break down this code line by line:
 
   - **Line 3**: We inherit the `WEAPON` object from `^std/weapon.c`. If this seems unfamiliar, 
     refer back to the LIMA Guide, Section 1.3, on shortcuts for filenames.
@@ -596,6 +596,14 @@ Let’s break down this code line by line:
   - **Line 14**: A skill restriction is applied here, requiring the player to have at least 
     rank 1 in "combat/axe" to use the weapon effectively. Without this rank, the player can 
     still use the weapon but will experience reduced efficiency and damage output.
+  - **Line 15**: The message for a player who does not fulfil the required ranks - there is a lot more be 
+    said about messages.
+  - **Line 16**: Not only do we say this this weapon can be dual-wielded here, we say that it must be. 
+    Some weapons can be wielded in one or two hands, adding more damage should the player want to do so.
+  - **Line 17**: This line tells the salvage verb what the weapon is made of (more on salvaging and 
+    materials later).
+
+So, a lot of similarities to room, setup(), calls to lots of functions to add features to the object.
 
 As you can see, the `setup()` function in weapons shares many similarities with how rooms 
 are set up. It involves making various function calls to add features and behaviors to the object.
