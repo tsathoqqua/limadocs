@@ -583,7 +583,7 @@ a small white friendly cat in your game? Which IDs should it have?
    |  white friendly cat
    |  white cat
    |  cat
-   |  small friendly cat?
+   |  small friendly cat
    |  small cat
 
 This quickly explodes into a range of IDs as you can see, so LIMA has a system called
@@ -609,7 +609,44 @@ most objects in LIMA, including weapons.
 3.2 Melee weapons
 -----------------
 Weapons follow the same mechanics of room, in that they use ``setup()`` to define 
-name, attributes and so on for the weapon. Let us look at ``^std/weapon/greataxe.c``:
+name, attributes and so on for the weapon. Let us look at ``^std/weapon/sword.c``:
+
+.. code-block:: c 
+   :linenos:
+
+   /* Do not remove the headers from this file! see /USAGE for more info. */
+
+   inherit SWORD;
+
+   void setup()
+   {
+      set_adj("dull");
+      set_weapon_class(5);
+      set_weight(1.1);
+      set_value(15);
+      add_combat_message("miss", "$N $vtake a clumsy swipe at $t, but only $vsucceed in making a fool of $r.");
+   }
+
+This is a relatively simple weapon, that still 
+
+Line by line:
+   - Line 3: We inherit SWORD (``/std/sword.c``) - go back to the 
+     `basic LIMA guide Section 1.3 <Basic_LIMA_Guide.html#shortcuts-for-filenames>`_. 
+     if you find this puzzling. This is a specialization of WEAPON. If you have many weapons of the 
+     same type, this might be a pattern you should follow.
+   - Line 5: Our old friend the setup function.
+   - Line 7: Adds the adjective "dull" to the sword. It's not very bright.
+   - Line 8: This sets how hard the weapon hits. With a weapon class of 5 the weapon will damage opponents
+     between 0-5 points, plus damage from strength. Dual wielded weapons may do 1.5 times strength bonus.
+   - Line 9: Set the weight of the item in kilos.
+   - Line 10: Set the value to 15 (bananas - more on MONEY_D later)
+   - Line 11: Sets a special combat message for when you miss with this weapon - more on
+     `messages <Messaging.html>`_ here.
+
+**Exercise 6**
+
+   Read ``SWORD``, and try to make sense of the functions used in there. Use ``apropos`` and ``man`` 
+   to find out more about the functions. Did you find missing documentation?
 
 .. code-block:: c 
    :linenos:
