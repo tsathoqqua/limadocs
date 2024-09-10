@@ -601,8 +601,8 @@ Line by line:
      between 0-11 points, plus damage from strength. Dual wielded weapons may do 1.5 times strength bonus.
    - Line 11: Sets the combat messages the weapon uses (more on messages later, for now look inside the directory
      called ``/data/messages/`` this folder contains standard messages for a lot of things.)
-   - Line 12: This sets the damage type of the weapon. Damage types are define in the 
-     `DAMAGE_D <../daemon/daemons-damage_d.html>_`
+   - Line 12: This sets the damage type of the weapon. Damage types are defined in the 
+     `DAMAGE_D <../daemon/daemons-damage_d.html>_` daemon.
    - Line 13: Here, we set the skill trained by using this weapon.
    - Line 14: This line introduces a skill restriction, saying we need at least to be rank 1 in ``combat/axe``
      to get full benefit of the axe. The player can still use the weapon, but will get told that it's not
