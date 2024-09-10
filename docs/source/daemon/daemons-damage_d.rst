@@ -12,6 +12,11 @@ To store list of valid damage types,
 so weapons and armours check against the list
 (from M_DAMAGE_SOURCE and M_DAMAGE_SINK)
 
+Currently, this daemon reads the config file ``/data/config/damage-types`` at
+start up, so modify this file to add/remove data from this daemon permanently.
+
+This daemon handles special attacks from weapons as well. It needs more documentation.
+
 .. TAGS: RST
 
 Functions
