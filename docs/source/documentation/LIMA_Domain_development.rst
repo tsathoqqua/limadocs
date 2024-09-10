@@ -563,7 +563,9 @@ since the function is documented here.
 
 CHAPTER 3: Creating weapons
 ===========================
-
+Weapons in LIMA all inherit ``M_DAMAGE_SOURCE``, meaning something that can be a source
+of damage. So even things that are not weapons in a traditional sense, may benefit from
+inherit this module.
 
 3.1 A small paragraph about Identifiers
 ---------------------------------------
@@ -703,6 +705,7 @@ Line by line:
    of this guide we will refer to ``^pinto/weapon/flail.c`` but you do not have to create a flail.
 
 .. tip::
+
    If you want someone to try out your new weapon on, ``^std/monster/flea`` and ``^std/monster/troll``
    would like to help you out. Use `clone command <../command/clone.html>`_ to clone the monsters, and
    `hp <../player_command/hp.html>`_ to check how your opponents are doing.
@@ -711,3 +714,28 @@ Line by line:
 
    The DAMAGE_D keeps track of special attacks for weapons as well, think ``murdering longsword of lightning bolts``
    and you get the right picture.
+
+CHAPTER 4: Creating armour
+==========================
+Weapons are using ``M_DAMAGE_SOURCE`` and armours are using ``M_DAMAGE_SINK``, as damage is transferred
+from the source to the sink. If ``<config.h>`` has ``#define USE_DURABILITY`` damage inflicted from
+a weapon is directly reduced from the the sink (it has to go somewhere if it doesn't hit the player, right?).
+
+4.1 A simple armour
+-------------------
+Let us start by looking at ``^std/armour/scarf.c``:
+
+.. code-block:: c
+   :linenos:
+
+   inherit ARMOUR;
+
+   void setup()
+   {
+      set_adj("red");
+      set_id("scarf");
+      set_slot("head");
+      set_value(1);
+      set_weight(0.1);
+   }
+
