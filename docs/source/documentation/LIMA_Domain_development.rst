@@ -107,20 +107,20 @@ You can also use the 'show' command to display who has been assigned specific ro
     Do not delete any domains that come pre-installed with LIMA. Some of these are integral to the 
     security system, and removing them could cause LIMA to malfunction.
 
-1.2 Domain file paths
+1.2 Domain File Paths
 ---------------------
-In Linux a home directory has a shortcut that is commonly used, tilde '~', so a ``~tsath`` refers
-to ``/home/tsath`` in Linux, and typically ``/wiz/tsath/`` in LIMA. Domains provide another
-shortcut to refer to them however, as demonstrated by these shell commands:
+In Linux, the tilde `~` is commonly used as a shortcut for the home directory. For 
+example, ``~tsath`` refers to ``/home/tsath`` in Linux, and typically ``/wiz/tsath/`` in 
+LIMA. Similarly, domains in LIMA also have a shortcut, as shown by these shell commands:
 
      |  /tmp/> cd ^pinto
      |  New cwd: /domains/pinto
      |  ^std/> 
 
-The caret, ``^`` symbol, is a shortcut for ``/domains/`` and it is possible to use in a wide range of
-places instead of typing the full path. This shortcut will come in handy when we start creating rooms,
-and things in them in Chapter 2. Most places in LIMA, you can use relative paths as well as full paths
-which is highly recommended as it provides code that is easier to move around.
+The caret symbol ``^`` acts as a shortcut for ``/domains/``, allowing you to avoid 
+typing the full path. This can be used in many places, and it will become useful when we 
+start creating rooms and other content in Chapter 2. You can also use relative paths in most 
+parts of LIMA, which is recommended as it makes your code more portable and easier to move.
 
 .. note::
     
@@ -131,18 +131,18 @@ which is highly recommended as it provides code that is easier to move around.
 
 .. note::
 
-    If you are new to programming LPMUDs you might be able to skip this section. It addresses
-    a bad behaviour used in some old mudlibs.
+    If you’re new to LPMUD programming, you might be able to skip this 
+    section. It addresses outdated practices from older mudlibs.
 
-In some classic LPMUDs it was best practice for area coders to create an include file like this one:
+In older LPMUDs, area coders often created include files with shortcuts like this:
 
 .. code-block:: c
 
-   //Some general shortcuts
+   // General shortcuts
    #define TB     this_body()
    #define TO     this_object()
 
-   //Pinto shortcuts
+   // Pinto-specific shortcuts
    #define PINTO     "/domains/pinto" 
    #define PIN_ROOM  PINTO "/room/"
    #define PIN_ITEMS PINTO "/items/"
@@ -150,48 +150,40 @@ In some classic LPMUDs it was best practice for area coders to create an include
    #define PIN_QUEST PINTO "/npc/questgiver"
    ...
 
-Even if this looks smart, and defines can be very helpful for good coding, it is important
-to realize when they are being abused.  You *can* have too many ``#define`` statements, and 
-you CAN #define the wrong things. Why is this? Basically, macros are difficult to follow when 
-there are a lot of them.  This is especially true from people trying to use your
-code to help learn.  Seeing ``TB`` as an abbreviation for ``this_body()`` is
-not uncommon, and is almost always seen out of context.  For people who
-don't quite understand macros, it is VERY confusing to see ``TP``, and trying to figure
-out what it means.  Also, even the informed reader may not find your macro
-immediately obvious, even if you do, and would likely prefer not to have to search through 
-your files to resolve every definition.
+While this seems efficient, overusing ``#define`` can lead to confusion and difficult-to-read code. 
+Having too many ``#define`` statements, or using them inappropriately, makes the code harder to 
+follow—especially for those trying to learn from your work. For instance, abbreviations 
+like ``TB`` for ``this_body()`` or ``TP`` can be confusing, even to experienced readers.
 
-The general rule of thumb for using macros is, use them when they represent a variable that 
-is subject to change/configuration. Do not use them to abbreviate just because you're too lazy 
-to do the typing. This provides easy insight into which variables are built into the objects
-by defining them at the top.
+The rule of thumb is to use macros when they represent variables that are likely to change 
+or need configuration. Avoid using them merely as shortcuts to save typing. This helps make 
+it clear which variables are integral to your objects by defining them at the top of your code.
 
-An example of some better defines from the source for the `locate <../command/locate.html>`_ command:
+Here’s an example of a better use of defines from the source of the `locate <../command/locate.html>`_ command:
 
 .. code-block:: c
 
-   //Iterations we do per call is hardcoded here
+   // Number of iterations per call is defined here
    #define ITERS_PER_CALL 50
-   //These file paths are hardcoded, so easy to spot
+   // File paths are hardcoded for easy recognition
    #define DATA_FILE "/data/locate.codes"
    #define TMP_DATA_FILE "/data/locate.tmp"
 
-So, in conclusion: Do not make include files for domains, they're considered bad style and creates
-less readable code that is harder to maintain.
+In conclusion, avoid creating include files for domains. They are considered bad style and make 
+the code less readable and harder to maintain.
 
-CHAPTER 2: Creating rooms
-==========================
-Time to create our first room! The first things to decide is which type of room you want to create:
+CHAPTER 2: Creating Rooms
+=========================
+Now let’s create our first room! First, decide what type of room you want to make:
 
    1. An outdoor room - OUTDOOR_ROOM
    2. An indoor room - INDOOR_ROOM
-   3. A room filled with water - WATER_ROOM
+   3. A water-filled room - WATER_ROOM
 
-
-2.1 A simple room
+2.1 A Simple Room
 -----------------
-For now, let us try to create an OUTDOOR_ROOM where the player might encounter weather and other
-conditions. Starting simple:
+Let’s start with an OUTDOOR_ROOM where the player might encounter weather and other environmental 
+conditions. Here’s a simple example:
 
 .. code-block:: c
    :linenos:
@@ -209,17 +201,17 @@ conditions. Starting simple:
                "silence.");
    }
 
-So what is in here:
+Explanation of the code:
 
-   - Line 1, the file we inherit to build upon.
-   - Line 3, the ``setup()`` function used in LIMA to initiate the object.
-   - Line 5, the brief description of the room. This is shown above the long description.
-   - Line 6-11, the long description of the room broken into lines for easy readability.
+   - Line 1: We inherit the OUTDOOR_ROOM class to build upon it.
+   - Line 3: The ``setup()`` function initializes the object in LIMA.
+   - Line 5: ``set_brief()`` sets a short description of the room.
+   - Lines 6-11: ``set_long()`` provides a more detailed description, broken into lines for readability.
 
 **Exercise 2**
 
-   Write the code, save this file as `/domains/pinto/room/swamp1.c`, then try to update it to check for 
-   issues. Finally, `goto <../command/goto.html>`_ the room. 
+   Write the code above, save it as `/domains/pinto/room/swamp1.c`, and use the 
+   `update <../command/update.html>`_ command to check for issues. Then `goto <../command/goto.html>`_ the room.
 
 .. tip::
 
@@ -229,13 +221,12 @@ So what is in here:
    |  /domains/pinto/room/swamp1.c: Updated and loaded.
    |  ^pinto/room/> goto swamp1
 
-Did it work? Otherwise review the error messages the `update <../command/update.html>`_ command 
-gives you. The code presented above can be copy pasted using the icon next to it.
+If it didn’t work, review the error messages provided by the ``update`` command. You can copy 
+and paste the code above using the copy icon.
 
-2.1 Adding smell and sound
+2.2 Adding Smell and Sound
 --------------------------
-
-Let us add two more functions to set the smell and a default message for when people listen.
+Now, let’s enhance the room by adding functions to describe its smell and the sounds players might hear:
 
 .. code-block:: c
    :linenos:
@@ -255,30 +246,28 @@ Let us add two more functions to set the smell and a default message for when pe
       set_smell("The air is thick with the smell of decay and stagnant water.");
    }
 
-New additions:
+Explanation of the new code:
 
-   - Line 12, set a listen description if someone uses the 'listen' verb (`/cmds/verbs/listen.c`)
-   - Line 13, set a smell description if someone uses the 'smell' verb (`/cmds/verbs/smell.c`)
+   - Line 12: Adds a description for when someone uses the 'listen' verb (`/cmds/verbs/listen.c`).
+   - Line 13: Adds a description for when someone uses the 'smell' verb (`/cmds/verbs/smell.c`).
 
 **Exercise 3**
 
-   Update the room, go there, then use ``listen`` and ``smell`` to test the descriptions.
-   
+   Update the room, go there, and test the ``listen`` and ``smell`` descriptions.
+
 .. note::
 
-   If you end up in Void at some point due to an error use the `wizz <../command/wizz.html>`_ command
-   to go to the Wizard Lounge, then update the room and then `goto <../command/goto.html>`_ to go
-   back to the swamp room.
+   If you end up in the Void due to an error, use the `wizz <../command/wizz.html>`_ command 
+   to go to the Wizard Lounge, update the room, and then ``goto`` back to the swamp.
 
-2.3 Adding details
+2.3 Adding Details
 ------------------
-Studying the description of the room it talks about trees, water, algae, sky, frog, insects, and mud.
-But doing ``look at water`` gives you:
+The room description mentions trees, water, algae, sky, frogs, insects, and mud, but if 
+someone tries to ``look at water``, they’ll see:
 
     That doesn't seem to be possible.
 
-We need to add items to the room so we can detail some of these objects further. This is done via 
-the ``add_item()`` function defined in rooms. Let us add some items to the room:
+To make these objects interactable, we need to add them as items using the ``add_item()`` function:
 
 .. code-block:: c
    :linenos:
@@ -302,42 +291,38 @@ the ``add_item()`` function defined in rooms. Let us add some items to the room:
    add_item("mud", "The ground is a thick, sticky mud that seems eager "
                    "to pull at your feet.");
 
-As seen above, the syntax is relatively simple:
+As you can see, the syntax is simple:
 
 .. code-block:: c
 
    add_item(item, description);
-   add_item(list of items, description); //See insects in line 13-16 above.
+   add_item(list of items, description); //See the example for insects in lines 13-16.
 
-But what if someone wants to pick up the mud, e.g.?
+But what if someone tries to pick up the mud?
 
   |  ^pinto/room/> get mud
   |  You can't get that.
 
-That's true, but perhaps we want a more fun description? The ``add_item()`` 
-function provides more abilities, let us use those:
+We can add a more fun response using ``add_item()`` with additional options:
 
 .. code-block:: c
    :linenos:
 
    add_item("mud", (["look":"The ground is a thick, sticky mud that seems eager "
                             "to pull at your feet.",
-                       "get":"Your stick your hands in the mud, look at them, "
-                             "then decide there are better MUDs.",
-                    "search":"You found some dirty hands."]));
+                      "get":"You stick your hands in the mud, then decide there are better MUDs.",
+                   "search":"You found some dirty hands."]));
 
-As you can see, ``add_item()`` can handle a mapping with different extra options.
+As you can see, ``add_item()`` can handle mappings to provide different responses for various actions.
 
 **Exercise 4**
 
-   Update the "mud" item to use a mapping like above, and try the different new
-   options.
+   Update the "mud" item to use a mapping like the one above, and try the different options.
 
 .. note::
 
-   You can use ``update here`` if you are standing in a room you want to update.
-   If your code has issues, you will be moved to The Void and will have to go
-   back to the room once it loads again.
+   You can use ``update here`` if you're standing in the room you want to update. If your code has issues, 
+   you will be moved to The Void and need to return to the room after fixing the code.
 
 
 2.4 Verbs and rooms
@@ -378,198 +363,201 @@ The ``create()`` statement at the bottom tells us how we can listen. The rules s
    2. listen to OBJ
    3. listen to OBJ with OBJ
 
-So, ``listen`` would be rule 1, ``listen to door`` would be rule 2, 
-``listen to body with stethoscope`` would be rule 3. The verb *centrally* defines how players
-can interact with your MUD. If you want to extend the ways players can interact, you change the verb.
-To verify our action, try to modify your the listen command you did in the swamp room earlier to:
+Verbs in MUD Systems
+====================
 
-    | ``parse listen``
+In a MUD (Multi-User Dungeon), **verbs** are central to defining how players interact with the world. 
+Each verb controls specific player actions. To add more interaction options for players, 
+you modify or introduce new verbs.
 
-This should us how the parser built into FluffOS tries to discover what to call, when the player
-types ``listen``:
+For example, consider the verb ``listen``:
 
-   |  /cmds/verbs/>parse listen
-   |  Trying interpretation: listen:
-   |  Trying rule: 
-   |    parse_rule
-   |      we_are_finished
-   |      Trying can_listen ... (/std/race/documentation#327)
-   |      Trying can_listen ... (/std/race/documentation#327)
-   |      Trying can_verb ... (/std/race/documentation#327)
-   |      Trying can_verb_rule ... (/std/race/documentation#327)
-   |      Trying can_listen ... (/cmds/verbs/listen)
-   |      Trying can_listen ... (/cmds/verbs/listen)
-   |      Trying can_verb ... (/cmds/verbs/listen)
-   |      Trying can_verb_rule ... (/cmds/verbs/listen)
-   |      Return value was: 1
-   |      Saving successful match: do_listen (cmds/verbs/listen)
-   |    exiting parse_rule ...
-   |  Calling do_listen ...
-   |  You hear nothing unusual.
-   |  1
+- **Rule 1**: ``listen``
+- **Rule 2**: ``listen to door``
+- **Rule 3**: ``listen to body with stethoscope``
 
-The lines after 'we_are_finished' shows the parser probing ``/std/race/documentation#327`` which
-is the body of the player calling the parse command, and getting probed for ``can_listen()``, then
-same probe in the verb object, then finally falling back to calling ``can_verb_rule()``.
-This function is called with the following arguments:
+The verb *centrally* defines how players interact with your MUD. If you want to expand how players 
+interact, modify the verb. You can test how the parser discovers what to call by modifying 
+the `listen` command in the swamp room as follows:
+
+.. code-block:: text
+
+    parse listen
+
+This will show how FluffOS processes the player's input and tries to determine which function to 
+call when the player types ``listen``. For example:
+
+.. code-block:: text
+
+    /cmds/verbs/> parse listen
+    Trying interpretation: listen:
+    Trying rule: 
+      parse_rule
+        we_are_finished
+        Trying can_listen ... (/std/race/documentation#327)
+        Trying can_listen ... (/std/race/documentation#327)
+        Trying can_verb ... (/std/race/documentation#327)
+        Trying can_verb_rule ... (/std/race/documentation#327)
+        Trying can_listen ... (/cmds/verbs/listen)
+        Trying can_listen ... (/cmds/verbs/listen)
+        Trying can_verb ... (/cmds/verbs/listen)
+        Trying can_verb_rule ... (/cmds/verbs/listen)
+        Return value was: 1
+        Saving successful match: do_listen (cmds/verbs/listen)
+      exiting parse_rule ...
+    Calling do_listen ...
+    You hear nothing unusual.
+    1
+
+In the lines following `we_are_finished`, the parser checks ``/std/race/documentation#327`` 
+(the player's body) for the function ``can_listen()``, then looks for it in the verb object, 
+and finally uses ``can_verb_rule()``.
+
+The ``can_verb_rule()`` function is called as follows:
 
 .. code-block:: c
 
-   verb->can_verb_rule();
+    verb->can_verb_rule();
 
-This function runs some checks required by the verb, like do we need to be able to see, do we 
-need to be alive to do the action. If these checks pass, it returns 1. 
+This function checks the necessary conditions for performing the verb. For example, 
+the ``listen`` verb may require that the player is alive or conscious. If these checks 
+pass, the function returns ``1``.
 
 .. note::
 
-   You can use the wizard shell to check what the verb returns like this:
+    You can verify the verb's return value using the wizard shell with the following command:
 
-   ``@./cmds/verbs/listen->can_verb_rule()``
+    ``@./cmds/verbs/listen->can_verb_rule()``
 
-.. note::
-   
-   An example of the default checks for verbs is the drop verb that has the following
-   code, to allow people to drop things even in the darkness:
+After verifying the rule, the parser decides to call ``do_listen()``. The corresponding lines 
+in the parser output look like this:
 
-   .. code-block:: c
+.. code-block:: text
 
-         clear_flag(NEED_TO_SEE);
+    Calling do_listen ...
+    You hear nothing unusual.
 
-
-At the end of the parse, the parser decides there is a successfull match for the rule, and decides
-to call ``do_listen()`` in the verb, this is shown in line 15-18 above. Let us look closer at that
-specific code in line 17:
+Let’s look closer at the code:
 
 .. code-block:: c
 
-   environment(this_body())->do_listen();
+    environment(this_body())->do_listen();
 
-So, find the environment of ``this_body()``, that would be the room the player is standing in
-meaning ``swamp1.c``, and then call ``do_listen()`` in the room! So if we wanted more advanced
-functionality we have just learned that the verb calls a built-in function we inherited, but
-we could also override it and return something random like:
+Here, the parser is calling the ``do_listen()`` function in the player’s current environment, 
+which is the room the player is standing in. If we want to customize the output, we can 
+override the ``do_listen()`` function in the room's code, like this:
 
 .. code-block:: c
 
-      "You hear "+(random(3)+2)+" animals fighting in the distance"
+    void do_listen() { 
+        write("You hear " + (random(3) + 2) + " animals fighting in the distance.");
+    }
 
-``random(3)`` returns a number between 0-2 plus 2, so that would turn into 2-4 animals.
+**Exercise 5**: 
+   Add a new function called ``do_listen()`` to the room ``swamp1.c``. It should send the 
+   message with fighting animals to the user. Remember, the function takes no parameters 
+   and returns nothing.
 
-**Exercise 5**
+Here's an example of the function:
 
-   Add a new function called ``do_listen()`` to ``swamp1.c`` that uses ``write()`` to send
-   the string with the fighting animals above to the current user. 
-   Remember, that the function declaration should state that the function takes no parameters, and returns
-   nothing.
+.. code-block:: c
 
-After you are done updating the room, update it, go to it, and do several 'listen' to test
-the new functionality.
+    void do_listen() { 
+        write("You hear " + (random(3) + 2) + " animals fighting in the distance.");
+    }
 
-.. tip::
-
-    The function that should be added should look like this:
-
-    .. code-block:: c
-    
-       void do_listen() { write("...."); }
-
-How would we know? You can use `dbxfuncs <../command/dbxfuncs.html>`_ to list the functions
-in OUTDOOR_ROOM, like this:
-
-   |  ^pinto/room/> dbxfuncs /std/outdoor_room do_
-   |  Matches:
-   |  int do_verb_rule(x, x, x)     (defined in /std/object/vsupport)
-   |  void do_search(x, x)          (defined in /std/object/vsupport)
-   |  int do_not_restore()          (defined in /std/object)
-   |  void do_receive(x, x)         (defined in /std/container)
-   |  void do_go_str(x)             (defined in /std/modules/m_exit)
-   |  void do_looking(x, x)         (defined in /std/room/roomdesc)
-   |  void do_pray()                (defined in /std/base_room)
-   |  **void do_listen()              (defined in /std/base_room)**
-   |  void do_look_at_str()         (defined in /std/base_room)
-   |  void do_smell()               (defined in /std/base_room)
-   |  ^pinto/room/>
-
-An other option would be to use the `apropos <../command/apropos.html>`_ command to look
-for documented ``do_listen()`` functions:
-
-   |  ^pinto/room/> apropos do_listen
-   |  [autodoc/mudlib]:  do_listen
-   |  ^pinto/room/>
-
-This tells us, that the function has been documented via autodoc in the mudlib section. 
-Using ``man do_listen`` or ``help do_listen`` will show the help page this function is
-documented on. You will get the entire context of the function as well which can lead
-to new ideas on which functions to call. You would get this page in game: 
-
-   `Mudlib base_room <../mudlib/std-base_room.html>`_ 
-
-since the function is documented here.
-
-**Exercise 6**
-
-   Use the `::` operator to call the original ``do_listen()`` function that you have
-   overwritten in your current code, so they are both your new function and the one defined
-   in OUTDOOR_ROOM is called.
-
+After updating the room, reload it and test the new functionality by repeatedly using the ``listen`` command.
 
 .. tip::
 
-   Here is the final code for Exercise 6, if you are having issues:
+    Use the following command to list all functions that begin with ``do_`` in the ``OUTDOOR_ROOM``:
 
-   .. code-block:: c
-   
-       inherit OUTDOOR_ROOM;
+.. code-block:: text
 
-      void setup()
-      {
-         set_brief("Murky Swamp");
-         set_long("You find yourself in a murky, dank swamp. The air is thick with humidity "
-                  "and the smell of decaying vegetation. Twisted trees rise from the muddy "
-                  "water, their gnarled branches reaching towards the dim sky. Patches of "
-                  "sickly green algae float on the surface of the stagnant pools. "
-                  "The occasional croak of a frog or buzz of an insect breaks the eerie "
-                  "silence.");
-         set_listen("You hear the occasional croak of frogs and the buzzing of insects.");
-         set_smell("The air is thick with the smell of decay and stagnant water.");
-         add_item("trees", "The trees are twisted and gnarled, their roots submerged in "
-                  "the murky water. Their branches seem to reach out like "
-                  "skeletal fingers.");
-         add_item("water", "The water is dark and murky. You can see patches of algae "
-                  "floating on its surface.");
-         add_item("algae", "Sickly green patches of algae float lazily on the surface "
-                  "of the water.");
-         add_item("sky", "The sky is barely visible through the canopy of twisted "
-                  "branches overhead. What little you can see "
-                  "looks gloomy and overcast.");
-         add_item("frog", "You don't see any frogs at the moment, but you can hear "
-                  "them croaking nearby.");
-         add_item("insect", "insects", "bugs",
-                  "Tiny insects buzz around, occasionally "
-                  "landing on the surface "
-                  "of the water or on patches of vegetation.");
-         add_item("mud", (["look":"The ground is a thick, sticky mud that seems eager "
-                                  "to pull at your feet.",
-                            "get":"Your stick your hands in the mud, look at them, "
-                                  "then decide there are better MUDs.",
-                         "search":"You found some dirty hands."]));
-      }
+   ^pinto/room/> dbxfuncs /std/outdoor_room do_
 
-      void do_listen()
-      {
-         ::do_listen();
-         write("You hear " + (random(3) + 2) + " animals fighting in the distance");
-      }
+    Matches:
+    int do_verb_rule(x, x, x)     (defined in /std/object/vsupport)
+    void do_search(x, x)          (defined in /std/object/vsupport)
+    int do_not_restore()          (defined in /std/object)
+    void do_receive(x, x)         (defined in /std/container)
+    void do_go_str(x)             (defined in /std/modules/m_exit)
+    void do_looking(x, x)         (defined in /std/room/roomdesc)
+    void do_pray()                (defined in /std/base_room)
+    **void do_listen()              (defined in /std/base_room)**
+    void do_look_at_str()         (defined in /std/base_room)
+    void do_smell()               (defined in /std/base_room)
 
-CHAPTER 3: Creating weapons
-===========================
-Weapons follow the same mechanics of room, in that they use ``setup()`` to define 
-name, attributes and so on for the weapon. Let us look at ``^std/weapon/greataxe.c``:
+Alternatively, use the ``apropos`` command to search for documented functions:
 
-.. code-block:: c 
+.. code-block:: text
+
+    ^pinto/room/> apropos do_listen
+    [autodoc/mudlib]:  do_listen
+    ^pinto/room/>
+
+**Exercise 6**:
+   Use the ``::`` operator to call the original ``do_listen()`` function in addition to your 
+   new functionality. This way, both the original behavior and your customized message will be triggered.
+
+Here is the final code:
+
+.. code-block:: c
+
+    inherit OUTDOOR_ROOM;
+
+    void setup()
+    {
+        set_brief("Murky Swamp");
+        set_long("You find yourself in a murky, dank swamp. The air is thick with humidity "
+                 "and the smell of decaying vegetation. Twisted trees rise from the muddy "
+                 "water, their gnarled branches reaching towards the dim sky. Patches of "
+                 "sickly green algae float on the surface of the stagnant pools. "
+                 "The occasional croak of a frog or buzz of an insect breaks the eerie "
+                 "silence.");
+        set_listen("You hear the occasional croak of frogs and the buzzing of insects.");
+        set_smell("The air is thick with the smell of decay and stagnant water.");
+        add_item("trees", "The trees are twisted and gnarled, their roots submerged in "
+                 "the murky water. Their branches seem to reach out like "
+                 "skeletal fingers.");
+        add_item("water", "The water is dark and murky. You can see patches of algae "
+                 "floating on its surface.");
+        add_item("algae", "Sickly green patches of algae float lazily on the surface "
+                 "of the water.");
+        add_item("sky", "The sky is barely visible through the canopy of twisted "
+                 "branches overhead. What little you can see "
+                 "looks gloomy and overcast.");
+        add_item("frog", "You don't see any frogs at the moment, but you can hear "
+                 "them croaking nearby.");
+        add_item("insect", "insects", "bugs",
+                 "Tiny insects buzz around, occasionally "
+                 "landing on the surface "
+                 "of the water or on patches of vegetation.");
+        add_item("mud", (["look":"The ground is a thick, sticky mud that seems eager "
+                                   "to pull at your feet.",
+                          "get":"You stick your hands in the mud, look at them, "
+                                "then decide there are better MUDs.",
+                          "search":"You found some dirty hands."]));
+    }
+
+    void do_listen()
+    {
+        ::do_listen();
+        write("You hear " + (random(3) + 2) + " animals fighting in the distance.");
+    }
+
+
+CHAPTER 3: Creating Weapons
+============================
+
+Creating weapons in the MUD follows a similar structure to creating rooms, especially with the 
+use of the `setup()` function. This function is crucial for defining the weapon’s name, attributes, and 
+other important details. Let's take a closer look at the code for the greataxe found in `^std/weapon/greataxe.c`:
+
+.. code-block:: c
    :linenos:
 
-   /* Do not remove the headers from this file! see /USAGE for more info. */
+   /* Do not remove the headers from this file! See /USAGE for more information. */
 
    inherit WEAPON;
 
@@ -585,42 +573,39 @@ name, attributes and so on for the weapon. Let us look at ``^std/weapon/greataxe
       set_skill_restriction("combat/axe", 1);
       set_skill_restriction_message("The greataxe feels foreign in $p hand. $N $vwield it like $n would wield a pickaxe.");
       set_must_dual_wield(1);
-      set_salvageable((["wood":15, "metal":85, ]));
+      set_salvageable((["wood":15, "metal":85]));
    }
 
-Line by line:
-   - Line 3: We inherit WEAPON (``/std/weapon.c``) - go back to the 
-     `basic LIMA guide Section 1.3 <Basic_LIMA_Guide.html#shortcuts-for-filenames>`_ 
-     if you find this puzzling.
-   - Line 5: Our old friend the setup function.
-   - Line 7: Set the IDs that the weapon will be known by. This line will ensure that the user can
-     both use ``wield axe`` and ``wield greataxe``.
-   - Line 8: Set the weight of the item in kilos.
-   - Line 9: Set the value to 30 (something - more on MONEY_D later)
-   - Line 10: This sets how hard the weapon hits. With a weapon class of 12 the weapon will damage opponents
-     between 0-11 points, plus damage from strength. Dual wielded weapons may do 1.5 times strength bonus.
-   - Line 11: Sets the combat messages the weapon uses (more on messages later, for now look inside the directory
-     called ``/data/messages/`` this folder contains standard messages for a lot of things.)
-   - Line 12: This sets the damage type of the weapon. Damage types are defined in the 
-     `DAMAGE_D <../daemon/daemons-damage_d.html>`_ daemon.
-   - Line 13: Here, we set the skill trained by using this weapon.
-   - Line 14: This line introduces a skill restriction, saying we need at least to be rank 1 in ``combat/axe``
-     to get full benefit of the axe. The player can still use the weapon, but will get told that it's not
-     optimal, and will be attacking at reduced efficiency and will do reduced damage.
-   - Line 15: The message for a player who does not fulfil the required ranks - there is a 
-     `lot more be said about messages <Messaging.html>`_.
-   - Line 16: Not only do we say this this weapon can be dual-wielded here, we say that it must be. Some
-     weapons can be wielded in one or two hands, adding more damage should the player want to do so.
-   - Line 17: This line tells the ``salvage`` verb what the weapon is made of (more on salvaging and materials later).
+Let’s break down this code line by line:
 
-So, a lot of similarities to room, ``setup()``, calls to lots of functions to add features to the object.
+  - **Line 3**: We inherit the `WEAPON` object from `^std/weapon.c`. If this seems unfamiliar, 
+    refer back to the LIMA Guide, Section 1.3, on shortcuts for filenames.
+  - **Line 5**: The familiar `setup()` function initializes the weapon.
+  - **Line 7**: We use `set_id()` to define the identifiers for the weapon. In this case, the 
+    greataxe will respond to both "axe" and "greataxe". This allows players to type either `wield axe` or `wield greataxe`.
+  - **Line 8**: This sets the weight of the weapon in kilograms.
+  - **Line 9**: The value is set to 30 (currency details will be covered later when discussing the MONEY_D daemon).
+  - **Line 10**: The weapon's class is set to 12, determining how much damage it can deal. 
+    In this case, it can deal between 0 and 11 damage points, plus any strength-based bonuses. When dual-wielded, the weapon may apply 1.5 times the strength bonus.
+  - **Line 11**: The combat messages are set here. These messages will be displayed during 
+    combat actions. For now, you can explore the standard combat messages in the `/data/messages/` directory.
+  - **Line 12**: This sets the type of damage the weapon inflicts, in this case, "slashing". 
+    The various damage types are managed by the `DAMAGE_D` daemon.
+  - **Line 13**: This line specifies which skill is trained by using the weapon. In this case, 
+    it is the "combat/melee/blade" skill.
+  - **Line 14**: A skill restriction is applied here, requiring the player to have at least 
+    rank 1 in "combat/axe" to use the weapon effectively. Without this rank, the player can 
+    still use the weapon but will experience reduced efficiency and damage output.
+
+As you can see, the `setup()` function in weapons shares many similarities with how rooms 
+are set up. It involves making various function calls to add features and behaviors to the object.
 
 .. tip::
 
-   Wait, you don't want to set the weight in kilos? Then change ``#define METRIC`` to
-   ``#undef METRIC`` in config.h.
+   Prefer to use a different unit for weight? You can switch from metric units by 
+   changing `#define METRIC` to `#undef METRIC` in the `config.h` file.
 
 .. note::
 
-   The DAMAGE_D keeps track of special attacks for weapons as well, think ``murdering longsword of lightning bolts``
-   and you get the right picture.
+   The `DAMAGE_D` daemon also manages special weapon attacks. Think of something 
+   like a "murderous longsword of lightning bolts," and you’ll get the idea.
