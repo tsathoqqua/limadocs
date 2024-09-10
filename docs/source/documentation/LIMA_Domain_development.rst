@@ -627,7 +627,7 @@ name, attributes and so on for the weapon. Let us look at ``^std/weapon/sword.c`
       add_combat_message("miss", "$N $vtake a clumsy swipe at $t, but only $vsucceed in making a fool of $r.");
    }
 
-This is a relatively simple weapon, that still 
+This is a relatively simple weapon, that still contains a bit of custom functionality. 
 
 Line by line:
    - Line 3: We inherit SWORD (``/std/sword.c``) - go back to the 
@@ -647,6 +647,9 @@ Line by line:
 
    Read ``SWORD``, and try to make sense of the functions used in there. Use ``apropos`` and ``man`` 
    to find out more about the functions. Did you find missing documentation?
+
+Here is another example with a few more features, a great axe that includes skill restrictions and custom
+details for salvaging! More details below.
 
 .. code-block:: c 
    :linenos:
@@ -671,31 +674,18 @@ Line by line:
    }
 
 Line by line:
-   - Line 3: We inherit WEAPON (``/std/weapon.c``) - go back to the 
-     `basic LIMA guide Section 1.3 <Basic_LIMA_Guide.html#shortcuts-for-filenames>`_ 
-     if you find this puzzling.
-   - Line 5: Our old friend the setup function.
    - Line 7: Set the IDs that the weapon will be known by. This line will ensure that the user can
      both use ``wield axe`` and ``wield greataxe``.
-   - Line 8: Set the weight of the item in kilos.
-   - Line 9: Set the value to 30 (something - more on MONEY_D later)
-   - Line 10: This sets how hard the weapon hits. With a weapon class of 12 the weapon will damage opponents
-     between 0-11 points, plus damage from strength. Dual wielded weapons may do 1.5 times strength bonus.
    - Line 11: Sets the combat messages the weapon uses (more on messages later, for now look inside the directory
      called ``/data/messages/`` this folder contains standard messages for a lot of things.)
-   - Line 12: This sets the damage type of the weapon. Damage types are defined in the 
-     `DAMAGE_D <../daemon/daemons-damage_d.html>`_ daemon.
    - Line 13: Here, we set the skill trained by using this weapon.
    - Line 14: This line introduces a skill restriction, saying we need at least to be rank 1 in ``combat/axe``
      to get full benefit of the axe. The player can still use the weapon, but will get told that it's not
      optimal, and will be attacking at reduced efficiency and will do reduced damage.
-   - Line 15: The message for a player who does not fulfil the required ranks - there is a 
-     `lot more be said about messages <Messaging.html>`_.
+   - Line 15: The message for a player who does not fulfil the required ranks.
    - Line 16: Not only do we say this this weapon can be dual-wielded here, we say that it must be. Some
      weapons can be wielded in one or two hands, adding more damage should the player want to do so.
    - Line 17: This line tells the ``salvage`` verb what the weapon is made of (more on salvaging and materials later).
-
-So, a lot of similarities to room, ``setup()``, calls to lots of functions to add features to the object.
 
 .. tip::
 
