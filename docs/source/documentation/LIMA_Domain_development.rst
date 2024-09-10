@@ -563,6 +563,51 @@ since the function is documented here.
 
 CHAPTER 3: Creating weapons
 ===========================
+
+
+3.1 A small paragraph about Identifiers
+---------------------------------------
+The Identifiers (or IDs) of objects help the players refer to them in the world.
+
+   |  get shovel
+   |  get hat
+   |  get sombrero
+   |  get white cat
+   |  get small cat
+
+Different objects may be referred to by many names, the hat may actually be a sombrero,
+but the cat might also be both small and white. The combinations may be endless, imagine
+a small white friendly cat in your game? Which IDs should it have?
+
+   |  small white friendly cat
+   |  white friendly cat
+   |  white cat
+   |  cat
+   |  small friendly cat?
+   |  small cat
+
+This quickly explodes into a range of IDs as you can see, so LIMA has a system called
+adjectives on top of IDs. For the cat we could handle this as:
+
+.. code-block:: c
+   :linenos:
+
+   set_id("cat");
+   add_adj("small","white","cat");
+   set_in_room_desc("A small white cat is sitting here.");
+
+This would allow the player to refer to the cat by all these adjectives without us
+having to make a complete list of combinations of adjectives. This system works for
+most objects in LIMA, including weapons.
+
+.. note::
+
+   Rooms have two IDs as well: ``environment`` and ``here`` which allows players
+   to ``look at environment`` e.g., but also a wizard to ``update here`` to update
+   the room to a newer version as previously discussed.
+
+3.2 Melee weapons
+-----------------
 Weapons follow the same mechanics of room, in that they use ``setup()`` to define 
 name, attributes and so on for the weapon. Let us look at ``^std/weapon/greataxe.c``:
 
