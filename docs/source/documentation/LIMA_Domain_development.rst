@@ -590,7 +590,7 @@ name, attributes and so on for the weapon. Let us look at ``^std/weapon/greataxe
 
 Line by line:
    - Line 3: We inherit WEAPON (``/std/weapon.c``) - go back to the 
-     `basic LIMA guide Section 1.3 <Basic_LIMA_Guide.html#shortcuts-for-filenames> `_ 
+     `basic LIMA guide Section 1.3 <Basic_LIMA_Guide.html#shortcuts-for-filenames>`_ 
      if you find this puzzling.
    - Line 5: Our old friend the setup function.
    - Line 7: Set the IDs that the weapon will be known by. This line will ensure that the user can
