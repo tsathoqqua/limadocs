@@ -648,6 +648,11 @@ Line by line:
    Read ``SWORD``, and try to make sense of the functions used in there. Use ``apropos`` and ``man`` 
    to find out more about the functions. Did you find missing documentation?
 
+.. tip::
+
+   Wait, you don't want to set the weight in kilos? Then change ``#define METRIC`` to
+   ``#undef METRIC`` in config.h.
+
 Here is another example with a few more features, a great axe that includes skill restrictions and custom
 details for salvaging! More details below.
 
@@ -694,8 +699,13 @@ Line by line:
 
 .. tip::
 
-   Wait, you don't want to set the weight in kilos? Then change ``#define METRIC`` to
-   ``#undef METRIC`` in config.h.
+   Your newly created weapon should go in ``^pinto/weapon/`` with an appropriate filename. For the rest
+   of this guide we will refer to ``^pinto/weapon/flail.c`` but you do not have to create a flail.
+
+.. tip::
+   If you want someone to try out your new weapon on, ``^std/monster/flea`` and ``^std/monster/troll``
+   would like to help you out. Use `clone command <../command/clone.html>`_ to clone the monsters, and
+   `hp <../player_command/hp.html>`_ to check how your opponents are doing.
 
 .. note::
 
