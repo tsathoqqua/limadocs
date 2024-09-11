@@ -35,7 +35,7 @@ So what is in here:
    - Line 5, the brief description of the room. This is shown above the long description.
    - Line 6-11, the long description of the room broken into lines for easy readability.
 
-**Exercise 2**
+**Exercise 1**
 
    Write the code, save this file as `/domains/pinto/room/swamp1.c`, then try to update it to check for 
    issues. Finally, `goto <../command/goto.html>`_ the room. 
@@ -79,7 +79,7 @@ New additions:
    - Line 12, set a listen description if someone uses the 'listen' verb (`/cmds/verbs/listen.c`)
    - Line 13, set a smell description if someone uses the 'smell' verb (`/cmds/verbs/smell.c`)
 
-**Exercise 3**
+**Exercise 2**
 
    Update the room, go there, then use ``listen`` and ``smell`` to test the descriptions.
    
@@ -147,7 +147,7 @@ function provides more abilities, let us use those:
 
 As you can see, ``add_item()`` can handle a mapping with different extra options.
 
-**Exercise 4**
+**Exercise 3**
 
    Update the "mud" item to use a mapping like above, and try the different new
    options.
@@ -274,7 +274,7 @@ we could also override it and return something random like:
 
 ``random(3)`` returns a number between 0-2 plus 2, so that would turn into 2-4 animals.
 
-**Exercise 5**
+**Exercise 4**
 
    Add a new function called ``do_listen()`` to ``swamp1.c`` that uses ``write()`` to send
    the string with the fighting animals above to the current user. 
@@ -325,7 +325,7 @@ to new ideas on which functions to call. You would get this page in game:
 
 since the function is documented here.
 
-**Exercise 6**
+**Exercise 5**
 
    Use the `::` operator to call the original ``do_listen()`` function that you have
    overwritten in your current code, so they are both your new function and the one defined

@@ -82,7 +82,7 @@ Line by line:
    - Line 11: Sets a special combat message for when you miss with this weapon - more on
      `messages <Messaging.html>`_ here.
 
-**Exercise 7**
+**Exercise 1**
 
    Read ``SWORD``, and try to make sense of the functions used in there. Use ``apropos`` and ``man`` 
    to find out more about the functions. Did you find missing documentation?
@@ -131,7 +131,7 @@ Line by line:
      weapons can be wielded in one or two hands, adding more damage should the player want to do so.
    - Line 17: This line tells the ``salvage`` verb what the weapon is made of (more on salvaging and materials later).
 
-**Exercise 8**
+**Exercise 2**
 
    Create your own weapon that uses some of these functions, for now try not to add new damage
    types unless you feel confident doing so. Override some custom messages and experiment with wielding.
