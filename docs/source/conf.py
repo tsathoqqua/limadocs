@@ -19,7 +19,10 @@ extensions = [
     'sphinx.ext.intersphinx',
     'sphinx_copybutton',
     'sphinx_code_tabs',
+    'sphinx_disqus.disqus',
 ]
+
+disqus_shortname = "lima-mudlib"
 
 html_logo = "images/lima.png"
 html_theme_options = {

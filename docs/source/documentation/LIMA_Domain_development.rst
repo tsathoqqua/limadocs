@@ -2,6 +2,8 @@
 LIMA Domain Development
 ***********************
 
+.. disqus::
+
 Prerequisites
 -------------
 To fully benefit from this guide, you should have a basic understanding of LPC and how 
