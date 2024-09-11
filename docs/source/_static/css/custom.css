@@ -31,3 +31,7 @@
     content: "\20\20\20\20\20\20\20\20\20\20\20\20\20\20\20";
     white-space: pre;
 }
+
+.wy-nav-content {
+    max-width: 1200px !important;
+}
