@@ -1,6 +1,5 @@
-======
-Didlog
-======
+Version 10 beta 6
+=================
 
 - **Wed Mar 30 10:06:37 2022**: *Tsath*  made 'scan' more copy/paste friendly.
 - **Wed Mar 30 11:23:37 2022**: *Tsath*  added domain_file() and author_file() in master to support new driver feature

@@ -1,6 +1,5 @@
-======
-Didlog
-======
+Version 1.1 alpha 1
+===================
 
 - **Mon Nov 14 12:20:28 2022**: *Tsath*  changed mudlib version to 1.1 alpha 1. Changes are coming.
 - **Mon Nov 14 12:22:50 2022**: *Tsath*  added new shortcut for "/domains", '^'. Works in prompts, cd, and all file references. E.g. "^std/monsters/troll".
