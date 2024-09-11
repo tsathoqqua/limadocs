@@ -1,8 +1,6 @@
 ***********************
 LIMA Domain Development
-***********************
-
-.. disqus::
+***********************   
 
 Prerequisites
 -------------
@@ -741,3 +739,4 @@ Let us start by looking at ``^std/armour/scarf.c``:
       set_weight(0.1);
    }
 
+.. disqus::
