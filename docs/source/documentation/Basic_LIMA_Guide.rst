@@ -2289,3 +2289,5 @@ eg a ball to kick:
 
 It is usually worth abstracting such code into a module, so that similar
 items can inherit the module, instead of cut/pasting the support code.
+
+.. disqus::

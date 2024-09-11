@@ -99,3 +99,4 @@ Ubuntu
 
 Same as above, except you can skip directly to step 4.
 
+.. disqus::

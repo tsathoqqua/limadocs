@@ -92,3 +92,5 @@ The *.here:greeter* works in the Wizroom where the LIMA Mudlib Greeter is, other
 *targetted_action()* can also combine a target with a list of objects, like this::
 
     @.here:greeter->targetted_action("$N $vgive $t a hug and $p $o.",.me,.me:map)
+
+.. disqus::

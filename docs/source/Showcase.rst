@@ -297,3 +297,5 @@ The `scripts <command/scripts.html>`_ command gives an overview of scripts curre
   }
 
 The main objective of the ``recover()`` function is to return the NPC back to the original position.
+
+.. disqus::
