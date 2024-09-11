@@ -5,10 +5,10 @@ LPC Basics learning path
 
 Chapters
 --------
-   * `Introduction <Basic_LIMA_Guide_c1.rst>`_
-   * `The LPC Program <Basic_LIMA_Guide_c2.rst>`_
-   * `The LPC Data Types <Basic_LIMA_Guide_c3.rst>`_
-   * `Functions <Basic_LIMA_Guide_c4.rst>`_
+   * `Introduction <Basic_LIMA_Guide_c1.html>`_
+   * `The LPC Program <Basic_LIMA_Guide_c2.html>`_
+   * `The LPC Data Types <Basic_LIMA_Guide_c3.html>`_
+   * `Functions <Basic_LIMA_Guide_c4.html>`_
    * `The Basics of Inheritance <Basic_LIMA_Guide_c5.html>`_
    * `Variable Handling <Basic_LIMA_Guide_c6.html>`_
    * `Flow Control <Basic_LIMA_Guide_c7.html>`_
