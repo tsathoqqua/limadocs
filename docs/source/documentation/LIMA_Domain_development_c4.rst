@@ -129,4 +129,9 @@ Use the following template for a bird (or modify as you please):
 
    Optionally: Create a small armour for it that it can wear on each wing.
 
+.. note:
+
+   We will cover monsters in more details, but for now this is good enough to
+   create a swan.
+
 .. disqus::
