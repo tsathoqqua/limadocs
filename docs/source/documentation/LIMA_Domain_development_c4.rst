@@ -80,24 +80,6 @@ Let us look at a humanoid body type:
 | left hand    |  -1     | left wrist  |                 |
 +--------------+---------+-------------+-----------------+
 
-
-   |  Limb                 Health          Parent Limb     Type
-   |  --------------------------------------------------------------------
-   |  head                 20              torso           vital
-   |  right leg            15              torso           mobile
-   |  right foot           -1              right leg
-   |  neck                 -1              torso
-   |  back                 -1              torso
-   |  left arm             15              torso           wielding
-   |  left foot            -1              left leg
-   |  left wrist           -1              left arm
-   |  left leg             15              torso           mobile
-   |  torso                20                              vital
-   |  right wrist          -1              right arm
-   |  right hand           -1              right wrist
-   |  right arm            15              torso           wielding
-   |  left hand            -1              left wrist
-
 When creating a body type, a few rules apply:
 
    1. The total sum of health must be 100, ignoring all the -1 values.
