@@ -26,11 +26,9 @@ We provide several learning paths here with exercises to facilitate better leani
 
 Latest changes
 ==============
-- `Changes in 1.1a4 (Current version) <versions/11a4.html>`_
-- `Changes in 1.1a3 <versions/11a3.html>`_
-- `Changes in 1.1a2 <versions/11a2.html>`_
-- `Changes in 1.1a1 <versions/11a1.html>`_
-- `Changes in 1.0b6 <versions/10b6.html>`_
+The latest changes to LIMA, can be read for version `1.1 alpha 4  <versions/11a4.html>`_, latest release notes 
+for `1.1 alpha 3 <versions/11a3.html>`_. All known changes at this point can be read on the
+`Versions page <Versions.html>`_.
 
 Commands
 ========
