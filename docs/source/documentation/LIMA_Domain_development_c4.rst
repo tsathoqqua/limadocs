@@ -1,8 +1,6 @@
 CHAPTER 4: Creating armour
 ==========================
 
-**THIS ARTICLE IS INCOMPLETE**
-
 Weapons are using ``M_DAMAGE_SOURCE`` and armours are using ``M_DAMAGE_SINK``, as damage is transferred
 from the source to the sink. If ``<config.h>`` has ``#define USE_DURABILITY`` damage inflicted from
 a weapon is directly reduced from the the sink (it has to go somewhere if it doesn't hit the player, right?).
