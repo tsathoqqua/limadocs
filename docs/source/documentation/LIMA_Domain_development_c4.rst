@@ -181,7 +181,7 @@ the gloves that they cover the right hand as well.
 
    Why do we not need ``set_armour_class(3);`` in line 8 for the gloves?
 
-.. tip:
+.. tip::
 
    The *answer* to this, is in the list below the table above describing rules for body creation.
    
@@ -239,11 +239,16 @@ A few more interesting lines here:
 
 Notice how the message change depending on how hard the dummy is hit.
 
-.. tip: 
+.. tip::
 
    Use ``equip dummy`` to monitor what the dummy is wearing, and ``equip`` to see which weapon you are doing damage with, and
    how it is impacting the dummy.
    You will also see your skill ranks going up while doing this, ``skills`` to check.
+
+
+.. note::
+
+   The dummy will never lose hit points.
 
 
 .. disqus::
