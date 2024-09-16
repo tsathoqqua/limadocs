@@ -191,6 +191,9 @@ the gloves that they cover the right hand as well.
 
    Now, that you know the bullet number, can you explain why we do not need armour class for gloves?
 
+4.3 Resistances and weaknesses
+------------------------------
+
 Here is another example, a kevlar vest that can be worn underneath another jacket in your game:
 
 .. code-block:: c 
@@ -232,6 +235,11 @@ A few more interesting lines here:
      The amount of materials depends on the weight of the item, as it represents how much there is to salvage. We did not explicitly set
      the weight of the vest here, but you could do that.
 
+.. tip::
+
+   To understand the damage function exactly see the ``class event_info sink_modify_event(class event_info evt)`` function in
+   the `m_damage_source <../module/modules-m_damage_source.html>`_ module. Change to fit your needs.
+
 **Exercise 5**
 
    Create your own armour piece that uses some of the new functions you learned above, set some weaknesses and resistances,
@@ -245,7 +253,6 @@ Notice how the message change depending on how hard the dummy is hit.
    Use ``equip dummy`` to monitor what the dummy is wearing, and ``equip`` to see which weapon you are doing damage with, and
    how it is impacting the dummy.
    You will also see your skill ranks going up while doing this, ``skills`` to check.
-
 
 .. note::
 
