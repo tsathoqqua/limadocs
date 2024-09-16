@@ -4,10 +4,10 @@ LIMA Domain Development
 
 Chapters
 --------
-   * `Creating a domain <LIMA_Domain_development_c1.html>`_ (1 exercise)
-   * `Creating rooms <LIMA_Domain_development_c2.html>`_ (5 exercises)
-   * `Creating weapons <LIMA_Domain_development_c3.html>`_ (2 exercises)
-   * `Creating armour <LIMA_Domain_development_c4.html>`_ (3 exercises)
+   1. `Creating a domain <LIMA_Domain_development_c1.html>`_ (1 exercise)
+   2. `Creating rooms <LIMA_Domain_development_c2.html>`_ (5 exercises)
+   3. `Creating weapons <LIMA_Domain_development_c3.html>`_ (2 exercises)
+   4. `Creating armour <LIMA_Domain_development_c4.html>`_ (3 exercises)
 
 Prerequisites
 -------------
