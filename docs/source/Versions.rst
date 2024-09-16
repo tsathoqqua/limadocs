@@ -5,7 +5,7 @@ This page lists the changes done and captured in the DID_D for LIMA for the last
 have been lost in the fog of time. More recent LIMA releases will feature full "did logs", but anything
 before 1.1a1 is by best effort.
 
-- `Changes in 1.1a4 (Current version) <versions/11a4.html>`_
+- `Changes in 1.1a4 <versions/11a4.html>`_ (Current version) 
 - `Changes in 1.1a3 <versions/11a3.html>`_
 - `Changes in 1.1a2 <versions/11a2.html>`_
 - `Changes in 1.1a1 <versions/11a1.html>`_

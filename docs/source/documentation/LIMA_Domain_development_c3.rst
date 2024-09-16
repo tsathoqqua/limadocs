@@ -149,7 +149,7 @@ Line by line:
 
 .. note::
 
-   The DAMAGE_D keeps track of special attacks for weapons as well, think ``murdering longsword of lightning bolts``
-   and you get the right picture.
+   The `damage_d <daemon/daemons-damage_d.html>`_ keeps track of special attacks for weapons as well, think 
+   ``murdering longsword of lightning bolts`` and you get the right picture.
 
 .. disqus::

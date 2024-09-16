@@ -149,4 +149,99 @@ Use the following template for a bird (or modify as you please):
    We will cover monsters in more details, but for now this is good enough to
    create a swan.
 
+4.2 Armours with more pieces
+----------------------------
+Armours do sometimes not just cover one limb, think of a pair of gloves (both hands),
+or a jacket (which does not just cover the torso, but also left arm, right arm and the back).
+
+LIMA has a simple system for situations like this, let us look at a pair of gloves:
+
+.. code-block:: c 
+   :linenos:
+
+   /* Do not remove the headers from this file! see /USAGE for more info. */
+
+   inherit ARMOUR;
+
+   void setup()
+   {
+      set_adj("pair of");
+      set_armour_class(3);
+      set_id("gloves");
+      set_long("These are black gloves made of fine leather. Perhaps.");
+      set_slot("left hand");
+      set_also_covers("right hand");
+   }
+
+Most of the things above, you will recognise at this point from the scarf, but in line 12 we have a new
+function call ``set_also_covers("right hand");``. This function barely needs any explanation, it tells
+the gloves that they cover the right hand as well.
+
+**Exercise 4**
+
+   Why do we not need ``set_armour_class(3);`` in line 8 for the gloves?
+
+.. tip:
+
+   The *answer* to this, is in the list below the table above describing rules for body creation.
+   
+   To not give you the answer directly, the correct list number above is the same number as the "Functions" chapter in
+   `LPC Basics learning path <documentation/Basic_LIMA_Guide.html>`_ (Don't click unless you have no idea).
+
+   Now, that you know the bullet number, can you explain why we do not need armour class for gloves?
+
+Here is another example, a kevlar vest that can be worn underneath another jacket in your game:
+
+.. code-block:: c 
+   :linenos:
+
+   /* Do not remove the headers from this file! see /USAGE for more info. */
+
+   inherit ARMOUR;
+
+   void setup()
+   {
+      set_id("vest");
+      add_adj("kevlar", "old");
+      set_slot("torso");
+      set_long("A old kevlar vest made with a few still functional velcro straps. It provides protection against regular "
+               "bullets, but is slightly vulnerable to plasma rounds due to some of the metal bands used inside it.");
+      set_armour_class(random(5) + 2);
+      set_worn_under(1);
+      set_wearmsg("$N $vstrap on a kevlar vest.");
+      set_resistances((["force":20]));
+      set_weaknesses((["slashing":5]));
+      set_salvageable((["textile":60, "metal":40]));
+   }
+
+A few more interesting lines here:
+   - Line 1-11: You should have seen all these before.
+   - Line 12: A small variant of ``set_armour_class()`` where we use a ``random()`` function to give players a reason
+     to hunt the best possible kevlar vest (not all vests are created equal), i.e. they have AC from 2-6.
+   - Line 13: ``set_worn_under(1)`` tells the limb system that this item can be worn under other items covering that body part.
+     Otherwise, the player would receive a ``You discover you cannot wear the kevlar vest.``  when trying to wear the vest
+     with the leather jacket (see ``^std/armour/leather_jacket.c``).
+   - Line 14: A custom message for when a player wears the vest can be set this way. Otherwise the default ``"$N $vwear a $o."``
+     and ``"$N $vremove $p $o."`` messages will be used.
+   - Line 15: This is a special leather jacket that will increase the effective armour class against force with 20 points 
+     ("force" is a damage type defined in the `damage_d <../daemon/daemons-damage_d.html>`_).
+   - Line 16: Weakness on the other hand decreases the armour class by 5 points of the damage the players receive from this damage type. 
+     In this case the kevlar jacket is easy to slash through, but will stop (some) force, i.e. from bullets.
+   - Line 17: This defines the materials that can be salvaged, as we saw `in Section 3.2 <LIMA_Domain_development_c3.html#melee-weapons>`_.
+     The amount of materials depends on the weight of the item, as it represents how much there is to salvage. We did not explicitly set
+     the weight of the vest here, but you could do that.
+
+**Exercise 5**
+
+   Create your own armour piece that uses some of the new functions you learned above, set some weaknesses and resistances,
+   and test your armour on the test dummy found in ``^std/monster/test_dummy.c``. Clone the dummy, give it your armour, and
+   it will automatically wear whatever you give it (or attempt to).
+
+   Use ``equip dummy`` to monitor what the dummy is wearing, and ``equip`` to see which weapon you are doing damage with, and
+   how it is impacting the dummy.
+
+.. tip: 
+
+   You will also see your skill ranks going up while doing this, ``skills`` to check.
+
 .. disqus::
