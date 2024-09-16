@@ -185,8 +185,9 @@ the gloves that they cover the right hand as well.
 
    The *answer* to this, is in the list below the table above describing rules for body creation.
    
-   To not give you the answer directly, the correct list number above is the same number as the "Functions" chapter in
-   `LPC Basics learning path <documentation/Basic_LIMA_Guide.html>`_ (Don't click unless you have no idea).
+   To not give you the answer directly, you can find the correct number for above, by finding the number
+   of the "Functions" chapter in `LPC Basics learning path <Basic_LIMA_Guide.html>`_ 
+   (Don't click unless you have no idea).
 
    Now, that you know the bullet number, can you explain why we do not need armour class for gloves?
 
