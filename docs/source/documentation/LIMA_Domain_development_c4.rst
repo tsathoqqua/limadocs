@@ -237,11 +237,13 @@ A few more interesting lines here:
    and test your armour on the test dummy found in ``^std/monster/test_dummy.c``. Clone the dummy, give it your armour, and
    it will automatically wear whatever you give it (or attempt to).
 
-   Use ``equip dummy`` to monitor what the dummy is wearing, and ``equip`` to see which weapon you are doing damage with, and
-   how it is impacting the dummy.
+Notice how the message change depending on how hard the dummy is hit.
 
 .. tip: 
 
+   Use ``equip dummy`` to monitor what the dummy is wearing, and ``equip`` to see which weapon you are doing damage with, and
+   how it is impacting the dummy.
    You will also see your skill ranks going up while doing this, ``skills`` to check.
+
 
 .. disqus::
