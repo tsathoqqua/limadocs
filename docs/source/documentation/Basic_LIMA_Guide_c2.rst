@@ -58,13 +58,38 @@ sits there on the hard drive of the host machine until something in the game
 makes reference to it.  When something in the game finally does make
 reference to the object, a copy of the file is (if it has no errrors) 
 loaded into memory and a special *function* of that object is called 
-in order to initialize the values of the variables in the object. 
-Now, do not be concerned if that last sentence went right over your head, 
-since someone brand new to programming would not know what the hell a function 
-or a variable is. The important thing to understand right now is that a copy of the
+in order to initialize the values of the variables in the object.
+
+In LPC programming, a variable is like a labeled box where you store a piece of information, like a number or a word. 
+You can change what’s inside the box whenever you need to. For example, one box might hold your score in a game, 
+and another might hold your name. These boxes (variables) help the program remember things and use them later!
+
+An example of a variable:
+
+.. code-block:: c
+
+   int number_of_goblins = 42;
+
+``int`` is the type of the variable and this must match ``42``, ``number_of_goblins`` is the *name* of the variable - the name
+of the labeled box where we store our information. We give them names so they are easier to refer to, as referring to a position
+in the memory of the computer is not easy at all.
+
+Here is another example which introduces global and local variables:
+
+.. code-block:: c
+
+   int count;           // Global variable
+   string name;         // Global variable
+
+   void my_function() 
+   {
+       int local_var = 5;  // Local variable
+   }
+
+More on these later. The important thing to understand about variables right now is that a copy of the
 object file is taken by the driver from the machine's hard drive and
 stored into memory (since it is a copy, multiple versions of that
-object may exist).  You will later understand what a function is, what
+object may exist).  You will later fully understand what a function is, what
 a variable is, and exactly how it is something in the game made reference
 to your object.
 
