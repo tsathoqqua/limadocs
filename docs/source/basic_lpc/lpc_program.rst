@@ -6,7 +6,7 @@ The LPC Program
 ###############
 
 About programs
----------------
+==============
 
 The title of this chapter of the textbook is actually poorly named, since
 one does not write programs in LPC.  An LPC coder instead writes *objects*.
@@ -38,7 +38,7 @@ understand at this point is that there is no "beginning" to an LPC
 object in terms of execution, and there is no "end".
 
 Driver-mudlib interaction
--------------------------
+=========================
 
 As mentioned earlier, the driver is the program that runs on
 the host machine.  It connects you into the game and processes LPC code.
@@ -98,7 +98,7 @@ a variable is, and exactly how it is something in the game made reference
 to your object.
 
 Loading an object into memory
------------------------------
+=============================
 
 Although there is no particular place in an object code that must exist in order for the driver 
 to begin executing it, there is a place for which the driver will search in order to initialize 
@@ -158,7 +158,7 @@ is a valid, but trivial object, although it probably would not interact properly
 on your MUD since such an object has no weight, is invisible, etc.
 
 Chapter summary
----------------
+===============
 
 LPC code has no beginning point or ending point, since LPC code is used to create objects to be used 
 by the driver program rather than create individual programs.  LPC objects consist of one or more 

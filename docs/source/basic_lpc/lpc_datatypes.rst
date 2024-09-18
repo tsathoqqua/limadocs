@@ -22,7 +22,7 @@ So bear through this important chapter, because it is my feeling that understand
 chapter alone can help you find coding much, much easier.
 
 Communicating with the computer
--------------------------------
+===============================
 
 You possibly already know that computers cannot understand the letters and numbers used by humans.
 Instead, the "language" spoken by computers consists of an "alphabet" of 0's and 1's.  
@@ -89,7 +89,7 @@ why data types exist. They exist so the driver can make sense of the 0's and 1's
 is storing in memory.
 
 The data types of LPC
----------------------
+=====================
 
 All LPMud drivers have the following data types:
 
@@ -112,7 +112,7 @@ which are not important to discuss:
     function, enum, struct, char
 
 Simple data types
------------------
+=================
 
 This introductory page will deal with the data types void, status, int, float, string, object, and 
 mixed. This chapter deals with the two simplest data types (from the point of view of the LPC 
@@ -157,7 +157,7 @@ to be of type int.
    1 or 0 as a value.  This is often referred to as being true or false.
 
 Chapter summary
----------------
+===============
 
 For variables, the driver needs to know how the 0's and 1's the computer
 stores in memory get converted into the forms in which you intend them
