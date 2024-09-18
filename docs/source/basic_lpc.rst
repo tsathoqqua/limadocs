@@ -99,7 +99,7 @@ the issue you found, or the addition you would like, or even better make a pull 
 .. toctree::
    :caption: Basic LIMA Guide
    :numbered:
-   :maxdepth: 2
+   :maxdepth: 4
    :titlesonly:
 
    basic_lpc/lpc_program
