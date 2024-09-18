@@ -1,9 +1,9 @@
 .. index:: pair: Basic LIMA Guide
    :name: lima-guide
 
-****************
+################
 Basic LIMA Guide
-****************
+################
 
 Credits
 =======

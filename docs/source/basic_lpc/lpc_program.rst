@@ -1,8 +1,9 @@
 .. index:: pair: Basic LIMA Guide; The LPC Program
    :name: lpc-program
 
+###############
 The LPC Program
-===============
+###############
 
 About programs
 ---------------
