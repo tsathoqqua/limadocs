@@ -6,11 +6,20 @@ LIMA Mudlib Documentation
 For features of the LIMA Mudlib, please see our :doc:`showcase <Showcase>` which has lots of examples
 of the features supported.
 
-Check out the :doc:`usage <Usage>` page for further information, including
-how to :doc:`install <Installation>` the project. A small helper on :doc:`messaging <documentation/Messaging>` 
+Check out the :doc:`usage <Usage>` page for further information. A small helper on :doc:`messaging <documentation/Messaging>` 
 and :doc:`how to use the AUTODOC system <documentation/Autodocs>` inside the mudlib is also available.
 :doc:`Skills in LIMA <documentation/Skills_LIMA>` describes the skill system, and how to 
 configure it for your purpose.
+
+Installation
+------------
+We recommend installation on Ubuntu, Debian or in WSL in Windows, see how to :doc:`install <Installation>`.
+
+Latest changes
+--------------
+The latest changes to LIMA, can be read for version :doc:`1.1 alpha 4  <versions/11a4>`, latest release notes 
+for :doc:`1.1 alpha 3 <versions/11a3>`. All known changes at this point can be read on the
+:doc:`Versions page <Versions>`.
 
 Learning paths
 --------------
@@ -22,12 +31,6 @@ We provide several learning paths here with exercises to facilitate better leani
 2. :doc:`LIMA Domain Development <documentation/LIMA_Domain_development>` will teach you about 
    developing your own areas, rooms, monsters, shopkeepers, weapons, armour, items, and a 
    small quest.
-
-Latest changes
---------------
-The latest changes to LIMA, can be read for version :doc:`1.1 alpha 4  <versions/11a4>`, latest release notes 
-for :doc:`1.1 alpha 3 <versions/11a3>`. All known changes at this point can be read on the
-:doc:`Versions page <Versions>`.
 
 Commands
 --------
@@ -52,7 +55,29 @@ Mudlib
    :caption: LIMA Documentation
    :maxdepth: 2
 
-   documentation/Basic_LIMA_Guide
-   documentation/LIMA_Domain_Development
+   install
    Versions
    
+.. toctree::
+    :maxdepth: 3
+    :numbered:
+    :caption: Learning paths
+    :hidden:
+
+   documentation/Basic_LIMA_Guide
+   documentation/LIMA_Domain_development
+
+.. toctree::
+    :maxdepth: 2
+    :numbered:
+    :caption: Autodocs
+    :hidden:
+
+   Player_Commands
+   Verbs
+   Commands
+   Daemons
+   Modules
+   Mudlib
+   Ingame
+   API
