@@ -56,6 +56,7 @@ Mudlib
    :hidden:
    :includehidden:
 
+   Showcase
    Installation
    Versions
       
