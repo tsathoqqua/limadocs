@@ -63,7 +63,6 @@ Mudlib
 - :doc:`std: object <mudlib/std-object>`
 - :doc:`std: portal <mudlib/std-portal>`
 - :doc:`std: slowheal <mudlib/std-slowheal>`
-- :doc:`std: test_suite <mudlib/std-test_suite>`
 - :doc:`std: transient <mudlib/std-transient>`
 - :doc:`wield: multiple <mudlib/wield-multiple>`
 - :doc:`wield: wield_base <mudlib/wield-wield_base>`
