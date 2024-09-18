@@ -53,6 +53,7 @@ Mudlib
 .. toctree::
    :caption: LIMA
    :maxdepth: 3
+   :hidden:
    :includehidden:
 
    Installation
@@ -60,6 +61,7 @@ Mudlib
       
 .. toctree::
    :caption: Learning
+   :hidden:
    :includehidden:
    :maxdepth: 2
 
@@ -68,6 +70,7 @@ Mudlib
 
 .. toctree::
    :caption: Automated Docs
+   :hidden:
    :includehidden:
    :maxdepth: 4
 
