@@ -51,7 +51,6 @@ Mudlib
    The LIMA documentation project is under active development.
 
 .. toctree::
-   :numbered:
    :caption: LIMA Documentation
    :maxdepth: 2
 
@@ -60,7 +59,6 @@ Mudlib
    
 .. toctree::
     :maxdepth: 3
-    :numbered:
     :caption: Learning paths
     :hidden:
 
@@ -68,8 +66,7 @@ Mudlib
    documentation/LIMA_Domain_development
 
 .. toctree::
-    :maxdepth: 2
-    :numbered:
+    :maxdepth: 3
     :caption: Autodocs
     :hidden:
 

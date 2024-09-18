@@ -4,7 +4,7 @@ LIMA Showcase
 
 This page shows a few of the newer features of the LIMA mudlib. These are all on top of:
 
-- Centralized natural language parsing (zork like commands for players).
+- Centralized natural language parsing (Zork like commands for players).
 - Socials use the natural language parsing, and are easy to extend. (The soul is *huge*).
 - Wizards have featureful shells including full unix globbing (ls \*.[ch]), command piping / redirection, etc...
 - Inline documentation.	
@@ -22,23 +22,23 @@ Dynamic modern layout
 =====================
 
 LIMA supports fancy frames player commands, and include both horizontal and vertical headers. The frames
-can be themed in different colours and styles using the `frames command <../player_command/frames.html>`_, 
+can be themed in different colours and styles using the :doc:`frames command <../player_command/frames>`, 
 either using UTF-8 characters or simple ASCII characters.
 
 .. figure:: images/frames1.png
   :width: 700
   :alt: skills command
 
-  Example of the `skills <../player_command/skills.html>`_ command.
+  Example of the :doc:`skills <../player_command/skills>` command.
 
 The frames will automatically fit the width of your  screen or whatever you select 
-using the `width <../player_command/width.html>`_ player command. 
+using the :doc:`width <../player_command/width>` player command. 
 
 .. figure:: images/frames3.png
   :width: 700
   :alt: skills command in a smaller format
 
-  Example of the `skills <../player_command/skills.html>`_ command on a narrow screen.
+  Example of the :doc:`skills <../player_command/skills>` command on a narrow screen.
 
 Depending on the command, some commands may adopt their internal layout depending on the 
 width of your screen. The frames also support using auto-scaling widgets for illustrating progress, 
@@ -48,7 +48,7 @@ balance between good and bad and more.
   :width: 700
   :alt: score command
 
-  Example of the `score <../player_command/score.html>`_ command.
+  Example of the :doc:`score <../player_command/score>` command.
 
 If your MUD client does not support UTF-8, you will automatically receive the ASCII version. Several 
 style options can be selected, like 'single', 'lines', 'ascii', 'double', but also 'none' to remove
@@ -58,7 +58,7 @@ all frames, e.g. if you are using a screen reader they might not be pleasant on 
   :width: 700
   :alt: skills command in a ASCII mode
 
-  Example of the `skills <../player_command/skills.html>`_ command in ASCII mode.
+  Example of the :doc:`skills <../player_command/skills>` command in ASCII mode.
 
 
 ---------------------
@@ -81,8 +81,8 @@ Example of code:
 
 Useful module documentation to read:
 
-- `Module: m_frame <module/modules-m_frame.html>`_
-- `Module: m_widgets <module/modules-m_widgets.html>`_
+- :doc:`Module: m_frame <module/modules-m_frame>`
+- :doc:`Module: m_widgets <module/modules-m_widgets>`
 
 =======================
 Marked up documentation
@@ -108,16 +108,16 @@ provide coloured mark up on the MUD, as well as online (here).
 
   Example of a driver contributed markdown file.
 
-The wizard `apropos command <command/apropos.html>`_ will provide a list of help pages and functions that
+The wizard :doc:`apropos command <command/apropos>` will provide a list of help pages and functions that
 match the query, and a following 'man add_start', e.g., will then bring up the entire help page for 
-`module m_conversation <module/modules-m_conversation.html>`_.
+`module m_conversation <module/modules-m_conversation>`.
 
 ---------------------
 Developer information
 ---------------------
 
 For more on what you need to do, to continue to use the auto documenation system, see 
-the page on the `AUTODOC system <documentation/Autodocs.html>`_.
+the page on the :doc:`AUTODOC system <documentation/Autodocs>`.
 
 =========================
 Menu driven configuration
@@ -135,7 +135,7 @@ have a special format that includes instructions for range of values, default va
   #define MAX_SKILL_VALUE 10000
 
 All the config files can modify the mudlib in fundamental ways, and can be configure using the 
-`admtool command <command/admtool.html>`_.
+`admtool command <command/admtool>`.
 
 .. figure:: images/menu_config1.png
   :width: 700
@@ -149,7 +149,7 @@ Developer information
 
 Some settings may impact player .o files, so make sure you get the configuration right before
 opening up your MUD, e.g. changing MAX_SKILL_VALUE to 5000 will impact all players that already 
-leveled up their skills above 5000, but some changes may break player files. Test your decisions 
+levelled up their skills above 5000, but some changes may break player files. Test your decisions 
 carefully.
 
 Your player files are not parsed and change for compatibility issues, we leave that to you.
@@ -213,7 +213,7 @@ an example from the equipment_cluster:
      create_node(NODE_LEAF, "find_armour_in_room");
   }
 
-The functions called above are defined in simple functions, that provide simple results like ``safe_to_heal()``
+The functions called above are defined in simple functions, that provide simple results like :doc:``safe_to_heal()``
 used above in the tree branches defined in the cluster:
 
 .. code-block:: c
@@ -232,7 +232,7 @@ Scripting for NPCs
 ==================
 
 Traditional MUDs have a lot of NPCs just standing around, but let's try to create an interactive living world!
-The `module m_npcscript <module/modules-m_npcscript.html>`_ provides an easy way to script interactions for 
+The :doc:`module m_npcscript <module/modules-m_npcscript>` provides an easy way to script interactions for 
 NPCs in your world, have them act (SCRIPT_ACTION), wait (SCRIPT_WAIT), and react to things that happen 
 (SCRIPT_TRIGGER), take delays and change their in room descriptions (SCRIPT_DESC).
 
@@ -277,9 +277,9 @@ This is an example of an NPC script, using the different options.
 
 By defining the ``recover()`` function in your NPC, you can allow them to stop being stuck somewhere. The documentation
 for setting number of minutes before rescue and the recover function is described in
-the `module m_npcscript <module/modules-m_npcscript.html>`_. The NPC-script files are documented here as well.
+the :doc:`module m_npcscript <module/modules-m_npcscript>`. The NPC-script files are documented here as well.
 
-The `scripts <command/scripts.html>`_ command gives an overview of scripts currently running and what the NPCs are doing:
+The :doc:`scripts <command/scripts>` command gives an overview of scripts currently running and what the NPCs are doing:
 
 .. figure:: images/scripts_cmd.png
   :width: 700
