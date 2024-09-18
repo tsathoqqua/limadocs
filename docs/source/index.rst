@@ -51,11 +51,11 @@ Mudlib
    The LIMA documentation project is under active development.
 
 .. toctree::
-   :caption: LIMA Documentation
+   :caption: LIMA
    :maxdepth: 3
    :includehidden:
 
-   install
+   Installation
    Versions
       
 .. toctree::
@@ -66,10 +66,11 @@ Mudlib
    basic_lpc
 
 .. toctree::
-    :caption: Autodocs
-    :includehidden:
-    :maxdepth: 4
+   :caption: Automated Docs
+   :includehidden:
+   :maxdepth: 4
 
+   Autodocs
    Player_Commands
    Verbs
    Commands
