@@ -1,11 +1,9 @@
-`<-- Back to LIMA Domain Development <LIMA_Domain_development.html>`_
-
 CHAPTER 1: Creating a Domain
 ============================
 Domains are a mechanism that simplifies the assignment of privileges to wizards and the 
 protection of directories.
 
-Since domain creation and membership are strictly controlled using the `admtool <../command/admtool>`_, 
+Since domain creation and membership are strictly controlled using the :doc:`admtool <../command/admtool>`, 
 domains and their members can be trusted in all contexts. This trust is utilized in specific parts of 
 the mudlib to categorize wizards and determine the commands and options available to them.
 
@@ -23,7 +21,7 @@ If you do not know how to do this, use the tip box found below.
 
 .. tip::
 
-    1. Open `admtool <../command/admtool.html>`_.
+    1. Open :doc:`admtool <../command/admtool>`.
     2. Goto the privileged menu '1'
     3. Goto domains edit
     4. Create the pinto domain, 'c pinto'.
@@ -47,7 +45,7 @@ Throughout this guide, we will write code for each of these folders.
 
 1.1 Assigning Roles
 -------------------
-In a real MUD development environment, you would use the `admtool <../command/admtool.html>`_ to assign 
+In a real MUD development environment, you would use the :doc:`admtool <../command/admtool>` to assign 
 users and designate a domain lord (lead developer) for each domain. While you can experiment with this to 
 test the functionality, it is not necessary for the purposes of this guide.
 
@@ -123,7 +121,7 @@ is subject to change/configuration. Do not use them to abbreviate just because y
 to do the typing. This provides easy insight into which variables are built into the objects
 by defining them at the top.
 
-An example of some better defines from the source for the `locate <../command/locate.html>`_ command:
+An example of some better defines from the source for the :doc:`locate <../command/locate>` command:
 
 .. code-block:: c
 

@@ -1,5 +1,3 @@
-`<-- Back to LIMA Domain Development <LIMA_Domain_development.html>`_
-
 CHAPTER 5: Creating NPCs
 ========================
 
@@ -40,23 +38,23 @@ down to what is needed - the reverse is sometimes referred to as "bloat", "bloat
 
 A short list of modules typically used for monsters is shown here:
 
-  - `m_accountant <../module/modules-m_accountant.html>`_ - for NPCs running bank departments
-  - `m_actions <../module/modules-m_actions.html>`_ - for NPCs that need to be able to take actions
-  - `m_aggressive <../module/modules-m_aggressive.html>`_ - for NPCs that should attack on sight
-  - `m_assistance <../module/modules-m_assistance.html>`_ - for NPCs that call for assistance
-  - `m_blockexits <../module/modules-m_blockexits.html>`_ - for NPCs that should block exits
-  - `m_boss <../module/modules-m_boss.html>`_ - for boss monsters
-  - `m_companion <../module/modules-m_companion.html>`_ - for companions monsters that can be trained by the players
+  - :doc:`m_accountant <../module/modules-m_accountant>` - for NPCs running bank departments
+  - :doc:`m_actions <../module/modules-m_actions>` - for NPCs that need to be able to take actions
+  - :doc:`m_aggressive <../module/modules-m_aggressive>` - for NPCs that should attack on sight
+  - :doc:`m_assistance <../module/modules-m_assistance>` - for NPCs that call for assistance
+  - :doc:`m_blockexits <../module/modules-m_blockexits>` - for NPCs that should block exits
+  - :doc:`m_boss <../module/modules-m_boss>` - for boss monsters
+  - :doc:`m_companion <../module/modules-m_companion>` - for companions monsters that can be trained by the players
     and follow them around
-  - `m_conversation <../module/modules-m_conversation.html>`_ - for interactive menus that allow players to talk to
+  - :doc:`m_conversation <../module/modules-m_conversation>` - for interactive menus that allow players to talk to
     the NPCs in a RPG style chat, where one option can add or remove new options and give quests based on stats
     and skills.
-  - `m_follow <../module/modules-m_follow.html>`_ - for monsters that should follow if the player leaves.
-  - `m_npcscript <../module/modules-m_npcscript.html>`_ - for scripting sequences of steps for NPCs
-  - `m_smartmove <../module/modules-m_smartmove.html>`_ - for monsters that should be able to move
-  - `m_trainer <../module/modules-m_trainer.html>`_ - for NPCs that should be able to train skills or stats
-  - `m_vendor <../module/modules-m_vendor.html>`_ - for NPCs that sell and buy stuff (shopkeepers, e.g.)
-  - `m_wander <../module/modules-m_wander.html>`_ - for monsters that should wander around randomly
+  - :doc:`m_follow <../module/modules-m_follow>` - for monsters that should follow if the player leaves.
+  - :doc:`m_npcscript <../module/modules-m_npcscript>` - for scripting sequences of steps for NPCs
+  - :doc:`m_smartmove <../module/modules-m_smartmove>` - for monsters that should be able to move
+  - :doc:`m_trainer <../module/modules-m_trainer>` - for NPCs that should be able to train skills or stats
+  - :doc:`m_vendor <../module/modules-m_vendor>` - for NPCs that sell and buy stuff (shopkeepers, e.g.)
+  - :doc:`m_wander <../module/modules-m_wander>` - for monsters that should wander around randomly
 
 .. info::
 

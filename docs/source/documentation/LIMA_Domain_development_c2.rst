@@ -1,5 +1,3 @@
-`<-- Back to LIMA Domain Development <LIMA_Domain_development.html>`_
-
 CHAPTER 2: Creating rooms
 ==========================
 Time to create our first room! The first things to decide is which type of room you want to create:
@@ -40,7 +38,7 @@ So what is in here:
 **Exercise 1**
 
    Write the code, save this file as `/domains/pinto/room/swamp1.c`, then try to update it to check for 
-   issues. Finally, `goto <../command/goto.html>`_ the room. 
+   issues. Finally, :doc:`goto <../command/goto.html>` the room. 
 
 .. tip::
 
@@ -50,7 +48,7 @@ So what is in here:
    |  /domains/pinto/room/swamp1.c: Updated and loaded.
    |  ^pinto/room/> goto swamp1
 
-Did it work? Otherwise review the error messages the `update <../command/update.html>`_ command 
+Did it work? Otherwise review the error messages the :doc:`update <../command/update>` command 
 gives you. The code presented above can be copy pasted using the icon next to it.
 
 2.1 Adding smell and sound
@@ -87,8 +85,8 @@ New additions:
    
 .. note::
 
-   If you end up in Void at some point due to an error use the `wizz <../command/wizz.html>`_ command
-   to go to the Wizard Lounge, then update the room and then `goto <../command/goto.html>`_ to go
+   If you end up in Void at some point due to an error use the :doc:`wizz <../command/wizz>` command
+   to go to the Wizard Lounge, then update the room and then :doc:`goto <../command/goto>` to go
    back to the swamp room.
 
 2.3 Adding details
@@ -257,7 +255,7 @@ need to be alive to do the action. If these checks pass, it returns 1.
          clear_flag(NEED_TO_SEE);
 
 
-At the end of the parse, the parser decides there is a successfull match for the rule, and decides
+At the end of the parse, the parser decides there is a successful match for the rule, and decides
 to call ``do_listen()`` in the verb, this is shown in line 15-18 above. Let us look closer at that
 specific code in line 17:
 
@@ -294,7 +292,7 @@ the new functionality.
     
        void do_listen() { write("...."); }
 
-How would we know? You can use `dbxfuncs <../command/dbxfuncs.html>`_ to list the functions
+How would we know? You can use :doc:`dbxfuncs <../command/dbxfuncs>` to list the functions
 in OUTDOOR_ROOM, like this:
 
    |  ^pinto/room/> dbxfuncs /std/outdoor_room do_
@@ -311,7 +309,7 @@ in OUTDOOR_ROOM, like this:
    |  void do_smell()               (defined in /std/base_room)
    |  ^pinto/room/>
 
-An other option would be to use the `apropos <../command/apropos.html>`_ command to look
+An other option would be to use the :doc:`apropos <../command/apropos>` command to look
 for documented ``do_listen()`` functions:
 
    |  ^pinto/room/> apropos do_listen
@@ -323,7 +321,7 @@ Using ``man do_listen`` or ``help do_listen`` will show the help page this funct
 documented on. You will get the entire context of the function as well which can lead
 to new ideas on which functions to call. You would get this page in game: 
 
-   `Mudlib base_room <../mudlib/std-base_room.html>`_ 
+   :doc:`Mudlib base_room <../mudlib/std-base_room>` 
 
 since the function is documented here.
 

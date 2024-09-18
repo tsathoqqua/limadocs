@@ -2,8 +2,10 @@
 Messaging
 *********
 
-The `M_MESSAGES module <../module/m_messages.html>`_ handles messaging with the correct grammar for multiple parties. 
-It uses the same syntax as the `feelings/souls/emotes <../player_command/feelings.html>`_ on the MUD and using `Command: showemote <../command/showemote.html>`_ to see how emotes are done is a good way of picking up the idea.
+The :doc:`M_MESSAGES module <../module/m_messages>` handles messaging with the correct grammar for multiple parties. 
+It uses the same syntax as the :doc:`feelings/souls/emotes <../player_command/feelings>` on the MUD 
+and using :doc:`Command: showemote <../command/showemote>` to see how emotes are done is a 
+good way of picking up the idea.
 
 Tokens::
 
@@ -52,7 +54,8 @@ Simple action also works with objects as the objects do not need to receive spec
     clone /domains/std/map
     clone /domains/std/camera
 
-You can use the `inventory command <..//player_command/inventory.html>`_ or `'scan me' <../commands/scan.html>`_ to verify that you have the objects.
+You can use the :doc:`inventory command <..//player_command/inventory>` or :doc:`'scan me' <../commands/scan>` 
+to verify that you have the objects.
 
 Now try something like::
 
@@ -62,9 +65,13 @@ And you will get::
 
    You put the map into the polaroid camera.
 
-A couple of new things here: The shell allows you to refer to objects in the inventory of objects by using *something:somethingelse* in this case *.me* being *this_body()* and *map* as the id we're looking for. Also, since you are now sending *simple_action()* more objects, you can use $o to refer to the first object, and $o1 to refer to the second one. This also means that "$t" is actually just an alias for "$n1".
+A couple of new things here: The shell allows you to refer to objects in the inventory of 
+objects by using *something:somethingelse* in this case *.me* being *this_body()* and *map* as 
+the id we're looking for. Also, since you are now sending *simple_action()* more objects, you can 
+use $o to refer to the first object, and $o1 to refer to the second one. This also means that "$t" is 
+actually just an alias for "$n1".
 
-A few wizard shell shortcuts and the corresponding LPC::
+A few wizard shell shortcuts and the corresponding LPC:
 
  	.me   -> this_body()
 	.rust -> find_body("rust")
@@ -78,7 +85,7 @@ targetted_action()
 ==================
 This is used for doing something to someone else, while sending the correct message to third parties.
 
-Example::
+Example:
       "You give Gesslar a hug."
       "Tsath gives you a hug."
       "Tsath gives Gesslar a hug."
@@ -87,7 +94,7 @@ To generate something like this we can use the $t token::
 
     @.me->targetted_action("$N $vgive $t a hug.",.here:greeter)
 
-The *.here:greeter* works in the Wizroom where the LIMA Mudlib Greeter is, otherwise use another beign in your environment.
+The *.here:greeter* works in the Wizroom where the LIMA Mudlib Greeter is, otherwise use another being in your environment.
 
 *targetted_action()* can also combine a target with a list of objects, like this::
 

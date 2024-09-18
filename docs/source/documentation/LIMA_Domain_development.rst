@@ -4,17 +4,17 @@ LIMA Domain Development
 
 Chapters
 --------
-   1. `Creating a domain <LIMA_Domain_development_c1.html>`_ (1 exercise)
-   2. `Creating rooms <LIMA_Domain_development_c2.html>`_ (5 exercises)
-   3. `Creating weapons <LIMA_Domain_development_c3.html>`_ (2 exercises)
-   4. `Creating armour <LIMA_Domain_development_c4.html>`_ (5 exercises)
-   5. `Creating NPCs <LIMA_Domain_development_c5.html>`_ (Under construction)
+   1. :doc:`Creating a domain <LIMA_Domain_development_c1.html>` (1 exercise)
+   2. :doc:`Creating rooms <LIMA_Domain_development_c2.html>` (5 exercises)
+   3. :doc:`Creating weapons <LIMA_Domain_development_c3.html>` (2 exercises)
+   4. :doc:`Creating armour <LIMA_Domain_development_c4.html>` (5 exercises)
+   5. :doc:`Creating NPCs <LIMA_Domain_development_c5.html>` (Under construction)
 
 Prerequisites
 -------------
 To fully benefit from this guide, you should have a basic understanding of LPC and how 
 LPMUDs function. This foundational knowledge can be acquired by following the 
-`LPC Basics learning path <Basic_LIMA_Guide.html>`_. By this point, you should be familiar with variables, 
+:doc:`LPC Basics learning path <Basic_LIMA_Guide.html>`. By this point, you should be familiar with variables, 
 function declarations, function calls, objects, control flows, loops, some basic Linux commands 
 that are helpful for working with the MUD, and the file structure used.
 
@@ -48,5 +48,5 @@ first, before turning to the tip box.
     always called ``query_armour()`` and not suddenly something else.
 
     If you want your MUD to be US English, change the interface, i.e., change the 
-    `score <../player_command/score.html>`_ and not the mudlib itself. 
+    :doc:`score <../player_command/score.html>` and not the mudlib itself. 
 

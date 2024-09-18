@@ -1,5 +1,3 @@
-`<-- Back to LIMA Domain Development <LIMA_Domain_development.html>`_
-
 CHAPTER 3: Creating weapons
 ===========================
 Weapons in LIMA all inherit ``M_DAMAGE_SOURCE``, meaning something that can be a source
@@ -72,7 +70,7 @@ This is a relatively simple weapon, that still contains a bit of custom function
 
 Line by line:
    - Line 3: We inherit SWORD (``/std/sword.c``) - go back to the 
-     `basic LIMA guide Section 1.3 <Basic_LIMA_Guide.html#shortcuts-for-filenames>`_. 
+     :doc:`basic LIMA guide Section 1.3 <Basic_LIMA_Guide>`. 
      if you find this puzzling. This is a specialization of WEAPON. If you have many weapons of the 
      same type, this might be a pattern you should follow.
    - Line 5: Our old friend the setup function.
@@ -82,7 +80,7 @@ Line by line:
    - Line 9: Set the weight of the item in kilos.
    - Line 10: Set the value to 15 (bananas - more on MONEY_D later)
    - Line 11: Sets a special combat message for when you miss with this weapon - more on
-     `messages <Messaging.html>`_ here.
+     :doc:`messages <Messaging>` here.
 
 **Exercise 1**
 
@@ -146,12 +144,12 @@ Line by line:
 .. tip::
 
    If you want someone to try out your new weapon on, ``^std/monster/flea`` and ``^std/monster/troll``
-   would like to help you out. Use `clone command <../command/clone.html>`_ to clone the monsters, and
-   `hp <../player_command/hp.html>`_ to check how your opponents are doing.
+   would like to help you out. Use :doc:`clone command <../command/clone>` to clone the monsters, and
+   :doc:`hp <../player_command/hp>` to check how your opponents are doing.
 
 .. note::
 
-   The `damage_d <daemon/daemons-damage_d.html>`_ keeps track of special attacks for weapons as well, think 
+   The :doc:`damage_d <daemon/daemons-damage_d>` keeps track of special attacks for weapons as well, think 
    ``murdering longsword of lightning bolts`` and you get the right picture.
 
 .. disqus::

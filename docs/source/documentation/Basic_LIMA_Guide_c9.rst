@@ -112,7 +112,7 @@ after having made various checks.
 9.5 Debugging verbs
 -------------------
 
-Use the `parse <../command/parse.html>`_ command (in front of the normal verb syntax) to see the 
+Use the :doc:`parse <../command/parse>` command (in front of the normal verb syntax) to see the 
 results of can/direct/indirect checks, and hence which rule(if any) is
 used.
 

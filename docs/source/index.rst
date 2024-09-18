@@ -58,16 +58,16 @@ Mudlib
    Versions
    
 .. toctree::
-    :maxdepth: 3
     :caption: Learning paths
+    :maxdepth: 3
     :hidden:
 
    documentation/Basic_LIMA_Guide
    documentation/LIMA_Domain_development
 
 .. toctree::
-    :maxdepth: 3
     :caption: Autodocs
+    :maxdepth: 3
     :hidden:
 
    Player_Commands

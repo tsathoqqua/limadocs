@@ -38,7 +38,7 @@ you would like.
 
 .. note::
    
-   The comments above the ``#define`` are for easy maintenance via the `admtool <../command/admtool.html>`_.
+   The comments above the ``#define`` are for easy maintenance via the :doc:`admtool <../command/admtool>`.
    The range here is a recommendation more than a hard limit. If you break the ranges, funny things might
    start happening.
 
@@ -183,7 +183,7 @@ use the ``SKILL_D->register_skill("my/new/skill");`` or ``SKILL_D->remove_skill(
 Both can be called directly from the wizard shell like the ``dump_skills_to_file()`` and ``init_skills``
 functions above.
 
-See `SKILL_D documentation <../daemon/daemons-skill_d.html>`_ for more details on functions 
+See :doc:`SKILL_D documentation <../daemon/daemons-skill_d>` for more details on functions 
 in the SKILL_D.
 
 .. tip::
@@ -194,13 +194,13 @@ in the SKILL_D.
 
 Other things worth knowing
 --------------------------
-The `skills command <../player_command/skills.html>`_ can show the skills of a player, or as a wizards 
+The :doc:`skills command <../player_command/skills>` can show the skills of a player, or as a wizards 
 it can show skills for monsters and players in the room you're standing in. 
 This can be used for resolving issues with both types of objects.
 
-To understand the interface for player skills, you should read `mudlib: body skills <../mudlib/body-skills.html>`_, 
+To understand the interface for player skills, you should read :doc:`mudlib: body skills <../mudlib/body-skills>`, 
 and for monsters (that have a simpler implementation) you should read the 
-`adversary skills documentation <../mudlib/adversary-skills.html>`_.
+:doc:`adversary skills documentation <../mudlib/adversary-skills>`.
 
 Here is an excerpt from a a skill trainer (the entire code can be found in ``^std/trainer.c``):
 
