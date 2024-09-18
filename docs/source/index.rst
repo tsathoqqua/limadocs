@@ -54,12 +54,16 @@ Mudlib
    :caption: LIMA Documentation
    :numbered: 3
    :maxdepth: 3
+   :hidden:
+   :includehidden:
 
    install
    Versions
       
 .. toctree::
    :caption: Learning
+   :hidden:
+   :includehidden:
    :numbered: 3
    :maxdepth: 2
 
@@ -67,8 +71,9 @@ Mudlib
 
 .. toctree::
     :caption: Autodocs
-    :maxdepth: 4
     :hidden:
+    :includehidden:
+    :maxdepth: 4
 
    Player_Commands
    Verbs
