@@ -59,7 +59,7 @@ Mudlib
    
 .. toctree::
     :caption: Learning paths
-    :maxdepth: 3
+    :maxdepth: 4
     :hidden:
 
    documentation/Basic_LIMA_Guide
@@ -67,7 +67,7 @@ Mudlib
 
 .. toctree::
     :caption: Autodocs
-    :maxdepth: 3
+    :maxdepth: 4
     :hidden:
 
    Player_Commands
