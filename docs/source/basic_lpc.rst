@@ -6,21 +6,21 @@ Basic LIMA Guide
 ****************
 
 Credits
--------
+=======
 Originally written by Descartes of Borg (borg@hebron.connected.com) around 1993, **adapted** and edited for
 the LIMA library by Tsath (2024) using parts of the existing LIMA documentation.
                        
 The original LPC Guide may be available at https://www.cs.hmc.edu/~jhsu/wilderness/basics.html if you are lucky.
 
 Help make this document better
-------------------------------
+==============================
 This guide has been changed, corrected and updated for the newest FluffOS driver and LIMA Mudlib features.
 
 If you spot errors and omissions, please submit an issue at https://github.com/tsathoqqua/limadocs/ and describe
 the issue you found, or the addition you would like, or even better make a pull request.
 
 Introduction
-============
+------------
 
 This guide is a shortened form of the original guide, with updated links to modern resources used in 2024. 
 Some of the links in this guide may be outdated depending on at which time you are reading this, so use your
