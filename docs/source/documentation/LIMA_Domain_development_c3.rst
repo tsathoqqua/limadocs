@@ -1,3 +1,5 @@
+`<-- Back to LIMA Domain Development <LIMA_Domain_development.html>`_
+
 CHAPTER 3: Creating weapons
 ===========================
 Weapons in LIMA all inherit ``M_DAMAGE_SOURCE``, meaning something that can be a source
