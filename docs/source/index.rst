@@ -47,14 +47,12 @@ Mudlib
 
    The LIMA documentation project is under active development.
 
-.. Hidden TOCs
-
 .. toctree::
    :numbered:
    :caption: LIMA Documentation
    :maxdepth: 2
 
-   installing
-   configuring
-   development
-   contributing
+   Learning paths
+   Latest changes
+   Commands
+   Mudlib
