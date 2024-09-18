@@ -5,25 +5,21 @@
 LIMA Domain Development
 #######################
 
-Prerequisites
-=============
-
 To fully benefit from this guide, you should have a basic understanding of LPC and how 
 LPMUDs function. This foundational knowledge can be acquired by following the 
 :doc:`LPC Basics learning path <basic_lpc>`. By this point, you should be familiar with variables, 
 function declarations, function calls, objects, control flows, loops, some basic Linux commands 
 that are helpful for working with the MUD, and the file structure used.
 
-Help Improve This Document
---------------------------
+**Help Improve This Document**
+
 This guide is designed for the latest features of the FluffOS driver and LIMA Mudlib.
 
 If you notice any errors or omissions, please submit an issue at https://github.com/tsathoqqua/limadocs/. 
 Describe the problem you found or suggest an addition. Even better, feel free to submit a pull request 
 with your proposed changes.
 
-Introduction
-================
+**Introduction**
 
 This document is divided into several sections, and it is recommended that you read them in the order 
 they are presented. However, they can also serve as a reference if you need a refresher on a particular 
