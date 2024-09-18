@@ -25,10 +25,6 @@ extensions = [
 disqus_shortname = "lima-mudlib"
 
 html_logo = "images/lima.png"
-html_theme_options = {
-    'logo_only': True,
-    'display_version': False,
-}
 
 intersphinx_mapping = {
     'python': ('https://docs.python.org/3/', None),
@@ -53,3 +49,16 @@ html_css_files = [
 
 # -- Options for EPUB output
 epub_show_urls = 'footnote'
+
+html_theme_options = {
+    'prev_next_buttons_location': 'bottom',
+    'style_external_links': False,
+    'vcs_pageview_mode': '',
+    'style_nav_header_background': 'white',
+    # Toc options
+    'collapse_navigation': True,
+    'sticky_navigation': True,
+    'navigation_depth': 4,
+    'includehidden': True,
+    'titles_only': False
+}
