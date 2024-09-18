@@ -1,6 +1,5 @@
-*************************
 LIMA Mudlib Documentation
-*************************
+=========================
 
 **LIMA** (ˈlaɪmə) is a FluffOS based Mudlib originally developed in the 1990's.
 
@@ -14,7 +13,7 @@ and `how to use the AUTODOC system <documentation/Autodocs.html>`_ inside the mu
 configure it for your purpose.
 
 Learning paths
-==============
+--------------
 We provide several learning paths here with exercises to facilitate better leaning:
 
 1. `LPC Basics learning path <documentation/Basic_LIMA_Guide.html>`_ is for people
@@ -25,19 +24,19 @@ We provide several learning paths here with exercises to facilitate better leani
    small quest.
 
 Latest changes
-==============
+--------------
 The latest changes to LIMA, can be read for version `1.1 alpha 4  <versions/11a4.html>`_, latest release notes 
 for `1.1 alpha 3 <versions/11a3.html>`_. All known changes at this point can be read on the
 `Versions page <Versions.html>`_.
 
 Commands
-========
+--------
 - `Player Commands <Player_Commands.html>`_ - commands for players
 - `Verbs <Verbs.html>`_ - common interactions with the mudlib
 - `Other commands <Commands.html>`_ - mostly for wizards and admins
 
 Mudlib
-======
+------
 - `Daemons <Daemons.html>`_ - documentation and functions
 - `Modules <Modules.html>`_ - modules
 - `Mudlib <Mudlib.html>`_ - mudlib stuff
@@ -48,43 +47,14 @@ Mudlib
 
    The LIMA documentation project is under active development.
 
+.. Hidden TOCs
+
 .. toctree::
-   :caption: Theme Documentation
+   :numbered:
+   :caption: LIMA Documentation
    :maxdepth: 2
-   :hidden:
 
    installing
    configuring
    development
    contributing
-
-.. toctree::
-   :maxdepth: 1
-   :hidden:
-
-   changelog
-
-.. toctree::
-    :maxdepth: 2
-    :numbered:
-    :caption: Demo Documentation
-    :hidden:
-
-    demo/structure
-    demo/demo
-    demo/lists_tables
-    demo/api
-
-.. toctree::
-    :maxdepth: 3
-    :numbered:
-    :caption: This is an incredibly long caption for a long menu
-    :hidden:
-
-    demo/long
-
-.. toctree::
-    :maxdepth: 3
-    :caption: Breadcrumbs
-
-    demo/level1/index.rst
