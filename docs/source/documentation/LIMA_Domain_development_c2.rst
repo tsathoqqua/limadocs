@@ -38,7 +38,7 @@ So what is in here:
 **Exercise 1**
 
    Write the code, save this file as `/domains/pinto/room/swamp1.c`, then try to update it to check for 
-   issues. Finally, :doc:`goto <../command/goto.html>` the room. 
+   issues. Finally, :doc:`goto <../command/goto>` the room. 
 
 .. tip::
 
