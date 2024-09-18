@@ -64,6 +64,7 @@ Mudlib
    :maxdepth: 2
 
    basic_lpc
+   domain_dev
 
 .. toctree::
    :caption: Automated Docs
