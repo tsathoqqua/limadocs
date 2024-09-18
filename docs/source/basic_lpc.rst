@@ -1,23 +1,9 @@
-.. index:: pair: Basic LIMA Guide
+.. index:: pair: Basic LIMA Guide; LIMA Mudlib
    :name: lima-guide
 
 ################
 Basic LIMA Guide
 ################
-
-Credits
-=======
-Originally written by Descartes of Borg (borg@hebron.connected.com) around 1993, **adapted** and edited for
-the LIMA library by Tsath (2024) using parts of the existing LIMA documentation.
-                       
-The original LPC Guide may be available at https://www.cs.hmc.edu/~jhsu/wilderness/basics.html if you are lucky.
-
-Help make this document better
-==============================
-This guide has been changed, corrected and updated for the newest FluffOS driver and LIMA Mudlib features.
-
-If you spot errors and omissions, please submit an issue at https://github.com/tsathoqqua/limadocs/ and describe
-the issue you found, or the addition you would like, or even better make a pull request.
 
 Introduction
 ------------
@@ -95,6 +81,21 @@ Some basic terms this manual uses:
   world. And still others are simply loaded into memory to be referenced by other objects, a typical example
   of these are called daemons, more on those later.
 
+Credits
+=======
+Originally written by Descartes of Borg (borg@hebron.connected.com) around 1993, **adapted** and edited for
+the LIMA library by Tsath (2024) using parts of the existing LIMA documentation.
+                       
+The original LPC Guide may be available at https://www.cs.hmc.edu/~jhsu/wilderness/basics.html if you are lucky.
+
+Help make this document better
+==============================
+This guide has been changed, corrected and updated for the newest FluffOS driver and LIMA Mudlib features.
+
+If you spot errors and omissions, please submit an issue at https://github.com/tsathoqqua/limadocs/ and describe
+the issue you found, or the addition you would like, or even better make a pull request.
+
+
 .. toctree::
    :caption: Basic LIMA Guide
    :numbered:
@@ -102,3 +103,4 @@ Some basic terms this manual uses:
    :titlesonly:
 
    basic_lpc/lpc_program
+   basic_lpc/lpc_datatypes
