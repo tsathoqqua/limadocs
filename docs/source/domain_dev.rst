@@ -49,6 +49,7 @@ first, before turning to the tip box.
 .. toctree::
    :caption: LIMA Domain Development
    :numbered:
+   :hidden:
    :maxdepth: 4
    :titlesonly:
 

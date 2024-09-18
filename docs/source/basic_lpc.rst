@@ -97,6 +97,7 @@ the issue you found, or the addition you would like, or even better make a pull 
 .. toctree::
    :caption: Basic LIMA Guide
    :numbered:
+   :hidden:
    :maxdepth: 4
    :titlesonly:
 
