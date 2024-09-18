@@ -1,383 +1,137 @@
-2: Creating rooms
-==========================
-Time to create our first room! The first things to decide is which type of room you want to create:
+2 Creating a Domain
+============================
+Domains are a mechanism that simplifies the assignment of privileges to wizards and the 
+protection of directories.
 
-   1. An outdoor room - OUTDOOR_ROOM
-   2. An indoor room - INDOOR_ROOM
-   3. A room filled with water - WATER_ROOM
+Since domain creation and membership are strictly controlled using the :doc:`admtool <../command/admtool>`, 
+domains and their members can be trusted in all contexts. This trust is utilized in specific parts of 
+the mudlib to categorize wizards and determine the commands and options available to them.
 
+Each domain has a unique name, a set of "domain lords," and a group of members. Typically, each domain 
+also has an associated directory, such as ``/domains/name/``. The domain name must be composed of lowercase, 
+alphabetic characters. Domain lords are wizards with the authority to grant or revoke domain membership 
+and have control privileges over the domain. Domain members, on the other hand, have data privileges 
+within the domain.
 
-2.1 A simple room
------------------
-For now, let us try to create an OUTDOOR_ROOM where the player might encounter weather and other
-conditions. Starting simple:
+**Exercise 1**:
+   
+   Let us create the *pinto* domain, now. Use the admtool to do this.
 
-.. code-block:: c
-   :linenos:
-
-   inherit OUTDOOR_ROOM;
-
-   void setup()
-   {
-      set_brief("Murky Swamp");
-      set_long("You find yourself in a murky, dank swamp. The air is thick with humidity "
-               "and the smell of decaying vegetation. Twisted trees rise from the muddy "
-               "water, their gnarled branches reaching towards the dim sky. Patches of "
-               "sickly green algae float on the surface of the stagnant pools. "
-               "The occasional croak of a frog or buzz of an insect breaks the eerie "
-               "silence.");
-   }
-
-So what is in here:
-
-   - Line 1, the file we inherit to build upon.
-   - Line 3, the ``setup()`` function used in LIMA to initiate the object.
-   - Line 5, the brief description of the room. This is shown above the long description.
-   - Line 6-11, the long description of the room broken into lines for easy readability.
-
-**Exercise 1**
-
-   Write the code, save this file as `/domains/pinto/room/swamp1.c`, then try to update it to check for 
-   issues. Finally, :doc:`goto <../command/goto>` the room. 
+If you do not know how to do this, use the tip box found below.
 
 .. tip::
 
-   |  /std> cd ^pinto/room
-   |  New cwd: /domains/std
-   |  ^pinto/room/> update swamp1
-   |  /domains/pinto/room/swamp1.c: Updated and loaded.
-   |  ^pinto/room/> goto swamp1
+    1. Open :doc:`admtool <../command/admtool>`.
+    2. Goto the privileged menu '1'
+    3. Goto domains edit
+    4. Create the pinto domain, 'c pinto'.
+    5. Verify the domain creating succeeded by going to ``/domains`` and list the files there.
 
-Did it work? Otherwise review the error messages the :doc:`update <../command/update>` command 
-gives you. The code presented above can be copy pasted using the icon next to it.
+A number of directories have been created inside ``/domains/pinto/``:
 
-2.1 Adding smell and sound
---------------------------
+  * Armour: Contains armour pieces like hats, gloves, and boots. These items can be worn, with or without 
+    providing protective effects.
+  * Consumable: Includes items that can be consumed, such as food, drinks, drugs, healing items, and poisons.
+  * Item: Holds quest items and other items that players can pick up, often saved with the player's inventory.
+  * Mob: Contains mobile entities, usually monsters that can be fought or that move around the area.
+  * Npc: Houses non-player characters like quest givers, shopkeepers, and other beings that typically aren't 
+    engaged in combat.
+  * Obj: Includes objects that are placed in rooms, such as furniture or quest items that cannot be 
+    picked up by players.
+  * Room: Used for creating areas, structured as a series of interconnected rooms.
+  * Weapon: Contains various types of weapons, such as swords, grenades, clubs, pistols, and rocks.
 
-Let us add two more functions to set the smell and a default message for when people listen.
+Throughout this guide, we will write code for each of these folders.
 
-.. code-block:: c
-   :linenos:
+2.1 Assigning Roles
+-------------------
+In a real MUD development environment, you would use the :doc:`admtool <../command/admtool>` to assign 
+users and designate a domain lord (lead developer) for each domain. While you can experiment with this to 
+test the functionality, it is not necessary for the purposes of this guide.
 
-   inherit OUTDOOR_ROOM;
-
-   void setup()
-   {
-      set_brief("Murky Swamp");
-      set_long("You find yourself in a murky, dank swamp. The air is thick with humidity "
-               "and the smell of decaying vegetation. Twisted trees rise from the muddy "
-               "water, their gnarled branches reaching towards the dim sky. Patches of "
-               "sickly green algae float on the surface of the stagnant pools. "
-               "The occasional croak of a frog or buzz of an insect breaks the eerie "
-               "silence.");
-      set_listen("You hear the occasional croak of frogs and the buzzing of insects.");
-      set_smell("The air is thick with the smell of decay and stagnant water.");
-   }
-
-New additions:
-
-   - Line 12, set a listen description if someone uses the 'listen' verb (`/cmds/verbs/listen.c`)
-   - Line 13, set a smell description if someone uses the 'smell' verb (`/cmds/verbs/smell.c`)
-
-**Exercise 2**
-
-   Update the room, go there, then use ``listen`` and ``smell`` to test the descriptions.
-   
-.. note::
-
-   If you end up in Void at some point due to an error use the :doc:`wizz <../command/wizz>` command
-   to go to the Wizard Lounge, then update the room and then :doc:`goto <../command/goto>` to go
-   back to the swamp room.
-
-2.3 Adding details
-------------------
-Studying the description of the room it talks about trees, water, algae, sky, frog, insects, and mud.
-But doing ``look at water`` gives you:
-
-    That doesn't seem to be possible.
-
-We need to add items to the room so we can detail some of these objects further. This is done via 
-the ``add_item()`` function defined in rooms. Let us add some items to the room:
-
-.. code-block:: c
-   :linenos:
-
-   add_item("trees", "The trees are twisted and gnarled, their roots submerged in "
-                     "the murky water. Their branches seem to reach out like "
-                     "skeletal fingers.");
-   add_item("water", "The water is dark and murky. You can see patches of algae "
-                     "floating on its surface.");
-   add_item("algae", "Sickly green patches of algae float lazily on the surface "
-                     "of the water.");
-   add_item("sky", "The sky is barely visible through the canopy of twisted "
-                   "branches overhead. What little you can see "
-                   "looks gloomy and overcast.");
-   add_item("frog", "You don't see any frogs at the moment, but you can hear "
-                    "them croaking nearby.");
-   add_item("insect", "insects", "bugs",
-            "Tiny insects buzz around, occasionally "
-            "landing on the surface "
-            "of the water or on patches of vegetation.");
-   add_item("mud", "The ground is a thick, sticky mud that seems eager "
-                   "to pull at your feet.");
-
-As seen above, the syntax is relatively simple:
-
-.. code-block:: c
-
-   add_item(item, description);
-   add_item(list of items, description); //See insects in line 13-16 above.
-
-But what if someone wants to pick up the mud, e.g.?
-
-  |  ^pinto/room/> get mud
-  |  You can't get that.
-
-That's true, but perhaps we want a more fun description? The ``add_item()`` 
-function provides more abilities, let us use those:
-
-.. code-block:: c
-   :linenos:
-
-   add_item("mud", (["look":"The ground is a thick, sticky mud that seems eager "
-                            "to pull at your feet.",
-                       "get":"Your stick your hands in the mud, look at them, "
-                             "then decide there are better MUDs.",
-                    "search":"You found some dirty hands."]));
-
-As you can see, ``add_item()`` can handle a mapping with different extra options.
-
-**Exercise 3**
-
-   Update the "mud" item to use a mapping like above, and try the different new
-   options.
+You can also use the 'show' command to display who has been assigned specific roles within a domain.
 
 .. note::
 
-   You can use ``update here`` if you are standing in a room you want to update.
-   If your code has issues, you will be moved to The Void and will have to go
-   back to the room once it loads again.
+   An admin is simply a wizard who is part of the admin domain. You can make a wizard an admin 
+   by adding them to the admin domain using the admtool. Domain management options can be found 
+   under option '1' (admin privilege), then select "Domain".
 
+.. warning::
 
-2.4 Verbs and rooms
+    Do not delete any domains that come pre-installed with LIMA. Some of these are integral to the 
+    security system, and removing them could cause LIMA to malfunction.
+
+2.2 Domain file paths
+---------------------
+In Linux a home directory has a shortcut that is commonly used, tilde '~', so a ``~tsath`` refers
+to ``/home/tsath`` in Linux, and typically ``/wiz/tsath/`` in LIMA. Domains provide another
+shortcut to refer to them however, as demonstrated by these shell commands:
+
+     |  /tmp/> cd ^pinto
+     |  New cwd: /domains/pinto
+     |  ^std/> 
+
+The caret, ``^`` symbol, is a shortcut for ``/domains/`` and it is possible to use in a wide range of
+places instead of typing the full path. This shortcut will come in handy when we start creating rooms,
+and things in them in Chapter 2. Most places in LIMA, you can use relative paths as well as full paths
+which is highly recommended as it provides code that is easier to move around.
+
+.. note::
+    
+    The ``new()`` function is one of the few places that cannot handle this shortcut (yet).
+
+2.3 Domain #defines
 -------------------
 
-So what do the verbs actually do? Let us look at the listen verb (`/cmds/verbs/listen.c`).
-
-.. code-block:: c
-   :linenos:
-
-   /* Do not remove the headers from this file! see /USAGE for more info. */
-
-   inherit VERB_OB;
-
-   void do_listen_to_obj_with_obj(object ob1, object ob2)
-   {
-      ob2->do_listen(ob1);
-   }
-
-   void do_listen_to_obj(object ob)
-   {
-      ob->do_listen();
-   }
-
-   void do_listen()
-   {
-      environment(this_body())->do_listen();
-   }
-
-   void create()
-   {
-      add_rules(({"", "to OBJ", "to OBJ with OBJ"}));
-   }
-
-The ``create()`` statement at the bottom tells us how we can listen. The rules say we can do:
-
-   1. listen
-   2. listen to OBJ
-   3. listen to OBJ with OBJ
-
-So, ``listen`` would be rule 1, ``listen to door`` would be rule 2, 
-``listen to body with stethoscope`` would be rule 3. The verb *centrally* defines how players
-can interact with your MUD. If you want to extend the ways players can interact, you change the verb.
-To verify our action, try to modify your the listen command you did in the swamp room earlier to:
-
-    | ``parse listen``
-
-This should us how the parser built into FluffOS tries to discover what to call, when the player
-types ``listen``:
-
-   |  /cmds/verbs/>parse listen
-   |  Trying interpretation: listen:
-   |  Trying rule: 
-   |    parse_rule
-   |      we_are_finished
-   |      Trying can_listen ... (/std/race/documentation#327)
-   |      Trying can_listen ... (/std/race/documentation#327)
-   |      Trying can_verb ... (/std/race/documentation#327)
-   |      Trying can_verb_rule ... (/std/race/documentation#327)
-   |      Trying can_listen ... (/cmds/verbs/listen)
-   |      Trying can_listen ... (/cmds/verbs/listen)
-   |      Trying can_verb ... (/cmds/verbs/listen)
-   |      Trying can_verb_rule ... (/cmds/verbs/listen)
-   |      Return value was: 1
-   |      Saving successful match: do_listen (cmds/verbs/listen)
-   |    exiting parse_rule ...
-   |  Calling do_listen ...
-   |  You hear nothing unusual.
-   |  1
-
-The lines after 'we_are_finished' shows the parser probing ``/std/race/documentation#327`` which
-is the body of the player calling the parse command, and getting probed for ``can_listen()``, then
-same probe in the verb object, then finally falling back to calling ``can_verb_rule()``.
-This function is called with the following arguments:
-
-.. code-block:: c
-
-   verb->can_verb_rule();
-
-This function runs some checks required by the verb, like do we need to be able to see, do we 
-need to be alive to do the action. If these checks pass, it returns 1. 
-
 .. note::
 
-   You can use the wizard shell to check what the verb returns like this:
+    If you are new to programming LPMUDs you might be able to skip this section. It addresses
+    a bad behaviour used in some old mudlibs.
 
-   ``@./cmds/verbs/listen->can_verb_rule()``
-
-.. note::
-   
-   An example of the default checks for verbs is the drop verb that has the following
-   code, to allow people to drop things even in the darkness:
-
-   .. code-block:: c
-
-         clear_flag(NEED_TO_SEE);
-
-
-At the end of the parse, the parser decides there is a successful match for the rule, and decides
-to call ``do_listen()`` in the verb, this is shown in line 15-18 above. Let us look closer at that
-specific code in line 17:
+In some classic LPMUDs it was best practice for area coders to create an include file like this one:
 
 .. code-block:: c
 
-   environment(this_body())->do_listen();
+   //Some general shortcuts
+   #define TB     this_body()
+   #define TO     this_object()
 
-So, find the environment of ``this_body()``, that would be the room the player is standing in
-meaning ``swamp1.c``, and then call ``do_listen()`` in the room! So if we wanted more advanced
-functionality we have just learned that the verb calls a built-in function we inherited, but
-we could also override it and return something random like:
+   //Pinto shortcuts
+   #define PINTO     "/domains/pinto" 
+   #define PIN_ROOM  PINTO "/room/"
+   #define PIN_ITEMS PINTO "/items/"
+   #define PIN_OBJ   PINTO "/obj/"
+   #define PIN_QUEST PINTO "/npc/questgiver"
+   ...
+
+Even if this looks smart, and defines can be very helpful for good coding, it is important
+to realize when they are being abused.  You *can* have too many ``#define`` statements, and 
+you CAN #define the wrong things. Why is this? Basically, macros are difficult to follow when 
+there are a lot of them.  This is especially true from people trying to use your
+code to help learn.  Seeing ``TB`` as an abbreviation for ``this_body()`` is
+not uncommon, and is almost always seen out of context.  For people who
+don't quite understand macros, it is VERY confusing to see ``TP``, and trying to figure
+out what it means.  Also, even the informed reader may not find your macro
+immediately obvious, even if you do, and would likely prefer not to have to search through 
+your files to resolve every definition.
+
+The general rule of thumb for using macros is, use them when they represent a variable that 
+is subject to change/configuration. Do not use them to abbreviate just because you're too lazy 
+to do the typing. This provides easy insight into which variables are built into the objects
+by defining them at the top.
+
+An example of some better defines from the source for the :doc:`locate <../command/locate>` command:
 
 .. code-block:: c
 
-      "You hear "+(random(3)+2)+" animals fighting in the distance"
+   //Iterations we do per call is hardcoded here
+   #define ITERS_PER_CALL 50
+   //These file paths are hardcoded, so easy to spot
+   #define DATA_FILE "/data/locate.codes"
+   #define TMP_DATA_FILE "/data/locate.tmp"
 
-``random(3)`` returns a number between 0-2 plus 2, so that would turn into 2-4 animals.
-
-**Exercise 4**
-
-   Add a new function called ``do_listen()`` to ``swamp1.c`` that uses ``write()`` to send
-   the string with the fighting animals above to the current user. 
-   Remember, that the function declaration should state that the function takes no parameters, and returns
-   nothing.
-
-After you are done updating the room, update it, go to it, and do several 'listen' to test
-the new functionality.
-
-.. tip::
-
-    The function that should be added should look like this:
-
-    .. code-block:: c
-    
-       void do_listen() { write("...."); }
-
-How would we know? You can use :doc:`dbxfuncs <../command/dbxfuncs>` to list the functions
-in OUTDOOR_ROOM, like this:
-
-   |  ^pinto/room/> dbxfuncs /std/outdoor_room do_
-   |  Matches:
-   |  int do_verb_rule(x, x, x)     (defined in /std/object/vsupport)
-   |  void do_search(x, x)          (defined in /std/object/vsupport)
-   |  int do_not_restore()          (defined in /std/object)
-   |  void do_receive(x, x)         (defined in /std/container)
-   |  void do_go_str(x)             (defined in /std/modules/m_exit)
-   |  void do_looking(x, x)         (defined in /std/room/roomdesc)
-   |  void do_pray()                (defined in /std/base_room)
-   |  **void do_listen()              (defined in /std/base_room)**
-   |  void do_look_at_str()         (defined in /std/base_room)
-   |  void do_smell()               (defined in /std/base_room)
-   |  ^pinto/room/>
-
-An other option would be to use the :doc:`apropos <../command/apropos>` command to look
-for documented ``do_listen()`` functions:
-
-   |  ^pinto/room/> apropos do_listen
-   |  [autodoc/mudlib]:  do_listen
-   |  ^pinto/room/>
-
-This tells us, that the function has been documented via autodoc in the mudlib section. 
-Using ``man do_listen`` or ``help do_listen`` will show the help page this function is
-documented on. You will get the entire context of the function as well which can lead
-to new ideas on which functions to call. You would get this page in game: 
-
-   :doc:`Mudlib base_room <../mudlib/std-base_room>` 
-
-since the function is documented here.
-
-**Exercise 5**
-
-   Use the `::` operator to call the original ``do_listen()`` function that you have
-   overwritten in your current code, so they are both your new function and the one defined
-   in OUTDOOR_ROOM is called.
-
-
-.. tip::
-
-   Here is the final code for Exercise 6, if you are having issues:
-
-   .. code-block:: c
-   
-       inherit OUTDOOR_ROOM;
-
-      void setup()
-      {
-         set_brief("Murky Swamp");
-         set_long("You find yourself in a murky, dank swamp. The air is thick with humidity "
-                  "and the smell of decaying vegetation. Twisted trees rise from the muddy "
-                  "water, their gnarled branches reaching towards the dim sky. Patches of "
-                  "sickly green algae float on the surface of the stagnant pools. "
-                  "The occasional croak of a frog or buzz of an insect breaks the eerie "
-                  "silence.");
-         set_listen("You hear the occasional croak of frogs and the buzzing of insects.");
-         set_smell("The air is thick with the smell of decay and stagnant water.");
-         add_item("trees", "The trees are twisted and gnarled, their roots submerged in "
-                  "the murky water. Their branches seem to reach out like "
-                  "skeletal fingers.");
-         add_item("water", "The water is dark and murky. You can see patches of algae "
-                  "floating on its surface.");
-         add_item("algae", "Sickly green patches of algae float lazily on the surface "
-                  "of the water.");
-         add_item("sky", "The sky is barely visible through the canopy of twisted "
-                  "branches overhead. What little you can see "
-                  "looks gloomy and overcast.");
-         add_item("frog", "You don't see any frogs at the moment, but you can hear "
-                  "them croaking nearby.");
-         add_item("insect", "insects", "bugs",
-                  "Tiny insects buzz around, occasionally "
-                  "landing on the surface "
-                  "of the water or on patches of vegetation.");
-         add_item("mud", (["look":"The ground is a thick, sticky mud that seems eager "
-                                  "to pull at your feet.",
-                            "get":"Your stick your hands in the mud, look at them, "
-                                  "then decide there are better MUDs.",
-                         "search":"You found some dirty hands."]));
-      }
-
-      void do_listen()
-      {
-         ::do_listen();
-         write("You hear " + (random(3) + 2) + " animals fighting in the distance");
-      }
+So, in conclusion: Do not make include files for domains, they're considered bad style and creates
+less readable code that is harder to maintain.
 
 .. disqus::

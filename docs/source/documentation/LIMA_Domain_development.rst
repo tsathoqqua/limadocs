@@ -1,14 +1,5 @@
-******************************
-Intro: LIMA Domain Development
-******************************
-
-Chapters
---------
-   1. :doc:`Creating a domain <LIMA_Domain_development_c1>` (1 exercise)
-   2. :doc:`Creating rooms <LIMA_Domain_development_c2>` (5 exercises)
-   3. :doc:`Creating weapons <LIMA_Domain_development_c3>` (2 exercises)
-   4. :doc:`Creating armour <LIMA_Domain_development_c4>` (5 exercises)
-   5. :doc:`Creating NPCs <LIMA_Domain_development_c5>` (Under construction)
+1 LIMA Domain Development
+=========================
 
 Prerequisites
 -------------
@@ -26,8 +17,8 @@ If you notice any errors or omissions, please submit an issue at https://github.
 Describe the problem you found or suggest an addition. Even better, feel free to submit a pull request 
 with your proposed changes.
 
-Introduction
-============
+1.1 Introduction
+================
 This document is divided into several sections, and it is recommended that you read them in the order 
 they are presented. However, they can also serve as a reference if you need a refresher on a particular 
 topic later on. The chapters will build on a continuous example, that you will build in the new domain
