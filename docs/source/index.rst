@@ -66,6 +66,12 @@ Mudlib
    documentation/LIMA_Domain_development
    
 .. toctree::
+   :caption: LIMA Documentation 2
+   :maxdepth: 2
+
+   basic_lpc
+
+.. toctree::
     :caption: Autodocs
     :maxdepth: 4
     :hidden:

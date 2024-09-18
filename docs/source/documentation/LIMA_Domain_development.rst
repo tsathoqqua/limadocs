@@ -5,7 +5,8 @@ LIMA Domain Development
 ***********************
 
 Prerequisites
--------------
+#############
+
 To fully benefit from this guide, you should have a basic understanding of LPC and how 
 LPMUDs function. This foundational knowledge can be acquired by following the 
 :doc:`LPC Basics learning path <Basic_LIMA_Guide>`. By this point, you should be familiar with variables, 
@@ -22,6 +23,7 @@ with your proposed changes.
 
 1.1 Introduction
 ================
+
 This document is divided into several sections, and it is recommended that you read them in the order 
 they are presented. However, they can also serve as a reference if you need a refresher on a particular 
 topic later on. The chapters will build on a continuous example, that you will build in the new domain
