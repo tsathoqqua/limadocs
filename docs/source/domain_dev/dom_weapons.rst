@@ -72,7 +72,7 @@ This is a relatively simple weapon, that still contains a bit of custom function
 
 Line by line:
    - Line 3: We inherit SWORD (``/std/sword.c``) - go back to the 
-     :doc:`basic LIMA guide Section 1.3 <Basic_LIMA_Guide>`. 
+     :doc:`basic LIMA guide Section 1.3 <../basic_lpc>`. 
      if you find this puzzling. This is a specialization of WEAPON. If you have many weapons of the 
      same type, this might be a pattern you should follow.
    - Line 5: Our old friend the setup function.

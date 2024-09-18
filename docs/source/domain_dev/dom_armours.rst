@@ -185,7 +185,7 @@ the gloves that they cover the right hand as well.
    The *answer* to this, is in the list below the table above describing rules for body creation.
    
    To not give you the answer directly, you can find the correct number for above, by finding the number
-   of the "Functions" chapter in :doc:`LPC Basics learning path <Basic_LIMA_Guide>` 
+   of the "Functions" chapter in :doc:`LPC Basics learning path <../basic_lpc/lpc_functions>` 
    (Don't click unless you have no idea).
 
    Now, that you know the bullet number, can you explain why we do not need armour class for gloves?
@@ -231,7 +231,7 @@ A few more interesting lines here:
    - Line 16: Weakness on the other hand decreases the armour class by 5 points of the damage the players receive from this damage type. 
      In this case the kevlar jacket is easy to slash through, but will stop (some) force, i.e. from bullets.
    - Line 17: This defines the materials that can be salvaged, as we saw 
-     :doc:`in Section 3.2 <LIMA_Domain_development_c3#melee-weapons>`.
+     :doc:`in Section 3.2. Melee weapons <../basic_lpc/dom_weapons>`.
      The amount of materials depends on the weight of the item, as it represents how much there is to salvage. We did not explicitly set
      the weight of the vest here, but you could do that.
 

@@ -25,10 +25,10 @@ Learning paths
 --------------
 We provide several learning paths here with exercises to facilitate better leaning:
 
-1. :doc:`LPC Basics learning path <documentation/Basic_LIMA_Guide>` is for people
+1. :doc:`LPC Basics learning path <basic_lpc>` is for people
    new to programming, LPC and MUDs.
 
-2. :doc:`LIMA Domain Development <documentation/LIMA_Domain_development>` will teach you about 
+2. :doc:`LIMA Domain Development <domain_dev>` will teach you about 
    developing your own areas, rooms, monsters, shopkeepers, weapons, armour, items, and a 
    small quest.
 
