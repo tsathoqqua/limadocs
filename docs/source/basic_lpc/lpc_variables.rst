@@ -180,13 +180,13 @@ Chapter Summary
 
 You now know how to declare variables and understand the difference between
 declaring and using them globally or locally.  Once you become familiar
-with your driver's efuns, you can display those values in many different
+with the efuns of your driver, you can display those values in many different
 ways.  In addition, through the LPC operators, you know how to change
 and evaluate the values contained in variables.  This is useful of course
 in that it allows you to do something like count how many apples have
 been picked from a tree, so that once all apples have been picked, no
 players can pick more.  Unfortunately, you do not know how to have
-code executed in anything other than a linera fashion.  In other words,
+code executed in anything other than a linear fashion.  In other words,
 hold off on that apple until the next chapter, cause you do not know
 how to check if the apples picked is equal to the number of apples in the
 tree.  
@@ -303,7 +303,7 @@ you think.  But it should make a rather good reference guide.
   However, the value of the expression depends on where you
   place the ++.  ++i is the pre-increment operator.  This means
   that it performs the increment *before* giving a value.
-  i++ is the post-ncrement operator.  It evalutes before incrementing
+  i++ is the post-increment operator.  It evaluates before incrementing
   i.  What is the point?  Well, it does not much matter to you at
   this point, but you should recognize what it means.
 
@@ -331,7 +331,7 @@ you think.  But it should make a rather good reference guide.
   Value: true or false
   
   Explanation returns true if the left expression is not equal to the right
-  expression.  It returns fals if they are equal
+  expression.  It returns fails if they are equal
 
 * **>** greater than operator
   
@@ -415,7 +415,7 @@ here.  Do not worry if they utterly confuse you.
  
        ``if(x == 5)    if(x = 5)``
 
-   The value of x == 5 is true if the value of x is 5, false othewise.
+   The value of x == 5 is true if the value of x is 5, false otherwise.
    The value of x = 5 is 5 (and therefore always true).
    The if statement is looking for the expression in () to be either true or false,
    so if you had = and meant ==, you would end up with an expression that is

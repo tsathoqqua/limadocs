@@ -30,7 +30,7 @@ that suits your setup.
 So, at this point, it is assumed you know how to edit and write a file, and some basic Linux commands. 
 
 If you know C, you are handicapped in that LPC looks a lot like C, but it is not C.  Your preconceptions about
-modular programming development will be a hinderence you will have to overcome.  If you have never heard of the 
+modular programming development will be a hindrance you will have to overcome.  If you have never heard of the 
 C programming language, then you are only missing an understanding of the simple constructs of C like the flow 
 of program execution and logical operators and such.  So a C guru has no real advantage over you, since
 what they know from C which is applicable to LPC is easy to pick up. The stuff they know about C which makes 
@@ -41,10 +41,10 @@ through the chapter numbers as ordered in the contents file.  Each chapter begin
 explaining what you should have come to understand by that point in your studies.  After those introductory 
 paragraphs, the chapter then begins to discuss its subject matter in nauseating detail.  At the end of the 
 chapter is a briefly worded summary of what you should understand from that chapter if it has been successful. 
-Following that may or may not be some sidenotes relevant to the subject at hand, but not necessary to its 
+Following that may or may not be some side notes relevant to the subject at hand, but not necessary to its 
 understanding.
  
-If at any time you get to a chapter intro, and you have read the preceeding chapters thoroughly and you do not 
+If at any time you get to a chapter intro, and you have read the preceding chapters thoroughly and you do not 
 understand what it says you should understand by that point, please contact us on the LIMA MUD.
  
 Some basic terms this manual uses:

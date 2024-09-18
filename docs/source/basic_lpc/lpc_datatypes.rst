@@ -15,7 +15,7 @@ this page with no prior programming experience, you may not know what a function
 called.  And even if you have programming experience, you may be wondering how the process of 
 functions calling each other gets started in newly created objects.  Before any of these questions 
 get answered, however, you need to know more about what it is the functions are
-manipulating.  You therefore should thouroughly come to know the concept behind LPC data types.
+manipulating.  You therefore should thoroughly come to know the concept behind LPC data types.
 Certainly the most boring subject in this manual, yet it is the most crucial, as 90% of all 
 errors (excepting misplaced ``{}`` and ``()``) involve the improper usage of LPC data types.  
 So bear through this important chapter, because it is my feeling that understanding this
@@ -32,7 +32,7 @@ C++, C#, etc. are all intermediate languages.  They allow you to structure your 
 more coherently for translation into the 0's and 1's of the computer's languages.
 
 There are two methods in which translation is done: compilation and interpretation.  These simply
-are differences betweem when the programming language is translated into computer language.  With
+are differences between when the programming language is translated into computer language.  With
 compiled languages, the programmer writes the code then uses a program called a compiler to 
 translate the program into the computer's language.  This translation occurs before the program
 is run.  With interpreted languages however, the process of translation occurs as the program is 

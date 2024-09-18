@@ -33,7 +33,7 @@ The efun: this_object()
 
 This is an efun which returns an object in which the function being executed
 exists.  In other words, in a file, ``this_object()`` refers to the object your
-file is in whether the file gets cloned itself or inherted by another file.
+file is in whether the file gets cloned itself or inherited by another file.
 
 It is often useful when you are writing a file which is getting inherited
 by another file.  Say you are writing your own living.c which gets
@@ -89,9 +89,9 @@ Example:
 In some (very loose sense), the game is just a chain reaction of function
 calls initiated by player commands.  When a player initiates a chain of
 function calls, that player is the object which is returned by
-the sefun this_body().  So, since this_body() can change depending
+the sefun ``this_body()``.  So, since ``this_body()`` can change depending
 on who initiated the sequence of events, you want to be very careful
-as to where you place calls to functions in this_body().  
+as to where you place calls to functions in ``this_body()``.  
 
 .. disqus::
 

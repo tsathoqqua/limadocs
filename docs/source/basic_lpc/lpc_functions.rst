@@ -25,10 +25,10 @@ What is a function?
 ===================
 
 Like math functions, LPC functions take input and return output.
-Languages like Pascal distinguish between the concept of proceedure abd
+Languages like Pascal distinguish between the concept of procedure abd
 the concept of function.  LPC does not, however, it is useful to
-understand this distinction.  What Pascal calls a proceedure, LPC
-calls a function of type void.  In other words, a proceedure, or function
+understand this distinction.  What Pascal calls a procedure, LPC
+calls a function of type void.  In other words, a procedure, or function
 of type void returns no output.  What Pascal calls a function differs
 in that it does return output.  In LPC, the most trivial, correct
 function is:
@@ -124,7 +124,7 @@ functions ``add()``, which you declared and defined.  The second call, however, 
 called ``write()``, and efun.  The driver has already declared and defined this function for you. 
 You needs only to make calls to it.
 
-Efuns are created to hanldle common, every day function calls, to handle input/output to the 
+Efuns are created to handle common, every day function calls, to handle input/output to the 
 internet sockets, and other matters difficult to be dealt with in LPC.  They are written in C++
 for FluffOS in the game driver and compiled along with the driver before the MUD comes up, 
 making them much faster in execution.  But for your purposes, efun calls are just like calls
@@ -194,7 +194,7 @@ turn, are made up of three parts:
     3. The call
 
 Function declarations generally appear at the top of the file before any
-defintions, although the requirement is that the declaration must appear
+definitions, although the requirement is that the declaration must appear
 before the function definition and before the definition of any function
 which calls it.
 
@@ -238,7 +238,7 @@ been done for you.  Furthermore, execution of these functions is faster
 than the execution of your functions since efuns are in the driver.
 In addition, each mudlib has special functions like efuns in that they
 are already defined and declared for you, but different in that they
-are defined in the mudlib and in LPC.  They are called simul_efuns, or
+are defined in the mudlib and in LPC.  They are called simul-efuns, or
 simulated efuns.  You can find out all about each of these as they are
 listed on their respective websites. In addition many
 MUDs have a command called "man", "apropos" or a "help" command which allows you

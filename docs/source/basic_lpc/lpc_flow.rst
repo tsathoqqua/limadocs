@@ -69,7 +69,7 @@ single line of lpc code like a function call, a value assignment or
 modification, etc.
  
 You should know also the operators &&, ||, ==, !=, and !.  These are the
-logical operators.  They return a nonzero value when true, and 0 when false.
+logical operators.  They return a non-zero value when true, and 0 when false.
 Make note of the values of the following expressions:
  
    |  (1 && 1) value: 1   (1 and 1)
@@ -102,7 +102,7 @@ a look at the following example:
 The line numbers are for reference only.
 
 In line 3, of course we declare a variable of type int called ``x``.  Line 4
-is aethetic whitespace to clearly show where the declarations end and the
+is aesthetic whitespace to clearly show where the declarations end and the
 function code begins.  The variable ``x`` is only available to the function
 ``test()``.
 
@@ -140,7 +140,7 @@ the object that is a beggar if it is in the room (``this_object()``), or it
 will return 0 if there is no beggar in the room.  So if there is a beggar
 still living in the room, (``present("beggar", this_object())``) will have
 a value equal to the beggar object (data type is then *object*), otherwise it will
-be 0.  The ! will change a 0 to a 1, or any nonzero value (like the
+be 0.  The ! will change a 0 to a 1, or any non-zero value (like the
 beggar object) to a 0.  Therefore, the expression
 (``!present("beggar", this_object())``) is true if there is no beggar in the
 room, and false if there is.  So, if there is no beggar in the room,
@@ -160,7 +160,7 @@ reading of the ``if()`` statement is:
 This means:
  
 If expression is true, then do these instructions.
-Otherise, if this second expression is true, do this second set.
+Otherwise, if this second expression is true, do this second set.
 And if none of those were true, then do this last set.
  
 You can have ``if()`` alone:
@@ -594,12 +594,12 @@ Chapter summary
 This chapter covered one hell of a lot, but it was stuff that needed to
 be seen all at once.  You should now completely understand ``if()``, ``for()``,
 ``foreach()``, ``while()``, and ``switch()``, as well as how to alter their flow
-using return, continue, and break.  Effeciency says if it can be done in
+using return, continue, and break.  Efficiency says if it can be done in
 a natural way using ``switch()`` instead of a lot of ``if()`` else ``if()``'s, then
 by all means do it.  You were also introduced to the idea of calling
 functions in other objects.  That however, is a topic to be detailed later.
 You now should be completely at ease writing simple rooms (if you have
-read your mudlib's room building document), simple monsters, and
+read the room building document of your mudlib), simple monsters, and
 other sorts of simple objects.
 
 

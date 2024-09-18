@@ -44,28 +44,29 @@ As mentioned earlier, the driver is the program that runs on
 the host machine.  It connects you into the game and processes LPC code.
 Note that this is one theory of MUD programming, and not necessarily
 better than others.  It could be that the entire game is written in C.
-Such a game would be faster, but it would be less flexible in that developes 
+Such a game would be faster, but it would be less flexible in that developers 
 (sometimes called "wizards") could not add things to the game while it was running. 
-This is the theory behind DikuMUDs. Instead, LPMUDs run on the theory that
-the driver should in no way define the nature of the game, that the nature
-of the game is to be decided by the individuals involved, and that
-you should be able to add to the game *as it is being played*, e.g. being
-able to rebuild and change the game while it is running.  This
+This is the theory behind DIKU MUDs (invented at Datalogisk Institute Københavns Universitet ("DIKU"),
+literally "Institute of Computer Science University of Copenhagen", but "ICSUC Mud" clearly sounds worse). 
+Instead, LPMUDs run on the theory that the driver should in no way define the 
+nature of the game, that the nature of the game is to be decided by the 
+individuals involved, and that you should be able to add to the game 
+*as it is being played*, e.g. being able to rebuild and change the game while it is running.  This
 is why LPMUDs make use of the LPC programming language.  It allows
 you to define the nature of the game in LPC for the driver to read and
 execute as needed. It is also a much simpler language to understand
 than C, thus making the process of world creation open to a greater
 number of simultaneous people.
 
-Once you have written a file in LPC (assuming it is correct LPC), it justs
+Once you have written a file in LPC (assuming it is correct LPC), it just
 sits there on the hard drive of the host machine until something in the game
 makes reference to it.  When something in the game finally does make
-reference to the object, a copy of the file is (if it has no errrors) 
+reference to the object, a copy of the file is (if it has no errors) 
 loaded into memory and a special *function* of that object is called 
 in order to initialize the values of the variables in the object.
 
-In LPC programming, a variable is like a labeled box where you store a piece of information, like a number or a word. 
-You can change what’s inside the box whenever you need to. For example, one box might hold your score in a game, 
+In LPC programming, a variable is like a labelled box where you store a piece of information, like a number or a word. 
+You can change what is inside the box whenever you need to. For example, one box might hold your score in a game, 
 and another might hold your name. These boxes (variables) help the program remember things and use them later!
 
 An example of a variable:
@@ -75,7 +76,7 @@ An example of a variable:
    int number_of_goblins = 42;
 
 ``int`` is the type of the variable and this must match ``42``, ``number_of_goblins`` is the *name* of the variable - the name
-of the labeled box where we store our information. We give them names so they are easier to refer to, as referring to a position
+of the labelled box where we store our information. We give them names so they are easier to refer to, as referring to a position
 in the memory of the computer is not easy at all.
 
 Here is another example which introduces global and local variables:
@@ -111,7 +112,7 @@ structures, which include calling other functions, using externally defined func
 called "efuns"), and basic LPC expressions and flow control mechanisms.
 
 Does that sound convoluted?  First lets start with a variable.  A variable might be something like: 
-``level``. It can "vary" from sitation to situation in value, and different things use the value 
+``level``. It can "vary" from situation to situation in value, and different things use the value 
 of the player's level to make different things happen.  For instance, if you are a level 19 player, 
 the value of the variable level will be 19.  Basically, each object in LPC is a pile of variables 
 with values which change over time. Things happen to these objects based on what values its variables
@@ -175,7 +176,7 @@ other objects in the game to allow interaction among objects and the manipulatio
    ``create()`` is called in the driver, but LIMA picks it up and does a lot of basic initialisations
    for your objects, which is why you should use ``setup()`` instead for normal objects that exist
    in the game world, i.e. torches, swords, trolls and laser pistols. For other objects that are not
-   directly cloned into existance, like daemons, they still use create() to initialize when instantiated.
+   directly cloned into existence, like daemons, they still use create() to initialize when instantiated.
 
    Think of it like this: If your player is likely to interact with it (give, get, drop, look at) in the
    game world, it likely uses ``setup()``, if it's an object handling docking of spaceships, i.e. a game
