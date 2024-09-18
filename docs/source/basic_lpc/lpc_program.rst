@@ -184,3 +184,5 @@ other objects in the game to allow interaction among objects and the manipulatio
    LIMA also handles resetting rooms automatically, this is done using the ``reset()`` function, but
    you do not need to know details on that right now.
 
+.. disqus::
+

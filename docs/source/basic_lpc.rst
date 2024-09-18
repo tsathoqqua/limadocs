@@ -92,6 +92,7 @@ This guide has been changed, corrected and updated for the newest FluffOS driver
 If you spot errors and omissions, please submit an issue at https://github.com/tsathoqqua/limadocs/ and describe
 the issue you found, or the addition you would like, or even better make a pull request.
 
+.. disqus::
 
 .. toctree::
    :caption: Basic LIMA Guide
@@ -103,3 +104,8 @@ the issue you found, or the addition you would like, or even better make a pull 
    basic_lpc/lpc_datatypes
    basic_lpc/lpc_functions
    basic_lpc/lpc_inheritance
+   basic_lpc/lpc_variables
+   basic_lpc/lpc_flow
+   basic_lpc/lpc_object
+   basic_lpc/lpc_verbs
+
