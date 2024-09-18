@@ -5,9 +5,6 @@
 Basic LIMA Guide
 ****************
 
-LPC Basics learning path
-========================
-
 Credits
 -------
 Originally written by Descartes of Borg (borg@hebron.connected.com) around 1993, **adapted** and edited for
@@ -100,6 +97,7 @@ Some basic terms this manual uses:
 
 .. toctree::
    :caption: Basic LIMA Guide
+   :numbered:
    :maxdepth: 2
    :titlesonly:
 

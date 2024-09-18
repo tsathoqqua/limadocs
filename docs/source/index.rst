@@ -52,21 +52,15 @@ Mudlib
 
 .. toctree::
    :caption: LIMA Documentation
-   :maxdepth: 2
+   :numbered: 3
+   :maxdepth: 3
 
    install
    Versions
-   
+      
 .. toctree::
-    :caption: Learning paths
-    :maxdepth: 4
-    :hidden:
-
-   documentation/Basic_LIMA_comp
-   documentation/LIMA_Domain_development
-   
-.. toctree::
-   :caption: LIMA Documentation 2
+   :caption: Learning
+   :numbered: 3
    :maxdepth: 2
 
    basic_lpc
