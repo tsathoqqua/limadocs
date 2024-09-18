@@ -62,6 +62,7 @@ Mudlib
     :maxdepth: 4
     :hidden:
 
+   documentation/Basic_LIMA_comp
    documentation/Basic_LIMA_Guide
    documentation/Basic_LIMA_Guide_c2
    documentation/Basic_LIMA_Guide_c3
