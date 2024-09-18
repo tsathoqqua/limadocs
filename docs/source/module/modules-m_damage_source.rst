@@ -5,6 +5,29 @@ Documentation for the modules-m_damage_source module in */std/modules/m_damage_s
 
 Functions
 =========
+.. c:function:: int query_must_dual_wield()
+
+Returns 1 if the weapon must be dual wielded.
+
+
+.. c:function:: int query_can_dual_wield()
+
+Returns 1 if this weapon can be dual wielded.
+
+
+.. c:function:: void set_can_dual_wield(int x)
+
+Adds the property "versatile" to the weapon, and marks it
+as a weapon that can be wielded in both left, right, and both hands.
+Properties like "versatile" can be seen in the ``equip`` command.
+
+
+.. c:function:: string *query_damage_type()
+
+Returns a string array of the damage types the weapon
+can cause.
+
+
 .. c:function:: int query_to_hit_bonus(object target)
 
 Queries the direct bonus chance to hit adversaries.
@@ -12,7 +35,10 @@ Queries the direct bonus chance to hit adversaries.
 
 .. c:function:: void set_to_hit_bonus(int x)
 
-Sets a direct bonus chance to hit adversaries.
+Sets a direct bonus chance to hit adversaries. If a weapon
+has a positive to hit bonus, it receives the property "precise".
+If it receives a negative bonus it receives the property "imprecise".
+Properties can be seen in the ``equip`` command.
 
 
 .. c:function:: void set_disarm_bonus(int x)
@@ -23,6 +49,13 @@ Sets a direct bonus chance to disarm adversaries.
 .. c:function:: int query_damage_bonus(object target)
 
 Queries the direct damage bonus on adversaries.
+
+
+.. c:function:: void set_damage_type(string *str...)
+
+Sets the damage type or types a weapon uses. The damage
+types should be one one of the ones returned by:
+``DAMAGE_D->query_damage_types()``.
 
 
 .. c:function:: void set_combat_messages(string type)
