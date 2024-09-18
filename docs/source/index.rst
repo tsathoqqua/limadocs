@@ -74,7 +74,7 @@ Mudlib
    :includehidden:
    :maxdepth: 4
 
-   Autodocs
+   documentation/Autodocs
    Player_Commands
    Verbs
    Commands
