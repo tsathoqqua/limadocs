@@ -1,4 +1,4 @@
-CHAPTER 5: The Basics of Inheritance
+5: The Basics of Inheritance
 ====================================
 
 5.1 Review

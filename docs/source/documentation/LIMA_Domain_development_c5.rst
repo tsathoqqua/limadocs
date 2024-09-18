@@ -1,4 +1,4 @@
-CHAPTER 5: Creating NPCs
+5: Creating NPCs
 ========================
 
 **UNDER CONSTRUCTION**

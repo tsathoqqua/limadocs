@@ -1,4 +1,4 @@
-CHAPTER 2: The LPC Program
+2: The LPC Program
 ==========================
 
 2.1 About programs

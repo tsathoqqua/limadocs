@@ -1,4 +1,4 @@
-CHAPTER 1: Creating a Domain
+1: Creating a Domain
 ============================
 Domains are a mechanism that simplifies the assignment of privileges to wizards and the 
 protection of directories.

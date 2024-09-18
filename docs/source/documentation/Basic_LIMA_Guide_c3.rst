@@ -1,4 +1,4 @@
-CHAPTER 3: LPC Data Types
+3: LPC Data Types
 =========================
 
 3.1 What you should know by now

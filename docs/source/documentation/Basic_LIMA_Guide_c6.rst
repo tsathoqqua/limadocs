@@ -1,4 +1,4 @@
-CHAPTER 6: Variable Handling
+6: Variable Handling
 ============================
 
 6.1 Review

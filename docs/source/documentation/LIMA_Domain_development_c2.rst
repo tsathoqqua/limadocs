@@ -1,4 +1,4 @@
-CHAPTER 2: Creating rooms
+2: Creating rooms
 ==========================
 Time to create our first room! The first things to decide is which type of room you want to create:
 

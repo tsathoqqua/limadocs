@@ -1,4 +1,4 @@
-CHAPTER 8: The data type "object"
+8: The data type "object"
 =================================
 
 8.1 Review

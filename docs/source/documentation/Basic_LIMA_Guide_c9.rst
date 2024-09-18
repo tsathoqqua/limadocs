@@ -1,4 +1,4 @@
-CHAPTER 9: Verbs and interactions
+9: Verbs and interactions
 =================================
 
 9.1 Review

@@ -1,4 +1,4 @@
-CHAPTER 3: Creating weapons
+3: Creating weapons
 ===========================
 Weapons in LIMA all inherit ``M_DAMAGE_SOURCE``, meaning something that can be a source
 of damage. So even things that are not weapons in a traditional sense, may benefit from

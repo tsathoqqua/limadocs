@@ -1,4 +1,4 @@
-CHAPTER 7: Flow Control
+7: Flow Control
 =======================
 
 7.1 Review of variables

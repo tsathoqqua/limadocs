@@ -1,4 +1,4 @@
-CHAPTER 4: Creating armour
+4: Creating armour
 ==========================
 
 Weapons are using ``M_DAMAGE_SOURCE`` and armours are using ``M_DAMAGE_SINK``, as damage is transferred

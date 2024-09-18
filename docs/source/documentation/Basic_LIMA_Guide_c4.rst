@@ -1,4 +1,4 @@
-CHAPTER 4: Functions
+4: Functions
 ====================
 This chapter will teach you about functions, how to define them, how they work,
 and how to call them.
