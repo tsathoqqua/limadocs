@@ -53,4 +53,8 @@ first, before turning to the tip box.
    :titlesonly:
 
    domain_dev/dom_create
+   domain_dev/dom_rooms
+   domain_dev/dom_weapons
+   domain_dev/dom_armours
+   domain_dev/dom_npcs
 
