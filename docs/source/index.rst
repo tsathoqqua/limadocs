@@ -63,7 +63,20 @@ Mudlib
     :hidden:
 
    documentation/Basic_LIMA_Guide
+   documentation/Basic_LIMA_Guide_c2
+   documentation/Basic_LIMA_Guide_c3
+   documentation/Basic_LIMA_Guide_c4
+   documentation/Basic_LIMA_Guide_c5
+   documentation/Basic_LIMA_Guide_c6
+   documentation/Basic_LIMA_Guide_c7
+   documentation/Basic_LIMA_Guide_c8
+   documentation/Basic_LIMA_Guide_c9
    documentation/LIMA_Domain_development
+   documentation/LIMA_Domain_development_c1
+   documentation/LIMA_Domain_development_c2
+   documentation/LIMA_Domain_development_c3
+   documentation/LIMA_Domain_development_c4
+   documentation/LIMA_Domain_development_c5
 
 .. toctree::
     :caption: Autodocs
