@@ -17,7 +17,7 @@ You need knowledge of basic Linux (or Linux) commands like: ls, cd, mkdir, mv, r
 
 * A nice course by Ubuntu (51 minutes): https://ubuntu.com/tutorials/command-line-for-beginners 
 
-* A command reference: https://mally.stanford.edu/~sr/computing/basic-Linux.html
+* A command reference: https://mally.stanford.edu/~sr/computing/basic-unix.html
 
 For the purpose of this guide, we will assume you will be using Visual Studio Code (or an editor with similar
 functionality). Code can be downloaded at https://code.visualstudio.com/download.
