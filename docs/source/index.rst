@@ -63,6 +63,7 @@ Mudlib
     :hidden:
 
    documentation/Basic_LIMA_comp
+   documentation/LIMA_Domain_development
    
 .. toctree::
     :caption: Autodocs
