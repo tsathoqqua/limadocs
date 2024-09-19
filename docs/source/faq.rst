@@ -32,8 +32,8 @@ Once that has been changed, log in to your MUD, and do
 
 and it should then load.
 
-I am getting "Too long evaluation. Execution aborted." from various daemons
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Why am I getting "Too long evaluation. Execution aborted."?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 This is usually caused by your MUD host being a bit on the slow side, and slowing down
 the call_out() rate the daemons use can help this. Go to ``/include/config.h``
@@ -51,3 +51,5 @@ and change this:
 
 Change the 1 here to as low a number as will make the issue go away. You can try
 5 or 10, and then possibly reduce it a bit once the errors stop nagging you.
+
+Alternatively, upgrade your hosting to a bigger potato.
