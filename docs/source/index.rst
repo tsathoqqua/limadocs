@@ -59,6 +59,7 @@ Mudlib
    Showcase
    Installation
    Versions
+   faq
       
 .. toctree::
    :caption: Learning
