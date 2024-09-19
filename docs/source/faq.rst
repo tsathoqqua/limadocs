@@ -9,7 +9,6 @@ Frequently asked questions
   Formulate them as a question and an answer.
   Consider that the answer is best as a reference to another place in the documentation.
 
-
 Initial woes
 ------------
 
