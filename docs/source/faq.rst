@@ -52,7 +52,7 @@ and change this:
 Change the 1 here to as low a number as will make the issue go away. You can try
 5 or 10, and then possibly reduce it a bit once the errors stop nagging you.
 
-Alternatively, upgrade your hosting to a bigger potato.
+Alternatively, upgrade your hosting to a bigger potato. 🥔
 
 .. disqus::
 
