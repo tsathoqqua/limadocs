@@ -68,7 +68,7 @@ is a system where you and your team of wizards can log your changes and make it 
 to cooperate. First, create a new version:
 
     |  didlog -newversion 0.0.1
-    |  I tests the didlog system.
+    |  I created the first didlog for version 0.0.1! Woo!
 
 Yes, "I" is a command, try it out, like above!
 
