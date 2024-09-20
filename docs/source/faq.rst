@@ -54,5 +54,40 @@ Change the 1 here to as low a number as will make the issue go away. You can try
 
 Alternatively, upgrade your hosting to a bigger potato. 🥔
 
+How do I get the didlog working?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+When you first start the MUD, you will get a message like:
+
+    |  No active mudlib version. Set your first version with:
+    |  didlog -newversion 0.0.1
+    |  didlog -help (for more)
+
+This is the didlog system complaining that you need to set a new version. The didlog
+is a system where you and your team of wizards can log your changes and make it easier
+to cooperate. First, create a new version:
+
+    |  didlog -newversion 0.0.1
+    |  I tests the didlog system.
+
+Yes, "I" is a command, try it out, like above!
+
+This will give you a warning ``Sorry, but only full wizards may use the didlog.``. 
+But you are an admin? What is going on? Simple, LIMA supports guest wizards, and
+full wizards and guest wizards are separated by having a home directory. So, 
+go create a directory for yourself.
+
+    |  cd /wiz
+    |  mkdir bob
+
+If your name is Bob - use the right name here, obviously. Then try didlog again:
+
+    |  I tests the didlog system.
+    |  didlog
+
+Now, you can see your didlog entry in the didlog, and you will not see the warning
+when logging in again. Talk to your wizard team on when to create a new version 0.0.2
+or even 1.0 at some point. Happy didlogging!
+
 .. disqus::
 
