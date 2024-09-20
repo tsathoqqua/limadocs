@@ -89,5 +89,11 @@ Now, you can see your didlog entry in the didlog, and you will not see the warni
 when logging in again. Talk to your wizard team on when to create a new version 0.0.2
 or even 1.0 at some point. Happy didlogging!
 
+.. tip::
+
+    You can undo a didlog by doing ``@DID_D->someone_didnt()``, if you regret
+    or one of your fellow developers made a boo-boo.
+
+
 .. disqus::
 
