@@ -32,6 +32,10 @@ We provide several learning paths here with exercises to facilitate better leani
    developing your own areas, rooms, monsters, shopkeepers, weapons, armour, items, and a 
    small quest.
 
+3. :doc:`A small explanation about #directives <documentation/Preprocessor>` will teach you about 
+   developing your own areas, rooms, monsters, shopkeepers, weapons, armour, items, and a 
+   small quest.
+
 Commands
 --------
 - :doc:`Player Commands <Player_Commands>` - commands for players
@@ -69,6 +73,7 @@ Mudlib
 
    basic_lpc
    domain_dev
+   documentation/Preprocessor
 
 .. toctree::
    :caption: Automated Docs
