@@ -4,6 +4,12 @@ Frequently asked questions
 .. contents::
    :local:
 
+This FAQ describes commands in shorthand like
+:menuselection:`menu --> i --> f` 
+
+This tells you the commands you need to type and in which order. In this case first ``menu``
+then ``i`` and then ``f``.
+
 ..
   Frequently asked questions should be questions that actually got asked.
   Formulate them as a question and an answer.
@@ -62,6 +68,9 @@ Alternatively, upgrade your hosting to a bigger potato. 🥔
 How do I get the didlog working?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+:menuselection:`didlog -newversion 0.0.1`
+:menuselection:`I did something`
+
 When you first start the MUD, you will get a message like:
 
     |  No active mudlib version. Set your first version with:
@@ -105,6 +114,8 @@ Administration
 How do I wiz someone?
 ~~~~~~~~~~~~~~~~~~~~~
 
+:menuselection:`admtool --> 1 --> u --> w [name]`
+
 If you have defined ``AUTO_WIZ`` in ``/include/config.h``, everyone logging In
 will be a "guest wizard". If you want to make them full wizards, you need to create
 a home directory under /wiz/ matching their login name.
@@ -114,7 +125,6 @@ to change players into wizards or vice versa. Open the admtool, go to privilege 
 (that is admin only), go to user, then use the "wiz a user" option to wiz or "dewiz"
 if needed.
 
-:menuselection:`admtool --> 1 --> u --> w [name]`
 
 
 .. disqus::
