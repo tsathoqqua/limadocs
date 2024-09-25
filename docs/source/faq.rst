@@ -111,7 +111,7 @@ or even 1.0 at some point. Happy didlogging!
 Administration
 --------------
 
-How do I wiz someone?
+How do I (de)wiz someone?
 ~~~~~~~~~~~~~~~~~~~~~
 
 :menuselection:`admtool --> 1 --> u --> w [name]`
@@ -126,7 +126,28 @@ to change players into wizards or vice versa. Open the admtool, go to privilege 
 (that is admin only), go to user, then use the "wiz a user" option to wiz or "dewiz"
 if needed.
 
+A wizard has issues writing to his folder under /wiz?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+:menuselection:`admtool --> 1 --> u --> d [name]`
+:menuselection:`admtool --> 1 --> u --> w [name]`
+
+The wizard will get an error not being able to write their folder even when it was created:
+
+   |  ``Permission denied: /wiz/tsath/exec.c.``
+
+The most likely cause of this is that you have ``AUTO_WIZ`` on, and you created the folder manually.
+The SECURE_D still needs to assign permissions for the wizard to the folder. The simple way
+of fixing this is to dewiz and wiz them again using the :doc:`admtool <command/admtool>`.
+
+.. note::
+
+    This permissions could be added automatically when ``AUTO_WIZ`` is on as soon as the wizard
+    join the MUD. This is not a great idea, since you will likely accumulate a lot of unused security
+    rules for people that just stopped by and left, never to be seen again.
+
+    You know who is staying and gets to be a full wizards, and who is just a guest - the system
+    cannot know.
 
 .. disqus::
 
