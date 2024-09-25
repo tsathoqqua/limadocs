@@ -132,12 +132,12 @@ A wizard has issues writing to his folder under /wiz?
 :menuselection:`admtool --> 1 --> u --> d [name]`
 :menuselection:`admtool --> 1 --> u --> w [name]`
 
-The wizard will get an error not being able to write their folder even when it was created:
+The wizard will get an error about not being able to write to their folder even when it was created:
 
    |  ``Permission denied: /wiz/tsath/exec.c.``
 
 The most likely cause of this is that you have ``AUTO_WIZ`` on, and you created the folder manually.
-The SECURE_D still needs to assign permissions for the wizard to the folder. The simple way
+The ``SECURE_D`` still needs to assign permissions for the wizard to the folder. The simple way
 of fixing this is to dewiz and wiz them again using the :doc:`admtool <command/admtool>`.
 
 .. note::
