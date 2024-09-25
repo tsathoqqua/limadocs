@@ -30,7 +30,12 @@ Once that has been changed, log in to your MUD, and do
 
    |  update \`IMUD_D\`
 
-and it should then load.
+and it should then load. If you are in doubt about setting ADMIN_EMAIL correctly, you can
+print it from your wizard shell like this:
+
+   |  @ADMIN_EMAIL
+
+And it will print your define.
 
 Why am I getting "Too long evaluation. Execution aborted."?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -93,6 +98,23 @@ or even 1.0 at some point. Happy didlogging!
 
     You can undo a didlog by doing ``@DID_D->someone_didnt()``, if you regret
     or one of your fellow developers made a boo-boo.
+
+Administration
+--------------
+
+How do I wiz someone?
+~~~~~~~~~~~~~~~~~~~~~
+
+If you have defined ``AUTO_WIZ`` in ``/include/config.h``, everyone logging In
+will be a "guest wizard". If you want to make them full wizards, you need to create
+a home directory under /wiz/ matching their login name.
+
+If you have turned off ``AUTO_WIZ``, you can use the :doc:`admtool <command/admtool>`
+to change players into wizards or vice versa. Open the admtool, go to privilege 1 
+(that is admin only), go to user, then use the "wiz a user" option to wiz or "dewiz"
+if needed.
+
+:menuselection:`admtool --> 1 --> u --> w [name]`
 
 
 .. disqus::
