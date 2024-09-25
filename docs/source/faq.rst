@@ -115,6 +115,7 @@ How do I wiz someone?
 ~~~~~~~~~~~~~~~~~~~~~
 
 :menuselection:`admtool --> 1 --> u --> w [name]`
+:menuselection:`admtool --> 1 --> u --> d [name]`
 
 If you have defined ``AUTO_WIZ`` in ``/include/config.h``, everyone logging In
 will be a "guest wizard". If you want to make them full wizards, you need to create
