@@ -60,7 +60,7 @@ and change this:
     */
    #define TOO_GREEDY_DAEMONS 1
 
-Change the 1 here to as low a number as will make the issue go away. You can try
+Change the 1 here to a higher number that will make the issue go away. You can try
 5 or 10, and then possibly reduce it a bit once the errors stop nagging you.
 
 Alternatively, upgrade your hosting to a bigger potato. 🥔
