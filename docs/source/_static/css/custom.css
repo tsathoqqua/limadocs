@@ -1,15 +1,15 @@
 .c.function {
     background: #e7f2fa;
     color: #2980b9;
-    border-top: 3px solid #6ab0de;   
+    border-top: 3px solid #6ab0de;
 }
 
 .note {
-    background: #eed !important;    
+    background: #eed !important;
 }
 
 .tip {
-    background: #ede !important;    
+    background: #ede !important;
 }
 
 .note .admonition-title {
@@ -34,4 +34,61 @@
 
 .wy-nav-content {
     max-width: 1200px !important;
+}
+
+body {
+    --dark-bg: #1b1b1f;
+    --light-bg: #f5f5f5;
+    --primary-dark: #2a2d34;
+    --primary-light: #e0e0e2;
+    --accent-color: #ff6f61;
+    --secondary-accent: #30a8f0;
+    --highlight-color: #ffcc00;
+    --text-dark: #e8e8e8;
+    --text-light: #333333;
+    --muted-color: #777777;
+}
+
+.wy-menu-vertical header,.wy-menu-vertical p.caption {
+    color: var(--text-dark);
+}
+
+.wy-side-nav-search {
+    background-color: var(--muted-color);
+}
+
+.wy-nav-top {
+    background-color: var(--muted-color);
+}
+
+.wy-nav-side {
+    color: var(--text-dark);
+    background: var(--primary-dark);
+}
+
+.note {
+    background: var(--highlight-color) !important;
+}
+
+.note .admonition-title {
+    background: var(--secondary-accent) !important;
+    color: var(--text-dark) !important;
+}
+
+.warning {
+    background: var(--primary-light) !important;
+}
+
+.warning .admonition-title {
+    background: var(--soren) !important;
+    color: var(--text-dark) !important;
+}
+
+.tip {
+    background: var(--primary-light) !important;
+}
+
+.tip .admonition-title {
+    background: var(--accent-color) !important;
+    color: var(--text-dark) !important;
 }
