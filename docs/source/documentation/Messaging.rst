@@ -100,4 +100,4 @@ The *.here:greeter* works in the Wizroom where the LIMA Mudlib Greeter is, other
 
     @.here:greeter->targetted_action("$N $vgive $t a hug and $p $o.",.me,.me:map)
 
-.. disqus::
+

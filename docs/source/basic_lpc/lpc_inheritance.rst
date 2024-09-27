@@ -331,5 +331,5 @@ functionally.  With it, the driver calls its  ``create()``, which in turn calls
 Otherwise it is functionally exactly the same as room.c.
 
 
-.. disqus::
+
 

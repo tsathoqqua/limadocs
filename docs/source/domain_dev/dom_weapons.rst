@@ -154,5 +154,5 @@ Line by line:
    The :doc:`damage_d <daemon/daemons-damage_d>` keeps track of special attacks for weapons as well, think 
    ``murdering longsword of lightning bolts`` and you get the right picture.
 
-.. disqus::
+
 

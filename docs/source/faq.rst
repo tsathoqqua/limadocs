@@ -149,5 +149,5 @@ of fixing this is to dewiz and wiz them again using the :doc:`admtool <command/a
     You know who is staying and gets to be a full wizards, and who is just a guest - the system
     cannot know.
 
-.. disqus::
+
 

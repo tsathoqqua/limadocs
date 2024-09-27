@@ -258,5 +258,5 @@ Notice how the message change depending on how hard the dummy is hit.
 
    The dummy will never lose hit points.
 
-.. disqus::
+
 

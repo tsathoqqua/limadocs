@@ -258,5 +258,5 @@ simply to call up the info files on them.
        gotten "Bad arg 1 to foo() line 32"?).
     2. It is simply considered good coding form.
 
-.. disqus::
+
 

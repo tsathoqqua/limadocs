@@ -93,5 +93,5 @@ the sefun ``this_body()``.  So, since ``this_body()`` can change depending
 on who initiated the sequence of events, you want to be very careful
 as to where you place calls to functions in ``this_body()``.  
 
-.. disqus::
+
 

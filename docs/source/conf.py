@@ -18,11 +18,7 @@ extensions = [
     'sphinx.ext.autosummary',
     'sphinx.ext.intersphinx',
     'sphinx_copybutton',
-    'sphinx_code_tabs',
-    'sphinx_disqus.disqus',
 ]
-
-disqus_shortname = "lima-mudlib"
 
 html_logo = "images/lima.png"
 

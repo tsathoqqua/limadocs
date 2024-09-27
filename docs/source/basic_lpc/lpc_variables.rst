@@ -422,5 +422,5 @@ here.  Do not worry if they utterly confuse you.
    always true.  And you would pull your hair out trying to figure out
    why things were not happening like they should 😊
 
-.. disqus::
+
 

@@ -86,4 +86,4 @@ It must be have empty line above to be recognized as a comment in RST. The RST_D
 
 for a mapping of tags and their according files.
 
-.. disqus::
+

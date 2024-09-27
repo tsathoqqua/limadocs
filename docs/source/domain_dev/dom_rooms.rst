@@ -380,5 +380,5 @@ since the function is documented here.
          write("You hear " + (random(3) + 2) + " animals fighting in the distance");
       }
 
-.. disqus::
+
 

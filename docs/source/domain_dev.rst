@@ -44,7 +44,7 @@ first, before turning to the tip box.
     :doc:`score <../player_command/score>` and not the mudlib itself. 
 
 
-.. disqus::
+
 
 .. toctree::
    :caption: LIMA Domain Development

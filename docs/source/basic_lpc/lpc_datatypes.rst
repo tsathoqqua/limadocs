@@ -181,5 +181,5 @@ use a data type for which an operation or function is not defined
 (like if you tried to divide "this is" by "nonsense", "this is"/"nonsense"),
 the driver will barf and report an error to you.
 
-.. disqus::
+
 

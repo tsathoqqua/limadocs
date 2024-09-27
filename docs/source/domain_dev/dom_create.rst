@@ -136,5 +136,5 @@ An example of some better defines from the source for the :doc:`locate <../comma
 So, in conclusion: Do not make include files for domains, they're considered bad style and creates
 less readable code that is harder to maintain.
 
-.. disqus::
+
 

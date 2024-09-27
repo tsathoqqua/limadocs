@@ -603,5 +603,5 @@ read the room building document of your mudlib), simple monsters, and
 other sorts of simple objects.
 
 
-.. disqus::
+
 
