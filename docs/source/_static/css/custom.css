@@ -4,23 +4,6 @@
     border-top: 3px solid #6ab0de;
 }
 
-.note {
-    background: #eed !important;
-}
-
-.tip {
-    background: #ede !important;
-}
-
-.note .admonition-title {
-    background: #dede6a !important;
-    color: #222 !important;
-}
-
-.tip .admonition-title {
-    background: #de6ade !important;
-    color: #222 !important;
-}
 
 .sig.sig-object.c {
     border-top: none !important;
