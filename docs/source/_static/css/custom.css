@@ -67,7 +67,15 @@ body {
 }
 
 .note {
-    background: var(--highlight-color) !important;
+    background: var(--primary-light) !important;
+}
+
+.warning {
+    background: var(--primary-light) !important;
+}
+
+.tip {
+    background: var(--primary-light) !important;
 }
 
 .note .admonition-title {
@@ -75,20 +83,12 @@ body {
     color: var(--text-dark) !important;
 }
 
-.warning {
-    background: var(--primary-light) !important;
-}
-
 .warning .admonition-title {
-    background: var(--soren) !important;
+    background: var(--accent-color) !important;
     color: var(--text-dark) !important;
 }
 
-.tip {
-    background: var(--primary-light) !important;
-}
-
 .tip .admonition-title {
-    background: var(--accent-color) !important;
+    background: var(--highlight-color) !important;
     color: var(--text-dark) !important;
 }
