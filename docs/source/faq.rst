@@ -18,6 +18,17 @@ then ``i`` and then ``f``.
 Initial woes
 ------------
 
+I compiled the driver, what now?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+After running the ``rebuild`` script under ``adm/dist/`` you should:
+   1. Edit ``config.mud`` file in same directory to adapt your settings.
+   2. Edit the MUD ``name :``
+   3. Change the default port to fit your server ``external_port_1: telnet ____``.
+
+That's it! Run the mud by running ``./run`` or ``./run bg`` to run the MUD in a loop
+in the background.
+
 
 Why is IMUD_D complaining and how to fix it?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -114,7 +125,7 @@ Administration
 How do I make someone admin?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-:menuselection:`admtool --> 1 --> d --> a [user] [domain]`
+:menuselection:`admtool --> 1 --> d --> a [user] admin`
 
 When you first logged in, you were automatically set to be admin. The 
 :doc:`who <player_command/who>` command will confirm this.
