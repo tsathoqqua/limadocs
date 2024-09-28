@@ -27,7 +27,7 @@ After running the ``rebuild`` script under ``adm/dist/`` you should:
    3. Change the default port to fit your server ``external_port_1: telnet ____``.
 
 That's it! Run the mud by running ``./run`` or ``./run bg`` to run the MUD in a loop
-in the background.
+in the background. To stop it later, just do ``./run stop``.
 
 
 Why is IMUD_D complaining and how to fix it?
