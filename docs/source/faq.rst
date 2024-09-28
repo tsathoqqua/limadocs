@@ -111,6 +111,23 @@ or even 1.0 at some point. Happy didlogging!
 Administration
 --------------
 
+How do I make someone admin?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+:menuselection:`admtool --> 1 --> d --> a [user] [domain]`
+
+When you first logged in, you were automatically set to be admin. The 
+:doc:`who <player_command/who>` command will confirm this.
+
+To make another person admin, add them to the admin domain using the admtool.
+They need to be a wizard already to become an admin.
+
+.. figure:: images/make_admin.png
+  :width: 400
+  :alt: Make someone admin.
+
+  Example of the making an existing wizard admin.
+
 How do I (de)wiz someone?
 ~~~~~~~~~~~~~~~~~~~~~
 
