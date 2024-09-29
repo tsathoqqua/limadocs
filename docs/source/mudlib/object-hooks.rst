@@ -11,8 +11,6 @@ The hook module is included as part of OBJECT, and allows a general method
 of allowing keeping track of and calling hooks, along with a method if
 specifying how multiple hooks should be resolved.
 
-Functions
-=========
 .. c:function:: void add_hook(string tag, function hook)
 
 add_hook(string tag, function hook) sets up the function 'hook' to be

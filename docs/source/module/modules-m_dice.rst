@@ -9,8 +9,6 @@ Module Information
 This module handles all dice rolling functions. Sometimes dice expressions
 are just easier and more transparent to understand and work with than random functions.
 
-Functions
-=========
 .. c:function:: int *roll_dice(int num_dice, int num_sides)
 
 Roll x number of dice with y sides.

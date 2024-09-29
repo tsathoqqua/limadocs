@@ -8,8 +8,6 @@ Module Information
 
 This daemon handles the 256 Colours of XTERM code.
 
-Functions
-=========
 .. c:function:: varargs string substitute_ansi(string text, string mode)
 
 

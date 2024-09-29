@@ -3,8 +3,6 @@ Module *m_drinkable*
 
 Documentation for the modules-m_drinkable module in */std/modules/m_drinkable.c*.
 
-Functions
-=========
 .. c:function:: void set_taste_action(mixed x)
 
 set_taste_action( mixed x )

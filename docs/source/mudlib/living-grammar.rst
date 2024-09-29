@@ -3,8 +3,6 @@ Mudlib *grammar*
 
 Documentation for the living-grammar functions for the mudlib in */std/living/grammar.c*.
 
-Functions
-=========
 .. c:function:: void set_gender(int x)
 
 set the objects gender.  0 == neuter, 1 == male, 2 == female

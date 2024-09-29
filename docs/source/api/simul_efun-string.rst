@@ -3,8 +3,6 @@ string
 
 Documentation for the simul_efun-string api in */secure/simul_efun/string.c*.
 
-Functions
-=========
 .. c:function:: string add_article(string str)
 
 Adds article to things, i.e.::

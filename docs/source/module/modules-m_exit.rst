@@ -3,8 +3,6 @@ Module *m_exit*
 
 Documentation for the modules-m_exit module in */std/modules/m_exit.c*.
 
-Functions
-=========
 .. c:function:: string query_default_exit_message()
 
 Return the default exit message

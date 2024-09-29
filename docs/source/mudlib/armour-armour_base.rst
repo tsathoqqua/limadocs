@@ -3,8 +3,6 @@ Mudlib *armour_base*
 
 Documentation for the armour-armour_base functions for the mudlib in */std/adversary/armour/armour_base.c*.
 
-Functions
-=========
 .. c:function:: void set_wearing(string s)
 
 void set_wearing(string);

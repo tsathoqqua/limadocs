@@ -3,8 +3,6 @@ Mudlib *non_room*
 
 Documentation for the std-non_room functions for the mudlib in */std/non_room.c*.
 
-Functions
-=========
 .. c:function:: int can_hold_water()
 
 Return 1 if the object can hold water

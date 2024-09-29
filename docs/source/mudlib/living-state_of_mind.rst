@@ -3,8 +3,6 @@ Mudlib *state_of_mind*
 
 Documentation for the living-state_of_mind functions for the mudlib in */std/living/state_of_mind.c*.
 
-Functions
-=========
 .. c:function:: void stun()
 
 Stun us

@@ -3,8 +3,6 @@ Mudlib *door*
 
 Documentation for the std-door functions for the mudlib in */std/door.c*.
 
-Functions
-=========
 .. c:function:: void update_state(object ob)
 
 Internal use function.

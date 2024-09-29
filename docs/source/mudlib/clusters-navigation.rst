@@ -3,8 +3,6 @@ Mudlib *navigation*
 
 Documentation for the clusters-navigation functions for the mudlib in */std/behaviour/clusters/navigation.c*.
 
-Functions
-=========
 .. c:function:: void set_wander_area(mixed areas)
 
 Set the area(s) that an NPC can wander in.  If this is not set

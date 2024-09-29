@@ -62,8 +62,6 @@ Example:
 
 .. TAGS: RST
 
-Functions
-=========
 .. c:function:: void set_goodbye(mixed arg)
 
 This action is used when the NPC says goodbye.

@@ -3,8 +3,6 @@ Mudlib *value*
 
 Documentation for the object-value functions for the mudlib in */std/object/value.c*.
 
-Functions
-=========
 .. c:function:: void set_value_factor(float f)
 
 This factor is multiplied unto the value of the

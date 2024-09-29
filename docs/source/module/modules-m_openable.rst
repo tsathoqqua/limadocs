@@ -3,8 +3,6 @@ Module *m_openable*
 
 Documentation for the modules-m_openable module in */std/modules/m_openable.c*.
 
-Functions
-=========
 .. c:function:: void do_on_open()
 
 Called from open_with() so modules that inherit from M_OPENABLE

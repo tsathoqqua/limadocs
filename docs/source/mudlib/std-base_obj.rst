@@ -3,8 +3,6 @@ Mudlib *base_obj*
 
 Documentation for the std-base_obj functions for the mudlib in */std/base_obj.c*.
 
-Functions
-=========
 .. c:function:: string stat_me()
 
 return some debugging info about the state of the object

@@ -3,8 +3,6 @@ Module *m_lightable*
 
 Documentation for the modules-m_lightable module in */std/modules/m_lightable.c*.
 
-Functions
-=========
 .. c:function:: void set_source(mixed f)
 
 Makes it so that the object can only be lit by

@@ -3,8 +3,6 @@ Mudlib *types*
 
 Documentation for the event_info-types functions for the mudlib in */std/classes/event_info/types.c*.
 
-Functions
-=========
 .. c:function:: string event_to_str(class event_info evt)
 
 string event_to_str(class event_info evt)

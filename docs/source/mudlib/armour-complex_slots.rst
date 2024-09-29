@@ -3,8 +3,6 @@ Mudlib *complex_slots*
 
 Documentation for the armour-complex_slots functions for the mudlib in */std/adversary/armour/complex_slots.c*.
 
-Functions
-=========
 .. c:function:: nomask int wear_item(object what, string sname)
 
 nomask int wear_item(object what, string sname);

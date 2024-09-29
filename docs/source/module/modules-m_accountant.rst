@@ -14,8 +14,6 @@ Your accountant should inherit from LIVING or ADVERSARY.
 
 .. TAGS: RST
 
-Functions
-=========
 .. c:function:: void set_currency_type(string currency)
 
 Sets the type of currency the bank will deposit.

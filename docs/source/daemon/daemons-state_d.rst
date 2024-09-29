@@ -12,8 +12,6 @@ be used to grow crops, make food rot, make critically wounded things die.
 This daemon runs on a heartbeat, so is as granular as the heartbeat settings.
 See M_STATEFUL, M_DECAY, LIGHT_OBJECT and ^std/consumable/hamburger.c for some examples of usage.
 
-Functions
-=========
 .. c:function:: varargs void add_to_queue(object ob, int add_to_time, int force, mixed extra)
 
 Adds ob to queue, to be scheduled at NOW + add_to_time in minutes.

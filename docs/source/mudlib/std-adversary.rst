@@ -5,8 +5,6 @@ Documentation for the std-adversary functions for the mudlib in */std/adversary.
 
 .. TAGS: RST
 
-Functions
-=========
 .. c:function:: int start_fight(object who)
 
 Add someone to the list of people we are attacking.  If we were already

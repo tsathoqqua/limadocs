@@ -3,8 +3,6 @@ shellfuncs
 
 Documentation for the shell-shellfuncs api in */obj/secure/shell/shellfuncs.c*.
 
-Functions
-=========
 .. c:function:: void setup_for_save()
 
 Sets up M_SAVE to save some variables

@@ -3,8 +3,6 @@ Mudlib *container*
 
 Documentation for the std-container functions for the mudlib in */std/container.c*.
 
-Functions
-=========
 .. c:function:: string query_relation(object ob)
 
 Return the relation which the given object is conatained by

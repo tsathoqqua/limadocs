@@ -3,8 +3,6 @@ Mudlib *light*
 
 Documentation for the object-light functions for the mudlib in */std/object/light.c*.
 
-Functions
-=========
 .. c:function:: void set_light(int x)
 
 Set the amount of light that this object gives off

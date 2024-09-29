@@ -21,8 +21,6 @@ Sections have colours you can specify via the codes in ``palette``, but you can 
 use "warning", "accent" and "title" to reuse the theme colours the user has picked
 if you do not want to specify new section colours that risk not fitting the themes.
 
-Functions
-=========
 .. c:function:: void user_is_active()
 
 Called when the user is active in the menu.

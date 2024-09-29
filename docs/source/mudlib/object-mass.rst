@@ -3,8 +3,6 @@ Mudlib *mass*
 
 Documentation for the object-mass functions for the mudlib in */std/object/mass.c*.
 
-Functions
-=========
 .. c:function:: void set_mass(float m)
 
 Change the mass of an object

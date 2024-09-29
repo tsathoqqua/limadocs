@@ -3,8 +3,6 @@ Mudlib *hit_points*
 
 Documentation for the health-hit_points functions for the mudlib in */std/adversary/health/hit_points.c*.
 
-Functions
-=========
 .. c:function:: void set_max_health(int x)
 
 void set_max_health(int x);

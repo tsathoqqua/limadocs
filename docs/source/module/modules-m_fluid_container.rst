@@ -12,8 +12,6 @@ your container so that it will fill and pour.
 
 .. TAGS: RST
 
-Functions
-=========
 .. c:function:: varargs int can_hold_fluid(mixed ob)
 
 When fluid is passed into the fluid

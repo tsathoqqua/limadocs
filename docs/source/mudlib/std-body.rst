@@ -3,8 +3,6 @@ Mudlib *body*
 
 Documentation for the std-body functions for the mudlib in */std/body.c*.
 
-Functions
-=========
 .. c:function:: int is_body()
 
 Is this a body object?

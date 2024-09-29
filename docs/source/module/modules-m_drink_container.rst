@@ -11,8 +11,6 @@ Use m_fluid_container instead, unless
 you want no fluid associated with your
 drink container.
 
-Functions
-=========
 .. c:function:: void set_needs_contents(int x)
 
 If needs_contents is 1, then the container can only be drunk from if it

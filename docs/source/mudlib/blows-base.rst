@@ -3,8 +3,6 @@ Mudlib *base*
 
 Documentation for the blows-base functions for the mudlib in */std/adversary/blows/base.c*.
 
-Functions
-=========
 .. c:function:: int query_natural_armour()
 
 int query_natural_armour()

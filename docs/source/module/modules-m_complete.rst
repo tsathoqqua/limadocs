@@ -8,8 +8,6 @@ Module Information
 
 Various functions for expanding partial matches
 
-Functions
-=========
 .. c:function:: string *complete(string partial, string *potentials)
 
 Given a string and a list of possible completions of that string,

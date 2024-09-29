@@ -3,8 +3,6 @@ Mudlib *move*
 
 Documentation for the object-move functions for the mudlib in */std/object/move.c*.
 
-Functions
-=========
 .. c:function:: int contains(object o)
 
 contains(o) returns 1 if o is in this object, or in an object contained

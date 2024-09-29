@@ -10,8 +10,6 @@ Module Information
 The wander module designed to be included by NPC's which allows monsters
 to wander throughout various areas in the gaming area.
 
-Functions
-=========
 .. c:function:: void set_wander_area(mixed areas)
 
 Set the area(s) that an NPC can wander in.  If this is not set
@@ -93,9 +91,6 @@ room.
 
 Starts an NPC wandering
 
-
-TODO list
-=========
 
 1. Something to have the NPC's open doors or unlcok doors.  It is possiblethat this belongs in a separate module.
 

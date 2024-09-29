@@ -3,8 +3,6 @@ Mudlib *corpses*
 
 Documentation for the death-corpses functions for the mudlib in */std/adversary/death/corpses.c*.
 
-Functions
-=========
 .. c:function:: void set_drops_pelt(string type)
 
 void set_drops_pelt(string type);

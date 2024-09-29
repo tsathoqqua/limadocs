@@ -3,8 +3,6 @@ Mudlib *skills*
 
 Documentation for the body-skills functions for the mudlib in */std/body/skills.c*.
 
-Functions
-=========
 .. c:function:: int initiate_ranks()
 
 int initiate_ranks();

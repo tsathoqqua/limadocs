@@ -13,8 +13,6 @@ will do the same thing.
 %sm 	will re-execute the last command you typed that started with sm.
 
 
-Functions
-=========
 .. c:function:: nomask protected mixed get_nth_item(int n)
 
 returns the nth command if it's still in the history buffer.

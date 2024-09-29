@@ -20,8 +20,6 @@ in the environment.
 
 .. TAGS: RST
 
-Functions
-=========
 .. c:function:: void set_source_of(string what)
 
 x must be a path name to a fluid object.

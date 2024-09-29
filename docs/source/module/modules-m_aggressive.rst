@@ -11,8 +11,6 @@ Module will check if player is a wizard, and not attack the wizard.
 
 .. TAGS: RST
 
-Functions
-=========
 .. c:function:: void aggressively_attack(object who)
 
 void aggressively_attack();

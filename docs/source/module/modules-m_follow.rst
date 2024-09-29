@@ -13,8 +13,6 @@ M_ACTIONS.
 
 .. TAGS: RST
 
-Functions
-=========
 .. c:function:: void set_follow_search(mixed *follow...)
 
 Set the names of the objects that the object will follow.
@@ -79,9 +77,6 @@ perhaps add something to allow weighted choices for follows?
 
 Return 1 if the object is a potential follow to follow
 
-
-TODO list
-=========
 
 1. 1.) Target selection could be made smarter than it is.2.) Add a hook call to prevent following?
 

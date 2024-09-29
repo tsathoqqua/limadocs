@@ -3,8 +3,6 @@ Module *m_gettable*
 
 Documentation for the modules-m_gettable module in */std/modules/m_gettable.c*.
 
-Functions
-=========
 .. c:function:: void set_getmsg(string s)
 
 Sets the error message that one gets when one tries to take an object.

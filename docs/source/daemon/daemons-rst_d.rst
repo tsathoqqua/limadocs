@@ -10,8 +10,6 @@ The RST (reStructured Text) daemon handles finding source files which have been 
 updating the RST documentation. The intent of this daemon is to do formatting without forcing
 new autodoc standards nor introducing RST formatting into MUD help pages.
 
-Functions
-=========
 .. c:function:: void scan_mudlib()
 
 Recursively searches the mudlib for files which have been changed

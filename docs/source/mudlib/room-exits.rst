@@ -3,8 +3,6 @@ Mudlib *exits*
 
 Documentation for the room-exits functions for the mudlib in */std/room/exits.c*.
 
-Functions
-=========
 .. c:function:: void set_default_exit(mixed value)
 
 Set the default exit message (the message given when someone goes a direction

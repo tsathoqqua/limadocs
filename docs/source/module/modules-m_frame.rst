@@ -11,8 +11,6 @@ and 256 colour based from XTERM256_D.
 
 .. TAGS: RST
 
-Functions
-=========
 .. c:function:: int colour_strlen(string str)
 
 Gives the length of the visible portion of s.  Colour
@@ -174,9 +172,6 @@ Do a frame colour demo using ``style`` using ``colour`` in width ``w``.
 
 Renders the final frame into a string for printing.
 
-
-TODO list
-=========
 
 1. Styles and colours are hardcoded in here, and should be moved to admtool toolor a config file.
 

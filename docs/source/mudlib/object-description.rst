@@ -3,8 +3,6 @@ Mudlib *description*
 
 Documentation for the object-description functions for the mudlib in */std/object/description.c*.
 
-Functions
-=========
 .. c:function:: nomask void set_long(mixed str)
 
 Set the long description of an object

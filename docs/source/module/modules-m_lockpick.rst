@@ -3,8 +3,6 @@ Module *m_lockpick*
 
 Documentation for the modules-m_lockpick module in */std/modules/m_lockpick.c*.
 
-Functions
-=========
 .. c:function:: void set_lockpick_strength(int lps)
 
 Set the direct skill bonus to lockpick.

@@ -3,8 +3,6 @@ Mudlib *size*
 
 Documentation for the object-size functions for the mudlib in */std/object/size.c*.
 
-Functions
-=========
 .. c:function:: int query_size()
 
 query_size() returns the size of an object

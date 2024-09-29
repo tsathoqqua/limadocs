@@ -3,8 +3,6 @@ Module *m_wearable*
 
 Documentation for the modules-m_wearable module in */std/modules/m_wearable.c*.
 
-Functions
-=========
 .. c:function:: void set_stat_mods(mapping m)
 
 Sets the scores to modify a stat with for this wearable.

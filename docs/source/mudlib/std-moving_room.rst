@@ -3,8 +3,6 @@ Mudlib *moving_room*
 
 Documentation for the std-moving_room functions for the mudlib in */std/moving_room.c*.
 
-Functions
-=========
 .. c:function:: void set_destinations(mapping m)
 
 Set a mapping between names and locations. The names can be in the format::

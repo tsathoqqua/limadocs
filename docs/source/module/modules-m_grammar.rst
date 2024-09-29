@@ -9,8 +9,6 @@ Module Information
 The grammar module contains a number of functions for producing high
 quality english output.
 
-Functions
-=========
 .. c:function:: string pluralize(string str)
 
 Convert a noun to it's plural form.  Oddly enough, it's also quite

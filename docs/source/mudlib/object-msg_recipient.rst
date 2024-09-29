@@ -3,8 +3,6 @@ Mudlib *msg_recipient*
 
 Documentation for the object-msg_recipient functions for the mudlib in */std/object/msg_recipient.c*.
 
-Functions
-=========
 .. c:function:: int environment_can_hear()
 
 Returns 1 if messages should propagate upwards to our environment.

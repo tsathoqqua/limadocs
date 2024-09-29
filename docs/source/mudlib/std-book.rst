@@ -3,8 +3,6 @@ Mudlib *book*
 
 Documentation for the std-book functions for the mudlib in */std/book.c*.
 
-Functions
-=========
 .. c:function:: void set_pages(mixed *page_data...)
 
 Set the pages that are in the book.  Each element of the array is the text

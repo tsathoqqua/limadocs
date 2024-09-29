@@ -3,8 +3,6 @@ Mudlib *base*
 
 Documentation for the clusters-base functions for the mudlib in */std/behaviour/clusters/base.c*.
 
-Functions
-=========
 .. c:function:: void mod_emotion(mixed emotion, int mod)
 
 Function for modifying the behavior of the brainee.

@@ -3,8 +3,6 @@ Daemon lima_d
 
 Documentation for the daemons-lima_d daemon in */daemons/lima_d.c*.
 
-Functions
-=========
 .. c:function:: nomask void restore_me()
 
 Restore the data from the save file.  Automatically called by create().

@@ -3,8 +3,6 @@ misc
 
 Documentation for the user-misc api in */secure/user/misc.c*.
 
-Functions
-=========
 .. c:function:: void set_didlog_time(int t)
 
 Set the last time that the didlog was read for the user.

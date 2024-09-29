@@ -3,8 +3,6 @@ Mudlib *flags*
 
 Documentation for the object-flags functions for the mudlib in */std/object/flags.c*.
 
-Functions
-=========
 .. c:function:: nomask int get_flags(int set_key)
 
 

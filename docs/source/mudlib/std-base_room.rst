@@ -3,8 +3,6 @@ Mudlib *base_room*
 
 Documentation for the std-base_room functions for the mudlib in */std/base_room.c*.
 
-Functions
-=========
 .. c:function:: string stat_me()
 
 Returns some debugging info about the object.  Shows the container info,

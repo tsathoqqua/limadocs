@@ -3,8 +3,6 @@ Mudlib *drink*
 
 Documentation for the std-drink functions for the mudlib in */std/drink.c*.
 
-Functions
-=========
 .. c:function:: int query_alchohol_level()
 
 Return the alchohol level of the beverage between 0 and 100.

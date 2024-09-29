@@ -3,8 +3,6 @@ Mudlib *simple*
 
 Documentation for the advancement-simple functions for the mudlib in */std/adversary/advancement/simple.c*.
 
-Functions
-=========
 .. c:function:: int calc_xp_for(int player_level, int monster_level)
 
 int calc_xp_for(int player_level, int monster_level)

@@ -3,8 +3,6 @@ getopt
 
 Documentation for the shell-getopt api in */obj/secure/shell/getopt.c*.
 
-Functions
-=========
 .. c:function:: mixed getopt(mixed args, string options)
 
 Takes an array and parses flags from it. Returns an array, the first

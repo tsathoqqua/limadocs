@@ -3,8 +3,6 @@ Module *m_widgets*
 
 Documentation for the modules-m_widgets module in */std/modules/m_widgets.c*.
 
-Functions
-=========
 .. c:function:: nomask int i_simplify()
 
 Returns TRUE if the current user (not the object receiving the message!)

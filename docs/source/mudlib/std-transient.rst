@@ -3,13 +3,8 @@ Mudlib *transient*
 
 Documentation for the std-transient functions for the mudlib in */std/transient.c*.
 
-Hooks
-=====
-
 Passed the object of the existing effect, used to perform extra
 functionality if another effect with the same type/name exists.
-Functions
-=========
 .. c:function:: void set_effect_duration(int d)
 
 Set the duration of the effect in number of heart_beats
