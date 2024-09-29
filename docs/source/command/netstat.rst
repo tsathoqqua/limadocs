@@ -1,12 +1,12 @@
-Command *netstat*
-******************
+netstat
+********
 
 Documentation for the netstat command in */cmds/wiz/netstat.c*.
 
 Command
 =======
 
-See: :doc:`Command: socketinfo <socketinfo>` 
+See: :doc:`socketinfo <socketinfo>` 
 
 USAGE: ``netstat``
 

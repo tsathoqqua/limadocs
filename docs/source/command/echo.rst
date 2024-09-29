@@ -1,12 +1,12 @@
-Command *echo*
-***************
+echo
+*****
 
 Documentation for the echo command in */cmds/wiz/echo.c*.
 
 Command
 =======
 
-See: :doc:`Command: echoto <echoto>` :doc:`Command: echoall <echoall>` :doc:`Command: echom <echom>` 
+See: :doc:`echoto <echoto>` :doc:`echoall <echoall>` :doc:`echom <echom>` 
 
 USAGE:  ``echo <string>``
 

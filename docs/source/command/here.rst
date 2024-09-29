@@ -1,5 +1,5 @@
-Command *here*
-***************
+here
+*****
 
 Documentation for the here command in */cmds/wiz/here.c*.
 

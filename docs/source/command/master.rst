@@ -1,5 +1,5 @@
-Command *master*
-*****************
+master
+*******
 
 Documentation for the master command in */trans/admincmds/master.c*.
 

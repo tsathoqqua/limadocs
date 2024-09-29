@@ -1,5 +1,5 @@
-Command *apropos*
-******************
+apropos
+********
 
 Documentation for the apropos command in */cmds/wiz/apropos.c*.
 

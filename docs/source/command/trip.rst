@@ -1,5 +1,5 @@
-Command *trip*
-***************
+trip
+*****
 
 Documentation for the trip command in */cmds/guild/yakitori/trip.c*.
 

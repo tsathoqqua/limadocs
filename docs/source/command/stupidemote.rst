@@ -1,12 +1,12 @@
-Command *stupidemote*
-**********************
+stupidemote
+************
 
 Documentation for the stupidemote command in */cmds/wiz/stupidemote.c*.
 
 Command
 =======
 
-See: :doc:`Command: feelings <feelings>` :doc:`Command: m_messages <m_messages>` :doc:`Command: addemote <addemote>` :doc:`Command: showemote <showemote>` :doc:`Command: rmemote <rmemote>` :doc:`Command: targetemote <targetemote>` 
+See: :doc:`feelings <feelings>` :doc:`m_messages <m_messages>` :doc:`addemote <addemote>` :doc:`showemote <showemote>` :doc:`rmemote <rmemote>` :doc:`targetemote <targetemote>` 
 
 USAGE:  ``stupidemote <soul>``
 

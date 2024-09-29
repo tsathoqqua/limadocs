@@ -1,12 +1,12 @@
-Command *wizz*
-***************
+wizz
+*****
 
 Documentation for the wizz command in */cmds/wiz/wizz.c*.
 
 Command
 =======
 
-See: :doc:`Command: goto <goto>` :doc:`Command: trans <trans>` 
+See: :doc:`goto <goto>` :doc:`trans <trans>` 
 
 USAGE ``wizz``
 

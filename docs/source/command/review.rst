@@ -1,12 +1,12 @@
-Command *review*
-*****************
+review
+*******
 
 Documentation for the review command in */cmds/wiz/review.c*.
 
 Command
 =======
 
-See: :doc:`Command: m_messages <m_messages>` :doc:`Command: msg <msg>` 
+See: :doc:`m_messages <m_messages>` :doc:`msg <msg>` 
 
 USAGE:
 

@@ -1,5 +1,5 @@
-Command *ls*
-*************
+ls
+***
 
 Documentation for the ls command in */trans/cmds/ls.c*.
 

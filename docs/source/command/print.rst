@@ -1,5 +1,5 @@
-Command *print*
-****************
+print
+******
 
 Documentation for the print command in */cmds/wiz/print.c*.
 

@@ -1,5 +1,5 @@
-Command *tasktool*
-*******************
+tasktool
+*********
 
 Documentation for the tasktool command in */cmds/wiz/tasktool.c*.
 

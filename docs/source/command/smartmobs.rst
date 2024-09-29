@@ -1,5 +1,5 @@
-Command *smartmobs*
-********************
+smartmobs
+**********
 
 Documentation for the smartmobs command in */cmds/wiz/smartmobs.c*.
 

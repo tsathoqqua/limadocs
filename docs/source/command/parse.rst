@@ -1,5 +1,5 @@
-Command *parse*
-****************
+parse
+******
 
 Documentation for the parse command in */cmds/wiz/parse.c*.
 

@@ -1,12 +1,12 @@
-Command *unsnoop*
-******************
+unsnoop
+********
 
 Documentation for the unsnoop command in */trans/cmds/unsnoop.c*.
 
 Command
 =======
 
-See: :doc:`Command: snoop <snoop>` :doc:`Command: snoops <snoops>` 
+See: :doc:`snoop <snoop>` :doc:`snoops <snoops>` 
 
 USAGE: ``unsnoop <user>``
 

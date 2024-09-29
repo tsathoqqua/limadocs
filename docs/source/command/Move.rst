@@ -1,5 +1,5 @@
-Command *Move*
-***************
+Move
+*****
 
 Documentation for the Move command in */cmds/wiz/Move.c*.
 

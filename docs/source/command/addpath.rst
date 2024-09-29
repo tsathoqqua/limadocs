@@ -1,12 +1,12 @@
-Command *addpath*
-******************
+addpath
+********
 
 Documentation for the addpath command in */trans/cmds/addpath.c*.
 
 Command
 =======
 
-See: :doc:`Command: printpath <printpath>` :doc:`Command: rmpath <rmpath>` 
+See: :doc:`printpath <printpath>` :doc:`rmpath <rmpath>` 
 
 USAGE
       ``addpath [directory]``

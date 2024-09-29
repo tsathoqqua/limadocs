@@ -1,5 +1,5 @@
-Command *governance*
-*********************
+governance
+***********
 
 Documentation for the governance command in */cmds/wiz/governance.c*.
 

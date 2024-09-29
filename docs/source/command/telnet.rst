@@ -1,5 +1,5 @@
-Command *telnet*
-*****************
+telnet
+*******
 
 Documentation for the telnet command in */trans/admincmds/telnet.c*.
 

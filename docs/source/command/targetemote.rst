@@ -1,12 +1,12 @@
-Command *targetemote*
-**********************
+targetemote
+************
 
 Documentation for the targetemote command in */cmds/wiz/targetemote.c*.
 
 Command
 =======
 
-See: :doc:`Command: feelings <feelings>` :doc:`Command: m_messages <m_messages>` :doc:`Command: addemote <addemote>` :doc:`Command: rmemote <rmemote>` :doc:`Command: showemote <showemote>` :doc:`Command: stupidemote <stupidemote>` 
+See: :doc:`feelings <feelings>` :doc:`m_messages <m_messages>` :doc:`addemote <addemote>` :doc:`rmemote <rmemote>` :doc:`showemote <showemote>` :doc:`stupidemote <stupidemote>` 
 
 USAGE:  ``targetemote``
 

@@ -1,5 +1,5 @@
-Command *quiet*
-****************
+quiet
+******
 
 Documentation for the quiet command in */cmds/wiz/quiet.c*.
 

@@ -1,5 +1,5 @@
-Command *last*
-***************
+last
+*****
 
 Documentation for the last command in */cmds/wiz/last.c*.
 

@@ -1,5 +1,5 @@
-Command *rmdir*
-****************
+rmdir
+******
 
 Documentation for the rmdir command in */trans/cmds/rmdir.c*.
 

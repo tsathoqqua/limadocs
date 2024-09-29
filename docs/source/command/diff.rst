@@ -1,5 +1,5 @@
-Command *diff*
-***************
+diff
+*****
 
 Documentation for the diff command in */trans/cmds/diff.c*.
 

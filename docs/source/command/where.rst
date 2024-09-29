@@ -1,12 +1,12 @@
-Command *where*
-****************
+where
+******
 
 Documentation for the where command in */cmds/wiz/where.c*.
 
 Command
 =======
 
-See: :doc:`Command: who <who>` :doc:`Command: people <people>` 
+See: :doc:`who <who>` :doc:`people <people>` 
 
 USAGE
 

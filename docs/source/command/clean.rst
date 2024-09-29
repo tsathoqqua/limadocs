@@ -1,12 +1,12 @@
-Command *clean*
-****************
+clean
+******
 
 Documentation for the clean command in */cmds/wiz/clean.c*.
 
 Command
 =======
 
-See: :doc:`Command: dest <dest>` :doc:`Command: clone <clone>` 
+See: :doc:`dest <dest>` :doc:`clone <clone>` 
 
 USAGE:
    |  ``clean``

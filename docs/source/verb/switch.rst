@@ -1,5 +1,5 @@
-Verb *switch*
-**************
+switch
+*******
 
 Documentation for the switch verb in */cmds/verbs/switch.c*.
 

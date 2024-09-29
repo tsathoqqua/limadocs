@@ -1,12 +1,12 @@
-Command *I*
-************
+I
+**
 
 Documentation for the I command in */cmds/wiz/I.c*.
 
 Command
 =======
 
-See: :doc:`Command: didlog <didlog>` 
+See: :doc:`didlog <didlog>` 
 
 USAGE
       ``I <string>``

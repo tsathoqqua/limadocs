@@ -1,12 +1,12 @@
-Command *cd*
-*************
+cd
+***
 
 Documentation for the cd command in */trans/cmds/cd.c*.
 
 Command
 =======
 
-See: :doc:`Command: mkdir <mkdir>` :doc:`Command: ls <ls>` :doc:`Command: pwd <pwd>` :doc:`Command: ed <ed>` :doc:`Command: uncd <uncd>` 
+See: :doc:`mkdir <mkdir>` :doc:`ls <ls>` :doc:`pwd <pwd>` :doc:`ed <ed>` :doc:`uncd <uncd>` 
 
 USAGE:  ``cd [directory|obj]``
 

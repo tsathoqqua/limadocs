@@ -1,5 +1,5 @@
-Command *discuss*
-******************
+discuss
+********
 
 Documentation for the discuss command in */cmds/wiz/discuss.c*.
 

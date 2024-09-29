@@ -1,5 +1,5 @@
-Command *to*
-*************
+to
+***
 
 Documentation for the to command in */trans/cmds/to.c*.
 

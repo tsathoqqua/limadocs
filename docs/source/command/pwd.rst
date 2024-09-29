@@ -1,5 +1,5 @@
-Command *pwd*
-**************
+pwd
+****
 
 Documentation for the pwd command in */cmds/wiz/pwd.c*.
 

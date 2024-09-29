@@ -1,5 +1,5 @@
-Command *sweep*
-****************
+sweep
+******
 
 Documentation for the sweep command in */cmds/guild/yakitori/sweep.c*.
 

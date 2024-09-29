@@ -1,12 +1,12 @@
-Command *objcount*
-*******************
+objcount
+*********
 
 Documentation for the objcount command in */cmds/wiz/objcount.c*.
 
 Command
 =======
 
-See: :doc:`Command: objdump <objdump>` :doc:`Command: objfind <objfind>` 
+See: :doc:`objdump <objdump>` :doc:`objfind <objfind>` 
 
 USAGE:
 

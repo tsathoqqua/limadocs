@@ -1,12 +1,12 @@
-Command *timer*
-****************
+timer
+******
 
 Documentation for the timer command in */cmds/wiz/timer.c*.
 
 Command
 =======
 
-See: :doc:`Command: channels <channels>` :doc:`Command: chan <chan>` 
+See: :doc:`channels <channels>` :doc:`chan <chan>` 
 
 USAGE:  ``timer [-r] number [string  number]``
 

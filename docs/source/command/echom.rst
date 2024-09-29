@@ -1,12 +1,12 @@
-Command *echom*
-****************
+echom
+******
 
 Documentation for the echom command in */cmds/wiz/echom.c*.
 
 Command
 =======
 
-See: :doc:`Command: echo <echo>` :doc:`Command: echoall <echoall>` :doc:`Command: m_messages <m_messages>` 
+See: :doc:`echo <echo>` :doc:`echoall <echoall>` :doc:`m_messages <m_messages>` 
 
 USAGE ``echo @<target> <message>``
 

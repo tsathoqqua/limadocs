@@ -1,5 +1,5 @@
-Command *start*
-****************
+start
+******
 
 Documentation for the start command in */cmds/wiz/start.c*.
 

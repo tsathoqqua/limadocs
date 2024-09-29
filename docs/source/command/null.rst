@@ -1,5 +1,5 @@
-Command *null*
-***************
+null
+*****
 
 Documentation for the null command in */cmds/wiz/null.c*.
 

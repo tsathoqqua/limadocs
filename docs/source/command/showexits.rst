@@ -1,5 +1,5 @@
-Command *showexits*
-********************
+showexits
+**********
 
 Documentation for the showexits command in */cmds/wiz/showexits.c*.
 

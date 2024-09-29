@@ -1,5 +1,5 @@
-Command *mvemote*
-******************
+mvemote
+********
 
 Documentation for the mvemote command in */cmds/wiz/mvemote.c*.
 

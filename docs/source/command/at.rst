@@ -1,12 +1,12 @@
-Command *at*
-*************
+at
+***
 
 Documentation for the at command in */trans/cmds/at.c*.
 
 Command
 =======
 
-See: :doc:`Command: at <at>` 
+See: :doc:`at <at>` 
 
 USAGE ``at <living> <command>``
 

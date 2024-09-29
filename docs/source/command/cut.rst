@@ -1,5 +1,5 @@
-Command *cut*
-**************
+cut
+****
 
 Documentation for the cut command in */trans/cmds/cut.c*.
 

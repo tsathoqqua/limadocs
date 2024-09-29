@@ -1,12 +1,12 @@
-Command *cmd*
-**************
+cmd
+****
 
 Documentation for the cmd command in */cmds/wiz/cmd.c*.
 
 Command
 =======
 
-See: :doc:`Command: force <force>` 
+See: :doc:`force <force>` 
 
 USAGE:  ``cmd <monster> <command>``
 

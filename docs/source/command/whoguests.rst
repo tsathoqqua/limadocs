@@ -1,5 +1,5 @@
-Command *whoguests*
-********************
+whoguests
+**********
 
 Documentation for the whoguests command in */trans/cmds/whoguests.c*.
 

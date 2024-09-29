@@ -1,12 +1,12 @@
-Command *dbxframe*
-*******************
+dbxframe
+*********
 
 Documentation for the dbxframe command in */trans/cmds/dbxframe.c*.
 
 Command
 =======
 
-See: :doc:`Command: dbx <dbx>` 
+See: :doc:`dbx <dbx>` 
 
 USAGE: ``dbxframe [<who>] <frame number>``
 

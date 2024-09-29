@@ -1,5 +1,5 @@
-Command *dataedit*
-*******************
+dataedit
+*********
 
 Documentation for the dataedit command in */trans/cmds/dataedit.c*.
 

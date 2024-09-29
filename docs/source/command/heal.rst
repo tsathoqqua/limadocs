@@ -1,5 +1,5 @@
-Command *heal*
-***************
+heal
+*****
 
 Documentation for the heal command in */cmds/wiz/heal.c*.
 

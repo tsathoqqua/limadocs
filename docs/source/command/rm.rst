@@ -1,5 +1,5 @@
-Command *rm*
-*************
+rm
+***
 
 Documentation for the rm command in */trans/cmds/rm.c*.
 

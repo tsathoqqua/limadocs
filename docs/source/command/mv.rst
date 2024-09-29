@@ -1,5 +1,5 @@
-Command *mv*
-*************
+mv
+***
 
 Documentation for the mv command in */trans/cmds/mv.c*.
 

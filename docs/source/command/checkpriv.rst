@@ -1,5 +1,5 @@
-Command *checkpriv*
-********************
+checkpriv
+**********
 
 Documentation for the checkpriv command in */trans/cmds/checkpriv.c*.
 

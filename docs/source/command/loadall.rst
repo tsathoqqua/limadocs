@@ -1,5 +1,5 @@
-Command *loadall*
-******************
+loadall
+********
 
 Documentation for the loadall command in */trans/cmds/loadall.c*.
 

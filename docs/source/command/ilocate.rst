@@ -1,5 +1,5 @@
-Command *ilocate*
-******************
+ilocate
+********
 
 Documentation for the ilocate command in */cmds/wiz/ilocate.c*.
 

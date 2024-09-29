@@ -1,12 +1,12 @@
-Command *msg*
-**************
+msg
+****
 
 Documentation for the msg command in */cmds/wiz/msg.c*.
 
 Command
 =======
 
-See: :doc:`Command: m_messages <m_messages>` :doc:`Command: review <review>` 
+See: :doc:`m_messages <m_messages>` :doc:`review <review>` 
 
 USAGE:
 

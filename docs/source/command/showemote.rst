@@ -1,12 +1,12 @@
-Command *showemote*
-********************
+showemote
+**********
 
 Documentation for the showemote command in */cmds/wiz/showemote.c*.
 
 Command
 =======
 
-See: :doc:`Command: feelings <feelings>` :doc:`Command: m_messages <m_messages>` :doc:`Command: addemote <addemote>` :doc:`Command: rmemote <rmemote>` :doc:`Command: stupidemote <stupidemote>` :doc:`Command: targetemote <targetemote>` 
+See: :doc:`feelings <feelings>` :doc:`m_messages <m_messages>` :doc:`addemote <addemote>` :doc:`rmemote <rmemote>` :doc:`stupidemote <stupidemote>` :doc:`targetemote <targetemote>` 
 
 USAGE:  ``showemote <soul>``
 

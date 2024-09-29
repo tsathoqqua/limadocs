@@ -1,12 +1,12 @@
-Command *xargs*
-****************
+xargs
+******
 
 Documentation for the xargs command in */trans/cmds/xargs.c*.
 
 Command
 =======
 
-See: :doc:`Command: converse <converse>` 
+See: :doc:`converse <converse>` 
 
 USAGE:	``xargs <command>``
 

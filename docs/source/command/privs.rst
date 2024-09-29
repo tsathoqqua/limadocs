@@ -1,5 +1,5 @@
-Command *privs*
-****************
+privs
+******
 
 Documentation for the privs command in */cmds/wiz/privs.c*.
 

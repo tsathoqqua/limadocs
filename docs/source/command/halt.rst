@@ -1,5 +1,5 @@
-Command *halt*
-***************
+halt
+*****
 
 Documentation for the halt command in */cmds/wiz/halt.c*.
 

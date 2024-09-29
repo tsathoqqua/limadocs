@@ -1,5 +1,5 @@
-Verb *remove*
-**************
+remove
+*******
 
 Documentation for the remove verb in */cmds/verbs/remove.c*.
 

@@ -1,5 +1,5 @@
-Command *cpu*
-**************
+cpu
+****
 
 Documentation for the cpu command in */cmds/wiz/cpu.c*.
 

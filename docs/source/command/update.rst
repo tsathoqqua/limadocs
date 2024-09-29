@@ -1,5 +1,5 @@
-Command *update*
-*****************
+update
+*******
 
 Documentation for the update command in */trans/cmds/update.c*.
 

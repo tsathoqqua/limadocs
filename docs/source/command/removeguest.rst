@@ -1,5 +1,5 @@
-Command *removeguest*
-**********************
+removeguest
+************
 
 Documentation for the removeguest command in */trans/admincmds/removeguest.c*.
 

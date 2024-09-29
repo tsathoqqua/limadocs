@@ -1,5 +1,5 @@
-Command *do*
-*************
+do
+***
 
 Documentation for the do command in */trans/cmds/do.c*.
 

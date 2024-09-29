@@ -1,5 +1,5 @@
-Command *du*
-*************
+du
+***
 
 Documentation for the du command in */trans/cmds/du.c*.
 

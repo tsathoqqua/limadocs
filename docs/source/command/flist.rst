@@ -1,5 +1,5 @@
-Command *flist*
-****************
+flist
+******
 
 Documentation for the flist command in */cmds/wiz/flist.c*.
 

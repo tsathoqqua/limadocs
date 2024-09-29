@@ -1,5 +1,5 @@
-Command *dbxwhere*
-*******************
+dbxwhere
+*********
 
 Documentation for the dbxwhere command in */trans/cmds/dbxwhere.c*.
 

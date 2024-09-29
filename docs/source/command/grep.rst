@@ -1,5 +1,5 @@
-Command *grep*
-***************
+grep
+*****
 
 Documentation for the grep command in */trans/cmds/grep.c*.
 

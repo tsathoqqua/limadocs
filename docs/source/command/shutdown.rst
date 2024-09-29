@@ -1,5 +1,5 @@
-Command *shutdown*
-*******************
+shutdown
+*********
 
 Documentation for the shutdown command in */trans/admincmds/shutdown.c*.
 

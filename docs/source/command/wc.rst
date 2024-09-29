@@ -1,5 +1,5 @@
-Command *wc*
-*************
+wc
+***
 
 Documentation for the wc command in */cmds/wiz/wc.c*.
 

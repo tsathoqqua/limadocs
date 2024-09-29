@@ -1,5 +1,5 @@
-Command *codesay*
-******************
+codesay
+********
 
 Documentation for the codesay command in */cmds/wiz/codesay.c*.
 

@@ -1,5 +1,5 @@
-Command *livings*
-******************
+livings
+********
 
 Documentation for the livings command in */cmds/wiz/livings.c*.
 

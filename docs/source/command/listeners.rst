@@ -1,5 +1,5 @@
-Command *listeners*
-********************
+listeners
+**********
 
 Documentation for the listeners command in */trans/admincmds/listeners.c*.
 

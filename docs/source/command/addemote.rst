@@ -1,12 +1,12 @@
-Command *addemote*
-*******************
+addemote
+*********
 
 Documentation for the addemote command in */cmds/wiz/addemote.c*.
 
 Command
 =======
 
-See: :doc:`Command: feelings <feelings>` :doc:`Command: m_messages <m_messages>` :doc:`Command: rmemote <rmemote>` :doc:`Command: showemote <showemote>` :doc:`Command: stupidemote <stupidemote>` :doc:`Command: targetemote <targetemote>` 
+See: :doc:`feelings <feelings>` :doc:`m_messages <m_messages>` :doc:`rmemote <rmemote>` :doc:`showemote <showemote>` :doc:`stupidemote <stupidemote>` :doc:`targetemote <targetemote>` 
 
 USAGE:
    ``addemote <verb>``

@@ -1,12 +1,12 @@
-Command *spew*
-***************
+spew
+*****
 
 Documentation for the spew command in */trans/cmds/spew.c*.
 
 Command
 =======
 
-See: :doc:`Command: shell <shell>` 
+See: :doc:`shell <shell>` 
 
 USAGE
    ``spew file [<startline>] [#<lines>]``

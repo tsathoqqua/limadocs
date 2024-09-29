@@ -1,5 +1,5 @@
-Command *dbxvars*
-******************
+dbxvars
+********
 
 Documentation for the dbxvars command in */trans/cmds/dbxvars.c*.
 

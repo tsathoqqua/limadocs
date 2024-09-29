@@ -1,5 +1,5 @@
-Command *fix*
-**************
+fix
+****
 
 Documentation for the fix command in */cmds/wiz/fix.c*.
 

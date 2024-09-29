@@ -1,5 +1,5 @@
-Command *uncd*
-***************
+uncd
+*****
 
 Documentation for the uncd command in */cmds/wiz/uncd.c*.
 

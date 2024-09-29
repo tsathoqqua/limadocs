@@ -1,5 +1,5 @@
-Verb *whisper*
-***************
+whisper
+********
 
 Documentation for the whisper verb in */cmds/verbs/whisper.c*.
 

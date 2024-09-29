@@ -1,12 +1,12 @@
-Command *work*
-***************
+work
+*****
 
 Documentation for the work command in */trans/cmds/work.c*.
 
 Command
 =======
 
-See: :doc:`Command: cd <cd>` 
+See: :doc:`cd <cd>` 
 
 USAGE:
 

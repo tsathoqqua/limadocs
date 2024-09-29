@@ -1,5 +1,5 @@
-Command *treefor*
-******************
+treefor
+********
 
 Documentation for the treefor command in */cmds/wiz/treefor.c*.
 

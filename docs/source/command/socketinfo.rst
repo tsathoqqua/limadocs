@@ -1,12 +1,12 @@
-Command *socketinfo*
-*********************
+socketinfo
+***********
 
 Documentation for the socketinfo command in */cmds/wiz/socketinfo.c*.
 
 Command
 =======
 
-See: :doc:`Command: netstat <netstat>` 
+See: :doc:`netstat <netstat>` 
 
 USAGE: ``socketinfo``
 

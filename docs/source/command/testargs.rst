@@ -1,5 +1,5 @@
-Command *testargs*
-*******************
+testargs
+*********
 
 Documentation for the testargs command in */trans/cmds/testargs.c*.
 

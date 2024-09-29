@@ -1,5 +1,5 @@
-Command *scripts*
-******************
+scripts
+********
 
 Documentation for the scripts command in */cmds/wiz/scripts.c*.
 

@@ -1,12 +1,12 @@
-Command *didlog*
-*****************
+didlog
+*******
 
 Documentation for the didlog command in */cmds/wiz/didlog.c*.
 
 Command
 =======
 
-See: :doc:`Command: I <I>` :doc:`Command: lima <lima>` 
+See: :doc:`I <I>` :doc:`lima <lima>` 
 
 USAGE:
 

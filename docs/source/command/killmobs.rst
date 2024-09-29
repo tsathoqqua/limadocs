@@ -1,5 +1,5 @@
-Command *killmobs*
-*******************
+killmobs
+*********
 
 Documentation for the killmobs command in */cmds/wiz/killmobs.c*.
 

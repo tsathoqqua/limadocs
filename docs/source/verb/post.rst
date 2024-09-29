@@ -1,5 +1,5 @@
-Verb *post*
-************
+post
+*****
 
 Documentation for the post verb in */cmds/verbs/post.c*.
 

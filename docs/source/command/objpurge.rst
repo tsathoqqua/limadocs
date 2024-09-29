@@ -1,12 +1,12 @@
-Command *objpurge*
-*******************
+objpurge
+*********
 
 Documentation for the objpurge command in */trans/admincmds/objpurge.c*.
 
 Command
 =======
 
-See: :doc:`Command: objfind <objfind>` 
+See: :doc:`objfind <objfind>` 
 
 USAGE ``objpurge <filename>``
 

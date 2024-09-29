@@ -1,5 +1,5 @@
-Command *replace*
-******************
+replace
+********
 
 Documentation for the replace command in */trans/cmds/replace.c*.
 

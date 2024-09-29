@@ -1,5 +1,5 @@
-Command *whoip*
-****************
+whoip
+******
 
 Documentation for the whoip command in */cmds/wiz/whoip.c*.
 

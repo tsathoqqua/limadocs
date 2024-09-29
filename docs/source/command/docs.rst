@@ -1,5 +1,5 @@
-Command *docs*
-***************
+docs
+*****
 
 Documentation for the docs command in */trans/cmds/docs.c*.
 

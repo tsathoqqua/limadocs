@@ -1,5 +1,5 @@
-Command *people*
-*****************
+people
+*******
 
 Documentation for the people command in */cmds/wiz/people.c*.
 

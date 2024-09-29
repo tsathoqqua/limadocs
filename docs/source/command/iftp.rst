@@ -1,5 +1,5 @@
-Command *iftp*
-***************
+iftp
+*****
 
 Documentation for the iftp command in */cmds/wiz/iftp.c*.
 

@@ -1,5 +1,5 @@
-Command *tsh*
-**************
+tsh
+****
 
 Documentation for the tsh command in */trans/cmds/tsh.c*.
 

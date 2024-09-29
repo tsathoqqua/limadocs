@@ -1,5 +1,5 @@
-Command *wall*
-***************
+wall
+*****
 
 Documentation for the wall command in */trans/admincmds/wall.c*.
 

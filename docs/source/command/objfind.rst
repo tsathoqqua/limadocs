@@ -1,12 +1,12 @@
-Command *objfind*
-******************
+objfind
+********
 
 Documentation for the objfind command in */cmds/wiz/objfind.c*.
 
 Command
 =======
 
-See: :doc:`Command: objdump <objdump>` :doc:`Command: objcount <objcount>` :doc:`Command: idfind <idfind>` 
+See: :doc:`objdump <objdump>` :doc:`objcount <objcount>` :doc:`idfind <idfind>` 
 
 USAGE: ``objfind <fname>``
 

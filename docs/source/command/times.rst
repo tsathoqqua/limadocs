@@ -1,5 +1,5 @@
-Command *times*
-****************
+times
+******
 
 Documentation for the times command in */trans/cmds/times.c*.
 

@@ -1,5 +1,5 @@
-Command *ed*
-*************
+ed
+***
 
 Documentation for the ed command in */trans/cmds/ed.c*.
 

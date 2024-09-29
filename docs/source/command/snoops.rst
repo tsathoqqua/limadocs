@@ -1,5 +1,5 @@
-Command *snoops*
-*****************
+snoops
+*******
 
 Documentation for the snoops command in */trans/admincmds/snoops.c*.
 

@@ -1,5 +1,5 @@
-Command *mkdir*
-****************
+mkdir
+******
 
 Documentation for the mkdir command in */trans/cmds/mkdir.c*.
 

@@ -1,5 +1,5 @@
-Command *status*
-*****************
+status
+*******
 
 Documentation for the status command in */cmds/wiz/status.c*.
 

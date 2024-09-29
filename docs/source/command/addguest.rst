@@ -1,5 +1,5 @@
-Command *addguest*
-*******************
+addguest
+*********
 
 Documentation for the addguest command in */trans/admincmds/addguest.c*.
 

@@ -1,5 +1,5 @@
-Command *scan*
-***************
+scan
+*****
 
 Documentation for the scan command in */cmds/wiz/scan.c*.
 
