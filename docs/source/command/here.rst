@@ -1,7 +1,10 @@
-here
-*****
+Command *here*
+***************
 
 Documentation for the here command in */cmds/wiz/here.c*.
+
+Command
+=======
 
 USAGE:  ``here``
 

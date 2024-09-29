@@ -1,9 +1,12 @@
-rmemote
-********
+Command *rmemote*
+******************
 
 Documentation for the rmemote command in */cmds/wiz/rmemote.c*.
 
-See: :doc:`feelings <feelings>` :doc:`m_messages <m_messages>` :doc:`addemote <addemote>` :doc:`showemote <showemote>` :doc:`stupidemote <stupidemote>` :doc:`targetemote <targetemote>` 
+Command
+=======
+
+See: :doc:`Command: feelings <feelings>` :doc:`Command: m_messages <m_messages>` :doc:`Command: addemote <addemote>` :doc:`Command: showemote <showemote>` :doc:`Command: stupidemote <stupidemote>` :doc:`Command: targetemote <targetemote>` 
 
 USAGE:
 

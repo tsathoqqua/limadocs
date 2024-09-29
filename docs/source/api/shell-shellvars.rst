@@ -3,6 +3,8 @@ shellvars
 
 Documentation for the shell-shellvars api in */obj/secure/shell/shellvars.c*.
 
+Functions
+=========
 .. c:function:: void setup_for_save()
 
 Sets up M_SAVE to save some variables

@@ -22,6 +22,8 @@ Note: setup_door() is deprecated. Use this approach instead:
 
 .. TAGS: RST
 
+Functions
+=========
 .. c:function:: void set_sibling_ident(string ident)
 
 Set the ID the siblings will be using.

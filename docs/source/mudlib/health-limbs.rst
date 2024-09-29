@@ -3,6 +3,8 @@ Mudlib *limbs*
 
 Documentation for the health-limbs functions for the mudlib in */std/adversary/health/limbs.c*.
 
+Functions
+=========
 .. c:function:: int query_drunk()
 
 Returns the points of drunkeness currently held by this adversary.

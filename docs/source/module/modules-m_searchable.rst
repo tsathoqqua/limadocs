@@ -3,6 +3,8 @@ Module *m_searchable*
 
 Documentation for the modules-m_searchable module in */std/modules/m_searchable.c*.
 
+Functions
+=========
 .. c:function:: void searchable_once(int i)
 
 Set whether or not (0 or 1) this object can be searched more than once per

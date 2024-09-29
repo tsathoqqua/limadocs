@@ -1,7 +1,10 @@
-ed
-***
+Command *ed*
+*************
 
 Documentation for the ed command in */trans/cmds/ed.c*.
+
+Command
+=======
 
 USAGE:  ``ed [ filename ]``
 

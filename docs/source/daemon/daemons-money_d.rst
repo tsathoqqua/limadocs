@@ -46,6 +46,8 @@ Currencies have different denomiations, e.g. dollar have dollar and cent.
 Calculation is always based on the lowest denomination. Functions for
 displaying a currency with denominations are provided
 
+Functions
+=========
 .. c:function:: string singular_name(string name)
 
 singular_name returns the canonical name for a denomination/currency

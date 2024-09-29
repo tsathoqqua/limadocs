@@ -8,6 +8,8 @@ Module Information
 
 Implements character mode key bindings.
 
+Functions
+=========
 .. c:function:: nomask void init_charmode(mapping new_bindings, function d)
 
 start up character mode, passing a map of bindings and a

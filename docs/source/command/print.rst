@@ -1,7 +1,10 @@
-print
-******
+Command *print*
+****************
 
 Documentation for the print command in */cmds/wiz/print.c*.
+
+Command
+=======
 
 USAGE ``print <string>``
 

@@ -8,6 +8,8 @@ Module Information
 
 This module implements persistence
 
+Functions
+=========
 .. c:function:: void add_save(mixed *vars)
 
 Mark a variable as one that gets saved.

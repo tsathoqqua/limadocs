@@ -1,7 +1,10 @@
-cp
-***
+Command *cp*
+*************
 
 Documentation for the cp command in */trans/cmds/cp.c*.
+
+Command
+=======
 
 USAGE:  ``cp  <source> <destination>``
 

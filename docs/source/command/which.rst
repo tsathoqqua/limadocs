@@ -1,7 +1,10 @@
-which
-******
+Command *which*
+****************
 
 Documentation for the which command in */cmds/wiz/which.c*.
+
+Command
+=======
 
 USAGE:  ``which <cmd>``
 

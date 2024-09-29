@@ -1,7 +1,10 @@
-dataedit
-*********
+Command *dataedit*
+*******************
 
 Documentation for the dataedit command in */trans/cmds/dataedit.c*.
+
+Command
+=======
 
 USAGE: ``dataedit file``
 

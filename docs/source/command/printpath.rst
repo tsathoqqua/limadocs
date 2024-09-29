@@ -1,9 +1,12 @@
-printpath
-**********
+Command *printpath*
+********************
 
 Documentation for the printpath command in */trans/cmds/printpath.c*.
 
-See: :doc:`addpath <addpath>` :doc:`rmpath <rmpath>` 
+Command
+=======
+
+See: :doc:`Command: addpath <addpath>` :doc:`Command: rmpath <rmpath>` 
 
 USAGE: ``printpath``
 

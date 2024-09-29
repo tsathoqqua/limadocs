@@ -3,6 +3,8 @@ Module *m_colours*
 
 Documentation for the modules-m_colours module in */std/modules/m_colours.c*.
 
+Functions
+=========
 .. c:function:: string terminal_mode()
 
 Returns "xterm", "ansi", or "vt100" or nothing if the user

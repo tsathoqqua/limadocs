@@ -1,9 +1,12 @@
-find
-*****
+Command *find*
+***************
 
 Documentation for the find command in */trans/cmds/find.c*.
 
-See: :doc:`locate <locate>` :doc:`grep <grep>` 
+Command
+=======
+
+See: :doc:`Command: locate <locate>` :doc:`Command: grep <grep>` 
 
 USAGE
   ``find <pattern> <files>``

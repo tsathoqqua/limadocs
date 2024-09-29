@@ -3,6 +3,8 @@ Module *m_readable*
 
 Documentation for the modules-m_readable module in */std/modules/m_readable.c*.
 
+Functions
+=========
 .. c:function:: void set_text(string t)
 
 Set the text for an object to be read.

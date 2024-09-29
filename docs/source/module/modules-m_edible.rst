@@ -3,6 +3,8 @@ Module *m_edible*
 
 Documentation for the modules-m_edible module in */std/modules/m_edible.c*.
 
+Functions
+=========
 .. c:function:: void set_eat_action(mixed action)
 
 set_eat_action(string) causes 'string' to be printed when someone

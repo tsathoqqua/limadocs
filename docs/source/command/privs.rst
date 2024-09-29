@@ -1,7 +1,10 @@
-privs
-******
+Command *privs*
+****************
 
 Documentation for the privs command in */cmds/wiz/privs.c*.
+
+Command
+=======
 
 USAGE: ``privs <pathname>``
 

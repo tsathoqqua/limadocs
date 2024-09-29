@@ -1,7 +1,10 @@
-activate
-*********
+Verb *activate*
+****************
 
 Documentation for the activate verb in */cmds/verbs/activate.c*.
+
+Command
+=======
 
 USAGE
 

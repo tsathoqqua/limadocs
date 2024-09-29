@@ -1,7 +1,10 @@
-fix
-****
+Command *fix*
+**************
 
 Documentation for the fix command in */cmds/wiz/fix.c*.
+
+Command
+=======
 
 USAGE: ``fix <body>``
 

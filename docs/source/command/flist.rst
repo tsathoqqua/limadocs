@@ -1,7 +1,10 @@
-flist
-******
+Command *flist*
+****************
 
 Documentation for the flist command in */cmds/wiz/flist.c*.
+
+Command
+=======
 
 USAGE: ``flist [-i] <object>``
 

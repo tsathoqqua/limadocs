@@ -3,6 +3,8 @@ Mudlib *simple_slots*
 
 Documentation for the armour-simple_slots functions for the mudlib in */std/adversary/armour/simple_slots.c*.
 
+Functions
+=========
 .. c:function:: nomask int wear_item(object what, string sname)
 
 nomask int wear_item(object what, string sname);

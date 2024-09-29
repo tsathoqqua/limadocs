@@ -10,6 +10,8 @@ The message module.  The correct way to compose and send any messages
 To users is using this module, as it will automatically get the grammar
 right for each person involved.
 
+Functions
+=========
 .. c:function:: varargs string compose_message(object forwhom, string msg, object *who, mixed *obs...)
 
 The lowest level message composing function; it is passed the object

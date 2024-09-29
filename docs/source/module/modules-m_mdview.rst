@@ -12,6 +12,8 @@ enhanced strings, C code is rudimentarily formatted and colourized.
 
 This module requires M_COLOURS.
 
+Functions
+=========
 .. c:function:: string md_format(string *file, string searchtext)
 
 From an array of string lines, format all the lines as markdown text with

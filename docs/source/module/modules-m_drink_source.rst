@@ -9,6 +9,8 @@ Module Information
 This module picks up where m_fluid_source
 leaves off.  It allows drinking from a source.
 
+Functions
+=========
 .. c:function:: void set_drink_action(mixed x)
 
 x is a simple_action string or

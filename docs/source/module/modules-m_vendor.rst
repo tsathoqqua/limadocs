@@ -11,6 +11,8 @@ they work as traditional shopkeepers and also bartenders.
 See: /domains/std/shopkeeper.c
 See:  for possible interactions and notes about generic items.
 
+Functions
+=========
 .. c:function:: float set_cost_multiplicator(float m)
 
 

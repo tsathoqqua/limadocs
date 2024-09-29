@@ -3,6 +3,8 @@ channel
 
 Documentation for the user-channel api in */secure/user/channel.c*.
 
+Functions
+=========
 .. c:function:: void add_channel(string which_channel)
 
 Add a channel that the user is listening to

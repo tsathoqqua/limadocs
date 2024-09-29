@@ -3,6 +3,8 @@ Module *m_input*
 
 Documentation for the modules-m_input module in */secure/modules/m_input.c*.
 
+Functions
+=========
 .. c:function:: varargs nomask void input_one_arg(string arg_prompt, function fp, string arg)
 
 Get a single argument and call a given function pointer with it.  If the

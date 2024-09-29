@@ -1,7 +1,10 @@
-loadall
-********
+Command *loadall*
+******************
 
 Documentation for the loadall command in */trans/cmds/loadall.c*.
+
+Command
+=======
 
 USAGE: ``loadall <dir>``
 

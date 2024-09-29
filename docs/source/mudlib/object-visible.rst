@@ -3,6 +3,8 @@ Mudlib *visible*
 
 Documentation for the object-visible functions for the mudlib in */std/object/visible.c*.
 
+Functions
+=========
 .. c:function:: int is_visible()
 
 return 1 if the object can be seen.

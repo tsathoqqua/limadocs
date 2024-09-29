@@ -1,3 +1,6 @@
+Player Command
+==============
+
 See: :doc:`timezone <timezone>` 
 
 USAGE

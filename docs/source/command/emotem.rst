@@ -1,9 +1,12 @@
-emotem
-*******
+Command *emotem*
+*****************
 
 Documentation for the emotem command in */cmds/wiz/emotem.c*.
 
-See: :doc:`emote <emote>` :doc:`echom <echom>` 
+Command
+=======
+
+See: :doc:`Command: emote <emote>` :doc:`Command: echom <echom>` 
 
 USAGE: ``emotem @<target> <message>``
 

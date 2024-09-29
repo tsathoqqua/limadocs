@@ -10,6 +10,8 @@ m_bodystats_dnd.c -- body statistics (characteristics)
 
 .. TAGS: RST
 
+Functions
+=========
 .. c:function:: void refresh_stats()
 
 refresh_stats() recalculates all the stats and requery's all the bonuses.

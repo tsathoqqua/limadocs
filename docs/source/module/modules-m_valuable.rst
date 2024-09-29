@@ -3,6 +3,8 @@ Module *m_valuable*
 
 Documentation for the modules-m_valuable module in */std/modules/m_valuable.c*.
 
+Functions
+=========
 .. c:function:: void set_value(int value)
 
 Set the value of the item.

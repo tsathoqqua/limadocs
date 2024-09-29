@@ -1,9 +1,12 @@
-rst
-****
+Command *rst*
+**************
 
 Documentation for the rst command in */trans/cmds/rst.c*.
 
-See: :doc:`bak <bak>` 
+Command
+=======
+
+See: :doc:`Command: bak <bak>` 
 
 USAGE ``rst <filename>``
 

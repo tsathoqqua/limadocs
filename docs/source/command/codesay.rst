@@ -1,7 +1,10 @@
-codesay
-********
+Command *codesay*
+******************
 
 Documentation for the codesay command in */cmds/wiz/codesay.c*.
+
+Command
+=======
 
 USAGE ``codesay <string>``
 

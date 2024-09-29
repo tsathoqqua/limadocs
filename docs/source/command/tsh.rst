@@ -1,7 +1,10 @@
-tsh
-****
+Command *tsh*
+**************
 
 Documentation for the tsh command in */trans/cmds/tsh.c*.
+
+Command
+=======
 
 USAGE: ``tsh <filename>``
 

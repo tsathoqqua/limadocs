@@ -1,7 +1,10 @@
-lightme
-********
+Command *lightme*
+******************
 
 Documentation for the lightme command in */cmds/wiz/lightme.c*.
+
+Command
+=======
 
 USAGE:  ``lightme <number>``
 

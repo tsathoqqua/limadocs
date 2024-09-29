@@ -3,6 +3,8 @@ userfuncs
 
 Documentation for the simul_efun-userfuncs api in */secure/simul_efun/userfuncs.c*.
 
+Functions
+=========
 .. c:function:: nomask mixed get_user_variable(string varname)
 
 Get a variable value from the current user's shell object.

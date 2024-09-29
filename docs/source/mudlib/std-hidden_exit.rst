@@ -8,6 +8,8 @@ Module Information
 
 A complex hidden exit object.
 
+Functions
+=========
 .. c:function:: void set_destination(mixed dest)
 
 Set where you go when you enter the portal.  Valid arguments are a function

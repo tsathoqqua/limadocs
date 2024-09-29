@@ -3,6 +3,8 @@ Mudlib *vsupport*
 
 Documentation for the object-vsupport functions for the mudlib in */std/object/vsupport.c*.
 
+Functions
+=========
 .. c:function:: mixed check_permission(string what)
 
 check_permission(what) calls who->allow(what) in our owner, if one exists.

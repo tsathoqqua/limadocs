@@ -1,7 +1,10 @@
-ls
-***
+Command *ls*
+*************
 
 Documentation for the ls command in */trans/cmds/ls.c*.
+
+Command
+=======
 
 USAGE ``ls [ -a -s -F ] [path]``
 

@@ -1,7 +1,10 @@
-smartmobs
-**********
+Command *smartmobs*
+********************
 
 Documentation for the smartmobs command in */cmds/wiz/smartmobs.c*.
+
+Command
+=======
 
 USAGE: ``smartmobs``
 

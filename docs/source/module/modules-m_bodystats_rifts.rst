@@ -12,6 +12,8 @@ Very rough version 0.1 by Tsath 2024.
 
 .. TAGS: RST
 
+Functions
+=========
 .. c:function:: void refresh_stats()
 
 refresh_stats() recalculates all the stats and requery's all the bonuses.

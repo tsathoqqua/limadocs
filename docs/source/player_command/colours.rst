@@ -1,3 +1,6 @@
+Player Command
+==============
+
 See: :doc:`mode <mode>` :doc:`palette <palette>` 
 
 USAGE

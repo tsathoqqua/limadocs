@@ -3,6 +3,8 @@ Mudlib *rifts*
 
 Documentation for the advancement-rifts functions for the mudlib in */std/adversary/advancement/rifts.c*.
 
+Functions
+=========
 .. c:function:: int calc_xp_for(int player_level, int monster_level)
 
 int calc_xp_for(int player_level, int monster_level)

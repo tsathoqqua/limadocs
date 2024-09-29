@@ -1,7 +1,10 @@
-listeners
-**********
+Command *listeners*
+********************
 
 Documentation for the listeners command in */trans/admincmds/listeners.c*.
+
+Command
+=======
 
 USAGE:
 

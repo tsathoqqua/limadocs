@@ -3,6 +3,8 @@ Mudlib *attributes*
 
 Documentation for the object-attributes functions for the mudlib in */std/object/attributes.c*.
 
+Functions
+=========
 .. c:function:: string get_attributes()
 
 Get the attributes (a string) for the given object.  This will be

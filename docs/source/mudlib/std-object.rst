@@ -3,6 +3,8 @@ Mudlib *object*
 
 Documentation for the std-object functions for the mudlib in */std/object.c*.
 
+Functions
+=========
 .. c:function:: string stat_me()
 
 return some debugging info about the state of the object

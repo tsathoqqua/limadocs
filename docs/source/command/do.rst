@@ -1,7 +1,10 @@
-do
-***
+Command *do*
+*************
 
 Documentation for the do command in */trans/cmds/do.c*.
+
+Command
+=======
 
 USAGE: ``do cmd1;cmd2;cmd3``
 

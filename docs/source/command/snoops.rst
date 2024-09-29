@@ -1,7 +1,10 @@
-snoops
-*******
+Command *snoops*
+*****************
 
 Documentation for the snoops command in */trans/admincmds/snoops.c*.
+
+Command
+=======
 
 USAGE: ``snoops``
 

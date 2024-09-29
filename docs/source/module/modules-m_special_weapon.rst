@@ -16,6 +16,8 @@ powerful). The weapons can be upgraded using the
 These functions should be interfaced from a smith or other NPC that takes some materials, money etc. to attempt an
 upgrade. The item will increase in value automatically once upgraded.
 
+Functions
+=========
 .. c:function:: int query_special_mat_level()
 
 int query_special_mat_level()

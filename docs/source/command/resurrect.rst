@@ -1,7 +1,10 @@
-resurrect
-**********
+Command *resurrect*
+********************
 
 Documentation for the resurrect command in */cmds/wiz/resurrect.c*.
+
+Command
+=======
 
 USAGE
 

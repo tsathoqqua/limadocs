@@ -3,6 +3,8 @@ messages
 
 Documentation for the user-messages api in */secure/user/messages.c*.
 
+Functions
+=========
 .. c:function:: void receive_message(string type, string message)
 
 Receive message is used in connection with the message() efun, which is not

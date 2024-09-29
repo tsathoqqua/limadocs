@@ -48,6 +48,8 @@ Notice, the TRIGGER syntax ``->`` which tells us what to do when something happe
 
 .. TAGS: RST
 
+Functions
+=========
 .. c:function:: int query_recovery_time()
 
 Returns the time in minutes before recover() is called

@@ -3,6 +3,8 @@ path
 
 Documentation for the simul_efun-path api in */secure/simul_efun/path.c*.
 
+Functions
+=========
 .. c:function:: string cannonical_form(mixed fname)
 
 Change object path names to standard form, stripping the trailing .c, if

@@ -3,6 +3,8 @@ Mudlib *wield_base*
 
 Documentation for the wield-wield_base functions for the mudlib in */std/adversary/wield/wield_base.c*.
 
+Functions
+=========
 .. c:function:: int set_wielding(string wep)
 
 int set_wielding(string wep)

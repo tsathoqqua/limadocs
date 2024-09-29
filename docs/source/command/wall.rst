@@ -1,7 +1,10 @@
-wall
-*****
+Command *wall*
+***************
 
 Documentation for the wall command in */trans/admincmds/wall.c*.
+
+Command
+=======
 
 USAGE:  ``wall <message>``
 

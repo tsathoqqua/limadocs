@@ -1,7 +1,10 @@
-pwd
-****
+Command *pwd*
+**************
 
 Documentation for the pwd command in */cmds/wiz/pwd.c*.
+
+Command
+=======
 
 USAGE:  ``pwd``
 

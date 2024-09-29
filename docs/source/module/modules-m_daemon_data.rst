@@ -16,6 +16,8 @@ The filename is the name of the source file, with /data added on to the
 front and the _d suffix, if any, removed from the end.  I.e. the file
 "/daemons/stat_d.c" will save to "/data/daemons/stat.o".
 
+Functions
+=========
 .. c:function:: nomask void save_me()
 
 Save the variable data to the save file

@@ -20,6 +20,8 @@ To set the maximum mah and set it randomly within the interval from 0 to max.
 
 .. TAGS: RST
 
+Functions
+=========
 .. c:function:: int is_power_source()
 
 Always returns 1 if this module is inherited.

@@ -1,9 +1,12 @@
-lima
-*****
+Command *lima*
+***************
 
 Documentation for the lima command in */cmds/wiz/lima.c*.
 
-See: :doc:`I <I>` :doc:`didlog <didlog>` 
+Command
+=======
+
+See: :doc:`Command: I <I>` :doc:`Command: didlog <didlog>` 
 
 USAGE:
 

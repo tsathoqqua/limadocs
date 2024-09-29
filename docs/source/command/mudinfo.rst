@@ -1,9 +1,12 @@
-mudinfo
-********
+Command *mudinfo*
+******************
 
 Documentation for the mudinfo command in */cmds/wiz/mudinfo.c*.
 
-See: :doc:`mudlist <mudlist>` 
+Command
+=======
+
+See: :doc:`Command: mudlist <mudlist>` 
 
 USAGE:  ``mudinfo <mudname>``
 

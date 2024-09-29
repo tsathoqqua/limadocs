@@ -1,9 +1,12 @@
-dest
-*****
+Command *dest*
+***************
 
 Documentation for the dest command in */cmds/wiz/dest.c*.
 
-See: :doc:`clone <clone>` :doc:`clean <clean>` :doc:`scan <scan>` 
+Command
+=======
+
+See: :doc:`Command: clone <clone>` :doc:`Command: clean <clean>` :doc:`Command: scan <scan>` 
 
 USAGE:  ``dest <object>``
 

@@ -1,7 +1,10 @@
-scripts
-********
+Command *scripts*
+******************
 
 Documentation for the scripts command in */cmds/wiz/scripts.c*.
+
+Command
+=======
 
 USAGE: ``scripts``
 

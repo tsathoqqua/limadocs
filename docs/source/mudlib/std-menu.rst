@@ -3,6 +3,8 @@ Mudlib *menu*
 
 Documentation for the std-menu functions for the mudlib in */std/menu.c*.
 
+Functions
+=========
 .. c:function:: void user_is_active()
 
 Called when the user is active in the menu.

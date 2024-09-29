@@ -1,7 +1,10 @@
-wheremobs
-**********
+Command *wheremobs*
+********************
 
 Documentation for the wheremobs command in */cmds/wiz/wheremobs.c*.
+
+Command
+=======
 
 USAGE ``wheremobs``
 

@@ -1,9 +1,12 @@
-echoall
-********
+Command *echoall*
+******************
 
 Documentation for the echoall command in */cmds/wiz/echoall.c*.
 
-See: :doc:`echo <echo>` :doc:`echoto. echom <echoto. echom>` 
+Command
+=======
+
+See: :doc:`Command: echo <echo>` :doc:`Command: echoto. echom <echoto. echom>` 
 
 USAGE:  ``echoall <string>``
 

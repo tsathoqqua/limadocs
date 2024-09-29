@@ -1,7 +1,10 @@
-profile
-********
+Command *profile*
+******************
 
 Documentation for the profile command in */cmds/wiz/profile.c*.
+
+Command
+=======
 
 USAGE
 

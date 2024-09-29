@@ -1,7 +1,10 @@
-last
-*****
+Command *last*
+***************
 
 Documentation for the last command in */cmds/wiz/last.c*.
+
+Command
+=======
 
 USAGE: ``last [-s] [-n count] [-d days] [-D days] [user1 user2 ...]``
 

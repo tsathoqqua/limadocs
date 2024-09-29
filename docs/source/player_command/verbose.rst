@@ -1,3 +1,6 @@
+Player Command
+==============
+
 See: :doc:`brief <brief>` 
 
 USAGE

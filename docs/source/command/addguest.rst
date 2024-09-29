@@ -1,7 +1,10 @@
-addguest
-*********
+Command *addguest*
+*******************
 
 Documentation for the addguest command in */trans/admincmds/addguest.c*.
+
+Command
+=======
 
 USAGE: ``addguest [name]``
 

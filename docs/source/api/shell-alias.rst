@@ -3,6 +3,9 @@ alias
 
 Documentation for the shell-alias api in */obj/secure/shell/alias.c*.
 
+Command
+=======
+
 USAGE:
 There are 3 different versions of the alias command:
 
@@ -57,6 +60,8 @@ To make an alias where you don't need to type a space after the alias,
 use the menu, and answer 'y' when the game asks: 'Allow space omission?'
 
 
+Functions
+=========
 .. c:function:: nomask void remove_alias(string alias_name)
 
 Remove an alias from an alias set.

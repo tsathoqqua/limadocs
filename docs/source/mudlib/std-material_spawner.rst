@@ -3,6 +3,8 @@ Mudlib *material_spawner*
 
 Documentation for the std-material_spawner functions for the mudlib in */std/material_spawner.c*.
 
+Functions
+=========
 .. c:function:: void set_material_file(string f)
 
 Sets the file cloned when the player finds something.

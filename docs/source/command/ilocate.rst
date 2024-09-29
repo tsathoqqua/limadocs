@@ -1,7 +1,10 @@
-ilocate
-********
+Command *ilocate*
+******************
 
 Documentation for the ilocate command in */cmds/wiz/ilocate.c*.
+
+Command
+=======
 
 USAGE: ``ilocate <playername>``
 

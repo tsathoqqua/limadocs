@@ -1,9 +1,12 @@
-I
-**
+Command *I*
+************
 
 Documentation for the I command in */cmds/wiz/I.c*.
 
-See: :doc:`didlog <didlog>` 
+Command
+=======
+
+See: :doc:`Command: didlog <didlog>` 
 
 USAGE
       ``I <string>``

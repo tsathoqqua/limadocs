@@ -1,7 +1,10 @@
-rmdir
-******
+Command *rmdir*
+****************
 
 Documentation for the rmdir command in */trans/cmds/rmdir.c*.
+
+Command
+=======
 
 USAGE:  ``rmdir < directory >``
 

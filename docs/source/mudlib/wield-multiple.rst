@@ -3,6 +3,8 @@ Mudlib *multiple*
 
 Documentation for the wield-multiple functions for the mudlib in */std/adversary/wield/multiple.c*.
 
+Functions
+=========
 .. c:function:: void set_wield_slots(string *list)
 
 Set the names of wielding slots in adversaries. Any existing value

@@ -1,3 +1,6 @@
+Player Command
+==============
+
 See: :doc:`gossip <gossip>` :doc:`newbie <newbie>` :doc:`chan <chan>` 
 
 USAGE

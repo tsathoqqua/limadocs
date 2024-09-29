@@ -3,6 +3,8 @@ Mudlib *fluid*
 
 Documentation for the std-fluid functions for the mudlib in */std/fluid.c*.
 
+Functions
+=========
 .. c:function:: void set_default_container(string def)
 
 Defines container into which fluid will be put by a vendor selling it

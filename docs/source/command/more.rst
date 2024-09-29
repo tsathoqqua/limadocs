@@ -1,7 +1,10 @@
-more
-*****
+Command *more*
+***************
 
 Documentation for the more command in */trans/cmds/more.c*.
+
+Command
+=======
 
 USAGE :
 

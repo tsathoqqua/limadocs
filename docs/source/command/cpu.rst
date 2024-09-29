@@ -1,7 +1,10 @@
-cpu
-****
+Command *cpu*
+**************
 
 Documentation for the cpu command in */cmds/wiz/cpu.c*.
+
+Command
+=======
 
 USAGE ``cpu``
 

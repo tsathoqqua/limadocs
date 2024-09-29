@@ -3,6 +3,8 @@ more
 
 Documentation for the simul_efun-more api in */secure/simul_efun/more.c*.
 
+Functions
+=========
 .. c:function:: varargs string tail(string fname, int nlines)
 
 This version is slightly extended and compatible in spirit, but doesn't

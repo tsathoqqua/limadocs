@@ -1,7 +1,10 @@
-cut
-****
+Command *cut*
+**************
 
 Documentation for the cut command in */trans/cmds/cut.c*.
+
+Command
+=======
 
 USAGE ``cut -f<from>[-<to>] [-d<delimiter>] <file(s)>``
 

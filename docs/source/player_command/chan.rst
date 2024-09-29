@@ -1,3 +1,6 @@
+Player Command
+==============
+
 See: :doc:`channels <channels>` :doc:`gossip <gossip>` :doc:`newbie <newbie>` 
 
 The chan command is the central command for all channel

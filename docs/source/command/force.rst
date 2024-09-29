@@ -1,9 +1,12 @@
-force
-******
+Command *force*
+****************
 
 Documentation for the force command in */trans/cmds/force.c*.
 
-See: :doc:`cmd <cmd>` 
+Command
+=======
+
+See: :doc:`Command: cmd <cmd>` 
 
 USAGE
     ``force <living> <command>``

@@ -1,3 +1,6 @@
+Player Command
+==============
+
 See: :doc:`adverbs <adverbs>` :doc:`random <random>` :doc:`semote <semote>` 
 
 

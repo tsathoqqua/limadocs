@@ -3,6 +3,8 @@ Module *m_complex_exit*
 
 Documentation for the modules-m_complex_exit module in */std/modules/m_complex_exit.c*.
 
+Functions
+=========
 .. c:function:: int is_exit()
 
 Return whether or not the object is an exit.

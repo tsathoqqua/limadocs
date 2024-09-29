@@ -24,6 +24,8 @@ and Saturdays ("00 16 2,5"), Bob goes to the cafe to buy a sandwich for lunch ev
 
 .. TAGS: RST
 
+Functions
+=========
 .. c:function:: mixed week_day(mixed d)
 
 If given an integer argument, returns the name of the day.

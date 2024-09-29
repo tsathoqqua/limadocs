@@ -3,6 +3,8 @@ Module *m_damage_source*
 
 Documentation for the modules-m_damage_source module in */std/modules/m_damage_source.c*.
 
+Functions
+=========
 .. c:function:: int query_must_dual_wield()
 
 Returns 1 if the weapon must be dual wielded.

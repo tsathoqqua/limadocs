@@ -19,6 +19,8 @@ This daemon handles special attacks from weapons as well. It needs more document
 
 .. TAGS: RST
 
+Functions
+=========
 .. c:function:: void add_damage_type(string t)
 
 Add a damage type to the known damage types.

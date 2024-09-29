@@ -3,6 +3,8 @@ Mudlib *names*
 
 Documentation for the object-names functions for the mudlib in */std/object/names.c*.
 
+Functions
+=========
 .. c:function:: void set_proper_name(string str)
 
 Set the proper name of an object.  Objects with proper names never have

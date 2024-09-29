@@ -1,7 +1,10 @@
-testargs
-*********
+Command *testargs*
+*******************
 
 Documentation for the testargs command in */trans/cmds/testargs.c*.
+
+Command
+=======
 
 USAGE: ``testargs <command>``
 

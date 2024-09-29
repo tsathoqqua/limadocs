@@ -3,6 +3,8 @@ Mudlib *slowheal*
 
 Documentation for the std-slowheal functions for the mudlib in */std/slowheal.c*.
 
+Functions
+=========
 .. c:function:: void set_consume_message(string str)
 
 This is the first message shown when the slowheal is

@@ -1,9 +1,12 @@
-rmpath
-*******
+Command *rmpath*
+*****************
 
 Documentation for the rmpath command in */trans/cmds/rmpath.c*.
 
-See: :doc:`addpath <addpath>` :doc:`printpath <printpath>` 
+Command
+=======
+
+See: :doc:`Command: addpath <addpath>` :doc:`Command: printpath <printpath>` 
 
 USAGE: ``rmpath <directory>``
 
