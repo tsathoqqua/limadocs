@@ -3,9 +3,6 @@ rmemote
 
 Documentation for the rmemote command in */cmds/wiz/rmemote.c*.
 
-Command
-=======
-
 See: :doc:`feelings <feelings>` :doc:`m_messages <m_messages>` :doc:`addemote <addemote>` :doc:`showemote <showemote>` :doc:`stupidemote <stupidemote>` :doc:`targetemote <targetemote>` 
 
 USAGE:

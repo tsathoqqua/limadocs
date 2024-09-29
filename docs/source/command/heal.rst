@@ -3,9 +3,6 @@ heal
 
 Documentation for the heal command in */cmds/wiz/heal.c*.
 
-Command
-=======
-
 USAGE: ``heal <playername>``
 
 Completely heals the targetted player.

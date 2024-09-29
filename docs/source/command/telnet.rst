@@ -3,9 +3,6 @@ telnet
 
 Documentation for the telnet command in */trans/admincmds/telnet.c*.
 
-Command
-=======
-
 USAGE: ``telnet``
 
 Invokes the mud's telnet client for you.

@@ -3,9 +3,6 @@ remove
 
 Documentation for the remove verb in */cmds/verbs/remove.c*.
 
-Command
-=======
-
 Remove a post from a bulletin board, remove equipment, remove other things.
 
  |  ``remove helmet``

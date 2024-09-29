@@ -3,9 +3,6 @@ smartmobs
 
 Documentation for the smartmobs command in */cmds/wiz/smartmobs.c*.
 
-Command
-=======
-
 USAGE: ``smartmobs``
 
  Shows what the mob is thinking about and where they are

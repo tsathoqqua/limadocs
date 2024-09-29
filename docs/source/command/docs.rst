@@ -3,9 +3,6 @@ docs
 
 Documentation for the docs command in */trans/cmds/docs.c*.
 
-Command
-=======
-
 Documentation command mostly used internally for LIMA to help figure out
 which documentation has been updated. May not be particularly useful for
 your MUD.

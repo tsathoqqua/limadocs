@@ -1,6 +1,3 @@
-Player Command
-==============
-
 USAGE
   |   ``mail``
   |   ``mail <user>``

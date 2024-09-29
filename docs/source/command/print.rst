@@ -3,9 +3,6 @@ print
 
 Documentation for the print command in */cmds/wiz/print.c*.
 
-Command
-=======
-
 USAGE ``print <string>``
 
 Rarely used as "print", but extremely useful in the aliased form @

@@ -3,9 +3,6 @@ mvemote
 
 Documentation for the mvemote command in */cmds/wiz/mvemote.c*.
 
-Command
-=======
-
 USAGE: ``mvemote <target> <destination>``
 
 Moves (ie renames) the specified soul to the specified destination.

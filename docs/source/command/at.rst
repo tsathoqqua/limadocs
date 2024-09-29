@@ -3,9 +3,6 @@ at
 
 Documentation for the at command in */trans/cmds/at.c*.
 
-Command
-=======
-
 See: :doc:`at <at>` 
 
 USAGE ``at <living> <command>``

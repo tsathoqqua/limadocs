@@ -3,9 +3,6 @@ apply
 
 Documentation for the apply verb in */cmds/verbs/apply.c*.
 
-Command
-=======
-
 USAGE
 
  |  ``apply <something> to <something>``

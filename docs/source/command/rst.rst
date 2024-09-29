@@ -3,9 +3,6 @@ rst
 
 Documentation for the rst command in */trans/cmds/rst.c*.
 
-Command
-=======
-
 See: :doc:`bak <bak>` 
 
 USAGE ``rst <filename>``

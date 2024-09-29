@@ -3,9 +3,6 @@ echoall
 
 Documentation for the echoall command in */cmds/wiz/echoall.c*.
 
-Command
-=======
-
 See: :doc:`echo <echo>` :doc:`echoto. echom <echoto. echom>` 
 
 USAGE:  ``echoall <string>``

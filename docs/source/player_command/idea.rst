@@ -1,6 +1,3 @@
-Player Command
-==============
-
 See: :doc:`bug <bug>` :doc:`typo <typo>` :doc:`feedback <feedback>` :doc:`question <question>` 
 
 USAGE

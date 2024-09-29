@@ -3,9 +3,6 @@ stupidemote
 
 Documentation for the stupidemote command in */cmds/wiz/stupidemote.c*.
 
-Command
-=======
-
 See: :doc:`feelings <feelings>` :doc:`m_messages <m_messages>` :doc:`addemote <addemote>` :doc:`showemote <showemote>` :doc:`rmemote <rmemote>` :doc:`targetemote <targetemote>` 
 
 USAGE:  ``stupidemote <soul>``

@@ -3,9 +3,6 @@ timer
 
 Documentation for the timer command in */cmds/wiz/timer.c*.
 
-Command
-=======
-
 See: :doc:`channels <channels>` :doc:`chan <chan>` 
 
 USAGE:  ``timer [-r] number [string  number]``

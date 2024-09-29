@@ -3,9 +3,6 @@ unsnoop
 
 Documentation for the unsnoop command in */trans/cmds/unsnoop.c*.
 
-Command
-=======
-
 See: :doc:`snoop <snoop>` :doc:`snoops <snoops>` 
 
 USAGE: ``unsnoop <user>``

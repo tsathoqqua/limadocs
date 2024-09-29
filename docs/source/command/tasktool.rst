@@ -3,9 +3,6 @@ tasktool
 
 Documentation for the tasktool command in */cmds/wiz/tasktool.c*.
 
-Command
-=======
-
 USAGE ``tasktool``
 
 Invokes the menu-driven tasktool system,

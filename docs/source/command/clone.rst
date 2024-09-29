@@ -3,9 +3,6 @@ clone
 
 Documentation for the clone command in */cmds/wiz/clone.c*.
 
-Command
-=======
-
 See: :doc:`dest <dest>` :doc:`clean <clean>` 
 
 USAGE: ``clone <object>``

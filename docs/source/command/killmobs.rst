@@ -3,9 +3,6 @@ killmobs
 
 Documentation for the killmobs command in */cmds/wiz/killmobs.c*.
 
-Command
-=======
-
 USAGE ``killmobs``
 
 Kill mobs by name

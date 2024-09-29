@@ -3,9 +3,6 @@ printpath
 
 Documentation for the printpath command in */trans/cmds/printpath.c*.
 
-Command
-=======
-
 See: :doc:`addpath <addpath>` :doc:`rmpath <rmpath>` 
 
 USAGE: ``printpath``

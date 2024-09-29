@@ -3,9 +3,6 @@ scan
 
 Documentation for the scan command in */cmds/wiz/scan.c*.
 
-Command
-=======
-
 Wizard command "scan"
 USAGE:
 

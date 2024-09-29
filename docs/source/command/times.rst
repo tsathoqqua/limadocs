@@ -3,9 +3,6 @@ times
 
 Documentation for the times command in */trans/cmds/times.c*.
 
-Command
-=======
-
 USAGE:  ``times <#> <command>``
 
  Repeats a command # of times

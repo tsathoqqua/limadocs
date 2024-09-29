@@ -3,9 +3,6 @@ which
 
 Documentation for the which command in */cmds/wiz/which.c*.
 
-Command
-=======
-
 USAGE:  ``which <cmd>``
 
 This command will show you the path to the command you supply.

@@ -3,9 +3,6 @@ trip
 
 Documentation for the trip command in */cmds/guild/yakitori/trip.c*.
 
-Command
-=======
-
 USAGE trip
       trip <someone>
 

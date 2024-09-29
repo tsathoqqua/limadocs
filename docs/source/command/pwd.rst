@@ -3,9 +3,6 @@ pwd
 
 Documentation for the pwd command in */cmds/wiz/pwd.c*.
 
-Command
-=======
-
 USAGE:  ``pwd``
 
 Shows you what directory you are currently "in".

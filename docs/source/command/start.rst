@@ -3,9 +3,6 @@ start
 
 Documentation for the start command in */cmds/wiz/start.c*.
 
-Command
-=======
-
 USAGE:
 
    |  ``start``

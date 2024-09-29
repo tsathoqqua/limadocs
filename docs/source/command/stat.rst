@@ -3,9 +3,6 @@ stat
 
 Documentation for the stat command in */trans/cmds/stat.c*.
 
-Command
-=======
-
 USAGE: ``stat <object>``
 
 Gives you vital information about ANY object.

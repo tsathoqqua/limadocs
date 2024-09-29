@@ -3,9 +3,6 @@ rm
 
 Documentation for the rm command in */trans/cmds/rm.c*.
 
-Command
-=======
-
 USAGE:  ``rm < file >``
 
 This command will delete the named file from the directory.

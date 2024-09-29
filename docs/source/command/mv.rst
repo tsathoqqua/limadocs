@@ -3,9 +3,6 @@ mv
 
 Documentation for the mv command in */trans/cmds/mv.c*.
 
-Command
-=======
-
 USAGE:  ``mv  source destination``
 
 This command will allow you to move files from source to

@@ -3,9 +3,6 @@ review
 
 Documentation for the review command in */cmds/wiz/review.c*.
 
-Command
-=======
-
 See: :doc:`m_messages <m_messages>` :doc:`msg <msg>` 
 
 USAGE:

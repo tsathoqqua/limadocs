@@ -3,9 +3,6 @@ history
 
 Documentation for the shell-history api in */obj/secure/shell/history.c*.
 
-Command
-=======
-
 USAGE:  history
 
 Typing history shows you your last 20 commands.  a single % instead

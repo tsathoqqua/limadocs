@@ -1,6 +1,3 @@
-Player Command
-==============
-
 USAGE
    ``nickname <name>``
 

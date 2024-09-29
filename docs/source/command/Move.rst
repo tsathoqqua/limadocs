@@ -3,9 +3,6 @@ Move
 
 Documentation for the Move command in */cmds/wiz/Move.c*.
 
-Command
-=======
-
 USAGE:  ``Move <object> <object>``
 
 This command will move the first object into the second one,

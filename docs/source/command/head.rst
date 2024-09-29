@@ -3,9 +3,6 @@ head
 
 Documentation for the head command in */trans/cmds/head.c*.
 
-Command
-=======
-
 See: :doc:`tail <tail>` :doc:`more <more>` :doc:`ed <ed>` 
 
 USAGE: ``head [-n<number>] <file(s)>``

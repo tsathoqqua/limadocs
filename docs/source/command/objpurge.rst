@@ -3,9 +3,6 @@ objpurge
 
 Documentation for the objpurge command in */trans/admincmds/objpurge.c*.
 
-Command
-=======
-
 See: :doc:`objfind <objfind>` 
 
 USAGE ``objpurge <filename>``

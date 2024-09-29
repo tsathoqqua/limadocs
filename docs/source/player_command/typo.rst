@@ -1,6 +1,3 @@
-Player Command
-==============
-
 See: :doc:`bug <bug>` :doc:`idea <idea>` :doc:`feedback <feedback>` :doc:`question <question>` 
 
 USAGE

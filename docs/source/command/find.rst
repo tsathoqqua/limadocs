@@ -3,9 +3,6 @@ find
 
 Documentation for the find command in */trans/cmds/find.c*.
 
-Command
-=======
-
 See: :doc:`locate <locate>` :doc:`grep <grep>` 
 
 USAGE

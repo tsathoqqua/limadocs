@@ -3,9 +3,6 @@ verbs
 
 Documentation for the verbs command in */cmds/wiz/verbs.c*.
 
-Command
-=======
-
 USAGE:
 
    |  ``verbs``

@@ -3,9 +3,6 @@ quiet
 
 Documentation for the quiet command in */cmds/wiz/quiet.c*.
 
-Command
-=======
-
 USAGE:  ``quiet <object>``
 
 This command silences an NPC in the room you are in if they use M_ACTIONS for

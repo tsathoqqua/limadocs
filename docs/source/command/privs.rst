@@ -3,9 +3,6 @@ privs
 
 Documentation for the privs command in */cmds/wiz/privs.c*.
 
-Command
-=======
-
 USAGE: ``privs <pathname>``
 
 Used to display privs (which for the basis of the Lima security system)- ie

@@ -3,9 +3,6 @@ tail
 
 Documentation for the tail command in */trans/cmds/tail.c*.
 
-Command
-=======
-
 USAGE:
 
     |  ``tail <file(s)>``

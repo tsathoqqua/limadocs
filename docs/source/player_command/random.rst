@@ -1,6 +1,3 @@
-Player Command
-==============
-
 See: :doc:`feelings <feelings>` :doc:`adverbs <adverbs>` :doc:`semote <semote>` 
 
 

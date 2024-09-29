@@ -3,9 +3,6 @@ du
 
 Documentation for the du command in */trans/cmds/du.c*.
 
-Command
-=======
-
 USAGE:  ``du [ path ]``
 
 Show the amount of disk space being used (in kilobytes).

@@ -3,9 +3,6 @@ dataedit
 
 Documentation for the dataedit command in */trans/cmds/dataedit.c*.
 
-Command
-=======
-
 USAGE: ``dataedit file``
 
 ``dataedit`` allows you to edit .o files created by save_object(), without

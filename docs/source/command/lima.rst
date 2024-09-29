@@ -3,9 +3,6 @@ lima
 
 Documentation for the lima command in */cmds/wiz/lima.c*.
 
-Command
-=======
-
 See: :doc:`I <I>` :doc:`didlog <didlog>` 
 
 USAGE:

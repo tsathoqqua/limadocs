@@ -3,9 +3,6 @@ shutdown
 
 Documentation for the shutdown command in */trans/admincmds/shutdown.c*.
 
-Command
-=======
-
 USAGE:
 
    |  ``shutdown -t<time> <reason>``

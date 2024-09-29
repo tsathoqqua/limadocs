@@ -3,9 +3,6 @@ alias
 
 Documentation for the shell-alias api in */obj/secure/shell/alias.c*.
 
-Command
-=======
-
 USAGE:
 There are 3 different versions of the alias command:
 

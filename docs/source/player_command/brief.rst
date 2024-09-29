@@ -1,6 +1,3 @@
-Player Command
-==============
-
 See: :doc:`verbose <verbose>` 
 
 USAGE

@@ -3,9 +3,6 @@ idfind
 
 Documentation for the idfind command in */cmds/wiz/idfind.c*.
 
-Command
-=======
-
 USAGE
   ``idfind <name>``
 

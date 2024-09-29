@@ -3,9 +3,6 @@ flist
 
 Documentation for the flist command in */cmds/wiz/flist.c*.
 
-Command
-=======
-
 USAGE: ``flist [-i] <object>``
 
 Shows you a list of the functions in an object.

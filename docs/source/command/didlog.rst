@@ -3,9 +3,6 @@ didlog
 
 Documentation for the didlog command in */cmds/wiz/didlog.c*.
 
-Command
-=======
-
 See: :doc:`I <I>` :doc:`lima <lima>` 
 
 USAGE:

@@ -1,6 +1,3 @@
-Player Command
-==============
-
 See: :doc:`inventory <inventory>` :doc:`score <score>` :doc:`equip <equip>` 
 
 USAGE

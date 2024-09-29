@@ -3,9 +3,6 @@ netstat
 
 Documentation for the netstat command in */cmds/wiz/netstat.c*.
 
-Command
-=======
-
 See: :doc:`socketinfo <socketinfo>` 
 
 USAGE: ``netstat``

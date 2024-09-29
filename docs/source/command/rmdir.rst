@@ -3,9 +3,6 @@ rmdir
 
 Documentation for the rmdir command in */trans/cmds/rmdir.c*.
 
-Command
-=======
-
 USAGE:  ``rmdir < directory >``
 
 This command will delete a directory if it is empty.

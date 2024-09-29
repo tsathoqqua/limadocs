@@ -3,9 +3,6 @@ update
 
 Documentation for the update command in */trans/cmds/update.c*.
 
-Command
-=======
-
 $$ see : renew
 USAGE
 

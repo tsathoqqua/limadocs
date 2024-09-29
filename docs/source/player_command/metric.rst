@@ -1,6 +1,3 @@
-Player Command
-==============
-
 See: :doc:`colours <colours>` :doc:`mode <mode>` :doc:`simplify <simplify>` :doc:`emoji <emoji>` 
 
 USAGE

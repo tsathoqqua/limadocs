@@ -1,6 +1,3 @@
-Player Command
-==============
-
 See: :doc:`skills <skills>` :doc:`hp <hp>` :doc:`stats <stats>` :doc:`score <score>` :doc:`materials <materials>` 
 
 USAGE

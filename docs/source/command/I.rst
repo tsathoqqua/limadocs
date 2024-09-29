@@ -3,9 +3,6 @@ I
 
 Documentation for the I command in */cmds/wiz/I.c*.
 
-Command
-=======
-
 See: :doc:`didlog <didlog>` 
 
 USAGE

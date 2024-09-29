@@ -3,9 +3,6 @@ whoguests
 
 Documentation for the whoguests command in */trans/cmds/whoguests.c*.
 
-Command
-=======
-
 USAGE: ``whoguests``
 
  This command lists the names of guests allowed for when the mud

@@ -3,9 +3,6 @@ dbxfuncs
 
 Documentation for the dbxfuncs command in */trans/cmds/dbxfuncs.c*.
 
-Command
-=======
-
 USAGE:
     ``dbxfuncs <ob> <funcs>``
 

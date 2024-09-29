@@ -3,9 +3,6 @@ people
 
 Documentation for the people command in */cmds/wiz/people.c*.
 
-Command
-=======
-
 syntax: ``people [flags]``
 
 Shows a list of players and associated info, with the flags determining

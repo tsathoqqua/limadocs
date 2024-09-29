@@ -3,9 +3,6 @@ echom
 
 Documentation for the echom command in */cmds/wiz/echom.c*.
 
-Command
-=======
-
 See: :doc:`echo <echo>` :doc:`echoall <echoall>` :doc:`m_messages <m_messages>` 
 
 USAGE ``echo @<target> <message>``

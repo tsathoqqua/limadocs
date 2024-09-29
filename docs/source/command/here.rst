@@ -3,9 +3,6 @@ here
 
 Documentation for the here command in */cmds/wiz/here.c*.
 
-Command
-=======
-
 USAGE:  ``here``
 
 This command shows you the pathname to the file of the object

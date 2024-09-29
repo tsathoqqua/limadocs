@@ -3,9 +3,6 @@ snoops
 
 Documentation for the snoops command in */trans/admincmds/snoops.c*.
 
-Command
-=======
-
 USAGE: ``snoops``
 
 Displays a list of wizards currently snooping, together with their targets.

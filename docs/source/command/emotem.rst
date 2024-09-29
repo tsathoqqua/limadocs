@@ -3,9 +3,6 @@ emotem
 
 Documentation for the emotem command in */cmds/wiz/emotem.c*.
 
-Command
-=======
-
 See: :doc:`emote <emote>` :doc:`echom <echom>` 
 
 USAGE: ``emotem @<target> <message>``

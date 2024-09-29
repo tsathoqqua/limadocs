@@ -3,9 +3,6 @@ ask
 
 Documentation for the ask verb in */cmds/verbs/ask.c*.
 
-Command
-=======
-
 USAGE
 
  |  ``ask <someone> about <something>``

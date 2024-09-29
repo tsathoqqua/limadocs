@@ -3,9 +3,6 @@ cut
 
 Documentation for the cut command in */trans/cmds/cut.c*.
 
-Command
-=======
-
 USAGE ``cut -f<from>[-<to>] [-d<delimiter>] <file(s)>``
 
 Displays the specified file, each line being trimmed to a selection of words

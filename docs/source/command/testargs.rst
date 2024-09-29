@@ -3,9 +3,6 @@ testargs
 
 Documentation for the testargs command in */trans/cmds/testargs.c*.
 
-Command
-=======
-
 USAGE: ``testargs <command>``
 
 Puts you into a modal loop, where you input args to be tested with

@@ -3,9 +3,6 @@ objcount
 
 Documentation for the objcount command in */cmds/wiz/objcount.c*.
 
-Command
-=======
-
 See: :doc:`objdump <objdump>` :doc:`objfind <objfind>` 
 
 USAGE:

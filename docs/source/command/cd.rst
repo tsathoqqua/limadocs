@@ -3,9 +3,6 @@ cd
 
 Documentation for the cd command in */trans/cmds/cd.c*.
 
-Command
-=======
-
 See: :doc:`mkdir <mkdir>` :doc:`ls <ls>` :doc:`pwd <pwd>` :doc:`ed <ed>` :doc:`uncd <uncd>` 
 
 USAGE:  ``cd [directory|obj]``

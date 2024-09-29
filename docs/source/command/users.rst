@@ -3,9 +3,6 @@ users
 
 Documentation for the users command in */cmds/wiz/users.c*.
 
-Command
-=======
-
 USAGE:  ``users``
 
 This command lists the names of all users currently connected.

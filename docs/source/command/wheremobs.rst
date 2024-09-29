@@ -3,9 +3,6 @@ wheremobs
 
 Documentation for the wheremobs command in */cmds/wiz/wheremobs.c*.
 
-Command
-=======
-
 USAGE ``wheremobs``
 
 Where are the mobs?

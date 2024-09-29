@@ -3,9 +3,6 @@ fix
 
 Documentation for the fix command in */cmds/wiz/fix.c*.
 
-Command
-=======
-
 USAGE: ``fix <body>``
 
 Checks a player body, and fixes possible issues needed

@@ -3,9 +3,6 @@ where
 
 Documentation for the where command in */cmds/wiz/where.c*.
 
-Command
-=======
-
 See: :doc:`who <who>` :doc:`people <people>` 
 
 USAGE

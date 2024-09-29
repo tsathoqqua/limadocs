@@ -3,9 +3,6 @@ master
 
 Documentation for the master command in */trans/admincmds/master.c*.
 
-Command
-=======
-
 USAGE: ``master``
 
 Reload the master object.

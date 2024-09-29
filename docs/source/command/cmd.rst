@@ -3,9 +3,6 @@ cmd
 
 Documentation for the cmd command in */cmds/wiz/cmd.c*.
 
-Command
-=======
-
 See: :doc:`force <force>` 
 
 USAGE:  ``cmd <monster> <command>``

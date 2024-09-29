@@ -3,9 +3,6 @@ treefor
 
 Documentation for the treefor command in */cmds/wiz/treefor.c*.
 
-Command
-=======
-
 USAGE: ``treefor <lpc expression>``
 
 Shows the driver's internal representation of the expression.

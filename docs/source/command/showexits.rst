@@ -3,9 +3,6 @@ showexits
 
 Documentation for the showexits command in */cmds/wiz/showexits.c*.
 
-Command
-=======
-
 USAGE:  ``showexits``
 
 Used with no arguments, this command shows you the possible

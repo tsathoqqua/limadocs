@@ -3,9 +3,6 @@ objfind
 
 Documentation for the objfind command in */cmds/wiz/objfind.c*.
 
-Command
-=======
-
 See: :doc:`objdump <objdump>` :doc:`objcount <objcount>` :doc:`idfind <idfind>` 
 
 USAGE: ``objfind <fname>``

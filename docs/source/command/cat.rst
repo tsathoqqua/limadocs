@@ -3,9 +3,6 @@ cat
 
 Documentation for the cat command in */trans/cmds/cat.c*.
 
-Command
-=======
-
 See: :doc:`more <more>` :doc:`tail <tail>` 
 
 USAGE ``cat [path/file]``

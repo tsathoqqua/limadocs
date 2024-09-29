@@ -3,9 +3,6 @@ lightme
 
 Documentation for the lightme command in */cmds/wiz/lightme.c*.
 
-Command
-=======
-
 USAGE:  ``lightme <number>``
 
 This command will allow any wizard to turn himself into a light source,

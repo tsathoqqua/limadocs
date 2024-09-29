@@ -3,9 +3,6 @@ dbxwhere
 
 Documentation for the dbxwhere command in */trans/cmds/dbxwhere.c*.
 
-Command
-=======
-
 USAGE:
     ``dbxwhere [<who>]``
 

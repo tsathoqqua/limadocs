@@ -3,9 +3,6 @@ ilocate
 
 Documentation for the ilocate command in */cmds/wiz/ilocate.c*.
 
-Command
-=======
-
 USAGE: ``ilocate <playername>``
 
 Sends out a "locate query" over intermud.

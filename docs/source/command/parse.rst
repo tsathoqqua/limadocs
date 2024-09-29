@@ -3,9 +3,6 @@ parse
 
 Documentation for the parse command in */cmds/wiz/parse.c*.
 
-Command
-=======
-
 USAGE: ``parse <verb>``
 
 Interface to the parse_sentence() debug info.

@@ -3,9 +3,6 @@ spew
 
 Documentation for the spew command in */trans/cmds/spew.c*.
 
-Command
-=======
-
 See: :doc:`shell <shell>` 
 
 USAGE

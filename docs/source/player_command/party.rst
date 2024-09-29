@@ -1,6 +1,3 @@
-Player Command
-==============
-
 USAGE
    ``party``
    ``party accept`` - if you got an invite

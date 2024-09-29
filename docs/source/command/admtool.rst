@@ -3,9 +3,6 @@ admtool
 
 Documentation for the admtool command in */cmds/wiz/admtool.c*.
 
-Command
-=======
-
 USAGE
       ``admtool``
 

@@ -3,9 +3,6 @@ cp
 
 Documentation for the cp command in */trans/cmds/cp.c*.
 
-Command
-=======
-
 USAGE:  ``cp  <source> <destination>``
 
 This command will allow you to copy files from source to

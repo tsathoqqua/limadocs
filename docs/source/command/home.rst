@@ -3,9 +3,6 @@ home
 
 Documentation for the home command in */cmds/wiz/home.c*.
 
-Command
-=======
-
 USAGE:
 
      |  ``home``

@@ -3,9 +3,6 @@ to
 
 Documentation for the to command in */trans/cmds/to.c*.
 
-Command
-=======
-
 USAGE: ``to <command>``
 
 Loads the editor, where you can enter parameters for the specified command.

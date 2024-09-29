@@ -3,9 +3,6 @@ tsh
 
 Documentation for the tsh command in */trans/cmds/tsh.c*.
 
-Command
-=======
-
 USAGE: ``tsh <filename>``
 
  Reads the filename and performs the commands specified in the file

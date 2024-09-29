@@ -3,9 +3,6 @@ addemote
 
 Documentation for the addemote command in */cmds/wiz/addemote.c*.
 
-Command
-=======
-
 See: :doc:`feelings <feelings>` :doc:`m_messages <m_messages>` :doc:`rmemote <rmemote>` :doc:`showemote <showemote>` :doc:`stupidemote <stupidemote>` :doc:`targetemote <targetemote>` 
 
 USAGE:

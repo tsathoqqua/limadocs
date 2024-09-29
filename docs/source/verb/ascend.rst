@@ -3,9 +3,6 @@ ascend
 
 Documentation for the ascend verb in */cmds/verbs/ascend.c*.
 
-Command
-=======
-
 USAGE
 
  |  ``ascend`` - if there's only one thing to ascend

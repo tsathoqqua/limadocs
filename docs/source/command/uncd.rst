@@ -3,9 +3,6 @@ uncd
 
 Documentation for the uncd command in */cmds/wiz/uncd.c*.
 
-Command
-=======
-
 USAGE: ``uncd``
 
 Switch to previous working directory.

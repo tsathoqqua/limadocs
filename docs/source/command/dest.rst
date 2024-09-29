@@ -3,9 +3,6 @@ dest
 
 Documentation for the dest command in */cmds/wiz/dest.c*.
 
-Command
-=======
-
 See: :doc:`clone <clone>` :doc:`clean <clean>` :doc:`scan <scan>` 
 
 USAGE:  ``dest <object>``

@@ -3,9 +3,6 @@ diff
 
 Documentation for the diff command in */trans/cmds/diff.c*.
 
-Command
-=======
-
 USAGE: ``diff <file1> <file2>``
 
 Finds the difference between two files.

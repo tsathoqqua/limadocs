@@ -3,9 +3,6 @@ wall
 
 Documentation for the wall command in */trans/admincmds/wall.c*.
 
-Command
-=======
-
 USAGE:  ``wall <message>``
 
 Sends a broadcast message to anyone and everyone on the mud

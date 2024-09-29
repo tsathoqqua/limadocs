@@ -3,9 +3,6 @@ echo
 
 Documentation for the echo command in */cmds/wiz/echo.c*.
 
-Command
-=======
-
 See: :doc:`echoto <echoto>` :doc:`echoall <echoall>` :doc:`echom <echom>` 
 
 USAGE:  ``echo <string>``

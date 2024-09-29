@@ -3,9 +3,6 @@ wc
 
 Documentation for the wc command in */cmds/wiz/wc.c*.
 
-Command
-=======
-
 usage: ``wc [-lw] <filename(s)>``
 
 Gives wordcount (and linecount) of the file specified.

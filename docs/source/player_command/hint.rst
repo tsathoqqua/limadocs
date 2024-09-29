@@ -1,6 +1,3 @@
-Player Command
-==============
-
 See: :doc:`hints <hints>` 
 
 USAGE

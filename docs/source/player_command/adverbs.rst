@@ -1,6 +1,3 @@
-Player Command
-==============
-
 See: :doc:`feelings <feelings>` :doc:`random <random>` :doc:`semote <semote>` 
 
 

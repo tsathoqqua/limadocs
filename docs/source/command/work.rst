@@ -3,9 +3,6 @@ work
 
 Documentation for the work command in */trans/cmds/work.c*.
 
-Command
-=======
-
 See: :doc:`cd <cd>` 
 
 USAGE:

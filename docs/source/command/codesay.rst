@@ -3,9 +3,6 @@ codesay
 
 Documentation for the codesay command in */cmds/wiz/codesay.c*.
 
-Command
-=======
-
 USAGE ``codesay <string>``
 
 Displays the string formatted as LPC code.

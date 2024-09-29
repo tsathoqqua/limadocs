@@ -3,9 +3,6 @@ clean
 
 Documentation for the clean command in */cmds/wiz/clean.c*.
 
-Command
-=======
-
 See: :doc:`dest <dest>` :doc:`clone <clone>` 
 
 USAGE:

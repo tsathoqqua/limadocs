@@ -3,9 +3,6 @@ status
 
 Documentation for the status command in */cmds/wiz/status.c*.
 
-Command
-=======
-
 USAGE: ``status``
 
 Displays detailed info on system resources used.

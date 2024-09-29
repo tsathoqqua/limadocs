@@ -3,9 +3,6 @@ addpath
 
 Documentation for the addpath command in */trans/cmds/addpath.c*.
 
-Command
-=======
-
 See: :doc:`printpath <printpath>` :doc:`rmpath <rmpath>` 
 
 USAGE

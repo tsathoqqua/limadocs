@@ -3,9 +3,6 @@ grep
 
 Documentation for the grep command in */trans/cmds/grep.c*.
 
-Command
-=======
-
 USAGE ``grep [-inv] <target> <files>``
 
 Locates and displays lines matching specified pattern within specified files.

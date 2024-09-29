@@ -3,9 +3,6 @@ msg
 
 Documentation for the msg command in */cmds/wiz/msg.c*.
 
-Command
-=======
-
 See: :doc:`m_messages <m_messages>` :doc:`review <review>` 
 
 USAGE:

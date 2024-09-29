@@ -3,9 +3,6 @@ mudinfo
 
 Documentation for the mudinfo command in */cmds/wiz/mudinfo.c*.
 
-Command
-=======
-
 See: :doc:`mudlist <mudlist>` 
 
 USAGE:  ``mudinfo <mudname>``

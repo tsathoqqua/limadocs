@@ -3,9 +3,6 @@ invis
 
 Documentation for the invis command in */cmds/wiz/invis.c*.
 
-Command
-=======
-
 See: :doc:`vis <vis>` 
 
 USAGE: ``invis``

@@ -3,9 +3,6 @@ goto
 
 Documentation for the goto command in */cmds/wiz/goto.c*.
 
-Command
-=======
-
 See: :doc:`wizz <wizz>` :doc:`trans <trans>` 
 
 USAGE:

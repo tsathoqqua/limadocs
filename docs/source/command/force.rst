@@ -3,9 +3,6 @@ force
 
 Documentation for the force command in */trans/cmds/force.c*.
 
-Command
-=======
-
 See: :doc:`cmd <cmd>` 
 
 USAGE

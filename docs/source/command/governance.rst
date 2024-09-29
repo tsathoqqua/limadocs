@@ -3,9 +3,6 @@ governance
 
 Documentation for the governance command in */cmds/wiz/governance.c*.
 
-Command
-=======
-
 USAGE ``governance``
 
 Shows leaders and manager for all guilds on the MUD.

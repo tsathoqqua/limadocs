@@ -3,9 +3,6 @@ scripts
 
 Documentation for the scripts command in */cmds/wiz/scripts.c*.
 
-Command
-=======
-
 USAGE: ``scripts``
 
 Shows status of scripted NPCs.
