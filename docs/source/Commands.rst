@@ -3,145 +3,296 @@ Commands
 ********
 
 .. TAGS: RST
-- :doc:`Command: I <command/I>`
-- :doc:`Command: Move <command/Move>`
-- :doc:`Command: addemote <command/addemote>`
-- :doc:`Command: addguest <command/addguest>`
-- :doc:`Command: addpath <command/addpath>`
-- :doc:`Command: admtool <command/admtool>`
-- :doc:`Command: apropos <command/apropos>`
-- :doc:`Command: at <command/at>`
-- :doc:`Command: bk <command/bk>`
-- :doc:`Command: cat <command/cat>`
-- :doc:`Command: cd <command/cd>`
-- :doc:`Command: checkpriv <command/checkpriv>`
-- :doc:`Command: clean <command/clean>`
-- :doc:`Command: clone <command/clone>`
-- :doc:`Command: cmd <command/cmd>`
-- :doc:`Command: codefor <command/codefor>`
-- :doc:`Command: codesay <command/codesay>`
-- :doc:`Command: cp <command/cp>`
-- :doc:`Command: cpu <command/cpu>`
-- :doc:`Command: cut <command/cut>`
-- :doc:`Command: dataedit <command/dataedit>`
-- :doc:`Command: date <command/date>`
-- :doc:`Command: dbxframe <command/dbxframe>`
-- :doc:`Command: dbxfuncs <command/dbxfuncs>`
-- :doc:`Command: dbxvars <command/dbxvars>`
-- :doc:`Command: dbxwhere <command/dbxwhere>`
-- :doc:`Command: dest <command/dest>`
-- :doc:`Command: didlog <command/didlog>`
-- :doc:`Command: diff <command/diff>`
-- :doc:`Command: discuss <command/discuss>`
-- :doc:`Command: do <command/do>`
-- :doc:`Command: docs <command/docs>`
-- :doc:`Command: du <command/du>`
-- :doc:`Command: echo <command/echo>`
-- :doc:`Command: echoall <command/echoall>`
-- :doc:`Command: echom <command/echom>`
-- :doc:`Command: echoto <command/echoto>`
-- :doc:`Command: ed <command/ed>`
-- :doc:`Command: emotem <command/emotem>`
-- :doc:`Command: find <command/find>`
-- :doc:`Command: finger <command/finger>`
-- :doc:`Command: flist <command/flist>`
-- :doc:`Command: force <command/force>`
-- :doc:`Command: goto <command/goto>`
-- :doc:`Command: governance <command/governance>`
-- :doc:`Command: grep <command/grep>`
-- :doc:`Command: halt <command/halt>`
-- :doc:`Command: head <command/head>`
-- :doc:`Command: heal <command/heal>`
-- :doc:`Command: here <command/here>`
-- :doc:`Command: home <command/home>`
-- :doc:`Command: idfind <command/idfind>`
-- :doc:`Command: iftp <command/iftp>`
-- :doc:`Command: ilocate <command/ilocate>`
-- :doc:`Command: invis <command/invis>`
-- :doc:`Command: killmobs <command/killmobs>`
-- :doc:`Command: last <command/last>`
-- :doc:`Command: lightme <command/lightme>`
-- :doc:`Command: lima <command/lima>`
-- :doc:`Command: listeners <command/listeners>`
-- :doc:`Command: livings <command/livings>`
-- :doc:`Command: loadall <command/loadall>`
-- :doc:`Command: locate <command/locate>`
-- :doc:`Command: ls <command/ls>`
-- :doc:`Command: master <command/master>`
-- :doc:`Command: mkdir <command/mkdir>`
-- :doc:`Command: more <command/more>`
-- :doc:`Command: msg <command/msg>`
-- :doc:`Command: mudinfo <command/mudinfo>`
-- :doc:`Command: mv <command/mv>`
-- :doc:`Command: mvemote <command/mvemote>`
-- :doc:`Command: netstat <command/netstat>`
-- :doc:`Command: null <command/null>`
-- :doc:`Command: objcount <command/objcount>`
-- :doc:`Command: objfind <command/objfind>`
-- :doc:`Command: objpurge <command/objpurge>`
-- :doc:`Command: override <command/override>`
-- :doc:`Command: parse <command/parse>`
-- :doc:`Command: people <command/people>`
-- :doc:`Command: print <command/print>`
-- :doc:`Command: printpath <command/printpath>`
-- :doc:`Command: privs <command/privs>`
-- :doc:`Command: profile <command/profile>`
-- :doc:`Command: pwd <command/pwd>`
-- :doc:`Command: quiet <command/quiet>`
-- :doc:`Command: removeguest <command/removeguest>`
-- :doc:`Command: renew <command/renew>`
-- :doc:`Command: replace <command/replace>`
-- :doc:`Command: resurrect <command/resurrect>`
-- :doc:`Command: review <command/review>`
-- :doc:`Command: rm <command/rm>`
-- :doc:`Command: rmdir <command/rmdir>`
-- :doc:`Command: rmemote <command/rmemote>`
-- :doc:`Command: rmpath <command/rmpath>`
-- :doc:`Command: rst <command/rst>`
-- :doc:`Command: scan <command/scan>`
-- :doc:`Command: scripts <command/scripts>`
-- :doc:`Command: showemote <command/showemote>`
-- :doc:`Command: showexits <command/showexits>`
-- :doc:`Command: showtree <command/showtree>`
-- :doc:`Command: shutdown <command/shutdown>`
-- :doc:`Command: smartmobs <command/smartmobs>`
-- :doc:`Command: snoop <command/snoop>`
-- :doc:`Command: snoops <command/snoops>`
-- :doc:`Command: socketinfo <command/socketinfo>`
-- :doc:`Command: spew <command/spew>`
-- :doc:`Command: start <command/start>`
-- :doc:`Command: stat <command/stat>`
-- :doc:`Command: status <command/status>`
-- :doc:`Command: stupidemote <command/stupidemote>`
-- :doc:`Command: sweep <command/sweep>`
-- :doc:`Command: tail <command/tail>`
-- :doc:`Command: targetemote <command/targetemote>`
-- :doc:`Command: tasktool <command/tasktool>`
-- :doc:`Command: telnet <command/telnet>`
-- :doc:`Command: testargs <command/testargs>`
-- :doc:`Command: timer <command/timer>`
-- :doc:`Command: times <command/times>`
-- :doc:`Command: to <command/to>`
-- :doc:`Command: trans <command/trans>`
-- :doc:`Command: treefor <command/treefor>`
-- :doc:`Command: trip <command/trip>`
-- :doc:`Command: tsh <command/tsh>`
-- :doc:`Command: uncd <command/uncd>`
-- :doc:`Command: unittest <command/unittest>`
-- :doc:`Command: unsnoop <command/unsnoop>`
-- :doc:`Command: update <command/update>`
-- :doc:`Command: users <command/users>`
-- :doc:`Command: verbs <command/verbs>`
-- :doc:`Command: vis <command/vis>`
-- :doc:`Command: wall <command/wall>`
-- :doc:`Command: wc <command/wc>`
-- :doc:`Command: where <command/where>`
-- :doc:`Command: wheremobs <command/wheremobs>`
-- :doc:`Command: which <command/which>`
-- :doc:`Command: whoguests <command/whoguests>`
-- :doc:`Command: whoip <command/whoip>`
-- :doc:`Command: wizz <command/wizz>`
-- :doc:`Command: work <command/work>`
-- :doc:`Command: xargs <command/xargs>`
+- :doc:`I <command/I>`
+- :doc:`Move <command/Move>`
+- :doc:`addemote <command/addemote>`
+- :doc:`addguest <command/addguest>`
+- :doc:`addpath <command/addpath>`
+- :doc:`admtool <command/admtool>`
+- :doc:`apropos <command/apropos>`
+- :doc:`at <command/at>`
+- :doc:`bk <command/bk>`
+- :doc:`cat <command/cat>`
+- :doc:`cd <command/cd>`
+- :doc:`checkpriv <command/checkpriv>`
+- :doc:`clean <command/clean>`
+- :doc:`clone <command/clone>`
+- :doc:`cmd <command/cmd>`
+- :doc:`codefor <command/codefor>`
+- :doc:`codesay <command/codesay>`
+- :doc:`cp <command/cp>`
+- :doc:`cpu <command/cpu>`
+- :doc:`cut <command/cut>`
+- :doc:`dataedit <command/dataedit>`
+- :doc:`date <command/date>`
+- :doc:`dbxframe <command/dbxframe>`
+- :doc:`dbxfuncs <command/dbxfuncs>`
+- :doc:`dbxvars <command/dbxvars>`
+- :doc:`dbxwhere <command/dbxwhere>`
+- :doc:`dest <command/dest>`
+- :doc:`didlog <command/didlog>`
+- :doc:`diff <command/diff>`
+- :doc:`discuss <command/discuss>`
+- :doc:`do <command/do>`
+- :doc:`docs <command/docs>`
+- :doc:`du <command/du>`
+- :doc:`echo <command/echo>`
+- :doc:`echoall <command/echoall>`
+- :doc:`echom <command/echom>`
+- :doc:`echoto <command/echoto>`
+- :doc:`ed <command/ed>`
+- :doc:`emotem <command/emotem>`
+- :doc:`find <command/find>`
+- :doc:`finger <command/finger>`
+- :doc:`fix <command/fix>`
+- :doc:`flist <command/flist>`
+- :doc:`force <command/force>`
+- :doc:`goto <command/goto>`
+- :doc:`governance <command/governance>`
+- :doc:`grep <command/grep>`
+- :doc:`halt <command/halt>`
+- :doc:`head <command/head>`
+- :doc:`heal <command/heal>`
+- :doc:`here <command/here>`
+- :doc:`home <command/home>`
+- :doc:`idfind <command/idfind>`
+- :doc:`iftp <command/iftp>`
+- :doc:`ilocate <command/ilocate>`
+- :doc:`invis <command/invis>`
+- :doc:`killmobs <command/killmobs>`
+- :doc:`last <command/last>`
+- :doc:`lightme <command/lightme>`
+- :doc:`lima <command/lima>`
+- :doc:`listeners <command/listeners>`
+- :doc:`livings <command/livings>`
+- :doc:`loadall <command/loadall>`
+- :doc:`locate <command/locate>`
+- :doc:`ls <command/ls>`
+- :doc:`master <command/master>`
+- :doc:`mkdir <command/mkdir>`
+- :doc:`more <command/more>`
+- :doc:`msg <command/msg>`
+- :doc:`mudinfo <command/mudinfo>`
+- :doc:`mv <command/mv>`
+- :doc:`mvemote <command/mvemote>`
+- :doc:`netstat <command/netstat>`
+- :doc:`null <command/null>`
+- :doc:`objcount <command/objcount>`
+- :doc:`objfind <command/objfind>`
+- :doc:`objpurge <command/objpurge>`
+- :doc:`override <command/override>`
+- :doc:`parse <command/parse>`
+- :doc:`people <command/people>`
+- :doc:`print <command/print>`
+- :doc:`printpath <command/printpath>`
+- :doc:`privs <command/privs>`
+- :doc:`profile <command/profile>`
+- :doc:`pwd <command/pwd>`
+- :doc:`quiet <command/quiet>`
+- :doc:`removeguest <command/removeguest>`
+- :doc:`renew <command/renew>`
+- :doc:`replace <command/replace>`
+- :doc:`resurrect <command/resurrect>`
+- :doc:`review <command/review>`
+- :doc:`rm <command/rm>`
+- :doc:`rmdir <command/rmdir>`
+- :doc:`rmemote <command/rmemote>`
+- :doc:`rmpath <command/rmpath>`
+- :doc:`rst <command/rst>`
+- :doc:`scan <command/scan>`
+- :doc:`scripts <command/scripts>`
+- :doc:`showemote <command/showemote>`
+- :doc:`showexits <command/showexits>`
+- :doc:`showtree <command/showtree>`
+- :doc:`shutdown <command/shutdown>`
+- :doc:`smartmobs <command/smartmobs>`
+- :doc:`snoop <command/snoop>`
+- :doc:`snoops <command/snoops>`
+- :doc:`socketinfo <command/socketinfo>`
+- :doc:`spew <command/spew>`
+- :doc:`start <command/start>`
+- :doc:`stat <command/stat>`
+- :doc:`status <command/status>`
+- :doc:`stupidemote <command/stupidemote>`
+- :doc:`sweep <command/sweep>`
+- :doc:`tail <command/tail>`
+- :doc:`targetemote <command/targetemote>`
+- :doc:`tasktool <command/tasktool>`
+- :doc:`telnet <command/telnet>`
+- :doc:`testargs <command/testargs>`
+- :doc:`timer <command/timer>`
+- :doc:`times <command/times>`
+- :doc:`to <command/to>`
+- :doc:`trans <command/trans>`
+- :doc:`treefor <command/treefor>`
+- :doc:`trip <command/trip>`
+- :doc:`tsh <command/tsh>`
+- :doc:`uncd <command/uncd>`
+- :doc:`unittest <command/unittest>`
+- :doc:`unsnoop <command/unsnoop>`
+- :doc:`update <command/update>`
+- :doc:`users <command/users>`
+- :doc:`verbs <command/verbs>`
+- :doc:`vis <command/vis>`
+- :doc:`wall <command/wall>`
+- :doc:`wc <command/wc>`
+- :doc:`where <command/where>`
+- :doc:`wheremobs <command/wheremobs>`
+- :doc:`which <command/which>`
+- :doc:`whoguests <command/whoguests>`
+- :doc:`whoip <command/whoip>`
+- :doc:`wizz <command/wizz>`
+- :doc:`work <command/work>`
+- :doc:`xargs <command/xargs>`
+
+
+.. toctree::
+   :caption: Commands
+   :numbered:
+   :hidden:
+   :maxdepth: 4
+   :titlesonly:
+
+   command/I
+   command/Move
+   command/addemote
+   command/addguest
+   command/addpath
+   command/admtool
+   command/apropos
+   command/at
+   command/bk
+   command/cat
+   command/cd
+   command/checkpriv
+   command/clean
+   command/clone
+   command/cmd
+   command/codefor
+   command/codesay
+   command/cp
+   command/cpu
+   command/cut
+   command/dataedit
+   command/date
+   command/dbxframe
+   command/dbxfuncs
+   command/dbxvars
+   command/dbxwhere
+   command/dest
+   command/didlog
+   command/diff
+   command/discuss
+   command/do
+   command/docs
+   command/du
+   command/echo
+   command/echoall
+   command/echom
+   command/echoto
+   command/ed
+   command/emotem
+   command/find
+   command/finger
+   command/fix
+   command/flist
+   command/force
+   command/goto
+   command/governance
+   command/grep
+   command/halt
+   command/head
+   command/heal
+   command/here
+   command/home
+   command/idfind
+   command/iftp
+   command/ilocate
+   command/invis
+   command/killmobs
+   command/last
+   command/lightme
+   command/lima
+   command/listeners
+   command/livings
+   command/loadall
+   command/locate
+   command/ls
+   command/master
+   command/mkdir
+   command/more
+   command/msg
+   command/mudinfo
+   command/mv
+   command/mvemote
+   command/netstat
+   command/null
+   command/objcount
+   command/objfind
+   command/objpurge
+   command/override
+   command/parse
+   command/people
+   command/print
+   command/printpath
+   command/privs
+   command/profile
+   command/pwd
+   command/quiet
+   command/removeguest
+   command/renew
+   command/replace
+   command/resurrect
+   command/review
+   command/rm
+   command/rmdir
+   command/rmemote
+   command/rmpath
+   command/rst
+   command/scan
+   command/scripts
+   command/showemote
+   command/showexits
+   command/showtree
+   command/shutdown
+   command/smartmobs
+   command/snoop
+   command/snoops
+   command/socketinfo
+   command/spew
+   command/start
+   command/stat
+   command/status
+   command/stupidemote
+   command/sweep
+   command/tail
+   command/targetemote
+   command/tasktool
+   command/telnet
+   command/testargs
+   command/timer
+   command/times
+   command/to
+   command/trans
+   command/treefor
+   command/trip
+   command/tsh
+   command/uncd
+   command/unittest
+   command/unsnoop
+   command/update
+   command/users
+   command/verbs
+   command/vis
+   command/wall
+   command/wc
+   command/where
+   command/wheremobs
+   command/which
+   command/whoguests
+   command/whoip
+   command/wizz
+   command/work
+   command/xargs
 
 *File generated by reStructured Text daemon.*

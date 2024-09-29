@@ -48,6 +48,11 @@ A bar that is green with white dots when spent
 A bar that change colour the lower it gets
 
 
+.. c:function:: string critical_bar_2stacked(int value, int shield, int max, int width)
+
+A bar that change colour the lower it gets
+
+
 .. c:function:: string reverse_critical_bar(int value, int max, int width)
 
 A bar that change colour the lower it gets

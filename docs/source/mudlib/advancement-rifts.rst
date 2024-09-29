@@ -1,7 +1,7 @@
-Mudlib *simple*
-****************
+Mudlib *rifts*
+***************
 
-Documentation for the advancement-simple functions for the mudlib in */std/adversary/advancement/simple.c*.
+Documentation for the advancement-rifts functions for the mudlib in */std/adversary/advancement/rifts.c*.
 
 Functions
 =========
