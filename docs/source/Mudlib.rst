@@ -43,6 +43,10 @@ Mudlib
 - :doc:`object: vsupport <mudlib/object-vsupport>`
 - :doc:`room: exits <mudlib/room-exits>`
 - :doc:`room: roomdesc <mudlib/room-roomdesc>`
+- :doc:`stats: base <mudlib/stats-base>`
+- :doc:`stats: dnd <mudlib/stats-dnd>`
+- :doc:`stats: lima <mudlib/stats-lima>`
+- :doc:`stats: rifts <mudlib/stats-rifts>`
 - :doc:`std: adversary <mudlib/std-adversary>`
 - :doc:`std: armour <mudlib/std-armour>`
 - :doc:`std: base_obj <mudlib/std-base_obj>`

@@ -8,9 +8,6 @@ Module
 - :doc:`Module: m_aggressive <module/modules-m_aggressive>`
 - :doc:`Module: m_assistance <module/modules-m_assistance>`
 - :doc:`Module: m_blockexits <module/modules-m_blockexits>`
-- :doc:`Module: m_bodystats_dnd <module/modules-m_bodystats_dnd>`
-- :doc:`Module: m_bodystats_lima <module/modules-m_bodystats_lima>`
-- :doc:`Module: m_bodystats_rifts <module/modules-m_bodystats_rifts>`
 - :doc:`Module: m_boss <module/modules-m_boss>`
 - :doc:`Module: m_colours <module/modules-m_colours>`
 - :doc:`Module: m_companion <module/modules-m_companion>`
