@@ -3,6 +3,8 @@ overrides
 
 Documentation for the simul_efun-overrides api in */secure/simul_efun/overrides.c*.
 
+Functions
+=========
 .. c:function:: string terminal_colour(string str, mapping m, int wrap, int indent)
 
 Override of efun to avoid some driver issues.

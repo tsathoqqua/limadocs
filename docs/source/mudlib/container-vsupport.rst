@@ -3,6 +3,8 @@ Mudlib *vsupport*
 
 Documentation for the container-vsupport functions for the mudlib in */std/container/vsupport.c*.
 
+Functions
+=========
 .. c:function:: mixed indirect_get_obj_from_wrd_obj(object ob1, string rel, object ob2)
 
 Handle parser checks for "get OBJ from WRD OBJ"

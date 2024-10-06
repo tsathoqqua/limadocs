@@ -20,6 +20,8 @@ This might eventually get an admtool interface.
 
 .. TAGS: RST
 
+Functions
+=========
 .. c:function:: string *register_skill(string skill)
 
 Register a new skill with the daemon. This function needs

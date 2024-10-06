@@ -10,6 +10,8 @@ This module adds functions in monsters so they can do actions or respond to acti
 
 .. TAGS: RST
 
+Functions
+=========
 .. c:function:: void set_delay_time(int x)
 
 Sets the amount of time between possible actions. The minimum value

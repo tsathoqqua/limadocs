@@ -1,9 +1,12 @@
-bk
-***
+Command *bk*
+*************
 
 Documentation for the bk command in */trans/cmds/bk.c*.
 
-See: :doc:`rst <rst>` 
+Command
+=======
+
+See: :doc:`Command: rst <rst>` 
 
 USAGE ``bk <filename>``
 

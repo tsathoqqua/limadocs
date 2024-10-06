@@ -1,7 +1,10 @@
-people
-*******
+Command *people*
+*****************
 
 Documentation for the people command in */cmds/wiz/people.c*.
+
+Command
+=======
 
 syntax: ``people [flags]``
 

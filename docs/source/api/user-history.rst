@@ -3,6 +3,8 @@ history
 
 Documentation for the user-history api in */secure/user/history.c*.
 
+Functions
+=========
 .. c:function:: void set_reply(string o)
 
 set_reply(s) sets the person to whom 'reply' goes to.

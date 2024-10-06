@@ -1,3 +1,6 @@
+Player Command
+==============
+
 See: :doc:`skills <skills>` :doc:`score <score>` :doc:`equip <equip>` 
 
 USAGE

@@ -1,7 +1,10 @@
-replace
-********
+Command *replace*
+******************
 
 Documentation for the replace command in */trans/cmds/replace.c*.
+
+Command
+=======
 
 Usage: ``replace <str1> <str2> <file>``
 

@@ -1,7 +1,10 @@
-uncd
-*****
+Command *uncd*
+***************
 
 Documentation for the uncd command in */cmds/wiz/uncd.c*.
+
+Command
+=======
 
 USAGE: ``uncd``
 

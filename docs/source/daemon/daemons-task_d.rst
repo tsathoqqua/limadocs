@@ -3,6 +3,8 @@ Daemon task_d
 
 Documentation for the daemons-task_d daemon in */daemons/task_d.c*.
 
+Functions
+=========
 .. c:function:: nomask string query_title(string task_id)
 
 Return the title for a given task.

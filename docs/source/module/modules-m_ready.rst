@@ -9,6 +9,8 @@ Module Information
 This module should be inherited into ammunition,
 to interact with the "ready" verb which prepares for firing
 
+Functions
+=========
 .. c:function:: void do_ready()
 
 Adds the object to the "ready" array of ammunition

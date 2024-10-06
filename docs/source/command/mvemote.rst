@@ -1,7 +1,10 @@
-mvemote
-********
+Command *mvemote*
+******************
 
 Documentation for the mvemote command in */cmds/wiz/mvemote.c*.
+
+Command
+=======
 
 USAGE: ``mvemote <target> <destination>``
 

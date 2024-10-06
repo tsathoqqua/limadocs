@@ -1,9 +1,12 @@
-head
-*****
+Command *head*
+***************
 
 Documentation for the head command in */trans/cmds/head.c*.
 
-See: :doc:`tail <tail>` :doc:`more <more>` :doc:`ed <ed>` 
+Command
+=======
+
+See: :doc:`Command: tail <tail>` :doc:`Command: more <more>` :doc:`Command: ed <ed>` 
 
 USAGE: ``head [-n<number>] <file(s)>``
 

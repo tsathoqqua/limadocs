@@ -1,7 +1,10 @@
-checkpriv
-**********
+Command *checkpriv*
+********************
 
 Documentation for the checkpriv command in */trans/cmds/checkpriv.c*.
+
+Command
+=======
 
 USAGE:  ``checkpriv < privilege >``
 

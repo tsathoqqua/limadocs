@@ -8,6 +8,8 @@ Module Information
 
 A simple one way portal
 
+Functions
+=========
 .. c:function:: void set_destination(mixed f)
 
 Set where you go when you enter the portal.  Valid arguments are a function

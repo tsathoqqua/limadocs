@@ -1,7 +1,10 @@
-du
-***
+Command *du*
+*************
 
 Documentation for the du command in */trans/cmds/du.c*.
+
+Command
+=======
 
 USAGE:  ``du [ path ]``
 

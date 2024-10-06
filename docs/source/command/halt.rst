@@ -1,7 +1,10 @@
-halt
-*****
+Command *halt*
+***************
 
 Documentation for the halt command in */cmds/wiz/halt.c*.
+
+Command
+=======
 
 USAGE: ``halt``
 

@@ -3,6 +3,8 @@ Module *m_damage_sink*
 
 Documentation for the modules-m_damage_sink module in */std/modules/m_damage_sink.c*.
 
+Functions
+=========
 .. c:function:: void set_armour_class(int x)
 
 Set the protection of the particular damage sink.  random(class) points

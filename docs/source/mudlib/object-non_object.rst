@@ -3,6 +3,8 @@ Mudlib *non_object*
 
 Documentation for the object-non_object functions for the mudlib in */std/object/non_object.c*.
 
+Functions
+=========
 .. c:function:: int remove()
 
 This function is guaranteed to be called when an object is destructed.

@@ -1,3 +1,6 @@
+Player Command
+==============
+
 See: :doc:`stats <stats>` 
 
 USAGE

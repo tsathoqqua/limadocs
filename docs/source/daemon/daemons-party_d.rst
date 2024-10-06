@@ -11,6 +11,8 @@ party_D - Daemon for storing groups of players on the mud and
          if experience is used.
 March 1, 1997: Iizuka@Lima Bean created.
 
+Functions
+=========
 .. c:function:: mapping flip_mapping(mapping map)
 
 Reverses the keys and values in a mapping if

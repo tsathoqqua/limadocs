@@ -3,6 +3,8 @@ Mudlib *pockets*
 
 Documentation for the body-pockets functions for the mudlib in */std/body/pockets.c*.
 
+Functions
+=========
 .. c:function:: varargs int add_material(mixed m, int c)
 
 int add_material(mixed m)

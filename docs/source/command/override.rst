@@ -1,7 +1,10 @@
-override
-*********
+Command *override*
+*******************
 
 Documentation for the override command in */cmds/guild/lfe/override.c*.
+
+Command
+=======
 
 USAGE override
       override <something>

@@ -11,6 +11,8 @@ Module for salvageable items handling breaking them down into
 
 Initial version by Tsath@PLEXUS, 2020.
 
+Functions
+=========
 .. c:function:: int query_salvage_level()
 
 int query_salvage_level()

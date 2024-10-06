@@ -3,6 +3,8 @@ misc
 
 Documentation for the simul_efun-misc api in */secure/simul_efun/misc.c*.
 
+Functions
+=========
 .. c:function:: string call_trace()
 
 returns the stack of objects and functions

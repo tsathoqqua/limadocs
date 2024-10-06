@@ -1,7 +1,10 @@
-livings
-********
+Command *livings*
+******************
 
 Documentation for the livings command in */cmds/wiz/livings.c*.
+
+Command
+=======
 
 USAGE ``livings``
 

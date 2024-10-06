@@ -3,6 +3,8 @@ Daemon account_d
 
 Documentation for the daemons-account_d daemon in */daemons/account_d.c*.
 
+Functions
+=========
 .. c:function:: varargs mixed query_account(string bank, mixed player, string currency)
 
 This function returns the currencies stored in different accounts for

@@ -1,7 +1,10 @@
-date
-*****
+Command *date*
+***************
 
 Documentation for the date command in */cmds/wiz/date.c*.
+
+Command
+=======
 
 USAGE:  ``date``
 

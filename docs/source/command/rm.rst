@@ -1,7 +1,10 @@
-rm
-***
+Command *rm*
+*************
 
 Documentation for the rm command in */trans/cmds/rm.c*.
+
+Command
+=======
 
 USAGE:  ``rm < file >``
 

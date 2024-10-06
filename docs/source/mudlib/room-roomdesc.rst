@@ -3,6 +3,8 @@ Mudlib *roomdesc*
 
 Documentation for the room-roomdesc functions for the mudlib in */std/room/roomdesc.c*.
 
+Functions
+=========
 .. c:function:: varargs string show_objects(object except)
 
 Return a string describing the objects in the room

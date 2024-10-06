@@ -1,3 +1,6 @@
+Player Command
+==============
+
 See: :doc:`color <color>` :doc:`colours <colours>` :doc:`ansi <ansi>` :doc:`simplify <simplify>` :doc:`emoji <emoji>` :doc:`hint <hint>` 
 
 USAGE

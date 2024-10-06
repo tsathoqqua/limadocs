@@ -1,9 +1,12 @@
-cat
-****
+Command *cat*
+**************
 
 Documentation for the cat command in */trans/cmds/cat.c*.
 
-See: :doc:`more <more>` :doc:`tail <tail>` 
+Command
+=======
+
+See: :doc:`Command: more <more>` :doc:`Command: tail <tail>` 
 
 USAGE ``cat [path/file]``
 

@@ -11,6 +11,8 @@ under certain conditions.
 
 .. TAGS: RST
 
+Functions
+=========
 .. c:function:: void add_block(string *exits...)
 
 Adds the exits specified to the list of exits this object is blocking

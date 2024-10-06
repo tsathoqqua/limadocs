@@ -1,7 +1,10 @@
-grep
-*****
+Command *grep*
+***************
 
 Documentation for the grep command in */trans/cmds/grep.c*.
+
+Command
+=======
 
 USAGE ``grep [-inv] <target> <files>``
 

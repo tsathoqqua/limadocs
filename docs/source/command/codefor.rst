@@ -1,11 +1,14 @@
-codefor
-********
+Command *codefor*
+******************
 
 Documentation for the codefor command in */trans/cmds/codefor.c*.
 
+Command
+=======
+
 codefor
 By Beek - derived from eval
-See: :doc:`treefor <treefor>` 
+See: :doc:`Command: treefor <treefor>` 
 
 USAGE: ``codefor <lpc expression>``
 

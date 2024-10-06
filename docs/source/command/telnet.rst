@@ -1,7 +1,10 @@
-telnet
-*******
+Command *telnet*
+*****************
 
 Documentation for the telnet command in */trans/admincmds/telnet.c*.
+
+Command
+=======
 
 USAGE: ``telnet``
 

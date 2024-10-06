@@ -1,7 +1,10 @@
-mkdir
-******
+Command *mkdir*
+****************
 
 Documentation for the mkdir command in */trans/cmds/mkdir.c*.
+
+Command
+=======
 
 USAGE:  ``mkdir <directory>``
 

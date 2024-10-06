@@ -3,6 +3,8 @@ Daemon test_d
 
 Documentation for the daemons-test_d daemon in */daemons/test_d.c*.
 
+Functions
+=========
 .. c:function:: void test_suite(string suite_file, int debug)
 
 Calls test suite in /std/tests/.

@@ -1,7 +1,10 @@
-iftp
-*****
+Command *iftp*
+***************
 
 Documentation for the iftp command in */cmds/wiz/iftp.c*.
+
+Command
+=======
 
 USAGE ``iftp <mudname>``
 

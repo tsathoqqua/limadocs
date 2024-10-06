@@ -3,6 +3,8 @@ Module *m_healing*
 
 Documentation for the modules-m_healing module in */std/modules/m_healing.c*.
 
+Functions
+=========
 .. c:function:: void set_heal_value(int val)
 
 Sets the number of HP returned by one hit from this

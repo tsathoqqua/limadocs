@@ -1,7 +1,10 @@
-sweep
-******
+Command *sweep*
+****************
 
 Documentation for the sweep command in */cmds/guild/yakitori/sweep.c*.
+
+Command
+=======
 
 USAGE sweep
       sweep <someone>

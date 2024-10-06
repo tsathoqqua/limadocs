@@ -1,7 +1,10 @@
-governance
-***********
+Command *governance*
+*********************
 
 Documentation for the governance command in */cmds/wiz/governance.c*.
+
+Command
+=======
 
 USAGE ``governance``
 

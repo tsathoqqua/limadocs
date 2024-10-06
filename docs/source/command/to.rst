@@ -1,7 +1,10 @@
-to
-***
+Command *to*
+*************
 
 Documentation for the to command in */trans/cmds/to.c*.
+
+Command
+=======
 
 USAGE: ``to <command>``
 

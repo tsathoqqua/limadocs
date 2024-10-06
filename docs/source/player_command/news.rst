@@ -1,3 +1,6 @@
+Player Command
+==============
+
 USAGE
   ``news``
 

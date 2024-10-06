@@ -1,3 +1,6 @@
+Player Command
+==============
+
 See: :doc:`idea <idea>` :doc:`typo <typo>` :doc:`bug <bug>` :doc:`question <question>` 
 
 USAGE

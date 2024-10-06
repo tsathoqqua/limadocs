@@ -3,6 +3,8 @@ Mudlib *skills*
 
 Documentation for the adversary-skills functions for the mudlib in */std/adversary/skills.c*.
 
+Functions
+=========
 .. c:function:: int aggregate_skill(string skill)
 
 This value is a simple sum of the set skill value for the mob if any

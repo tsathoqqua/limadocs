@@ -3,6 +3,8 @@ Mudlib *vaporize*
 
 Documentation for the death-vaporize functions for the mudlib in */std/adversary/death/vaporize.c*.
 
+Functions
+=========
 .. c:function:: void vaporize()
 
 void vaporize();

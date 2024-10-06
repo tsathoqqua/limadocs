@@ -3,6 +3,8 @@ Mudlib *target*
 
 Documentation for the adversary-target functions for the mudlib in */std/adversary/target.c*.
 
+Functions
+=========
 .. c:function:: object get_target()
 
 Get someone to attack from our attackers list

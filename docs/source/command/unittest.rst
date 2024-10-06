@@ -1,7 +1,10 @@
-unittest
-*********
+Command *unittest*
+*******************
 
 Documentation for the unittest command in */cmds/wiz/unittest.c*.
+
+Command
+=======
 
 USAGE:  ``unittest <all|test|list> [debug]``
 

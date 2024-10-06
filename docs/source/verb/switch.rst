@@ -1,7 +1,10 @@
-switch
-*******
+Verb *switch*
+**************
 
 Documentation for the switch verb in */cmds/verbs/switch.c*.
+
+Command
+=======
 
 Mainly used to switch which group a board is set to
 

@@ -1,7 +1,10 @@
-unwield
-********
+Verb *unwield*
+***************
 
 Documentation for the unwield verb in */cmds/verbs/unwield.c*.
+
+Command
+=======
 
 Unwield equipment that you are wielding.
 

@@ -15,6 +15,8 @@ Each of these functions takes arguments : effect sufferer, args, counter
  where counter is the number of times it will repeat
  args is a mixed set of args as appropriate to the effect
 
+Functions
+=========
 .. c:function:: int time_to_next_effect()
 
 Returns time remaining in call_out to the next effect

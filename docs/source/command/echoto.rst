@@ -1,9 +1,12 @@
-echoto
-*******
+Command *echoto*
+*****************
 
 Documentation for the echoto command in */cmds/wiz/echoto.c*.
 
-See: :doc:`echo <echo>` :doc:`echoall <echoall>` :doc:`echom <echom>` 
+Command
+=======
+
+See: :doc:`Command: echo <echo>` :doc:`Command: echoall <echoall>` :doc:`Command: echom <echom>` 
 
 USAGE: ``echoto <target> <message>``
 

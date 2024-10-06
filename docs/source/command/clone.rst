@@ -1,9 +1,12 @@
-clone
-******
+Command *clone*
+****************
 
 Documentation for the clone command in */cmds/wiz/clone.c*.
 
-See: :doc:`dest <dest>` :doc:`clean <clean>` 
+Command
+=======
+
+See: :doc:`Command: dest <dest>` :doc:`Command: clean <clean>` 
 
 USAGE: ``clone <object>``
 

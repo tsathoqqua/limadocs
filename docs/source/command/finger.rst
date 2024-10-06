@@ -1,7 +1,10 @@
-finger
-*******
+Command *finger*
+*****************
 
 Documentation for the finger command in */trans/cmds/finger.c*.
+
+Command
+=======
 
 USAGE
 

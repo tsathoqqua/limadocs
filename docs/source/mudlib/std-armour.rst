@@ -9,6 +9,8 @@ Module Information
 This is the base for creating a piece of armour.  It uses M_WEARABLE to
 allow it to be worn, and M_DAMAGE_SINK to allow it to absorb damage.
 
+Functions
+=========
 .. c:function:: void set_worn(int g)
 
 set_worn(1) causes this object to be worn by whatever is holding it.

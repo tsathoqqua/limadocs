@@ -3,6 +3,8 @@ Module *m_writing_surface*
 
 Documentation for the modules-m_writing_surface module in */std/modules/m_writing_surface.c*.
 
+Functions
+=========
 .. c:function:: void set_space(int max)
 
 Set the maximum number of characters that can fit on the writing surface

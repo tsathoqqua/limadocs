@@ -1,7 +1,10 @@
-apropos
-********
+Command *apropos*
+******************
 
 Documentation for the apropos command in */cmds/wiz/apropos.c*.
+
+Command
+=======
 
 Usage
    ``apropos <string>``

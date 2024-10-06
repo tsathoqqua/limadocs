@@ -1,3 +1,6 @@
+Player Command
+==============
+
 See: :doc:`time <time>` 
 
 USAGE

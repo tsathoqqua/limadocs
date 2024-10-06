@@ -3,6 +3,8 @@ Mudlib *limbs*
 
 Documentation for the armour-limbs functions for the mudlib in */std/adversary/armour/limbs.c*.
 
+Functions
+=========
 .. c:function:: object *query_armours(string s)
 
 object *query_armours(string s);

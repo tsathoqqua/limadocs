@@ -3,6 +3,8 @@ Daemon guild_d
 
 Documentation for the daemons-guild_d daemon in */daemons/guild_d.c*.
 
+Functions
+=========
 .. c:function:: varargs int add_material(string guild, mixed m, int c)
 
 int add_material(mixed m)

@@ -3,6 +3,8 @@ Module *m_items*
 
 Documentation for the modules-m_items module in */std/modules/m_items.c*.
 
+Functions
+=========
 .. c:function:: void add_item(mixed *stuff...)
 
 Simple Items

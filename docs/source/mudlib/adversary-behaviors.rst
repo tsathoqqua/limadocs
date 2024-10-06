@@ -3,6 +3,8 @@ Mudlib *behaviors*
 
 Documentation for the adversary-behaviors functions for the mudlib in */std/adversary/behaviors.c*.
 
+Functions
+=========
 .. c:function:: varargs int busy_with(object ob, string action, string bf, mixed args)
 
 int busy_with(object ob, string action, string function, mixed *args)

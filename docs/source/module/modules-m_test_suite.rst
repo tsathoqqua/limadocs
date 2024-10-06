@@ -35,6 +35,8 @@ The test can be run by doing:
 
 If your file is called */std/tests/mytest.c*
 
+Functions
+=========
 .. c:function:: object lab_clone(string file)
 
 Clones object from file argument and sends it to LAB room.

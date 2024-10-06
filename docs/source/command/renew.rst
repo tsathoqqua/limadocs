@@ -1,7 +1,10 @@
-renew
-******
+Command *renew*
+****************
 
 Documentation for the renew command in */trans/cmds/renew.c*.
+
+Command
+=======
 
 Usage: ``renew <object>``
 

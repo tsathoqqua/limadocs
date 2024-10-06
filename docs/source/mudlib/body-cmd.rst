@@ -3,6 +3,8 @@ Mudlib *cmd*
 
 Documentation for the body-cmd functions for the mudlib in */std/body/cmd.c*.
 
+Functions
+=========
 .. c:function:: void read_help_topic(string str)
 
 read_help_topic(str)   -- set time <str> was read to right now.

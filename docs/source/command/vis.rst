@@ -1,9 +1,12 @@
-vis
-****
+Command *vis*
+**************
 
 Documentation for the vis command in */cmds/wiz/vis.c*.
 
-See: :doc:`invis <invis>` 
+Command
+=======
+
+See: :doc:`Command: invis <invis>` 
 
 USAGE: ``vis``
 

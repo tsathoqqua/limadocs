@@ -1,7 +1,10 @@
-treefor
-********
+Command *treefor*
+******************
 
 Documentation for the treefor command in */cmds/wiz/treefor.c*.
+
+Command
+=======
 
 USAGE: ``treefor <lpc expression>``
 

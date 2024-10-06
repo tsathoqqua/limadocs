@@ -9,6 +9,8 @@ Module Information
 This module can be used to make objects decay after a set
 amount of time. You may also have an object decay in stages.
 
+Functions
+=========
 .. c:function:: void set_decay_action(mixed action)
 
 set_decay_action(string) causes 'string' to be printed this

@@ -1,3 +1,6 @@
+Player Command
+==============
+
 USAGE
 
  |  ``rows <number>`` (to set the number of rows before pause in display)

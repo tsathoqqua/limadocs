@@ -3,18 +3,21 @@ alias
 
 Documentation for the shell-alias api in */obj/secure/shell/alias.c*.
 
+Command
+=======
+
 USAGE:
 There are 3 different versions of the alias command:
 
-alias  -- will give you a menu for adding aliases.  some things can only
+|``alias  -- will give you a menu for adding aliases.  some things can only``
 	  be done through the alias menu.
 
-alias str -- shows the value of alias 'str'
+|``alias str -- shows the value of alias 'str'``
 
-alias str expansion -- sets the alias 'str' to the expansion.
+|``alias str expansion -- sets the alias 'str' to the expansion.``
 
 An alias definition can change each time you use the alias:
-$1  -- Wherever you put this in your alias definition,
+| $1  -- Wherever you put this in your alias definition,
        the $1 will be replaced with the first word after
        the alias when you use the alias.
        You can do the same with $2, $3, $4, ad infinitum.
@@ -31,7 +34,7 @@ $1  -- Wherever you put this in your alias definition,
                   you're studly Rust
        You'll say: "Hey, Rust, you're studly!"
 
-$*  -- It's the same as $1, but it means 'everything else'.
+| $*  -- It's the same as $1, but it means 'everything else'.
        Example:  If you alias "you're" to:
                   say $2, you're $1!  Do you $*?       When you type:
                  you're studly Rust exercise much
@@ -43,11 +46,11 @@ only match one word.
 If you don't put a $* in your expansion, one will be automatically
 added to the end of the alias for you.
 
-If you have an alias, but don't want to use it, you can prepend a \ to
+If you have an alias, but don't want to use it, you can prepend a \\ to
 make the game ignore your alias.  For example, if you have 'grin' aliased
 to 'grin evilly', and you type:
 
-    \grin psychopathically
+    \\grin psychopathically
 
 you'll get:
     You grin psychopathically.
@@ -56,7 +59,11 @@ you'll get:
 To make an alias where you don't need to type a space after the alias,
 use the menu, and answer 'y' when the game asks: 'Allow space omission?'
 
+.. TAGS: RST
 
+
+Functions
+=========
 .. c:function:: nomask void remove_alias(string alias_name)
 
 Remove an alias from an alias set.

@@ -1,7 +1,10 @@
-quiet
-******
+Command *quiet*
+****************
 
 Documentation for the quiet command in */cmds/wiz/quiet.c*.
+
+Command
+=======
 
 USAGE:  ``quiet <object>``
 

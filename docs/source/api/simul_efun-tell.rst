@@ -3,6 +3,8 @@ tell
 
 Documentation for the simul_efun-tell api in */secure/simul_efun/tell.c*.
 
+Functions
+=========
 .. c:function:: varargs void tell(mixed ob, string what, int msg_type)
 
 Tell and object ``ob`` the string ``what`` of ``msg_type``.

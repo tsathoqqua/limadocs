@@ -3,132 +3,61 @@ Module
 ******
 
 .. TAGS: RST
-- :doc:`m_accountant <module/modules-m_accountant>`
-- :doc:`m_actions <module/modules-m_actions>`
-- :doc:`m_aggressive <module/modules-m_aggressive>`
-- :doc:`m_assistance <module/modules-m_assistance>`
-- :doc:`m_blockexits <module/modules-m_blockexits>`
-- :doc:`m_bodystats_dnd <module/modules-m_bodystats_dnd>`
-- :doc:`m_bodystats_lima <module/modules-m_bodystats_lima>`
-- :doc:`m_bodystats_rifts <module/modules-m_bodystats_rifts>`
-- :doc:`m_boss <module/modules-m_boss>`
-- :doc:`m_colours <module/modules-m_colours>`
-- :doc:`m_companion <module/modules-m_companion>`
-- :doc:`m_complete <module/modules-m_complete>`
-- :doc:`m_complex_exit <module/modules-m_complex_exit>`
-- :doc:`m_conversation <module/modules-m_conversation>`
-- :doc:`m_crafting <module/modules-m_crafting>`
-- :doc:`m_daemon_data <module/modules-m_daemon_data>`
-- :doc:`m_damage_sink <module/modules-m_damage_sink>`
-- :doc:`m_damage_source <module/modules-m_damage_source>`
-- :doc:`m_decay <module/modules-m_decay>`
-- :doc:`m_dice <module/modules-m_dice>`
-- :doc:`m_drink_container <module/modules-m_drink_container>`
-- :doc:`m_drink_source <module/modules-m_drink_source>`
-- :doc:`m_drinkable <module/modules-m_drinkable>`
-- :doc:`m_edible <module/modules-m_edible>`
-- :doc:`m_exit <module/modules-m_exit>`
-- :doc:`m_fluid_container <module/modules-m_fluid_container>`
-- :doc:`m_fluid_source <module/modules-m_fluid_source>`
-- :doc:`m_follow <module/modules-m_follow>`
-- :doc:`m_frame <module/modules-m_frame>`
-- :doc:`m_gettable <module/modules-m_gettable>`
-- :doc:`m_grammar <module/modules-m_grammar>`
-- :doc:`m_healing <module/modules-m_healing>`
-- :doc:`m_input <module/modules-m_input>`
-- :doc:`m_items <module/modules-m_items>`
-- :doc:`m_lightable <module/modules-m_lightable>`
-- :doc:`m_lockpick <module/modules-m_lockpick>`
-- :doc:`m_mdview <module/modules-m_mdview>`
-- :doc:`m_messages <module/modules-m_messages>`
-- :doc:`m_npcscript <module/modules-m_npcscript>`
-- :doc:`m_openable <module/modules-m_openable>`
-- :doc:`m_power <module/modules-m_power>`
-- :doc:`m_readable <module/modules-m_readable>`
-- :doc:`m_ready <module/modules-m_ready>`
-- :doc:`m_rstview <module/modules-m_rstview>`
-- :doc:`m_salvageable <module/modules-m_salvageable>`
-- :doc:`m_save <module/modules-m_save>`
-- :doc:`m_searchable <module/modules-m_searchable>`
-- :doc:`m_sibling <module/modules-m_sibling>`
-- :doc:`m_smartmove <module/modules-m_smartmove>`
-- :doc:`m_special_weapon <module/modules-m_special_weapon>`
-- :doc:`m_stateful <module/modules-m_stateful>`
-- :doc:`m_test_suite <module/modules-m_test_suite>`
-- :doc:`m_trainer <module/modules-m_trainer>`
-- :doc:`m_valuable <module/modules-m_valuable>`
-- :doc:`m_vendor <module/modules-m_vendor>`
-- :doc:`m_wander <module/modules-m_wander>`
-- :doc:`m_wearable <module/modules-m_wearable>`
-- :doc:`m_widgets <module/modules-m_widgets>`
-- :doc:`m_writing_surface <module/modules-m_writing_surface>`
-
-
-.. toctree::
-   :caption: Commands
-   :numbered:
-   :hidden:
-   :maxdepth: 4
-   :titlesonly:
-
-   module/modules-m_accountant
-   module/modules-m_actions
-   module/modules-m_aggressive
-   module/modules-m_assistance
-   module/modules-m_blockexits
-   module/modules-m_bodystats_dnd
-   module/modules-m_bodystats_lima
-   module/modules-m_bodystats_rifts
-   module/modules-m_boss
-   module/modules-m_colours
-   module/modules-m_companion
-   module/modules-m_complete
-   module/modules-m_complex_exit
-   module/modules-m_conversation
-   module/modules-m_crafting
-   module/modules-m_daemon_data
-   module/modules-m_damage_sink
-   module/modules-m_damage_source
-   module/modules-m_decay
-   module/modules-m_dice
-   module/modules-m_drink_container
-   module/modules-m_drink_source
-   module/modules-m_drinkable
-   module/modules-m_edible
-   module/modules-m_exit
-   module/modules-m_fluid_container
-   module/modules-m_fluid_source
-   module/modules-m_follow
-   module/modules-m_frame
-   module/modules-m_gettable
-   module/modules-m_grammar
-   module/modules-m_healing
-   module/modules-m_input
-   module/modules-m_items
-   module/modules-m_lightable
-   module/modules-m_lockpick
-   module/modules-m_mdview
-   module/modules-m_messages
-   module/modules-m_npcscript
-   module/modules-m_openable
-   module/modules-m_power
-   module/modules-m_readable
-   module/modules-m_ready
-   module/modules-m_rstview
-   module/modules-m_salvageable
-   module/modules-m_save
-   module/modules-m_searchable
-   module/modules-m_sibling
-   module/modules-m_smartmove
-   module/modules-m_special_weapon
-   module/modules-m_stateful
-   module/modules-m_test_suite
-   module/modules-m_trainer
-   module/modules-m_valuable
-   module/modules-m_vendor
-   module/modules-m_wander
-   module/modules-m_wearable
-   module/modules-m_widgets
-   module/modules-m_writing_surface
+- :doc:`Module: m_accountant <module/modules-m_accountant>`
+- :doc:`Module: m_actions <module/modules-m_actions>`
+- :doc:`Module: m_aggressive <module/modules-m_aggressive>`
+- :doc:`Module: m_assistance <module/modules-m_assistance>`
+- :doc:`Module: m_blockexits <module/modules-m_blockexits>`
+- :doc:`Module: m_boss <module/modules-m_boss>`
+- :doc:`Module: m_colours <module/modules-m_colours>`
+- :doc:`Module: m_companion <module/modules-m_companion>`
+- :doc:`Module: m_complete <module/modules-m_complete>`
+- :doc:`Module: m_complex_exit <module/modules-m_complex_exit>`
+- :doc:`Module: m_conversation <module/modules-m_conversation>`
+- :doc:`Module: m_crafting <module/modules-m_crafting>`
+- :doc:`Module: m_daemon_data <module/modules-m_daemon_data>`
+- :doc:`Module: m_damage_sink <module/modules-m_damage_sink>`
+- :doc:`Module: m_damage_source <module/modules-m_damage_source>`
+- :doc:`Module: m_decay <module/modules-m_decay>`
+- :doc:`Module: m_dice <module/modules-m_dice>`
+- :doc:`Module: m_drink_container <module/modules-m_drink_container>`
+- :doc:`Module: m_drink_source <module/modules-m_drink_source>`
+- :doc:`Module: m_drinkable <module/modules-m_drinkable>`
+- :doc:`Module: m_edible <module/modules-m_edible>`
+- :doc:`Module: m_exit <module/modules-m_exit>`
+- :doc:`Module: m_fluid_container <module/modules-m_fluid_container>`
+- :doc:`Module: m_fluid_source <module/modules-m_fluid_source>`
+- :doc:`Module: m_follow <module/modules-m_follow>`
+- :doc:`Module: m_frame <module/modules-m_frame>`
+- :doc:`Module: m_gettable <module/modules-m_gettable>`
+- :doc:`Module: m_grammar <module/modules-m_grammar>`
+- :doc:`Module: m_healing <module/modules-m_healing>`
+- :doc:`Module: m_input <module/modules-m_input>`
+- :doc:`Module: m_items <module/modules-m_items>`
+- :doc:`Module: m_lightable <module/modules-m_lightable>`
+- :doc:`Module: m_lockpick <module/modules-m_lockpick>`
+- :doc:`Module: m_mdview <module/modules-m_mdview>`
+- :doc:`Module: m_messages <module/modules-m_messages>`
+- :doc:`Module: m_npcscript <module/modules-m_npcscript>`
+- :doc:`Module: m_openable <module/modules-m_openable>`
+- :doc:`Module: m_power <module/modules-m_power>`
+- :doc:`Module: m_readable <module/modules-m_readable>`
+- :doc:`Module: m_ready <module/modules-m_ready>`
+- :doc:`Module: m_rstview <module/modules-m_rstview>`
+- :doc:`Module: m_salvageable <module/modules-m_salvageable>`
+- :doc:`Module: m_save <module/modules-m_save>`
+- :doc:`Module: m_searchable <module/modules-m_searchable>`
+- :doc:`Module: m_sibling <module/modules-m_sibling>`
+- :doc:`Module: m_smartmove <module/modules-m_smartmove>`
+- :doc:`Module: m_special_weapon <module/modules-m_special_weapon>`
+- :doc:`Module: m_stateful <module/modules-m_stateful>`
+- :doc:`Module: m_test_suite <module/modules-m_test_suite>`
+- :doc:`Module: m_trainer <module/modules-m_trainer>`
+- :doc:`Module: m_valuable <module/modules-m_valuable>`
+- :doc:`Module: m_vendor <module/modules-m_vendor>`
+- :doc:`Module: m_wander <module/modules-m_wander>`
+- :doc:`Module: m_wearable <module/modules-m_wearable>`
+- :doc:`Module: m_widgets <module/modules-m_widgets>`
+- :doc:`Module: m_writing_surface <module/modules-m_writing_surface>`
 
 *File generated by reStructured Text daemon.*

@@ -1,3 +1,6 @@
+Player Command
+==============
+
 See: :doc:`color <color>` :doc:`colours <colours>` :doc:`simplify <simplify>` 
 
 USAGE
