@@ -89,7 +89,7 @@ The original LPC Guide may be available at https://www.cs.hmc.edu/~jhsu/wilderne
 
 This guide has been changed, corrected and updated for the newest FluffOS driver and LIMA Mudlib features.
 
-If you spot errors and omissions, please submit an issue at https://github.com/tsathoqqua/limadocs/ and describe
+If you spot errors and omissions, please submit an issue at https://github.com/limalib/docs/ and describe
 the issue you found, or the addition you would like, or even better make a pull request.
 
 

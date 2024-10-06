@@ -15,7 +15,7 @@ that are helpful for working with the MUD, and the file structure used.
 
 This guide is designed for the latest features of the FluffOS driver and LIMA Mudlib.
 
-If you notice any errors or omissions, please submit an issue at https://github.com/tsathoqqua/limadocs/. 
+If you notice any errors or omissions, please submit an issue at https://github.com/limalib/docs/. 
 Describe the problem you found or suggest an addition. Even better, feel free to submit a pull request 
 with your proposed changes.
 
